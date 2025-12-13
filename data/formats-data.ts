@@ -3925,7 +3925,7 @@ export const FormatsData: import('../sim/dex-species').SpeciesFormatsDataTable =
 		doublesTier: "(DUU)",
 		natDexTier: "RU",
 	},
-	meowsticmmega: {
+	meowsticmega: {
 		isNonstandard: "Future",
 		tier: "Illegal",
 	},
@@ -6239,5 +6239,1327 @@ export const FormatsData: import('../sim/dex-species').SpeciesFormatsDataTable =
 	pokestarufopropu2: {
 		isNonstandard: "Custom",
 		tier: "Illegal",
+	},
+	// A Golden Experience
+	venusaurmegay: {
+		isNonstandard: "Custom",
+		tier: "Illegal",
+	},
+	blastoisemegax: {
+		isNonstandard: "Custom",
+		tier: "Illegal",
+	},
+	butterfreemega: {
+		isNonstandard: "Custom",
+		tier: "Illegal",
+	},
+	wigglytuffmega: {
+		isNonstandard: "Custom",
+		tier: "Illegal",
+	},
+	machampmega: {
+		isNonstandard: "Custom",
+		tier: "Illegal",
+	},
+	slowbrogalarmega: {
+		isNonstandard: "Custom",
+		tier: "Illegal",
+	},
+	omastarrevived: {
+		isNonstandard: "Custom",
+		tier: "Illegal",
+	},
+	kabutopsrevived: {
+		isNonstandard: "Custom",
+		tier: "Illegal",
+	},
+	typhlosionmega: {
+		isNonstandard: "Custom",
+		tier: "Illegal",
+	},
+	typhlosionhisuimega: {
+		isNonstandard: "Custom",
+		tier: "Illegal",
+	},
+	noctowlmega: {
+		isNonstandard: "Custom",
+		tier: "Illegal",
+	},
+	crobatmega: {
+		isNonstandard: "Custom",
+		tier: "Illegal",
+	},
+	scizorgalar: {
+		isNonstandard: "Custom",
+		tier: "Illegal",
+    },
+	scizorgalarmega: {
+		isNonstandard: "Custom",
+		tier: "Illegal",
+	},
+	slugmasinnoh: {
+		isNonstandard: "Custom",
+		tier: "Illegal",
+	},
+	magcargosinnoh: {
+		isNonstandard: "Custom",
+		tier: "Illegal",
+	},
+	houndourgalar: {
+		isNonstandard: "Custom",
+		tier: "Illegal",
+	},
+	sableyeunova: {
+		isNonstandard: "Custom",
+		tier: "Illegal",
+	},
+	medititehisui: {
+		isNonstandard: "Custom",
+		tier: "Illegal",
+	},
+	medichamhisui: {
+		isNonstandard: "Custom",
+		tier: "Illegal",
+	},
+	flygonmega: {
+		isNonstandard: "Custom",
+		tier: "Illegal",
+	},
+	cacturnemega: {
+		isNonstandard: "Custom",
+		tier: "Illegal",
+	},
+	cacturnemeganight: {
+		isNonstandard: "Custom",
+		tier: "Illegal",
+	},
+	whiscashmega: {
+		isNonstandard: "Custom",
+		tier: "Illegal",
+	},
+	cradilyrevived: {
+		isNonstandard: "Custom",
+		tier: "Illegal",
+	},
+	armaldorevived: {
+		isNonstandard: "Custom",
+		tier: "Illegal",
+	},
+	castformmega: {
+		isNonstandard: "Custom",
+		tier: "Illegal",
+	},
+	rampardosrevived: {
+		isNonstandard: "Custom",
+		tier: "Illegal",
+	},
+	bastiodonrevived: {
+		isNonstandard: "Custom",
+		tier: "Illegal",
+	},
+	yanmegamega: {
+		isNonstandard: "Custom",
+		tier: "Illegal",
+	},
+	serperiorgalar: {
+		isNonstandard: "Custom",
+		tier: "Illegal",
+	},
+	emboargalar: {
+		isNonstandard: "Custom",
+		tier: "Illegal",
+	},
+	samurottgalar: {
+		isNonstandard: "Custom",
+		tier: "Illegal",
+	},
+	serperiormega: {
+		isNonstandard: "Custom",
+		tier: "Illegal",
+	},
+	samurottmega: {
+		isNonstandard: "Custom",
+		tier: "Illegal",
+	},
+	unfezantf: {
+		isNonstandard: "Custom",
+		tier: "Illegal",
+	},
+	krookodilemega: {
+		isNonstandard: "Custom",
+		tier: "Illegal",
+	},
+	crustlemega: {
+		isNonstandard: "Custom",
+		tier: "Illegal",
+	},
+	carracostarevived: {
+		isNonstandard: "Custom",
+		tier: "Illegal",
+	},
+	archeopsrevived: {
+		isNonstandard: "Custom",
+		tier: "Illegal",
+	},
+    zoroarkmega: {
+		isNonstandard: "Custom",
+		tier: "Illegal",
+    },
+    zoroarkhisuimega: {
+		isNonstandard: "Custom",
+		tier: "Illegal",
+    },
+	tyrantrumrevived: {
+		isNonstandard: "Custom",
+		tier: "Illegal",
+	},
+	aurorusrevived: {
+		isNonstandard: "Custom",
+		tier: "Illegal",
+	},
+	noibatsinnoh: {
+		isNonstandard: "Custom",
+		tier: "Illegal",
+    },
+	noivernsinnoh: {
+		isNonstandard: "Custom",
+		tier: "Illegal",
+    },
+	ribombeemega: {
+		isNonstandard: "Custom",
+		tier: "Illegal",
+	},
+	salazzlemega: {
+		isNonstandard: "Custom",
+		tier: "Illegal",
+	},
+	dhelmisemega: {
+		isNonstandard: "Custom",
+		tier: "Illegal",
+	},
+	cramorantmega: {
+		isNonstandard: "Custom",
+		tier: "Illegal",
+	},
+	cramorantgulpingmega: {
+		isNonstandard: "Custom",
+		tier: "Illegal",
+	},
+	cramorantgorgingmega: {
+		isNonstandard: "Custom",
+		tier: "Illegal",
+	},
+	toxtricitymega: {
+		isNonstandard: "Custom",
+		tier: "Illegal",
+	},
+	toxtricitylowkeymega: {
+		isNonstandard: "Custom",
+		tier: "Illegal",
+	},
+	centiskorchmegax: {
+		isNonstandard: "Custom",
+		tier: "Illegal",
+	},
+	centiskorchmegay: {
+		isNonstandard: "Custom",
+		tier: "Illegal",
+	},
+	centiskorchmegaz: {
+		isNonstandard: "Custom",
+		tier: "Illegal",
+	},
+	kleavormega: {
+		isNonstandard: "Custom",
+		tier: "Illegal",
+	},
+	meowscaradamega: {
+		isNonstandard: "Custom",
+		tier: "Illegal",
+	},
+	skeledirgemega: {
+		isNonstandard: "Custom",
+		tier: "Illegal",
+	},
+	quaquavalmega: {
+		isNonstandard: "Custom",
+		tier: "Illegal",
+	},
+	brambleghastmega: {
+		isNonstandard: "Custom",
+		tier: "Illegal",
+	},
+	rabscamega: {
+		isNonstandard: "Custom",
+		tier: "Illegal",
+	},
+	revavroomsegin: {
+		isNonstandard: "Custom",
+		tier: "Illegal",
+	},
+	revavroomschedar: {
+		isNonstandard: "Custom",
+		tier: "Illegal",
+	},
+	revavroomnavi: {
+		isNonstandard: "Custom",
+		tier: "Illegal",
+	},
+	revavroomruchbah: {
+		isNonstandard: "Custom",
+		tier: "Illegal",
+	},
+	revavroomcaph: {
+		isNonstandard: "Custom",
+		tier: "Illegal",
+	},
+	koraidonweakened: {
+		isNonstandard: "Custom",
+		tier: "Illegal",
+	},
+	miraidonweakened: {
+		isNonstandard: "Custom",
+		tier: "Illegal",
+	},
+	tentarcolh: {
+		isNonstandard: "Custom",
+		tier: "Illegal",
+    },
+	carsnail: {
+		isNonstandard: "Custom",
+		tier: "Illegal",
+    },
+	carcoliath: {
+		isNonstandard: "Custom",
+		tier: "Illegal",
+    },
+	slidge: {
+		isNonstandard: "Custom",
+		tier: "Illegal",
+    },
+	hustrack: {
+		isNonstandard: "Custom",
+		tier: "Illegal",
+    },
+	shusski: {
+		isNonstandard: "Custom",
+		tier: "Illegal",
+    },
+	seagmate: {
+		isNonstandard: "Custom",
+		tier: "Illegal",
+	},
+	gullcean: {
+		isNonstandard: "Custom",
+		tier: "Illegal",
+	},
+	admistral: {
+		isNonstandard: "Custom",
+		tier: "Illegal",
+	},
+	magthief: {
+		isNonstandard: "Custom",
+		tier: "Illegal",
+    },
+    snobberaven: {
+		isNonstandard: "Custom",
+		tier: "Illegal",
+    },
+	fiyounfly: {
+		isNonstandard: "Custom",
+		tier: "Illegal",
+	},
+	glowtaire: {
+		isNonstandard: "Custom",
+		tier: "Illegal",
+	},
+	illumight: {
+		isNonstandard: "Custom",
+		tier: "Illegal",
+	},
+	ledixy: {
+		isNonstandard: "Custom",
+		tier: "Illegal",
+	},
+	terados: {
+		isNonstandard: "Custom",
+		tier: "Illegal",
+	},
+	mosquitox: {
+		isNonstandard: "Custom",
+		tier: "Illegal",
+	},
+	normear: {
+		isNonstandard: "Custom",
+		tier: "Illegal",
+    },
+    paranormear: {
+		isNonstandard: "Custom",
+		tier: "Illegal",
+    },
+	mossiden: {
+		isNonstandard: "Custom",
+		tier: "Illegal",
+    }, 
+	statimoss: {
+		isNonstandard: "Custom",
+		tier: "Illegal",
+    },
+	kistraw: {
+		isNonstandard: "Custom",
+		tier: "Illegal",
+	},
+	origyrant: {
+		isNonstandard: "Custom",
+		tier: "Illegal",
+	},
+	sharkutkie: {
+		isNonstandard: "Custom",
+		tier: "Illegal",
+	},
+	mercurino: {
+		isNonstandard: "Custom",
+		tier: "Illegal",
+    }, 
+	dauvifar: {
+		isNonstandard: "Custom",
+		tier: "Illegal",
+    }, 
+	girafatak: {
+		isNonstandard: "Custom",
+		tier: "Illegal",
+	},
+	girafataknocturnal: {
+		isNonstandard: "Custom",
+		tier: "Illegal",
+	},
+	sylvardian: {
+		isNonstandard: "Custom",
+		tier: "Illegal",
+	},
+	scarpent: {
+		isNonstandard: "Custom",
+		tier: "Illegal",
+	},
+	terreptile: {
+		isNonstandard: "Custom",
+		tier: "Illegal",
+	},
+	terreptilemega: {
+		isNonstandard: "Custom",
+		tier: "Illegal",
+	},
+	stonlet: {
+		isNonstandard: "Custom",
+		tier: "Illegal",
+	},
+	rockster: {
+		isNonstandard: "Custom",
+		tier: "Illegal",
+	},
+	rockstermega: {
+		isNonstandard: "Custom",
+		tier: "Illegal",
+	},
+	expecies: {
+		isNonstandard: "Custom",
+		tier: "Illegal",
+	},
+	albirat: {
+		isNonstandard: "Custom",
+		tier: "Illegal",
+	},
+	wizamadol: {
+		isNonstandard: "Custom",
+		tier: "Illegal",
+	},
+	mystao: {
+		isNonstandard: "Custom",
+		tier: "Illegal",
+	},
+	hopkineye: {
+		isNonstandard: "Custom",
+		tier: "Illegal",
+	},
+	harvesking: {
+		isNonstandard: "Custom",
+		tier: "Illegal",
+	},
+	foroyal: {
+		isNonstandard: "Custom",
+		tier: "Illegal",
+	},
+	dracoalt: {
+		isNonstandard: "Custom",
+		tier: "Illegal",
+	},
+	incinemate: {
+		isNonstandard: "Custom",
+		tier: "Illegal",
+	},
+	fugivern: {
+		isNonstandard: "Custom",
+		tier: "Illegal",
+	},
+	drinferno: {
+		isNonstandard: "Custom",
+		tier: "Illegal",
+	},
+	hydrookie: {
+		isNonstandard: "Custom",
+		tier: "Illegal",
+	},
+	scienstream: {
+		isNonstandard: "Custom",
+		tier: "Illegal",
+	},
+	medidragon: {
+		isNonstandard: "Custom",
+		tier: "Illegal",
+	},
+	baskiron: {
+		isNonstandard: "Custom",
+		tier: "Illegal",
+	},
+	baskironmega: {
+		isNonstandard: "Custom",
+		tier: "Illegal",
+	},
+	ameba: {
+		isNonstandard: "Custom",
+		tier: "Illegal",
+	},
+	solens: {
+		isNonstandard: "Custom",
+		tier: "Illegal",
+    },
+	snolbom: {
+		isNonstandard: "Custom",
+		tier: "Illegal",
+    },
+	skojal: {
+		isNonstandard: "Custom",
+		tier: "Illegal",
+    },
+	megacargo: {
+		isNonstandard: "Custom",
+		tier: "Illegal",
+	},
+	leechuption: {
+		isNonstandard: "Custom",
+		tier: "Illegal",
+	},
+	delistmas: {
+		isNonstandard: "Custom",
+		tier: "Illegal",
+	},
+	jhex:{
+		isNonstandard: "Custom",
+		tier: "Illegal",
+	},
+	annoyog: {
+		isNonstandard: "Custom",
+		tier: "Illegal",
+	},
+	maaltis: {
+		isNonstandard: "Custom",
+		tier: "Illegal",
+    },
+	baalzebutis: {
+		isNonstandard: "Custom",
+		tier: "Illegal",
+    },
+	raticket: {
+		isNonstandard: "Custom",
+		tier: "Illegal",
+	},
+	piratcy: {
+		isNonstandard: "Custom",
+		tier: "Illegal",
+	},
+	parrotnair: {
+		isNonstandard: "Custom",
+		tier: "Illegal",
+	},
+	parrotnairblue: {
+		isNonstandard: "Future",
+		tier: "Illegal",
+	},
+	parrotnairyellow: {
+		isNonstandard: "Custom",
+		tier: "Illegal",
+	},
+	parrotnairwhite: {
+		isNonstandard: "Custom",
+		tier: "Illegal",
+	},
+	golrobot: {
+		isNonstandard: "Custom",
+		tier: "Illegal",
+	},
+	sautropius: {
+		isNonstandard: "Custom",
+		tier: "Illegal",
+	},
+	meltic: {
+		isNonstandard: "Custom",
+		tier: "Illegal",
+	},
+	sithbull: {
+		isNonstandard: "Custom",
+		tier: "Illegal",
+	},
+	mayatu: {
+		isNonstandard: "Custom",
+		tier: "Illegal",
+	},
+	isaapple: {
+		isNonstandard: "Custom",
+		tier: "Illegal",
+	},
+	badapple: {
+		isNonstandard: "Custom",
+		tier: "Illegal",
+	},
+	goldiorno: {
+		isNonstandard: "Custom",
+		tier: "Illegal",
+	},
+	slendawful: {
+		isNonstandard: "Custom",
+		tier: "Illegal",
+	},
+	berkslash: {
+		isNonstandard: "Custom",
+		tier: "Illegal",
+	},
+	nopainnogain: {
+		isNonstandard: "Custom",
+		tier: "Illegal",
+	},
+	bubblure: {
+		isNonstandard: "Custom",
+		tier: "Illegal",
+	},
+	abysshark: {
+		isNonstandard: "Custom",
+		tier: "Illegal",
+	},
+	cymadalea: {
+		isNonstandard: "Custom",
+		tier: "Illegal",
+	},
+	tapuwala: {
+		isNonstandard: "Custom",
+		tier: "Illegal",
+    },
+    snoxin: {
+		isNonstandard: "Custom",
+		tier: "Illegal",
+	},
+	florhoper: {
+		isNonstandard: "Custom",
+		tier: "Illegal",
+	},
+	magroach: {
+		isNonstandard: "Custom",
+		tier: "Illegal",
+	},
+	parafgufa: {
+		isNonstandard: "Custom",
+		tier: "Illegal",
+    },
+	infarmatem: {
+		isNonstandard: "Custom",
+		tier: "Illegal",
+	},
+	infarmatemmega: {
+		isNonstandard: "Custom",
+		tier: "Illegal",
+	},
+	grimillia: {
+		isNonstandard: "Custom",
+		tier: "Illegal",
+	},
+	adnocagem: {
+		isNonstandard: "Custom",
+		tier: "Illegal",
+	},
+	truelewoodo: {
+		isNonstandard: "Custom",
+		tier: "Illegal",
+	},
+	mediyumi: {
+		isNonstandard: "Custom",
+		tier: "Illegal",
+	},
+	spyarn: {
+		isNonstandard: "Custom",
+		tier: "Illegal",
+	},
+	corpsetrap: {
+		isNonstandard: "Custom",
+		tier: "Illegal",
+	},
+	gevauyena: {
+		isNonstandard: "Custom",
+		tier: "Illegal",
+	},
+	arsief: {
+		isNonstandard: "Custom",
+		tier: "Illegal",
+	},
+	draggoyle: {
+		isNonstandard: "Custom",
+		tier: "Illegal",
+	},
+	draggoyleactive: {
+		isNonstandard: "Custom",
+		tier: "Illegal",
+	},
+	remobault: {
+		isNonstandard: "Custom",
+		tier: "Illegal",
+	},
+	whitewhale: {
+		isNonstandard: "Custom",
+		tier: "Illegal",
+	},
+	irondrill: {
+		isNonstandard: "Custom",
+		tier: "Illegal",
+	},
+	coalkaiju: {
+		isNonstandard: "Custom",
+		tier: "Illegal",
+	},
+	ironbike: {
+		isNonstandard: "Custom",
+		tier: "Illegal",
+	},
+	purerainbow: {
+		isNonstandard: "Custom",
+		tier: "Illegal",
+	},
+	irondart: {
+		isNonstandard: "Custom",
+		tier: "Illegal",
+	},
+	// Touhou
+
+	reimuhakurei: {
+		isNonstandard: "Custom",
+		tier: "Toho",
+		doublesTier: "DToho",
+	},
+	marisakirisame: {
+		isNonstandard: "Custom",
+		tier: "Toho",
+		doublesTier: "DToho",
+	},
+	rumia: {
+		isNonstandard: "Custom",
+		tier: "Toho",
+		doublesTier: "DToho",
+	},
+	daiyousei: {
+		isNonstandard: "Custom",
+		tier: "Toho",
+		doublesTier: "DToho",
+	},
+	cirno: {
+		isNonstandard: "Custom",
+		tier: "Toho",
+		doublesTier: "DToho",
+	},
+	cirnotanned: {
+		isNonstandard: "Custom",
+		tier: "Toho",
+		doublesTier: "DToho",
+	},
+	hongmeiling: {
+		isNonstandard: "Custom",
+		tier: "Toho",
+		doublesTier: "DToho",
+	},
+	koakuma: {
+		isNonstandard: "Custom",
+		tier: "Toho",
+		doublesTier: "DToho",
+	},
+	patchouliknowledge: {
+		isNonstandard: "Custom",
+		tier: "Toho",
+		doublesTier: "DToho",
+	},
+	sakuyaizayoi: {
+		isNonstandard: "Custom",
+		tier: "Toho",
+		doublesTier: "DToho",
+	},
+	remiliascarlet: {
+		isNonstandard: "Custom",
+		tier: "Toho",
+		doublesTier: "DToho",
+	},
+	flandrescarlet: {
+		isNonstandard: "Custom",
+		tier: "Toho",
+		doublesTier: "DToho",
+	},
+	lettywhiterock: {
+		isNonstandard: "Custom",
+		tier: "Toho",
+		doublesTier: "DToho",
+	},
+	chen: {
+		isNonstandard: "Custom",
+		tier: "Toho",
+		doublesTier: "DToho",
+	},
+	alicemargatroid: {
+		isNonstandard: "Custom",
+		tier: "Toho",
+		doublesTier: "DToho",
+	},
+	lilywhite: {
+		isNonstandard: "Custom",
+		tier: "Toho",
+		doublesTier: "DToho",
+	},
+	lunasaprismriver: {
+		isNonstandard: "Custom",
+		tier: "Toho",
+		doublesTier: "DToho",
+	},
+	merlinprismriver: {
+		isNonstandard: "Custom",
+		tier: "Toho",
+		doublesTier: "DToho",
+	},
+	lyricaprismriver: {
+		isNonstandard: "Custom",
+		tier: "Toho",
+		doublesTier: "DToho",
+	},
+	youmukonpaku: {
+		isNonstandard: "Custom",
+		tier: "Toho",
+		doublesTier: "DToho",
+	},
+	yuyukosaigyouji: {
+		isNonstandard: "Custom",
+		tier: "Toho",
+		doublesTier: "DToho",
+	},
+	ranyakumo: {
+		isNonstandard: "Custom",
+		tier: "Toho",
+		doublesTier: "DToho",
+	},
+	yukariyakumo: {
+		isNonstandard: "Custom",
+		tier: "Toho",
+		doublesTier: "DToho",
+	},
+	suikaibuki: {
+		isNonstandard: "Custom",
+		tier: "Toho",
+		doublesTier: "DToho",
+	},
+	wrigglenightbug: {
+		isNonstandard: "Custom",
+		tier: "Toho",
+		doublesTier: "DToho",
+	},
+	mystialorelei: {
+		isNonstandard: "Custom",
+		tier: "Toho",
+		doublesTier: "DToho",
+	},
+	keine: {
+		isNonstandard: "Custom",
+		tier: "Toho",
+		doublesTier: "DToho",
+	},
+	tewiinaba: {
+		isNonstandard: "Custom",
+		tier: "Toho",
+		doublesTier: "DToho",
+	},
+	reiseninaba: {
+		isNonstandard: "Custom",
+		tier: "Toho",
+		doublesTier: "DToho",
+	},
+	eirinyagokoro: {
+		isNonstandard: "Custom",
+		tier: "Toho",
+		doublesTier: "DToho",
+	},
+	kaguyahouraisan: {
+		isNonstandard: "Custom",
+		tier: "Toho",
+		doublesTier: "DToho",
+	},
+	fujiwaranomokou: {
+		isNonstandard: "Custom",
+		tier: "Toho",
+		doublesTier: "DToho",
+	},
+	ayashameimaru: {
+		isNonstandard: "Custom",
+		tier: "Toho",
+		doublesTier: "DToho",
+	},
+	medicinemelancholy: {
+		isNonstandard: "Custom",
+		tier: "Toho",
+		doublesTier: "DToho",
+	},
+	yuukakazami: {
+		isNonstandard: "Custom",
+		tier: "Toho",
+		doublesTier: "DToho",
+	},
+	komachionozuka: {
+		isNonstandard: "Custom",
+		tier: "Toho",
+		doublesTier: "DToho",
+	},
+	eikishiki: {
+		isNonstandard: "Custom",
+		tier: "Toho",
+		doublesTier: "DToho",
+	},
+	shizuhaaki: {
+		isNonstandard: "Custom",
+		tier: "Toho",
+		doublesTier: "DToho",
+	},
+	minorikoaki: {
+		isNonstandard: "Custom",
+		tier: "Toho",
+		doublesTier: "DToho",
+	},
+	hinakagiyama: {
+		isNonstandard: "Custom",
+		tier: "Toho",
+		doublesTier: "DToho",
+	},
+	nitorikawashiro: {
+		isNonstandard: "Custom",
+		tier: "Toho",
+		doublesTier: "DToho",
+	},
+	momijiinubashiri: {
+		isNonstandard: "Custom",
+		tier: "Toho",
+		doublesTier: "DToho",
+	},
+	sanaekochiya: {
+		isNonstandard: "Custom",
+		tier: "Toho",
+		doublesTier: "DToho",
+	},
+	kanakoyasaka: {
+		isNonstandard: "Custom",
+		tier: "Toho",
+		doublesTier: "DToho",
+	},
+	suwakomoriya: {
+		isNonstandard: "Custom",
+		tier: "Toho",
+		doublesTier: "DToho",
+	},
+	ikunagae: {
+		isNonstandard: "Custom",
+		tier: "Toho",
+		doublesTier: "DToho",
+	},
+	tenshihinanawi: {
+		isNonstandard: "Custom",
+		tier: "Toho",
+		doublesTier: "DToho",
+	},
+	kisume: {
+		isNonstandard: "Custom",
+		tier: "Toho",
+		doublesTier: "DToho",
+	},
+	yamamekurodani: {
+		isNonstandard: "Custom",
+		tier: "Toho",
+		doublesTier: "DToho",
+	},
+	parseemizuhashi: {
+		isNonstandard: "Custom",
+		tier: "Toho",
+		doublesTier: "DToho",
+	},
+	yuugihoshiguma: {
+		isNonstandard: "Custom",
+		tier: "Toho",
+		doublesTier: "DToho",
+	},
+	satorikomeiji: {
+		isNonstandard: "Custom",
+		tier: "Toho",
+		doublesTier: "DToho",
+	},
+	rinkaenbyou: {
+		isNonstandard: "Custom",
+		tier: "Toho",
+		doublesTier: "DToho",
+	},
+	utsuhoreiuji: {
+		isNonstandard: "Custom",
+		tier: "Toho",
+		doublesTier: "DToho",
+	},
+	koishikomeiji: {
+		isNonstandard: "Custom",
+		tier: "Toho",
+		doublesTier: "DToho",
+	},
+	nazrin: {
+		isNonstandard: "Custom",
+		tier: "Toho",
+		doublesTier: "DToho",
+	},
+	kogasatatara: {
+		isNonstandard: "Custom",
+		tier: "Toho",
+		doublesTier: "DToho",
+	},
+	ichirinkumoi: {
+		isNonstandard: "Custom",
+		tier: "Toho",
+		doublesTier: "DToho",
+	},
+	ichirinunzan: {
+		isNonstandard: "Custom",
+		tier: "Toho",
+		doublesTier: "DToho",
+	},
+	minamitsumurasa: {
+		isNonstandard: "Custom",
+		tier: "Toho",
+		doublesTier: "DToho",
+	},
+	shoutoramaru: {
+		isNonstandard: "Custom",
+		tier: "Toho",
+		doublesTier: "DToho",
+	},
+	byakurenhijiri: {
+		isNonstandard: "Custom",
+		tier: "Toho",
+		doublesTier: "DToho",
+	},
+	nuehoujuu: {
+		isNonstandard: "Custom",
+		tier: "Toho",
+		doublesTier: "DToho",
+	},
+	hatatehimekaidou: {
+		isNonstandard: "Custom",
+		tier: "Toho",
+		doublesTier: "DToho",
+	},
+	sunnymilk: {
+		isNonstandard: "Custom",
+		tier: "Toho",
+		doublesTier: "DToho",
+	},
+	lunachild: {
+		isNonstandard: "Custom",
+		tier: "Toho",
+		doublesTier: "DToho",
+	},
+	starsapphire: {
+		isNonstandard: "Custom",
+		tier: "Toho",
+		doublesTier: "DToho",
+	},
+	kyoukokasodani: {
+		isNonstandard: "Custom",
+		tier: "Toho",
+		doublesTier: "DToho",
+	},
+	yoshikamiyako: {
+		isNonstandard: "Custom",
+		tier: "Toho",
+		doublesTier: "DToho",
+	},
+	seigakaku: {
+		isNonstandard: "Custom",
+		tier: "Toho",
+		doublesTier: "DToho",
+	},
+	soganotojiko: {
+		isNonstandard: "Custom",
+		tier: "Toho",
+		doublesTier: "DToho",
+	},
+	mononobenofuto: {
+		isNonstandard: "Custom",
+		tier: "Toho",
+		doublesTier: "DToho",
+	},
+	toyosatomiminomiko: {
+		isNonstandard: "Custom",
+		tier: "Toho",
+		doublesTier: "DToho",
+	},
+	mamizoufutatsuiwa: {
+		isNonstandard: "Custom",
+		tier: "Toho",
+		doublesTier: "DToho",
+	},
+	kasenibaraki: {
+		isNonstandard: "Custom",
+		tier: "Toho",
+		doublesTier: "DToho",
+	},
+	hatanokokoro: {
+		isNonstandard: "Custom",
+		tier: "Toho",
+		doublesTier: "DToho",
+	},
+	wakasagihime: {
+		isNonstandard: "Custom",
+		tier: "Toho",
+		doublesTier: "DToho",
+	},
+	sekibanki: {
+		isNonstandard: "Custom",
+		tier: "Toho",
+		doublesTier: "DToho",
+	},
+	kagerouimaizumi: {
+		isNonstandard: "Custom",
+		tier: "Toho",
+		doublesTier: "DToho",
+	},
+	benbentsukumo: {
+		isNonstandard: "Custom",
+		tier: "Toho",
+		doublesTier: "DToho",
+	},
+	yatsuhashitsukumo: {
+		isNonstandard: "Custom",
+		tier: "Toho",
+		doublesTier: "DToho",
+	},
+	seijakijin: {
+		isNonstandard: "Custom",
+		tier: "Toho",
+		doublesTier: "DToho",
+	},
+	shinmyoumarusukuna: {
+		isNonstandard: "Custom",
+		tier: "Toho",
+		doublesTier: "DToho",
+	},
+	raikohorikawa: {
+		isNonstandard: "Custom",
+		tier: "Toho",
+		doublesTier: "DToho",
+	},
+	sumirekousami: {
+		isNonstandard: "Custom",
+		tier: "Toho",
+		doublesTier: "DToho",
+	},
+	seiran: {
+		isNonstandard: "Custom",
+		tier: "Toho",
+		doublesTier: "DToho",
+	},
+	ringo: {
+		isNonstandard: "Custom",
+		tier: "Toho",
+		doublesTier: "DToho",
+	},
+	doremysweet: {
+		isNonstandard: "Custom",
+		tier: "Toho",
+		doublesTier: "DToho",
+	},
+	sagumekishin: {
+		isNonstandard: "Custom",
+		tier: "Toho",
+		doublesTier: "DToho",
+	},
+	clownpiece: {
+		isNonstandard: "Custom",
+		tier: "Toho",
+		doublesTier: "DToho",
+	},
+	junko: {
+		isNonstandard: "Custom",
+		tier: "Toho",
+		doublesTier: "DToho",
+	},
+	hecatiaotherworld: {
+		isNonstandard: "Custom",
+		tier: "Toho",
+		doublesTier: "DToho",
+	},
+	joonyorigami: {
+		isNonstandard: "Custom",
+		tier: "Toho",
+		doublesTier: "DToho",
+	},
+	shionyorigami: {
+		isNonstandard: "Custom",
+		tier: "Toho",
+		doublesTier: "DToho",
+	},
+	eternitylarva: {
+		isNonstandard: "Custom",
+		tier: "Toho",
+		doublesTier: "DToho",
+	},
+	nemunosakata: {
+		isNonstandard: "Custom",
+		tier: "Toho",
+		doublesTier: "DToho",
+	},
+	aunnkomano: {
+		isNonstandard: "Custom",
+		tier: "Toho",
+		doublesTier: "DToho",
+	},
+	narumiyatadera: {
+		isNonstandard: "Custom",
+		tier: "Toho",
+		doublesTier: "DToho",
+	},
+	maiteireida: {
+		isNonstandard: "Custom",
+		tier: "Toho",
+		doublesTier: "DToho",
+	},
+	satononishida: {
+		isNonstandard: "Custom",
+		tier: "Toho",
+		doublesTier: "DToho",
+	},
+	okinamatara: {
+		isNonstandard: "Custom",
+		tier: "Toho",
+		doublesTier: "DToho",
+	},
+	eikaebisu: {
+		isNonstandard: "Custom",
+		tier: "Toho",
+		doublesTier: "DToho",
+	},
+	urumiushizaki: {
+		isNonstandard: "Custom",
+		tier: "Toho",
+		doublesTier: "DToho",
+	},
+	kutakaniwatari: {
+		isNonstandard: "Custom",
+		tier: "Toho",
+		doublesTier: "DToho",
+	},
+	yachiekicchou: {
+		isNonstandard: "Custom",
+		tier: "Toho",
+		doublesTier: "DToho",
+	},
+	mayumijoutouguu: {
+		isNonstandard: "Custom",
+		tier: "Toho",
+		doublesTier: "DToho",
+	},
+	keikihaniyasushin: {
+		isNonstandard: "Custom",
+		tier: "Toho",
+		doublesTier: "DToho",
+	},
+	sakikurokuma: {
+		isNonstandard: "Custom",
+		tier: "Toho",
+		doublesTier: "DToho",
+	},
+	yuumatoutetsu: {
+		isNonstandard: "Custom",
+		tier: "Toho",
+		doublesTier: "DToho",
+	},
+	mikegotoukuji: {
+		isNonstandard: "Custom",
+		tier: "Toho",
+		doublesTier: "DToho",
+	},
+	takaneyamashiro: {
+		isNonstandard: "Custom",
+		tier: "Toho",
+		doublesTier: "DToho",
+	},
+	sannyokomakusa: {
+		isNonstandard: "Custom",
+		tier: "Toho",
+		doublesTier: "DToho",
+	},
+	misumarutamatsukuri: {
+		isNonstandard: "Custom",
+		tier: "Toho",
+		doublesTier: "DToho",
+	},
+	tsukasakudamaki: {
+		isNonstandard: "Custom",
+		tier: "Toho",
+		doublesTier: "DToho",
+	},
+	megumuiizunamaru: {
+		isNonstandard: "Custom",
+		tier: "Toho",
+		doublesTier: "DToho",
+	},
+	chimatatenkyuu: {
+		isNonstandard: "Custom",
+		tier: "Toho",
+		doublesTier: "DToho",
+	},
+	momoyohimemushi: {
+		isNonstandard: "Custom",
+		tier: "Toho",
+		doublesTier: "DToho",
+	},
+	sonbiten: {
+		isNonstandard: "Custom",
+		tier: "Toho",
+		doublesTier: "DToho",
+	},
+	enokomitsugashira: {
+		isNonstandard: "Custom",
+		tier: "Toho",
+		doublesTier: "DToho",
+	},
+	chiyaritenkajin: {
+		isNonstandard: "Custom",
+		tier: "Toho",
+		doublesTier: "DToho",
+	},
+	hisamiyomotsu: {
+		isNonstandard: "Custom",
+		tier: "Toho",
+		doublesTier: "DToho",
+	},
+	zanmunippaku: {
+		isNonstandard: "Custom",
+		tier: "Toho",
+		doublesTier: "DToho",
+	},
+	vivit: {
+		isNonstandard: "Custom",
+		tier: "Toho",
+		doublesTier: "DToho",
 	},
 };

@@ -121,7 +121,7 @@ export const Formats: import('../sim/dex-formats').FormatList = [
 		section: "A Golden Experience",
 	},
 	{
-		name: "[Gen 9] A Golden Experience",
+		name: "[Gen 9] A Golden Experience OU",
 		desc: `A fun metagame where we try to make everything viable, or at least usable. We also have new Fakemons!`,
 		mod: 'gen9agoldenexperience',
 		ruleset: ['Standard NatDex', 'Terastal Clause', 'Z-Move Clause'],

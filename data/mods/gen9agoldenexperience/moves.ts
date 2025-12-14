@@ -3882,6 +3882,10 @@ export const Moves: { [k: string]: ModdedMoveData; } = {
 		contestType: "Beautiful",
 		shortDesc: "100% chance to lower the target's SpA by 1.",
 	},
+	paraboliccharge: {
+		inherit: true,
+		basePower: 75,
+	},
 
 
 

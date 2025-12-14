@@ -21101,7 +21101,7 @@ export const Pokedex: import('../sim/dex-species').SpeciesDataTable = {
 		forme: "Mega-Hisui",
 		types: ["Fire", "Ghost"],
 		genderRatio: {M: 0.875, F: 0.125},
-		baseStats: {hp: 73, atk: 84, def: 118, spa: 144, spd: 120, spe: 95},
+		baseStats: {hp: 73, atk: 74, def: 118, spa: 144, spd: 120, spe: 105},
 		abilities: {0: "Flame Body"},
 		heightm: 1.6,
 		weightkg: 69.8,

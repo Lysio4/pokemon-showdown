@@ -2464,7 +2464,7 @@ export const Pokedex: {[k: string]: ModdedSpeciesData;} = {
 		inherit: true,
 		baseStats: {hp: 95, atk: 124, def: 78, spa: 48, spd: 71, spe: 79},
 	},
-	meowsticmega: {
+	meowsticmmega: {
 		inherit: true,
 		abilities: { 0: "Protean" },
 	},

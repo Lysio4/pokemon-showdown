@@ -3430,7 +3430,7 @@ export const FormatsData: { [k: string]: SpeciesFormatsData; } = {
 		tier: "PU",
 		doublesTier: "DUU",
 	},
-	meowsticmega: {
+	meowsticmmega: {
 		tier: "UU",
 		doublesTier: "DOU",
 	},

@@ -12721,9 +12721,9 @@ export const Pokedex: import('../sim/dex-species').SpeciesDataTable = {
 		evoLevel: 25,
 		eggGroups: ["Field"],
 	},
-	meowsticmega: {
+	meowsticmmega: {
 		num: 678,
-		name: "Meowstic-Mega",
+		name: "Meowstic-M-Mega",
 		baseSpecies: "Meowstic",
 		forme: "Mega",
 		types: ["Psychic"],

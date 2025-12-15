@@ -111755,7 +111755,7 @@ export const Learnsets: import('../sim/dex-species').LearnsetDataTable = {
 			rest: ["9L1"],
 			sleeptalk: ["9L1"],
 			protect: ["9L1"],
-			growth: ["9l1"],
+			growth: ["9L1"],
 		},
 	},
 };

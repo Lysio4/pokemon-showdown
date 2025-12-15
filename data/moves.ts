@@ -23454,6 +23454,7 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 		pp: 10,
 		priority: 0,
 		flags: { protect: 1, mirror: 1, slicing: 1 },
+		ignoreImmunity: true,
 		onModifyMove(move, pokemon, target) {
 			if (!target) return;
 			const atk = pokemon.getStat('atk', false, true);
@@ -23465,10 +23466,6 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 			if (physical > special || (physical === special && this.random(2) === 0)) {
 				move.category = 'Physical';
 				move.flags.contact = 1;
-			}
-			if (!move.ignoreImmunity) move.ignoreImmunity = {};
-			if (move.ignoreImmunity !== true) {
-				move.ignoreImmunity['Psychic'] = true;
 			}
 		},
 		onHit(target, source, move) {
@@ -24608,16 +24605,10 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 		flags: {protect: 1, mirror: 1, sound: 1, bypasssub: 1, metronome: 1},
 		secondary: null,
 		ignoreAbility: true,
+		ignoreImmunity: true,
 		onPrepareHit(target, source) {
 			this.attrLastMove('[still]');
 			this.add('-anim', source, "Boomburst", target);
-		},
-		onModifyMove(move, pokemon, target) {
-			let type = move.type;
-			if (!move.ignoreImmunity) move.ignoreImmunity = {};
-			if (move.ignoreImmunity !== true) {
-				move.ignoreImmunity[type] = true;
-			}
 		},
 		onEffectiveness(typeMod, target, type) {
 			if (target.getMoveHitData(move).typeMod < 0) return 0;
@@ -24724,12 +24715,7 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 		pp: 20,
 		priority: 0,
 		flags: {protect: 1, mirror: 1, metronome: 1},
-		onModifyMove(move, pokemon, target) {
-			if (!move.ignoreImmunity) move.ignoreImmunity = {};
-			if (move.ignoreImmunity !== true) {
-				move.ignoreImmunity['Poison'] = true;
-			}
-		},
+		ignoreImmunity: true,
 		onEffectiveness(typeMod, target, type) {
 			if (type === 'Steel') return 1;
 		},

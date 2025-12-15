@@ -1595,13 +1595,9 @@ export const Pokedex: {[k: string]: ModdedSpeciesData;} = {
 		inherit: true,
 		abilities: { 0: "Levitate" },
 	},
-	lucario: {
-		inherit: true,
-		abilities: {0: "Chakra Surge", 1: "Inner Focus", H: "Justified"},
-	},
 	lucariomegaz: {
 		inherit: true,
-		abilities: { 0: "Mega Launcher" },
+		abilities: { 0: "Inner Focus" },
 	},
 	drapion: {
 		inherit: true,
@@ -2306,11 +2302,11 @@ export const Pokedex: {[k: string]: ModdedSpeciesData;} = {
 	},
 	mienfoo: {
 		inherit: true,
-		abilities: {0: "Striker", 1: "Regenerator", H: "Reckless"},
+		abilities: {0: "Striker", 1: "Regenerator", H: "Chakra Surge"},
 	},
 	mienshao: {
 		inherit: true,
-		abilities: {0: "Striker", 1: "Regenerator", H: "Reckless"},
+		abilities: {0: "Striker", 1: "Regenerator", H: "Chakra Surge"},
 	},
 	golurkmega: {
 		inherit: true,
@@ -4266,7 +4262,7 @@ export const Pokedex: {[k: string]: ModdedSpeciesData;} = {
 		name: "Mystao",
 		types: ["Fighting"],
 		baseStats: {hp: 77, atk: 117, def: 77, spa: 117, spd: 77, spe: 107},
-		abilities: {0: "Arcane Mastery"},
+		abilities: {0: "Arcane Mastery", H: "Chakra Surge"},
 		heightm: 1.7,
 		weightkg: 50,
 		eggGroups: ["Human-Like"],

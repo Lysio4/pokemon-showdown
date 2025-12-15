@@ -276,11 +276,11 @@ export const FormatsData: { [k: string]: SpeciesFormatsData; } = {
 		doublesTier: "DOU",
 	},
 	clefable: {
-		tier: "UU",
+		tier: "OU",
 		doublesTier: "DUU",
 	},
 	clefablemega: {
-		tier: "UU",
+		tier: "(OU)",
 		doublesTier: "DUU",
 	},
 	vulpix: {
@@ -1919,7 +1919,7 @@ export const FormatsData: { [k: string]: SpeciesFormatsData; } = {
 	castformsnowy: {
 	},
 	castformmega: {
-		tier: "OU",
+		tier: "UU",
 		doublesTier: "DOU",
 	},
 	kecleon: {
@@ -2325,7 +2325,7 @@ export const FormatsData: { [k: string]: SpeciesFormatsData; } = {
 		doublesTier: "DUU",
 	},
 	garchompmega: {
-		tier: "(OU)",
+		tier: "OU",
 		doublesTier: "DUU",
 	},
 	garchompmegaz: {
@@ -2336,7 +2336,7 @@ export const FormatsData: { [k: string]: SpeciesFormatsData; } = {
 		tier: "LC",
 	},
 	lucario: {
-		tier: "RUBL",
+		tier: "RU",
 		doublesTier: "DUU",
 	},
 	lucariomega: {
@@ -2344,7 +2344,7 @@ export const FormatsData: { [k: string]: SpeciesFormatsData; } = {
 		doublesTier: "DUU",
 	},
 	lucariomegaz: {
-		tier: "Uber",
+		tier: "OU",
 		doublesTier: "DUU",
 	},
 	hippopotas: {
@@ -4696,7 +4696,7 @@ export const FormatsData: { [k: string]: SpeciesFormatsData; } = {
 		tier: "NFE",
 	},
 	meowscarada: {
-		tier: "UUBL",
+		tier: "UU",
 		doublesTier: "DUU",
 	},
 	meowscaradamega: {

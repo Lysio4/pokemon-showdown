@@ -22423,7 +22423,7 @@ export const Pokedex: import('../sim/dex-species').SpeciesDataTable = {
 		name: "Mystao",
 		types: ["Fighting"],
 		baseStats: {hp: 77, atk: 117, def: 77, spa: 117, spd: 77, spe: 107},
-		abilities: {0: "Arcane Mastery"},
+		abilities: {0: "Arcane Mastery", H: "Chakra Surge"},
 		heightm: 1.7,
 		weightkg: 50,
 		eggGroups: ["Human-Like"],

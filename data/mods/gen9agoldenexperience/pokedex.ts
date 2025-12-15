@@ -1597,7 +1597,7 @@ export const Pokedex: {[k: string]: ModdedSpeciesData;} = {
 	},
 	lucariomegaz: {
 		inherit: true,
-		abilities: { 0: "Inner Focus" },
+		abilities: { 0: "Mind's Eye" },
 	},
 	drapion: {
 		inherit: true,

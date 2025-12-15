@@ -120,7 +120,7 @@ export const Pokedex: {[k: string]: ModdedSpeciesData;} = {
 	},
 	raichumegax: {
 		inherit: true,
-		abilities: { 0: "Levitate" },
+		abilities: { 0: "Galvanize" },
 	},
 	raichumegay: {
 		inherit: true,
@@ -3269,7 +3269,7 @@ export const Pokedex: {[k: string]: ModdedSpeciesData;} = {
 	},
 	falinksmega: {
 		inherit: true,
-		abilities: { 0: "Simple" },
+		abilities: { 0: "Multiheaded" },
 	},
 	pincurchin: {
 		inherit: true,

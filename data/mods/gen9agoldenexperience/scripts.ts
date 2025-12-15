@@ -1543,8 +1543,6 @@ export const Scripts: ModdedBattleScriptsData = {
     this.modData('Learnsets', 'bibarel').learnset.earthquake = ['9L1'];
     this.modData('Learnsets', 'bibarel').learnset.icefang = ['9L1'];
     this.modData('Learnsets', 'bibarel').learnset.trailblaze = ['9L1'];
-    this.modData('Learnsets', 'luxray').learnset.suckerpunch = ['9L1'];
-    this.modData('Learnsets', 'luxray').learnset.pursuit = ['9L1'];
     this.modData('Learnsets', 'roserade').learnset.quiverdance = ['9L1'];
     this.modData('Learnsets', 'roserade').learnset.poisonivy = ['9L1'];
     this.modData('Learnsets', 'roserade').learnset.mudshot = ['9L1'];
@@ -1627,6 +1625,7 @@ export const Scripts: ModdedBattleScriptsData = {
     this.modData('Learnsets', 'lickilicky').learnset.slackoff = ['9L1'];
     this.modData('Learnsets', 'tangrowth').learnset.stealthrock = ['9L1'];
     this.modData('Learnsets', 'electivire').learnset.doubleshock = ['9L1'];
+    this.modData('Learnsets', 'electivire').learnset.drainpunch = ['9L1'];
     this.modData('Learnsets', 'magmortar').learnset.scald = ['9L1'];
     this.modData('Learnsets', 'magmortar').learnset.recover = ['9L1'];
     this.modData('Learnsets', 'magmortar').learnset.energyball = ['9L1'];
@@ -1693,7 +1692,6 @@ export const Scripts: ModdedBattleScriptsData = {
 
     // Gen 5:
     this.modData('Learnsets', 'serperior').learnset.hurricane = ['9L1'];
-    this.modData('Learnsets', 'emboar').learnset.ragingfury = ['9L1'];
     this.modData('Learnsets', 'emboar').learnset.supercellslam = ['9L1'];
     this.modData('Learnsets', 'emboar').learnset.submission = ['9L1'];
     this.modData('Learnsets', 'emboar').learnset.vacuumwave = ['9L1']; // ZA addition
@@ -2027,8 +2025,6 @@ export const Scripts: ModdedBattleScriptsData = {
     this.modData('Learnsets', 'runerigus').learnset.partingshot = ['9L1']; // ZA addition
     this.modData('Learnsets', 'runerigus').learnset.knockoff = ['9L1']; // ZA addition
     this.modData('Learnsets', 'alcremie').learnset.moonblast = ['9L1'];
-    this.modData('Learnsets', 'falinks').learnset.sacredsword = ['9L1'];
-    delete this.modData('Learnsets', 'falinks').learnset.swordsdance;
     this.modData('Learnsets', 'pincurchin').learnset.voltswitch = ['9L1'];
     this.modData('Learnsets', 'frosmoth').learnset.roost = ['9L1'];
     this.modData('Learnsets', 'frosmoth').learnset.freezedry = ['9L1'];

@@ -3886,6 +3886,18 @@ export const Moves: { [k: string]: ModdedMoveData; } = {
 		inherit: true,
 		basePower: 75,
 	},
+	noretreat: {
+		inherit: true,
+		boosts: {
+			atk: 2,
+			def: 2,
+			spa: 2,
+			spd: 2,
+			spe: 2,
+		},
+		desc: "Raises the user's Attack, Defense, Special Attack, Special Defense, and Speed by 2 stages, but it becomes prevented from switching out. The user can still switch out if it uses Baton Pass, Flip Turn, Parting Shot, Teleport, U-turn, or Volt Switch. Fails if the user has already been prevented from switching by this effect.",
+		shortDesc: "Raises all stats by 2 (not acc/eva). Traps user.",
+	},
 
 
 

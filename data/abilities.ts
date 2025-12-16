@@ -7895,6 +7895,22 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 		rating: 3,
 		num: -103,
 	},
+	meltingheart: {
+		onDamagingHit(damage, target, source, move) {
+			this.field.setWeather('sunnyday');
+		},
+		onTryHit(target, source, move) {
+			if (target !== source && move.type === 'Water') {
+				this.add('-immune', target, '[from] ability: Melting Heart');
+				return null;
+			}
+		},
+		shortDesc: "This Pokemon is immune to Water type moves. When this Pokemon is hit by an attack, the effect of Sunny Day begins.",
+		flags: {},
+		name: "Melting Heart",
+		rating: 1,
+		num: -104,
+	},
 	// Touhou
 	hakkero: {
 		//effect in conditions.ts

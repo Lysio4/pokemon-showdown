@@ -23865,6 +23865,7 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 		priority: 0,
 		flags: { protect: 1, mirror: 1 },
 		multihit: [2, 5],
+		ignoreImmunity: true,
 		onPrepareHit(target, source) {
 			this.attrLastMove('[still]');
 			this.add('-anim', source, "Swift", target);
@@ -23875,13 +23876,6 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 				return move.basePower * 2;
 			}
 			return move.basePower;
-		},
-		onModifyMove(move, pokemon, target) {
-			let type = move.type;
-			if (!move.ignoreImmunity) move.ignoreImmunity = {};
-			if (move.ignoreImmunity !== true) {
-				move.ignoreImmunity[type] = true;
-			}
 		},
 		secondary: null,
 		target: "normal",

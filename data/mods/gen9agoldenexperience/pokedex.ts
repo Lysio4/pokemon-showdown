@@ -1759,7 +1759,7 @@ export const Pokedex: {[k: string]: ModdedSpeciesData;} = {
 	},
 	heatranmega: {
 		inherit: true,
-		abilities: { 0: "Evaporate" },
+		abilities: { 0: "Melting Heart" },
 	},
 	regigigas: {
 		inherit: true,

@@ -1694,7 +1694,7 @@ export const FormatsData: { [k: string]: SpeciesFormatsData; } = {
 		tier: "NFE",
 	},
 	medichammega: {
-		tier: "OU",
+		tier: "UUBL",
 		doublesTier: "DUU",
 	},
 	mediyumi: {
@@ -2613,7 +2613,7 @@ export const FormatsData: { [k: string]: SpeciesFormatsData; } = {
 		doublesTier: "DUU",
 	},
 	samurotthisui: {
-		tier: "UU",
+		tier: "OU",
 		doublesTier: "DUU",
 	},
 	samurottgalar: {
@@ -3326,7 +3326,7 @@ export const FormatsData: { [k: string]: SpeciesFormatsData; } = {
 		tier: "NFE",
 	},
 	greninja: {
-		tier: "OU",
+		tier: "UU",
 		doublesTier: "DUU",
 	},
 	greninjamega: {

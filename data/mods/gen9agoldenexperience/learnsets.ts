@@ -2145,7 +2145,7 @@ export const Learnsets: { [speciesid: string]: LearnsetData; } = {
 			gigaimpact: ["9M"],
 			golemstrike: ["9M"],
 			helpinghand: ["9M"],
-			houndshowl: ["9L30"]
+			houndshowl: ["9L30"],
 			howl: ["9L16"],
 			hypervoice: ["9M"],
 			irondefense: ["9M"],

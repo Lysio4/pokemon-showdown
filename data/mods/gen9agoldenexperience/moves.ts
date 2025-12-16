@@ -3878,6 +3878,32 @@ export const Moves: { [k: string]: ModdedMoveData; } = {
 		desc: "Raises the user's Attack, Defense, Special Attack, Special Defense, and Speed by 2 stages, but it becomes prevented from switching out. The user can still switch out if it uses Baton Pass, Flip Turn, Parting Shot, Teleport, U-turn, or Volt Switch. Fails if the user has already been prevented from switching by this effect.",
 		shortDesc: "Raises all stats by 2 (not acc/eva). Traps user.",
 	},
+	fullmoonstrike: {
+		num: -99,
+		accuracy: 100,
+		basePower: 120,
+		category: "Physical",
+		name: "Full Moon Strike",
+		pp: 5,
+		priority: 0,
+		flags: { contact: 1, protect: 1, mirror: 1, metronome: 1 },
+		self: {
+			boosts: {
+				def: -1,
+				spd: -1,
+			},
+		},
+		onPrepareHit(target, source) {
+			this.attrLastMove('[still]');
+			this.add('-anim', source, "Head Smash", target);
+		},
+		secondary: null,
+		target: "normal",
+		type: "Rock",
+		contestType: "Tough",
+		desc: "Lowers the user's Defense and Special Defense by 1 stage.",
+		shortDesc: "Lowers the user's Defense and Sp. Def by 1.",
+	},
 
 
 

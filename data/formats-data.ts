@@ -6429,6 +6429,10 @@ export const FormatsData: import('../sim/dex-species').SpeciesFormatsDataTable =
 		isNonstandard: "Custom",
 		tier: "Illegal",
 	},
+	lycanrocbloodmoon: {
+		isNonstandard: "Custom",
+		tier: "Illegal",
+	},
 	salazzlemega: {
 		isNonstandard: "Custom",
 		tier: "Illegal",

@@ -3799,6 +3799,10 @@ export const FormatsData: { [k: string]: SpeciesFormatsData; } = {
 		tier: "PU",
 		doublesTier: "DUU",
 	},
+	lycanrocbloodmoon: {
+		tier: "UU",
+		doublesTier: "DUU",
+	},
 	lycanrocdusk: {
 		tier: "OU",
 		doublesTier: "DUU",

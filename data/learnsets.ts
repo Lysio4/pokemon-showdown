@@ -100259,8 +100259,9 @@ export const Learnsets: import('../sim/dex-species').LearnsetDataTable = {
 			focuspunch: ["9M"],
 			foulplay: ["9M"],
 			frustration: ["9M"],
-			fullmoonstrike: ["9L70"]
+			fullmoonstrike: ["9L70"],
 			gigaimpact: ["9M"],
+			golemstrike: ["9M"],
 			helpinghand: ["9M"],
 			houndshowl: ["9L30"]
 			howl: ["9L16"],
@@ -100273,6 +100274,7 @@ export const Learnsets: import('../sim/dex-species').LearnsetDataTable = {
 			leer: ["9L1"],
 			lick: ["9L1"],
 			lowsweep: ["9M"],
+			moonlight: ["9L17"],
 			mudslap: ["9M"],
 			nastyplot: ["9M"],
 			nightmare: ["9L4"],

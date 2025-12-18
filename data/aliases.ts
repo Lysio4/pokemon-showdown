@@ -142,8 +142,6 @@ export const Aliases: import('../sim/dex').AliasesTable = {
 	megasaur: "Venusaur-Mega",
 	megazygardecomplete: "Zygarde-Mega",
 	zygardecompletemega: "Zygarde-Mega",
-	// custom
-	sawsbuckmega: "Sawsbuck-Spring-Mega",
 
 	// Pokéstar Studios --- 1st ordered alphabetically by species, 2nd by alias
 	blackdoor: "Pokestar Black Door",

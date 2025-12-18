@@ -214,7 +214,7 @@ export const Formats: import('../sim/dex-formats').FormatList = [
 			'Lunala', 'Magearna', 'Marshadow', 'Melmetal', 'Mewtwo', 'Miraidon', 'Naganadel', 'Necrozma-Dawn-Wings', 'Necrozma-Dusk-Mane', 'Noivern', 'Palkia', 'Palkia-Origin', 'Pheromosa', 'Raging Bolt', 'Rayquaza',
 			'Regigigas', 'Reshiram', 'Salamence-Mega', 'Shaymin-Sky', 'Shedinja', 'Slaking', 'Sneasler', 'Solgaleo', 'Spectrier', 'Urshifu', 'Urshifu-Rapid-Strike', 'Weavile', 'Xerneas', 'Xurkitree', 'Yveltal', 'Zacian',
 			'Zacian-Crowned', 'Zekrom', 'Zeraora', 'Zygarde-50%', 'Comatose', 'Contrary', 'Fur Coat', 'Good as Gold', 'Explosive', 'Gorilla Tactics', 'Huge Power', 'Hydrophilic', 'Ice Scales', 'Illusion', 'Imposter', 'Innards Out',
-			'Intrepid Sword', 'Light Power', 'Magic Bounce', 'Magnet Pull', 'Moody', 'Neutralizing Gas', 'Orichalcum Pulse', 'Parental Bond', 'Poison Heal', 'Pure Power', 'Rickroll', 'Shadow Tag', 'Simple', 'Speed Boost', 'Stakeout', 
+			'Intrepid Sword', 'Light Power', 'Magic Bounce', 'Magnet Pull', 'Moody', 'Neutralizing Gas', 'Orichalcum Pulse', 'Parental Bond', 'Poison Heal', 'Pure Power', 'Shadow Tag', 'Simple', 'Speed Boost', 'Stakeout', 
 			'Strong Will', 'Triage', 'Unburden', 'Water Bubble', 'Wonder Guard', 'Wonder Skin', 'King\'s Rock', 'Light Clay', 'Baton Pass', 'Electrify', 'Last Respects', 'Shed Tail',
 		],
 		unbanlist: ['Battle Bond', 'Greninja-Bond', 'Light of Ruin'],

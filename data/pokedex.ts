@@ -21563,7 +21563,7 @@ export const Pokedex: import('../sim/dex-species').SpeciesDataTable = {
     },
 	sawsbuckspringmega: {
 		num: 586,
-		name: "Sawsbuck-Mega",
+		name: "Sawsbuck-Spring-Mega",
 		baseSpecies: "Sawsbuck",
 		forme: "Mega-Spring",
 		types: ["Fairy", "Grass"],

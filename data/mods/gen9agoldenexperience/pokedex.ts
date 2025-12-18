@@ -2254,7 +2254,7 @@ export const Pokedex: {[k: string]: ModdedSpeciesData;} = {
 	},
 	sawsbuckspringmega: {
 		num: 586,
-		name: "Sawsbuck-Mega",
+		name: "Sawsbuck-Spring-Mega",
 		baseSpecies: "Sawsbuck",
 		forme: "Mega-Spring",
 		types: ["Fairy", "Grass"],
@@ -2265,6 +2265,7 @@ export const Pokedex: {[k: string]: ModdedSpeciesData;} = {
 		color: "Brown",
 		eggGroups: ["Field"],
 		requiredItem: "Sawsbuckite",
+		battleOnly: "Sawsbuck",
 	},
 	sawsbucksummermega: {
 		num: 586,

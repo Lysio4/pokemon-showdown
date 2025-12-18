@@ -503,6 +503,21 @@ export const Items: {[itemid: string]: ModdedItemData} = {
 		desc: "If held by a Zoroark, this item allows it to Mega Evolve in battle.",
 		isNonstandard: null,
 	},
+	sawsbuckite: {
+		name: "Sawsbuckite",
+		spritenum: 613,
+		megaStone: "Sawsbuck-Mega",
+		megaEvolves: "Sawsbuck",
+		itemUser: ["Sawsbuck", "Sawsbuck-Summer", "Sawsbuck-Autumn", "Sawsbuck-Winter"],
+		onTakeItem(item, source) {
+			if (item.megaEvolves === source.baseSpecies.baseSpecies) return false;
+			return true;
+		},
+		num: -22,
+		gen: 9,
+		desc: "If held by a Sawsbuck, this item allows it to Mega Evolve in battle.",
+		isNonstandard: null,
+	},
 	ribombinite: {
 		name: "Ribombinite",
 		spritenum: 578,
@@ -513,7 +528,7 @@ export const Items: {[itemid: string]: ModdedItemData} = {
 			if (item.megaEvolves === source.baseSpecies.baseSpecies) return false;
 			return true;
 		},
-		num: -22,
+		num: -23,
 		gen: 9,
 		desc: "If held by a Ribombee, this item allows it to Mega Evolve in battle.",
 		isNonstandard: null,
@@ -528,7 +543,7 @@ export const Items: {[itemid: string]: ModdedItemData} = {
 			if (item.megaEvolves === source.baseSpecies.baseSpecies) return false;
 			return true;
 		},
-		num: -23,
+		num: -24,
 		gen: 9,
 		desc: "If held by a Salazzle, this item allows it to Mega Evolve in battle.",
 		isNonstandard: null,
@@ -543,7 +558,7 @@ export const Items: {[itemid: string]: ModdedItemData} = {
 			if (item.megaEvolves === source.baseSpecies.baseSpecies) return false;
 			return true;
 		},
-		num: -24,
+		num: -25,
 		gen: 9,
 		desc: "If held by a Dhelmise, this item allows it to Mega Evolve in battle.",
 		isNonstandard: null,
@@ -557,7 +572,7 @@ export const Items: {[itemid: string]: ModdedItemData} = {
 			if (item.megaEvolves === source.baseSpecies.baseSpecies) return false;
 			return true;
 		},
-		num: -25,
+		num: -26,
 		gen: 9,
 		desc: "If held by a Cramorant, this item allows it to Mega Evolve in battle.",
 		isNonstandard: null,
@@ -572,7 +587,7 @@ export const Items: {[itemid: string]: ModdedItemData} = {
 			if (item.megaEvolves === source.baseSpecies.baseSpecies) return false;
 			return true;
 		},
-		num: -26,
+		num: -27,
 		gen: 9,
 		desc: "If held by a Toxtricity, this item allows it to Mega Evolve in battle.",
 		isNonstandard: null,
@@ -587,7 +602,7 @@ export const Items: {[itemid: string]: ModdedItemData} = {
 			if (item.megaEvolves === source.baseSpecies.baseSpecies) return false;
 			return true;
 		},
-		num: -27,
+		num: -28,
 		gen: 9,
 		desc: "If held by a Centiskorch, this item allows it to Mega Evolve in battle.",
 		isNonstandard: null,
@@ -602,7 +617,7 @@ export const Items: {[itemid: string]: ModdedItemData} = {
 			if (item.megaEvolves === source.baseSpecies.baseSpecies) return false;
 			return true;
 		},
-		num: -28,
+		num: -29,
 		gen: 9,
 		desc: "If held by a Centiskorch, this item allows it to Mega Evolve in battle.",
 		isNonstandard: null,
@@ -617,7 +632,7 @@ export const Items: {[itemid: string]: ModdedItemData} = {
 			if (item.megaEvolves === source.baseSpecies.baseSpecies) return false;
 			return true;
 		},
-		num: -29,
+		num: -30,
 		gen: 9,
 		desc: "If held by a Centiskorch, this item allows it to Mega Evolve in battle.",
 		isNonstandard: null,
@@ -632,7 +647,7 @@ export const Items: {[itemid: string]: ModdedItemData} = {
 			if (item.megaEvolves === source.baseSpecies.baseSpecies) return false;
 			return true;
 		},
-		num: -30,
+		num: -31,
 		gen: 9,
 		desc: "If held by a Kleavor, this item allows it to Mega Evolve in battle.",
 		isNonstandard: null,
@@ -646,7 +661,7 @@ export const Items: {[itemid: string]: ModdedItemData} = {
 			if (item.megaEvolves === source.baseSpecies.baseSpecies) return false;
 			return true;
 		},
-		num: -31,
+		num: -32,
 		gen: 9,
 		desc: "If held by a Meowscarada, this item allows it to Mega Evolve in battle.",
 		isNonstandard: null,
@@ -661,7 +676,7 @@ export const Items: {[itemid: string]: ModdedItemData} = {
 			if (item.megaEvolves === source.baseSpecies.baseSpecies) return false;
 			return true;
 		},
-		num: -32,
+		num: -33,
 		gen: 9,
 		desc: "If held by a Skeledirge, this item allows it to Mega Evolve in battle.",
 		isNonstandard: null,
@@ -675,7 +690,7 @@ export const Items: {[itemid: string]: ModdedItemData} = {
 			if (item.megaEvolves === source.baseSpecies.baseSpecies) return false;
 			return true;
 		},
-		num: -33,
+		num: -34,
 		gen: 9,
 		desc: "If held by a Quaquaval, this item allows it to Mega Evolve in battle.",
 		isNonstandard: null,
@@ -690,7 +705,7 @@ export const Items: {[itemid: string]: ModdedItemData} = {
 			if (item.megaEvolves === source.baseSpecies.baseSpecies) return false;
 			return true;
 		},
-		num: -34,
+		num: -35,
 		gen: 9,
 		desc: "If held by a Rabsca, this item allows it to Mega Evolve in battle.",
 		isNonstandard: null,
@@ -705,7 +720,7 @@ export const Items: {[itemid: string]: ModdedItemData} = {
 			if (item.megaEvolves === source.baseSpecies.baseSpecies) return false;
 			return true;
 		},
-		num: -35,
+		num: -36,
 		gen: 9,
 		desc: "If held by a Brambleghast, this item allows it to Mega Evolve in battle.",
 		isNonstandard: null,
@@ -720,7 +735,7 @@ export const Items: {[itemid: string]: ModdedItemData} = {
 			if (item.megaEvolves === source.baseSpecies.baseSpecies) return false;
 			return true;
 		},
-		num: -36,
+		num: -37,
 		gen: 9,
 		desc: "If held by a Baskiron, this item allows it to Mega Evolve in battle.",
 		isNonstandard: null,
@@ -735,7 +750,7 @@ export const Items: {[itemid: string]: ModdedItemData} = {
 			if (item.megaEvolves === source.baseSpecies.baseSpecies) return false;
 			return true;
 		},
-		num: -37,
+		num: -38,
 		gen: 9,
 		desc: "If held by a Terreptile, this item allows it to Mega Evolve in battle.",
 		isNonstandard: null,
@@ -750,7 +765,7 @@ export const Items: {[itemid: string]: ModdedItemData} = {
 			if (item.megaEvolves === source.baseSpecies.baseSpecies) return false;
 			return true;
 		},
-		num: -38,
+		num: -39,
 		gen: 9,
 		desc: "If held by a Rockster, this item allows it to Mega Evolve in battle.",
 		isNonstandard: null,
@@ -765,7 +780,7 @@ export const Items: {[itemid: string]: ModdedItemData} = {
 			if (item.megaEvolves === source.baseSpecies.baseSpecies) return false;
 			return true;
 		},
-		num: -39,
+		num: -40,
 		gen: 9,
 		desc: "If held by a Infarmatem, this item allows it to Mega Evolve in battle.",
 		isNonstandard: null,

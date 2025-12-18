@@ -7293,23 +7293,6 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 		desc: "This Pokemon does not take recoil damage, except Struggle. Does not affect Life Orb damage or crash damage. If this Pokemon is at more than half HP, it survives one hit with at least 1 HP. OHKO moves fail when used against this Pokemon.",
 		shortDesc: "This Pokemon does not take recoil damage besides Struggle/Life Orb/crash damage. If this Pokemon is at >= 50% HP, it survives one hit with at least 1 HP. Immune to OHKO.",
 	},
-	seasonpass: {
-		onPrepareHit(source, target, move) {
-			if (move.hasBounced || move.flags['futuremove'] || move.sourceEffect === 'snatch' || move.callsMove) return;
-			const allTypes = ['Ghost', 'Fire', 'Fairy', 'Ice'];
-			const type = move.type;
-			if (type && type !== '???' && source.getTypes()[0] !== type && allTypes.includes(type)) {
-				if (!source.addType(type)) return;
-				this.add('-start', source, 'typeadd', type, '[from] ability: Season Pass');
-			}
-		},
-		rating: 4.5,
-		flags: {},
-		name: "Season Pass",
-		num: -79,
-		desc: "This Pokemon gets a new type when using a Ghost/Fire/Fairy/Ice type move. This effect comes after all effects that change a move's type.",
-		shortDesc: "This Pokemon gets a type if using a Ghost/Fire/Fairy/Ice move.",
-	},
 	bitterhatred: {
 		shortDesc: "Deal 10% bonus damage for each hit taken (up to 50%)",
 		onStart(pokemon) {

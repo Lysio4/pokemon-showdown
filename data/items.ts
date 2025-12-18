@@ -8355,7 +8355,7 @@ export const Items: import('../sim/dex-items').ItemDataTable = {
 		shortDesc: "Tries to para the holder.",
 		num: -1,
 		gen: 4,
-		isNonstandard: "Future",
+		isNonstandard: "Custom",
 	},
 	frozenorb: {
 		name: "Frozen Orb",
@@ -8373,7 +8373,7 @@ export const Items: import('../sim/dex-items').ItemDataTable = {
 		shortDesc: "Tries to freeze the holder.",
 		num: -2,
 		gen: 4,
-		isNonstandard: "Future",
+		isNonstandard: "Custom",
 	},
 	nullifyorb: {
 		name: "Nullify Orb",
@@ -8387,7 +8387,7 @@ export const Items: import('../sim/dex-items').ItemDataTable = {
 		},
 		num: -3,
 		gen: 9,
-		isNonstandard: "Future",
+		isNonstandard: "Custom",
 	},
 
 	//mega stones
@@ -8404,7 +8404,7 @@ export const Items: import('../sim/dex-items').ItemDataTable = {
 		num: -4,
 		gen: 9,
 		desc: "If held by a Venusaur, this item allows it to Mega Evolve in battle.",
-		isNonstandard: "Future",
+		isNonstandard: "Custom",
 	},
 	blastoisinitex: {
 		name: "Blastoisinite X",
@@ -8419,7 +8419,7 @@ export const Items: import('../sim/dex-items').ItemDataTable = {
 		num: -5,
 		gen: 9,
 		desc: "If held by a Blastoise, this item allows it to Mega Evolve in battle.",
-		isNonstandard: "Future",
+		isNonstandard: "Custom",
 	},
 	butterfrite: {
 		name: "Butterfrite",
@@ -8434,7 +8434,7 @@ export const Items: import('../sim/dex-items').ItemDataTable = {
 		num: -6,
 		gen: 9,
 		desc: "If held by a Butterfree, this item allows it to Mega Evolve in battle.",
-		isNonstandard: "Future",
+		isNonstandard: "Custom",
 	},
 	wigglytite: {
 		name: "Wigglytite",
@@ -8449,7 +8449,7 @@ export const Items: import('../sim/dex-items').ItemDataTable = {
 		num: -7,
 		gen: 9,
 		desc: "If held by a Wigglytuff, this item allows it to Mega Evolve in battle.",
-		isNonstandard: "Future",
+		isNonstandard: "Custom",
 	},
 	machampite: {
 		name: "Machampite",
@@ -8464,7 +8464,7 @@ export const Items: import('../sim/dex-items').ItemDataTable = {
 		num: -8,
 		gen: 9,
 		desc: "If held by a Machamp, this item allows it to Mega Evolve in battle.",
-		isNonstandard: "Future",
+		isNonstandard: "Custom",
 	},
 	typhlosionite: {
 		name: "Typhlosionite",
@@ -8479,7 +8479,7 @@ export const Items: import('../sim/dex-items').ItemDataTable = {
 		num: -9,
 		gen: 9,
 		desc: "If held by a Typhlosion or a Typhlosion-Hisui, this item allows it to Mega Evolve in battle.",
-		isNonstandard: "Future",
+		isNonstandard: "Custom",
 	},
 	noctowlite: {
 		name: "Noctowlite",
@@ -8494,7 +8494,7 @@ export const Items: import('../sim/dex-items').ItemDataTable = {
 		num: -10,
 		gen: 9,
 		desc: "If held by a Noctowl, this item allows it to Mega Evolve in battle.",
-		isNonstandard: "Future",
+		isNonstandard: "Custom",
 	},
 	crobatite: {
 		name: "Crobatite",
@@ -8509,7 +8509,7 @@ export const Items: import('../sim/dex-items').ItemDataTable = {
 		num: -11,
 		gen: 9,
 		desc: "If held by a Crobat, this item allows it to Mega Evolve in battle.",
-		isNonstandard: "Future",
+		isNonstandard: "Custom",
 	},
 	flygonite: {
 		name: "Flygonite",
@@ -8524,7 +8524,7 @@ export const Items: import('../sim/dex-items').ItemDataTable = {
 		num: -12,
 		gen: 9,
 		desc: "If held by a Flygon, this item allows it to Mega Evolve in battle.",
-		isNonstandard: "Future",
+		isNonstandard: "Custom",
 	},
 	cacturnite: {
 		name: "Cacturnite",
@@ -8539,7 +8539,7 @@ export const Items: import('../sim/dex-items').ItemDataTable = {
 		num: -13,
 		gen: 9,
 		desc: "If held by a Cacturne, this item allows it to Mega Evolve in battle.",
-		isNonstandard: "Future",
+		isNonstandard: "Custom",
 	},
 	whiscashite: {
 		name: "Whiscashite",
@@ -8554,7 +8554,7 @@ export const Items: import('../sim/dex-items').ItemDataTable = {
 		num: -14,
 		gen: 9,
 		desc: "If held by a Whiscash, this item allows it to Mega Evolve in battle.",
-		isNonstandard: "Future",
+		isNonstandard: "Custom",
 	},
 	castformite: {
 		name: "Castformite",
@@ -8569,7 +8569,7 @@ export const Items: import('../sim/dex-items').ItemDataTable = {
 		num: -15,
 		gen: 9,
 		desc: "If held by a Castform, this item allows it to Mega Evolve in battle.",
-		isNonstandard: "Future",
+		isNonstandard: "Custom",
 	},
 	yanmeganite: {
 		name: "Yanmeganite",
@@ -8584,7 +8584,7 @@ export const Items: import('../sim/dex-items').ItemDataTable = {
 		num: -16,
 		gen: 9,
 		desc: "If held by a Yanmega, this item allows it to Mega Evolve in battle.",
-		isNonstandard: "Future",
+		isNonstandard: "Custom",
 	},
 	serperiorite: {
 		name: "Serperiorite",
@@ -8599,7 +8599,7 @@ export const Items: import('../sim/dex-items').ItemDataTable = {
 		num: -17,
 		gen: 9,
 		desc: "If held by a Serperior, this item allows it to Mega Evolve in battle.",
-		isNonstandard: "Future",
+		isNonstandard: "Custom",
 	},
 	samurottite: {
 		name: "Samurottite",
@@ -8614,7 +8614,7 @@ export const Items: import('../sim/dex-items').ItemDataTable = {
 		num: -18,
 		gen: 9,
 		desc: "If held by a Samurott, this item allows it to Mega Evolve in battle.",
-		isNonstandard: "Future",
+		isNonstandard: "Custom",
 	},
 	krookodite: {
 		name: "Krookodite",
@@ -8629,7 +8629,7 @@ export const Items: import('../sim/dex-items').ItemDataTable = {
 		num: -19,
 		gen: 9,
 		desc: "If held by a Krookodile, this item allows it to Mega Evolve in battle.",
-		isNonstandard: "Future",
+		isNonstandard: "Custom",
 	},
 	crustlite: {
 		name: "Crustlite",
@@ -8644,7 +8644,7 @@ export const Items: import('../sim/dex-items').ItemDataTable = {
 		num: -20,
 		gen: 9,
 		desc: "If held by a Crustle, this item allows it to Mega Evolve in battle.",
-		isNonstandard: "Future",
+		isNonstandard: "Custom",
 	},
 	zoroarkite: {
 		name: "Zoroarkite",
@@ -8659,7 +8659,22 @@ export const Items: import('../sim/dex-items').ItemDataTable = {
 		num: -21,
 		gen: 9,
 		desc: "If held by a Zoroark, this item allows it to Mega Evolve in battle.",
-		isNonstandard: "Future",
+		isNonstandard: "Custom",
+	},
+	sawsbuckite: {
+		name: "Sawsbuckite",
+		spritenum: 613,
+		megaStone: "Sawsbuck-Mega",
+		megaEvolves: "Sawsbuck",
+		itemUser: ["Sawsbuck", "Sawsbuck-Summer", "Sawsbuck-Autumn", "Sawsbuck-Winter"],
+		onTakeItem(item, source) {
+			if (item.megaEvolves === source.baseSpecies.baseSpecies) return false;
+			return true;
+		},
+		num: -22,
+		gen: 9,
+		desc: "If held by a Sawsbuck, this item allows it to Mega Evolve in battle.",
+		isNonstandard: "Custom",
 	},
 	ribombinite: {
 		name: "Ribombinite",
@@ -8671,10 +8686,10 @@ export const Items: import('../sim/dex-items').ItemDataTable = {
 			if (item.megaEvolves === source.baseSpecies.baseSpecies) return false;
 			return true;
 		},
-		num: -22,
+		num: -23,
 		gen: 9,
 		desc: "If held by a Ribombee, this item allows it to Mega Evolve in battle.",
-		isNonstandard: "Future",
+		isNonstandard: "Custom",
 	},
 	salazzlite: {
 		name: "Salazzlite",
@@ -8686,10 +8701,10 @@ export const Items: import('../sim/dex-items').ItemDataTable = {
 			if (item.megaEvolves === source.baseSpecies.baseSpecies) return false;
 			return true;
 		},
-		num: -23,
+		num: -24,
 		gen: 9,
 		desc: "If held by a Salazzle, this item allows it to Mega Evolve in battle.",
-		isNonstandard: "Future",
+		isNonstandard: "Custom",
 	},
 	dhelmite: {
 		name: "Dhelmite",
@@ -8704,7 +8719,7 @@ export const Items: import('../sim/dex-items').ItemDataTable = {
 		num: -25,
 		gen: 9,
 		desc: "If held by a Dhelmise, this item allows it to Mega Evolve in battle.",
-		isNonstandard: "Future",
+		isNonstandard: "Custom",
 	},
 	cramorantite: {
 		name: "Cramorantite",
@@ -8718,7 +8733,7 @@ export const Items: import('../sim/dex-items').ItemDataTable = {
 		num: -26,
 		gen: 9,
 		desc: "If held by a Cramorant, this item allows it to Mega Evolve in battle.",
-		isNonstandard: "Future",
+		isNonstandard: "Custom",
 	},
 	toxtricitite: {
 		name: "Toxtricitite",
@@ -8733,7 +8748,7 @@ export const Items: import('../sim/dex-items').ItemDataTable = {
 		num: -27,
 		gen: 9,
 		desc: "If held by a Toxtricity, this item allows it to Mega Evolve in battle.",
-		isNonstandard: "Future",
+		isNonstandard: "Custom",
 	},
 	centiskorchitex: {
 		name: "Centiskorchite X",
@@ -8748,7 +8763,7 @@ export const Items: import('../sim/dex-items').ItemDataTable = {
 		num: -28,
 		gen: 9,
 		desc: "If held by a Centiskorch, this item allows it to Mega Evolve in battle.",
-		isNonstandard: "Future",
+		isNonstandard: "Custom",
 	},
 	centiskorchitey: {
 		name: "Centiskorchite Y",
@@ -8763,7 +8778,7 @@ export const Items: import('../sim/dex-items').ItemDataTable = {
 		num: -29,
 		gen: 9,
 		desc: "If held by a Centiskorch, this item allows it to Mega Evolve in battle.",
-		isNonstandard: "Future",
+		isNonstandard: "Custom",
 	},
 	centiskorchitez: {
 		name: "Centiskorchite Z",
@@ -8775,10 +8790,10 @@ export const Items: import('../sim/dex-items').ItemDataTable = {
 			if (item.megaEvolves === source.baseSpecies.baseSpecies) return false;
 			return true;
 		},
-		num: -29,
+		num: -30,
 		gen: 9,
 		desc: "If held by a Centiskorch, this item allows it to Mega Evolve in battle.",
-		isNonstandard: "Future",
+		isNonstandard: "Custom",
 	},
 	kleavorite: { 
 		name: "Kleavorite",
@@ -8790,10 +8805,10 @@ export const Items: import('../sim/dex-items').ItemDataTable = {
 			if (item.megaEvolves === source.baseSpecies.baseSpecies) return false;
 			return true;
 		},
-		num: -30,
+		num: -31,
 		gen: 9,
 		desc: "If held by a Kleavor, this item allows it to Mega Evolve in battle.",
-		isNonstandard: "Future",
+		isNonstandard: "Custom",
 	},
 	meowscaradite: {
 		name: "Meowscaradite",
@@ -8804,10 +8819,10 @@ export const Items: import('../sim/dex-items').ItemDataTable = {
 			if (item.megaEvolves === source.baseSpecies.baseSpecies) return false;
 			return true;
 		},
-		num: -31,
+		num: -32,
 		gen: 9,
 		desc: "If held by a Meowscarada, this item allows it to Mega Evolve in battle.",
-		isNonstandard: "Future",
+		isNonstandard: "Custom",
 	},
 	skeledite: { 
 		name: "Skeledite",
@@ -8819,10 +8834,10 @@ export const Items: import('../sim/dex-items').ItemDataTable = {
 			if (item.megaEvolves === source.baseSpecies.baseSpecies) return false;
 			return true;
 		},
-		num: -32,
+		num: -33,
 		gen: 9,
 		desc: "If held by a Skeledirge, this item allows it to Mega Evolve in battle.",
-		isNonstandard: "Future",
+		isNonstandard: "Custom",
 	},
 	quaquavite: {
 		name: "Quaquavite",
@@ -8833,10 +8848,10 @@ export const Items: import('../sim/dex-items').ItemDataTable = {
 			if (item.megaEvolves === source.baseSpecies.baseSpecies) return false;
 			return true;
 		},
-		num: -33,
+		num: -34,
 		gen: 9,
 		desc: "If held by a Quaquaval, this item allows it to Mega Evolve in battle.",
-		isNonstandard: "Future",
+		isNonstandard: "Custom",
 	},
 	rabscanite: { 
 		name: "Rabscanite",
@@ -8848,10 +8863,10 @@ export const Items: import('../sim/dex-items').ItemDataTable = {
 			if (item.megaEvolves === source.baseSpecies.baseSpecies) return false;
 			return true;
 		},
-		num: -34,
+		num: -35,
 		gen: 9,
 		desc: "If held by a Rabsca, this item allows it to Mega Evolve in battle.",
-		isNonstandard: "Future",
+		isNonstandard: "Custom",
 	},
 	brambleghite: {
 		name: "Brambleghite",
@@ -8863,10 +8878,10 @@ export const Items: import('../sim/dex-items').ItemDataTable = {
 			if (item.megaEvolves === source.baseSpecies.baseSpecies) return false;
 			return true;
 		},
-		num: -35,
+		num: -36,
 		gen: 9,
 		desc: "If held by a Brambleghast, this item allows it to Mega Evolve in battle.",
-		isNonstandard: "Future",
+		isNonstandard: "Custom",
 	},
 	baskironite: {
 		name: "Baskironite",
@@ -8878,10 +8893,10 @@ export const Items: import('../sim/dex-items').ItemDataTable = {
 			if (item.megaEvolves === source.baseSpecies.baseSpecies) return false;
 			return true;
 		},
-		num: -36,
+		num: -37,
 		gen: 9,
 		desc: "If held by a Baskiron, this item allows it to Mega Evolve in battle.",
-		isNonstandard: "Future",
+		isNonstandard: "Custom",
 	},
 	terreptilite: {
 		name: "Terreptilite",
@@ -8893,10 +8908,10 @@ export const Items: import('../sim/dex-items').ItemDataTable = {
 			if (item.megaEvolves === source.baseSpecies.baseSpecies) return false;
 			return true;
 		},
-		num: -37,
+		num: -38,
 		gen: 9,
 		desc: "If held by a Terreptile, this item allows it to Mega Evolve in battle.",
-		isNonstandard: "Future",
+		isNonstandard: "Custom",
 	},
 	rocksterite: {
 		name: "Rocksterite",
@@ -8908,10 +8923,10 @@ export const Items: import('../sim/dex-items').ItemDataTable = {
 			if (item.megaEvolves === source.baseSpecies.baseSpecies) return false;
 			return true;
 		},
-		num: -38,
+		num: -39,
 		gen: 9,
 		desc: "If held by a Rockster, this item allows it to Mega Evolve in battle.",
-		isNonstandard: "Future",
+		isNonstandard: "Custom",
 	},
 	infarmatemite: {
 		name: "Infarmatemite",
@@ -8923,10 +8938,10 @@ export const Items: import('../sim/dex-items').ItemDataTable = {
 			if (item.megaEvolves === source.baseSpecies.baseSpecies) return false;
 			return true;
 		},
-		num: -39,
+		num: -40,
 		gen: 9,
 		desc: "If held by a Infarmatem, this item allows it to Mega Evolve in battle.",
-		isNonstandard: "Future",
+		isNonstandard: "Custom",
 	},
 
 	chakraseed: {

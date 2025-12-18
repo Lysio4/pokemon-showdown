@@ -6409,6 +6409,22 @@ export const FormatsData: import('../sim/dex-species').SpeciesFormatsDataTable =
 		isNonstandard: "Custom",
 		tier: "Illegal",
     },
+	sawsbuckspringmega: {
+		isNonstandard: "Custom",
+		tier: "Illegal",
+	},
+	sawsbucksummermega: {
+		isNonstandard: "Custom",
+		tier: "Illegal",
+	},
+	sawsbuckautumnmega: {
+		isNonstandard: "Custom",
+		tier: "Illegal",
+	},
+	sawsbuckwintermega: {
+		isNonstandard: "Custom",
+		tier: "Illegal",
+	},
 	tyrantrumrevived: {
 		isNonstandard: "Custom",
 		tier: "Illegal",

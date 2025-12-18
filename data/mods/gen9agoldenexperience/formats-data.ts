@@ -3000,6 +3000,22 @@ export const FormatsData: { [k: string]: SpeciesFormatsData; } = {
 		tier: "PU",
 		doublesTier: "DUU",
 	},
+	sawsbuckspringmega: {
+		tier: "RU",
+		doublesTier: "DUU",
+	},
+	sawsbucksummermega: {
+		tier: "RU",
+		doublesTier: "DUU",
+	},
+	sawsbuckautumnmega: {
+		tier: "RU",
+		doublesTier: "DUU",
+	},
+	sawsbuckwintermega: {
+		tier: "RU",
+		doublesTier: "DUU",
+	},
 	emolga: {
 		tier: "PU",
 		doublesTier: "DUU",

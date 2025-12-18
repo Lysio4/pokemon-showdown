@@ -24988,6 +24988,7 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 		volatileStatus: 'partiallytrapped',
 		secondary: null,
 		target: "normal",
+		isNonstandard: "Custom",
 	},
 	silverdagger: {
 		accuracy: 100,
@@ -25013,6 +25014,7 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 		secondary: null,
 		target: "normal",
 		type: "Steel",
+		isNonstandard: "Custom",
 	},
 	forbiddenbarrage: {
 		accuracy: 80,
@@ -25033,6 +25035,7 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 		},
 		target: "allAdjacentFoes",
 		type: "Dark",
+		isNonstandard: "Custom",
 	},
 	shikigamirush: {
 		accuracy: 100,
@@ -25055,6 +25058,7 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 		secondary: null,
 		target: "normal",
 		type: "Psychic",
+		isNonstandard: "Custom",
 	},
 	lunaticbullet: {
 		accuracy: 100,
@@ -25073,6 +25077,7 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 		secondary: null,
 		target: "normal",
 		type: "Psychic",
+		isNonstandard: "Custom",
 	},
 	nervepoison: {
 		accuracy: 100,
@@ -25093,6 +25098,7 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 		},
 		target: "allAdjacentFoes",
 		type: "Poison",
+		isNonstandard: "Custom",
 	},
 	'superscope3d': {
 		accuracy: 90,
@@ -25116,6 +25122,7 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 		secondary: null,
 		target: "normal",
 		type: "Water",
+		isNonstandard: "Custom",
 	},
 	cloudfist: {
 		accuracy: 90,
@@ -25139,6 +25146,7 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 		secondary: null,
 		target: "normal",
 		type: "Flying",
+		isNonstandard: "Custom",
 	},
 	waterplates: {
 		accuracy: 90,
@@ -25158,6 +25166,7 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 		secondary: null,
 		target: "normal",
 		type: "Water",
+		isNonstandard: "Custom",
 	},
 	bodyswap: {
 		accuracy: true,
@@ -25194,6 +25203,7 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 			pokemon.set.ability = newAbility;
 		},
 		type: "Normal",
+		isNonstandard: "Custom",
 	},
 	dancingblow: {
 		accuracy: 95,
@@ -25217,6 +25227,7 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 		},
 		target: "normal",
 		type: "Fighting",
+		isNonstandard: "Custom",
 	},
 	stonestacking: {
 		accuracy: 100,
@@ -25245,6 +25256,7 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 		secondary: null,
 		target: "allAdjacentFoes",
 		type: "Ghost",
+		isNonstandard: "Custom",
 	},
 	sculptedarmor: {
 		accuracy: true,
@@ -25268,6 +25280,7 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 		secondary: null,
 		target: "adjacentAllyOrSelf",
 		type: "Ground",
+		isNonstandard: "Custom",
 	},
 	excavate: {
 		accuracy: 90,
@@ -25303,6 +25316,7 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 		target: "normal",
 		type: "Rock",
 		contestType: "Tough",
+		isNonstandard: "Custom",
 	},
 	ironchomp: {
 		accuracy: 100,
@@ -25327,6 +25341,7 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 		target: "normal",
 		type: "Steel",
 		contestType: "Tough",
+		isNonstandard: "Custom",
 	},
 	missile: {
 		accuracy: true,
@@ -25349,6 +25364,7 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 		},
 		target: "normal",
 		type: "Steel",
+		isNonstandard: "Custom",
 	},
 	wickedenergy: {
 		num: 268,
@@ -25402,5 +25418,6 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 		secondary: null,
 		target: "self",
 		type: "Dark",
+		isNonstandard: "Custom",
 	},
 };

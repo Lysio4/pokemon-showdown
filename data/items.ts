@@ -8966,7 +8966,7 @@ export const Items: import('../sim/dex-items').ItemDataTable = {
 		},
 		num: -40,
 		gen: 9,
-		isNonstandard: "Future",
+		isNonstandard: "Custom",
 	},
 	honey: {
 		name: "Honey",
@@ -8988,7 +8988,7 @@ export const Items: import('../sim/dex-items').ItemDataTable = {
 			pokemon.cureStatus();
 			pokemon.removeVolatile('confusion');
 		},
-		isNonstandard: "Future",
+		isNonstandard: "Custom",
 	},
 	indecisiveorb: {
 		name: "Indecisive Orb",
@@ -9004,7 +9004,7 @@ export const Items: import('../sim/dex-items').ItemDataTable = {
 		desc: "Holder's move have 1.3x BP, but it can't use the same move twice in a row.",
 		num: -42,
 		gen: 9,
-		isNonstandard: "Future",
+		isNonstandard: "Custom",
 	},
 	identitycard: { 
 		name: "Identity Card",
@@ -9012,7 +9012,7 @@ export const Items: import('../sim/dex-items').ItemDataTable = {
 		// Edited in scripts.ts
 		num: -44,
 		gen: 9,
-		isNonstandard: "Future",
+		isNonstandard: "Custom",
 	},
 	bananapeel: {
 		name: "Banana Peel",
@@ -9033,7 +9033,7 @@ export const Items: import('../sim/dex-items').ItemDataTable = {
 		itemUser: ["Tropius", "Sautropius"],
 		num: -45,
 		gen: 9,
-		isNonstandard: "Future",
+		isNonstandard: "Custom",
 	},
 	relicsheet: {
 		name: "Relic Sheet",
@@ -9050,7 +9050,7 @@ export const Items: import('../sim/dex-items').ItemDataTable = {
 		num: -46,
 		gen: 9,
 		desc: "If held by Meloetta: Pirouette form on entry.",
-		isNonstandard: "Future",
+		isNonstandard: "Custom",
 	},
 	anticamulet: {
 		name: "Antic Amulet",
@@ -9083,7 +9083,7 @@ export const Items: import('../sim/dex-items').ItemDataTable = {
 			if (item.itemUser == source.baseSpecies.baseSpecies) return false;
 			return true;
 		},
-		isNonstandard: "Future",
+		isNonstandard: "Custom",
 	},
 	// Touhou
 	summerbackdoor: {
@@ -9097,7 +9097,7 @@ export const Items: import('../sim/dex-items').ItemDataTable = {
 			return true;
 		},
 		itemUser: ["Cirno-Tanned"],
-		isNonstandard: "Future",
+		isNonstandard: "Custom",
 	},
 	jeweledpagoda: {
 		name: "Jeweled Pagoda",
@@ -9113,6 +9113,6 @@ export const Items: import('../sim/dex-items').ItemDataTable = {
 			}
 		},
 		itemUser: ["Nazrin", "Shou Toramaru"],
-		isNonstandard: "Future",
+		isNonstandard: "Custom",
 	},
 };

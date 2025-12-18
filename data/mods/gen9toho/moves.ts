@@ -36,6 +36,7 @@ export const Moves: {[moveid: string]: ModdedMoveData} = {
 		volatileStatus: 'partiallytrapped',
 		secondary: null,
 		target: "normal",
+		isNonstandard: null,
 	},
 	silverdagger: {
 		accuracy: 100,
@@ -61,6 +62,7 @@ export const Moves: {[moveid: string]: ModdedMoveData} = {
 		secondary: null,
 		target: "normal",
 		type: "Steel",
+		isNonstandard: null,
 	},
 	forbiddenbarrage: {
 		accuracy: 80,
@@ -81,6 +83,7 @@ export const Moves: {[moveid: string]: ModdedMoveData} = {
 		},
 		target: "allAdjacentFoes",
 		type: "Dark",
+		isNonstandard: null,
 	},
 	shikigamirush: {
 		accuracy: 100,
@@ -103,6 +106,7 @@ export const Moves: {[moveid: string]: ModdedMoveData} = {
 		secondary: null,
 		target: "normal",
 		type: "Psychic",
+		isNonstandard: null,
 	},
 	lunaticbullet: {
 		accuracy: 100,
@@ -121,6 +125,7 @@ export const Moves: {[moveid: string]: ModdedMoveData} = {
 		secondary: null,
 		target: "normal",
 		type: "Psychic",
+		isNonstandard: null,
 	},
 	nervepoison: {
 		accuracy: 100,
@@ -141,6 +146,7 @@ export const Moves: {[moveid: string]: ModdedMoveData} = {
 		},
 		target: "allAdjacentFoes",
 		type: "Poison",
+		isNonstandard: null,
 	},
 	'superscope3d': {
 		accuracy: 90,
@@ -164,6 +170,7 @@ export const Moves: {[moveid: string]: ModdedMoveData} = {
 		secondary: null,
 		target: "normal",
 		type: "Water",
+		isNonstandard: null,
 	},
 	cloudfist: {
 		accuracy: 90,
@@ -187,6 +194,7 @@ export const Moves: {[moveid: string]: ModdedMoveData} = {
 		secondary: null,
 		target: "normal",
 		type: "Flying",
+		isNonstandard: null,
 	},
 	waterplates: {
 		accuracy: 90,
@@ -206,6 +214,7 @@ export const Moves: {[moveid: string]: ModdedMoveData} = {
 		secondary: null,
 		target: "normal",
 		type: "Water",
+		isNonstandard: null,
 	},
 	bodyswap: {
 		accuracy: true,
@@ -242,6 +251,7 @@ export const Moves: {[moveid: string]: ModdedMoveData} = {
 			pokemon.set.ability = newAbility;
 		},
 		type: "Normal",
+		isNonstandard: null,
 	},
 	dancingblow: {
 		accuracy: 95,
@@ -265,6 +275,7 @@ export const Moves: {[moveid: string]: ModdedMoveData} = {
 		},
 		target: "normal",
 		type: "Fighting",
+		isNonstandard: null,
 	},
 	stonestacking: {
 		accuracy: 100,
@@ -293,6 +304,7 @@ export const Moves: {[moveid: string]: ModdedMoveData} = {
 		secondary: null,
 		target: "allAdjacentFoes",
 		type: "Ghost",
+		isNonstandard: null,
 	},
 	sculptedarmor: {
 		accuracy: true,
@@ -316,6 +328,7 @@ export const Moves: {[moveid: string]: ModdedMoveData} = {
 		secondary: null,
 		target: "adjacentAllyOrSelf",
 		type: "Ground",
+		isNonstandard: null,
 	},
 	excavate: {
 		accuracy: 90,
@@ -351,6 +364,7 @@ export const Moves: {[moveid: string]: ModdedMoveData} = {
 		target: "normal",
 		type: "Rock",
 		contestType: "Tough",
+		isNonstandard: null,
 	},
 	ironchomp: {
 		accuracy: 100,
@@ -375,6 +389,7 @@ export const Moves: {[moveid: string]: ModdedMoveData} = {
 		target: "normal",
 		type: "Steel",
 		contestType: "Tough",
+		isNonstandard: null,
 	},
 	missile: {
 		accuracy: true,
@@ -397,6 +412,7 @@ export const Moves: {[moveid: string]: ModdedMoveData} = {
 		},
 		target: "normal",
 		type: "Steel",
+		isNonstandard: null,
 	},
 	wickedenergy: {
 		num: 268,
@@ -450,6 +466,7 @@ export const Moves: {[moveid: string]: ModdedMoveData} = {
 		secondary: null,
 		target: "self",
 		type: "Dark",
+		isNonstandard: null,
 	},
 
 	//vanilla

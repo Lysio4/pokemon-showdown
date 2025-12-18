@@ -7900,6 +7900,7 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 		flags: {},
 		name: "Hakkero",
 		shortDesc: "Fire moves not weakened by Rain.",
+		isNonstandard: "Custom",
 	},
 	darkborder: {
 		onSourceModifyAtkPriority: 6,
@@ -7919,6 +7920,7 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 		flags: {breakable: 1},
 		name: "Dark Border",
 		shortDesc: "Fairy and Fire damage taken is halved.",
+		isNonstandard: "Custom",
 	},
 	mistystep: {
 		onModifySpe(spe) {
@@ -7929,6 +7931,7 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 		flags: {},
 		name: "Misty Step",
 		shortDesc: "Speed is doubled in Misty Terrain.",
+		isNonstandard: "Custom",
 	},
 	anemic: {
 		onBasePowerPriority: 19,
@@ -7943,6 +7946,7 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 		flags: {},
 		name: "Anemic",
 		shortDesc: "Special moves have 1.2x power, cost 2 PP.",
+		isNonstandard: "Custom",
 	},
 	maidstrick: {
 		onModifyPriority(priority, pokemon, target, move) {
@@ -7951,6 +7955,7 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 		flags: {},
 		name: "Maid's Trick",
 		shortDesc: "Slicing moves have priority at full HP.",
+		isNonstandard: "Custom",
 	},
 	vampirism: {
 		onModifyMove(move) {
@@ -7961,6 +7966,7 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 		flags: {},
 		name: "Vampirism",
 		shortDesc: "Biting moves drain 25% of damage dealt.",
+		isNonstandard: "Custom",
 	},
 	illusorybacking: {
 		onAllyBasePowerPriority: 22,
@@ -7973,6 +7979,7 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 		flags: {},
 		name: "Illusory Backing",
 		shortDesc: "Allies' Sound moves have 1.3x power.",
+		isNonstandard: "Custom",
 	},
 	netherworldsspring: {
 		onResidual(pokemon) {
@@ -7984,6 +7991,7 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 		flags: {},
 		name: "Netherworld's Spring",
 		shortDesc: "Clears Snow at the end of each turn to heal by 33%.",
+		isNonstandard: "Custom",
 	},
 	demonparade: {
 		onModifySpe(spe, pokemon) {
@@ -7996,6 +8004,7 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 		flags: {},
 		name: "Demon Parade",
 		shortDesc: "Speed is doubled if an opponent is burned.",
+		isNonstandard: "Custom",
 	},
 	nightsong: {
 		onModifyTypePriority: -1,
@@ -8007,6 +8016,7 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 		flags: {},
 		name: "Night Song",
 		shortDesc: "Sound moves become Dark-Type.",
+		isNonstandard: "Custom",
 	},
 	werehakutaku: {
 		onSourceAfterFaint(length, target, source, effect) {
@@ -8017,6 +8027,7 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 		flags: {failroleplay: 1, noreceiver: 1, noentrain: 1, notrace: 1, failskillswap: 1, cantsuppress: 1},
 		name: "Were-Hakutaku",
 		shortDesc: "Transforms Keine into Keine-Hakutaku after KO-ing an opponent.",
+		isNonstandard: "Custom",
 	},
 	brainofthemoon: {
 		onSourceModifyAtkPriority: 6,
@@ -8036,6 +8047,7 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 		flags: {breakable: 1},
 		name: "Brain of the Moon",
 		shortDesc: "Dark and Psychic damage taken is halved.",
+		isNonstandard: "Custom",
 	},
 	blackandwhite: {
 		// CHECK IF THIS WORKS
@@ -8050,6 +8062,7 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 		flags: {},
 		name: "Black and White",
 		shortDesc: "Super effective moves deal 1.5x damage, not very effective deals half.",
+		isNonstandard: "Custom",
 	},
 	cursegathering: {
 		onAnyRedirectTarget(target, source, source2, move) {
@@ -8066,6 +8079,7 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 		flags: {},
 		name: "Curse Gathering",
 		shortDesc: "Redirects status moves targeting an ally to the user instead.",
+		isNonstandard: "Custom",
 	},
 	swordofhisou: {
 		onStart(pokemon) {
@@ -8081,6 +8095,7 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 		flags: {},
 		name: "Sword of Hisou",
 		shortDesc: "Activate Sword of Ruin while a weather effect is active.",
+		isNonstandard: "Custom",
 	},
 	dexterity: {
 		onDamage(damage, target, source, effect) {
@@ -8091,6 +8106,7 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 		flags: {},
 		name: "Dexterity",
 		shortDesc: "Immunity to entry hazards.",
+		isNonstandard: "Custom",
 	},
 	jealous: {
 		onBasePowerPriority: 19,
@@ -8102,6 +8118,7 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 		flags: {},
 		name: "Jealous",
 		shortDesc: "Gain 10% extra damage per increased stat stage on the opponent, max 100%.",
+		isNonstandard: "Custom",
 	},
 	recollection: {
 		onSwitchIn(source) {
@@ -8129,6 +8146,7 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 		flags: {},
 		name: "Recollection",
 		shortDesc: "On switch-in, learn the opponent's moves in addition to your own.",
+		isNonstandard: "Custom",
 	},
 	delusion: {
 		onResidual(pokemon) {
@@ -8139,6 +8157,7 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 		flags: {},
 		name: "Delusion",
 		shortDesc: "Heal 12.5% at the end of each turn while confused or in psychic terrain.",
+		isNonstandard: "Custom",
 	},
 	surprise: {
 		onStart(pokemon) {
@@ -8158,6 +8177,7 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 		flags: {},
 		name: "Surprise",
 		shortDesc: "On switch-in, lower opponent's Sp. Atk. by 1 stage, Psychic-Types are immune.",
+		isNonstandard: "Custom",
 	},
 	summonnyuudou: {
 		onSwitchOut(pokemon) {
@@ -8177,6 +8197,7 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 		flags: {failroleplay: 1, noreceiver: 1, noentrain: 1, notrace: 1, failskillswap: 1, notransform: 1},
 		name: "Summon Nyuudou",
 		shortDesc: "Transforms Ichirin Kumoi into Ichirin and Unzan when switching out.",
+		isNonstandard: "Custom",
 	},
 	waterygrave: {
 		onSourceAfterFaint(length, target, source, effect) {
@@ -8187,6 +8208,7 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 		flags: {},
 		name: "Watery Grave",
 		shortDesc: "Summons Rain for 5 turns after KO-ing an opponent.",
+		isNonstandard: "Custom",
 	},
 	devilsrecitation: {
 		onBasePower(basePower, attacker, defender, move) {
@@ -8197,6 +8219,7 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 		flags: {},
 		name: "Devil's Recitation",
 		shortDesc: "Dark-Type moves have 1.5x power in Psychic Terrain.",
+		isNonstandard: "Custom",
 	},
 	undefineddefense: {
 		onSourceModifyDamage(damage, source, target, move) {
@@ -8207,6 +8230,7 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 		flags: {},
 		name: "Undefined Defense",
 		shortDesc: "Halves damage taken from moves of the Pokémon's Tera type.",
+		isNonstandard: "Custom",
 	},
 	echo: {
 		onTryHit(target, source, move) {
@@ -8224,6 +8248,7 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 		flags: {},
 		name: "Echo",
 		shortDesc: "Sound immunity, repeats sound moves used.",
+		isNonstandard: "Custom",
 	},
 	healbydesire: {
 		onTryHit(target, source, move) {
@@ -8237,6 +8262,7 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 		flags: {breakable: 1},
 		name: "Heal by Desire",
 		shortDesc: "Ghost immunity, heals 25% when hit by Ghost.",
+		isNonstandard: "Custom",
 	},
 	'100medicines': {
 		onResidualOrder: 5,
@@ -8250,6 +8276,7 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 		flags: {},
 		name: "100 Medicines",
 		shortDesc: "Heals status conditions at the end of the turn while in grassy terrain.",
+		isNonstandard: "Custom",
 	},
 	wickedpower: {
 		// onModifyAtkPriority: 5,
@@ -8273,12 +8300,14 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 		flags: {},
 		name: "Wicked Power",
 		shortDesc: "When this Pokémon is hit, its next Dark-Type move has 2x power.",
+		isNonstandard: "Custom",
 	},
 	growbigger: {
 		//effects in scripts/battle, pokemon, etc
 		flags: {},
 		name: "Grow Bigger",
 		shortDesc: "Once per battle the pokémon can Dynamax for one turn.",
+		isNonstandard: "Custom",
 	},
 	pristinebeat: {
 		onStart(pokemon) {
@@ -8319,6 +8348,7 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 		flags: {},
 		name: "Pristine Beat",
 		shortDesc: "Moves used multiple times in a row get 20% stronger up to a 100% boost.",
+		isNonstandard: "Custom",
 	},
 	dangoinfluence: {
 		onEatItem(item, pokemon) {
@@ -8327,12 +8357,14 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 		flags: {},
 		name: "Dango Influence",
 		shortDesc: "Consuming a berry increases Atk. by one stage.",
+		isNonstandard: "Custom",
 	},
 	lunatictorch: {
 		//effects in pokemon/effectiveWeather
 		flags: {},
 		name: "Lunatic Torch",
 		shortDesc: "Gain the effects of Sun while in Psychic Terrain.",
+		isNonstandard: "Custom",
 	},
 	foolsgold: {
 		onTryHit(target, source, move) {
@@ -8345,6 +8377,7 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 		flags: {},
 		name: "Fool's Gold",
 		shortDesc: "Immunity to Status moves, changes to Defeatist after activating.",
+		isNonstandard: "Custom",
 	},
 	cutdeep: {
 		onSourceDamagingHit(damage, target, source, move) {
@@ -8355,6 +8388,7 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 		flags: {},
 		name: "Cut Deep",
 		shortDesc: "Slicing moves lower the target's Def. by one stage.",
+		isNonstandard: "Custom",
 	},
 	winterhearth: {
 		onBasePower(basePower, attacker, defender, move) {
@@ -8365,6 +8399,7 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 		flags: {},
 		name: "Winter Hearth",
 		shortDesc: "Fire moves are twice as powerful during Snow.",
+		isNonstandard: "Custom",
 	},
 	fourseasons: {
 		onSwitchInPriority: -2,
@@ -8401,6 +8436,7 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 		flags: {failroleplay: 1, noentrain: 1, notrace: 1, failskillswap: 1, cantsuppress: 1},
 		name: "Four Seasons",
 		shortDesc: "Okina Matara's forme changes to match the weather.",
+		isNonstandard: "Custom",
 	},
 	heavystone: {
 		onStart(source) {
@@ -8410,6 +8446,7 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 		flags: {},
 		name: "Heavy Stone",
 		shortDesc: "On switch-in, sets Gravity for 5 turns.",
+		isNonstandard: "Custom",
 	},
 	marchingorders: {
 		onAllyAfterMove(ally) {
@@ -8427,6 +8464,7 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 		flags: {},
 		name: "Marching Orders",
 		shortDesc: "The Pokémon takes its turn immediately after an ally attacks, excludes priority moves.",
+		isNonstandard: "Custom",
 	},
 	blacksmoke: {
 		onAnyTryBoost(boost, target, source, effect) {
@@ -8446,6 +8484,7 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 		flags: {},
 		name: "Black Smoke",
 		shortDesc: "Other Pokémon on the field cannot have their stats increased unless immune to Powder.",
+		isNonstandard: "Custom",
 	},
 	property: {
 		onTakeItem(item, pokemon, source) {
@@ -8459,6 +8498,7 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 		flags: {breakable: 1},
 		name: "Property",
 		shortDesc: "Prevents the Pokémon's item from being removed.",
+		isNonstandard: "Custom",
 	},
 	dragoneater: {
 		onBasePower(basePower, attacker, defender, move) {
@@ -8469,6 +8509,7 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 		flags: {},
 		name: "Dragon Eater",
 		shortDesc: "Attacks deal 1.5x damage against Dragon-Types.",
+		isNonstandard: "Custom",
 	},
 	bloodsucker: {
 		onAfterMoveSecondarySelf(pokemon, target, move) {
@@ -8477,6 +8518,7 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 		flags: {},
 		name: "Bloodsucker",
 		shortDesc: "KO-ing an opponent with a contact move heals 33%.",
+		isNonstandard: "Custom",
 	},
 	void: {
 		onSwitchIn(pokemon) {
@@ -8487,6 +8529,7 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 		flags: {},
 		name: "Void",
 		shortDesc: "On switch-in, opponent's abilities are suppressed.",
+		isNonstandard: "Custom",
 	},
 	cactusdrive: {
 		//this is just copied from Quark with the word changed to cactus
@@ -8556,5 +8599,6 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 		flags: {failroleplay: 1, noreceiver: 1, noentrain: 1, notrace: 1, failskillswap: 1, notransform: 1},
 		name: "Cactus Drive",
 		shortDesc: "Grassy Terrain active or Booster Energy used: highest stat is 1.3x, or 1.5x if Speed.",
+		isNonstandard: "Custom",
 	},
 };

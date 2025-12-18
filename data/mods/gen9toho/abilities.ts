@@ -12,6 +12,7 @@ export const Abilities: {[k: string]: ModdedAbilityData} = {
 		flags: {},
 		name: "Hakkero",
 		shortDesc: "Fire moves not weakened by Rain.",
+		isNonstandard: null,
 	},
 	darkborder: {
 		onSourceModifyAtkPriority: 6,
@@ -31,6 +32,7 @@ export const Abilities: {[k: string]: ModdedAbilityData} = {
 		flags: {breakable: 1},
 		name: "Dark Border",
 		shortDesc: "Fairy and Fire damage taken is halved.",
+		isNonstandard: null,
 	},
 	mistystep: {
 		onModifySpe(spe) {
@@ -41,6 +43,7 @@ export const Abilities: {[k: string]: ModdedAbilityData} = {
 		flags: {},
 		name: "Misty Step",
 		shortDesc: "Speed is doubled in Misty Terrain.",
+		isNonstandard: null,
 	},
 	anemic: {
 		onBasePowerPriority: 19,
@@ -55,6 +58,7 @@ export const Abilities: {[k: string]: ModdedAbilityData} = {
 		flags: {},
 		name: "Anemic",
 		shortDesc: "Special moves have 1.2x power, cost 2 PP.",
+		isNonstandard: null,
 	},
 	maidstrick: {
 		onModifyPriority(priority, pokemon, target, move) {
@@ -63,6 +67,7 @@ export const Abilities: {[k: string]: ModdedAbilityData} = {
 		flags: {},
 		name: "Maid's Trick",
 		shortDesc: "Slicing moves have priority at full HP.",
+		isNonstandard: null,
 	},
 	vampirism: {
 		onModifyMove(move) {
@@ -73,6 +78,7 @@ export const Abilities: {[k: string]: ModdedAbilityData} = {
 		flags: {},
 		name: "Vampirism",
 		shortDesc: "Biting moves drain 25% of damage dealt.",
+		isNonstandard: null,
 	},
 	illusorybacking: {
 		onAllyBasePowerPriority: 22,
@@ -85,6 +91,7 @@ export const Abilities: {[k: string]: ModdedAbilityData} = {
 		flags: {},
 		name: "Illusory Backing",
 		shortDesc: "Allies' Sound moves have 1.3x power.",
+		isNonstandard: null,
 	},
 	netherworldsspring: {
 		onResidual(pokemon) {
@@ -96,6 +103,7 @@ export const Abilities: {[k: string]: ModdedAbilityData} = {
 		flags: {},
 		name: "Netherworld's Spring",
 		shortDesc: "Clears Snow at the end of each turn to heal by 33%.",
+		isNonstandard: null,
 	},
 	demonparade: {
 		onModifySpe(spe, pokemon) {
@@ -108,6 +116,7 @@ export const Abilities: {[k: string]: ModdedAbilityData} = {
 		flags: {},
 		name: "Demon Parade",
 		shortDesc: "Speed is doubled if an opponent is burned.",
+		isNonstandard: null,
 	},
 	nightsong: {
 		onModifyTypePriority: -1,
@@ -119,6 +128,7 @@ export const Abilities: {[k: string]: ModdedAbilityData} = {
 		flags: {},
 		name: "Night Song",
 		shortDesc: "Sound moves become Dark-Type.",
+		isNonstandard: null,
 	},
 	werehakutaku: {
 		onSourceAfterFaint(length, target, source, effect) {
@@ -129,6 +139,7 @@ export const Abilities: {[k: string]: ModdedAbilityData} = {
 		flags: {failroleplay: 1, noreceiver: 1, noentrain: 1, notrace: 1, failskillswap: 1, cantsuppress: 1},
 		name: "Were-Hakutaku",
 		shortDesc: "Transforms Keine into Keine-Hakutaku after KO-ing an opponent.",
+		isNonstandard: null,
 	},
 	brainofthemoon: {
 		onSourceModifyAtkPriority: 6,
@@ -148,6 +159,7 @@ export const Abilities: {[k: string]: ModdedAbilityData} = {
 		flags: {breakable: 1},
 		name: "Brain of the Moon",
 		shortDesc: "Dark and Psychic damage taken is halved.",
+		isNonstandard: null,
 	},
 	blackandwhite: {
 		// CHECK IF THIS WORKS
@@ -162,6 +174,7 @@ export const Abilities: {[k: string]: ModdedAbilityData} = {
 		flags: {},
 		name: "Black and White",
 		shortDesc: "Super effective moves deal 1.5x damage, not very effective deals half.",
+		isNonstandard: null,
 	},
 	cursegathering: {
 		onAnyRedirectTarget(target, source, source2, move) {
@@ -178,6 +191,7 @@ export const Abilities: {[k: string]: ModdedAbilityData} = {
 		flags: {},
 		name: "Curse Gathering",
 		shortDesc: "Redirects status moves targeting an ally to the user instead.",
+		isNonstandard: null,
 	},
 	swordofhisou: {
 		onStart(pokemon) {
@@ -193,6 +207,7 @@ export const Abilities: {[k: string]: ModdedAbilityData} = {
 		flags: {},
 		name: "Sword of Hisou",
 		shortDesc: "Activate Sword of Ruin while a weather effect is active.",
+		isNonstandard: null,
 	},
 	dexterity: {
 		onDamage(damage, target, source, effect) {
@@ -203,6 +218,7 @@ export const Abilities: {[k: string]: ModdedAbilityData} = {
 		flags: {},
 		name: "Dexterity",
 		shortDesc: "Immunity to entry hazards.",
+		isNonstandard: null,
 	},
 	jealous: {
 		onBasePowerPriority: 19,
@@ -214,6 +230,7 @@ export const Abilities: {[k: string]: ModdedAbilityData} = {
 		flags: {},
 		name: "Jealous",
 		shortDesc: "Gain 10% extra damage per increased stat stage on the opponent, max 100%.",
+		isNonstandard: null,
 	},
 	recollection: {
 		onSwitchIn(source) {
@@ -241,6 +258,7 @@ export const Abilities: {[k: string]: ModdedAbilityData} = {
 		flags: {},
 		name: "Recollection",
 		shortDesc: "On switch-in, learn the opponent's moves in addition to your own.",
+		isNonstandard: null,
 	},
 	delusion: {
 		onResidual(pokemon) {
@@ -251,6 +269,7 @@ export const Abilities: {[k: string]: ModdedAbilityData} = {
 		flags: {},
 		name: "Delusion",
 		shortDesc: "Heal 12.5% at the end of each turn while confused or in psychic terrain.",
+		isNonstandard: null,
 	},
 	surprise: {
 		onStart(pokemon) {
@@ -270,6 +289,7 @@ export const Abilities: {[k: string]: ModdedAbilityData} = {
 		flags: {},
 		name: "Surprise",
 		shortDesc: "On switch-in, lower opponent's Sp. Atk. by 1 stage, Psychic-Types are immune.",
+		isNonstandard: null,
 	},
 	summonnyuudou: {
 		onSwitchOut(pokemon) {
@@ -289,6 +309,7 @@ export const Abilities: {[k: string]: ModdedAbilityData} = {
 		flags: {failroleplay: 1, noreceiver: 1, noentrain: 1, notrace: 1, failskillswap: 1, notransform: 1},
 		name: "Summon Nyuudou",
 		shortDesc: "Transforms Ichirin Kumoi into Ichirin and Unzan when switching out.",
+		isNonstandard: null,
 	},
 	waterygrave: {
 		onSourceAfterFaint(length, target, source, effect) {
@@ -299,6 +320,7 @@ export const Abilities: {[k: string]: ModdedAbilityData} = {
 		flags: {},
 		name: "Watery Grave",
 		shortDesc: "Summons Rain for 5 turns after KO-ing an opponent.",
+		isNonstandard: null,
 	},
 	devilsrecitation: {
 		onBasePower(basePower, attacker, defender, move) {
@@ -309,6 +331,7 @@ export const Abilities: {[k: string]: ModdedAbilityData} = {
 		flags: {},
 		name: "Devil's Recitation",
 		shortDesc: "Dark-Type moves have 1.5x power in Psychic Terrain.",
+		isNonstandard: null,
 	},
 	undefineddefense: {
 		onSourceModifyDamage(damage, source, target, move) {
@@ -319,6 +342,7 @@ export const Abilities: {[k: string]: ModdedAbilityData} = {
 		flags: {},
 		name: "Undefined Defense",
 		shortDesc: "Halves damage taken from moves of the Pokémon's Tera type.",
+		isNonstandard: null,
 	},
 	echo: {
 		onTryHit(target, source, move) {
@@ -336,6 +360,7 @@ export const Abilities: {[k: string]: ModdedAbilityData} = {
 		flags: {},
 		name: "Echo",
 		shortDesc: "Sound immunity, repeats sound moves used.",
+		isNonstandard: null,
 	},
 	healbydesire: {
 		onTryHit(target, source, move) {
@@ -349,6 +374,7 @@ export const Abilities: {[k: string]: ModdedAbilityData} = {
 		flags: {breakable: 1},
 		name: "Heal by Desire",
 		shortDesc: "Ghost immunity, heals 25% when hit by Ghost.",
+		isNonstandard: null,
 	},
 	'100medicines': {
 		onResidualOrder: 5,
@@ -362,6 +388,7 @@ export const Abilities: {[k: string]: ModdedAbilityData} = {
 		flags: {},
 		name: "100 Medicines",
 		shortDesc: "Heals status conditions at the end of the turn while in grassy terrain.",
+		isNonstandard: null,
 	},
 	wickedpower: {
 		// onModifyAtkPriority: 5,
@@ -385,12 +412,14 @@ export const Abilities: {[k: string]: ModdedAbilityData} = {
 		flags: {},
 		name: "Wicked Power",
 		shortDesc: "When this Pokémon is hit, its next Dark-Type move has 2x power.",
+		isNonstandard: null,
 	},
 	growbigger: {
 		//effects in scripts/battle, pokemon, etc
 		flags: {},
 		name: "Grow Bigger",
 		shortDesc: "Once per battle the pokémon can Dynamax for one turn.",
+		isNonstandard: null,
 	},
 	pristinebeat: {
 		onStart(pokemon) {
@@ -431,6 +460,7 @@ export const Abilities: {[k: string]: ModdedAbilityData} = {
 		flags: {},
 		name: "Pristine Beat",
 		shortDesc: "Moves used multiple times in a row get 20% stronger up to a 100% boost.",
+		isNonstandard: null,
 	},
 	dangoinfluence: {
 		onEatItem(item, pokemon) {
@@ -439,12 +469,14 @@ export const Abilities: {[k: string]: ModdedAbilityData} = {
 		flags: {},
 		name: "Dango Influence",
 		shortDesc: "Consuming a berry increases Atk. by one stage.",
+		isNonstandard: null,
 	},
 	lunatictorch: {
 		//effects in pokemon/effectiveWeather
 		flags: {},
 		name: "Lunatic Torch",
 		shortDesc: "Gain the effects of Sun while in Psychic Terrain.",
+		isNonstandard: null,
 	},
 	foolsgold: {
 		onTryHit(target, source, move) {
@@ -457,6 +489,7 @@ export const Abilities: {[k: string]: ModdedAbilityData} = {
 		flags: {},
 		name: "Fool's Gold",
 		shortDesc: "Immunity to Status moves, changes to Defeatist after activating.",
+		isNonstandard: null,
 	},
 	cutdeep: {
 		onSourceDamagingHit(damage, target, source, move) {
@@ -467,6 +500,7 @@ export const Abilities: {[k: string]: ModdedAbilityData} = {
 		flags: {},
 		name: "Cut Deep",
 		shortDesc: "Slicing moves lower the target's Def. by one stage.",
+		isNonstandard: null,
 	},
 	winterhearth: {
 		onBasePower(basePower, attacker, defender, move) {
@@ -477,6 +511,7 @@ export const Abilities: {[k: string]: ModdedAbilityData} = {
 		flags: {},
 		name: "Winter Hearth",
 		shortDesc: "Fire moves are twice as powerful during Snow.",
+		isNonstandard: null,
 	},
 	fourseasons: {
 		onSwitchInPriority: -2,
@@ -513,6 +548,7 @@ export const Abilities: {[k: string]: ModdedAbilityData} = {
 		flags: {failroleplay: 1, noentrain: 1, notrace: 1, failskillswap: 1, cantsuppress: 1},
 		name: "Four Seasons",
 		shortDesc: "Okina Matara's forme changes to match the weather.",
+		isNonstandard: null,
 	},
 	heavystone: {
 		onStart(source) {
@@ -522,6 +558,7 @@ export const Abilities: {[k: string]: ModdedAbilityData} = {
 		flags: {},
 		name: "Heavy Stone",
 		shortDesc: "On switch-in, sets Gravity for 5 turns.",
+		isNonstandard: null,
 	},
 	marchingorders: {
 		onAllyAfterMove(ally) {
@@ -539,6 +576,7 @@ export const Abilities: {[k: string]: ModdedAbilityData} = {
 		flags: {},
 		name: "Marching Orders",
 		shortDesc: "The Pokémon takes its turn immediately after an ally attacks, excludes priority moves.",
+		isNonstandard: null,
 	},
 	blacksmoke: {
 		onAnyTryBoost(boost, target, source, effect) {
@@ -558,6 +596,7 @@ export const Abilities: {[k: string]: ModdedAbilityData} = {
 		flags: {},
 		name: "Black Smoke",
 		shortDesc: "Other Pokémon on the field cannot have their stats increased unless immune to Powder.",
+		isNonstandard: null,
 	},
 	property: {
 		onTakeItem(item, pokemon, source) {
@@ -571,6 +610,7 @@ export const Abilities: {[k: string]: ModdedAbilityData} = {
 		flags: {breakable: 1},
 		name: "Property",
 		shortDesc: "Prevents the Pokémon's item from being removed.",
+		isNonstandard: null,
 	},
 	dragoneater: {
 		onBasePower(basePower, attacker, defender, move) {
@@ -581,6 +621,7 @@ export const Abilities: {[k: string]: ModdedAbilityData} = {
 		flags: {},
 		name: "Dragon Eater",
 		shortDesc: "Attacks deal 1.5x damage against Dragon-Types.",
+		isNonstandard: null,
 	},
 	bloodsucker: {
 		onAfterMoveSecondarySelf(pokemon, target, move) {
@@ -589,6 +630,7 @@ export const Abilities: {[k: string]: ModdedAbilityData} = {
 		flags: {},
 		name: "Bloodsucker",
 		shortDesc: "KO-ing an opponent with a contact move heals 33%.",
+		isNonstandard: null,
 	},
 	void: {
 		onSwitchIn(pokemon) {
@@ -599,6 +641,7 @@ export const Abilities: {[k: string]: ModdedAbilityData} = {
 		flags: {},
 		name: "Void",
 		shortDesc: "On switch-in, opponent's abilities are suppressed.",
+		isNonstandard: null,
 	},
 	cactusdrive: {
 		//this is just copied from Quark with the word changed to cactus
@@ -668,5 +711,6 @@ export const Abilities: {[k: string]: ModdedAbilityData} = {
 		flags: {failroleplay: 1, noreceiver: 1, noentrain: 1, notrace: 1, failskillswap: 1, notransform: 1},
 		name: "Cactus Drive",
 		shortDesc: "Grassy Terrain active or Booster Energy used: highest stat is 1.3x, or 1.5x if Speed.",
+		isNonstandard: null,
 	},
 };

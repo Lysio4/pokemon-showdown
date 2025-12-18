@@ -300,31 +300,6 @@ export const Abilities: { [abilityid: string]: ModdedAbilityData; } = {
 		rating: 2,
 		num: -15,
 	},
-	rickroll: {
-		desc: "This Pokémon does not suffer the drawbacks of recoil moves and sacrificial moves.All self-KO moves used by this Pokémon have x0.8 base power.",
-		shortDesc: "Ignores recoil and self-KO effects of its moves. Self-KO moves have x0.8 BP.",
-		onModifyMove(move) {
-			if (move.recoil || move.mindBlownRecoil || (move.selfdestruct && move.selfdestruct === 'always')) {
-				if (move.selfdestruct && move.selfdestruct === 'always') {
-					move.flags.explosive = true;
-					delete move.selfdestruct;
-				}
-				if (move.recoil) {
-					delete move.recoil;
-				}
-				if (move.mindBlownRecoil) {
-					move.mindBlownRecoil = false;
-				}
-			}
-		},
-		onBasePowerPriority: 23,
-		onBasePower(basePower, pokemon, target, move) {
-			if (move.flags['explosive'] && move.category !== 'Status') return this.chainModify(0.8);
-		},
-		name: "Rick Roll",
-		rating: 4,
-		num: -16,
-	},
 	microclimate: {
 		onStart(pokemon) {
 			if (this.field.isWeather('sunnyday')) {
@@ -353,7 +328,7 @@ export const Abilities: { [abilityid: string]: ModdedAbilityData; } = {
 		shortDesc: "Reverses effects of Sun and Rain; negates Sand and Hail.",
 		name: "Microclimate",
 		rating: 2,
-		num: -17,
+		num: -16,
 	},
 	voidheart: {
 		desc: "When it KOs an opponent with a direct move, it recovers 25% of its max HP.",
@@ -365,7 +340,7 @@ export const Abilities: { [abilityid: string]: ModdedAbilityData; } = {
 		},
 		name: "Void-Heart",
 		rating: 3,
-		num: -18,
+		num: -17,
 	},
 	convectioncurrent: {
 		desc: "If Gravity is active, this Pokemon's Speed is doubled.",
@@ -377,7 +352,7 @@ export const Abilities: { [abilityid: string]: ModdedAbilityData; } = {
 		},
 		name: "Convection Current",
 		rating: 3,
-		num: -19,
+		num: -18,
 	},
 	endlessdream: {
 		desc: "While this Pokemon is active, every other Pokemon is treated as if it has the Comatose ability. Pokemon that are either affected by Sweet Veil, or have Insomnia or Vital Spirit as their abilities are immune this effect.",
@@ -394,7 +369,7 @@ export const Abilities: { [abilityid: string]: ModdedAbilityData; } = {
 		},
 		name: "Endless Dream",
 		rating: 3,
-		num: -20,
+		num: -19,
 	},
 	evaporate: {
 		desc: "If the Pokemon or the opponent uses a Water type move, it triggers the Haze effect. Immune to Water.",
@@ -419,7 +394,7 @@ export const Abilities: { [abilityid: string]: ModdedAbilityData; } = {
 		},
 		name: "Evaporate",
 		rating: 4,
-		num: -21,
+		num: -20,
 	},
 	desertsong: {
 		onModifyTypePriority: -1,
@@ -432,12 +407,12 @@ export const Abilities: { [abilityid: string]: ModdedAbilityData; } = {
 		desc: "This Pokemon's sound-based moves become Ground-type moves. This effect comes after other effects that change a move's type, but before Ion Deluge and Electrify's effects.",
 		shortDesc: "This Pokemon's sound-based moves become Ground type.",
 		rating: 1.5,
-		num: -22,
+		num: -21,
 	},
 	sundownswitch: {
 		name: "Sundown Switch",
 		desc: "If Cacturne-Mega: Changes to Day form before using Grass move; to Night before using Dark move.",
-		num: -23,
+		num: -22,
 		onBeforeMovePriority: 0.5,
 		onBeforeMove(attacker, defender, move) {
 			if (attacker.species.baseSpecies !== 'Cacturne' || attacker.transformed) return;

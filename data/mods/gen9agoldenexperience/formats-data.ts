@@ -5370,11 +5370,7 @@ export const FormatsData: { [k: string]: SpeciesFormatsData; } = {
 		tier: "LC",
 	},
 	rockster: {
-		tier: "PU",
-		doublesTier: "DUU",
-	},
-	rockstermega: {
-		tier: "RUBL",
+		tier: "RU",
 		doublesTier: "DUU",
 	},
 	expecies: {

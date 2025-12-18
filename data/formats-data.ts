@@ -6677,10 +6677,6 @@ export const FormatsData: import('../sim/dex-species').SpeciesFormatsDataTable =
 		isNonstandard: "Custom",
 		tier: "Illegal",
 	},
-	rockstermega: {
-		isNonstandard: "Custom",
-		tier: "Illegal",
-	},
 	expecies: {
 		isNonstandard: "Custom",
 		tier: "Illegal",

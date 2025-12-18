@@ -755,21 +755,6 @@ export const Items: {[itemid: string]: ModdedItemData} = {
 		desc: "If held by a Terreptile, this item allows it to Mega Evolve in battle.",
 		isNonstandard: null,
 	},
-	rocksterite: {
-		name: "Rocksterite",
-		spritenum: 578,
-		megaStone: "Rockster-Mega",
-		megaEvolves: "Rockster",
-		itemUser: ["Rockster"],
-		onTakeItem(item, source) {
-			if (item.megaEvolves === source.baseSpecies.baseSpecies) return false;
-			return true;
-		},
-		num: -39,
-		gen: 9,
-		desc: "If held by a Rockster, this item allows it to Mega Evolve in battle.",
-		isNonstandard: null,
-	},
 	infarmatemite: {
 		name: "Infarmatemite",
 		spritenum: 578,
@@ -780,7 +765,7 @@ export const Items: {[itemid: string]: ModdedItemData} = {
 			if (item.megaEvolves === source.baseSpecies.baseSpecies) return false;
 			return true;
 		},
-		num: -40,
+		num: -39,
 		gen: 9,
 		desc: "If held by a Infarmatem, this item allows it to Mega Evolve in battle.",
 		isNonstandard: null,

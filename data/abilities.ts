@@ -7606,23 +7606,6 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 		shortDesc: "This Pokemon's damaging moves hit 3x. Successive hits do 15% damage without added effects.",
 		num: -93
 	},
-	savagebite: {
-		onModifyDamage(damage, source, target, move) {
-			if (move.flags['bite'] && target.getMoveHitData(move).typeMod < 0) {
-				this.debug('Tinted Lens boost');
-				return this.chainModify(2);
-			}
-		},
-		onModifyMovePriority: -5,
-		onModifyMove(move) {
-			if (move.flags['bite']) move.ignoreAbility = true;
-		},
-		flags: {},
-		name: "Savage Bite",
-		shortDesc: "This Pokemon's biting attacks ignore resistances and abilities.",
-		rating: 4,
-		num: -94,
-	},
 	lightpower: {
 		onModifySpAPriority: 5,
 		onModifySpA(spa) {

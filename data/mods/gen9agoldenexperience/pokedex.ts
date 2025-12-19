@@ -1597,7 +1597,7 @@ export const Pokedex: {[k: string]: ModdedSpeciesData;} = {
 	garchompmega: {
 		inherit: true,
 		baseStats: {hp: 108, atk: 170, def: 105, spa: 120, spd: 95, spe: 102},
-		abilities: {0: "Unconcerned"},
+		abilities: {0: "Technician"},
 	},
 	garchompmegaz: {
 		inherit: true,
@@ -5013,7 +5013,7 @@ export const Pokedex: {[k: string]: ModdedSpeciesData;} = {
 		name: "Gevauyena",
 		types: ["Dark"],
 		baseStats: {hp: 85, atk: 130, def: 70, spa: 40, spd: 60, spe: 120},
-		abilities: {0: "Intimidate", 1: "Savage Bite", H: "Moxie"},
+		abilities: {0: "Intimidate", 1: "Strong Jaw", H: "Moxie"},
 		heightm: 1.80,
 		weightkg: 74,
 		prevo: "Mightyena",

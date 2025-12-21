@@ -1436,11 +1436,6 @@ export const Scripts: ModdedBattleScriptsData = {
     // Gen 3:
     this.modData('Learnsets', 'zigzagoongalar').learnset.extremespeed = ['9L1'];
     this.modData('Learnsets', 'linoonegalar').learnset.extremespeed = ['9L1'];
-    this.modData('Learnsets', 'beautifly').learnset.smartstrike = ['9L1'];
-    this.modData('Learnsets', 'beautifly').learnset.suckerpunch = ['9L1'];
-    this.modData('Learnsets', 'beautifly').learnset.dualwingbeat = ['9L1'];
-    this.modData('Learnsets', 'beautifly').learnset.leechlife = ['9L1'];
-    this.modData('Learnsets', 'beautifly').learnset.agility = ['9L1'];
     this.modData('Learnsets', 'dustox').learnset.pollenpuff = ['9L1'];
     this.modData('Learnsets', 'dustox').learnset.ragepowder = ['9L1'];
     this.modData('Learnsets', 'ludicolo').learnset.happydance = ['9L1'];

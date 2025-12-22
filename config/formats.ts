@@ -259,8 +259,10 @@ export const Formats: import('../sim/dex-formats').FormatList = [
 		mod: 'mixandmegaage',
 		ruleset: ['Standard NatDex', 'Terastal Clause', 'Z-Move Clause'],
 		banlist: [
-			'Calyrex-Shadow', 'Koraidon', 'Miraidon', 'Moody', 'Beedrillite', 'Blazikenite', 
-			'Kangaskhanite', 'Malamarite', 'Mawilite', 'Medichamite', 'Pidgeotite', 'Red Orb', 'Starminite', 'Baton Pass', 'Shed Tail',
+			'Calyrex-Shadow', 'Koraidon', 'Miraidon', 'Moody', 'Absolite Z', 'Beedrillite', 'Blazikenite', 'Centiskorchite Z', 'Garchompite Z', 'Glalitite',
+			'Kangaskhanite', 'Lucarionite Z', 'Malamarite', 'Mawilite', 'Medichamite', 'Meowscaradite', 'Pidgeotite', 'Red Orb', 'Scolipite', 'Serperiorite', 'Starminite', 'Wigglytite', 
+			'Yanmeganite', 'Zygardite', 
+			'Baton Pass', 'Shed Tail',
 		],
 		unbanlist: ['Battle Bond', 'Greninja-Bond', 'Light of Ruin'],
 		restricted: [
@@ -385,9 +387,9 @@ export const Formats: import('../sim/dex-formats').FormatList = [
 		mod: 'gen9agoldenexperience',
 		ruleset: ['Standard NatDex', 'Terastal Clause', '!Sleep Clause Mod', 'Sleep Moves Clause', 'Camomons Mod', '!Obtainable Moves', 'Z-Move Clause'],
 		banlist: [
-			'Aerodactyl-Mega', 'Alakazam', 'Alakazam-Mega', 'Arceus', 'Blaziken-Mega', 'Beedrill-Mega', 'Calyrex-Ice', 'Calyrex-Shadow', 'Charizard-Mega-Y', 'Chi-Yu', 
+			'Absol-Mega-Z', 'Aerodactyl-Mega', 'Alakazam', 'Alakazam-Mega', 'Arceus', 'Blaziken-Mega', 'Beedrill-Mega', 'Calyrex-Ice', 'Calyrex-Shadow', 'Charizard-Mega-Y', 'Chi-Yu', 
 			'Chien-Pao', 'Comfey', 'Darmanitan-Base', 'Darmanitan-Galar', 'Deoxys-Normal', 'Deoxys-Attack', 'Dialga', 'Dialga-Origin', 'Dondozo', 'Enamorus-Incarnate', 
-			'Eternatus', 'Flutter Mane', 'Garchomp-Mega-Z', 'Gengar-Mega', 'Giratina', 'Giratina-Origin', 'Groudon', 'Groudon-Primal', 'Ho-Oh', 'Hoopa-Unbound', 
+			'Eternatus', 'Flutter Mane', 'Garchomp-Mega-Z', 'Gengar-Mega', 'Gengar-Mega-Z', 'Giratina', 'Giratina-Origin', 'Groudon', 'Groudon-Primal', 'Ho-Oh', 'Hoopa-Unbound', 
 			'Kangaskhan-Mega', 'Kartana', 'Komala', 'Koraidon', 'Kyogre', 'Kyogre-Primal', 'Kyurem', 'Kyurem-Black', 'Kyurem-White', 'Lucario-Mega', 'Lucario-Mega-Z', 'Lugia', 
 			'Lunala', 'Marshadow', 'Mawile-Mega', 'Medicham-Mega', 'Melmetal', 'Meowscarada-Mega', 'Metagross-Mega', 'Mewtwo', 'Miraidon', 'Necrozma-Dawn-Wings', 
 			'Necrozma-Dusk-Mane', 'Palafin', 'Palkia', 'Palkia-Origin', 'Pheromosa', 'Porygon-Z', 'Raichu-Mega-Y', 'Rayquaza', 'Regieleki', 'Reshiram', 'Salamence-Mega', 

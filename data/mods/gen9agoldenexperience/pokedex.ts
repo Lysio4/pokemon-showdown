@@ -3467,7 +3467,7 @@ export const Pokedex: {[k: string]: ModdedSpeciesData;} = {
 		types: ["Fire", "Ghost"],
 		genderRatio: {M: 0.875, F: 0.125},
 		baseStats: {hp: 104, atk: 75, def: 140, spa: 130, spd: 105, spe: 76},
-		abilities: {0: "Unaware"},
+		abilities: {0: "Cacophony"},
 		heightm: 1.6,
 		weightkg: 326.5,
 		color: "Red",

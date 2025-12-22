@@ -2391,7 +2391,6 @@ export const Pokedex: {[k: string]: ModdedSpeciesData;} = {
 	},
 	braviary: {
 		inherit: true,
-		types: ["Fighting", "Flying"],
 		abilities: {0: "Hustle", 1: "Sheer Force", H: "Defiant"},
 	},
 	braviaryhisui: {
@@ -2786,7 +2785,7 @@ export const Pokedex: {[k: string]: ModdedSpeciesData;} = {
 	},
 	crabominablemega: {
 		inherit: true,
-		abilities: { 0: "Iron Fist" },
+		abilities: { 0: "Strong Will" },
 	},
 	oricorio: {
 		inherit: true,

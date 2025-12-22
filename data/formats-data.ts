@@ -6265,6 +6265,10 @@ export const FormatsData: import('../sim/dex-species').SpeciesFormatsDataTable =
 		isNonstandard: "Custom",
 		tier: "Illegal",
 	},
+	gengarmegaz: {
+		isNonstandard: "Custom",
+		tier: "Illegal",
+	},
 	omastarrevived: {
 		isNonstandard: "Custom",
 		tier: "Illegal",

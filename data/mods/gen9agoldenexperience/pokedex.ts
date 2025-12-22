@@ -362,6 +362,22 @@ export const Pokedex: {[k: string]: ModdedSpeciesData;} = {
 	gengar: {
 		inherit: true,
 		abilities: {0: "Levitate", H: "Neutralizing Gas"},
+		otherFormes: ["Gengar-Mega", "Gengar-Mega-Z"],
+		formeOrder: ["Gengar", "Gengar-Mega", "Gengar-Mega-Z"],
+	},
+	gengarmegaz: {
+		num: 94,
+		name: "Gengar-Mega-Z",
+		baseSpecies: "Gengar",
+		forme: "Mega-Z",
+		types: ["Ghost", "Poison"],
+		baseStats: { hp: 60, atk: 139, def: 60, spa: 105, spd: 85, spe: 151 },
+		abilities: { 0: "Iron Fist" },
+		heightm: 1.7,
+		weightkg: 40.5,
+		color: "Purple",
+		eggGroups: ["Amorphous"],
+		requiredItem: "Gengarite Z",
 	},
 	kingler: {
 		inherit: true,

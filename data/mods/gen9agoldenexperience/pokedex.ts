@@ -2551,7 +2551,7 @@ export const Pokedex: {[k: string]: ModdedSpeciesData;} = {
 	malamarmega: {
 		inherit: true,
 		baseStats: { hp: 86, atk: 102, def: 88, spa: 98, spd: 85, spe: 123 },
-		abilities: { 0: "Contrary" },
+		abilities: { 0: "Contrarian" },
 	},
 	barbaraclemega: {
 		inherit: true,

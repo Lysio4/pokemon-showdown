@@ -2486,7 +2486,7 @@ export const Pokedex: {[k: string]: ModdedSpeciesData;} = {
 	},
 	greninjamega: {
 		inherit: true,
-		abilities: { 0: "Skill Link" },
+		abilities: { 0: "Protean" },
 	},
 	pyroarmega: {
 		inherit: true,

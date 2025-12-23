@@ -1197,6 +1197,7 @@ export const Learnsets: { [speciesid: string]: LearnsetData; } = {
 			temperflare: ["9M"],
 			thunderfang: ["9M"],
 			twister: ["9E"],
+			vacuumwave: ["9M"],
 		},
 	},
 	carnivine: {

@@ -108,6 +108,7 @@ export const Learnsets: { [speciesid: string]: LearnsetData; } = {
 	},
 	pikachustarter: {
 		learnset: {
+			versatiledance: ["9L1"],
 			agility: ["8V", "7L27"],
 			brickbreak: ["8V", "7M"],
 			calmmind: ["8V", "7M"],
@@ -184,6 +185,7 @@ export const Learnsets: { [speciesid: string]: LearnsetData; } = {
 	},
 	eeveestarter: {
 		learnset: {
+			versatiledance: ["9L1"],
 			uturn: ["9L1"],
 			slackoff: ["9L1"],
 			baddybad: ["8V", "7T"],
@@ -6303,6 +6305,7 @@ export const Learnsets: { [speciesid: string]: LearnsetData; } = {
 			bulkup: ["9M"],
 			calmmind: ["9M"],
 			chakraterrain: ["9M", "9L1"],
+			chistrike: ["9M"],
 			closecombat: ["9M"],
 			coaching: ["9L1"],
 			crosschop: ["9L1"],

@@ -103710,6 +103710,7 @@ export const Learnsets: import('../sim/dex-species').LearnsetDataTable = {
 			bulkup: ["9M"],
 			calmmind: ["9M"],
 			chakraterrain: ["9M", "9L1"],
+			chistrike: ["9M"],
 			closecombat: ["9M"],
 			coaching: ["9L1"],
 			crosschop: ["9L1"],

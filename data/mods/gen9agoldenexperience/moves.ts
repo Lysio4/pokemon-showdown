@@ -3931,6 +3931,56 @@ export const Moves: { [k: string]: ModdedMoveData; } = {
 		desc: "This move's type depends on the user's primary type. If the user's primary type is typeless, this move's type is the user's secondary type if it has one, otherwise the added type from Forest's Curse or Trick-or-Treat. This move is typeless if the user's type is typeless alone.",
 		shortDesc: "Type varies based on the user's primary type.",
 	},
+	versatiledance: {
+		num: -101,
+		accuracy: true,
+		basePower: 0,
+		category: "Status",
+		name: "Versatile Dance",
+		pp: 20,
+		priority: 0,
+		flags: { snatch: 1, metronome: 1 },
+		boosts: {
+			atk: 1,
+			spa: 1,
+			spe: 1,
+		},
+		onPrepareHit(target, source) {
+			this.attrLastMove('[still]');
+			this.add('-anim', source, "Work Up", target);
+		},
+		secondary: null,
+		target: "self",
+		type: "Normal",
+		zMove: { boost: { atk: 1 } },
+		contestType: "Tough",
+		desc: "Raises the user's Attack, Special Attack and Speed by 1 stage.",
+		shortDesc: "Raises the user's Attack, Sp. Atk and Speed by 1.",
+	},
+	chistrike: {
+		num: -102,
+		accuracy: 100,
+		basePower: 90,
+		onModifyMovePriority: -5,
+		onModifyMove(move, attacker, defender) {
+			if (!move.ignoreImmunity) move.ignoreImmunity = {};
+			if (move.ignoreImmunity !== true && this.field.isTerrain('chakraterrain') && defender.isGrounded()) {
+				this.hint(`${move.name}can hit grounded Ghost target.`);
+				move.ignoreImmunity['Fighting'] = true;
+			}
+		},
+		category: "Physical",
+		name: "Chi Strike",
+		pp: 20,
+		priority: 0,
+		flags: { protect: 1, mirror: 1, metronome: 1 },
+		secondary: null,
+		target: "normal",
+		type: "Fighting",
+		maxMove: { basePower: 140 },
+		desc: "If the current terrain is Chakra Terrain and the target is grounded, this move hits Ghost type targets.",
+		shortDesc: "Hits Ghost type grounded targets in Chakra Terrain.",
+	},
 
 
 

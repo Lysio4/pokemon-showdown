@@ -1349,7 +1349,6 @@ export const Pokedex: {[k: string]: ModdedSpeciesData;} = {
 	},
 	absolmega: {
 		inherit: true,
-		baseStats: {hp: 65, atk: 150, def: 70, spa: 85, spd: 70, spe: 125},
 		abilities: {0: "Angelic Nature"},
 	},
 	absolmegaz: {

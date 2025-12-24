@@ -3068,7 +3068,7 @@ export const Abilities: { [abilityid: string]: ModdedAbilityData; } = {
 		shortDesc: "Heals 25% HP if the Pokémon uses a Sound move.",
 		onAfterMove(source: Pokemon, target: Pokemon, move: ActiveMove) {
 			if (!move.flags['sound']) return;
-			source.heal(pokemon.baseMaxhp / 4);
+			source.heal(source.baseMaxhp / 4);
 		},
 		flags: {},
 	    name: "Healing Echo",

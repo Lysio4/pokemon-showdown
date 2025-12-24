@@ -1105,45 +1105,20 @@ export const Abilities: { [abilityid: string]: ModdedAbilityData; } = {
 		num: -54,
 	},
 	mentalfortitude: {
-		onUpdate(pokemon) {
-			if (pokemon.volatiles['attract']) {
-				this.add('-activate', pokemon, 'ability: Mental Fortitude');
-				pokemon.removeVolatile('attract');
-				this.add('-end', pokemon, 'move: Attract', '[from] ability: Mental Fortitude');
-			}
-			if (pokemon.volatiles['taunt']) {
-				this.add('-activate', pokemon, 'ability: Mental Fortitude');
-				pokemon.removeVolatile('taunt');
-			}
-			if (pokemon.volatiles['encore']) {
-				this.add('-activate', pokemon, 'ability: Mental Fortitude');
-				pokemon.removeVolatile('encore');
-			}
-			if (pokemon.volatiles['torment']) {
-				this.add('-activate', pokemon, 'ability: Mental Fortitude');
-				pokemon.removeVolatile('torment');
-			}
-			if (pokemon.volatiles['disable']) {
-				this.add('-activate', pokemon, 'ability: Mental Fortitude');
-				pokemon.removeVolatile('disable');
-			}
-			if (pokemon.volatiles['healblock']) {
-				this.add('-activate', pokemon, 'ability: Mental Fortitude');
-				pokemon.removeVolatile('healblock');
-			}
-		},
-		onImmunity(type, pokemon) {
-			if (type === 'attract') return false;
-		},
-		onTryHit(pokemon, target, move) {
-			if (move.id === 'attract' || move.id === 'captivate' || move.id === 'taunt') {
-				this.add('-immune', pokemon, '[from] ability: Oblivious');
+		onAllyTryAddVolatile(status, target, source, effect) {
+			if (['attract', 'disable', 'encore', 'healblock', 'taunt', 'torment'].includes(status.id)) {
+				if (effect.effectType === 'Move') {
+					const effectHolder = this.effectState.target;
+					this.add('-block', target, 'ability: Aroma Veil', `[of] ${effectHolder}`);
+				}
 				return null;
 			}
 		},
+		desc: "This Pokemon and its allies cannot become affected by Attract, Disable, Encore, Heal Block, Taunt, or Torment.",
+		shortDesc: "Protects user/allies from Attract, Disable, Encore, Heal Block, Taunt, and Torment.",
+		flags: { breakable: 1 },
 		name: "Mental Fortitude",
-		shortDesc: "This Pokemon is immune to Attract, Disable, Encore, Heal Block, Taunt, Torment.",
-		rating: 1.5,
+		rating: 2,
 		num: -55,
 	},
 	unconcerned: {

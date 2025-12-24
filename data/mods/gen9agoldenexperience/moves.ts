@@ -3939,7 +3939,7 @@ export const Moves: { [k: string]: ModdedMoveData; } = {
 		name: "Versatile Dance",
 		pp: 20,
 		priority: 0,
-		flags: { snatch: 1, metronome: 1 },
+		flags: { snatch: 1, dance: 1, metronome: 1 },
 		boosts: {
 			atk: 1,
 			spa: 1,

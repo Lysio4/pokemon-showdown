@@ -124,7 +124,7 @@ export const Pokedex: {[k: string]: ModdedSpeciesData;} = {
 	},
 	raichumegay: {
 		inherit: true,
-		abilities: { 0: "Lightning Rod" },
+		abilities: { 0: "Adaptability" },
 	},
 	sandshrew: {
 		inherit: true,

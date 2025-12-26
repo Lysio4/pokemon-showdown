@@ -6432,6 +6432,7 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 		onSourceHit(target, source, move) {
 			if (!move || !target) return;
 			if (move.type === 'Water' && this.field.getWeather().id !== 'raindance') {
+				this.add('-activate', source, 'ability: Blowhole');
 				this.field.setWeather('raindance');
 			}
 		},
@@ -7786,6 +7787,7 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 		shortDesc: "Heals 25% HP if the Pokémon uses a Sound move.",
 		onAfterMove(source: Pokemon, target: Pokemon, move: ActiveMove) {
 			if (!move.flags['sound']) return;
+			this.add('-activate', source, 'ability: Healing Echo');
 			this.heal(source.baseMaxhp / 4);
 		},
 		flags: {},

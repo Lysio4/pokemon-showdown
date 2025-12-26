@@ -227,11 +227,11 @@ export const FormatsData: { [k: string]: SpeciesFormatsData; } = {
 		doublesTier: "DUU",
 	},
 	raichumegax: {
-		tier: "UU",
+		tier: "OU",
 		doublesTier: "DOU",
 	},
 	raichumegay: {
-		tier: "OU",
+		tier: "UU",
 		doublesTier: "DOU",
 	},
 	sandshrew: {
@@ -1010,7 +1010,7 @@ export const FormatsData: { [k: string]: SpeciesFormatsData; } = {
 		doublesTier: "DOU",
 	},
 	zapdosgalar: {
-		tier: "UUBL",
+		tier: "UU",
 		doublesTier: "DUU",
 	},
 	moltres: {
@@ -2075,7 +2075,7 @@ export const FormatsData: { [k: string]: SpeciesFormatsData; } = {
 		doublesTier: "DOU",
 	},
 	latios: {
-		tier: "UUBL",
+		tier: "UU",
 		doublesTier: "DOU",
 	},
 	latiosmega: {
@@ -2475,7 +2475,7 @@ export const FormatsData: { [k: string]: SpeciesFormatsData; } = {
 		doublesTier: "DUU",
 	},
 	manaphy: {
-		tier: "UUBL",
+		tier: "UU",
 		doublesTier: "DUU",
 	},
 	darkrai: {
@@ -3812,7 +3812,7 @@ export const FormatsData: { [k: string]: SpeciesFormatsData; } = {
 		tier: "LC",
 	},
 	lycanroc: {
-		tier: "UUBL",
+		tier: "UU",
 		doublesTier: "DUU",
 	},
 	lycanrocmidnight: {
@@ -4915,7 +4915,7 @@ export const FormatsData: { [k: string]: SpeciesFormatsData; } = {
 	},
 	baxcaliburmega: {
 		tier: "Uber",
-		doublesTier: "DUU",
+		doublesTier: "DOU",
 	},
 	tatsugiri: {
 		tier: "PU",
@@ -5114,11 +5114,11 @@ export const FormatsData: { [k: string]: SpeciesFormatsData; } = {
 		doublesTier: "DOU",
 	},
 	koraidon: {
-		tier: "AG",
+		tier: "Uber",
 		doublesTier: "DUber",
 	},
 	miraidon: {
-		tier: "AG",
+		tier: "Uber",
 		doublesTier: "DUber",
 	},
 	koraidonweakened: {

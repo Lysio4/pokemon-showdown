@@ -3586,7 +3586,7 @@ export const Learnsets: { [speciesid: string]: LearnsetData; } = {
 	},
 	ledixy: {
 		learnset: {
-			cosmicpunch: ["9L69"],
+			martialpunch: ["9L1"],
 			stellarpunch: ["9L69"],
 			icepunch: ["9L69"],
 			thunderpunch: ["9L69"],
@@ -4387,6 +4387,8 @@ export const Learnsets: { [speciesid: string]: LearnsetData; } = {
 			detectmagic: ["9L69"],
 			dispelmagic: ["9L69"],
 			magicmissile: ["9L69"],
+			hypervoice: ["9L69"],
+			triattack: ["9L69"],
 		},
 	},
 	mystao: {
@@ -4438,6 +4440,11 @@ export const Learnsets: { [speciesid: string]: LearnsetData; } = {
 			taunt: ["9L1"],
 			willowisp: ["9L1"],
 			workup: ["9L1"],
+			chistrike: ["9L1"],
+			chakraterrain: ["9L1"],
+			martialpunch: ["9L1"],
+			musclecare: ["9L1"],
+			clearmind: ["9L1"],
 		},
 	},
 	sableyeunova: {

@@ -22732,7 +22732,7 @@ export const Pokedex: import('../sim/dex-species').SpeciesDataTable = {
 		name: "Leechuption",
 		types: ["Ice", "Fire"],
 		baseStats: {hp: 90, atk: 50, def: 120, spa: 120, spd: 120, spe: 40},
-		abilities: {0: "Snow Warning", 1: "Misty Mountain", H: "Weak Armor"},
+		abilities: {0: "Snow Warning", 1: "Ice Body", H: "Weak Armor"},
 		heightm: 0.7,
 		weightkg: 122,
 		color: "White",

@@ -1231,12 +1231,12 @@ export const Pokedex: {[k: string]: ModdedSpeciesData;} = {
 	},
 	baltoy: {
 		inherit: true,
-		abilities: {0: "Levitate", 1: "Smart Guard", H: "Graviton"},
+		abilities: {0: "Levitate", H: "Graviton"},
 	},
 	claydol: {
 		inherit: true,
 		baseStats: {hp: 80, atk: 50, def: 105, spa: 70, spd: 120, spe: 75},
-		abilities: {0: "Levitate", 1: "Smart Guard", H: "Graviton"},
+		abilities: {0: "Levitate", H: "Graviton"},
 	},
 	cradily: {
 		inherit: true,
@@ -1385,15 +1385,15 @@ export const Pokedex: {[k: string]: ModdedSpeciesData;} = {
 	},
 	beldum: {
 		inherit: true,
-		abilities: {0: "Clear Body", 1: "Neuroforce", H: "Graviton"},
+		abilities: {0: "Clear Body", H: "Graviton"},
 	},
 	metang: {
 		inherit: true,
-		abilities: {0: "Clear Body", 1: "Neuroforce", H: "Graviton"},
+		abilities: {0: "Clear Body", H: "Graviton"},
 	},
 	metagross: {
 		inherit: true,
-		abilities: {0: "Clear Body", 1: "Neuroforce", H: "Graviton"},
+		abilities: {0: "Clear Body", H: "Graviton"},
 	},
 	regirock: {
 		inherit: true,
@@ -1661,10 +1661,6 @@ export const Pokedex: {[k: string]: ModdedSpeciesData;} = {
 		baseStats: {hp: 90, atk: 142, def: 105, spa: 142, spd: 105, spe: 30},
 		abilities: {0: "Everlasting Winter"},
 	},
-	magnezone: {
-		inherit: true,
-		abilities: {0: "Magnet Pull", 1: "Smart Guard", H: "Analytic"},
-	},
 	lickilicky: {
 		inherit: true,
 		types: ["Normal", "Poison"],
@@ -1724,7 +1720,7 @@ export const Pokedex: {[k: string]: ModdedSpeciesData;} = {
 	probopass: {
 		inherit: true,
 		baseStats: {hp: 60, atk: 50, def: 145, spa: 90, spd: 150, spe: 30},
-		abilities: {0: "Levitate", 1: "Magnet Pull", H: "Smart Guard"},
+		abilities: {0: "Sturdy", 1: "Magnet Pull", H: "Levitate"},
 	},
 	dusknoir: {
 		inherit: true,
@@ -2562,12 +2558,12 @@ export const Pokedex: {[k: string]: ModdedSpeciesData;} = {
 	},
 	clauncher: {
 		inherit: true,
-		abilities: {0: "Mega Launcher", 1: "Deadly Blasts", H: "Quick Draw"},
+		abilities: {0: "Mega Launcher", H: "Deadly Blasts"},
 	},
 	clawitzer: {
 		inherit: true,
 		baseStats: {hp: 89, atk: 70, def: 90, spa: 120, spd: 90, spe: 51},
-		abilities: {0: "Mega Launcher", 1: "Deadly Blasts", H: "Quick Draw"},
+		abilities: {0: "Mega Launcher", H: "Deadly Blasts"},
 	},
 	heliolisk: {
 		inherit: true,
@@ -2899,7 +2895,7 @@ export const Pokedex: {[k: string]: ModdedSpeciesData;} = {
 	oranguru: {
 		inherit: true,
 		baseStats: {hp: 100, atk: 50, def: 90, spa: 90, spd: 110, spe: 50},
-		abilities: {0: "Inner Focus", 1: "Smart Guard", H: "Divination"},
+		abilities: {0: "Inner Focus", 1: "Divination", H: "Symbiosis"},
 	},
 	passimian: {
 		inherit: true,
@@ -4534,7 +4530,7 @@ export const Pokedex: {[k: string]: ModdedSpeciesData;} = {
 		name: "Leechuption",
 		types: ["Ice", "Fire"],
 		baseStats: {hp: 90, atk: 50, def: 120, spa: 120, spd: 120, spe: 40},
-		abilities: {0: "Snow Warning", 1: "Misty Mountain", H: "Weak Armor"},
+		abilities: {0: "Snow Warning", 1: "Ice Body", H: "Weak Armor"},
 		heightm: 0.7,
 		weightkg: 122,
 		color: "White",

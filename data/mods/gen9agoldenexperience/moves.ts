@@ -197,7 +197,7 @@ export const Moves: { [k: string]: ModdedMoveData; } = {
 		secondary: null,
 		target: "normal",
 		type: "Psychic",
-		shortDesc: "The target is cleared from all its stat changes.",
+		shortDesc: "Resets all of the target's stat stages to 0.",
 	},
 	photopower: {
 		num: -9,
@@ -618,28 +618,6 @@ export const Moves: { [k: string]: ModdedMoveData; } = {
 		type: "Ice",
 		contestType: "Cool",
 	},
-	monkeypunch: {
-		num: -26,
-		accuracy: 100,
-		basePower: 80,
-		category: "Physical",
-		name: "Monkey Punch",
-		pp: 10,
-		priority: 0,
-		flags: { contact: 1, protect: 1, mirror: 1, punch: 1 },
-		onEffectiveness(typeMod, target, type) {
-			if (type === 'Grass' || type === 'Bug') return 1;
-		},
-		onPrepareHit(target, source) {
-			this.attrLastMove('[still]');
-			this.add('-anim', source, "Close Combat", target);
-		},
-		secondary: null,
-		target: "normal",
-		type: "Fighting",
-		contestType: "Tough",
-		shortDesc: "Super effective on Bug and Grass targets.",
-	},
 	indomitablespirit: {
 		num: -27,
 		accuracy: 95,
@@ -678,7 +656,7 @@ export const Moves: { [k: string]: ModdedMoveData; } = {
 		target: "normal",
 		type: "Fighting",
 	},
-	cosmicpunch: {
+	martialpunch: {
 		num: -28,
 		accuracy: 100,
 		basePower: 80,
@@ -686,7 +664,7 @@ export const Moves: { [k: string]: ModdedMoveData; } = {
 		shortDesc: "Damages target based on Sp. Def, not Defense.",
 		category: "Physical",
 		overrideDefensiveStat: 'spd',
-		name: "Cosmic Punch",
+		name: "Martial Punch",
 		pp: 10,
 		priority: 0,
 		flags: { punch: 1, protect: 1, mirror: 1 },
@@ -1418,16 +1396,6 @@ export const Moves: { [k: string]: ModdedMoveData; } = {
 			status: 'frz',
 		},
 	},
-	relicsong: {
-		inherit: true,
-		basePower: 95,
-		secondary: null,
-		self: {
-			sideCondition: 'luckychant',
-		},
-		desc: "This move summons Lucky Chant for 5 turns upon use. If this move is successful on at least one target and the user is a Meloetta, it changes to Pirouette Forme if it is currently in Aria Forme, or changes to Aria Forme if it is currently in Pirouette Forme. This forme change does not happen if the Meloetta has the Sheer Force Ability. The Pirouette Forme reverts to Aria Forme when Meloetta is not active.",
-		shortDesc: "Summons Lucky Chant. Meloetta transforms.",
-	},
 	multiattack: {
 		inherit: true,
 		desc: "This move's type depends on the user's primary type. If the user's primary type is typeless, this move's type is the user's secondary type if it has one, otherwise the added type from Forest's Curse or Trick-or-Treat. This move is typeless if the user's type is typeless alone.",
@@ -1500,11 +1468,6 @@ export const Moves: { [k: string]: ModdedMoveData; } = {
 		inherit: true,
 		accuracy: 100,
 		isNonstandard: null,
-		self: {
-			sideCondition: 'luckychant',
-		},
-		desc: "This move summons Lucky Chant for 5 turns upon use.",
-		shortDesc: "Summons Lucky Chant.",
 	},
 	veeveevolley: {
 		inherit: true,

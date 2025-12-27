@@ -245,27 +245,6 @@ export const Abilities: { [abilityid: string]: ModdedAbilityData; } = {
 		shortDesc: "If this Pokemon is hit by a physical super effective move, it takes neutral damage.",
 		num: -12,
 	},
-	mistymountain: { 
-		onModifyTypePriority: -1,
-		onModifyType(move, pokemon) {
-			const noModifyType = [
-				'judgment', 'multiattack', 'naturalgift', 'revelationdance', 'technoblast', 'terrainpulse', 'weatherball',
-			];
-			if (move.type === 'Rock' && !noModifyType.includes(move.id) &&
-				!(move.isZ && move.category !== 'Status') && !(move.name === 'Tera Blast' && pokemon.terastallized)) {
-				move.type = 'Ice';
-				move.typeChangerBoosted = this.effect;
-			}
-		},
-		onBasePowerPriority: 23,
-		onBasePower(basePower, pokemon, target, move) {
-			if (move.typeChangerBoosted === this.effect) return this.chainModify([4915, 4096]);
-		},
-		name: "Misty Mountain",
-		shortDesc: "This Pokemon's Rock-type moves become Ice-type and have 1.2x power.",
-		rating: 4,
-		num: -13,
-	},
 	toymaker: {
 		name: "Toymaker",
 		desc: "At the end of each turn, if it doesn't have an held item, the user acquires a random item. (Leftovers, Sitrus Berry, Lum Berry, Figy Berry, Starf Berry, Choice Band, Choice Specs, Choice Scarf, Flame Orb, Para Orb, Toxic Orb, Light Ball, Iron Ball, Rocky Helmet, Heavy-Duty Boots)",
@@ -1837,34 +1816,6 @@ export const Abilities: { [abilityid: string]: ModdedAbilityData; } = {
 		desc: "If user is Cherrim and Sunny Day isn't active, its Def is 1.5x. If user is Cherrim and Sunny Day is active, it and its allies Atk and Sp. Def are 1.5x. and Cherrim gains the Fire type.",
 		shortDesc: "Cherrim: If Sunny Day is active, it and its allies Atk and Sp. Def are 1.5x, and Cherrim gains the Fire type; otherwise Def x1.5.",
 	},
-	quickdraw: {
-		inherit: true,
-		onFractionalPriority(priority, pokemon, target, move) {},
-		desc: "This Pokémon moves first in its priority bracket when its target has 1/3 or less of its maximum HP, rounded down. Does not affect moves that have multiple targets.",
-		shortDesc: "This Pokémon moves first in its priority bracket when its target has 1/3 or less HP.",
-		onUpdate(pokemon) {
-			const action = this.queue.willMove(pokemon);
-			if (!action) return;
-			const target = this.getTarget(action.pokemon, action.move, action.targetLoc);
-			if (!target) return;
-			if (action.move.target != 'allAdjacentFoes' && action.move.target != 'allAdjacent' && target.hp && target.hp <= target.maxhp / 2) {
-				pokemon.addVolatile('quickdraw');
-			}
-		},
-		condition: {
-			duration: 1,
-			onStart(pokemon) {
-				const action = this.queue.willMove(pokemon);
-				if (action) {
-					this.add('-ability', pokemon, 'Quick Draw');
-					this.add('-message', `${pokemon.name} prepared to move immediately!`);
-				}
-			},
-			onModifyPriority(priority) {
-				return priority + 0.1;
-			},
-		},
-	},
 	icescales: {
 		inherit: true,
 		onSourceModifyDamage(damage, source, target, move) {
@@ -1886,27 +1837,6 @@ export const Abilities: { [abilityid: string]: ModdedAbilityData; } = {
 		desc: "This Pokemon receives 1/2 damage from special attacks.",
 		rating: 4,
 		num: -61,
-	},
-	smartguard: {
-		desc: "On switch-in, this Pokémon's Defense or Special Defense is raised by 1 stage based on the weaker combined attacking stat of all opposing Pokémon. Special Defense is raised if their Special Attack is higher, and Defense is raised if their Attack is the same or higher.",
-		shortDesc: "On switch-in, Defense or Sp. Def is raised 1 stage based on the foes' weaker Attack.",
-		onStart(pokemon) {
-			let totalatk = 0;
-			let totalspa = 0;
-			for (const target of pokemon.side.foe.active) {
-				if (!target || target.fainted) continue;
-				totalatk += target.getStat('atk', false, true);
-				totalspa += target.getStat('spa', false, true);
-			}
-			if (totalatk && totalatk >= totalspa) {
-				this.boost({def: 1});
-			} else if (totalspa) {
-				this.boost({spd: 1});
-			}
-		},
-		name: "Smart Guard",
-		rating: 4,
-		num: -62,
 	},
 	dodge: {
 		shortDesc: "When taking damages, this Pokemon adds 50% of its Speed to its corresponding defense.",

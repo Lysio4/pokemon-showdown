@@ -22742,28 +22742,6 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 		type: "Ice",
 		contestType: "Cool",
 	},
-	monkeypunch: {
-		num: -26,
-		accuracy: 100,
-		basePower: 80,
-		category: "Physical",
-		name: "Monkey Punch",
-		pp: 10,
-		priority: 0,
-		flags: { contact: 1, protect: 1, mirror: 1, punch: 1 },
-		onEffectiveness(typeMod, target, type) {
-			if (type === 'Grass' || type === 'Bug') return 1;
-		},
-		onPrepareHit(target, source) {
-			this.attrLastMove('[still]');
-			this.add('-anim', source, "Close Combat", target);
-		},
-		secondary: null,
-		target: "normal",
-		type: "Fighting",
-		contestType: "Tough",
-		shortDesc: "Super effective on Bug and Grass targets.",
-	},
 	indomitablespirit: {
 		num: -27,
 		accuracy: 95,
@@ -22802,7 +22780,7 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 		target: "normal",
 		type: "Fighting",
 	},
-	cosmicpunch: {
+	martialpunch: {
 		num: -28,
 		accuracy: 100,
 		basePower: 80,
@@ -22810,7 +22788,7 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 		shortDesc: "Damages target based on Sp. Def, not Defense.",
 		category: "Physical",
 		overrideDefensiveStat: 'spd',
-		name: "Cosmic Punch",
+		name: "Martial Punch",
 		pp: 10,
 		priority: 0,
 		flags: { punch: 1, protect: 1, mirror: 1 },

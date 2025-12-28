@@ -3295,6 +3295,22 @@ export const FormatsData: { [k: string]: SpeciesFormatsData; } = {
 		tier: "Uber",
 		doublesTier: "DUber",
 	},
+	genesectburn: {
+		tier: "Uber",
+		doublesTier: "DUber",
+	},
+	genesectchill: {
+		tier: "Uber",
+		doublesTier: "DUber",
+	},
+	genesectdouse: {
+		tier: "Uber",
+		doublesTier: "DUber",
+	},
+	genesectshock: {
+		tier: "Uber",
+		doublesTier: "DUber",
+	},
 	chespin: {
 		tier: "LC",
 	},

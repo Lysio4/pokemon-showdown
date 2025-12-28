@@ -2445,30 +2445,6 @@ export const Pokedex: {[k: string]: ModdedSpeciesData;} = {
 		requiredItem: "Relic Sheet",
 		battleOnly: null,
 	},
-	genesect: {
-		inherit: true,
-		abilities: {0: "Analytic"},
-	},
-	genesectdouse: {
-		inherit: true,
-		baseStats: {hp: 71, atk: 130, def: 105, spa: 130, spd: 105, spe: 109},
-		abilities: {0: "Storm Drain"},
-	},
-	genesectshock: {
-		inherit: true,
-		baseStats: {hp: 71, atk: 125, def: 100, spa: 125, spd: 100, spe: 129},
-		abilities: {0: "Motor Drive"},
-	},
-	genesectburn: {
-		inherit: true,
-		baseStats: {hp: 71, atk: 125, def: 115, spa: 125, spd: 115, spe: 99},
-		abilities: {0: "Flash Fire"},
-	},
-	genesectchill: {
-		inherit: true,
-		baseStats: {hp: 71, atk: 135, def: 100, spa: 135, spd: 100, spe: 109},
-		abilities: {0: "Refrigerate"},
-	},
 
 	// Gen 6 :
 	chesnaughtmega: {
@@ -2494,8 +2470,6 @@ export const Pokedex: {[k: string]: ModdedSpeciesData;} = {
 	floette: {
 		inherit: true,
 		abilities: {0: "Flower Veil", 1: "Leaf Dress", H: "Symbiosis"},
-		otherFormes: ["Floette-Eternal", "Floette-Mega"],
-		formeOrder: ["Floette", "Floette-Yellow", "Floette-Orange", "Floette-Blue", "Floette-White", "Floette-Eternal", "Floette-Mega"],
 	},
 	floetteeternal: {
 		inherit: true,

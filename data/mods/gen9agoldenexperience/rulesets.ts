@@ -14,14 +14,14 @@ export const Rulesets: {[k: string]: ModdedFormatData} = {
 	},
 	nonsigzmoveclause: {
 		effectType: 'ValidatorRule',
-		name: 'Non-sig Z-Move Clause',
+		name: 'Non-Signature Z-Move Clause',
 		desc: "Bans Pok&eacute;mon from holding non-signature Z-Crystals",
 		onValidateSet(set) {
 			const item = this.dex.items.get(set.item);
-			if (item.zMove && !item.itemUser) return [`${set.name || set.species}'s item ${item.name} is banned by Z-Move Clause.`];
+			if (item.zMove && !item.itemUser) return [`${set.name || set.species}'s item ${item.name} is banned by Non-Signature Z-Move Clause.`];
 		},
 		onBegin() {
-			this.add('rule', 'Z-Move Clause: Z-Moves are banned');
+			this.add('rule', 'Non-Signature Z-Move Clause: non-signature Z-Moves are banned');
 		},
 	},
 };

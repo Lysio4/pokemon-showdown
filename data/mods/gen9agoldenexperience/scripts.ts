@@ -1912,6 +1912,7 @@ export const Scripts: ModdedBattleScriptsData = {
     this.modData('Learnsets', 'avalugghisui').learnset.fissure = ['9L1'];
     this.modData('Learnsets', 'noivern').learnset.snarl = ['9L1'];
     this.modData('Learnsets', 'noivern').learnset.wyvernflight = ['9L1'];
+    this.modData('Learnsets', 'zygarde').learnset.ironhead = ['9L1']; // ZA addition
     this.modData('Learnsets', 'hoopa').learnset.psychicfangs = ['9L1']; // ZA addition
 
     // Gen 7:

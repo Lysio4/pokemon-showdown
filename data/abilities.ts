@@ -5674,7 +5674,7 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 	},
 	waterproof: {
 		onTryHit(target, source, move) {
-			if (target !== source && move.type === 'Water') {
+			if (target !== source && (move.type === 'Water' || move.type === 'Electric')) {
 				if (!this.boost({ spe: 1 })) {
 					this.add('-immune', target, '[from] ability: Waterproof');
 				}
@@ -5682,8 +5682,8 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 			}
 		},
 		name: "Waterproof",
-		desc: "This Pokemon is immune to Water-type moves and raises its Speed by 1 stage when hit by an Water-type move.",
-		shortDesc: "This Pokemon's Speed is raised 1 stage if hit by an Water move; Water immunity.",
+		desc: "This Pokemon is immune to Water-type moves and Electric-type moves and raises its Speed by 1 stage when hit by an Water-type move.",
+		shortDesc: "This Pokemon's Speed is raised 1 stage if hit by an Water or Electric move; Water and Electric immunity.",
 		rating: 3,
 		num: -3,
 	},

@@ -18,7 +18,8 @@ export const Rulesets: {[k: string]: ModdedFormatData} = {
 		desc: "Bans Pok&eacute;mon from holding non-signature Z-Crystals",
 		onValidateSet(set) {
 			const item = this.dex.items.get(set.item);
-			if (item.zMove && !item.itemUser) return [`${set.name || set.species}'s item ${item.name} is banned by Non-Signature Z-Move Clause.`];
+			const sigZcrystals = ["Pikanium Z", "Pikashunium Z", "Aloraichium Z", "Eevium Z", "Snorlium Z", "Mewnium Z", "Decidium Z", "Incinium Z", "Primarium Z", "Lycanium Z", "Mimikium Z", "Kommonium Z", "Tapunium Z", "Solganium Z", "Lunalium Z", "Ultranecrozium Z", "Marshadium Z"];
+			if (item.zMove && !sigZcrystals.includes(item.name)) return [`${set.name || set.species}'s item ${item.name} is banned by Non-Signature Z-Move Clause.`];
 		},
 		onBegin() {
 			this.add('rule', 'Non-Signature Z-Move Clause: non-signature Z-Moves are banned');

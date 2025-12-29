@@ -193,9 +193,9 @@ export const Formats: import('../sim/dex-formats').FormatList = [
 		unbanlist: ['Battle Bond', 'Greninja-Bond', 'Light of Ruin'],
 	},
 	{
-		name: "[Gen 9] A Golden Experience Doubles",
+		name: "[Gen 9] A Golden Experience Doubles OU",
 		desc: `A fun metagame where we try to make everything viable, or at least usable. We also have new Fakemons!`,
-		mod: 'gen9agoldenexperiencedoubles',
+		mod: 'gen9agoldenexperience',
 		gameType: 'doubles',
 		ruleset: ['Standard Doubles', 'NatDex Mod', 'Evasion Abilities Clause', 'Terastal Clause', 'Non-Signature Z-Move Clause'],
 		banlist: [

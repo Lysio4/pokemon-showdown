@@ -4153,8 +4153,8 @@ export const FormatsData: { [k: string]: SpeciesFormatsData; } = {
 		doublesTier: "DUber",
 	},
 	necrozmaultra: {
-		inherit: true,
-		tier: "Illegal",
+		tier: "Uber",
+		doublesTier: "DUber",
 	},
 	magearna: {
 		tier: "Uber",

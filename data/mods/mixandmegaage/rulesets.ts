@@ -12,7 +12,7 @@ export const Rulesets: {[k: string]: ModdedFormatData} = {
 			this.add('rule', 'Evasion Abilities Clause: Evasion abilities are banned');
 		},
 	},
-	nonsigzmoveclause: {
+	nonsignaturezmoveclause: {
 		effectType: 'ValidatorRule',
 		name: 'Non-Signature Z-Move Clause',
 		desc: "Bans Pok&eacute;mon from holding non-signature Z-Crystals",

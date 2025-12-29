@@ -129,7 +129,7 @@ export const Formats: import('../sim/dex-formats').FormatList = [
 			'Uber', 'AG', 'Moody', 'Power Construct', 'King\'s Rock',
 			'Baton Pass', 'Last Respects', 'Quick Claw', 'Razor Fang', 'Shed Tail',
 		],
-		unbanlist: ['Battle Bond', 'Greninja-Bond', 'Light of Ruin'],
+		unbanlist: ['Battle Bond', 'Greninja-Bond', 'Light of Ruin', 'Pikanium Z'],
 	},
 	{
 		name: "[Gen 9] A Golden Experience Uber",

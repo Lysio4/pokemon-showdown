@@ -1983,17 +1983,16 @@ export const Moves: { [k: string]: ModdedMoveData; } = {
 		contestType: "Clever",
 	},
 	braveblade: {
-		desc: "Physical if it would be stronger (Shell Side Arm clone). Hits Dark types for neutral damages.",
-		shortDesc: "Physical if stronger. Hits Dark types for neutral damages.",
+		desc: "Physical if it would be stronger (Shell Side Arm clone). Lowers user's Defense and Special Defense by 1.",
+		shortDesc: "Physical if stronger. Lowers the user's Defense and Sp. Def by 1.",
 		num: -49,
 		accuracy: 100,
-		basePower: 80,
+		basePower: 120,
 		category: "Special",
 		name: "Brave Blade",
-		pp: 10,
+		pp: 5,
 		priority: 0,
 		flags: { protect: 1, mirror: 1, slicing: 1 },
-		ignoreImmunity: true,
 		onModifyMove(move, pokemon, target) {
 			if (!target) return;
 			const atk = pokemon.getStat('atk', false, true);
@@ -2016,6 +2015,12 @@ export const Moves: { [k: string]: ModdedMoveData; } = {
 		onPrepareHit(target, source) {
 			this.attrLastMove('[still]');
 			this.add('-anim', source, "Spacial Rend", target);
+		},
+		self: {
+			boosts: {
+				def: -1,
+				spd: -1,
+			},
 		},
 		secondary: null,
 		target: "normal",

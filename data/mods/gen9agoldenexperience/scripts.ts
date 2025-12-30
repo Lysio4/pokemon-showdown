@@ -69,6 +69,9 @@ export const Scripts: ModdedBattleScriptsData = {
         else if (item.name === "Meowsticite" && pokemon.baseSpecies.name === "Meowstic-F") {
           return "Meowstic-F-Mega";
         }
+        else if (item.name === "Magearnite" && pokemon.baseSpecies.name === "Magearna-Original") {
+          return "Magearna-Original-Mega";
+        }
         else if (item.name === "Cramorantite" && pokemon.baseSpecies.name === "Cramorant-Gulping") {
           return "Cramorant-Gulping-Mega";
         }

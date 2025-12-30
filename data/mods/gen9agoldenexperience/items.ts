@@ -1174,6 +1174,12 @@ export const Items: {[itemid: string]: ModdedItemData} = {
 		forcedForme: "Aurorus-Revived",
 		itemUser: ["Aurorus-Revived"],
 	},
+	lycaniumz: {
+		inherit: true,
+		zMoveFrom: "Golem Strike",
+		itemUser: ["Lycanroc", "Lycanroc-Midnight", "Lycanroc-Dusk", "Lycanroc-Bloodmoon"],
+		shortDesc: "If held by a Lycanroc forme with Golem Strike, it can use Splintered Stormshards.",
+	},
 	// everlasting winter
 	safetygoggles: {
 		inherit: true,

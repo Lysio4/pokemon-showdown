@@ -21055,7 +21055,7 @@ export const Pokedex: import('../sim/dex-species').SpeciesDataTable = {
 		forme: "Mega-Z",
 		types: ["Ghost", "Poison"],
 		baseStats: { hp: 60, atk: 139, def: 60, spa: 105, spd: 85, spe: 151 },
-		abilities: { 0: "Iron Fist" },
+		abilities: { 0: "Neutralizing Gas" },
 		heightm: 1.7,
 		weightkg: 40.5,
 		color: "Purple",

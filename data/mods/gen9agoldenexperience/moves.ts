@@ -619,7 +619,7 @@ export const Moves: { [k: string]: ModdedMoveData; } = {
 		contestType: "Cool",
 	},
 	indomitablespirit: {
-		num: -27,
+		num: -26,
 		accuracy: 95,
 		basePower: 75,
 		category: "Special",
@@ -657,7 +657,7 @@ export const Moves: { [k: string]: ModdedMoveData; } = {
 		type: "Fighting",
 	},
 	martialpunch: {
-		num: -28,
+		num: -27,
 		accuracy: 100,
 		basePower: 80,
 		desc: "Deals damage to the target based on its Special Defense instead of Defense.",
@@ -677,7 +677,7 @@ export const Moves: { [k: string]: ModdedMoveData; } = {
 		type: "Fighting",
 	},
 	musclecare: {
-		num: -29,
+		num: -28,
 		accuracy: true,
 		basePower: 0,
 		category: "Status",
@@ -699,7 +699,7 @@ export const Moves: { [k: string]: ModdedMoveData; } = {
 		contestType: "Clever",
 	},
 	dissolution: {
-		num: -30,
+		num: -29,
 		accuracy: 100,
 		basePower: 70,
 		category: "Special",
@@ -728,7 +728,7 @@ export const Moves: { [k: string]: ModdedMoveData; } = {
 		type: "Poison",
 	},
 	landslide: {
-		num: -31,
+		num: -30,
 		accuracy: 100,
 		basePower: 50,
 		category: "Physical",
@@ -770,7 +770,7 @@ export const Moves: { [k: string]: ModdedMoveData; } = {
 		contestType: "Tough",
 	},
 	epicenter: {
-		num: -32,
+		num: -31,
 		accuracy: 100,
 		basePower: 120,
 		category: "Physical",
@@ -814,7 +814,7 @@ export const Moves: { [k: string]: ModdedMoveData; } = {
 		contestType: "Tough",
 	},
 	downdraft: {
-		num: -33,
+		num: -32,
 		accuracy: 100,
 		basePower: 90,
 		category: "Special",
@@ -839,7 +839,32 @@ export const Moves: { [k: string]: ModdedMoveData; } = {
 		contestType: "Cool",
 	},
 	clearmind: {
-		num: -34,
+		num: -33,
+		accuracy: true,
+		basePower: 0,
+		category: "Status",
+		name: "Clear Mind",
+		pp: 15,
+		priority: 0,
+		flags: { snatch: 1 },
+		boosts: {
+			spa: 1,
+			accuracy: 1,
+		},
+		onPrepareHit(target, source) {
+			this.attrLastMove('[still]');
+			this.add('-anim', source, "Calm Mind", target);
+		},
+		secondary: null,
+		target: "self",
+		type: "Psychic",
+		desc: "Raises the user's Special Attack and accuracy by 1 stage.",
+		shortDesc: "Raises the user's Sp. Attack and accuracy by 1.",
+		zMove: { boost: { spa: 1 } },
+		contestType: "Cute",
+	},
+	clearmind: {
+		num: -33,
 		accuracy: true,
 		basePower: 0,
 		category: "Status",
@@ -864,7 +889,7 @@ export const Moves: { [k: string]: ModdedMoveData; } = {
 		contestType: "Cute",
 	},
 	golemstrike: {
-		num: -35,
+		num: -34,
 		accuracy: 100,
 		basePower: 85,
 		category: "Physical",
@@ -888,7 +913,7 @@ export const Moves: { [k: string]: ModdedMoveData; } = {
 		contestType: "Tough",
 	},
 	punishingblow: {
-		num: -36,
+		num: -35,
 		accuracy: 90,
 		basePower: 80,
 		category: "Physical",
@@ -916,7 +941,7 @@ export const Moves: { [k: string]: ModdedMoveData; } = {
 		contestType: "Cool",
 	},
 	contrariety: {
-		num: -37,
+		num: -36,
 		accuracy: true,
 		basePower: 0,
 		category: "Status",
@@ -945,7 +970,7 @@ export const Moves: { [k: string]: ModdedMoveData; } = {
 		zMove: { boost: { def: 1 } },
 	},
 	blackflash: {
-		num: -38,
+		num: -37,
 		accuracy: 100,
 		basePower: 120,
 		category: "Special",
@@ -970,7 +995,7 @@ export const Moves: { [k: string]: ModdedMoveData; } = {
 		contestType: "Tough",
 	},
 	hypnotichorror: {
-		num: -39,
+		num: -38,
 		accuracy: 100,
 		basePower: 120,
 		category: "Special",
@@ -996,7 +1021,7 @@ export const Moves: { [k: string]: ModdedMoveData; } = {
 		contestType: "Tough",
 	},
 	sneakyassault: {
-		num: -40,
+		num: -39,
 		accuracy: 100,
 		basePower: 30,
 		category: "Physical",
@@ -1021,7 +1046,7 @@ export const Moves: { [k: string]: ModdedMoveData; } = {
 		contestType: "Cool",
 	},
 	mercuryshot: {
-		num: -41,
+		num: -40,
 		accuracy: 100,
 		basePower: 70,
 		category: "Special",
@@ -1044,7 +1069,7 @@ export const Moves: { [k: string]: ModdedMoveData; } = {
 		contestType: "Tough",
 	},
 	sweetheart: {
-		num: -42,
+		num: -41,
 		accuracy: 100,
 		basePower: 65,
 		category: "Special",
@@ -1074,7 +1099,7 @@ export const Moves: { [k: string]: ModdedMoveData; } = {
 		type: "Fairy",
 	},
 	chakraterrain: {
-		num: -43,
+		num: -42,
 		accuracy: true,
 		basePower: 0,
 		category: "Status",
@@ -1817,7 +1842,7 @@ export const Moves: { [k: string]: ModdedMoveData; } = {
 		desc: "Always results in a critical hit. Cannot be redirected.",
 	},
 	lightningassault: {
-		num: -44,
+		num: -43,
 		accuracy: 100,
 		basePower: 0,
 		basePowerCallback(pokemon, target) {
@@ -1845,7 +1870,7 @@ export const Moves: { [k: string]: ModdedMoveData; } = {
 		contestType: "Cool",
 	},
 	conversionz: {
-		num: -45,
+		num: -44,
 		accuracy: true,
 		basePower: 0,
 		category: "Status",
@@ -1882,7 +1907,7 @@ export const Moves: { [k: string]: ModdedMoveData; } = {
 		type: "Normal",
 	},
 	zawall: {
-		num: -46,
+		num: -45,
 		accuracy: 90,
 		basePower: 120,
 		category: "Physical",
@@ -1913,7 +1938,7 @@ export const Moves: { [k: string]: ModdedMoveData; } = {
 		type: "Steel",
 	},
 	awakening: {
-		num: -47,
+		num: -46,
 		accuracy: true,
 		basePower: 0,
 		category: "Status",
@@ -1942,7 +1967,7 @@ export const Moves: { [k: string]: ModdedMoveData; } = {
 		contestType: "Beautiful",
 	},
 	fulldevotion: {
-		num: -48,
+		num: -47,
 		accuracy: true,
 		basePower: 0,
 		category: "Status",
@@ -1985,7 +2010,7 @@ export const Moves: { [k: string]: ModdedMoveData; } = {
 	braveblade: {
 		desc: "Physical if it would be stronger (Shell Side Arm clone). Lowers user's Defense and Special Defense by 1.",
 		shortDesc: "Physical if stronger. Lowers the user's Defense and Sp. Def by 1.",
-		num: -49,
+		num: -48,
 		accuracy: 100,
 		basePower: 120,
 		category: "Special",
@@ -2027,7 +2052,7 @@ export const Moves: { [k: string]: ModdedMoveData; } = {
 		type: "Psychic",
 	},
 	teramorphosis: {
-		num: -50,
+		num: -49,
 		accuracy: 100,
 		basePower: 75,
 		category: "Physical",
@@ -2054,7 +2079,7 @@ export const Moves: { [k: string]: ModdedMoveData; } = {
 		contestType: "Cool",
 	},
 	happydance: {
-		num: -51,
+		num: -50,
 		accuracy: true,
 		basePower: 0,
 		category: "Status",
@@ -2081,7 +2106,7 @@ export const Moves: { [k: string]: ModdedMoveData; } = {
 		contestType: "Beautiful",
 	},
 	windscall: {
-		num: -52,
+		num: -51,
 		accuracy: true,
 		basePower: 0,
 		category: "Status",
@@ -2107,7 +2132,7 @@ export const Moves: { [k: string]: ModdedMoveData; } = {
 		contestType: "Clever",
 	},
 	houndshowl: {
-		num: -53,
+		num: -52,
 		accuracy: 100,
 		basePower: 40,
 		category: "Physical",
@@ -2179,7 +2204,7 @@ export const Moves: { [k: string]: ModdedMoveData; } = {
 		contestType: "Clever",
 	},
 	dantesinferno: {
-		num: -54,
+		num: -53,
 		accuracy: 100,
 		basePower: 80,
 		category: "Special",
@@ -2222,7 +2247,7 @@ export const Moves: { [k: string]: ModdedMoveData; } = {
 		shortDesc: "User and allies: healed 1/3 max HP, status cured.",
 	},
 	monkeybusiness: {
-		num: -55,
+		num: -54,
 		accuracy: 100,
 		basePower: 90,
 		category: "Physical",
@@ -2252,7 +2277,7 @@ export const Moves: { [k: string]: ModdedMoveData; } = {
 		type: "Normal",
 	},
 	swarming: {
-		num: -56,
+		num: -55,
 		accuracy: 100,
 		basePower: 110,
 		category: "Special",
@@ -2282,7 +2307,7 @@ export const Moves: { [k: string]: ModdedMoveData; } = {
 		contestType: "Smart",
 	},
 	hardwareheat: {
-		num: -57,
+		num: -56,
 		accuracy: 100,
 		basePower: 90,
 		category: "Special",
@@ -2306,28 +2331,8 @@ export const Moves: { [k: string]: ModdedMoveData; } = {
 		type: "Fire",
 		contestType: "Tough",
 	},
-	/*enragedtext: {
-		num: -58,
-		accuracy: 100,
-		basePower: 90,
-		category: "Special",
-		name: "Enraged Text",
-		shortDesc: "Raises the user's Atk by 1.",
-		pp: 10,
-		priority: 0,
-		flags: { snatch: 1, sound: 1 },
-		self: {
-			boosts: {
-				atk: 1,
-			},
-		},
-		secondary: null,
-		target: "normal",
-		type: "Fighting",
-		contestType: "Clever",
-	},*/
 	shattering: {
-		num: -59,
+		num: -57,
 		accuracy: 100,
 		basePower: 120,
 		category: "Physical",
@@ -2517,7 +2522,7 @@ export const Moves: { [k: string]: ModdedMoveData; } = {
 		desc: "20% chance to lower target's Atk by 1.",
 	},
 	roguewave: {
-		num: -60,
+		num: -58,
 		accuracy: 100,
 		basePower: 60,
 		category: "Physical",
@@ -2537,7 +2542,7 @@ export const Moves: { [k: string]: ModdedMoveData; } = {
 		contestType: "Cool",
 	},
 	natureswrath: {
-		num: -61,
+		num: -59,
 		accuracy: 100,
 		basePower: 70,
 		category: "Special",
@@ -2578,7 +2583,7 @@ export const Moves: { [k: string]: ModdedMoveData; } = {
 		contestType: "Tough",
 	},
 	magicmissile: {
-		num: -62,
+		num: -60,
 		accuracy: true,
 		basePower: 25,
 		category: "Special",
@@ -2713,7 +2718,7 @@ export const Moves: { [k: string]: ModdedMoveData; } = {
 		flags: {heal: 1, noassist: 1},
 	},
 	fatbombing: {
-		num: -63,
+		num: -61,
 		accuracy: 100,
 		basePower: 130,
 		category: "Physical",
@@ -2752,7 +2757,7 @@ export const Moves: { [k: string]: ModdedMoveData; } = {
 		prepare: "[POKEMON] launched a fat bombing!",
 	},
 	poisonivy: {
-		num: -64,
+		num: -62,
 		accuracy: 100,
 		basePower: 50,
 		category: "Special",
@@ -2788,7 +2793,7 @@ export const Moves: { [k: string]: ModdedMoveData; } = {
 		},
 	},
 	clusterexplosion: {
-		num: -65,
+		num: -63,
 		accuracy: 100,
 		basePower: 250,
 		category: "Physical",
@@ -2819,7 +2824,7 @@ export const Moves: { [k: string]: ModdedMoveData; } = {
 		isNonstandard: null,
 	},
 	froststorm: {
-		num: -66,
+		num: -64,
 		accuracy: 100,
 		basePower: 100,
 		category: "Special",
@@ -2849,7 +2854,7 @@ export const Moves: { [k: string]: ModdedMoveData; } = {
 		shortDesc: "30% chance of Freeze, 100% in Snow.",
 	},
 	thunderstorm: {
-		num: -67,
+		num: -65,
 		accuracy: 100,
 		basePower: 100,
 		category: "Special",
@@ -2879,7 +2884,7 @@ export const Moves: { [k: string]: ModdedMoveData; } = {
 		shortDesc: "30% chance of Para, 100% in Rain.",
 	},
 	heatstorm: {
-		num: -68,
+		num: -66,
 		accuracy: 100,
 		basePower: 100,
 		category: "Special",
@@ -2909,7 +2914,7 @@ export const Moves: { [k: string]: ModdedMoveData; } = {
 		shortDesc: "30% chance of Burn, 100% in Sun.",
 	},
 	genesiswave: {
-		num: -69,
+		num: -67,
 		accuracy: true,
 		basePower: 0,
 		category: "Status",
@@ -2917,9 +2922,13 @@ export const Moves: { [k: string]: ModdedMoveData; } = {
 		pp: 20,
 		priority: 0,
 		flags: {snatch: 1, metronome: 1},
-		terrain: 'psychicterrain',
 		boosts: {
-			spa: 1,
+			spe: 1,
+		},
+		onHit(target) {
+			const type = this.dex.moves.get(target.moveSlots[0].id).type;
+			if (target.hasType(type) || !target.addType(type)) return false;
+			this.add('-start', target, 'typeadd', type);
 		},
 		onPrepareHit(target, source) {
 			this.attrLastMove('[still]');
@@ -2930,10 +2939,10 @@ export const Moves: { [k: string]: ModdedMoveData; } = {
 		type: "Psychic",
 		zMove: {effect: 'clearnegativeboost'},
 		contestType: "Clever",
-		shortDesc: "Raises user's SpA by 1, and sets Psychic Terrain.",
+		shortDesc: "Raises user's Speed by 1, and adds the type of user's first move to its type.",
 	},
 	thunderway: {
-		num: -70,
+		num: -68,
 		accuracy: true,
 		basePower: 0,
 		category: "Status",
@@ -2994,7 +3003,7 @@ export const Moves: { [k: string]: ModdedMoveData; } = {
 		},
 	},
 	fieryfire: {
-		num: -71,
+		num: -69,
 		accuracy: true,
 		basePower: 0,
 		category: "Status",
@@ -3023,7 +3032,7 @@ export const Moves: { [k: string]: ModdedMoveData; } = {
 		shortDesc: "Raises Atk by 1, and applies the Flash Fire effect.",
 	},
 	auroraborealis: {
-		num: -72,
+		num: -70,
 		accuracy: true,
 		basePower: 0,
 		category: "Status",
@@ -3048,7 +3057,7 @@ export const Moves: { [k: string]: ModdedMoveData; } = {
 		shortDesc: "Heals user's status, and gives Aqua Ring.",
 	},
 	boulderbuilding: {
-		num: -73,
+		num: -71,
 		accuracy: true,
 		basePower: 0,
 		category: "Status",
@@ -3094,7 +3103,7 @@ export const Moves: { [k: string]: ModdedMoveData; } = {
 		shortDesc: "+1 Def; clears terrain and hazards on both sides.",
 	},
 	icebergpolish: {
-		num: -74,
+		num: -72,
 		accuracy: true,
 		basePower: 0,
 		category: "Status",
@@ -3119,7 +3128,7 @@ export const Moves: { [k: string]: ModdedMoveData; } = {
 		shortDesc: "Raises the user's Speed by 2 and Sp. Atk by 1.",
 	},
 	alienmetal: {
-		num: -75,
+		num: -73,
 		accuracy: true,
 		basePower: 0,
 		category: "Status",

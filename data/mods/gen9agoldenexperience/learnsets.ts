@@ -2007,6 +2007,7 @@ export const Learnsets: { [speciesid: string]: LearnsetData; } = {
 			earthpower: ["9M", "9L40"],
 			earthquake: ["9M", "9L65"],
 			endure: ["9M"],
+			explosion: ["9M"],
 			extrasensory: ["9L45"],
 			facade: ["9M"],
 			fissure: ["9L75"],

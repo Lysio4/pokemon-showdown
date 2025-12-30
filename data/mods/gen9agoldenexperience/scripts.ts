@@ -30,17 +30,11 @@ export const Scripts: ModdedBattleScriptsData = {
         else if (item.name === "Raichunite Y" && pokemon.baseSpecies.name === "Raichu-Alola") {
           return null;
         }
-        else if (item.name === "Slowbronite" && pokemon.baseSpecies.name === "Slowbro") {
-          return "Slowbro-Mega";
-        }
         else if (item.name === "Slowbronite" && pokemon.baseSpecies.name === "Slowbro-Galar") {
           return "Slowbro-Galar-Mega";
         }
         else if (item.name === "Zoroarkite" && pokemon.baseSpecies.name === "Zoroark-Hisui") {
           return "Zoroark-Hisui-Mega";
-        }
-        else if (item.name === "Scizorite" && pokemon.baseSpecies.name === "Scizor") {
-          return "Scizor-Mega";
         }
         else if (item.name === "Scizorite" && pokemon.baseSpecies.name === "Scizor-Galar") {
           return "Scizor-Galar-Mega";
@@ -68,6 +62,12 @@ export const Scripts: ModdedBattleScriptsData = {
         }
         else if (item.name === "Samurottite" && pokemon.baseSpecies.name === "Samurott-Hisui") {
           return null;
+        }
+        else if (item.name === "Meowsticite" && pokemon.baseSpecies.name === "Meowstic") {
+          return "Meowstic-M-Mega";
+        }
+        else if (item.name === "Meowsticite" && pokemon.baseSpecies.name === "Meowstic-F") {
+          return "Meowstic-F-Mega";
         }
         else if (item.name === "Cramorantite" && pokemon.baseSpecies.name === "Cramorant-Gulping") {
           return "Cramorant-Gulping-Mega";

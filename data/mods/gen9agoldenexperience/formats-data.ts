@@ -764,7 +764,7 @@ export const FormatsData: { [k: string]: SpeciesFormatsData; } = {
 		doublesTier: "DUU",
 	},
 	kangaskhanmega: {
-		tier: "UUBL",
+		tier: "OU",
 		doublesTier: "DOU",
 	},
 	horsea: {
@@ -3824,7 +3824,7 @@ export const FormatsData: { [k: string]: SpeciesFormatsData; } = {
 		doublesTier: "DUU",
 	},
 	lycanrocdusk: {
-		tier: "OU",
+		tier: "UU",
 		doublesTier: "DUU",
 	},
 	wishiwashi: {

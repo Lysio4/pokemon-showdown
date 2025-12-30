@@ -2069,6 +2069,8 @@ export class Pokemon {
 		if (!enforce) {
 			// No Pokemon should be able to have Stellar as a base type
 			if (typeof newType === 'string' ? newType === 'Stellar' : newType.includes('Stellar')) return false;
+			// Identity Card, A Golden Experience
+			if (this.hasItem('identitycard')) return false;
 			// First type of Arceus, Silvally cannot be normally changed
 			if ((this.battle.gen >= 5 && (this.species.num === 493 || this.species.num === 773)) ||
 				(this.battle.gen === 4 && this.hasAbility('multitype'))) {
@@ -2090,6 +2092,8 @@ export class Pokemon {
 	/** Removes any types added previously and adds another one. */
 	addType(newType: string) {
 		if (this.terastallized) return false;
+		// Identity Card, A Golden Experience
+		if (this.hasItem('identitycard')) return false;
 		this.addedType = newType;
 		return true;
 	}

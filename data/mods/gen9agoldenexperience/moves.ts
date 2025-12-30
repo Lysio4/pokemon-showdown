@@ -863,31 +863,6 @@ export const Moves: { [k: string]: ModdedMoveData; } = {
 		zMove: { boost: { spa: 1 } },
 		contestType: "Cute",
 	},
-	clearmind: {
-		num: -33,
-		accuracy: true,
-		basePower: 0,
-		category: "Status",
-		name: "Clear Mind",
-		pp: 15,
-		priority: 0,
-		flags: { snatch: 1 },
-		boosts: {
-			spa: 1,
-			accuracy: 1,
-		},
-		onPrepareHit(target, source) {
-			this.attrLastMove('[still]');
-			this.add('-anim', source, "Calm Mind", target);
-		},
-		secondary: null,
-		target: "self",
-		type: "Psychic",
-		desc: "Raises the user's Special Attack and accuracy by 1 stage.",
-		shortDesc: "Raises the user's Sp. Attack and accuracy by 1.",
-		zMove: { boost: { spa: 1 } },
-		contestType: "Cute",
-	},
 	golemstrike: {
 		num: -34,
 		accuracy: 100,

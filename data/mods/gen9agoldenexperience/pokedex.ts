@@ -3839,6 +3839,10 @@ export const Pokedex: {[k: string]: ModdedSpeciesData;} = {
 		inherit: true,
 		abilities: {0: "Quark Drive", H: "Justified"},
 	},
+	pecharunt: {
+		inherit: true,
+		abilities: { 0: "Poison Puppeteer", H: "Sticky Hold" },
+	},
 
 	// Fakemons:
 	tentarcolh: {

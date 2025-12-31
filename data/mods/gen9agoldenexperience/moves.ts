@@ -1881,36 +1881,30 @@ export const Moves: { [k: string]: ModdedMoveData; } = {
 		target: "self",
 		type: "Normal",
 	},
-	zawall: {
+	zawalludo: {
 		num: -45,
-		accuracy: 90,
-		basePower: 120,
-		category: "Physical",
-		name: "Za Wall",
-		desc: "This attack charges on the first turn and executes on the second. Raises the user's Attack by 1 stage on the first turn. If the user is holding a Power Herb, the move completes in one turn.",
-		shortDesc: "Raises user's Atk by 1 on turn 1. Hits turn 2.",
-		pp: 10,
-		priority: 0,
-		flags: { charge: 1, protect: 1, mirror: 1 },
-		onTryMove(attacker, defender, move) {
-			if (attacker.removeVolatile(move.id)) {
-				return;
-			}
-			this.add('-prepare', attacker, move.name);
-			this.boost({ atk: 1 }, attacker, attacker, move);
-			if (!this.runEvent('ChargeMove', attacker, defender, move)) {
-				return;
-			}
-			attacker.addVolatile('twoturnmove', defender);
-			return null;
-		},
+		accuracy: true,
+		basePower: 0,
+		category: "Status",
+		name: "Za Walludo",
+		desc: "Raises the user's Attack by 1 stage. The user sets Trick Room.",
+		shortDesc: "Raises user's Atk by 1. Sets Trick Room.",
+		pp: 5,
+		priority: -7,
+		pseudoWeather: 'trickroom',
+		flags: { mirror: 1, metronome: 1 },
 		onPrepareHit(target, source) {
 			this.attrLastMove('[still]');
-			this.add('-anim', source, "Head Smash", target);
+			this.add('-anim', source, "Rock Polish", source);
+			this.add('-anim', source, "Iron Defense", source);
+			this.add('-anim', source, "Trick Room", source);
+		},
+		boosts: {
+			atk: 1,
 		},
 		secondary: null,
 		target: "normal",
-		type: "Steel",
+		type: "Rock",
 	},
 	awakening: {
 		num: -46,

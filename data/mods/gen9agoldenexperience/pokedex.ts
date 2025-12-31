@@ -3038,10 +3038,6 @@ export const Pokedex: {[k: string]: ModdedSpeciesData;} = {
 		inherit: true,
 		abilities: {0: "Prism Armor", H: "Cosmic Energy"},
 	},
-	stakataka: {
-		inherit: true,
-		types: ["Steel"],
-	},
 	zeraora: {
 		inherit: true,
 		abilities: {0: "Volt Absorb", H: "Iron Fist"},

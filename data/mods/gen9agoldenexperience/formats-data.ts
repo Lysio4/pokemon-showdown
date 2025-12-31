@@ -483,7 +483,7 @@ export const FormatsData: { [k: string]: SpeciesFormatsData; } = {
 		tier: "LC",
 	},
 	tentacruel: {
-		tier: "NU",
+		tier: "RU",
 		doublesTier: "DUU",
 	},
 	geodude: {
@@ -814,19 +814,19 @@ export const FormatsData: { [k: string]: SpeciesFormatsData; } = {
 		doublesTier: "NFE",
 	},
 	scizor: {
-		tier: "RU",
-		doublesTier: "DUU",
-	},
-	scizormega: {
 		tier: "UU",
 		doublesTier: "DUU",
 	},
+	scizormega: {
+		tier: "OU",
+		doublesTier: "DUU",
+	},
 	scizorgalar: {
-		tier: "PU",
+		tier: "NU",
 		doublesTier: "DUU",
 	},
 	scizorgalarmega: {
-		tier: "PU",
+		tier: "UU",
 		doublesTier: "DUU",
 	},
 	smoochum: {
@@ -1315,7 +1315,7 @@ export const FormatsData: { [k: string]: SpeciesFormatsData; } = {
 		tier: "NFE",
 	},
 	weavile: {
-		tier: "OU",
+		tier: "UUBL",
 		doublesTier: "DUU",
 	},
 	teddiursa: {
@@ -1681,7 +1681,7 @@ export const FormatsData: { [k: string]: SpeciesFormatsData; } = {
 		doublesTier: "DUU",
 	},
 	aggronmega: {
-		tier: "NUBL",
+		tier: "RU",
 		doublesTier: "DUU",
 	},
 	meditite: {
@@ -4773,7 +4773,7 @@ export const FormatsData: { [k: string]: SpeciesFormatsData; } = {
 		tier: "NFE",
 	},
 	spyarn: {
-		tier: "RU",
+		tier: "UU",
 		doublesTier: "DUU",
 	},
 	nymble: {

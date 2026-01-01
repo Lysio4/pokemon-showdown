@@ -1503,7 +1503,6 @@ export const Scripts: ModdedBattleScriptsData = {
     this.modData('Learnsets', 'banette').learnset.mefirst = ['9L1'];
     this.modData('Learnsets', 'banette').learnset.copycat = ['9L1'];
     this.modData('Learnsets', 'banette').learnset.focuspunch = ['9L1'];
-    this.modData('Learnsets', 'banette').learnset.encore = ['9L1'];
     this.modData('Learnsets', 'banette').learnset.strengthsap = ['9L1'];
     this.modData('Learnsets', 'banette').learnset.jumpscare = ['9L1'];
     this.modData('Learnsets', 'banette').learnset.slash = ['9L1']; // ZA addition

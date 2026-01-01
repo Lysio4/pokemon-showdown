@@ -2046,6 +2046,7 @@ export const Scripts: ModdedBattleScriptsData = {
     this.modData('Learnsets', 'orbeetle').learnset.gravity = ['9M'];
     this.modData('Learnsets', 'thievul').learnset.firstimpression = ['9L1']; // ZA addition
     this.modData('Learnsets', 'thievul').learnset.fakeout = ['9L1']; // ZA addition
+    this.modData('Learnsets', 'thievul').learnset.willowisp = ['9L1']; // ZA addition
     this.modData('Learnsets', 'eldegoss').learnset.uturn = ['9L1'];
     this.modData('Learnsets', 'eldegoss').learnset.dazzlinggleam = ['9L1'];
     this.modData('Learnsets', 'dubwool').learnset.bodyslam = ['9L1'];

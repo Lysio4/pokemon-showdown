@@ -1788,6 +1788,7 @@ export const Learnsets: { [speciesid: string]: LearnsetData; } = {
 	excadrill: {
 		learnset: {
 			aerialace: ["9M"],
+			agility: ["9M"],
 			bodyslam: ["9M"],
 			brickbreak: ["9M"],
 			bulldoze: ["9M"],
@@ -1814,6 +1815,7 @@ export const Learnsets: { [speciesid: string]: LearnsetData; } = {
 			irondefense: ["9M"],
 			ironhead: ["9M"],
 			landslide: ["9M"],
+			megahorn: ["9M"],
 			metalclaw: ["9M", "9L16"],
 			metalsound: ["9M"],
 			mudshot: ["9M", "8M"],

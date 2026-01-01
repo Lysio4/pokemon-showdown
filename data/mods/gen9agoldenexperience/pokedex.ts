@@ -575,6 +575,18 @@ export const Pokedex: {[k: string]: ModdedSpeciesData;} = {
 		inherit: true,
 		abilities: { 0: "Drizzle" },
 	},
+	mewtwo: {
+		inherit: true,
+		abilities: { 0: "Pressure", H: "Berserk" },
+	},
+	mewtwomegax: {
+		inherit: true,
+		abilities: { 0: "Scrappy" },
+	},
+	mewtwomegay: {
+		inherit: true,
+		abilities: { 0: "Neuroforce" },
+	},
 	mew: {
 		inherit : true,
 		abilities: {0: "Synchronize", 1: "Cosmic Energy", H: "Protean"},
@@ -956,6 +968,10 @@ export const Pokedex: {[k: string]: ModdedSpeciesData;} = {
 		inherit: true,
 		baseStats: {hp: 70, atk: 135, def: 75, spa: 120, spd: 85, spe: 145},
 		abilities: {0: "Sharpness"},
+	},
+	blazikenmega: {
+		inherit: true,
+		abilities: { 0: "Contrary" },
 	},
 	beautifly: {
 		inherit: true,
@@ -1417,7 +1433,7 @@ export const Pokedex: {[k: string]: ModdedSpeciesData;} = {
 	},
 	deoxysattack: {
 		inherit: true,
-		abilities: {0: "Pressure", H: "Sheer Force"},
+		abilities: {0: "Pressure", H: "Mold Breaker"},
 	},
 	deoxysdefense: {
 		inherit: true,

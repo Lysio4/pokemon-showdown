@@ -3927,6 +3927,15 @@ export const Moves: { [k: string]: ModdedMoveData; } = {
 		desc: "If the current terrain is Chakra Terrain and the target is grounded, this move hits Ghost type targets.",
 		shortDesc: "Hits Ghost type grounded targets in Chakra Terrain.",
 	},
+	psystrike: {
+		inherit: true,
+		onModifyMove(move, pokemon, target) {
+			if (pokemon.getStat('atk', false, true) > pokemon.getStat('spa', false, true)) move.category = 'Physical';
+			if (target.getStat('def', false, true) > target.getStat('spd', false, true)) move.overrideDefensiveStat = 'spd';
+		},
+		shortDesc: "Physical if user's Atk > Sp. Atk. Deals damage based on Def or SpD, whichever one is the lowest.",
+		desc: "Physical if user's Atk > Sp. Atk. Deals damage based on Def or SpD, whichever one is the lowest.",
+	},
 
 
 

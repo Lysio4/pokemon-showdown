@@ -1048,7 +1048,7 @@ export const FormatsData: { [k: string]: SpeciesFormatsData; } = {
 		doublesTier: "DUber",
 	},
 	mew: {
-		tier: "RUBL",
+		tier: "UU",
 		doublesTier: "DOU",
 	},
 	chikorita: {
@@ -2475,7 +2475,7 @@ export const FormatsData: { [k: string]: SpeciesFormatsData; } = {
 		doublesTier: "DUU",
 	},
 	manaphy: {
-		tier: "UU",
+		tier: "UUBL",
 		doublesTier: "DUU",
 	},
 	darkrai: {
@@ -5583,7 +5583,7 @@ export const FormatsData: { [k: string]: SpeciesFormatsData; } = {
 		doublesTier: "DUU",
 	},
 	gevauyena: {
-		tier: "UU",
+		tier: "RU",
 		doublesTier: "DUU",
 	},
 	arsief: {

@@ -1864,7 +1864,9 @@ export const Scripts: ModdedBattleScriptsData = {
     this.modData('Learnsets', 'virizion').learnset.stealthrock = ['9L1']; // ZA addition
     this.modData('Learnsets', 'virizion').learnset.hornleech = ['9L1']; // ZA addition
     this.modData('Learnsets', 'keldeo').learnset.stealthrock = ['9L1']; // ZA addition
+    this.modData('Learnsets', 'keldeo').learnset.icebeam = ['9L1']; // ZA addition
     this.modData('Learnsets', 'meloetta').learnset.petaldance = ['9L1']; // ZA addition
+    this.modData('Learnsets', 'meloetta').learnset.flipturn = ['9L1']; // ZA addition
 
     // Gen 6:
     this.modData('Learnsets', 'chesnaught').learnset.growth = ['9L1']; // ZA addition
@@ -2189,6 +2191,8 @@ export const Scripts: ModdedBattleScriptsData = {
     this.modData('Learnsets', 'cetitan').learnset.fissure = ['9L1'];
     this.modData('Learnsets', 'tatsugiri').learnset.icebeam = ['9L1']; // ZA addition
     this.modData('Learnsets', 'tatsugiri').learnset.flipturn = ['9L1']; // ZA addition
+    this.modData('Learnsets', 'tatsugiri').learnset.scald = ['9L1']; // ZA addition
+    this.modData('Learnsets', 'tatsugiri').learnset.calmmind = ['9L1']; // ZA addition
     this.modData('Learnsets', 'screamtail').learnset.seismictoss = ['9L1'];
     this.modData('Learnsets', 'screamtail').learnset.softboiled = ['9L1'];
     this.modData('Learnsets', 'screamtail').learnset.followme = ['9L1'];

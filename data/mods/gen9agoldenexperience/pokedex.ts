@@ -1641,7 +1641,8 @@ export const Pokedex: {[k: string]: ModdedSpeciesData;} = {
 	},
 	drapion: {
 		inherit: true,
-		abilities: {0: "Battle Armor", 1: "Sniper", H: "Sheer Force"},
+		baseStats: {hp: 70, atk: 110, def: 110, spa: 40, spd: 75, spe: 95},
+		abilities: {0: "Battle Armor", 1: "Sniper", H: "Steelbreaker"},
 	},
 	croagunk: {
 		inherit: true,

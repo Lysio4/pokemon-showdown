@@ -399,7 +399,7 @@ export const Formats: import('../sim/dex-formats').FormatList = [
 		name: "[Gen 9] Camove Chaos A Golden Experience",
 		desc: `Pok&eacute;mon have their types set to match their first two moves, and can learn any move.`,
 		mod: 'gen9agoldenexperience',
-		ruleset: ['Standard NatDex', 'Terastal Clause', '!Sleep Clause Mod', 'Sleep Moves Clause', 'Camomons Mod', '!Obtainable Moves', 'Non-Signature Z-Move Clause'],
+		ruleset: ['Standard NatDex', 'Terastal Clause', '!Obtainable Moves', '!Team Preview', 'Camomons Mod', 'CFZ Clause', 'Sleep Moves Clause', 'Team Type Preview', 'Non-Signature Z-Move Clause'],
 		banlist: [
 			'Absol-Mega-Z', 'Aerodactyl-Mega', 'Alakazam', 'Alakazam-Mega', 'Arceus', 'Blaziken-Mega', 'Beedrill-Mega', 'Calyrex-Ice', 'Calyrex-Shadow', 'Charizard-Mega-Y', 'Chi-Yu', 
 			'Chien-Pao', 'Comfey', 'Darmanitan-Base', 'Darmanitan-Galar', 'Deoxys-Normal', 'Deoxys-Attack', 'Dialga', 'Dialga-Origin', 'Dondozo', 'Enamorus-Incarnate', 
@@ -416,7 +416,7 @@ export const Formats: import('../sim/dex-formats').FormatList = [
 			'Shed Tail', 'Shell Smash', 'Shift Gear', 'Surging Strikes', 'Tail Glow', 'Take Heart', 'Thousand Arrows', 'Transform', 'V-create', 'Victory Dance', 'Water Spout', 
 			'Wicked Blow', 'Power Construct', 'Regenerator > 2'
 		],
-		unbanlist: ['Battle Bond', 'Greninja-Bond', 'Light of Ruin'],
+		unbanlist: ['Blazing Torque', 'Combat Torque', 'Light of Ruin', 'Magical Torque', 'Noxious Torque', 'Wicked Torque'],
 	},
 	{
 		name: "[Gen 9] Pokebilities A Golden Experience",

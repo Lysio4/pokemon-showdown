@@ -129,6 +129,7 @@ export const Formats: import('../sim/dex-formats').FormatList = [
 			'Uber', 'AG', 'Moody', 'Power Construct', 'King\'s Rock',
 			'Baton Pass', 'Last Respects', 'Quick Claw', 'Razor Fang', 'Shed Tail',
 		],
+		unbanlist: ['Light of Ruin'],
 	},
 	{
 		name: "[Gen 9] A Golden Experience Uber",
@@ -139,6 +140,7 @@ export const Formats: import('../sim/dex-formats').FormatList = [
 			'AG', 'King\'s Rock',
 			'Baton Pass', 'Light Clay', 'Quick Claw', 'Razor Fang', 'Sticky Web', 
 		],
+		unbanlist: ['Light of Ruin'],
 	},
 	{
 		name: "[Gen 9] A Golden Experience UU",
@@ -150,6 +152,7 @@ export const Formats: import('../sim/dex-formats').FormatList = [
 			'Baton Pass', 'Last Respects', 'Quick Claw', 'Razor Fang', 'Shed Tail',
 			'Drizzle', 'Drought', 'Light Clay', 
 		],
+		unbanlist: ['Light of Ruin'],
 	},
 	{
 		name: "[Gen 9] A Golden Experience RU",
@@ -161,6 +164,7 @@ export const Formats: import('../sim/dex-formats').FormatList = [
 			'Baton Pass', 'Last Respects', 'Quick Claw', 'Razor Fang', 'Shed Tail',
 			'Drizzle', 'Drought', 'Light Clay', 
 		],
+		unbanlist: ['Light of Ruin'],
 	},
 	{
 		name: "[Gen 9] A Golden Experience NU",
@@ -173,6 +177,7 @@ export const Formats: import('../sim/dex-formats').FormatList = [
 			'Drizzle', 'Drought', 'Light Clay', 
 			'Dante\'s Inferno', 'Happy Dance', 'Sticky Web', 
 		],
+		unbanlist: ['Light of Ruin'],
 	},
 	{
 		name: "[Gen 9] A Golden Experience PU",
@@ -185,6 +190,7 @@ export const Formats: import('../sim/dex-formats').FormatList = [
 			'Drizzle', 'Drought', 'Light Clay', 
 			'Dante\'s Inferno', 'Happy Dance', 'Sticky Web', 
 		],
+		unbanlist: ['Light of Ruin'],
 	},
 	{
 		name: "[Gen 9] A Golden Experience Doubles OU",
@@ -199,6 +205,7 @@ export const Formats: import('../sim/dex-formats').FormatList = [
 			'Solgaleo', 'Urshifu', 'Urshifu-Rapid-Strike', 'Xerneas', 'Yveltal', 'Zacian', 'Zacian-Crowned', 'Zamazenta', 'Zamazenta-Crowned',
 			'Zekrom', 'Zygarde-50%', 'Zygarde-Complete', 'Commander', 'Eevium Z', 'Power Construct', 'Coaching', 'Dark Void', 'Swagger',
 		],
+		unbanlist: ['Light of Ruin'],
 	},
 
 	// AGE Other Metagames
@@ -224,6 +231,7 @@ export const Formats: import('../sim/dex-formats').FormatList = [
 			'Intrepid Sword', 'Light Power', 'Magic Bounce', 'Magnet Pull', 'Moody', 'Neutralizing Gas', 'Orichalcum Pulse', 'Parental Bond', 'Poison Heal', 'Pure Power', 'Shadow Tag', 'Simple', 'Speed Boost', 'Stakeout', 
 			'Strong Will', 'Triage', 'Unburden', 'Water Bubble', 'Wonder Guard', 'Wonder Skin', 'King\'s Rock', 'Light Clay', 'Baton Pass', 'Electrify', 'Last Respects', 'Shed Tail',
 		],
+		unbanlist: ['Light of Ruin'],
 	},
 	{
 		name: "[Gen 9] Balanced Hackmons A Golden Experience",
@@ -241,6 +249,7 @@ export const Formats: import('../sim/dex-formats').FormatList = [
 			'Last Respects', 'Octolock', 'Rage Fist', 'Revival Blessing', 'Sappy Seed', 'Shed Tail', 'Shell Smash', 'Sleep Talk',
 		],
 		restricted: ['Arceus'],
+		unbanlist: ['Light of Ruin'],
 		onValidateTeam(team, format) {
 			// baseSpecies:count
 			const restrictedPokemonCount = new this.dex.Multiset<string>();
@@ -276,6 +285,7 @@ export const Formats: import('../sim/dex-formats').FormatList = [
 			'Lunala', 'Manaphy', 'Mewtwo', 'Naganadel', 'Necrozma-Dawn-Wings', 'Necrozma-Dusk-Mane', 'Palkia', 'Pheromosa', 'Rayquaza', 'Regigigas', 'Reshiram',
 			'Slaking', 'Solgaleo', 'Ursaluna-Bloodmoon', 'Urshifu-Single-Strike', 'Walking Wake', 'Xerneas', 'Yveltal', 'Zacian', 'Zekrom', 'Zygarde-Complete',
 		],
+		unbanlist: ['Light of Ruin'],
 		onValidateTeam(team) {
 			const itemTable = new Set<ID>();
 			for (const set of team) {
@@ -349,6 +359,7 @@ export const Formats: import('../sim/dex-formats').FormatList = [
 			'Fillet Away', 'Final Gambit', 'Fishious Rend', 'Geomancy', 'Gigaton Hammer', 'Iceberg Polish', 'No Retreat', 'Revival Blessing', 'Sappy Seed', 'Shell Smash', 
 			'Shift Gear', 'Thousand Arrows', 'Trick-or-Treat', 'Triple Arrows', 'V-create', 'Victory Dance',  'Wicked Blow', 'Zippy Zap', 
 		],
+		unbanlist: ['Light of Ruin'],
 	},
 	{
 		name: "[Gen 9] Godly Gift A Golden Experience",
@@ -368,6 +379,7 @@ export const Formats: import('../sim/dex-formats').FormatList = [
 			'Salamence-Mega', 'Serperior', 'Smeargle', 'Solgaleo', 'Spectrier', 'Swellow', 'Toxapex', 'Ursaluna', 'Ursaluna-Bloodmoon', 'Yveltal', 'Zacian', 'Zacian-Crowned', 'Zamazenta-Crowned',
 			'Zekrom', 'Power Construct',
 		],
+		unbanlist: ['Light of Ruin'],
 	},
 	{
 		name: "[Gen 9] Camomons A Golden Experience",
@@ -382,6 +394,7 @@ export const Formats: import('../sim/dex-formats').FormatList = [
 			'Volcarona', 'Xerneas', 'Yveltal', 'Zacian', 'Zacian-Crowned', 'Zamazenta-Crowned', 'Zekrom', 'Zygarde-50', 'Moody', 'Booster Energy', 'King\'s Rock', 'Light Clay', 'Razor Fang',
 			'Baton Pass', 'Last Respects', 'Shed Tail',
 		],
+		unbanlist: ['Light of Ruin'],
 	},
 	{
 		name: "[Gen 9] Camove Chaos A Golden Experience",
@@ -404,6 +417,7 @@ export const Formats: import('../sim/dex-formats').FormatList = [
 			'Shed Tail', 'Shell Smash', 'Shift Gear', 'Surging Strikes', 'Tail Glow', 'Take Heart', 'Thousand Arrows', 'Transform', 'V-create', 'Victory Dance', 'Water Spout', 
 			'Wicked Blow', 'Power Construct', 'Regenerator > 2'
 		],
+		unbanlist: ['Light of Ruin'],
 	},
 	{
 		name: "[Gen 9] Pokebilities A Golden Experience",
@@ -419,6 +433,7 @@ export const Formats: import('../sim/dex-formats').FormatList = [
 			'Zekrom', 'Zygarde-50', 'Moody', 'Damp Rock', 'Icy Rock', 'King\'s Rock', 'Smooth Rock', 'Baton Pass', 'Shed Tail', 
 			'Last Respects',
 		],
+		unbanlist: ['Light of Ruin'],
 		onValidateSet(set) {
 			const species = this.dex.species.get(set.species);
 			const unSeenAbilities = Object.keys(species.abilities)
@@ -491,6 +506,7 @@ export const Formats: import('../sim/dex-formats').FormatList = [
 			'Sweet Kiss', 'Switcheroo', 'Swords Dance', 'Tail Glow', 'Tailwind', 'Taunt', 'Teeter Dance', 'Teleport', 'Thunder Wave', 'Toxic', 'Toxic Thread', 'Trick',
 			'Trick Room', 'Will-O-Wisp', 'Wish', 'Whirlwind',
 		],
+		unbanlist: ['Light of Ruin'],
 		onValidateTeam(team, format, teamHas) {
 			const problems = [];
 			if (!teamHas.trademarks) return;
@@ -556,6 +572,7 @@ export const Formats: import('../sim/dex-formats').FormatList = [
 			'Court Change', 'Decorate', 'Dragon Cheer', 'Final Gambit', 'Flatter', 'Fling', 'Floral Healing', 'Follow Me', 'Heal Pulse', 'Heart Swap', 'Last Respects',
 			'Malignant Chain', 'Poison Fang', 'Rage Powder', 'Skill Swap', 'Spicy Extract', 'Swagger', 'Toxic', 'Toxic Spikes',
 		],
+		unbanlist: ['Light of Ruin'],
 	},
 
 	// Touhoumons

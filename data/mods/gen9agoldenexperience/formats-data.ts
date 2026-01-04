@@ -826,7 +826,7 @@ export const FormatsData: { [k: string]: SpeciesFormatsData; } = {
 		doublesTier: "DUU",
 	},
 	scizorgalarmega: {
-		tier: "UU",
+		tier: "RU",
 		doublesTier: "DUU",
 	},
 	smoochum: {
@@ -4456,7 +4456,7 @@ export const FormatsData: { [k: string]: SpeciesFormatsData; } = {
 		tier: "LC",
 	},
 	grapploct: {
-		tier: "PU",
+		tier: "RU",
 		doublesTier: "DUU",
 	},
 	sinistea: {
@@ -4773,7 +4773,7 @@ export const FormatsData: { [k: string]: SpeciesFormatsData; } = {
 		tier: "NFE",
 	},
 	spyarn: {
-		tier: "UU",
+		tier: "RU",
 		doublesTier: "DUU",
 	},
 	nymble: {
@@ -5173,7 +5173,7 @@ export const FormatsData: { [k: string]: SpeciesFormatsData; } = {
 		doublesTier: "DOU",
 	},
 	walkingwake: {
-		tier: "Uber",
+		tier: "OU",
 		doublesTier: "DUU",
 	},
 	ironleaves: {

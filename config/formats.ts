@@ -129,7 +129,6 @@ export const Formats: import('../sim/dex-formats').FormatList = [
 			'Uber', 'AG', 'Moody', 'Power Construct', 'King\'s Rock',
 			'Baton Pass', 'Last Respects', 'Quick Claw', 'Razor Fang', 'Shed Tail',
 		],
-		unbanlist: ['Battle Bond', 'Greninja-Bond', 'Light of Ruin'],
 	},
 	{
 		name: "[Gen 9] A Golden Experience Uber",
@@ -140,7 +139,6 @@ export const Formats: import('../sim/dex-formats').FormatList = [
 			'AG', 'King\'s Rock',
 			'Baton Pass', 'Light Clay', 'Quick Claw', 'Razor Fang', 'Sticky Web', 
 		],
-		unbanlist: ['Battle Bond', 'Greninja-Bond', 'Light of Ruin'],
 	},
 	{
 		name: "[Gen 9] A Golden Experience UU",
@@ -152,7 +150,6 @@ export const Formats: import('../sim/dex-formats').FormatList = [
 			'Baton Pass', 'Last Respects', 'Quick Claw', 'Razor Fang', 'Shed Tail',
 			'Drizzle', 'Drought', 'Light Clay', 
 		],
-		unbanlist: ['Battle Bond', 'Greninja-Bond', 'Light of Ruin'],
 	},
 	{
 		name: "[Gen 9] A Golden Experience RU",
@@ -164,7 +161,6 @@ export const Formats: import('../sim/dex-formats').FormatList = [
 			'Baton Pass', 'Last Respects', 'Quick Claw', 'Razor Fang', 'Shed Tail',
 			'Drizzle', 'Drought', 'Light Clay', 
 		],
-		unbanlist: ['Battle Bond', 'Greninja-Bond', 'Light of Ruin'],
 	},
 	{
 		name: "[Gen 9] A Golden Experience NU",
@@ -177,7 +173,6 @@ export const Formats: import('../sim/dex-formats').FormatList = [
 			'Drizzle', 'Drought', 'Light Clay', 
 			'Dante\'s Inferno', 'Happy Dance', 'Sticky Web', 
 		],
-		unbanlist: ['Battle Bond', 'Greninja-Bond', 'Light of Ruin'],
 	},
 	{
 		name: "[Gen 9] A Golden Experience PU",
@@ -190,7 +185,6 @@ export const Formats: import('../sim/dex-formats').FormatList = [
 			'Drizzle', 'Drought', 'Light Clay', 
 			'Dante\'s Inferno', 'Happy Dance', 'Sticky Web', 
 		],
-		unbanlist: ['Battle Bond', 'Greninja-Bond', 'Light of Ruin'],
 	},
 	{
 		name: "[Gen 9] A Golden Experience Doubles OU",
@@ -205,7 +199,6 @@ export const Formats: import('../sim/dex-formats').FormatList = [
 			'Solgaleo', 'Urshifu', 'Urshifu-Rapid-Strike', 'Xerneas', 'Yveltal', 'Zacian', 'Zacian-Crowned', 'Zamazenta', 'Zamazenta-Crowned',
 			'Zekrom', 'Zygarde-50%', 'Zygarde-Complete', 'Commander', 'Eevium Z', 'Power Construct', 'Coaching', 'Dark Void', 'Swagger',
 		],
-		unbanlist: ['Battle Bond', 'Greninja-Bond', 'Light of Ruin'],
 	},
 
 	// AGE Other Metagames
@@ -231,7 +224,6 @@ export const Formats: import('../sim/dex-formats').FormatList = [
 			'Intrepid Sword', 'Light Power', 'Magic Bounce', 'Magnet Pull', 'Moody', 'Neutralizing Gas', 'Orichalcum Pulse', 'Parental Bond', 'Poison Heal', 'Pure Power', 'Shadow Tag', 'Simple', 'Speed Boost', 'Stakeout', 
 			'Strong Will', 'Triage', 'Unburden', 'Water Bubble', 'Wonder Guard', 'Wonder Skin', 'King\'s Rock', 'Light Clay', 'Baton Pass', 'Electrify', 'Last Respects', 'Shed Tail',
 		],
-		unbanlist: ['Battle Bond', 'Greninja-Bond', 'Light of Ruin'],
 	},
 	{
 		name: "[Gen 9] Balanced Hackmons A Golden Experience",
@@ -278,7 +270,6 @@ export const Formats: import('../sim/dex-formats').FormatList = [
 			'Yanmeganite', 'Zygardite', 
 			'Baton Pass', 'Shed Tail',
 		],
-		unbanlist: ['Battle Bond', 'Greninja-Bond', 'Light of Ruin'],
 		restricted: [
 			'Arceus', 'Basculegion-M', 'Calyrex-Ice', 'Deoxys-Normal', 'Deoxys-Attack', 'Dialga', 'Eternatus', 'Flutter Mane',
 			'Gengar', 'Gholdengo', 'Giratina', 'Gouging Fire', 'Groudon', 'Ho-Oh', 'Iron Bundle', 'Kyogre', 'Kyurem-Black', 'Kyurem-White', 'Lugia',
@@ -353,7 +344,6 @@ export const Formats: import('../sim/dex-formats').FormatList = [
 			'Zamazenta-Crowned', 'Zekrom', 'Zoroark-Hisui',	'Zygarde-50%', 'Moody', 'Power Construct', 'Damp Rock', 'King\'s Rock', 'Quick Claw', 'Razor Fang', 'Baton Pass', 
 			'Last Respects', 'Shed Tail',
 		],
-		unbanlist: ['Battle Bond', 'Greninja-Bond', 'Light of Ruin'],
 		restricted: [
 			'Astral Barrage', 'Belly Drum', 'Big Bang', 'Bolt Beak', 'Chatter', 'Clangorous Soul', 'Dire Claw', 'Double Iron Bash', 'Dragon Energy', 'Electrify', 'Extreme Speed',
 			'Fillet Away', 'Final Gambit', 'Fishious Rend', 'Geomancy', 'Gigaton Hammer', 'Iceberg Polish', 'No Retreat', 'Revival Blessing', 'Sappy Seed', 'Shell Smash', 
@@ -378,7 +368,6 @@ export const Formats: import('../sim/dex-formats').FormatList = [
 			'Salamence-Mega', 'Serperior', 'Smeargle', 'Solgaleo', 'Spectrier', 'Swellow', 'Toxapex', 'Ursaluna', 'Ursaluna-Bloodmoon', 'Yveltal', 'Zacian', 'Zacian-Crowned', 'Zamazenta-Crowned',
 			'Zekrom', 'Power Construct',
 		],
-		unbanlist: ['Battle Bond', 'Greninja-Bond', 'Light of Ruin'],
 	},
 	{
 		name: "[Gen 9] Camomons A Golden Experience",
@@ -393,7 +382,6 @@ export const Formats: import('../sim/dex-formats').FormatList = [
 			'Volcarona', 'Xerneas', 'Yveltal', 'Zacian', 'Zacian-Crowned', 'Zamazenta-Crowned', 'Zekrom', 'Zygarde-50', 'Moody', 'Booster Energy', 'King\'s Rock', 'Light Clay', 'Razor Fang',
 			'Baton Pass', 'Last Respects', 'Shed Tail',
 		],
-		unbanlist: ['Battle Bond', 'Greninja-Bond', 'Light of Ruin'],
 	},
 	{
 		name: "[Gen 9] Camove Chaos A Golden Experience",
@@ -416,7 +404,6 @@ export const Formats: import('../sim/dex-formats').FormatList = [
 			'Shed Tail', 'Shell Smash', 'Shift Gear', 'Surging Strikes', 'Tail Glow', 'Take Heart', 'Thousand Arrows', 'Transform', 'V-create', 'Victory Dance', 'Water Spout', 
 			'Wicked Blow', 'Power Construct', 'Regenerator > 2'
 		],
-		unbanlist: ['Blazing Torque', 'Combat Torque', 'Light of Ruin', 'Magical Torque', 'Noxious Torque', 'Wicked Torque'],
 	},
 	{
 		name: "[Gen 9] Pokebilities A Golden Experience",
@@ -432,7 +419,6 @@ export const Formats: import('../sim/dex-formats').FormatList = [
 			'Zekrom', 'Zygarde-50', 'Moody', 'Damp Rock', 'Icy Rock', 'King\'s Rock', 'Smooth Rock', 'Baton Pass', 'Shed Tail', 
 			'Last Respects',
 		],
-		unbanlist: ['Battle Bond', 'Greninja-Bond', 'Light of Ruin'],
 		onValidateSet(set) {
 			const species = this.dex.species.get(set.species);
 			const unSeenAbilities = Object.keys(species.abilities)
@@ -570,7 +556,6 @@ export const Formats: import('../sim/dex-formats').FormatList = [
 			'Court Change', 'Decorate', 'Dragon Cheer', 'Final Gambit', 'Flatter', 'Fling', 'Floral Healing', 'Follow Me', 'Heal Pulse', 'Heart Swap', 'Last Respects',
 			'Malignant Chain', 'Poison Fang', 'Rage Powder', 'Skill Swap', 'Spicy Extract', 'Swagger', 'Toxic', 'Toxic Spikes',
 		],
-		unbanlist: ['Battle Bond', 'Greninja-Bond', 'Light of Ruin'],
 	},
 
 	// Touhoumons

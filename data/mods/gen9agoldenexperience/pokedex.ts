@@ -3285,7 +3285,6 @@ export const Pokedex: {[k: string]: ModdedSpeciesData;} = {
 	},
 	hatterene: {
 		inherit: true,
-		baseStats: {hp: 77, atk: 70, def: 95, spa: 136, spd: 103, spe: 29},
 		abilities: {0: "Healer", 1: "Magician", H: "Magic Bounce"},
 	},
 	grimmsnarl: {

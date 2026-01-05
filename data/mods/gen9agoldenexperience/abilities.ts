@@ -1609,15 +1609,6 @@ export const Abilities: { [abilityid: string]: ModdedAbilityData; } = {
 		},
 		shortDesc: "If Darmanitan, changes Mode to Zen.",
 	},
-	dragonsmaw: {
-		inherit: true,
-		onAfterMoveSecondarySelf(pokemon, target, move) {
-			if (move.category !== 'Status' && move.type === 'Dragon') {
-				this.heal(pokemon.lastDamage / 8, pokemon);
-			}
-		},
-		shortDesc: "This Pokemon gets x1.5 in its attacking stat when using an Dragon move. It also heals 1/8 of the damages dealt when using a Dragon type move.",
-	},
 	runaway: {
 		inherit: true,
 		onTrapPokemonPriority: -10,
@@ -1719,16 +1710,6 @@ export const Abilities: { [abilityid: string]: ModdedAbilityData; } = {
 		},
 		desc: "This Pokemon's punch-based attacks have their power multiplied by 1.3.",
 		shortDesc: "This Pokemon's punch-based attacks have 1.3x power. Sucker Punch is not boosted.",
-	},
-	rkssystem: {
-		inherit: true,
-		onBasePowerPriority: 23,
-		onBasePower(basePower, pokemon, target, move) {
-			if (!pokemon.hasType(move.type)) {
-				return this.chainModify(1.5);
-			}
-		},
-		shortDesc: "Non-STAB moves have 1.5x power.",
 	},
 	galewings: {
 		inherit: true,

@@ -1408,12 +1408,9 @@ export const Scripts: ModdedBattleScriptsData = {
     this.modData('Learnsets', 'mantine').learnset.flipturn = ['9L1'];
     this.modData('Learnsets', 'porygon2').learnset.voltswitch = ['9L1']; // ZA addition
     this.modData('Learnsets', 'raikou').learnset.thunderway = ['9L1'];
-    this.modData('Learnsets', 'raikou').learnset.thunderclap = ['9L1'];
     this.modData('Learnsets', 'entei').learnset.fieryfire = ['9L1'];
-    this.modData('Learnsets', 'entei').learnset.burningbulwark = ['9L1'];
     this.modData('Learnsets', 'entei').learnset.earthquake = ['9L1'];
     this.modData('Learnsets', 'suicune').learnset.auroraborealis = ['9L1'];
-    this.modData('Learnsets', 'suicune').learnset.hydrosteam = ['9L1'];
     this.modData('Learnsets', 'suicune').learnset.knockoff = ['9L1'];
     this.modData('Learnsets', 'suicune').learnset.flipturn = ['9L1'];
     this.modData('Learnsets', 'tyranitar').learnset.scorchingsands = ['9L1']; // ZA addition
@@ -1977,6 +1974,7 @@ export const Scripts: ModdedBattleScriptsData = {
     this.modData('Learnsets', 'yveltal').learnset.healblock = ['9L1']; // ZA addition
     this.modData('Learnsets', 'zygarde').learnset.ironhead = ['9L1']; // ZA addition
     this.modData('Learnsets', 'hoopa').learnset.psychicfangs = ['9L1']; // ZA addition
+    this.modData('Learnsets', 'volcanion').learnset.hydrosteam = ['9L1'];
 
     // Gen 7:
     this.modData('Learnsets', 'decidueyehisui').learnset.spikes = ['9L1'];

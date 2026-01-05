@@ -2,7 +2,6 @@ import { consoleips } from "../../../config/config-example";
 
 const kickMoves = ['jumpkick', 'highjumpkick', 'megakick', 'doublekick', 'blazekick', 'tropkick', 'lowkick', 'lowsweep', 'rollingkick', 'triplekick', 'stomp', 'highhorsepower', 'tripleaxel', 'stompingtantrum', 'thunderouskick', 'axekick'];
 const tailMoves = ['firelash', 'powerwhip', 'tailslap', 'wrap', 'constrict', 'irontail', 'dragontail', 'poisontail', 'aquatail', 'vinewhip', 'wringout',];
-const sleepMove = ['darkvoid', 'grasswhistle', 'hypnosis', 'lovelykiss', 'psychoshift', 'sing', 'sleeppowder', 'spore', 'yawn'];
 
 export const Abilities: { [abilityid: string]: ModdedAbilityData; } = {
 	poisonousradula: {
@@ -2471,16 +2470,6 @@ export const Abilities: { [abilityid: string]: ModdedAbilityData; } = {
 		shortDesc: "This Pokemon's affinities are reversed.",
 		rating: 4.5,
 		num: -85,
-	},
-	myceliummight: {
-		inherit: true,
-		onFractionalPriority(priority, pokemon, target, move) {
-			if (sleepMove.includes(move.id)) {
-				return -0.1;
-			}
-		},
-		desc: "This Pokemon's Status moves ignore certain Abilities of other Pokemon, and Sleep inducing moves go last among Pokemon using the same or greater priority moves.",
-		shortDesc: "This Pokemon's Sleep inducing moves go last in their priority bracket and status moves ignore Abilities.",
 	},
 	counterstrike: {
 		shortDesc: "This Pokemon reflects 50% of the damage it receives.",

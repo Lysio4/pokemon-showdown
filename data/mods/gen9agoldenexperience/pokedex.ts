@@ -3540,9 +3540,14 @@ export const Pokedex: {[k: string]: ModdedSpeciesData;} = {
 		eggGroups: ["Grass"],
 		requiredItem: "Brambleghite",
 	},
+	toedscool: {
+		inherit: true,
+		abilities: { 0: "Mycelium Might", H: "Clear Body" },
+	},
 	toedscruel: {
 		inherit: true,
 		baseStats: {hp: 90, atk: 70, def: 75, spa: 80, spd: 120, spe: 100},
+		abilities: { 0: "Mycelium Might", H: "Clear Body" },
 	},
 	klawf: {
 		inherit: true,

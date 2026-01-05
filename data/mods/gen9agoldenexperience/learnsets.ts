@@ -6788,6 +6788,7 @@ export const Learnsets: { [speciesid: string]: LearnsetData; } = {
 			dragondance: ["9L1"],
 			earthquake: ["9L1"],
 			partingshot: ["9L1"],
+			shedtail: ["9L1"],
 		},
 	},
 	truelewoodo: {

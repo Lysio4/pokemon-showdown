@@ -104192,6 +104192,7 @@ export const Learnsets: import('../sim/dex-species').LearnsetDataTable = {
 			dragondance: ["9L1"],
 			earthquake: ["9L1"],
 			partingshot: ["9L1"],
+			shedtail: ["9L1"],
 		},
 	},
 	truelewoodo: {

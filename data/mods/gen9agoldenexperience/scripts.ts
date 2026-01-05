@@ -643,6 +643,7 @@ export const Scripts: ModdedBattleScriptsData = {
     this.modData('Learnsets', 'ironthorns').learnset.parallelcircuit = ['9M'];
 
     // musclecare 
+    this.modData('Learnsets', 'primeape').learnset.musclecare = ['9L1'];
     this.modData('Learnsets', 'poliwrath').learnset.musclecare = ['9L1'];
     this.modData('Learnsets', 'machop').learnset.musclecare = ['9L1'];
     this.modData('Learnsets', 'tyrogue').learnset.musclecare = ['9L1'];
@@ -661,6 +662,7 @@ export const Scripts: ModdedBattleScriptsData = {
     this.modData('Learnsets', 'cinderace').learnset.musclecare = ['9L1'];
     this.modData('Learnsets', 'kubfu').learnset.musclecare = ['9L1'];
     this.modData('Learnsets', 'quaquaval').learnset.musclecare = ['9L1'];
+    this.modData('Learnsets', 'annihilape').learnset.musclecare = ['9L1'];
     this.modData('Learnsets', 'okidogi').learnset.musclecare = ['9L1'];
 
     // chistrike 
@@ -710,33 +712,33 @@ export const Scripts: ModdedBattleScriptsData = {
 
 
     // landslide 
-    this.modData('Learnsets', 'mew').learnset.landslide = ['9M'];
-    this.modData('Learnsets', 'hippopotas').learnset.landslide = ['9M'];
-    this.modData('Learnsets', 'hippowdon').learnset.landslide = ['9M'];
-    this.modData('Learnsets', 'mudsdale').learnset.landslide = ['9M'];
-    this.modData('Learnsets', 'palossand').learnset.landslide = ['9M'];
-    this.modData('Learnsets', 'sandaconda').learnset.landslide = ['9M'];
-    this.modData('Learnsets', 'larvitar').learnset.landslide = ['9M'];
-    this.modData('Learnsets', 'pupitar').learnset.landslide = ['9M'];
-    this.modData('Learnsets', 'tyranitar').learnset.landslide = ['9M'];
-    this.modData('Learnsets', 'torterra').learnset.landslide = ['9M'];
     this.modData('Learnsets', 'machamp').learnset.landslide = ['9M'];
     this.modData('Learnsets', 'graveler').learnset.landslide = ['9M'];
     this.modData('Learnsets', 'golem').learnset.landslide = ['9M'];
     this.modData('Learnsets', 'graveleralola').learnset.landslide = ['9M'];
     this.modData('Learnsets', 'golemalola').learnset.landslide = ['9M'];
-    this.modData('Learnsets', 'piloswine').learnset.landslide = ['9M'];
-    this.modData('Learnsets', 'mamoswine').learnset.landslide = ['9M'];
     this.modData('Learnsets', 'onix').learnset.landslide = ['9M'];
-    this.modData('Learnsets', 'steelix').learnset.landslide = ['9M'];
     this.modData('Learnsets', 'rhyhorn').learnset.landslide = ['9M'];
     this.modData('Learnsets', 'rhydon').learnset.landslide = ['9M'];
-    this.modData('Learnsets', 'rhyperior').learnset.landslide = ['9M'];
-    this.modData('Learnsets', 'coalossal').learnset.landslide = ['9M'];
-    this.modData('Learnsets', 'gigalith').learnset.landslide = ['9M'];
+    this.modData('Learnsets', 'mew').learnset.landslide = ['9M'];
+    this.modData('Learnsets', 'steelix').learnset.landslide = ['9M'];
+    this.modData('Learnsets', 'piloswine').learnset.landslide = ['9M'];
+    this.modData('Learnsets', 'larvitar').learnset.landslide = ['9M'];
+    this.modData('Learnsets', 'pupitar').learnset.landslide = ['9M'];
+    this.modData('Learnsets', 'tyranitar').learnset.landslide = ['9M'];
     this.modData('Learnsets', 'lairon').learnset.landslide = ['9M'];
     this.modData('Learnsets', 'aggron').learnset.landslide = ['9M'];
+    this.modData('Learnsets', 'torterra').learnset.landslide = ['9M'];
+    this.modData('Learnsets', 'hippopotas').learnset.landslide = ['9M'];
+    this.modData('Learnsets', 'hippowdon').learnset.landslide = ['9M'];
+    this.modData('Learnsets', 'rhyperior').learnset.landslide = ['9M'];
+    this.modData('Learnsets', 'mamoswine').learnset.landslide = ['9M'];
+    this.modData('Learnsets', 'gigalith').learnset.landslide = ['9M'];
+    this.modData('Learnsets', 'mudsdale').learnset.landslide = ['9M'];
+    this.modData('Learnsets', 'palossand').learnset.landslide = ['9M'];
     this.modData('Learnsets', 'buzzwole').learnset.landslide = ['9M'];
+    this.modData('Learnsets', 'coalossal').learnset.landslide = ['9M'];
+    this.modData('Learnsets', 'sandaconda').learnset.landslide = ['9M'];
     this.modData('Learnsets', 'stonjourner').learnset.landslide = ['9M'];
     this.modData('Learnsets', 'ironthorns').learnset.landslide = ['9M'];
 
@@ -2198,6 +2200,7 @@ export const Scripts: ModdedBattleScriptsData = {
     this.modData('Learnsets', 'tatsugiri').learnset.flipturn = ['9L1']; // ZA addition
     this.modData('Learnsets', 'tatsugiri').learnset.scald = ['9L1']; // ZA addition
     this.modData('Learnsets', 'tatsugiri').learnset.calmmind = ['9L1']; // ZA addition
+    this.modData('Learnsets', 'annihilape').learnset.bodypress = ['9L1'];
     this.modData('Learnsets', 'screamtail').learnset.seismictoss = ['9L1'];
     this.modData('Learnsets', 'screamtail').learnset.softboiled = ['9L1'];
     this.modData('Learnsets', 'screamtail').learnset.followme = ['9L1'];

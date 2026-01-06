@@ -364,7 +364,7 @@ export const Formats: import('../sim/dex-formats').FormatList = [
 		],
 		restricted: [
 			'Astral Barrage', 'Belly Drum', 'Big Bang', 'Bolt Beak', 'Chatter', 'Clangorous Soul', 'Dire Claw', 'Double Iron Bash', 'Dragon Energy', 'Electrify', 'Extreme Speed',
-			'Fillet Away', 'Final Gambit', 'Fishious Rend', 'Geomancy', 'Gigaton Hammer', 'Iceberg Polish', 'No Retreat', 'Revival Blessing', 'Sappy Seed', 'Shell Smash', 
+			'Fillet Away', 'Final Gambit', 'Fishious Rend', 'Geomancy', 'Gigaton Hammer', 'No Retreat', 'Revival Blessing', 'Sappy Seed', 'Shell Smash', 
 			'Shift Gear', 'Thousand Arrows', 'Trick-or-Treat', 'Triple Arrows', 'V-create', 'Victory Dance',  'Wicked Blow', 'Zippy Zap', 
 		],
 		unbanlist: ['Light of Ruin'],
@@ -421,7 +421,7 @@ export const Formats: import('../sim/dex-formats').FormatList = [
 			'Damp Rock', 'Heat Rock', 'King\'s Rock', 'Razor Fang', 'Smooth Rock',
 			'Astral Barrage', 'Baneful Bunker', 'Baton Pass', 'Belly Drum', 'Big Bang', 'Bolt Beak', 'Boomburst', 'Burning Bulwark', 'Ceaseless Edge', 'Clangorous Soul', 
 			'Double Iron Bash', 'Dragon Energy', 'Electrify', 'Electro Shot', 'Eruption', 'Extreme Speed', 'Final Gambit', 'Fillet Away', 'Fishious Rend', 'Geomancy', 
-			'Iceberg Polish', 'Jet Punch', 'Last Respects', 'Lumina Crash', 'No Retreat', 'Population Bomb', 'Quiver Dance', 'Rage Fist', 'Revival Blessing', 'Rising Voltage', 'Salt Cure', 
+			'Jet Punch', 'Last Respects', 'Lumina Crash', 'No Retreat', 'Population Bomb', 'Quiver Dance', 'Rage Fist', 'Revival Blessing', 'Rising Voltage', 'Salt Cure', 
 			'Shed Tail', 'Shell Smash', 'Shift Gear', 'Surging Strikes', 'Tail Glow', 'Take Heart', 'Thousand Arrows', 'Transform', 'V-create', 'Victory Dance', 'Water Spout', 
 			'Wicked Blow', 'Power Construct', 'Regenerator > 2'
 		],

@@ -24071,190 +24071,8 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 		contestType: "Clever",
 		shortDesc: "Raises user's Speed by 1, and adds the type of user's first move to its type.",
 	},
-	thunderway: {
-		num: -68,
-		accuracy: true,
-		basePower: 0,
-		category: "Status",
-		name: "Thunder Way",
-		pp: 10,
-		priority: 0,
-		flags: {heal: 1, bypasssub: 1, allyanim: 1},
-		onHit(pokemon) {
-			const success = !!this.heal(this.modify(pokemon.maxhp, 0.75));
-			pokemon.addVolatile('taunt');
-			return pokemon.cureStatus() || success;
-		},
-		onPrepareHit(target, source) {
-			this.attrLastMove('[still]');
-			this.add('-anim', source, "Thunderclap", source);
-		},
-		secondary: null,
-		target: "self",
-		type: "Electric",
-		shortDesc: "Heals 75% of HP and heals status, but the user is Taunted for 2 turns.",
-	},
-	fieryfire: {
-		num: -69,
-		accuracy: true,
-		basePower: 0,
-		category: "Status",
-		name: "Fiery Fire",
-		pp: 20,
-		priority: 0,
-		flags: {snatch: 1, metronome: 1},
-		boosts: {
-			atk: 1,
-		},
-		onHit(pokemon) {
-			pokemon.addVolatile('flashfire')
-		},
-		onEnd(pokemon) {
-			pokemon.removeVolatile('flashfire');
-		},
-		onPrepareHit(target, source) {
-			this.attrLastMove('[still]');
-			this.add('-anim', source, "Fiery Dance", source);
-		},
-		secondary: null,
-		target: "self",
-		type: "Fire",
-		zMove: {effect: 'clearnegativeboost'},
-		contestType: "Clever",
-		shortDesc: "Raises Atk by 1, and applies the Flash Fire effect.",
-	},
-	auroraborealis: {
-		num: -70,
-		accuracy: true,
-		basePower: 0,
-		category: "Status",
-		name: "Aurora Borealis",
-		pp: 20,
-		priority: 0,
-		flags: {snatch: 1, metronome: 1},
-		volatileStatus: 'aquaring',
-		onHit(pokemon) {
-			return pokemon.cureStatus();
-		},
-		onPrepareHit(target, source) {
-			this.attrLastMove('[still]');
-			this.add('-anim', source, "Aurora Veil", source);
-			this.add('-anim', source, "Aqua Ring", source);
-		},
-		secondary: null,
-		target: "self",
-		type: "Water",
-		zMove: {boost: {def: 1}},
-		contestType: "Beautiful",
-		shortDesc: "Heals user's status, and gives Aqua Ring.",
-	},
-	boulderbuilding: {
-		num: -71,
-		accuracy: true,
-		basePower: 0,
-		category: "Status",
-		name: "Boulder Building",
-		pp: 15,
-		priority: 0,
-		flags: {protect: 1, reflectable: 1, mirror: 1, bypasssub: 1, metronome: 1},
-		onHit(target, source, move) {
-			let success = false;
-			if (!target.volatiles['substitute'] || move.infiltrates) success = !!this.boost({def: 1}, source, source, this.dex.getActiveMove("Boulder Building"));
-			const removeTarget = [
-				'reflect', 'lightscreen', 'auroraveil', 'safeguard', 'mist', 'spikes', 'toxicspikes', 'stealthrock', 'stickyweb', 'gmaxsteelsurge',
-			];
-			const removeAll = [
-				'spikes', 'toxicspikes', 'stealthrock', 'stickyweb', 'gmaxsteelsurge',
-			];
-			for (const targetCondition of removeTarget) {
-				if (target.side.removeSideCondition(targetCondition)) {
-					if (!removeAll.includes(targetCondition)) continue;
-					this.add('-sideend', target.side, this.dex.conditions.get(targetCondition).name, '[from] move: Boulder Building', '[of] ' + source);
-					success = true;
-				}
-			}
-			for (const sideCondition of removeAll) {
-				if (source.side.removeSideCondition(sideCondition)) {
-					this.add('-sideend', source.side, this.dex.conditions.get(sideCondition).name, '[from] move: Boulder Building', '[of] ' + source);
-					success = true;
-				}
-			}
-			this.field.clearTerrain();
-			return success;
-		},
-		onPrepareHit(target, source) {
-			this.attrLastMove('[still]');
-			this.add('-anim', source, "Rock Blast", source);
-		},
-		secondary: null,
-		target: "normal",
-		type: "Rock",
-		zMove: {boost: {accuracy: 1}},
-		contestType: "Cool",
-		desc: "Raises the user's Defense by 1 stage. If this move is successful and whether or not the target's evasiveness was affected, the effects of Reflect, Light Screen, Aurora Veil, Safeguard, Mist, Spikes, Toxic Spikes, Stealth Rock, and Sticky Web end for the target's side, and the effects of Spikes, Toxic Spikes, Stealth Rock, and Sticky Web end for the user's side. Ignores a target's substitute, although a substitute will still block the lowering of evasiveness. If there is a terrain active and this move is successful, the terrain will be cleared.",
-		shortDesc: "+1 Def; clears terrain and hazards on both sides.",
-	},
-	icebergpolish: {
-		num: -72,
-		accuracy: true,
-		basePower: 0,
-		category: "Status",
-		name: "Iceberg Polish",
-		pp: 10,
-		priority: 0,
-		flags: {snatch: 1, metronome: 1},
-		boosts: {
-			spe: 2,
-			spa: 1,
-		},
-		onPrepareHit(target, source) {
-			this.attrLastMove('[still]');
-			this.add('-anim', source, "Rock Polish", source);
-		},
-		secondary: null,
-		target: "self",
-		type: "Ice",
-		zMove: {effect: 'clearnegativeboost'},
-		contestType: "Clever",
-		desc: "Raises the user's Speed by 2 stages and its Sp. Attack by 1 stage.",
-		shortDesc: "Raises the user's Speed by 2 and Sp. Atk by 1.",
-	},
-	alienmetal: {
-		num: -73,
-		accuracy: true,
-		basePower: 0,
-		category: "Status",
-		name: "Alien Metal",
-		pp: 10,
-		priority: 0,
-		flags: {snatch: 1, heal: 1, bypasssub: 1},
-		heal: [1, 4],
-		volatileStatus: 'alienmetal',
-		condition: {
-			onStart(pokemon, source, effect) {
-				this.add('-start', pokemon, 'Alien Metal');
-			},
-			onSourceModifyDamage(damage, source, target, move) {
-				if (target.getMoveHitData(move).typeMod > 0) {
-					this.debug('Alien Metal neutralize');
-					return this.chainModify(0.75);
-				}
-			},
-			onEnd(pokemon) {
-				this.add('-end', pokemon, 'Alien Metal', '[silent]');
-			},
-		},		
-		onPrepareHit(target, source) {
-			this.attrLastMove('[still]');
-			this.add('-anim', source, "Iron Defense", source);
-		},
-		secondary: null,
-		target: "allies",
-		type: "Steel",
-		shortDesc: "Heals 25% of the user's HP, and gives Filter effect for 3 turns.",
-	},
 	athosrapier: {
-		num: -76,
+		num: -68,
 		accuracy: true,
 		basePower: 0,
 		category: "Status",
@@ -24316,7 +24134,7 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 		shortDesc: "Protects from damaging attacks. Contact: +1 Def.",
 	},
 	aramisdagger: {
-		num: -77,
+		num: -69,
 		accuracy: 100,
 		basePower: 40,
 		category: "Physical",
@@ -24336,7 +24154,7 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 		shortDesc: "Usually goes first.",
 	},
 	porthosbroadsword: {
-		num: -78,
+		num: -70,
 		accuracy: 100,
 		basePower: 120,
 		category: "Physical",
@@ -24379,7 +24197,7 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 		shortDesc: "Fails if the user takes damage before it hits.",
 	},
 	befuddlepowder: {
-		num: -79,
+		num: -71,
 		accuracy: 100,
 		basePower: 60,
 		category: "Special",
@@ -24406,7 +24224,7 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 	piercingdart: {
 		desc: "Hits Steel types for super effective damages.",
 		shortDesc: "Super effective on Steel targets.",
-		num: -80,
+		num: -72,
 		accuracy: 100,
 		basePower: 70,
 		category: "Physical",
@@ -24432,7 +24250,7 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 		type: "Poison",
 	},
 	hindenburg: {
-		num: -81,
+		num: -73,
 		accuracy: 100,
 		basePower: 65,
 		basePowerCallback(pokemon, target, move) {
@@ -24459,7 +24277,7 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 		shortDesc: "Power doubles if the user has no held item or is burned.",
 	},
 	ventilation: {
-		num: -82,
+		num: -74,
 		accuracy: 90,
 		basePower: 70,
 		basePowerCallback(pokemon, target, move) {
@@ -24485,7 +24303,7 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 		shortDesc: "Lowers the target's Speed by 1. If user has 3 stacks of Stockpile, doubles in power.",
 	},
 	emushdance: {
-		num: -83,
+		num: -75,
 		accuracy: 100,
 		basePower: 120,
 		category: "Special",
@@ -24520,7 +24338,7 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 		shortDesc: "Charges on turn 1, then hits on turn 2. No charge in Chakra Terrain or Grassy Terrain.",
 	},
 	rainofarrows: {
-		num: -83,
+		num: -76,
 		accuracy: 100,
 		basePower: 70,
 		category: "Physical",
@@ -24548,7 +24366,7 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 		shortDesc: "Hits once in this turn, then hits again in the next turn. Ignores protection.",
 	},
 	wyvernflight: {
-		num: -84,
+		num: -77,
 		accuracy: 100,
 		basePower: 70,
 		category: "Special",
@@ -24570,7 +24388,7 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 		shortDesc: "User switches out after damaging the target.",
 	},
 	bigbang: {
-		num: -85,
+		num: -78,
 		accuracy: 100,
 		basePower: 140,
 		category: "Special",
@@ -24595,7 +24413,7 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 		shortDesc: "Ignores the Abilities of other Pokemon, resistances and immunities.",
 	},
 	ningencry: {
-		num: -86,
+		num: -79,
 		accuracy: true,
 		basePower: 0,
 		category: "Status",
@@ -24621,7 +24439,7 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 		contestType: "Beautiful",
 	},
 	mantisslash: {
-		num: -87,
+		num: -80,
 		accuracy: 100,
 		basePower: 100,
 		category: "Physical",
@@ -24641,7 +24459,7 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 		shortDesc: "Lowers the user's Speed by 2.",
 	},
 	intrepidcrash: {
-		num: -88,
+		num: -81,
 		accuracy: 100,
 		basePower: 60,
 		category: "Physical",
@@ -24661,7 +24479,7 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 		contestType: "Cool",
 	},
 	timeparadox: {
-		num: -89,
+		num: -82,
 		accuracy: 75,
 		basePower: 100,
 		category: "Special",
@@ -24682,7 +24500,7 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 		shortDesc: "Traps and damages the target for 4-5 turns.",
 	},
 	corrosiveacid: {
-		num: -90,
+		num: -83,
 		accuracy: 100,
 		basePower: 70,
 		category: "Special",
@@ -24709,7 +24527,7 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 		shortDesc: "10% chance to poison. Super effective on Steel.",
 	},
 	jumpscare: {
-		num: -91,
+		num: -84,
 		accuracy: 100,
 		basePower: 40,
 		category: "Physical",
@@ -24740,7 +24558,7 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 		shortDesc: "Hits first. First turn out only. 100% flinch chance.",
 	},
 	futuredoom: {
-		num: -92,
+		num: -85,
 		accuracy: 100,
 		basePower: 65,
 		category: "Special",
@@ -24758,7 +24576,7 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 		shortDesc: "Traps the target for 5 turns, and applies Taunt.",
 	},
 	brainblast: {
-		num: -93,
+		num: -86,
 		accuracy: 100,
 		basePower: 65,
 		category: "Special",
@@ -24793,7 +24611,7 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 		shortDesc: "1.5x damage if foe holds an item. Removes item.",
 	},
 	rainbowdash: {
-		num: -94,
+		num: -87,
 		accuracy: 100,
 		basePower: 100,
 		category: "Physical",
@@ -24812,7 +24630,7 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 		shortDesc: "No additional effect.",
 	},
 	waterslash: {
-		num: -95,
+		num: -88,
 		accuracy: 100,
 		basePower: 85,
 		category: "Special",
@@ -24833,7 +24651,7 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 		shortDesc: "Damages target based on Defense, not Sp. Def.",
 	},
 	marinebolt: {
-		num: -96,
+		num: -89,
 		accuracy: 100,
 		basePower: 75,
 		category: "Physical",
@@ -24852,7 +24670,7 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 		shortDesc: "Uses user's Speed stat instead of Attack in damage calculation.",
 	},
 	scaredyshell: {
-		num: -97,
+		num: -90,
 		accuracy: 100,
 		basePower: 60,
 		category: "Physical",
@@ -24874,7 +24692,7 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 		switchOut: "#uturn",
 	},
 	calmingbell: {
-		num: -98,
+		num: -91,
 		accuracy: 100,
 		basePower: 80,
 		category: "Special",
@@ -24898,7 +24716,7 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 		shortDesc: "100% chance to lower the target's SpA by 1.",
 	},
 	fullmoonstrike: {
-		num: -99,
+		num: -92,
 		accuracy: 100,
 		basePower: 120,
 		category: "Physical",
@@ -24924,7 +24742,7 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 		shortDesc: "Lowers the user's Defense and Sp. Def by 1.",
 	},
 	seasonpass: {
-		num: -100,
+		num: -93,
 		accuracy: 100,
 		basePower: 100,
 		category: "Physical",
@@ -24951,7 +24769,7 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 		shortDesc: "Type varies based on the user's primary type.",
 	},
 	versatiledance: {
-		num: -101,
+		num: -94,
 		accuracy: true,
 		basePower: 0,
 		category: "Status",
@@ -24977,7 +24795,7 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 		shortDesc: "Raises the user's Attack, Sp. Atk and Speed by 1.",
 	},
 	chistrike: {
-		num: -102,
+		num: -95,
 		accuracy: 100,
 		basePower: 90,
 		onModifyMovePriority: -5,

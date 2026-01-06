@@ -1408,10 +1408,7 @@ export const Scripts: ModdedBattleScriptsData = {
     this.modData('Learnsets', 'octillery').learnset.terrainpulse = ['9L1'];
     this.modData('Learnsets', 'mantine').learnset.flipturn = ['9L1'];
     this.modData('Learnsets', 'porygon2').learnset.voltswitch = ['9L1']; // ZA addition
-    this.modData('Learnsets', 'raikou').learnset.thunderway = ['9L1'];
-    this.modData('Learnsets', 'entei').learnset.fieryfire = ['9L1'];
     this.modData('Learnsets', 'entei').learnset.earthquake = ['9L1'];
-    this.modData('Learnsets', 'suicune').learnset.auroraborealis = ['9L1'];
     this.modData('Learnsets', 'suicune').learnset.knockoff = ['9L1'];
     this.modData('Learnsets', 'suicune').learnset.flipturn = ['9L1'];
     this.modData('Learnsets', 'tyranitar').learnset.scorchingsands = ['9L1']; // ZA addition
@@ -1528,11 +1525,8 @@ export const Scripts: ModdedBattleScriptsData = {
     this.modData('Learnsets', 'metagross').learnset.teleport = ['9L1'];
     this.modData('Learnsets', 'metagross').learnset.recover = ['9L1'];
     this.modData('Learnsets', 'metagross').learnset.swordsdance = ['9L1'];
-    this.modData('Learnsets', 'regirock').learnset.boulderbuilding = ['9L1'];
     this.modData('Learnsets', 'regirock').learnset.recover = ['9L1'];
-    this.modData('Learnsets', 'regice').learnset.icebergpolish = ['9L1'];
     this.modData('Learnsets', 'regice').learnset.recover = ['9L1'];
-    this.modData('Learnsets', 'registeel').learnset.alienmetal = ['9L1'];
     this.modData('Learnsets', 'registeel').learnset.recover = ['9L1'];
 
     // Gen 4:

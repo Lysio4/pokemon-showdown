@@ -21,7 +21,7 @@ export const Rulesets: {[k: string]: ModdedFormatData} = {
 			if (item.zMove && !item.itemUser) return [`${set.name || set.species}'s item ${item.name} is banned by Non-Signature Z-Move Clause.`];
 		},
 		onBegin() {
-			this.add('rule', 'Non-Signature Z-Move Clause: non-signature Z-Moves are banned');
+			this.add('rule', 'Non-Signature Z-Move Clause: Non-signature Z-Moves are banned');
 		},
 	},
 };

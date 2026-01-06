@@ -5886,7 +5886,7 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 			}
 		},
 		rating: 3,
-		num: -14,
+		num: -13,
 	},
 	woodclearing: {
 		onBasePowerPriority: 21,
@@ -5902,7 +5902,7 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 		name: "Wood Clearing",
 		shortDesc: "This Pokemon's attacks do 1.3x in Grassy Terrain. Always hits Grass targets for super effective.",
 		rating: 2,
-		num: -15,
+		num: -14,
 	},
 	microclimate: {
 		onStart(pokemon) {
@@ -5932,7 +5932,7 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 		shortDesc: "Reverses effects of Sun and Rain; negates Sand and Hail.",
 		name: "Microclimate",
 		rating: 2,
-		num: -16,
+		num: -15,
 	},
 	voidheart: {
 		desc: "When it KOs an opponent with a direct move, it recovers 25% of its max HP.",
@@ -5944,7 +5944,7 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 		},
 		name: "Void-Heart",
 		rating: 3,
-		num: -17,
+		num: -16,
 	},
 	convectioncurrent: {
 		desc: "If Gravity is active, this Pokemon's Speed is doubled.",
@@ -5956,7 +5956,7 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 		},
 		name: "Convection Current",
 		rating: 3,
-		num: -18,
+		num: -17,
 	},
 	endlessdream: {
 		desc: "While this Pokemon is active, every other Pokemon is treated as if it has the Comatose ability. Pokemon that are either affected by Sweet Veil, or have Insomnia or Vital Spirit as their abilities are immune this effect.",
@@ -5973,7 +5973,7 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 		},
 		name: "Endless Dream",
 		rating: 3,
-		num: -19,
+		num: -18,
 	},
 	evaporate: {
 		desc: "If the Pokemon or the opponent uses a Water type move, it triggers the Haze effect. Immune to Water.",
@@ -5998,7 +5998,7 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 		},
 		name: "Evaporate",
 		rating: 4,
-		num: -20,
+		num: -19,
 	},
 	desertsong: {
 		onModifyTypePriority: -1,
@@ -6011,12 +6011,12 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 		desc: "This Pokemon's sound-based moves become Ground-type moves. This effect comes after other effects that change a move's type, but before Ion Deluge and Electrify's effects.",
 		shortDesc: "This Pokemon's sound-based moves become Ground type.",
 		rating: 1.5,
-		num: -21,
+		num: -20,
 	},
 	sundownswitch: {
 		name: "Sundown Switch",
 		desc: "If Cacturne-Mega: Changes to Day form before using Grass move; to Night before using Dark move.",
-		num: -22,
+		num: -21,
 		onBeforeMovePriority: 0.5,
 		onBeforeMove(attacker, defender, move) {
 			if (attacker.species.baseSpecies !== 'Cacturne' || attacker.transformed) return;
@@ -6045,7 +6045,7 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 		},
 		name: "Cold Vengeance",
 		rating: 3,
-		num: -24,
+		num: -22,
 	},
 	blindrage: {
 		onDamagingHit(damage, target, source, effect) {
@@ -6054,7 +6054,7 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 		name: "Blind Rage",
 		shortDesc: "This Pokemon's Atk is raised by 1 when hit.",
 		rating: 3.5,
-		num: -25,
+		num: -23,
 	},
 	hardrock: {
 		onModifyAtkPriority: 6,
@@ -6072,7 +6072,7 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 		name: "Hard Rock",
 		shortDesc: "This Pokemon's Atk is boosted by 1.5 and Def by 2, but its SpD is halved.",
 		rating: 1.5,
-		num: -26,
+		num: -24,
 	},
 	forgery: {
 		desc: "This Pokémon inherits the item of the last unfainted Pokemon in its party.",
@@ -6115,7 +6115,7 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 		flags: {failroleplay: 1, noreceiver: 1, noentrain: 1, notrace: 1, failskillswap: 1, cantsuppress: 1},
 		name: "Forgery",
 		rating: 3,
-		num: -27,
+		num: -25,
 	},
 	clairvoyance: {
 		desc: "This Pokémon's Psychic-type moves take effect two turns after being used. At the end of that turn, the damage is calculated at that time and dealt to the Pokémon at the position the target had when the move was used. Only one move can be delayed at a time. If the user is no longer active at the time an attacking move should hit, damage is calculated based on the user's natural Attack or Special Attack stat, types, and level, with no boosts from its held item or Ability. Status moves are used by the Pokémon at the position the user had when the move was used.",
@@ -6182,7 +6182,7 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 		},
 		name: "Clairvoyance",
 		rating: 3,
-		num: -28,
+		num: -26,
 	},
 	longtail: {
 		shortDesc: "Gives a +1 priority to tail and whip moves.",
@@ -6190,7 +6190,7 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 			if (tailMoves.includes(move.id)) return priority + 1;
 		},
 		name: "Long Tail",
-		num: -29,
+		num: -27,
 	},
 	boarding: {
 		onBasePower(basePower, pokemon, target) {
@@ -6201,7 +6201,7 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 		name: "Boarding",
 		shortDesc: "This Pokemon deals 1.25x damage to trapped opponents.",
 		rating: 3,
-		num: -30,
+		num: -28,
 	},
 	lasttoxin: {
 		desc: "When this Pokemon brings an opponent to 50% or under using an attacking move, it badly poisons that opponent.",
@@ -6217,7 +6217,7 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 		},
 		name: "Last Toxin",
 		rating: 4,
-		num: -31,
+		num: -29,
 	},
 	chakrasurge: {
 		onStart(source) {
@@ -6226,7 +6226,7 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 		name: "Chakra Surge",
 		shortDesc: "On switch-in, sets Chakra Terrain.",
 		rating: 4,
-		num: -32,
+		num: -30,
 	},
 	striker: {
 		shortDesc: "Boosts the power of kicking moves by 1.3x",
@@ -6237,7 +6237,7 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 			}
 		},
 		name: "Striker",
-		num: -33,
+		num: -31,
 	},
 	deadlyblasts: {
 		onBasePowerPriority: 8,
@@ -6249,7 +6249,7 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 		name: "Deadly Blasts",
 		shortDesc: "Boosts the power of bullet, bomb and ball moves by 1.3x",
 		rating: 2.5,
-		num: -34,
+		num: -32,
 	},
 	insectivorous: {
 		onTryHit(target, source, move) {
@@ -6263,7 +6263,7 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 		name: "Insectivorous",
 		shortDesc: "This Pokemon heals 1/4 HP when hit by a Bug type move. Immune to Bug type moves.",
 		rating: 3.5,
-		num: -35,
+		num: -33,
 	},
 	cosmicenergy: {
 		desc: "This Pokemon's attacks do not have to charge or recharge, and can always be used twice in a row.",
@@ -6284,7 +6284,7 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 		},
 		name: "Cosmic Energy",
 		rating: 2,
-		num: -36,
+		num: -34,
 	},
 	ignite: {
 		desc: "This Pokémon's Normal-type moves become Fire-type moves and have their power multiplied by 1.2. This effect comes after other effects that change a move's type, but before Ion Deluge and Electrify's effects.",
@@ -6305,7 +6305,7 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 		},
 		name: "Ignite",
 		rating: 4,
-		num: -37,
+		num: -35,
 	},
 	nightlight: {
 		desc: "This Pokemon takes halves damages against Ghost-type and Dark-type moves.",
@@ -6326,7 +6326,7 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 		},
 		name: "Night Light",
 		rating: 3.5,
-		num: -38,
+		num: -36,
 	},
 	parasitism: {
 		name: "Parasitism",
@@ -6344,7 +6344,7 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 			}
 		},
 		rating: 2.5,
-		num: -39,
+		num: -37,
 	},
 	explosive: {
 		desc: "This Pokémon does not suffer the drawbacks of recoil moves and sacrificial moves.All self-KO moves used by this Pokémon have x0.8 base power.",
@@ -6369,7 +6369,7 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 		},
 		name: "Explosive",
 		rating: 4,
-		num: -40,
+		num: -38,
 	},
 	accumulate: {
 		desc: "At the end of each turn, this Pokemon gets 1 Stockpile.",
@@ -6383,7 +6383,7 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 		},
 		name: "Accumulate",
 		rating: 4.5,
-		num: -41,
+		num: -39,
 	},
 	angelicnature: {
 		onModifyMove(move) {
@@ -6403,7 +6403,7 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 		desc: "This Pokemon can hit Fairy type opponents for super effective damages with Dark moves.",
 		shortDesc: "Hits Fairy opponents for super effective damages with Dark moves.",
 		rating: 3.5,
-		num: -42,
+		num: -40,
 	},
 	blowhole: {
 		desc: "Before this Pokemon uses any Water-type move, it sets Rain Dance.",
@@ -6417,7 +6417,7 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 		},
 		name: "Blowhole",
 		rating: 3,
-		num: -43,
+		num: -41,
 	},
 	northwind: {
 		onResidualOrder: 26,
@@ -6442,7 +6442,7 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 		name: "North Wind",
 		shortDesc: "At the end of each turn, lowers all of the Pokemons' Speed by one stage.",
 		rating: 4.5,
-		num: -44,
+		num: -42,
 	},
 	everlastingwinter: {
 		desc: "On switch-in, the weather becomes Snow Hail. This weather remains in effect until this Ability is no longer active for any Pokémon, or the weather is changed by Delta Stream, Desolate Land or Primordial Sea. Super effective moves only inflict 3/4 damages on this Pokemon.",
@@ -6470,7 +6470,7 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 		},
 		name: "Everlasting Winter",
 		rating: 4.5,
-		num: -45,
+		num: -43,
 	},
 	spikybody: {
 		onDamagingHit(damage, target, source, move) {
@@ -6484,7 +6484,7 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 		name: "Spiky Body",
 		shortDesc: "If this Pokemon is hit by a physical attack, Spikes are set on the opposing side.",
 		rating: 2.5,
-		num: -46,
+		num: -44,
 	},
 	disillusioned: {
 		desc: "This Pokemon is immune to Fairy type moves, and can hit Fairy type opponents for neutral damages with Dark moves.",
@@ -6511,7 +6511,7 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 		},
 		name: "Disillusioned",
 		rating: 3.5,
-		num: -47,
+		num: -45,
 	},
 	leafdress: {
 		onSourceModifyAtkPriority: 6,
@@ -6558,7 +6558,7 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 		name: "Leaf Dress",
 		shortDesc: "If not Grass: gives Grass resists; if Grass: negates Grass weaknesses, status and hazard damage.",
 		rating: 3.5,
-		num: -48,
+		num: -46,
 	},
 	invincible: {
 		onModifyMovePriority: -5,
@@ -6583,7 +6583,7 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 		name: "Invincible",
 		shortDesc: "This Pokemon is immune to status condition. Immune to Intimidate.",
 		rating: 3,
-		num: -49,
+		num: -47,
 	},
 	sonar: {
 		shortDesc: "Reveals a random move of each adjacent opponent when this Pokemon hits them with a Sound move.",
@@ -6598,7 +6598,7 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 		},
 		name: "Sonar",
 		rating: 3,
-		num: -50,
+		num: -48,
 	},
 	unstableshell: {
 		shortDesc: "If a pokemon makes contact to this pokemon, this Pokemon loses 25% max HP and returns doubles of lost HP.",
@@ -6611,7 +6611,7 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 		},
 		name: "Unstable Shell",
 		rating: 2.5,
-		num: -51,
+		num: -49,
 	},
 	sleightofhand: {
 		desc: "This Pokémon's contact moves become special attacks and do not make contact with the target.",
@@ -6624,7 +6624,7 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 		},
 		name: "Sleight of Hand",
 		rating: 3,
-		num: -52,
+		num: -50,
 	},
 	newtonslaw: {
 		onModifySpe(spe, pokemon) {
@@ -6635,7 +6635,7 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 		name: "Newton's Law",
 		shortDesc: "On Gravity, this Pokemon's Speed is doubled.",
 		rating: 3,
-		num: -53,
+		num: -51,
 	},
 	hyperthermia: {
 		onTryBoost(boost, target, source, effect) {
@@ -6655,7 +6655,7 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 		desc: "This Pokémon can't have its stats dropped by any means, including its own attacks.",
 		shortDesc: "This Pokémon can't have its stats dropped by any means, including its own attacks.",
 		rating: 3,
-		num: -54,
+		num: -52,
 	},
 	mentalfortitude: {
 		onAllyTryAddVolatile(status, target, source, effect) {
@@ -6672,7 +6672,7 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 		flags: { breakable: 1 },
 		name: "Mental Fortitude",
 		rating: 2,
-		num: -55,
+		num: -53,
 	},
 	unconcerned: {
 		name: "Unconcerned",
@@ -6716,7 +6716,7 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 		},
 		shortDesc: "This Pokemon ignores its own stat stages when taking or doing damage.",
 		rating: 4,
-		num: -56,
+		num: -54,
 	},
 	hydrophilic: {
 		onSourceModifyAtkPriority: 5,
@@ -6759,7 +6759,7 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 		desc: "This Pokemon's offensive stat is doubled while using a Water-type attack. If a Pokemon uses a Fire-type attack against this Pokemon, that Pokemon's offensive stat is halved when calculating the damage to this Pokemon. This Pokemon cannot be burned. Gaining this Ability while burned cures it.",
 		shortDesc: "This Pokemon's Water power is 2x; it can't be burned; Fire power against it is halved.",
 		rating: 3.5,
-		num: -57,
+		num: -55,
 	},
 	searingtouch: {
 		onModifyMove(move) {
@@ -6776,7 +6776,7 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 		name: "Searing Touch",
 		shortDesc: "This Pokemon's contact moves have a 30% chance of burning.",
 		rating: 2,
-		num: -58,
+		num: -56,
 	},
 	virality: {
 		name: "Virality",
@@ -6797,7 +6797,7 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 			if (move.multihitType === 'parentalbond' && move.hit > 1) return this.chainModify(0.25);
 		},
 		rating: 2,
-		num: -59,
+		num: -57,
 	},
 	oldschool: {
 		shortDesc: "This Pokemon's high crit rate moves always crit, and deal damages x2 instead of x1.5. This Pokemon's special moves use SpD in calculation.",
@@ -6817,7 +6817,7 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 			}
 		},
 		rating: 3.5,
-		num: -60,
+		num: -58,
 	},
 	strongwill: {
 		onSourceModifyDamage(damage, source, target, move) {
@@ -6829,7 +6829,7 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 		shortDesc: "This Pokemon receives 1/2 damage from special attacks.",
 		desc: "This Pokemon receives 1/2 damage from special attacks.",
 		rating: 4,
-		num: -61,
+		num: -59,
 	},
 	dodge: {
 		shortDesc: "When taking damages, this Pokemon adds 50% of its Speed to its corresponding defense.",
@@ -6847,7 +6847,7 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 			return newSpD;
 		},
 		rating: 3.5,
-		num: -63,
+		num: -60,
 	},
 	reboundbelly: {
 		onDamagingHitOrder: 1,
@@ -6859,7 +6859,7 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 		name: "Rebound Belly",
 		shortDesc: "The opponent receives 1/8 recoil damage from special non-Sound moves.",
 		rating: 2.5,
-		num: -64,
+		num: -61,
 	},
 	faithfulcompanion: {
 		onUpdate(pokemon) {
@@ -6909,7 +6909,7 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 		name: "Faithful Companion",
 		shortDesc: "If the ally is Piratcy, gives to the ally this Pokemon's item, and steals an item from the opponent.",
 		rating: 0,
-		num: -65,
+		num: -62,
 	},
 	cheerleader: {
 		onStart(pokemon) {

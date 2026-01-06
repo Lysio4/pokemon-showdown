@@ -6031,7 +6031,7 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 		desc: "When replacing a fainted party member, its next move has x1.5 BP.",
 		shortDesc: "Its first move has x1.5 BP when replacing a fainted ally.",
 		onAfterMega(pokemon) {
-			if (!pokemon.side.faintedLastTurn) return;
+			if (!pokemon.side.faintedLastTurn || !pokemon.isMega) return;
 			pokemon.addVolatile('coldvengeance');
 		},
 		onStart(pokemon) {
@@ -7144,7 +7144,7 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 		desc: "When replacing a fainted party member, this Pokémon's Special Defense is boosted, and it charges power to double the power of its Electric-type move on its first turn.",
 		shortDesc: "Gains the effect of Charge when replacing a fainted ally.",
 		onAfterMega(pokemon) {
-			if (!pokemon.side.faintedLastTurn) return;
+			if (!pokemon.side.faintedLastTurn || !pokemon.isMega) return;
 			this.boost({spd: 1}, pokemon);
 			this.add('-activate', pokemon, 'move: Charge');
 			pokemon.addVolatile('charge');

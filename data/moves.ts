@@ -24818,6 +24818,29 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 		desc: "If the current terrain is Chakra Terrain and the target is grounded, this move hits Ghost type targets.",
 		shortDesc: "Hits Ghost type grounded targets in Chakra Terrain.",
 	},
+	cursedspeech: {
+		num: -96,
+		accuracy: 100,
+		basePower: 100,
+		category: "Special",
+		name: "Cursed Speech",
+		pp: 15,
+		priority: 0,
+		flags: { protect: 1, mirror: 1, metronome: 1, sound: 1, bypasssub: 1 },
+		secondary: {
+			chance: 100,
+			volatileStatus: 'torment',
+		},
+		onPrepareHit(target, source) {
+			this.attrLastMove('[still]');
+			this.add('-anim', source, "Spite", target);
+		},
+		target: "normal",
+		type: "Ghost",
+		contestType: "Clever",
+		shortDesc: "Applies Torment to the target.",
+		desc: "Applies Torment to the target.",
+	},
 	// Touhou
 	dreamseal: {
 		name: "Dream Seal",

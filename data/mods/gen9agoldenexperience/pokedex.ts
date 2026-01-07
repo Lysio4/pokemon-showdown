@@ -763,7 +763,6 @@ export const Pokedex: {[k: string]: ModdedSpeciesData;} = {
 	},
 	misdreavus: {
 		inherit: true,
-		types: ["Ghost", "Fairy"],
 		abilities: {0: "Levitate", H: "Magician"},
 	},
 	wobbuffet: {
@@ -1599,14 +1598,13 @@ export const Pokedex: {[k: string]: ModdedSpeciesData;} = {
 	},
 	mismagius: {
 		inherit: true,
-		types: ["Ghost", "Fairy"],
 		baseStats: {hp: 65, atk: 65, def: 65, spa: 110, spd: 110, spe: 110},
 		abilities: {0: "Levitate", H: "Magician"},
 	},
 	honchkrow: {
 		inherit: true,
 		baseStats: {hp: 100, atk: 125, def: 52, spa: 105, spd: 52, spe: 91},
-		abilities: {0: "Insomnia", 1: "Intimidate", H: "Moxie"},
+		abilities: {0: "Hustle", 1: "Super Luck", H: "Moxie"},
 	},
 	purugly: {
 		inherit: true,
@@ -1804,16 +1802,7 @@ export const Pokedex: {[k: string]: ModdedSpeciesData;} = {
 	},
 	cresselia: {
 		inherit: true,
-		types: ["Psychic", "Fairy"],
 		baseStats: {hp: 120, atk: 70, def: 120, spa: 75, spd: 130, spe: 85},
-	},
-	phione: {
-		inherit: true,
-		evos: ["Manaphy"],
-	},
-	manaphy: {
-		inherit: true,
-		prevo: "Phione",
 	},
 	darkraimega: {
 		inherit: true,

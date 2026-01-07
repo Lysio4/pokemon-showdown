@@ -1272,7 +1272,7 @@ export const Moves: { [k: string]: ModdedMoveData; } = {
 		name: "Sonic Boom",
 		priority: 1,
 		isNonstandard: null,
-		flags: { sound: 1, protect: 1, mirror: 1 },
+		flags: { sound: 1, bypasssub: 1, protect: 1, mirror: 1 },
 		secondary: null,
 		target: "normal",
 		type: "Normal",
@@ -1773,7 +1773,7 @@ export const Moves: { [k: string]: ModdedMoveData; } = {
 		shortDesc: "Fails if the user has an item. Raises all stats by 1, and user gets the type of its 3rd move.",
 		pp: 5,
 		priority: 0,
-		flags: { snatch: 1, sound: 1, dance: 1 },
+		flags: { snatch: 1, metronome: 1 },
 		onTryHit(pokemon, target, move) {
 			if (pokemon.item) {
 				return false;
@@ -3473,7 +3473,7 @@ export const Moves: { [k: string]: ModdedMoveData; } = {
 		name: "Calming Bell",
 		pp: 10,
 		priority: 0,
-		flags: {protect: 1, mirror: 1, metronome: 1, sound: 1},
+		flags: { protect: 1, mirror: 1, metronome: 1, sound: 1, bypasssub: 1 },
 		secondary: {
 			chance: 100,
 			boosts: {
@@ -3574,7 +3574,7 @@ export const Moves: { [k: string]: ModdedMoveData; } = {
 		},
 		onPrepareHit(target, source) {
 			this.attrLastMove('[still]');
-			this.add('-anim', source, "Work Up", target);
+			this.add('-anim', source, "Work Up", source);
 		},
 		secondary: null,
 		target: "self",
@@ -3596,6 +3596,10 @@ export const Moves: { [k: string]: ModdedMoveData; } = {
 				move.ignoreImmunity['Fighting'] = true;
 			}
 		},
+		onPrepareHit(target, source) {
+			this.attrLastMove('[still]');
+			this.add('-anim', source, "Aura Sphere", target);
+		},
 		category: "Physical",
 		name: "Chi Strike",
 		pp: 20,
@@ -3616,6 +3620,29 @@ export const Moves: { [k: string]: ModdedMoveData; } = {
 		},
 		shortDesc: "Physical if user's Atk > Sp. Atk. Deals damage based on Def or SpD, whichever one is the lowest.",
 		desc: "Physical if user's Atk > Sp. Atk. Deals damage based on Def or SpD, whichever one is the lowest.",
+	},
+	cursedspeech: {
+		num: -96,
+		accuracy: 100,
+		basePower: 100,
+		category: "Special",
+		name: "Cursed Speech",
+		pp: 15,
+		priority: 0,
+		flags: { protect: 1, mirror: 1, metronome: 1, sound: 1, bypasssub: 1 },
+		secondary: {
+			chance: 100,
+			volatileStatus: 'torment',
+		},
+		onPrepareHit(target, source) {
+			this.attrLastMove('[still]');
+			this.add('-anim', source, "Spite", target);
+		},
+		target: "normal",
+		type: "Ghost",
+		contestType: "Clever",
+		shortDesc: "Applies Torment to the target.",
+		desc: "Applies Torment to the target.",
 	},
 
 

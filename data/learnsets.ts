@@ -103726,7 +103726,6 @@ export const Learnsets: import('../sim/dex-species').LearnsetDataTable = {
 			doubleedge: ["9M"],
 			drainpunch: ["9M"],
 			doublekick: ["9L1"],
-			encore: ["9M"],
 			endure: ["9M"],
 			facade: ["9M"],
 			fling: ["9M"],

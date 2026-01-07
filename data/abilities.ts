@@ -6959,7 +6959,7 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 		},
 		name: "Cheerleader",
 		rating: 0,
-		num: -66,
+		num: -63,
 	},
 	withering: {
 		onModifyMove(move) {
@@ -6978,7 +6978,7 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 		name: "Withering",
 		shortDesc: "This Pokemon's contact moves lower the target's Speed by one stage.",
 		rating: 2,
-		num: -67,
+		num: -64,
 	},
 	lusterswap: { // taken from M4A
 		desc: "On entry, this Pokémon's type changes to match its first move that's super effective against an adjacent opponent.",
@@ -7007,7 +7007,7 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 		},
 		name: "Luster Swap",
 		rating: 3,
-		num: -68,
+		num: -65,
 	},
 	cacophony: {
 		onBasePowerPriority: 7,
@@ -7028,7 +7028,7 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 		shortDesc: "This Pokemon receives 1/2 damage from sound moves. Its own have 1.3x power.",
 		name: "Cacophony",
 		rating: 3.5,
-		num: -69,
+		num: -66,
 	},
 	happygolucky: {
 		onModifyAtkPriority: 5,
@@ -7056,7 +7056,7 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 		desc: "This Pokemon's Attack, Defense, Special Attack, and Special Defense get a boost depending on the happiness of the Pokemon (maximum 10%).",
 		shortDesc: "Boosts Attack, Defense, Special Attack, and Special Defense by 1% per 25 happiness.",
 		rating: 4,
-		num: -70,
+		num: -67,
 	},
 	mightywall: {
 		onModifyDefPriority: 5,
@@ -7084,7 +7084,7 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 		shortDesc: "This Pokemon's Defense and Special Defense are multiplied by 1.5, and by 0.5 when it switches out.",
 		name: "Mighty Wall",
 		rating: 4,
-		num: -71,
+		num: -68,
 	},
 	karma: {
 		onBasePowerPriority: 19,
@@ -7098,7 +7098,7 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 		shortDesc: "This Pokemon's delayed moves have 1.5x power. Wish heals for 50% more HP.",
 		name: "Karma",
 		rating: 3,
-		num: -72,
+		num: -69,
 	},
 	souldevourer: {
 		onResidualOrder: 8,
@@ -7118,7 +7118,7 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 		shortDesc: "If any target is trapped, this target loses 1/8 of its max HP, and this Pokemon heals for the same amount.",
 		name: "Soul Devourer",
 		rating: 3,
-		num: -73,
+		num: -70,
 	},
 	soothingfragrance: {
 		onAnyModifyAtk(atk, source, target, move) {
@@ -7138,7 +7138,7 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 		flags: {},
 		name: "Soothing Fragrance",
 		rating: 2,
-		num: -74,
+		num: -71,
 	},
 	tempestuous: {
 		desc: "When replacing a fainted party member, this Pokémon's Special Defense is boosted, and it charges power to double the power of its Electric-type move on its first turn.",
@@ -7157,7 +7157,7 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 		},
 		name: "Tempestuous",
 		rating: 3,
-		num: -75,
+		num: -72,
 	},
 	ambush: {
 		shortDesc: "This Pokémon's attacks are critical hits if the user moves before the target.",
@@ -7166,7 +7166,7 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 		},
 		name: "Ambush",
 		rating: 4,
-		num: -76,
+		num: -73,
 	},
 	steelbreaker: {
 		shortDesc: "This Pokémon's attacks are critical hits if the target is a Steel-type Pokémon.",
@@ -7175,7 +7175,7 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 		},
 		name: "Steelbreaker",
 		rating: 3,
-		num: -77,
+		num: -74,
 	},
 	ange: {
 		onTryHit(pokemon, target, move) {
@@ -7198,7 +7198,7 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 		flags: {breakable: 1},
 		name: "Ange",
 		rating: 3,
-		num: -78,
+		num: -75,
 		desc: "This Pokemon does not take recoil damage, except Struggle. Does not affect Life Orb damage or crash damage. If this Pokemon is at more than half HP, it survives one hit with at least 1 HP. OHKO moves fail when used against this Pokemon.",
 		shortDesc: "This Pokemon does not take recoil damage besides Struggle/Life Orb/crash damage. If this Pokemon is at >= 50% HP, it survives one hit with at least 1 HP. Immune to OHKO.",
 	},
@@ -7235,7 +7235,7 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 		},
 		flags: {},
 		name: "Bitter Hatred",
-		num: -80,
+		num: -76,
 	},
 	pollution: {
 		onSourceModifyAtkPriority: 5,
@@ -7272,7 +7272,7 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 		desc: "Poison Point. This Pokemon's offensive stat is doubled while using a Poison-type attack. If a Pokemon uses a Water-type attack against this Pokemon, that Pokemon's offensive stat is halved when calculating the damage to this Pokemon.",
 		shortDesc: "Poison Point. This Pokemon's Poison power is 2x; Water power against it is halved.",
 		rating: 4.5,
-		num: -81,
+		num: -77,
 	},
 	freegullet: {
 		onBasePowerPriority: 19,
@@ -7290,7 +7290,7 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 		flags: {cantsuppress: 1, notransform: 1},
 		name: "Free Gullet",
 		rating: 2.5,
-		num: -82,
+		num: -78,
 		shortDesc: "If the user uses Surf/Dive, it gains the Stockpile effect. Surf/Dive has 1.5x power.",
 	},
 	gulp: {
@@ -7311,7 +7311,7 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 		flags: {cantsuppress: 1, notransform: 1},
 		name: "Gulp",
 		rating: 2.5,
-		num: -83,
+		num: -79,
 		shortDesc: "If the user uses Surf/Dive, the target takes 1/4 max HP on top of the damage. Surf/Dive has 1,5x power. Surf/Dive breaks protection.",
 	},
 	gorge: {
@@ -7339,7 +7339,7 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 		flags: {cantsuppress: 1, notransform: 1},
 		name: "Gorge",
 		rating: 2.5,
-		num: -84,
+		num: -80,
 		shortDesc: "If the user uses Surf/Dive, user gains the Charge effect. Surf/Dive has 1,5x power. Surf/Dive has an added 20% chance of paralysis",
 	},
 	blindeye: {
@@ -7352,7 +7352,7 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 		desc: "This Pokemon's affinities are reversed.",
 		shortDesc: "This Pokemon's affinities are reversed.",
 		rating: 4.5,
-		num: -85,
+		num: -81,
 	},
 	counterstrike: {
 		shortDesc: "This Pokemon reflects 50% of the damage it receives.",
@@ -7384,7 +7384,7 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 		},
 		name: "Counter Strike",
 		rating: 3.5,
-		num: -86,
+		num: -82,
 	},
 	climaticchange: {
 		desc: "Upon using a Water, Fire, or Ice move, this Pokemon changes to that type and sets the corresponding weather.",
@@ -7414,7 +7414,7 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 		},
 		name: "Climatic Change",
 		rating: 4,
-		num: -87,
+		num: -83,
 	},
 	hyperglycemia: {
 		desc: "At the end of each turn, every Pokemon gets 1 Stockpile. Reduces the damage taken by X*10%, with X the amount of Stockpiles this Pokemon has, and boosts this Pokemon's damage by Y*10%, Y being the amount of Stockpiles the target has.",
@@ -7451,7 +7451,7 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 		flags: {breakable: 1},
 		name: "Hyperglycemia",
 		rating: 4.5,
-		num: -88,
+		num: -84,
 	},
 	graviton: {
 		shortDesc: "On switch-in, this Pokémon summons Gravity.",
@@ -7460,7 +7460,7 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 		},
 		name: "Graviton",
 		rating: 4,
-		num: -89,
+		num: -85,
 	},
 	solarenergy: {
 		onModifySpe(spe, pokemon) {
@@ -7482,7 +7482,7 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 		desc: "If Sunny Day is active, this Pokemon's Speed is multiplied by 1.5, and this Pokemon's Electric moves have x1.5. This effect is prevented if this Pokemon is holding a Utility Umbrella.",
 		shortDesc: "If Sunny Day is active, Speed x1.5, and Electric moves x1.5.",
 		rating: 3,
-		num: -90,
+		num: -86,
 	},
 	punchprodigee: {
 		shortDesc: "Gives a +1 priority to punch moves.",
@@ -7490,7 +7490,7 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 			if (move.flags['punch']) return priority + 1;
 		},
 		name: "Punch Prodigee",
-		num: -91,
+		num: -87,
 	},
 	heavyweapon: {
 		shortDesc: "Gives an ally Octillery +1 priority on all its moves.",
@@ -7509,7 +7509,7 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 			},
 		},
 		name: "Heavy Weapon",
-		num: -92,
+		num: -88,
 	},
 	multiheaded: {
 		onPrepareHit(source, target, move) {
@@ -7538,7 +7538,7 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 		gen: 9,
 		desc: "This Pokemon's damaging moves hit 3x. Successive hits do 15% damage without added effects.",
 		shortDesc: "This Pokemon's damaging moves hit 3x. Successive hits do 15% damage without added effects.",
-		num: -93
+		num: -89
 	},
 	lightpower: {
 		onModifySpAPriority: 5,
@@ -7548,7 +7548,7 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 		name: "Light Power",
 		shortDesc: "This Pokemon's Special Attack is doubled.",
 		rating: 5,
-		num: -95,
+		num: -90,
 	},
 	thermalswitch: {
 		onStart(pokemon) {
@@ -7608,10 +7608,10 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 		desc: "Immunity to Burn. This Pokemon has two forms, Passive and Active. It starts the fight with Passive form. If Sun is set or it's hit by a Fire-type move, it switches to Active form until it switches out. If Snow is set, it's frozen, or it's hit by an Ice-type move, it switches to Passive form.",
 		shortDesc: "Burn immunity. Sun or Fire-type move: Active form; Snow, frozen or Ice-type move: Passive form.",
 		rating: 4,
-		num: -96,
+		num: -91,
 	},
 	ironbody: {
-		num: -97,
+		num: -92,
 		name: "Iron Body",
 		shortDesc: "On switch in, adds Steel type to the user. Has no effect if the user is Steel-type.",
 		onStart(pokemon) {
@@ -7639,14 +7639,14 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 		name: "Psychic Prowess",
 		shortDesc: "This Pokemon's attacking stat is multiplied by 1.5 while using a Psychic type attack. Amnesia also boosts SpA by 2.",
 		rating: 3.5,
-		num: -98,
+		num: -93,
 	},
 	rewind: {
 		name: "Rewind",
 		shortDesc: "When brought to 50% HP or less, restores lost items on user's side.",
 		flags: {failroleplay: 1, noreceiver: 1, noentrain: 1, notrace: 1, failskillswap: 1, cantsuppress: 1},
 		rating: 4,
-		num: -99,
+		num: -94,
 		onStart(pokemon) {
 			pokemon.addVolatile('rewind');
 		},
@@ -7722,7 +7722,7 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 		name: "Huge Clamp",
 		shortDesc: "This Pokemon's Atk is boosted by 1.5, but its Speed is halved.",
 		rating: 1.5,
-		num: -100,
+		num: -95,
 	},
 	contrarian: {
 		onStart(source) {
@@ -7738,7 +7738,7 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 		name: "Contrarian",
 		shortDesc: "As long as this Pokémon is on the field, every Pokémon on the field is under Contrary effect.",
 		rating: 4.5,
-		num: -101,
+		num: -96,
 	},
    	healingecho: {
 		desc: "When this Pokémon uses a Sound move, it is healed by 25% of its HP.",
@@ -7751,7 +7751,7 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 		flags: {},
 	    name: "Healing Echo",
 		rating: 3,
-		num: -102,
+		num: -97,
 	},
 	mountainwalker: {
 		shortDesc: "This Pokemon is immune to all Rock-type attacks and Stealth Rock.",
@@ -7769,7 +7769,7 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 		flags: { breakable: 1 },
 		name: "Mountain Walker",
 		rating: 3,
-		num: -103,
+		num: -98,
 	},
 	meltingheart: {
 		onDamagingHit(damage, target, source, move) {
@@ -7785,7 +7785,7 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 		flags: {},
 		name: "Melting Heart",
 		rating: 1,
-		num: -104,
+		num: -99,
 	},
 	// Touhou
 	hakkero: {

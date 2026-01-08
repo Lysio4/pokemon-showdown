@@ -2999,7 +2999,7 @@ export const Pokedex: {[k: string]: ModdedSpeciesData;} = {
 	},
 	coalossal: {
 		inherit: true,
-		baseStats: {hp: 110, atk: 50, def: 130, spa: 100, spd: 90, spe: 30},
+		baseStats: {hp: 110, atk: 60, def: 130, spa: 90, spd: 90, spe: 30},
 		abilities: {0: "Steam Engine", 1: "Flame Body", H: "Evaporate"},
 	},
 	flapple: {

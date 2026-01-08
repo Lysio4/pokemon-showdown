@@ -2140,7 +2140,7 @@ export const FormatsData: { [k: string]: SpeciesFormatsData; } = {
 		tier: "UU",
 		doublesTier: "DUU",
 	},
-	empoleon: {
+	empoleonmega: {
 		tier: "OU",
 		doublesTier: "DOU",
 	},

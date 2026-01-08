@@ -4,604 +4,131 @@ const tailMoves = ['firelash', 'powerwhip', 'tailslap', 'wrap', 'constrict', 'ir
 
 export const Abilities: { [abilityid: string]: ModdedAbilityData; } = {
 	poisonousradula: {
-		onSourceHit(target, source, move) {
-			if (!move || !target) return;
-			if (target !== source && move.category !== 'Status' && move.type === 'Poison' && !(target.getMoveHitData(move).typeMod < 0)) {
-				if (!move.secondaries) move.secondaries = [];
-				if (move.category === 'Physical') {
-					move.secondaries.push({
-						chance: 100,
-						boosts: {
-							def: -1,	
-						},
-						ability: this.dex.abilities.get('poisonousradula'),
-					});
-				} else if (move.category === 'Special') {
-					move.secondaries.push({
-						chance: 100,
-						boosts: {
-							spd: -1,
-						},
-						ability: this.dex.abilities.get('poisonousradula'),
-
-					});
-				}
-			}
-		},
-		name: "Poisonous Radula",
-		shortDesc: "Non resisted Poison moves lowers the target's corresponding defense by one stage.",
-		rating: 2,
-		num: -1,
+		inherit: true,
+		isNonstandard: null,
 	},
 	daredevil: {
-		onDamage(damage, target, source, effect) {
-			if (effect.id === 'recoil') {
-				if (!this.activeMove) throw new Error("Battle.activeMove is null");
-				if (this.activeMove.id !== 'struggle') return null;
-			}
-		},
-		name: "Daredevil",
-		shortDesc: "This Pokemon does not take recoil damage besides Struggle/Life Orb/crash damage.",
-		rating: 3,
-		num: -2,
+		inherit: true,
+		isNonstandard: null,
 	},
 	waterproof: {
-		onTryHit(target, source, move) {
-			if (target !== source && (move.type === 'Water' || move.type === 'Electric')) {
-				if (!this.boost({ spe: 1 })) {
-					this.add('-immune', target, '[from] ability: Waterproof');
-				}
-				return null;
-			}
-		},
-		name: "Waterproof",
-		desc: "This Pokemon is immune to Water-type moves and Electric-type moves and raises its Speed by 1 stage when hit by an Water-type move.",
-		shortDesc: "This Pokemon's Speed is raised 1 stage if hit by an Water or Electric move; Water and Electric immunity.",
-		rating: 3,
-		num: -3,
+		inherit: true,
+		isNonstandard: null,
 	},
 	racketeering: {
-		shortDesc: "Boosts the power of Knock Off, Thief and Pluck by 1.5x",
-		onBasePowerPriority: 8,
-		onBasePower(basePower, attacker, defender, move) {
-			if (move.name === 'Knock Off' || move.name === 'Thief' || move.name === 'Pluck') {
-				return this.chainModify(1.5);
-			}
-		},
-		name: "Racketeering",
-		rating: 3,
-		num: -4,
+		inherit: true,
+		isNonstandard: null,
 	},
 	snobbery: {
-		onSourceModifyAtkPriority: 6,
-		onSourceModifyAtk(atk, attacker, defender, move) {
-			if (move.type === 'Poison' || move.type === 'Bug' || move.type === 'Dark') {
-				this.debug('Snobbery weaken');
-				return this.chainModify(0.5);
-			}
-		},
-		onSourceModifySpAPriority: 5,
-		onSourceModifySpA(atk, attacker, defender, move) {
-			if (move.type === 'Poison' || move.type === 'Bug' || move.type === 'Dark') {
-				this.debug('Snobbery weaken');
-				return this.chainModify(0.5);
-			}
-		},
-		name: "Snobbery",
-		shortDesc: "This Pokemon gets half damages from Bug, Poison and Dark type moves.",
-		rating: 3.5,
-		num: -5,
+		inherit: true,
+		isNonstandard: null,
 	},
 	starsforce: {
-		desc: "When this Pokémon has 1/3 or less of its maximum HP, rounded down, all of its stats are x1.5.",
-		shortDesc: "At 1/3 or less of max HP, all stats are x1.5.",
-		onModifyAtkPriority: 5,
-		onModifyAtk(atk, attacker, defender, move) {
-			if (attacker.hp <= attacker.maxhp / 3) {
-				this.debug('Stars Force boost');
-				return this.chainModify(1.5);
-			}
-		},
-		onModifySpAPriority: 5,
-		onModifySpA(atk, attacker, defender, move) {
-			if (attacker.hp <= attacker.maxhp / 3) {
-				this.debug('Stars Force boost');
-				return this.chainModify(1.5);
-			}
-		},
-		onModifyDefPriority: 6,
-		onModifyDef(def, pokemon) {
-			if (pokemon.hp <= pokemon.maxhp / 3) {
-				this.debug('Stars Force boost');
-				return this.chainModify(1.5);
-			}
-		},
-		onModifySpDPriority: 6,
-		onModifySpD(spd, pokemon) {
-			if (pokemon.hp <= pokemon.maxhp / 3) {
-				this.debug('Stars Force boost');
-				return this.chainModify(1.5);
-			}
-		},
-		onModifySpePriority: 6,
-		onModifySpe(def, pokemon) {
-			if (pokemon.hp <= pokemon.maxhp / 3) {
-				this.debug('Stars Force boost');
-				return this.chainModify(1.5);
-			}
-		},
-		name: "Star's Force",
-		rating: 2,
-		num: -6,
+		inherit: true,
+		isNonstandard: null,
 	},
 	webweaver: {
-		onResidualOrder: 26,
-		onResidualSubOrder: 1,
-		onResidual(pokemon) {
-			let activated = false;
-			if (pokemon.activeTurns) {
-				for (const target of pokemon.side.foe.active) {
-					if (!target || !target.isAdjacent(pokemon) || !(target.isGrounded())) continue;
-					if (!activated) {
-						this.add('-ability', pokemon, 'Web Weaver', 'boost');
-						activated = true;
-					}
-					if (target.volatiles['substitute']) {
-						this.add('-immune', target);
-					} else {
-						//if (pokemon.isGrounded()){
-						this.boost({ spe: -1 }, target, pokemon, null, true);
-						//}
-					}
-				}
-			}
-		},
-		name: "Web Weaver",
-      shortDesc: "A the end of each turn, lowers by one stage the speed stat of every other grounded Pokemon.",
-		rating: 4.5,
-		num: -7,
+		inherit: true,
+		isNonstandard: null,
 	},
 	perforating: {
-		onModifyMovePriority: -5,
-		onModifyMove(move) {
-			if (!move.ignoreImmunity) move.ignoreImmunity = {};
-			if (move.ignoreImmunity !== true) {
-				move.ignoreImmunity['Poison'] = true;
-			}
-		},
-		onModifyDamage(damage, source, target, move) {
-			if (target.getMoveHitData(move).typeMod < 0 && (move.type === 'Bug' || move.type === 'Poison')) {
-				this.debug('Perforating boost');
-				return this.chainModify(2);
-			}
-		},
-		name: "Perforating",
-		shortDesc: "Bug & Poison moves deal 2x damage if resisted, can poison Steel types, Poison moves hit Steel types",
-		rating: 3,
-		num: -8,
+		inherit: true,
+		isNonstandard: null,
 	},
 	doublespirit: {
-		shortDesc: "Switches to Nocturnal form before using a Physical move, and to Diurnal form before using a Special move.",
-		onBeforeMovePriority: 0.5,
-		onBeforeMove(attacker, defender, move) {
-			if (attacker.species.baseSpecies !== 'Girafatak' || attacker.transformed) return;
-			if (move.category === 'Status') return;
-			const targetForme = (move.category === 'Special' ? 'Girafatak' : 'Girafatak-Nocturnal');
-			if (attacker.species.name !== targetForme) attacker.formeChange(targetForme);
-			const newatk = attacker.storedStats.spa;
-			const newspa = attacker.storedStats.atk;
-			attacker.storedStats.atk = newatk;
-			attacker.storedStats.spa = newspa;
-		},
-		flags: {failroleplay: 1, noreceiver: 1, noentrain: 1, notrace: 1, failskillswap: 1, cantsuppress: 1},
-		name: "Double Spirit",
-		rating: 4,
-		num: -9,
+		inherit: true,
+		isNonstandard: null,
 	},
 	divination: {
-		shortDesc: "Reveals a random move of each adjacent opponent on entry.",
-		onStart(pokemon) {
-			for (const target of pokemon.side.foe.active) {
-				if (target.fainted) return;
-				const temp = this.sample(target.moveSlots);
-				this.add('-message', pokemon.name + "'s Divination revealed the move " + temp.move + "!");
-			}
-		},
-		name: "Divination",
-		rating: 3,
-		num: -10,
+		inherit: true,
+		isNonstandard: null,
 	},
 	arcanemastery: {
-		onModifyAtkPriority: 5,
-		onModifyAtk(atk, attacker, defender, move) {
-			if (move.type === 'Psychic' || move.type === 'Dark') {
-				this.debug('Arcane Mastery boost');
-				return this.chainModify(1.5);
-			}
-		},
-		onModifySpAPriority: 5,
-		onModifySpA(atk, attacker, defender, move) {
-			if (move.type === 'Psychic' || move.type === 'Dark') {
-				this.debug('Arcane Mastery boost');
-				return this.chainModify(1.5);
-			}
-		},
-		name: "Arcane Mastery",
-		shortDesc: "This Pokemon's attacking stat is multiplied by 1.5 while using a Psychic/Dark type attack.",
-		rating: 3.5,
-		num: -11,
+		inherit: true,
+		isNonstandard: null,
 	},
 	strangebody: {
-		onEffectiveness(typeMod, target, type, move) {
-			if (!target || move.category !== 'Physical') return;
-			if (!target.runImmunity(move.type)) return;
-			if (this.dex.getEffectiveness(move, target) === -1) return;
-			return 0;
-		},
-		name: "Strange Body",
-		rating: 4,
-		shortDesc: "If this Pokemon is hit by a physical super effective move, it takes neutral damage.",
-		num: -12,
+		inherit: true,
+		isNonstandard: null,
 	},
 	toymaker: {
-		name: "Toymaker",
-		desc: "At the end of each turn, if it doesn't have an held item, the user acquires a random item. (Leftovers, Sitrus Berry, Lum Berry, Figy Berry, Starf Berry, Choice Band, Choice Specs, Choice Scarf, Flame Orb, Para Orb, Toxic Orb, Light Ball, Iron Ball, Rocky Helmet, Heavy-Duty Boots)",
-		shortDesc: "Gets a random item from a list at the end of the turn if the user doesn't already have one.",
-		onResidualOrder: 26,
-		onResidualSubOrder: 1,
-		onResidual(pokemon) {
-			const itemList = ['leftovers', 'sitrusberry', 'lumberry', 'figyberry', 'starfberry', 'choiceband', 'choicespecs', 'choicescarf', 'flameorb', 'paraorb', 'toxicorb', 'lightball', 'ironball', 'rockyhelmet', 'heavydutyboots'];
-			const itemIndex = this.random(itemList.length);
-			const itemMade = itemList[itemIndex];
-			if (pokemon.hp && !pokemon.item) {
-				pokemon.setItem(itemMade);
-				this.add('-item', pokemon, pokemon.getItem(), '[from] ability: Toymaker');
-			}
-		},
-		rating: 3,
-		num: -13,
+		inherit: true,
+		isNonstandard: null,
 	},
 	woodclearing: {
-		onBasePowerPriority: 21,
-		onBasePower(basePower, attacker, defender, move) {
-			if (this.field.isTerrain('grassyterrain')) {
-				this.debug('Wood Clearing boost');
-				return this.chainModify([0x14CD, 0x1000]);
-			}
-		},
-		onEffectiveness(typeMod, target, type, move) {
-			if (type === 'Grass') return 1;
-		},
-		name: "Wood Clearing",
-		shortDesc: "This Pokemon's attacks do 1.3x in Grassy Terrain. Always hits Grass targets for super effective.",
-		rating: 2,
-		num: -14,
+		inherit: true,
+		isNonstandard: null,
 	},
 	microclimate: {
-		onStart(pokemon) {
-			if (this.field.isWeather('sunnyday')) {
-			   this.field.setWeather('raindance');
-			} else if (this.field.isWeather('raindance')) {
-				this.field.setWeather('sunnyday');
-			} else if (this.field.isWeather('desolateland')) {
-				this.field.setWeather('primordialsea');
-			} else if (this.field.isWeather('primodialsea')) {
-				this.field.setWeather('desolateland');
-			} else if (this.field.isWeather(['hail', 'snow', 'everlastingwinter']) || this.field.isWeather('sand')) {
-				this.field.clearWeather();
-			}
-		},
-		onEnd(pokemon) {
-			if (this.field.isWeather('raindance')) {
-			   this.field.setWeather('sunnyday');
-			} else if (this.field.isWeather('sunnyday')) {
-				this.field.setWeather('raindance');
-			} else if (this.field.isWeather('primordialsea')) {
-				this.field.setWeather('desolateland');
-			} else if (this.field.isWeather('desolateland')) {
-				this.field.setWeather('primordialsea');
-			}
-		},
-		shortDesc: "Reverses effects of Sun and Rain; negates Sand and Hail.",
-		name: "Microclimate",
-		rating: 2,
-		num: -15,
+		inherit: true,
+		isNonstandard: null,
 	},
 	voidheart: {
-		desc: "When it KOs an opponent with a direct move, it recovers 25% of its max HP.",
-		shortDesc: "Heals 25% HP on KO.",
-		onSourceAfterFaint(length, target, source, effect) {
-			if (effect && effect.effectType === 'Move') {
-				this.heal(source.baseMaxhp / 4);
-			}
-		},
-		name: "Void-Heart",
-		rating: 3,
-		num: -16,
+		inherit: true,
+		isNonstandard: null,
 	},
 	convectioncurrent: {
-		desc: "If Gravity is active, this Pokemon's Speed is doubled.",
-		shortDesc: "Speed x2 on Gravity.",
-		onModifySpe(spe, pokemon) {
-			if (this.field.getPseudoWeather('gravity')) {
-				return this.chainModify(2);
-			}
-		},
-		name: "Convection Current",
-		rating: 3,
-		num: -17,
+		inherit: true,
+		isNonstandard: null,
 	},
 	endlessdream: {
-		desc: "While this Pokemon is active, every other Pokemon is treated as if it has the Comatose ability. Pokemon that are either affected by Sweet Veil, or have Insomnia or Vital Spirit as their abilities are immune this effect.",
-		shortDesc: "All Pokemon are under Comatose effect.",
-		onStart(source) {
-			this.add('-ability', source, 'Endless Dream');
-			this.field.addPseudoWeather('endlessdream');
-			this.hint("All Pokemon are under Comatose effect!");
-		},
-		onResidualOrder: 21,
-		onResidualSubOrder: 2,
-		onEnd(pokemon) {
-			this.field.removePseudoWeather('endlessdream');
-		},
-		name: "Endless Dream",
-		rating: 3,
-		num: -18,
+		inherit: true,
+		isNonstandard: null,
 	},
 	evaporate: {
-		desc: "If the Pokemon or the opponent uses a Water type move, it triggers the Haze effect. Immune to Water.",
-		shortDesc: "Haze when any Pokemon uses a Water move; Water immunity.",
-		onSourceHit(target, source, move) {
-			if (!move || !target) return;
-			if (move.type === 'Water') {
-				for (const pokemon of this.getAllActive()) {
-					pokemon.clearBoosts();
-				   return null;
-				}
-			}
-		},
-		onTryHit(target, source, move) {
-			if (target !== source && move.type === 'Water') {
-				this.add('-immune', target, '[from] ability: Evaporate');
-				for (const pokemon of this.getAllActive()) {
-					pokemon.clearBoosts();
-				   return null;
-				}
-			}
-		},
-		name: "Evaporate",
-		rating: 4,
-		num: -19,
+		inherit: true,
+		isNonstandard: null,
 	},
 	desertsong: {
-		onModifyTypePriority: -1,
-		onModifyType(move, pokemon) {
-			if (move.flags['sound'] && !pokemon.volatiles['dynamax']) { // hardcode
-				move.type = 'Ground';
-			}
-		},
-		name: "Desert Song",
-		desc: "This Pokemon's sound-based moves become Ground-type moves. This effect comes after other effects that change a move's type, but before Ion Deluge and Electrify's effects.",
-		shortDesc: "This Pokemon's sound-based moves become Ground type.",
-		rating: 1.5,
-		num: -20,
+		inherit: true,
+		isNonstandard: null,
 	},
 	sundownswitch: {
-		name: "Sundown Switch",
-		desc: "If Cacturne-Mega: Changes to Day form before using Grass move; to Night before using Dark move.",
-		num: -21,
-		onBeforeMovePriority: 0.5,
-		onBeforeMove(attacker, defender, move) {
-			if (attacker.species.baseSpecies !== 'Cacturne' || attacker.transformed) return;
-			if (move.type !== 'Grass' && move.type !== 'Dark') return;
-			const targetForme = (move.type === 'Grass' ? 'Cacturne-Mega' : 'Cacturne-Mega-Night');
-			if (attacker.species.name !== targetForme) attacker.formeChange(targetForme);
-			this.add('-start', attacker, 'typechange', attacker.getTypes(true).join('/'), '[silent]');
-		},
-		flags: {failroleplay: 1, noreceiver: 1, noentrain: 1, notrace: 1, failskillswap: 1, cantsuppress: 1},
+		inherit: true,
+		isNonstandard: null,
 	},
 	coldvengeance: {
-		desc: "When replacing a fainted party member, its next move has x1.5 BP.",
-		shortDesc: "Its first move has x1.5 BP when replacing a fainted ally.",
-		onAfterMega(pokemon) {
-			if (!pokemon.side.faintedLastTurn || !pokemon.isMega) return;
-			pokemon.addVolatile('coldvengeance');
-		},
-		onStart(pokemon) {
-			if (!pokemon.side.faintedThisTurn) return;
-			pokemon.addVolatile('coldvengeance');
-		},
-		onModifyDamage(damage, source, target, move) {
-			if (source.volatiles['coldvengeance']) {
-				return this.chainModify(1.5);
-			}
-		},
-		name: "Cold Vengeance",
-		rating: 3,
-		num: -22,
+		inherit: true,
+		isNonstandard: null,
 	},
 	blindrage: {
-		onDamagingHit(damage, target, source, effect) {
-			this.boost({ atk: 1 });
-		},
-		name: "Blind Rage",
-		shortDesc: "This Pokemon's Atk is raised by 1 when hit.",
-		rating: 3.5,
-		num: -23,
+		inherit: true,
+		isNonstandard: null,
 	},
 	hardrock: {
-		onModifyAtkPriority: 6,
-		onModifyAtk(pokemon) {
-			return this.chainModify(1.5);
-		},
-		onModifyDefPriority: 6,
-		onModifyDef(pokemon) {
-			return this.chainModify(2);
-		},
-		onModifySpDPriority: 6,
-		onModifySpD(pokemon) {
-			return this.chainModify(0.5);
-		},
-		name: "Hard Rock",
-		shortDesc: "This Pokemon's Atk is boosted by 1.5 and Def by 2, but its SpD is halved.",
-		rating: 1.5,
-		num: -24,
+		inherit: true,
+		isNonstandard: null,
 	},
 	forgery: {
-		desc: "This Pokémon inherits the item of the last unfainted Pokemon in its party.",
-		shortDesc: "Inherits the item of the last party member.",
-		onStart(pokemon) {
-			if (pokemon.species.name !== 'Zoroark-Mega') return;
-			pokemon.addVolatile('forgery');
-			let i;
-			for (i = pokemon.side.pokemon.length - 1; i > pokemon.position; i--) {
-				if (
-					!pokemon.side.pokemon[i] || pokemon.side.pokemon[i].fainted ||
-					!pokemon.side.pokemon[i].item || this.dex.items.get(pokemon.side.pokemon[i].item).zMove ||
-					 this.dex.items.get(pokemon.side.pokemon[i].item).megaStone
-				) continue;
-				break;
-			}
-			if (!pokemon.side.pokemon[i]) return;
-			if (pokemon === pokemon.side.pokemon[i]) return;
-			const forgery = pokemon.side.pokemon[i];
-			this.add('-ability', pokemon, 'Forgery');
-			pokemon.item = forgery.item;
-			this.add('-message', `${pokemon.name}'s Zoroarkite became a replica of the ${this.dex.items.get(forgery.item).name} belonging to ${forgery.name}!`);
-		},
-		onUpdate(pokemon) {
-			if (pokemon.species.name !== 'Zoroark-Mega') return;
-			if (!pokemon.item) {
-				this.add('-ability', pokemon, 'Forgery');
-				this.add('-message', `${pokemon.name}'s Zoroarkite returned to normal!`);
-				pokemon.item = 'zoroarkite' as ID;
-			}
-		},
-		onEnd(pokemon) {
-			if (pokemon.species.name !== 'Zoroark-Mega') return;
-			if (pokemon.item !== 'zoroarkite') {
-				this.add('-ability', pokemon, 'Forgery');
-				this.add('-message', `${pokemon.name}'s Zoroarkite returned to normal!`);
-				pokemon.item = 'zoroarkite' as ID;
-			}
-		},
-		flags: {failroleplay: 1, noreceiver: 1, noentrain: 1, notrace: 1, failskillswap: 1, cantsuppress: 1},
-		name: "Forgery",
-		rating: 3,
-		num: -25,
+		inherit: true,
+		isNonstandard: null,
 	},
 	clairvoyance: {
-		desc: "This Pokémon's Psychic-type moves take effect two turns after being used. At the end of that turn, the damage is calculated at that time and dealt to the Pokémon at the position the target had when the move was used. Only one move can be delayed at a time. If the user is no longer active at the time an attacking move should hit, damage is calculated based on the user's natural Attack or Special Attack stat, types, and level, with no boosts from its held item or Ability. Status moves are used by the Pokémon at the position the user had when the move was used.",
-		shortDesc: "Psychic-type moves delayed until two turns later, but only one at a time.",
-		onBeforeMove(source, target, move) {
-			if (
-				move && move.type === 'Psychic' && source.hasAbility('clairvoyance') &&
-				source.side.addSlotCondition(source, 'clairvoyance')
-			) {
-				Object.assign(source.side.slotConditions[source.position]['clairvoyance'], {
-					duration: 3,
-					source: source,
-					target: null,
-					move: move,
-					position: target.position,
-					side: target.side,
-					moveData: this.dex.moves.get(move),
-				});
-				this.add('-ability', source, 'Clairvoyance');
-				this.add('-message', `${source.name} cast ${move.name} into the future!`);
-				source.deductPP(move.id, 1);
-				return null;
-			}
-		},
-		condition: {
-			duration: 3,
-			onResidualOrder: 3,
-			onEnd(target) {
-				this.effectState.target = this.effectState.side.active[this.effectState.position];
-				const data = this.effectState;
-				const move = this.dex.moves.get(data.move);
-				this.add('-ability', this.effectState.source, 'Clairvoyance');
-				if (!data.target) {
-					this.hint(`${move.name} did not hit because there was no target.`);
-					return;
-				}
-
-				this.add('-message', `${this.effectState.source.name}'s ${move.name} took effect!`);
-				data.target.removeVolatile('Endure');
-
-				if (data.source.hasAbility('infiltrator') && this.gen >= 6) {
-					data.moveData.infiltrates = true;
-				}
-				if (data.source.hasAbility('normalize') && this.gen >= 6) {
-					data.moveData.type = 'Normal';
-				}
-				if (data.source.hasAbility('adaptability') && this.gen >= 6) {
-					data.moveData.stab = 2;
-				}
-				data.moveData.isFutureMove = true;
-				delete data.moveData.flags['contact'];
-				delete data.moveData.flags['protect'];
-
-				if (move.category === 'Status') {
-					this.actions.useMove(move, target, data.target);
-				} else {
-					const hitMove = new this.dex.Move(data.moveData) as ActiveMove;
-					if (data.source.isActive) {
-						this.add('-anim', data.source, hitMove, data.target);
-					}
-					this.actions.trySpreadMoveHit([data.target], data.source, hitMove);
-				}
-			},
-		},
-		name: "Clairvoyance",
-		rating: 3,
-		num: -26,
+		inherit: true,
+		isNonstandard: null,
 	},
 	longtail: {
-		shortDesc: "Gives a +1 priority to tail and whip moves.",
-		onModifyPriority(priority, pokemon, target, move) {
-			if (tailMoves.includes(move.id)) return priority + 1;
-		},
-		name: "Long Tail",
-		num: -27,
+		inherit: true,
+		isNonstandard: null,
 	},
 	boarding: {
-		onBasePower(basePower, pokemon, target) {
-			if (target.volatiles['trapped']) {
-				return this.chainModify(1.25);
-			}
-		},
-		name: "Boarding",
-		shortDesc: "This Pokemon deals 1.25x damage to trapped opponents.",
-		rating: 3,
-		num: -28,
+		inherit: true,
+		isNonstandard: null,
 	},
 	lasttoxin: {
-		desc: "When this Pokemon brings an opponent to 50% or under using an attacking move, it badly poisons that opponent.",
-		shortDesc: "Badly poison enemies brought under half health..",
-		onAfterMove(source, target, move) {
-			if (!source || source === target || !target.hp || !move.totalDamage) return;
-			const lastAttackedBy = target.getLastAttackedBy();
-			if (!lastAttackedBy) return;
-			const damage = move.multihit ? move.totalDamage : lastAttackedBy.damage;
-			if (target.hp <= target.maxhp / 2 && target.hp + damage > target.maxhp / 2) {
-				target.setStatus('tox');
-			}
-		},
-		name: "Last Toxin",
-		rating: 4,
-		num: -29,
+		inherit: true,
+		isNonstandard: null,
 	},
 	chakrasurge: {
-		inherit: true
+		inherit: true,
 		isNonstandard: null,
 	},
 	striker: {
-		inherit: true
+		inherit: true,
 		isNonstandard: null,
 	},
 	deadlyblasts: {
-		inherit: true
+		inherit: true,
 		isNonstandard: null,
 	},
 	insectivorous: {

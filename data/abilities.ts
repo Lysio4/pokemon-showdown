@@ -5659,6 +5659,7 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 		shortDesc: "Non resisted Poison moves lowers the target's corresponding defense by one stage.",
 		rating: 2,
 		num: -1,
+		isNonstandard: "Custom",
 	},
 	daredevil: {
 		onDamage(damage, target, source, effect) {
@@ -5671,6 +5672,7 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 		shortDesc: "This Pokemon does not take recoil damage besides Struggle/Life Orb/crash damage.",
 		rating: 3,
 		num: -2,
+		isNonstandard: "Custom",
 	},
 	waterproof: {
 		onTryHit(target, source, move) {
@@ -5686,6 +5688,7 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 		shortDesc: "This Pokemon's Speed is raised 1 stage if hit by an Water or Electric move; Water and Electric immunity.",
 		rating: 3,
 		num: -3,
+		isNonstandard: "Custom",
 	},
 	racketeering: {
 		shortDesc: "Boosts the power of Knock Off, Thief and Pluck by 1.5x",
@@ -5698,6 +5701,7 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 		name: "Racketeering",
 		rating: 3,
 		num: -4,
+		isNonstandard: "Custom",
 	},
 	snobbery: {
 		onSourceModifyAtkPriority: 6,
@@ -5718,6 +5722,7 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 		shortDesc: "This Pokemon gets half damages from Bug, Poison and Dark type moves.",
 		rating: 3.5,
 		num: -5,
+		isNonstandard: "Custom",
 	},
 	starsforce: {
 		desc: "When this Pokémon has 1/3 or less of its maximum HP, rounded down, all of its stats are x1.5.",
@@ -5760,6 +5765,7 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 		name: "Star's Force",
 		rating: 2,
 		num: -6,
+		isNonstandard: "Custom",
 	},
 	webweaver: {
 		onResidualOrder: 26,
@@ -5787,6 +5793,7 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
       shortDesc: "A the end of each turn, lowers by one stage the speed stat of every other grounded Pokemon.",
 		rating: 4.5,
 		num: -7,
+		isNonstandard: "Custom",
 	},
 	perforating: {
 		onModifyMovePriority: -5,
@@ -5806,6 +5813,7 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 		shortDesc: "Bug & Poison moves deal 2x damage if resisted, can poison Steel types, Poison moves hit Steel types",
 		rating: 3,
 		num: -8,
+		isNonstandard: "Custom",
 	},
 	doublespirit: {
 		shortDesc: "Switches to Nocturnal form before using a Physical move, and to Diurnal form before using a Special move.",
@@ -5824,6 +5832,7 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 		name: "Double Spirit",
 		rating: 4,
 		num: -9,
+		isNonstandard: "Custom",
 	},
 	divination: {
 		shortDesc: "Reveals a random move of each adjacent opponent on entry.",
@@ -5837,6 +5846,7 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 		name: "Divination",
 		rating: 3,
 		num: -10,
+		isNonstandard: "Custom",
 	},
 	arcanemastery: {
 		onModifyAtkPriority: 5,
@@ -5857,6 +5867,7 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 		shortDesc: "This Pokemon's attacking stat is multiplied by 1.5 while using a Psychic/Dark type attack.",
 		rating: 3.5,
 		num: -11,
+		isNonstandard: "Custom",
 	},
 	strangebody: {
 		onEffectiveness(typeMod, target, type, move) {
@@ -5869,6 +5880,7 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 		rating: 4,
 		shortDesc: "If this Pokemon is hit by a physical super effective move, it takes neutral damage.",
 		num: -12,
+		isNonstandard: "Custom",
 	},
 	toymaker: {
 		name: "Toymaker",
@@ -5887,6 +5899,7 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 		},
 		rating: 3,
 		num: -13,
+		isNonstandard: "Custom",
 	},
 	woodclearing: {
 		onBasePowerPriority: 21,
@@ -5903,6 +5916,7 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 		shortDesc: "This Pokemon's attacks do 1.3x in Grassy Terrain. Always hits Grass targets for super effective.",
 		rating: 2,
 		num: -14,
+		isNonstandard: "Custom",
 	},
 	microclimate: {
 		onStart(pokemon) {
@@ -5933,6 +5947,7 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 		name: "Microclimate",
 		rating: 2,
 		num: -15,
+		isNonstandard: "Custom",
 	},
 	voidheart: {
 		desc: "When it KOs an opponent with a direct move, it recovers 25% of its max HP.",
@@ -5945,6 +5960,7 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 		name: "Void-Heart",
 		rating: 3,
 		num: -16,
+		isNonstandard: "Custom",
 	},
 	convectioncurrent: {
 		desc: "If Gravity is active, this Pokemon's Speed is doubled.",
@@ -5957,6 +5973,7 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 		name: "Convection Current",
 		rating: 3,
 		num: -17,
+		isNonstandard: "Custom",
 	},
 	endlessdream: {
 		desc: "While this Pokemon is active, every other Pokemon is treated as if it has the Comatose ability. Pokemon that are either affected by Sweet Veil, or have Insomnia or Vital Spirit as their abilities are immune this effect.",
@@ -5974,6 +5991,7 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 		name: "Endless Dream",
 		rating: 3,
 		num: -18,
+		isNonstandard: "Custom",
 	},
 	evaporate: {
 		desc: "If the Pokemon or the opponent uses a Water type move, it triggers the Haze effect. Immune to Water.",
@@ -5999,6 +6017,7 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 		name: "Evaporate",
 		rating: 4,
 		num: -19,
+		isNonstandard: "Custom",
 	},
 	desertsong: {
 		onModifyTypePriority: -1,
@@ -6012,6 +6031,7 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 		shortDesc: "This Pokemon's sound-based moves become Ground type.",
 		rating: 1.5,
 		num: -20,
+		isNonstandard: "Custom",
 	},
 	sundownswitch: {
 		name: "Sundown Switch",
@@ -6026,6 +6046,7 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 			this.add('-start', attacker, 'typechange', attacker.getTypes(true).join('/'), '[silent]');
 		},
 		flags: {failroleplay: 1, noreceiver: 1, noentrain: 1, notrace: 1, failskillswap: 1, cantsuppress: 1},
+		isNonstandard: "Custom",
 	},
 	coldvengeance: {
 		desc: "When replacing a fainted party member, its next move has x1.5 BP.",
@@ -6046,6 +6067,7 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 		name: "Cold Vengeance",
 		rating: 3,
 		num: -22,
+		isNonstandard: "Custom",
 	},
 	blindrage: {
 		onDamagingHit(damage, target, source, effect) {
@@ -6055,6 +6077,7 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 		shortDesc: "This Pokemon's Atk is raised by 1 when hit.",
 		rating: 3.5,
 		num: -23,
+		isNonstandard: "Custom",
 	},
 	hardrock: {
 		onModifyAtkPriority: 6,
@@ -6073,6 +6096,7 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 		shortDesc: "This Pokemon's Atk is boosted by 1.5 and Def by 2, but its SpD is halved.",
 		rating: 1.5,
 		num: -24,
+		isNonstandard: "Custom",
 	},
 	forgery: {
 		desc: "This Pokémon inherits the item of the last unfainted Pokemon in its party.",
@@ -6116,6 +6140,7 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 		name: "Forgery",
 		rating: 3,
 		num: -25,
+		isNonstandard: "Custom",
 	},
 	clairvoyance: {
 		desc: "This Pokémon's Psychic-type moves take effect two turns after being used. At the end of that turn, the damage is calculated at that time and dealt to the Pokémon at the position the target had when the move was used. Only one move can be delayed at a time. If the user is no longer active at the time an attacking move should hit, damage is calculated based on the user's natural Attack or Special Attack stat, types, and level, with no boosts from its held item or Ability. Status moves are used by the Pokémon at the position the user had when the move was used.",
@@ -6183,6 +6208,7 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 		name: "Clairvoyance",
 		rating: 3,
 		num: -26,
+		isNonstandard: "Custom",
 	},
 	longtail: {
 		shortDesc: "Gives a +1 priority to tail and whip moves.",
@@ -6191,6 +6217,7 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 		},
 		name: "Long Tail",
 		num: -27,
+		isNonstandard: "Custom",
 	},
 	boarding: {
 		onBasePower(basePower, pokemon, target) {
@@ -6202,6 +6229,7 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 		shortDesc: "This Pokemon deals 1.25x damage to trapped opponents.",
 		rating: 3,
 		num: -28,
+		isNonstandard: "Custom",
 	},
 	lasttoxin: {
 		desc: "When this Pokemon brings an opponent to 50% or under using an attacking move, it badly poisons that opponent.",
@@ -6218,6 +6246,7 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 		name: "Last Toxin",
 		rating: 4,
 		num: -29,
+		isNonstandard: "Custom",
 	},
 	chakrasurge: {
 		onStart(source) {

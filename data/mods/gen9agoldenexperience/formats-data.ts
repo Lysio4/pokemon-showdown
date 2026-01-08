@@ -963,18 +963,10 @@ export const FormatsData: { [k: string]: SpeciesFormatsData; } = {
 		tier: "PU",
 		doublesTier: "DUU",
 	},
-	omastarrevived: {
-		tier: "PU",
-		doublesTier: "DUU",
-	},
 	kabuto: {
 		tier: "LC",
 	},
 	kabutops: {
-		tier: "PU",
-		doublesTier: "DUU",
-	},
-	kabutopsrevived: {
 		tier: "PU",
 		doublesTier: "DUU",
 	},
@@ -1890,19 +1882,11 @@ export const FormatsData: { [k: string]: SpeciesFormatsData; } = {
 		tier: "PU",
 		doublesTier: "DUU",
 	},
-	cradilyrevived: {
-		tier: "NU",
-		doublesTier: "DUU",
-	},
 	anorith: {
 		tier: "LC",
 	},
 	armaldo: {
 		tier: "PU",
-		doublesTier: "DUU",
-	},
-	armaldorevived: {
-		tier: "NU",
 		doublesTier: "DUU",
 	},
 	feebas: {
@@ -2156,6 +2140,10 @@ export const FormatsData: { [k: string]: SpeciesFormatsData; } = {
 		tier: "UU",
 		doublesTier: "DUU",
 	},
+	empoleon: {
+		tier: "OU",
+		doublesTier: "DOU",
+	},
 	starly: {
 		tier: "LC",
 	},
@@ -2201,19 +2189,11 @@ export const FormatsData: { [k: string]: SpeciesFormatsData; } = {
 		tier: "PU",
 		doublesTier: "DUU",
 	},
-	rampardosrevived: {
-		tier: "NU",
-		doublesTier: "DUU",
-	},
 	shieldon: {
 		tier: "LC",
 	},
 	bastiodon: {
 		tier: "PU",
-		doublesTier: "DUU",
-	},
-	bastiodonrevived: {
-		tier: "NU",
 		doublesTier: "DUU",
 	},
 	burmy: {
@@ -2905,18 +2885,10 @@ export const FormatsData: { [k: string]: SpeciesFormatsData; } = {
 		tier: "PU",
 		doublesTier: "DUU",
 	},
-	carracostarevived: {
-		tier: "NU",
-		doublesTier: "DUU",
-	},
 	archen: {
 		tier: "LC",
 	},
 	archeops: {
-		tier: "RU",
-		doublesTier: "DUU",
-	},
-	archeopsrevived: {
 		tier: "RU",
 		doublesTier: "DUU",
 	},
@@ -3541,8 +3513,8 @@ export const FormatsData: { [k: string]: SpeciesFormatsData; } = {
 		tier: "PU",
 		doublesTier: "DUU",
 	},
-	tyrantrumrevived: {
-		tier: "NU",
+	tyrantrummega: {
+		tier: "RU",
 		doublesTier: "DUU",
 	},
 	amaura: {
@@ -3552,8 +3524,8 @@ export const FormatsData: { [k: string]: SpeciesFormatsData; } = {
 		tier: "PU",
 		doublesTier: "DUU",
 	},
-	aurorusrevived: {
-		tier: "NU",
+	aurorusmega: {
+		tier: "RU",
 		doublesTier: "DUU",
 	},
 	hawlucha: {
@@ -4237,6 +4209,10 @@ export const FormatsData: { [k: string]: SpeciesFormatsData; } = {
 	cinderacegmax: {
 		isNonstandard: "Past",
 		tier: "Illegal",
+	},
+	cinderacemega: {
+		tier: "OU",
+		doublesTier: "DUU",
 	},
 	sobble: {
 		tier: "LC",

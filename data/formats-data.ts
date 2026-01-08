@@ -6271,14 +6271,6 @@ export const FormatsData: import('../sim/dex-species').SpeciesFormatsDataTable =
 		isNonstandard: "Custom",
 		tier: "Illegal",
 	},
-	omastarrevived: {
-		isNonstandard: "Custom",
-		tier: "Illegal",
-	},
-	kabutopsrevived: {
-		isNonstandard: "Custom",
-		tier: "Illegal",
-	},
 	typhlosionmega: {
 		isNonstandard: "Custom",
 		tier: "Illegal",
@@ -6343,23 +6335,11 @@ export const FormatsData: import('../sim/dex-species').SpeciesFormatsDataTable =
 		isNonstandard: "Custom",
 		tier: "Illegal",
 	},
-	cradilyrevived: {
-		isNonstandard: "Custom",
-		tier: "Illegal",
-	},
-	armaldorevived: {
-		isNonstandard: "Custom",
-		tier: "Illegal",
-	},
 	castformmega: {
 		isNonstandard: "Custom",
 		tier: "Illegal",
 	},
-	rampardosrevived: {
-		isNonstandard: "Custom",
-		tier: "Illegal",
-	},
-	bastiodonrevived: {
+	empoleonmega: {
 		isNonstandard: "Custom",
 		tier: "Illegal",
 	},
@@ -6399,14 +6379,6 @@ export const FormatsData: import('../sim/dex-species').SpeciesFormatsDataTable =
 		isNonstandard: "Custom",
 		tier: "Illegal",
 	},
-	carracostarevived: {
-		isNonstandard: "Custom",
-		tier: "Illegal",
-	},
-	archeopsrevived: {
-		isNonstandard: "Custom",
-		tier: "Illegal",
-	},
     zoroarkmega: {
 		isNonstandard: "Custom",
 		tier: "Illegal",
@@ -6431,11 +6403,11 @@ export const FormatsData: import('../sim/dex-species').SpeciesFormatsDataTable =
 		isNonstandard: "Custom",
 		tier: "Illegal",
 	},
-	tyrantrumrevived: {
+	tyrantrummega: {
 		isNonstandard: "Custom",
 		tier: "Illegal",
 	},
-	aurorusrevived: {
+	aurorusmega: {
 		isNonstandard: "Custom",
 		tier: "Illegal",
 	},
@@ -6460,6 +6432,10 @@ export const FormatsData: import('../sim/dex-species').SpeciesFormatsDataTable =
 		tier: "Illegal",
 	},
 	dhelmisemega: {
+		isNonstandard: "Custom",
+		tier: "Illegal",
+	},
+	cinderacemega: {
 		isNonstandard: "Custom",
 		tier: "Illegal",
 	},

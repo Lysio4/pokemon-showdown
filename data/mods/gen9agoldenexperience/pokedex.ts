@@ -1226,12 +1226,12 @@ export const Pokedex: {[k: string]: ModdedSpeciesData;} = {
 	},
 	anorith: {
 		inherit: true,
-		abilities: { 0: "Battle Armor", 1: "Tough Claws", H: "Swift Swim" },
+		abilities: { 0: "Battle Armor", 1: "Hydrophilic", H: "Swift Swim" },
 	},
 	armaldo: {
 		inherit: true,
 		baseStats: {hp: 75, atk: 130, def: 115, spa: 40, spd: 80, spe: 75},
-		abilities: { 0: "Battle Armor", 1: "Tough Claws", H: "Swift Swim" },
+		abilities: { 0: "Battle Armor", 1: "Hydrophilic", H: "Swift Swim" },
 	},
 	milotic: {
 		inherit: true,

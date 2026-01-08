@@ -6227,17 +6227,20 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 		shortDesc: "On switch-in, sets Chakra Terrain.",
 		rating: 4,
 		num: -30,
+		isNonstandard: "Custom",
 	},
 	striker: {
-		shortDesc: "Boosts the power of kicking moves by 1.3x",
+		shortDesc: "Boosts the power of kicking moves by 1.2x",
 		onBasePowerPriority: 8,
 		onBasePower(basePower, attacker, defender, move) {
-			if (kickMoves.includes(move.id)) {
-				return this.chainModify(1.3);
+			if (move.flags['kick']) {
+				this.debug('Striker boost');
+				return this.chainModify([4915, 4096]);
 			}
 		},
 		name: "Striker",
 		num: -31,
+		isNonstandard: "Custom",
 	},
 	deadlyblasts: {
 		onBasePowerPriority: 8,
@@ -6250,6 +6253,7 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 		shortDesc: "Boosts the power of bullet, bomb and ball moves by 1.3x",
 		rating: 2.5,
 		num: -32,
+		isNonstandard: "Custom",
 	},
 	insectivorous: {
 		onTryHit(target, source, move) {

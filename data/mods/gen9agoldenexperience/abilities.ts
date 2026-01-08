@@ -1,6 +1,5 @@
 import { consoleips } from "../../../config/config-example";
 
-const kickMoves = ['jumpkick', 'highjumpkick', 'megakick', 'doublekick', 'blazekick', 'tropkick', 'lowkick', 'lowsweep', 'rollingkick', 'triplekick', 'stomp', 'highhorsepower', 'tripleaxel', 'stompingtantrum', 'thunderouskick', 'axekick'];
 const tailMoves = ['firelash', 'powerwhip', 'tailslap', 'wrap', 'constrict', 'irontail', 'dragontail', 'poisontail', 'aquatail', 'vinewhip', 'wringout',];
 
 export const Abilities: { [abilityid: string]: ModdedAbilityData; } = {
@@ -594,36 +593,16 @@ export const Abilities: { [abilityid: string]: ModdedAbilityData; } = {
 		num: -29,
 	},
 	chakrasurge: {
-		onStart(source) {
-			this.field.setTerrain('chakraterrain');
-		},
-		name: "Chakra Surge",
-		shortDesc: "On switch-in, sets Chakra Terrain.",
-		rating: 4,
-		num: -30,
+		inherit: true
+		isNonstandard: null,
 	},
 	striker: {
-		shortDesc: "Boosts the power of kicking moves by 1.3x",
-		onBasePowerPriority: 8,
-		onBasePower(basePower, attacker, defender, move) {
-			if (kickMoves.includes(move.id)) {
-				return this.chainModify(1.3);
-			}
-		},
-		name: "Striker",
-		num: -31,
+		inherit: true
+		isNonstandard: null,
 	},
 	deadlyblasts: {
-		onBasePowerPriority: 8,
-		onBasePower(basePower, attacker, defender, move) {
-			if (move.flags['bullet']) {
-				return this.chainModify(1.3);
-			}
-		},
-		name: "Deadly Blasts",
-		shortDesc: "Boosts the power of bullet, bomb and ball moves by 1.3x",
-		rating: 2.5,
-		num: -32,
+		inherit: true
+		isNonstandard: null,
 	},
 	insectivorous: {
 		onTryHit(target, source, move) {
@@ -1698,17 +1677,6 @@ export const Abilities: { [abilityid: string]: ModdedAbilityData; } = {
 		},
 		desc: "If this Pokemon is the last Pokemon of the team, its Attack and Special Attack are halved.",
 		shortDesc: "If this Pokemon is the last Pokemon of the team, its Attack and Sp. Atk are halved.",
-	},
-	ironfist: {
-		inherit: true,
-		onBasePower(basePower, attacker, defender, move) {
-			if (move.flags['punch']) {
-				this.debug('Iron Fist boost');
-				return this.chainModify([5325, 4096]);
-			}
-		},
-		desc: "This Pokemon's punch-based attacks have their power multiplied by 1.3.",
-		shortDesc: "This Pokemon's punch-based attacks have 1.3x power. Sucker Punch is not boosted.",
 	},
 	galewings: {
 		inherit: true,

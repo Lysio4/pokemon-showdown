@@ -3915,7 +3915,7 @@ export const Pokedex: {[k: string]: ModdedSpeciesData;} = {
 		name: "Illumight",
 		types: ["Bug", "Fairy"],
 		gender: "F",
-		baseStats: {hp: 85, atk: 67, def: 125, spa: 83, spd: 125, spe: 65},
+		baseStats: {hp: 90, atk: 67, def: 125, spa: 83, spd: 125, spe: 65},
 		abilities: {0: "Regenerator", 1: "Tinted Lens", H: "Prankster"},
 		heightm: 0.6,
 		weightkg: 17.7,

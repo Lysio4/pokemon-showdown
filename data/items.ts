@@ -3665,13 +3665,8 @@ export const Items: import('../sim/dex-items').ItemDataTable = {
 		},
 		itemUser: ["Magearna", "Magearna-Original"],
 		onTakeItem(item, source) {
-<<<<<<< HEAD
-			if (item.megaEvolves!.includes(source.baseSpecies.name)) return false;
-			return true;
-=======
 			return !item.megaStone || (!item.megaStone[source.baseSpecies.name] &&
 				!Object.values(item.megaStone).includes(source.baseSpecies.name));
->>>>>>> upstream/master
 		},
 		num: 2597,
 		gen: 9,
@@ -3927,14 +3922,6 @@ export const Items: import('../sim/dex-items').ItemDataTable = {
 	meowsticite: {
 		name: "Meowsticite",
 		spritenum: 0,
-<<<<<<< HEAD
-		megaStone: ["Meowstic-Mega", "Meowstic-F-Mega"],
-		megaEvolves: ["Meowstic", "Meowstic-F"],
-		itemUser: ["Meowstic", "Meowstic-F"],
-		onTakeItem(item, source) {
-			if (source.baseSpecies.num === 678) return false;
-			return true;
-=======
 		megaStone: {
 			"Meowstic": "Meowstic-M-Mega",
 			"Meowstic-F": "Meowstic-F-Mega",
@@ -3943,7 +3930,6 @@ export const Items: import('../sim/dex-items').ItemDataTable = {
 		onTakeItem(item, source) {
 			return !item.megaStone || (!item.megaStone[source.baseSpecies.name] &&
 				!Object.values(item.megaStone).includes(source.baseSpecies.name));
->>>>>>> upstream/master
 		},
 		num: 2594,
 		gen: 9,
@@ -6282,13 +6268,8 @@ export const Items: import('../sim/dex-items').ItemDataTable = {
 		},
 		itemUser: ["Tatsugiri", "Tatsugiri-Droopy", "Tatsugiri-Stretchy"],
 		onTakeItem(item, source) {
-<<<<<<< HEAD
-			if (item.megaEvolves!.includes(source.baseSpecies.name)) return false;
-			return true;
-=======
 			return !item.megaStone || (!item.megaStone[source.baseSpecies.name] &&
 				!Object.values(item.megaStone).includes(source.baseSpecies.name));
->>>>>>> upstream/master
 		},
 		num: 2601,
 		gen: 9,

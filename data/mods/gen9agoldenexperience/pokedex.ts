@@ -164,7 +164,7 @@ export const Pokedex: {[k: string]: ModdedSpeciesData;} = {
 	wigglytuff: {
 		inherit: true,
 		baseStats: {hp: 140, atk: 63, def: 50, spa: 105, spd: 60, spe: 65},
-		abilities: {0: "Sheer Force", 1: "Competitive", H: "Friend Guard"},
+		abilities: {0: "Sheer Force", 1: "Competitive", H: "Pixilate"},
 		otherFormes: ["Wigglytuff-Mega"],
 		formeOrder: ["Wigglytuff", "Wigglytuff-Mega"],
 	},
@@ -3606,8 +3606,7 @@ export const Pokedex: {[k: string]: ModdedSpeciesData;} = {
 	},
 	screamtail: {
 		inherit: true,
-		types: ["Fairy", "Dragon"],
-		abilities: {0: "Protosynthesis", H: "Friend Guard"},
+		abilities: {0: "Protosynthesis", H: "Pixilate"},
 	},
 	brutebonnet: {
 		inherit: true,

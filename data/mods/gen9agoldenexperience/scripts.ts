@@ -1323,6 +1323,7 @@ export const Scripts: ModdedBattleScriptsData = {
     this.modData('Learnsets', 'starmie').learnset.safeguard = ['9L1']; // ZA addition
     this.modData('Learnsets', 'starmie').learnset.healblock = ['9L1']; // ZA addition
     this.modData('Learnsets', 'starmie').learnset.tripleaxel = ['9L1']; // ZA addition
+    this.modData('Learnsets', 'starmie').learnset.chargebeam = ['9L1']; // ZA addition
     this.modData('Learnsets', 'mrmime').learnset.firstimpression = ['9L1']; // ZA addition
     this.modData('Learnsets', 'mrmimegalar').learnset.firstimpression = ['9L1']; // ZA addition
     this.modData('Learnsets', 'pinsir').learnset.megahorn = ['9L1'];
@@ -1863,6 +1864,7 @@ export const Scripts: ModdedBattleScriptsData = {
 
     // Gen 6:
     this.modData('Learnsets', 'chesnaught').learnset.growth = ['9L1']; // ZA addition
+    this.modData('Learnsets', 'delphox').learnset.chargebeam = ['9L1']; // ZA addition
     this.modData('Learnsets', 'greninja').learnset.psyshock = ['9L1']; // ZA addition
     this.modData('Learnsets', 'greninja').learnset.flipturn = ['9L1']; // ZA addition
     this.modData('Learnsets', 'greninja').learnset.nastyplot = ['9L1']; // ZA addition
@@ -2018,6 +2020,7 @@ export const Scripts: ModdedBattleScriptsData = {
     this.modData('Learnsets', 'drampa').learnset.bodyslam = ['9L1']; // ZA addition
     this.modData('Learnsets', 'drampa').learnset.whirlwind = ['9L1']; // ZA addition
     this.modData('Learnsets', 'drampa').learnset.earthpower = ['9L1']; // ZA addition
+    this.modData('Learnsets', 'drampa').learnset.chargebeam = ['9L1']; // ZA addition
     this.modData('Learnsets', 'drampa').learnset.boomburst = ['9L1'];
     this.modData('Learnsets', 'drampa').learnset.trickroom = ['9L1'];
     this.modData('Learnsets', 'mimikyu').learnset.poltergeist = ['9L1'];
@@ -2039,6 +2042,8 @@ export const Scripts: ModdedBattleScriptsData = {
     this.modData('Learnsets', 'zeraora').learnset.vacuumwave = ['9L1']; // ZA addition
 
     // Gen 8:
+    this.modData('Learnsets', 'meltan').learnset.chargebeam = ['9L1']; // ZA addition
+    this.modData('Learnsets', 'melmetal').learnset.chargebeam = ['9L1']; // ZA addition
     this.modData('Learnsets', 'greedent').learnset.recycle = ['9L1'];
     this.modData('Learnsets', 'greedent').learnset.slackoff = ['9L1'];
     this.modData('Learnsets', 'orbeetle').learnset.toxic = ['9M'];
@@ -2120,10 +2125,12 @@ export const Scripts: ModdedBattleScriptsData = {
     this.modData('Learnsets', 'indeedee').learnset.moonblast = ['9L1']; // ZA addition
     this.modData('Learnsets', 'indeedee').learnset.wish = ['9L1']; // ZA addition
     this.modData('Learnsets', 'indeedee').learnset.vacuumwave = ['9L1']; // ZA addition
+    this.modData('Learnsets', 'indeedee').learnset.chargebeam = ['9L1']; // ZA addition
     this.modData('Learnsets', 'indeedeef').learnset.moonlight = ['9L1']; // ZA addition
     this.modData('Learnsets', 'indeedeef').learnset.moonblast = ['9L1']; // ZA addition
     this.modData('Learnsets', 'indeedeef').learnset.wish = ['9L1']; // ZA addition
     this.modData('Learnsets', 'indeedeef').learnset.vacuumwave = ['9L1']; // ZA addition
+    this.modData('Learnsets', 'indeedeef').learnset.chargebeam = ['9L1']; // ZA addition
     this.modData('Learnsets', 'copperajah').learnset.headlongrush = ['9L1'];
     this.modData('Learnsets', 'zarude').learnset.honeclaws = ['9L1'];
     this.modData('Learnsets', 'zarudedada').learnset.honeclaws = ['9L1'];

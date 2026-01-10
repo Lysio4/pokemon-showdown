@@ -2364,13 +2364,6 @@ export const Moves: { [k: string]: ModdedMoveData; } = {
 			},
 		},
 	},
-	gigatonhammer: {
-		inherit: true,
-		shortDesc: "Cannot be used twice in a row. Super effective on Steel targets.",
-		onEffectiveness(typeMod, target, type) {
-			if (type === 'Steel') return 1;
-		},
-	},
 	blazingtorque: {
 		inherit: true,
 		isNonstandard: null,

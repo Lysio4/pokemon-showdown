@@ -527,7 +527,7 @@ export const FormatsData: { [k: string]: SpeciesFormatsData; } = {
 		tier: "LC",
 	},
 	slowbro: {
-		tier: "UU",
+		tier: "OU",
 		doublesTier: "DUU",
 	},
 	slowbromega: {
@@ -1006,7 +1006,7 @@ export const FormatsData: { [k: string]: SpeciesFormatsData; } = {
 		doublesTier: "DUU",
 	},
 	moltres: {
-		tier: "UU",
+		tier: "OU",
 		doublesTier: "DUU",
 	},
 	moltresgalar: {
@@ -4029,7 +4029,7 @@ export const FormatsData: { [k: string]: SpeciesFormatsData; } = {
 		doublesTier: "DUU",
 	},
 	drampamega: {
-		tier: "NU",
+		tier: "OU",
 		doublesTier: "DUU",
 	},
 	dhelmise: {
@@ -4846,7 +4846,7 @@ export const FormatsData: { [k: string]: SpeciesFormatsData; } = {
 		doublesTier: "DUU",
 	},
 	revavroomschedar: {
-		tier: "OU",
+		tier: "UU",
 		doublesTier: "DUU",
 	},
 	revavroomnavi: {
@@ -5232,7 +5232,7 @@ export const FormatsData: { [k: string]: SpeciesFormatsData; } = {
 		doublesTier: "DUU",
 	},
 	terapagos: {
-		tier: "UU",
+		tier: "OU",
 		doublesTier: "DUU",
 	},
 	terapagosstellar: {

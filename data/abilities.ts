@@ -7626,7 +7626,7 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 		gen: 9,
 		desc: "This Pokemon's damaging moves hit 3x. Successive hits do 15% damage without added effects.",
 		shortDesc: "This Pokemon's damaging moves hit 3x. Successive hits do 15% damage without added effects.",
-		num: -89
+		num: -89,
 		isNonstandard: "Custom",
 	},
 	lightpower: {
@@ -7895,8 +7895,8 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 		name: "Storm Emperor",
 		rating: 5,
 		num: -100,
-		isNonstandard: "Custom",
 		shortDesc: "On switch-in, this Pokemon summons Rain Dance and Electric Terrain.",
+		isNonstandard: "Custom",
 	},
 	// Touhou
 	hakkero: {

@@ -1357,6 +1357,7 @@ export const Scripts: ModdedBattleScriptsData = {
     this.modData('Learnsets', 'zapdos').learnset.thunderstorm = ['9L1'];
     this.modData('Learnsets', 'moltres').learnset.heatstorm = ['9L1'];
     this.modData('Learnsets', 'moltresgalar').learnset.roost = ['9L1'];
+    this.modData('Learnsets', 'moltresgalar').learnset.oblivionwing = ['9L1'];
     this.modData('Learnsets', 'dragonite').learnset.whirlwind = ['9L1']; // ZA addition
     this.modData('Learnsets', 'dragonite').learnset.vacuumwave = ['9L1']; // ZA addition
     this.modData('Learnsets', 'mewtwo').learnset.vacuumwave = ['9L1']; // ZA addition

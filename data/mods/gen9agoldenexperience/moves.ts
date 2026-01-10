@@ -3637,6 +3637,24 @@ export const Moves: { [k: string]: ModdedMoveData; } = {
 		shortDesc: "Applies Torment to the target.",
 		desc: "Applies Torment to the target.",
 	},
+	threateningbite: {
+		num: -97,
+		accuracy: 100,
+		basePower: 160,
+		category: "Physical",
+		name: "Threatening Bite",
+		pp: 5,
+		priority: 0,
+		flags: { protect: 1, mirror: 1, metronome: 1, cantusetwice: 1, bite: 1 },
+		secondary: null,
+		target: "normal",
+		type: "Dark",
+		onPrepareHit(target, source) {
+			this.attrLastMove('[still]');
+			this.add('-anim', source, "Jaw Lock", target);
+		},
+		shortDesc: "Cannot be selected the turn after it's used.",
+	},
 
 
 

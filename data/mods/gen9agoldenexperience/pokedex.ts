@@ -227,12 +227,12 @@ export const Pokedex: {[k: string]: ModdedSpeciesData;} = {
 	},
 	growlithe: {
 		inherit: true,
-		types: ["Fire", "Normal"],
+		abilities: {0: "Intimidate", 1: "Flash Fire", H: "Ignite"},
 	},
 	arcanine: {
 		inherit: true,
-		types: ["Fire", "Normal"],
 		baseStats: {hp: 90, atk: 115, def: 90, spa: 75, spd: 90, spe: 95},
+		abilities: {0: "Intimidate", 1: "Flash Fire", H: "Ignite"},
 	},
 	arcaninehisui: {
 		inherit: true,
@@ -2881,8 +2881,7 @@ export const Pokedex: {[k: string]: ModdedSpeciesData;} = {
 	},
 	drampamega: {
 		inherit: true,
-		types: ["Electric", "Dragon"],
-		abilities: { 0: "Galvanize" },
+		abilities: { 0: "Storm Emperor" },
 	},
 	dhelmise: {
 		inherit: true,
@@ -3210,7 +3209,7 @@ export const Pokedex: {[k: string]: ModdedSpeciesData;} = {
 	},
 	falinksmega: {
 		inherit: true,
-		abilities: { 0: "Multiheaded" },
+		abilities: { 0: "Defiant" },
 	},
 	pincurchin: {
 		inherit: true,

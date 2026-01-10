@@ -247,7 +247,7 @@ export const Formats: import('../sim/dex-formats').FormatList = [
 		column: 2,
 	},
 	{
-		name: "[Gen 9] Almost Any Ability A Golden Experience",
+		name: "[Gen 9] A Golden Experience Almost Any Ability",
 		desc: `Pok&eacute;mon have access to almost any ability.`,
 		mod: 'gen9agoldenexperience',
 		// searchShow: false,
@@ -265,7 +265,7 @@ export const Formats: import('../sim/dex-formats').FormatList = [
 		unbanlist: ['Light of Ruin'],
 	},
 	{
-		name: "[Gen 9] Balanced Hackmons A Golden Experience",
+		name: "[Gen 9] A Golden Experience Balanced Hackmons",
 		desc: `Anything directly hackable onto a set (EVs, IVs, forme, ability, item, and move) and is usable in local battles is allowed.`,
 		mod: 'gen9agoldenexperience',
 		// searchShow: false,
@@ -300,7 +300,7 @@ export const Formats: import('../sim/dex-formats').FormatList = [
 		},
 	},
 	{
-		name: "[Gen 9] Mix and Mega A Golden Experience",
+		name: "[Gen 9] A Golden Experience Mix and Mega",
 		desc: `Mega evolve any Pok&eacute;mon with any mega stone, or transform them with Genesect Drives, Primal orbs, Origin orbs, Rusted items, Ogerpon Masks, Arceus Plates, and Silvally Memories with no limit. Mega and Primal boosts based on form changes from gen 7.`,
 		mod: 'mixandmegaage',
 		ruleset: ['Standard NatDex', 'Terastal Clause', 'Non-Signature Z-Move Clause'],
@@ -370,7 +370,7 @@ export const Formats: import('../sim/dex-formats').FormatList = [
 		},
 	},
 	{
-		name: "[Gen 9] STABmons A Golden Experience",
+		name: "[Gen 9] A Golden Experience STABmons",
 		desc: `Pok&eacute;mon can use any move of their typing, in addition to the moves they can normally learn.`,
 		mod: 'gen9agoldenexperience',
 		ruleset: ['Standard NatDex', 'STABmons Move Legality', '!Sleep Clause Mod', 'Sleep Moves Clause', 'Terastal Clause', 'Non-Signature Z-Move Clause'],
@@ -393,7 +393,7 @@ export const Formats: import('../sim/dex-formats').FormatList = [
 		unbanlist: ['Light of Ruin'],
 	},
 	{
-		name: "[Gen 9] Godly Gift A Golden Experience",
+		name: "[Gen 9] A Golden Experience Godly Gift",
 		desc: `Each Pok&eacute;mon receives one base stat from a God (Restricted Pok&eacute;mon) depending on its position in the team. If there is no restricted Pok&eacute;mon, it uses the Pok&eacute;mon in the first slot.`,
 		mod: 'gen9agoldenexperience',
 		ruleset: ['Standard NatDex', 'Terastal Clause', '!Sleep Clause Mod', 'Sleep Moves Clause', 'Godly Gift Mod', 'Mega Rayquaza Clause', 'Non-Signature Z-Move Clause'],
@@ -413,7 +413,7 @@ export const Formats: import('../sim/dex-formats').FormatList = [
 		unbanlist: ['Light of Ruin'],
 	},
 	{
-		name: "[Gen 9] Camomons A Golden Experience",
+		name: "[Gen 9] A Golden Experience Camomons",
 		desc: `Pok&eacute;mon have their types set to match their first two moves.`,
 		mod: 'gen9agoldenexperience',
 		ruleset: ['Standard NatDex', 'Terastal Clause', 'Camomons Mod', 'Non-Signature Z-Move Clause'],
@@ -428,7 +428,7 @@ export const Formats: import('../sim/dex-formats').FormatList = [
 		unbanlist: ['Light of Ruin'],
 	},
 	{
-		name: "[Gen 9] Camove Chaos A Golden Experience",
+		name: "[Gen 9] A Golden Experience Camove Chaos",
 		desc: `Pok&eacute;mon have their types set to match their first two moves, and can learn any move.`,
 		mod: 'gen9agoldenexperience',
 		ruleset: ['Standard NatDex', 'Terastal Clause', '!Obtainable Moves', '!Team Preview', 'Camomons Mod', 'CFZ Clause', 'Sleep Moves Clause', 'Team Type Preview', 'Non-Signature Z-Move Clause'],
@@ -451,7 +451,7 @@ export const Formats: import('../sim/dex-formats').FormatList = [
 		unbanlist: ['Light of Ruin'],
 	},
 	{
-		name: "[Gen 9] Pokebilities A Golden Experience",
+		name: "[Gen 9] A Golden Experience Pokebilities",
 		desc: `Pok&eacute;mon have all of their released abilities simultaneously.`,
 		mod: 'pokebilitiesage',
 		ruleset: ['Standard NatDex', 'Sleep Moves Clause', 'Terastal Clause', 'Non-Signature Z-Move Clause'],
@@ -519,7 +519,7 @@ export const Formats: import('../sim/dex-formats').FormatList = [
 		},
 	},
 	{
-		name: "[Gen 9] Trademarked A Golden Experience",
+		name: "[Gen 9] A Golden Experience Trademarked",
 		desc: `Sacrifice your Pok&eacute;mon's ability for a status move that activates on switch-in.`,
 		mod: 'trademarkedage',
 		ruleset: ['Standard NatDex', 'Sleep Moves Clause', 'Terastal Clause', 'Non-Signature Z-Move Clause'],
@@ -588,7 +588,7 @@ export const Formats: import('../sim/dex-formats').FormatList = [
 		},
 	},
 	{
-		name: "[Gen 9] Free-For-All A Golden Experience",
+		name: "[Gen 9] A Golden Experience Free-For-All",
 		mod: 'gen9agoldenexperience',
 		gameType: 'freeforall',
 		rated: false,

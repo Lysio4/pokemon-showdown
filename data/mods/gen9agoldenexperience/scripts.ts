@@ -1120,7 +1120,7 @@ export const Scripts: ModdedBattleScriptsData = {
     // indomitablespirit 
     this.modData('Learnsets', 'gastly').learnset.indomitablespirit = ['9M'];
     this.modData('Learnsets', 'croagunk').learnset.indomitablespirit = ['9M'];
-    this.modData('Learnsets', 'snorunt').learnset.indomitablespirit = ['9M'];
+    this.modData('Learnsets', 'froslass').learnset.indomitablespirit = ['9M'];
     this.modData('Learnsets', 'marowakalola').learnset.indomitablespirit = ['9M'];
     this.modData('Learnsets', 'sandygast').learnset.indomitablespirit = ['9M'];
     this.modData('Learnsets', 'hawlucha').learnset.indomitablespirit = ['9M'];

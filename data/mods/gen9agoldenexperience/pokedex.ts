@@ -1840,7 +1840,7 @@ export const Pokedex: {[k: string]: ModdedSpeciesData;} = {
 		types: ["Water", "Fighting"],
 		genderRatio: { M: 0.875, F: 0.125 },
 		baseStats: { hp: 95, atk: 130, def: 95, spa: 138, spd: 70, spe: 100 },
-		abilities: { 0: "Supreme Overlord" },
+		abilities: { 0: "No Guard" },
 		heightm: 2,
 		weightkg: 94.6,
 		color: "Blue",
@@ -2755,7 +2755,7 @@ export const Pokedex: {[k: string]: ModdedSpeciesData;} = {
 	},
 	golisopodmega: {
 		inherit: true,
-		abilities: { 0: "Battle Armor" },
+		abilities: { 0: "Shell Armor" },
 	},
 	sandygast: {
 		inherit: true,
@@ -3581,15 +3581,15 @@ export const Pokedex: {[k: string]: ModdedSpeciesData;} = {
 	},
 	tatsugiricurlymega: {
 		inherit: true,
-		abilities: { 0: "Multiheaded" },
+		abilities: { 0: "Supreme Overlord" },
 	},
 	tatsugiridroopymega: {
 		inherit: true,
-		abilities: { 0: "Multiheaded" },
+		abilities: { 0: "Supreme Overlord" },
 	},
 	tatsugiristretchymega: {
 		inherit: true,
-		abilities: { 0: "Multiheaded" },
+		abilities: { 0: "Supreme Overlord" },
 	},
 	dudunsparce: {
 		inherit: true,

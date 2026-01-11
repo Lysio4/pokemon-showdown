@@ -5954,7 +5954,7 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 		shortDesc: "Heals 25% HP on KO.",
 		onSourceAfterFaint(length, target, source, effect) {
 			if (effect && effect.effectType === 'Move') {
-				this.heal(source.baseMaxhp / 4);
+				this.heal(source.baseMaxhp / 4, source, source);
 			}
 		},
 		name: "Void-Heart",

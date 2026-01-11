@@ -79,65 +79,71 @@ export const Scripts: ModdedBattleScriptsData = {
       else if (item.name === "Crustlite" && pokemon.baseSpecies.name === "Crustle") {
         return "Crustle-Mega";
       }
-      else if (item.name === "Typhlosionite" && pokemon.baseSpecies.name === "Typhlosion") {
-        return "Typhlosion-Mega";
+      else if (item.name === "Zoroarkite" && pokemon.baseSpecies.name === "Zoroark") {
+        return "Zoroark-Mega";
       }
-      else if (item.name === "Typhlosionite" && pokemon.baseSpecies.name === "Typhlosion") {
-        return "Typhlosion-Mega";
+      else if (item.name === "Zoroarkite" && pokemon.baseSpecies.name === "Zoroark-Hisui") {
+        return "Zoroark-Hisui-Mega";
       }
-      else if (item.name === "Typhlosionite" && pokemon.baseSpecies.name === "Typhlosion") {
-        return "Typhlosion-Mega";
+      else if (item.name === "Sawsbuckite" && pokemon.baseSpecies.name === "Sawsbuck") {
+        return "Sawsbuck-Spring-Mega";
       }
-      else if (item.name === "Typhlosionite" && pokemon.baseSpecies.name === "Typhlosion") {
-        return "Typhlosion-Mega";
+      else if (item.name === "Sawsbuckite" && pokemon.baseSpecies.name === "Sawsbuck-Summer") {
+        return "Sawsbuck-Summer-Mega";
       }
-      else if (item.name === "Typhlosionite" && pokemon.baseSpecies.name === "Typhlosion") {
-        return "Typhlosion-Mega";
+      else if (item.name === "Sawsbuckite" && pokemon.baseSpecies.name === "Sawsbuck-Autumn") {
+        return "Sawsbuck-Autumn-Mega";
       }
-      else if (item.name === "Typhlosionite" && pokemon.baseSpecies.name === "Typhlosion") {
-        return "Typhlosion-Mega";
+      else if (item.name === "Sawsbuckite" && pokemon.baseSpecies.name === "Sawsbuck-Winter") {
+        return "Sawsbuck-Winter-Mega";
       }
-      else if (item.name === "Typhlosionite" && pokemon.baseSpecies.name === "Typhlosion") {
-        return "Typhlosion-Mega";
+      else if (item.name === "Tyrantrumite" && pokemon.baseSpecies.name === "Tyrantrum") {
+        return "Tyrantrum-Mega";
       }
-      else if (item.name === "Typhlosionite" && pokemon.baseSpecies.name === "Typhlosion") {
-        return "Typhlosion-Mega";
+      else if (item.name === "Aurorusite" && pokemon.baseSpecies.name === "Aurorus") {
+        return "Aurorus-Mega";
       }
-      else if (item.name === "Typhlosionite" && pokemon.baseSpecies.name === "Typhlosion") {
-        return "Typhlosion-Mega";
+      else if (item.name === "Ribombinite" && pokemon.baseSpecies.name === "Ribombee") {
+        return "Ribombee-Mega";
       }
-      else if (item.name === "Typhlosionite" && pokemon.baseSpecies.name === "Typhlosion") {
-        return "Typhlosion-Mega";
+      else if (item.name === "Salazzlite" && pokemon.baseSpecies.name === "Salazzle") {
+        return "Salazzle-Mega";
       }
-      else if (item.name === "Typhlosionite" && pokemon.baseSpecies.name === "Typhlosion") {
-        return "Typhlosion-Mega";
+      else if (item.name === "Dhelmite" && pokemon.baseSpecies.name === "Dhelmise") {
+        return "Dhelmise-Mega";
       }
-      else if (item.name === "Typhlosionite" && pokemon.baseSpecies.name === "Typhlosion") {
-        return "Typhlosion-Mega";
+      else if (item.name === "Cinderacite" && pokemon.baseSpecies.name === "Cinderace") {
+        return "Cinderace-Mega";
       }
-      else if (item.name === "Typhlosionite" && pokemon.baseSpecies.name === "Typhlosion") {
-        return "Typhlosion-Mega";
+      else if (item.name === "Cramorantite" && pokemon.baseSpecies.name === "Cramorant") {
+        return "Cramorant-Mega";
       }
-      else if (item.name === "Typhlosionite" && pokemon.baseSpecies.name === "Typhlosion") {
-        return "Typhlosion-Mega";
+      else if (item.name === "Cramorantite" && pokemon.baseSpecies.name === "Cramorant-Gorging") {
+        return "Cramorant-Gorging-Mega";
       }
-      else if (item.name === "Typhlosionite" && pokemon.baseSpecies.name === "Typhlosion") {
-        return "Typhlosion-Mega";
+      else if (item.name === "Cramorantite" && pokemon.baseSpecies.name === "Cramorant-Gulping") {
+        return "Cramorant-Gulping-Mega";
       }
-      else if (item.name === "Typhlosionite" && pokemon.baseSpecies.name === "Typhlosion") {
-        return "Typhlosion-Mega";
+      else if (item.name === "Toxtricitite" && pokemon.baseSpecies.name === "Toxtricity") {
+        return "Toxtricity-Mega";
       }
-      else if (item.name === "Typhlosionite" && pokemon.baseSpecies.name === "Typhlosion") {
-        return "Typhlosion-Mega";
+      else if (item.name === "Toxtricitite" && pokemon.baseSpecies.name === "Toxtricity-Low-Key") {
+        return "Toxtricity-Low-Key-Mega";
       }
-      else if (item.name === "Typhlosionite" && pokemon.baseSpecies.name === "Typhlosion") {
-        return "Typhlosion-Mega";
+      else if (item.name === "Centiskorchite X" && pokemon.baseSpecies.name === "Centiskorch") {
+        return "Centiskorch-Mega-X";
       }
-      else if (item.name === "Typhlosionite" && pokemon.baseSpecies.name === "Typhlosion") {
-        return "Typhlosion-Mega";
+      else if (item.name === "Centiskorchite Y" && pokemon.baseSpecies.name === "Centiskorch") {
+        return "Centiskorch-Mega-Y";
       }
-      else if (item.name === "Typhlosionite" && pokemon.baseSpecies.name === "Typhlosion") {
-        return "Typhlosion-Mega";
+      else if (item.name === "Centiskorchite Z" && pokemon.baseSpecies.name === "Centiskorch") {
+        return "Centiskorch-Mega-Z";
+      }
+      else if (item.name === "Meowscaradite" && pokemon.baseSpecies.name === "Meowscarada") {
+        return "Meowscarada-Mega";
+      }
+      else if (item.name === "Skeledite" && pokemon.baseSpecies.name === "Skeledirge") {
+        return "Skeledirge-Mega";
       }
       else if (item.name === "Quaquavite" && pokemon.baseSpecies.name === "Quaquaval") {
         return "Quaquaval-Mega";

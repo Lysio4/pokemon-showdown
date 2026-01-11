@@ -9,82 +9,104 @@ export const Scripts: ModdedBattleScriptsData = {
       if ((this.battle.gen <= 7 || this.battle.ruleTable.has('+pokemontag:past') ||
         this.battle.ruleTable.has('+pokemontag:future')) &&
         altForme?.isMega && altForme?.requiredMove &&
-        pokemon.baseMoves.includes(toID(altForme.requiredMove)) && !item.zMove) {
+        pokemon.baseMoves.includes(this.battle.toID(altForme.requiredMove)) && !item.zMove) {
         return altForme.name;
       }
-      // Temporary hardcode until generation shift
-      if ((species.baseSpecies === "Floette" || species.baseSpecies === "Zygarde") && item.megaEvolves === species.name) {
-        return item.megaStone as string;
+      if (!item.megaStone) return null;
+      if (item.name === "Raichunite X" && pokemon.baseSpecies.name === "Raichu-Alola") {
+        return null;
       }
-      // a hacked-in Megazard X can mega evolve into Megazard Y, but not into Megazard X
-      if (Array.isArray(item.megaStone)) {
-        // FIXME: Change to species.name when champions comes
-        const index = (item.megaEvolves as string[]).indexOf(species.baseSpecies);
-        if (index < 0) return null;
-        return item.megaStone[index];
-        // FIXME: Change to species.name when champions comes
-      } else if (item.megaEvolves === species.baseSpecies && item.megaStone !== species.name) {
-        if (item.name === "Raichunite X" && pokemon.baseSpecies.name === "Raichu-Alola") {
-          return null;
-        }
-        else if (item.name === "Raichunite Y" && pokemon.baseSpecies.name === "Raichu-Alola") {
-          return null;
-        }
-        else if (item.name === "Slowbronite" && pokemon.baseSpecies.name === "Slowbro-Galar") {
-          return "Slowbro-Galar-Mega";
-        }
-        else if (item.name === "Zoroarkite" && pokemon.baseSpecies.name === "Zoroark-Hisui") {
-          return "Zoroark-Hisui-Mega";
-        }
-        else if (item.name === "Scizorite" && pokemon.baseSpecies.name === "Scizor-Galar") {
-          return "Scizor-Galar-Mega";
-        }
-        else if (item.name === "Typhlosionite" && pokemon.baseSpecies.name === "Typhlosion") {
-          return "Typhlosion-Mega";
-        }
-        else if (item.name === "Typhlosionite" && pokemon.baseSpecies.name === "Typhlosion-Hisui") {
-          return "Typhlosion-Hisui-Mega";
-        }
-        else if (item.name === "Medichamite" && pokemon.baseSpecies.name === "Medicham-Hisui") {
-          return null;
-        }
-        else if (item.name === "Sablenite" && pokemon.baseSpecies.name === "Sableye-Unova") {
-          return null;
-        }
-        else if (item.name === "Serperiorite" && pokemon.baseSpecies.name === "Serperior-Galar") {
-          return null;
-        }
-        else if (item.name === "Emboarite" && pokemon.baseSpecies.name === "Emboar-Galar") {
-          return null;
-        }
-        else if (item.name === "Samurottite" && pokemon.baseSpecies.name === "Samurott-Galar") {
-          return null;
-        }
-        else if (item.name === "Samurottite" && pokemon.baseSpecies.name === "Samurott-Hisui") {
-          return null;
-        }
-        else if (item.name === "Meowsticite" && pokemon.baseSpecies.name === "Meowstic") {
-          return "Meowstic-M-Mega";
-        }
-        else if (item.name === "Meowsticite" && pokemon.baseSpecies.name === "Meowstic-F") {
-          return "Meowstic-F-Mega";
-        }
-        else if (item.name === "Magearnite" && pokemon.baseSpecies.name === "Magearna-Original") {
-          return "Magearna-Original-Mega";
-        }
-        else if (item.name === "Cramorantite" && pokemon.baseSpecies.name === "Cramorant-Gulping") {
-          return "Cramorant-Gulping-Mega";
-        }
-        else if (item.name === "Cramorantite" && pokemon.baseSpecies.name === "Cramorant-Gorging") {
-          return "Cramorant-Gorging-Mega";
-        }
-        else if (item.name === "Toxtricitite" && pokemon.baseSpecies.name === "Toxtricity-Low-Key") {
-          return "Toxtricity-Low-Key-Mega";
-        }
-        return item.megaStone;
+      else if (item.name === "Raichunite Y" && pokemon.baseSpecies.name === "Raichu-Alola") {
+        return null;
       }
-      return null;
-    }, 
+      else if (item.name === "Slowbronite" && pokemon.baseSpecies.name === "Slowbro-Galar") {
+        return "Slowbro-Galar-Mega";
+      }
+      else if (item.name === "Zoroarkite" && pokemon.baseSpecies.name === "Zoroark-Hisui") {
+        return "Zoroark-Hisui-Mega";
+      }
+      else if (item.name === "Scizorite" && pokemon.baseSpecies.name === "Scizor-Galar") {
+        return "Scizor-Galar-Mega";
+      }
+      else if (item.name === "Typhlosionite" && pokemon.baseSpecies.name === "Typhlosion") {
+        return "Typhlosion-Mega";
+      }
+      else if (item.name === "Typhlosionite" && pokemon.baseSpecies.name === "Typhlosion-Hisui") {
+        return "Typhlosion-Hisui-Mega";
+      }
+      else if (item.name === "Medichamite" && pokemon.baseSpecies.name === "Medicham-Hisui") {
+        return null;
+      }
+      else if (item.name === "Sablenite" && pokemon.baseSpecies.name === "Sableye-Unova") {
+        return null;
+      }
+      else if (item.name === "Serperiorite" && pokemon.baseSpecies.name === "Serperior-Galar") {
+        return null;
+      }
+      else if (item.name === "Emboarite" && pokemon.baseSpecies.name === "Emboar-Galar") {
+        return null;
+      }
+      else if (item.name === "Samurottite" && pokemon.baseSpecies.name === "Samurott-Galar") {
+        return null;
+      }
+      else if (item.name === "Samurottite" && pokemon.baseSpecies.name === "Samurott-Hisui") {
+        return null;
+      }
+      else if (item.name === "Meowsticite" && pokemon.baseSpecies.name === "Meowstic") {
+        return "Meowstic-M-Mega";
+      }
+      else if (item.name === "Meowsticite" && pokemon.baseSpecies.name === "Meowstic-F") {
+        return "Meowstic-F-Mega";
+      }
+      else if (item.name === "Magearnite" && pokemon.baseSpecies.name === "Magearna-Original") {
+        return "Magearna-Original-Mega";
+      }
+      else if (item.name === "Cramorantite" && pokemon.baseSpecies.name === "Cramorant-Gulping") {
+        return "Cramorant-Gulping-Mega";
+      }
+      else if (item.name === "Cramorantite" && pokemon.baseSpecies.name === "Cramorant-Gorging") {
+        return "Cramorant-Gorging-Mega";
+      }
+      else if (item.name === "Toxtricitite" && pokemon.baseSpecies.name === "Toxtricity-Low-Key") {
+        return "Toxtricity-Low-Key-Mega";
+      }
+      return item.megaStone[species.name];
+    },
+    runMegaEvo(pokemon) {
+      const speciesid = pokemon.canMegaEvo || pokemon.canUltraBurst;
+      if (!speciesid) return false;
+
+      pokemon.formeChange(speciesid, pokemon.getItem(), true);
+
+      // Limit one mega evolution
+      const wasMega = pokemon.canMegaEvo;
+      for (const ally of pokemon.side.pokemon) {
+        if (wasMega) {
+          ally.canMegaEvo = false;
+        } else {
+          ally.canUltraBurst = null;
+        }
+      }
+
+      // will finish coding this later, not important since zygarde is banned
+      if (speciesid === 'Zygarde-Mega') {
+        const coreEnforcer = pokemon.moveSlots.findIndex(x => x.id === 'coreenforcer');
+        if (coreEnforcer >= 0) {
+          const nihilLight = this.battle.dex.moves.get('nihillight');
+          pokemon.moveSlots[coreEnforcer] = pokemon.baseMoveSlots[coreEnforcer] = {
+            id: nihilLight.id,
+            move: nihilLight.name,
+            pp: pokemon.moveSlots[coreEnforcer].pp,
+            maxpp: pokemon.moveSlots[coreEnforcer].maxpp,
+            disabled: false,
+            used: false,
+          };
+        }
+      }
+
+      this.battle.runEvent('AfterMega', pokemon);
+      return true;
+    },
 
     runSwitch(pokemon: Pokemon) {
       const switchersIn = [pokemon];

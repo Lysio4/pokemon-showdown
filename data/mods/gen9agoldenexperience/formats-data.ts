@@ -1835,7 +1835,7 @@ export const FormatsData: { [k: string]: SpeciesFormatsData; } = {
 		doublesTier: "DUU",
 	},
 	zangoose: {
-		tier: "PU",
+		tier: "NU",
 		doublesTier: "DUU",
 	},
 	seviper: {
@@ -3497,6 +3497,10 @@ export const FormatsData: { [k: string]: SpeciesFormatsData; } = {
 	},
 	clawitzer: {
 		tier: "PU",
+		doublesTier: "DUU",
+	},
+	clawitzermega: {
+		tier: "RU",
 		doublesTier: "DUU",
 	},
 	helioptile: {
@@ -5460,6 +5464,13 @@ export const FormatsData: { [k: string]: SpeciesFormatsData; } = {
 		tier: "OU",
 		doublesTier: "DUU",
 	},
+	cookaos: {
+		tier: "LC",
+	},
+	catastrochef: {
+		tier: "NU",
+		doublesTier: "DUU",
+	},
 	goldiorno: {
 		tier: "RU",
 		doublesTier: "DUU",
@@ -5589,14 +5600,6 @@ export const FormatsData: { [k: string]: SpeciesFormatsData; } = {
 	irondrill: {
 		tier: "OU",
 		doublesTier: "DUU",
-	},
-	coalkaiju: {
-		tier: "RU",
-		doublesTier: "DUU",
-	},
-	ironbike: {
-		tier: "RU",
-		doublesTier: "DOU",
 	},
 	purerainbow: {
 		tier: "UU",

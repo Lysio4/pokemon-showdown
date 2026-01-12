@@ -22154,6 +22154,7 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 		target: "normal",
 		type: "Poison",
 		contestType: "Tough",
+		isNonstandard: "Custom",
 	},
 	schuss: {
 		num: -2,
@@ -22174,6 +22175,7 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 		target: "normal",
 		type: "Ice",
 		contestType: "Cool",
+		isNonstandard: "Custom",
 	},
 	goodfishing: {
 		num: -3,
@@ -22209,6 +22211,7 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 		target: "normal",
 		type: "Flying",
 		contestType: "Tough",
+		isNonstandard: "Custom",
 	},
 	magisterialwind: {
 		num: -4,
@@ -22230,6 +22233,7 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 		target: "normal",
 		type: "Flying",
 		contestType: "Cool",
+		isNonstandard: "Custom",
 	},
 	stellarpunch: {
 		num: -5,
@@ -22250,6 +22254,7 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 		target: "normal",
 		type: "Fighting",
 		contestType: "Tough",
+		isNonstandard: "Custom",
 	},
 	toxicsting: {
 		shortDesc: "50% drain; badly poison target.",
@@ -22272,6 +22277,7 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 		},
 		target: "normal",
 		type: "Poison",
+		isNonstandard: "Custom",
 	},
 	detectmagic: {
 		num: -7,

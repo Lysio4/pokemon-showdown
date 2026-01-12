@@ -6403,6 +6403,10 @@ export const FormatsData: import('../sim/dex-species').SpeciesFormatsDataTable =
 		isNonstandard: "Custom",
 		tier: "Illegal",
 	},
+	clawitzermega: {
+		isNonstandard: "Custom",
+		tier: "Illegal",
+	},
 	tyrantrummega: {
 		isNonstandard: "Custom",
 		tier: "Illegal",
@@ -6819,6 +6823,14 @@ export const FormatsData: import('../sim/dex-species').SpeciesFormatsDataTable =
 		isNonstandard: "Custom",
 		tier: "Illegal",
 	},
+	cookaos: {
+		isNonstandard: "Custom",
+		tier: "Illegal",
+	},
+	catastrochef: {
+		isNonstandard: "Custom",
+		tier: "Illegal",
+	},
 	goldiorno: {
 		isNonstandard: "Custom",
 		tier: "Illegal",
@@ -6924,14 +6936,6 @@ export const FormatsData: import('../sim/dex-species').SpeciesFormatsDataTable =
 		tier: "Illegal",
 	},
 	irondrill: {
-		isNonstandard: "Custom",
-		tier: "Illegal",
-	},
-	coalkaiju: {
-		isNonstandard: "Custom",
-		tier: "Illegal",
-	},
-	ironbike: {
 		isNonstandard: "Custom",
 		tier: "Illegal",
 	},

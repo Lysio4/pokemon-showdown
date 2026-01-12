@@ -1,125 +1,23 @@
 export const Moves: { [k: string]: ModdedMoveData; } = {
 	tentacatch: {
-		num: -1,
-		accuracy: 85,
-		basePower: 60,
-		category: "Physical",
-		name: "Tentacatch",
-		shortDesc: "Traps and damages the target for 4-5 turns. Lowers the target's Atk by 1 stage.",
-		desc: "Traps and damages the target for 4-5 turns. Lowers the target's Atk by 1 stage.",
-		pp: 20,
-		priority: 0,
-		flags: { contact: 1, protect: 1, mirror: 1 },
-		volatileStatus: 'partiallytrapped',
-		secondary: {
-			chance: 100,
-			boosts: {
-				atk: -1,
-			},
-		},
-		onPrepareHit(target, source) {
-			this.attrLastMove('[still]');
-			this.add('-anim', source, "Toxic Thread", target);
-		},
-		target: "normal",
-		type: "Poison",
-		contestType: "Tough",
+		inherit: true,
+		isNonstandard: null,
 	},
 	schuss: {
-		num: -2,
-		accuracy: 100,
-		basePower: 120,
-		category: "Physical",
-		shortDesc: "User takes 1/3 of damages inflicted.",
-		name: "Schuss",
-		pp: 15,
-		priority: 0,
-		flags: { contact: 1, protect: 1, mirror: 1, gravity: 1 },
-		recoil: [33, 100],
-		secondary: null,
-		onPrepareHit(target, source) {
-			this.attrLastMove('[still]');
-			this.add('-anim', source, "Icicle Crash", target);
-		},
-		target: "normal",
-		type: "Ice",
-		contestType: "Cool",
+		inherit: true,
+		isNonstandard: null,
 	},
 	goodfishing: {
-		num: -3,
-		accuracy: 100,
-		basePower: 65,
-		category: "Physical",
-		name: "Good Fishing",
-		shortDesc: "1.5x if foe holds an item. Removes item and heals 10% of max HP.",
-		pp: 10,
-		priority: 0,
-		flags: { contact: 1, protect: 1, mirror: 1 },
-		onBasePower(basePower, source, target, move) {
-			const item = target.getItem();
-			if (!this.singleEvent('TakeItem', item, target.itemState, target, target, move, item)) return;
-			if (item.id) {
-				return this.chainModify(1.5);
-			}
-		},
-		onAfterHit(target, source) {
-			if (source.hp) {
-				const item = target.takeItem();
-				if (item) {
-					this.add('-enditem', target, item.name, '[from] move: Good Fishing', '[of] ' + source);
-					this.heal(source.maxhp / 10, source);
-				}
-			}
-		},
-		onPrepareHit(target, source) {
-			this.attrLastMove('[still]');
-			this.add('-anim', source, "Brave Bird", target);
-		},
-		secondary: null,
-		target: "normal",
-		type: "Flying",
-		contestType: "Tough",
+		inherit: true,
+		isNonstandard: null,
 	},
 	magisterialwind: {
-		num: -4,
-		accuracy: 100,
-		basePower: 80,
-		category: "Special",
-		shortDesc: "Ignores the target's ability, cannot be redirected.",
-		name: "Magisterial Wind",
-		pp: 10,
-		priority: 0,
-		flags: { protect: 1, mirror: 1 },
-		ignoreAbility: true,
-		tracksTarget: true,
-		onPrepareHit(target, source) {
-			this.attrLastMove('[still]');
-			this.add('-anim', source, "Tailwind", target);
-		},
-		secondary: null,
-		target: "normal",
-		type: "Flying",
-		contestType: "Cool",
+		inherit: true,
+		isNonstandard: null,
 	},
 	stellarpunch: {
-		num: -5,
-		accuracy: 100,
-		basePower: 90,
-		category: "Physical",
-		shortDesc: "Ignores the target's ability.",
-		name: "Stellar Punch",
-		pp: 10,
-		priority: 0,
-		flags: { punch: 1, contact: 1, protect: 1, mirror: 1 },
-		ignoreAbility: true,
-		onPrepareHit(target, source) {
-			this.attrLastMove('[still]');
-			this.add('-anim', source, "Dynamic Punch", target);
-		},
-		secondary: null,
-		target: "normal",
-		type: "Fighting",
-		contestType: "Tough",
+		inherit: true,
+		isNonstandard: null,
 	},
 	toxicthread: {
 		inherit: true,
@@ -128,26 +26,8 @@ export const Moves: { [k: string]: ModdedMoveData; } = {
 		shortDesc: "Lowers the target's Speed by 1 and badly poisons it.",
 	},
 	toxicsting: {
-		shortDesc: "50% drain; badly poison target.",
-		num: -6,
-		accuracy: 100,
-		basePower: 60,
-		category: "Physical",
-		name: "Toxic Sting",
-		pp: 10,
-		priority: 0,
-		flags: { protect: 1, mirror: 1, heal: 1 },
-		drain: [1, 2],
-		secondary: {
-			chance: 100,
-			status: 'tox',
-		},
-		onPrepareHit(target, source) {
-			this.attrLastMove('[still]');
-			this.add('-anim', source, "Poison Fang", target);
-		},
-		target: "normal",
-		type: "Poison",
+		inherit: true,
+		isNonstandard: null,
 	},
 	detectmagic: {
 		num: -7,

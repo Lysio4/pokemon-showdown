@@ -104824,6 +104824,7 @@ export const Learnsets: import('../sim/dex-species').LearnsetDataTable = {
 		},
 	},
 	catastrochef: {
+		learnset: {
 			acrobatics: ["9M"],
 			afteryou: ["9E"],
 			alluringvoice: ["9M"],

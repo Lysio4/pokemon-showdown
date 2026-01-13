@@ -30,350 +30,60 @@ export const Moves: { [k: string]: ModdedMoveData; } = {
 		isNonstandard: null,
 	},
 	detectmagic: {
-		num: -7,
-		accuracy: 100,
-		basePower: 70,
-		category: "Special",
-		name: "Detect Magic",
-		desc: "This move is super effective on Dark type targets.",
-		shortDesc: "Super effective on Dark targets.",
-		pp: 20,
-		priority: 0,
-		flags: { protect: 1, mirror: 1 },
-		onEffectiveness(typeMod, target, type) {
-			if (type === 'Dark') return 1;
-		},
-		onModifyMove(move) {
-			if (!move.ignoreImmunity) move.ignoreImmunity = {};
-			if (move.ignoreImmunity !== true) {
-				move.ignoreImmunity['Psychic'] = true;
-			}
-		},
-		onPrepareHit(target, source) {
-			this.attrLastMove('[still]');
-			this.add('-anim', source, "Psychic", target);
-		},
-		target: "normal",
-		type: "Psychic",
-		contestType: "Beautiful",
+		inherit: true,
+		isNonstandard: null,
 	},
 	dispelmagic: {
-		num: -8,
-		accuracy: true,
-		basePower: 70,
-		category: "Special",
-		name: "Dispel Magic",
-		pp: 15,
-		priority: 0,
-		flags: { protect: 1, mirror: 1 },
-		onHit(target) {
-			target.clearBoosts();
-			this.add('-clearboost', target);
-		},
-		onPrepareHit(target, source) {
-			this.attrLastMove('[still]');
-			this.add('-anim', source, "Psyshock", target);
-		},
-		secondary: null,
-		target: "normal",
-		type: "Psychic",
-		shortDesc: "Resets all of the target's stat stages to 0.",
+		inherit: true,
+		isNonstandard: null,
 	},
 	photopower: {
-		num: -9,
-		accuracy: true,
-		basePower: 0,
-		category: "Status",
-		name: "Photo-Power",
-		shortDesc: "Raises user's Sp. Atk by 2 and Speed by 1 in Sun.",
-		pp: 5,
-		priority: 0,
-		flags: { snatch: 1 },
-		onModifyMove(move, pokemon) {
-			if (['sunnyday', 'desolateland'].includes(pokemon.effectiveWeather())) move.boosts = { spa: 2, spe: 1 };
-		},
-		onPrepareHit(target, source) {
-			this.attrLastMove('[still]');
-			this.add('-anim', source, "Growth", target);
-		},
-		secondary: null,
-		target: "self",
-		type: "Grass",
-		zMove: { boost: { spa: 1 } },
-		contestType: "Beautiful",
+		inherit: true,
+		isNonstandard: null,
 	},
 	draconicwrath: {
-		num: -10,
-		accuracy: 100,
-		basePower: 50,
-		basePowerCallback(pokemon, target, move) {
-			if (!target.newlySwitched) {
-				this.debug('Draconic Wrath damage boost');
-				return move.basePower * 2;
-			}
-			this.debug('Draconic Wrath NOT boosted');
-			return move.basePower;
-		},
-		category: "Physical",
-		name: "Draconic Wrath",
-		shortDesc: "If a foe isn't switching in, hits it at 2x power.",
-		pp: 10,
-		priority: 0,
-		flags: { contact: 1, protect: 1, mirror: 1 },
-		onPrepareHit(target, source) {
-			this.attrLastMove('[still]');
-			this.add('-anim', source, "Outrage", target);
-		},
-		secondary: null,
-		target: "normal",
-		type: "Dragon",
+		inherit: true,
+		isNonstandard: null,
 	},
 	purifyingstream: {
-		num: -11,
-		accuracy: true,
-		basePower: 90,
-		category: "Special",
-		name: "Purifying Stream",
-		shortDesc: "Resets all of the target's stat stages to 0.",
-		pp: 5,
-		priority: 0,
-		flags: { protect: 1, mirror: 1 },
-		onHit(target) {
-			target.clearBoosts();
-			this.add('-clearboost', target);
-		},
-		onPrepareHit(target, source) {
-			this.attrLastMove('[still]');
-			this.add('-anim', source, "Scald", target);
-		},
-		secondary: null,
-		target: "normal",
-		type: "Water",
-		contestType: "Beautiful",
+		inherit: true,
+		isNonstandard: null,
 	},
 	railwaysmash: {
-		num: -12,
-		accuracy: 100,
-		basePower: 120,
-		category: "Physical",
-		name: "Railway Smash",
-		shortDesc: "Has 33% recoil.",
-		pp: 15,
-		priority: 0,
-		flags: { contact: 1, protect: 1, mirror: 1 },
-		recoil: [33, 100],
-		onPrepareHit(target, source) {
-			this.attrLastMove('[still]');
-			this.add('-anim', source, "Iron Head", target);
-		},
-		target: "normal",
-		type: "Steel",
+		inherit: true,
+		isNonstandard: null,
 	},
 	goldenexperience: {
-		num: -13,
-		accuracy: 100,
-		basePower: 75,
-		category: "Physical",
-		name: "Golden Experience",
-		shortDesc: "Heal 50% of damages dealt.",
-		pp: 10,
-		priority: 0,
-		flags: { contact: 1, protect: 1, mirror: 1, punch: 1, heal: 1 },
-		drain: [1, 2],
-		onPrepareHit(target, source) {
-			this.attrLastMove('[still]');
-			this.add('-anim', source, "Moonblast", target);
-		},
-		secondary: null,
-		target: "normal",
-		type: "Fairy",
-		contestType: "Tough",
+		inherit: true,
+		isNonstandard: null,
 	},
 	dimensionalbleeding: {
-		num: -14,
-		accuracy: 100,
-		basePower: 100,
-		category: "Special",
-		name: "Dimensional Bleeding",
-		shortDesc: "Physical if Atk > SpA.",
-		pp: 10,
-		priority: 0,
-		flags: { protect: 1, mirror: 1 },
-		onModifyMove(move, pokemon) {
-			if (pokemon.getStat('atk', false, true) > pokemon.getStat('spa', false, true)) move.category = 'Physical';
-		},
-		onPrepareHit(target, source) {
-			this.attrLastMove('[still]');
-			this.add('-anim', source, "Hyperspace Fury", target);
-		},
-		secondary: null,
-		target: "normal",
-		type: "Dark",
+		inherit: true,
+		isNonstandard: null,
 	},
 	frostbite: {
-		num: -15,
-		accuracy: 90,
-		basePower: 0,
-		category: "Status",
-		desc: "The Pokémon at the user's position steals some of the target's maximum HP at the end of each turn. Damage begins at 1/16, rounded down, and increases each turn like Toxic. If Big Root is held by the recipient, the HP recovered is 1.3x normal, rounded half down. If the target uses Baton Pass, the replacement will continue being leeched. If the target switches out, the effect ends.",
-		shortDesc: "Target's HP is restored to user every turn. Damage increases like Toxic.",
-		name: "Frostbite",
-		pp: 10,
-		priority: 0,
-		flags: { protect: 1, reflectable: 1, mirror: 1 },
-		volatileStatus: 'frostbite',
-		condition: {
-			onStart(target) {
-				this.effectState.stage = 0;
-				this.add('-start', target, 'move: Frostbite');
-			},
-			onResidualOrder: 8,
-			onResidual(pokemon) {
-				if (this.effectState.stage < 15) {
-					this.effectState.stage++;
-				}
-				// const target = this.effectState.source.side.active[pokemon.volatiles['frostbite'].sourcePosition];
-				for (const target of this.getAllActive()) {
-					if (pokemon.volatiles['frostbite']) {
-						const damage = this.damage(this.clampIntRange(pokemon.baseMaxhp / 16, 1) * this.effectState.stage, pokemon, target,); //'[silent]'); //looking at that soon
-						if (damage) {
-							this.heal(damage, target, pokemon);
-						}
-					}
-					if (!target || target.fainted || target.hp <= 0) {
-						this.debug('Nothing to leech into');
-						return;
-					}
-				}
-			},
-		},
-		onTryImmunity(target) {
-			return (!target.hasType('Fire') && !target.hasType('Ice'));
-		},
-		onPrepareHit(target, source) {
-			this.attrLastMove('[still]');
-			this.add('-anim', source, "Icy Wind", target);
-		},
-		secondary: null,
-		target: "normal",
-		type: "Ice",
-		zMove: { boost: { def: 1 } },
-		contestType: "Clever",
+		inherit: true,
+		isNonstandard: null,
 	},
 	aspiravoid: {
-		num: -16,
-		accuracy: 100,
-		basePower: 80,
-		category: "Special",
-		name: "Aspira Void",
-		pp: 10,
-		priority: 0,
-		flags: { protect: 1, mirror: 1, heal: 1 },
-		drain: [1, 2],
-		onPrepareHit(target, source) {
-			this.attrLastMove('[still]');
-			this.add('-anim', source, "Dark Pulse", target);
-		},
-		secondary: null,
-		target: "normal",
-		shortDesc: "Heals 50% of damage dealt.",
-		type: "Dark",
-		contestType: "Clever",
+		inherit: true,
+		isNonstandard: null,
 	},
 	underdog: {
-		num: -17,
-		accuracy: 100,
-		basePower: 60,
-		category: "Physical",
-		name: "Underdog",
-		shortDesc: "BP x2 if target's Atk > user's Atk.",
-		pp: 15,
-		priority: 0,
-		flags: { protect: 1, mirror: 1 },
-		onBasePower(basePower, source, target, move) {
-			const targetAtk = target.storedStats.atk;
-			const sourceAtk = source.storedStats.atk;
-			if (targetAtk >= sourceAtk) {
-				return this.chainModify(2);
-			}
-		},
-		onPrepareHit(target, source) {
-			this.attrLastMove('[still]');
-			this.add('-anim', source, "Facade", target);
-		},
-		secondary: null,
-		target: "normal",
-		type: "Normal",
-		zMove: { boost: { spe: 1 } },
-		contestType: "Clever",
+		inherit: true,
+		isNonstandard: null,
 	},
 	flamingsphere: {
-		num: -18,
-		accuracy: 100,
-		basePower: 40,
-		category: "Special",
-		shortDesc: "Usually goes first.",
-		name: "Flaming Sphere",
-		pp: 20,
-		priority: 1,
-		flags: { bullet: 1, protect: 1, mirror: 1 },
-		onPrepareHit(target, source) {
-			this.attrLastMove('[still]');
-			this.add('-anim', source, "Pyro Ball", target);
-		},
-		secondary: null,
-		target: "normal",
-		type: "Fire",
-		contestType: "Tough",
+		inherit: true,
+		isNonstandard: null,
 	},
 	fireball: {
-		num: -19,
-		accuracy: 100,
-		basePower: 100,
-		category: "Special",
-		name: "Fire Ball",
-		shortDesc: "Ends all existing terrains.",
-		pp: 10,
-		priority: 0,
-		flags: { bullet: 1, protect: 1, mirror: 1 },
-		onHit() {
-			this.field.clearTerrain();
-		},
-		onPrepareHit(target, source) {
-			this.attrLastMove('[still]');
-			this.add('-anim', source, "Pyro Ball", target);
-		},
-		secondary: null,
-		target: "allAdjacentFoes",
-		type: "Fire",
-		contestType: "Beautiful",
+		inherit: true,
+		isNonstandard: null,
 	},
 	backfire: {
-		num: -20,
-		accuracy: 100,
-		basePower: 65,
-		basePowerCallback(pokemon, target, move) {
-			if (target.newlySwitched || this.queue.willMove(target)) {
-				this.debug('Backfire NOT boosted');
-				return move.basePower;
-			}
-			this.debug('Backfire damage boost');
-			return move.basePower * 2;
-		},
-		priority: -1,
-		category: "Physical",
-		name: "Backfire",
-		pp: 15,
-		flags: { contact: 1, protect: 1, mirror: 1 },
-		onPrepareHit(target, source) {
-			this.attrLastMove('[still]');
-			this.add('-anim', source, "Overheat", target);
-		},
-		secondary: null,
-		target: "normal",
-		type: "Fire",
-		contestType: "Tough",
-		shortDesc: "Usually goes last. Power doubles if the user moves after the target.",
+		inherit: true,
+		isNonstandard: null,
 	},
 	highwater: {
 		num: -21,

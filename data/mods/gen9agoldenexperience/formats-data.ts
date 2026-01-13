@@ -155,28 +155,28 @@ export const FormatsData: { [k: string]: SpeciesFormatsData; } = {
 		tier: "NFE",
 	},
 	pikachucosplay: {
-		tier: "PU",
-		doublesTier: "DUU",
+		isNonstandard: "Past",
+		tier: "Illegal",
 	},
 	pikachurockstar: {
-		tier: "PU",
-		doublesTier: "DUU",
+		isNonstandard: "Past",
+		tier: "Illegal",
 	},
 	pikachubelle: {
-		tier: "PU",
-		doublesTier: "DUU",
+		isNonstandard: "Past",
+		tier: "Illegal",
 	},
 	pikachupopstar: {
-		tier: "PU",
-		doublesTier: "DUU",
+		isNonstandard: "Past",
+		tier: "Illegal",
 	},
 	pikachuphd: {
-		tier: "PU",
-		doublesTier: "DUU",
+		isNonstandard: "Past",
+		tier: "Illegal",
 	},
 	pikachulibre: {
-		tier: "PU",
-		doublesTier: "DUU",
+		isNonstandard: "Past",
+		tier: "Illegal",
 	},
 	pikachuoriginal: {
 		tier: "PU",
@@ -1068,7 +1068,7 @@ export const FormatsData: { [k: string]: SpeciesFormatsData; } = {
 		doublesTier: "DUU",
 	},
 	typhlosionmega: {
-		tier: "UU",
+		tier: "RU",
 		doublesTier: "DOU",
 	},
 	typhlosionhisui: {
@@ -2031,7 +2031,7 @@ export const FormatsData: { [k: string]: SpeciesFormatsData; } = {
 		tier: "NFE",
 	},
 	metagross: {
-		tier: "UU",
+		tier: "RU",
 		doublesTier: "DUU",
 	},
 	metagrossmega: {
@@ -4330,7 +4330,7 @@ export const FormatsData: { [k: string]: SpeciesFormatsData; } = {
 		tier: "Illegal",
 	},
 	isaapple: {
-		tier: "UU",
+		tier: "RU",
 		doublesTier: "DUU",
 	},
 	appletun: {
@@ -4669,7 +4669,7 @@ export const FormatsData: { [k: string]: SpeciesFormatsData; } = {
 		doublesTier: "DOU",
 	},
 	basculegion: {
-		tier: "RUBL",
+		tier: "RU",
 		doublesTier: "DOU",
 	},
 	basculegionf: {
@@ -5468,7 +5468,7 @@ export const FormatsData: { [k: string]: SpeciesFormatsData; } = {
 		tier: "LC",
 	},
 	catastrochef: {
-		tier: "NU",
+		tier: "RU",
 		doublesTier: "DUU",
 	},
 	goldiorno: {
@@ -5498,7 +5498,7 @@ export const FormatsData: { [k: string]: SpeciesFormatsData; } = {
 		doublesTier: "DUU",
 	},
 	tapuwala: {
-		tier: "UU",
+		tier: "UUBL",
 		doublesTier: "DOU",
 	},
 	snoxin: {

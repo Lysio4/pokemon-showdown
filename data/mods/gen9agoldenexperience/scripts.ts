@@ -97,6 +97,9 @@ export const Scripts: ModdedBattleScriptsData = {
       else if (item.name === "Sawsbuckite" && pokemon.baseSpecies.name === "Sawsbuck-Winter") {
         return "Sawsbuck-Winter-Mega";
       }
+      else if (item.name === "Clawitzerite" && pokemon.baseSpecies.name === "Clawitzer") {
+        return "Clawitzer-Mega";
+      }
       else if (item.name === "Tyrantrumite" && pokemon.baseSpecies.name === "Tyrantrum") {
         return "Tyrantrum-Mega";
       }
@@ -1358,16 +1361,6 @@ export const Scripts: ModdedBattleScriptsData = {
     this.modData('Learnsets', 'spearow').learnset.bravebird = ['9L1'];
     this.modData('Learnsets', 'arbok').learnset.meanlook = ['9L1'];
     this.modData('Learnsets', 'arbok').learnset.partingshot = ['9L1'];
-    this.modData('Learnsets', 'pikachurockstar').learnset.bulletpunch = ['9L1'];
-    this.modData('Learnsets', 'pikachurockstar').learnset.rapidspin = ['9L1'];
-    this.modData('Learnsets', 'pikachubelle').learnset.iceshard = ['9L1'];
-    this.modData('Learnsets', 'pikachubelle').learnset.freezedry = ['9L1'];
-    this.modData('Learnsets', 'pikachupopstar').learnset.charm = ['9L1'];
-    this.modData('Learnsets', 'pikachupopstar').learnset.dazzlinggleam = ['9L1'];
-    this.modData('Learnsets', 'pikachuphd').learnset.psychic = ['9L1'];
-    this.modData('Learnsets', 'pikachuphd').learnset.psyshock = ['9L1'];
-    this.modData('Learnsets', 'pikachulibre').learnset.machpunch = ['9L1'];
-    this.modData('Learnsets', 'pikachulibre').learnset.martialpunch = ['9L1'];
     this.modData('Learnsets', 'raichu').learnset.drainpunch = ['9L1']; // ZA addition
     this.modData('Learnsets', 'sandslash').learnset.spikyshield = ['9L1'];
     this.modData('Learnsets', 'sandslashalola').learnset.spikyshield = ['9L1'];

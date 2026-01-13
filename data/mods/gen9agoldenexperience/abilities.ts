@@ -845,16 +845,6 @@ export const Abilities: { [abilityid: string]: ModdedAbilityData; } = {
 		inherit: true,
 		isNonstandard: null,
 	},
-	cutecharm: {
-		inherit: true,
-		onDamagingHit(damage, target, source, move) {},
-		onSourceModifyDamage(damage, source, target, move) {
-			return this.chainModify(0.75);
-		},
-		flags: {breakable: 1},
-		shortDesc: "This Pokemon receives 25% less damage from all attacks.",
-		desc: "This Pokemon receives 25% less damage from all attacks.",
-	},
 	reboundbelly: {
 		inherit: true,
 		isNonstandard: null,

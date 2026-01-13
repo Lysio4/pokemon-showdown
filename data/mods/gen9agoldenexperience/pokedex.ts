@@ -276,7 +276,7 @@ export const Pokedex: {[k: string]: ModdedSpeciesData;} = {
 	},
 	victreebelmega: {
 		inherit: true,
-		abilities: { 0: "Corrosion" },
+		abilities: { 0: "Neutralizing Gas" },
 	},
 	tentacruel: {
 		inherit: true,
@@ -2502,7 +2502,7 @@ export const Pokedex: {[k: string]: ModdedSpeciesData;} = {
 	sylveon: {
 		inherit: true,
 		baseStats: {hp: 95, atk: 60, def: 65, spa: 110, spd: 130, spe: 65},
-		abilities: {0: "Cute Charm", 1: "Healer", H: "Pixilate"},
+		abilities: {0: "Cute Charm", 1: "Trace", H: "Pixilate"},
 	},
 	carbink: {
 		inherit: true,
@@ -3319,6 +3319,10 @@ export const Pokedex: {[k: string]: ModdedSpeciesData;} = {
 		inherit: true,
 		abilities: {0: "Pressure", 1: "Inner Focus", H: "Poison Touch"},
 	},
+	enamorus: {
+		inherit: true,
+		abilities: {0: "Trace", H: "Contrary"},
+	},
 	enamorustherian: {
 		inherit: true,
 		abilities: {0: "Magic Guard"},
@@ -3377,7 +3381,7 @@ export const Pokedex: {[k: string]: ModdedSpeciesData;} = {
 		types: ["Water", "Fighting"],
 		genderRatio: {M: 0.875, F: 0.125},
 		baseStats: {hp: 85, atk: 130, def: 110, spa: 85, spd: 105, spe: 115},
-		abilities: {0: "Cute Charm"},
+		abilities: {0: "Dancer"},
 		heightm: 1.8,
 		weightkg: 61.9,
 		color: "Blue",

@@ -22306,6 +22306,7 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 		target: "normal",
 		type: "Psychic",
 		contestType: "Beautiful",
+		isNonstandard: "Custom",
 	},
 	dispelmagic: {
 		num: -8,
@@ -22328,6 +22329,7 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 		target: "normal",
 		type: "Psychic",
 		shortDesc: "The target is cleared from all its stat changes.",
+		isNonstandard: "Custom",
 	},
 	photopower: {
 		num: -9,
@@ -22351,6 +22353,7 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 		type: "Grass",
 		zMove: { boost: { spa: 1 } },
 		contestType: "Beautiful",
+		isNonstandard: "Custom",
 	},
 	draconicwrath: {
 		num: -10,
@@ -22377,6 +22380,7 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 		secondary: null,
 		target: "normal",
 		type: "Dragon",
+		isNonstandard: "Custom",
 	},
 	purifyingstream: {
 		num: -11,
@@ -22400,6 +22404,7 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 		target: "normal",
 		type: "Water",
 		contestType: "Beautiful",
+		isNonstandard: "Custom",
 	},
 	railwaysmash: {
 		num: -12,
@@ -22418,6 +22423,7 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 		},
 		target: "normal",
 		type: "Steel",
+		isNonstandard: "Custom",
 	},
 	goldenexperience: {
 		num: -13,
@@ -22438,6 +22444,7 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 		target: "normal",
 		type: "Fairy",
 		contestType: "Tough",
+		isNonstandard: "Custom",
 	},
 	dimensionalbleeding: {
 		num: -14,
@@ -22459,6 +22466,7 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 		secondary: null,
 		target: "normal",
 		type: "Dark",
+		isNonstandard: "Custom",
 	},
 	frostbite: {
 		num: -15,
@@ -22509,6 +22517,7 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 		type: "Ice",
 		zMove: { boost: { def: 1 } },
 		contestType: "Clever",
+		isNonstandard: "Custom",
 	},
 	aspiravoid: {
 		num: -16,
@@ -22529,6 +22538,7 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 		shortDesc: "Heals 50% of damage dealt.",
 		type: "Dark",
 		contestType: "Clever",
+		isNonstandard: "Custom",
 	},
 	underdog: {
 		num: -17,
@@ -22556,6 +22566,7 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 		type: "Normal",
 		zMove: { boost: { spe: 1 } },
 		contestType: "Clever",
+		isNonstandard: "Custom",
 	},
 	flamingsphere: {
 		num: -18,
@@ -22575,6 +22586,7 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 		target: "normal",
 		type: "Fire",
 		contestType: "Tough",
+		isNonstandard: "Custom",
 	},
 	fireball: {
 		num: -19,
@@ -22597,6 +22609,7 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 		target: "allAdjacentFoes",
 		type: "Fire",
 		contestType: "Beautiful",
+		isNonstandard: "Custom",
 	},
 	backfire: {
 		num: -20,
@@ -22624,6 +22637,7 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 		type: "Fire",
 		contestType: "Tough",
 		shortDesc: "Usually goes last. Power doubles if the user moves after the target.",
+		isNonstandard: "Custom",
 	},
 	highwater: {
 		num: -21,

@@ -21862,7 +21862,7 @@ export const Pokedex: import('../sim/dex-species').SpeciesDataTable = {
 		types: ["Water", "Fighting"],
 		genderRatio: {M: 0.875, F: 0.125},
 		baseStats: {hp: 85, atk: 130, def: 110, spa: 85, spd: 105, spe: 115},
-		abilities: {0: "Cute Charm"},
+		abilities: {0: "Dancer"},
 		heightm: 1.8,
 		weightkg: 61.9,
 		color: "Blue",

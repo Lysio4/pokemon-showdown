@@ -1034,7 +1034,6 @@ export const Pokedex: {[k: string]: ModdedSpeciesData;} = {
 	},
 	meditite: {
 		inherit: true,
-		abilities: {0: "Pure Power", 1: "Telepathy", H: "Chakra Surge"},
 		otherFormes: ["Meditite-Hisui"],
 		formeOrder: ["Meditite", "Meditite-Hisui"],
 	},
@@ -1054,7 +1053,6 @@ export const Pokedex: {[k: string]: ModdedSpeciesData;} = {
 	},
 	medicham: {
 		inherit: true,
-		abilities: {0: "Pure Power", 1: "Telepathy", H: "Chakra Surge"},
 		otherFormes: ["Medicham-Mega", "Medicham-Hisui"],
 		formeOrder: ["Medicham", "Medicham-Mega", "Medicham-Hisui"],
 	},

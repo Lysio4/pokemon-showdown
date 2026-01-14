@@ -3066,7 +3066,7 @@ export const Pokedex: {[k: string]: ModdedSpeciesData;} = {
 		name: "Cramorant-Gulping-Mega",
 		baseSpecies: "Cramorant",
 		forme: "Gulping-Mega",
-		types: ["Water"],
+		types: ["Flying", "Water"],
 		baseStats: {hp: 90, atk: 105, def: 95, spa: 105, spd: 115, spe: 85},
 		abilities: {0: "Free Gullet"},
 		heightm: 0.8,

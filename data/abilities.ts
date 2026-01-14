@@ -7345,18 +7345,6 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 				this.damage(source.baseMaxhp / 8, source, target);
 			}
 		},
-		onDamagingHit(damage, target, source, move) {
-			if (!source.hp || !source.isActive || target.isSemiInvulnerable()) return;
-			if (['cramorantgulping', 'cramorantgorging'].includes(target.species.id)) {
-				this.damage(source.baseMaxhp / 4, source, target);
-				if (target.species.id === 'cramorantgulping') {
-					this.boost({ def: -1 }, source, target, null, true);
-				} else {
-					source.trySetStatus('par', target, move);
-				}
-				target.formeChange('cramorant', move);
-			}
-		},
 		onBeforeMovePriority: 0.5,
 		onBeforeMove(attacker, defender, move) {
 			if (attacker.species.baseSpecies !== 'Cramorant' || attacker.transformed) return;

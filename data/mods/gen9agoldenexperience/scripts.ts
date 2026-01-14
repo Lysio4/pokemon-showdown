@@ -122,10 +122,10 @@ export const Scripts: ModdedBattleScriptsData = {
         return "Cramorant-Mega";
       }
       else if (item.name === "Cramorantite" && pokemon.baseSpecies.name === "Cramorant-Gorging") {
-        return "Cramorant-Gorging-Mega";
+        return "Cramorant-Mega";
       }
       else if (item.name === "Cramorantite" && pokemon.baseSpecies.name === "Cramorant-Gulping") {
-        return "Cramorant-Gulping-Mega";
+        return "Cramorant-Mega";
       }
       else if (item.name === "Toxtricitite" && pokemon.baseSpecies.name === "Toxtricity") {
         return "Toxtricity-Mega";
@@ -2206,12 +2206,8 @@ export const Scripts: ModdedBattleScriptsData = {
     this.modData('Learnsets', 'cramorant').learnset.thunderbolt = ['9L1'];
     this.modData('Learnsets', 'cramorant').learnset.discharge = ['9L1'];
     this.modData('Learnsets', 'cramorant').learnset.wildcharge = ['9L1'];
-    this.modData('Learnsets', 'cramorant').learnset.parallelcircuit = ['9L1'];
-    this.modData('Learnsets', 'cramorant').learnset.voltswitch = ['9L1'];
     this.modData('Learnsets', 'cramorant').learnset.thunder = ['9L1'];
-    this.modData('Learnsets', 'cramorant').learnset.thunderwave = ['9L1'];
     this.modData('Learnsets', 'cramorant').learnset.supercellslam = ['9L1'];
-    this.modData('Learnsets', 'toxtricity').learnset.sonicboom = ['9L1'];
     this.modData('Learnsets', 'toxtricity').learnset.closecombat = ['9L1'];
     this.modData('Learnsets', 'toxtricity').learnset.poweruppunch = ['9L1']; // ZA addition
     this.modData('Learnsets', 'toxtricitylowkey').learnset.sonicboom = ['9L1'];

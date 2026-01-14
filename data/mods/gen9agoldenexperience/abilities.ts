@@ -377,7 +377,15 @@ export const Abilities: { [abilityid: string]: ModdedAbilityData; } = {
 				return this.chainModify(1.5);
 			}
 		},
-		shortDesc: "This Pokemon's allies have the power of their moves multiplied by 1.5.",
+		onBasePowerPriority: 19,
+		onBasePower(basePower, attacker, defender, move) {
+			if (attacker !== this.effectState.target) {
+				this.debug('Power Spot boost');
+				return this.chainModify(1.5);
+			}
+		},
+		desc: "This Pokemon and its allies have the power of their moves multiplied by 1.5. This affects Doom Desire and Future Sight, even if the user is not on the field.",
+		shortDesc: "This Pokemon and its allies have the power of their moves multiplied by 1.5.",
 	},
 	arenatrap: {
 		inherit: true,
@@ -928,15 +936,6 @@ export const Abilities: { [abilityid: string]: ModdedAbilityData; } = {
 		inherit: true,
 		isNonstandard: null,
 	},
-	rockypayload: {
-		inherit: true,
-		onModifySpe(spe, pokemon) {
-			if (this.field.getPseudoWeather('gravity')) {
-				return this.chainModify(1.5);
-			}
-		},
-		shortDesc: "This Pokemon's Speed is x1.5 under Gravity, and this Pokemon's offensive stat is multiplied by 1.5 while using a Rock-type attack.",
-	},
 	lingeringaroma: {
 		inherit: true,
 		onDamagingHit(damage, target, source, move) {},
@@ -968,10 +967,6 @@ export const Abilities: { [abilityid: string]: ModdedAbilityData; } = {
 		isNonstandard: null,
 	},
 	steelbreaker: {
-		inherit: true,
-		isNonstandard: null,
-	},
-	ange: {
 		inherit: true,
 		isNonstandard: null,
 	},

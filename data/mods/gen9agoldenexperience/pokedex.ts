@@ -1732,7 +1732,7 @@ export const Pokedex: {[k: string]: ModdedSpeciesData;} = {
 	},
 	darkraimega: {
 		inherit: true,
-		abilities: { 0: "Intimidate" },
+		abilities: { 0: "Dark Aura" },
 	},
 	shayminsky: {
 		inherit: true,
@@ -2371,7 +2371,7 @@ export const Pokedex: {[k: string]: ModdedSpeciesData;} = {
 	},
 	floettemega: {
 		inherit: true,
-		abilities: { 0: "Ange" },
+		abilities: { 0: "Fairy Aura" },
 	},
 	florges: {
 		inherit: true,
@@ -3257,10 +3257,6 @@ export const Pokedex: {[k: string]: ModdedSpeciesData;} = {
 		baseStats: {hp: 122, atk: 130, def: 89, spa: 40, spd: 89, spe: 30},
 		abilities: {0: "Sheer Force", 1: "Dry Skin", H: "Heavy Metal"},
 	},
-	eternatus: {
-		inherit: true,
-		abilities: {0: "Pressure", H: "Cosmic Energy"},
-	},
 	zarude: {
 		inherit: true,
 		abilities: {0: "Leaf Guard", H: "Defiant"},
@@ -3593,7 +3589,7 @@ export const Pokedex: {[k: string]: ModdedSpeciesData;} = {
 	},
 	glimmoramega: {
 		inherit: true,
-		abilities: { 0: "Cosmic Energy" },
+		abilities: { 0: "Adaptability" },
 	},
 	houndstone: {
 		inherit: true,

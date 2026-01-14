@@ -22660,6 +22660,7 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 		type: "Water",
 		zMove: { effect: 'clearnegativeboost' },
 		contestType: "Beautiful",
+		isNonstandard: "Custom",
 	},
 	seajaws: {
 		num: -22,
@@ -22688,6 +22689,7 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 		target: "normal",
 		type: "Water",
 		contestType: "Clever",
+		isNonstandard: "Custom",
 	},
 	parallelcircuit: {
 		num: -23,
@@ -22711,6 +22713,7 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 		zMove: { basePower: 140 },
 		maxMove: { basePower: 130 },
 		contestType: "Cool",
+		isNonstandard: "Custom",
 	},
 	condensate: {
 		num: -24,
@@ -22740,6 +22743,7 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 		secondary: null,
 		target: "normal",
 		type: "Ice",
+		isNonstandard: "Custom",
 	},
 	chillblain: {
 		num: -25,
@@ -22761,6 +22765,7 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 		target: "normal",
 		type: "Ice",
 		contestType: "Cool",
+		isNonstandard: "Custom",
 	},
 	indomitablespirit: {
 		num: -26,
@@ -22799,6 +22804,7 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 		secondary: null,
 		target: "normal",
 		type: "Fighting",
+		isNonstandard: "Custom",
 	},
 	martialpunch: {
 		num: -27,
@@ -22819,6 +22825,7 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 		secondary: null,
 		target: "normal",
 		type: "Fighting",
+		isNonstandard: "Custom",
 	},
 	musclecare: {
 		num: -28,
@@ -22841,6 +22848,7 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 		desc: "The user restores 1/2 of its maximum HP, rounded half up.",
 		shortDesc: "Heals the user by 50% of its max HP.",
 		contestType: "Clever",
+		isNonstandard: "Custom",
 	},
 	dissolution: {
 		num: -29,
@@ -22870,6 +22878,7 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 		secondary: null,
 		target: "allAdjacentFoes",
 		type: "Poison",
+		isNonstandard: "Custom",
 	},
 	landslide: {
 		num: -30,
@@ -22912,6 +22921,7 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 		target: "normal",
 		type: "Ground",
 		contestType: "Tough",
+		isNonstandard: "Custom",
 	},
 	epicenter: {
 		num: -31,
@@ -22956,6 +22966,7 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 		target: "normal",
 		type: "Ground",
 		contestType: "Tough",
+		isNonstandard: "Custom",
 	},
 	downdraft: {
 		num: -32,
@@ -22981,6 +22992,7 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 		target: "any",
 		type: "Flying",
 		contestType: "Cool",
+		isNonstandard: "Custom",
 	},
 	clearmind: {
 		num: -33,
@@ -23006,6 +23018,7 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 		shortDesc: "Raises the user's Sp. Attack and accuracy by 1.",
 		zMove: { boost: { spa: 1 } },
 		contestType: "Cute",
+		isNonstandard: "Custom",
 	},
 	golemstrike: {
 		num: -34,
@@ -23030,6 +23043,7 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 		target: "normal",
 		type: "Rock",
 		contestType: "Tough",
+		isNonstandard: "Custom",
 	},
 	punishingblow: {
 		num: -35,
@@ -23058,6 +23072,7 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 		target: "normal",
 		type: "Ghost",
 		contestType: "Cool",
+		isNonstandard: "Custom",
 	},
 	contrariety: {
 		num: -36,
@@ -23087,6 +23102,7 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 		target: "all",
 		type: "Dark",
 		zMove: { boost: { def: 1 } },
+		isNonstandard: "Custom",
 	},
 	blackflash: {
 		num: -37,
@@ -23112,6 +23128,7 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 		shortDesc: "Lowers the user's SpA and SpD by one afterward.",
 		type: "Dark",
 		contestType: "Tough",
+		isNonstandard: "Custom",
 	},
 	hypnotichorror: {
 		num: -38,
@@ -23138,6 +23155,7 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 		shortDesc: "Lowers the user's SpA and SpD by one afterward.",
 		type: "Psychic",
 		contestType: "Tough",
+		isNonstandard: "Custom",
 	},
 	sneakyassault: {
 		num: -39,
@@ -23163,6 +23181,7 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 		target: "normal",
 		type: "Dark",
 		contestType: "Cool",
+		isNonstandard: "Custom",
 	},
 	mercuryshot: {
 		num: -40,
@@ -23186,6 +23205,7 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 		target: "normal",
 		type: "Steel",
 		contestType: "Tough",
+		isNonstandard: "Custom",
 	},
 	sweetheart: {
 		num: -41,
@@ -23216,6 +23236,7 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 		secondary: null,
 		target: "normal",
 		type: "Fairy",
+		isNonstandard: "Custom",
 	},
 	chakraterrain: {
 		num: -42,
@@ -23274,6 +23295,7 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 		type: "Fighting",
 		zMove: { boost: { spe: 1 } },
 		contestType: "Clever",
+		isNonstandard: "Custom",
 	},
 	lightningassault: {
 		num: -43,
@@ -23302,6 +23324,7 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 		zMove: { basePower: 160 },
 		maxMove: { basePower: 130 },
 		contestType: "Cool",
+		isNonstandard: "Custom",
 	},
 	conversionz: {
 		num: -44,
@@ -23339,6 +23362,7 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 		secondary: null,
 		target: "self",
 		type: "Normal",
+		isNonstandard: "Custom",
 	},
 	zawalludo: {
 		num: -45,
@@ -23364,6 +23388,7 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 		secondary: null,
 		target: "normal",
 		type: "Rock",
+		isNonstandard: "Custom",
 	},
 	awakening: {
 		num: -46,
@@ -23393,6 +23418,7 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 		type: "Psychic",
 		zMove: { effect: 'clearnegativeboost' },
 		contestType: "Beautiful",
+		isNonstandard: "Custom",
 	},
 	fulldevotion: {
 		num: -47,
@@ -23434,6 +23460,7 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 		type: "Psychic",
 		zMove: { effect: 'clearnegativeboost' },
 		contestType: "Clever",
+		isNonstandard: "Custom",
 	},
 	braveblade: {
 		desc: "Physical if it would be stronger (Shell Side Arm clone). Lowers user's Defense and Special Defense by 1.",
@@ -23478,6 +23505,7 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 		secondary: null,
 		target: "normal",
 		type: "Psychic",
+		isNonstandard: "Custom",
 	},
 	teramorphosis: {
 		num: -49,
@@ -23505,6 +23533,7 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 		target: "normal",
 		type: "Grass",
 		contestType: "Cool",
+		isNonstandard: "Custom",
 	},
 	happydance: {
 		num: -50,
@@ -23532,6 +23561,7 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 		shortDesc: "Raises the user's Atk and SpA by 1. Summons Rain Dance.",
 		zMove: { effect: 'clearnegativeboost' },
 		contestType: "Beautiful",
+		isNonstandard: "Custom",
 	},
 	windscall: {
 		num: -51,
@@ -23558,6 +23588,7 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 		target: "all",
 		type: "Flying",
 		contestType: "Clever",
+		isNonstandard: "Custom",
 	},
 	houndshowl: {
 		num: -52,
@@ -23630,6 +23661,7 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 		target: "normal",
 		type: "Ghost",
 		contestType: "Clever",
+		isNonstandard: "Custom",
 	},
 	dantesinferno: {
 		num: -53,
@@ -23649,6 +23681,7 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 		secondary: null,
 		target: "normal",
 		type: "Fire",
+		isNonstandard: "Custom",
 	},
 	monkeybusiness: {
 		num: -54,
@@ -23679,6 +23712,7 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 		secondary: null,
 		target: "allAdjacentFoes",
 		type: "Normal",
+		isNonstandard: "Custom",
 	},
 	swarming: {
 		num: -55,
@@ -23709,6 +23743,7 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 		target: "normal",
 		type: "Bug",
 		contestType: "Smart",
+		isNonstandard: "Custom",
 	},
 	hardwareheat: {
 		num: -56,
@@ -23734,6 +23769,7 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 		target: "normal",
 		type: "Fire",
 		contestType: "Tough",
+		isNonstandard: "Custom",
 	},
 	shattering: {
 		num: -57,
@@ -23788,6 +23824,7 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 		target: "normal",
 		type: "Dark",
 		contestType: "Tough",
+		isNonstandard: "Custom",
 	},
 	roguewave: {
 		num: -58,
@@ -23808,6 +23845,7 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 		target: "normal",
 		type: "Water",
 		contestType: "Cool",
+		isNonstandard: "Custom",
 	},
 	natureswrath: {
 		num: -59,
@@ -23849,6 +23887,7 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 		type: "Grass",
 		zMove: { basePower: 170 },
 		contestType: "Tough",
+		isNonstandard: "Custom",
 	},
 	magicmissile: {
 		num: -60,
@@ -23880,45 +23919,32 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 		zMove: { basePower: 140 },
 		maxMove: { basePower: 130 },
 		contestType: "Smart",
+		isNonstandard: "Custom",
 	},
 	fatbombing: {
 		num: -61,
 		accuracy: 100,
-		basePower: 130,
+		basePower: 100,
 		category: "Physical",
 		name: "Fat Bombing",
 		pp: 10,
 		priority: 0,
-		flags: {charge: 1, protect: 1, mirror: 1, metronome: 1},
-		onTryMove(attacker, defender, move) {
-			if (attacker.removeVolatile(move.id)) {
-				return;
-			}
-			this.add('-prepare', attacker, move.name);
-			this.boost({atk: 1}, attacker, attacker, move);
+		flags: {protect: 1, mirror: 1, metronome: 1},
+		onModifyPriority(priority, source, target, move) {
 			if (this.field.getPseudoWeather('gravity')) {
-				this.attrLastMove('[still]');
-				this.addMove('-anim', attacker, move.name, defender);
-				return;
+				return priority + 1;
 			}
-			if (!this.runEvent('ChargeMove', attacker, defender, move)) {
-				return;
-			}
-			attacker.addVolatile('twoturnmove', defender);
-			return null;
 		},
 		onPrepareHit(target, source) {
 			this.attrLastMove('[still]');
 			this.add('-anim', source, "Rock Blast", target);
 		},
 		secondary: null,
-		hasSheerForce: true,
 		target: "normal",
 		type: "Rock",
-		desc: "This attack charges on the first turn and executes on the second. Raises the user's Attack by 1 stage on the first turn. If the user is holding a Power Herb or Gravity is set, the move completes in one turn.",
-		shortDesc: "Raises Atk by 1, hits turn 2. Gravity: no charge.",
-
-		prepare: "[POKEMON] launched a fat bombing!",
+		desc: "If Gravity is active, this move has its priority increased by 1.",
+		shortDesc: "User on Gravity: +1 priority.",
+		isNonstandard: "Custom",
 	},
 	poisonivy: {
 		num: -62,

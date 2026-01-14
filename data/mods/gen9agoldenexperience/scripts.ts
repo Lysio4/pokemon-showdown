@@ -2322,6 +2322,7 @@ export const Scripts: ModdedBattleScriptsData = {
     this.modData('Learnsets', 'tinkaton').learnset.poweruppunch = ['9L1']; // ZA addition
     this.modData('Learnsets', 'wugtrio').learnset.flipturn = ['9L1'];
     this.modData('Learnsets', 'bombirdier').learnset.fatbombing = ['9L1'];
+    this.modData('Learnsets', 'bombirdier').learnset.swordsdance = ['9L1'];
     this.modData('Learnsets', 'revavroom').learnset.steelroller = ['9L1'];
     this.modData('Learnsets', 'orthworm').learnset.recover = ['9L1'];
     this.modData('Learnsets', 'houndstone').learnset.strengthsap = ['9L1'];

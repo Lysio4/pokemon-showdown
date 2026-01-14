@@ -3478,7 +3478,7 @@ export const FormatsData: { [k: string]: SpeciesFormatsData; } = {
 		doublesTier: "DUU",
 	},
 	barbaraclemega: {
-		tier: "UU",
+		tier: "RU",
 		doublesTier: "DUU",
 	},
 	skrelp: {
@@ -4753,7 +4753,7 @@ export const FormatsData: { [k: string]: SpeciesFormatsData; } = {
 		tier: "NFE",
 	},
 	spyarn: {
-		tier: "RU",
+		tier: "UU",
 		doublesTier: "DUU",
 	},
 	nymble: {

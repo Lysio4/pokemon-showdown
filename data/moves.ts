@@ -23971,6 +23971,7 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 		zMove: { basePower: 140 },
 		maxMove: { basePower: 130 },
 		contestType: "Cool",
+		isNonstandard: "Custom",
 	},
 	clusterexplosion: {
 		num: -63,
@@ -23998,6 +23999,7 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 		target: "allAdjacent",
 		type: "Rock",
 		contestType: "Beautiful",
+		isNonstandard: "Custom",
 	},
 	froststorm: {
 		num: -64,
@@ -24028,6 +24030,7 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 		target: "allAdjacentFoes",
 		type: "Ice",
 		shortDesc: "30% chance of Freeze, 100% in Snow.",
+		isNonstandard: "Custom",
 	},
 	thunderstorm: {
 		num: -65,
@@ -24058,6 +24061,7 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 		target: "allAdjacentFoes",
 		type: "Electric",
 		shortDesc: "30% chance of Para, 100% in Rain.",
+		isNonstandard: "Custom",
 	},
 	heatstorm: {
 		num: -66,
@@ -24088,6 +24092,7 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 		target: "allAdjacentFoes",
 		type: "Fire",
 		shortDesc: "30% chance of Burn, 100% in Sun.",
+		isNonstandard: "Custom",
 	},
 	genesiswave: {
 		num: -67,
@@ -24116,6 +24121,7 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 		zMove: {effect: 'clearnegativeboost'},
 		contestType: "Clever",
 		shortDesc: "Raises user's Speed by 1, and adds the type of user's first move to its type.",
+		isNonstandard: "Custom",
 	},
 	athosrapier: {
 		num: -68,
@@ -24178,6 +24184,7 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 		contestType: "Cool",
 		desc: "The user is protected from most attacks made by other Pokemon during this turn, and Pokemon trying to make contact with the user raise its Defense by 1 stage. Non-damaging moves go through this protection. This move has a 1/X chance of being successful, where X starts at 1 and triples each time this move is successfully used. X resets to 1 if this move fails, if the user's last move used is not Baneful Bunker, Burning Bulwark, Detect, Endure, King's Shield, Max Guard, Obstruct, Protect, Quick Guard, Silk Trap, Spiky Shield, or Wide Guard, or if it was one of those moves and the user's protection was broken. Fails if the user moves last this turn.",
 		shortDesc: "Protects from damaging attacks. Contact: +1 Def.",
+		isNonstandard: "Custom",
 	},
 	aramisdagger: {
 		num: -69,
@@ -24198,6 +24205,7 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 		contestType: "Cool",
 		desc: "No additional effect.",
 		shortDesc: "Usually goes first.",
+		isNonstandard: "Custom",
 	},
 	porthosbroadsword: {
 		num: -70,
@@ -24241,6 +24249,7 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 		contestType: "Tough",
 		desc: "The user loses its focus and does nothing if it is hit by a damaging attack this turn before it can execute the move.",
 		shortDesc: "Fails if the user takes damage before it hits.",
+		isNonstandard: "Custom",
 	},
 	befuddlepowder: {
 		num: -71,
@@ -24266,6 +24275,7 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 		type: "Bug",
 		contestType: "Cool",
 		shortDesc: "Double damage on targets that resist.",
+		isNonstandard: "Custom",
 	},
 	piercingdart: {
 		desc: "Hits Steel types for super effective damages.",
@@ -24294,6 +24304,7 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 		secondary: null,
 		target: "normal",
 		type: "Poison",
+		isNonstandard: "Custom",
 	},
 	hindenburg: {
 		num: -73,
@@ -24321,13 +24332,14 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 		type: "Ghost",
 		contestType: "Cool",
 		shortDesc: "Power doubles if the user has no held item or is burned.",
+		isNonstandard: "Custom",
 	},
 	ventilation: {
 		num: -74,
-		accuracy: 90,
-		basePower: 70,
+		accuracy: 100,
+		basePower: 80,
 		basePowerCallback(pokemon, target, move) {
-			if (pokemon.volatiles['stockpile']?.layers === 3) return move.basePower * 2;
+			if (pokemon.volatiles['stockpile'] || pokemon.volatiles['charge']) return move.basePower * 1.5;
 			return move.basePower;
 		},
 		category: "Special",
@@ -24335,9 +24347,6 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 		pp: 10,
 		priority: 0,
 		flags: {protect: 1, metronome: 1},
-		onAfterMove(pokemon) {
-			if (pokemon.volatiles['stockpile']) pokemon.removeVolatile('stockpile');
-		},
 		onPrepareHit(target, source) {
 			this.attrLastMove('[still]');
 			this.add('-anim', source, "Hurricane", target);
@@ -24347,6 +24356,7 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 		type: "Flying",
 		contestType: "Tough",
 		shortDesc: "Lowers the target's Speed by 1. If user has 3 stacks of Stockpile, doubles in power.",
+		isNonstandard: "Custom",
 	},
 	emushdance: {
 		num: -75,
@@ -24382,6 +24392,7 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 		target: "normal",
 		type: "Psychic",
 		shortDesc: "Charges on turn 1, then hits on turn 2. No charge in Chakra Terrain or Grassy Terrain.",
+		isNonstandard: "Custom",
 	},
 	rainofarrows: {
 		num: -76,
@@ -24410,6 +24421,7 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 			},
 		},
 		shortDesc: "Hits once in this turn, then hits again in the next turn. Ignores protection.",
+		isNonstandard: "Custom",
 	},
 	wyvernflight: {
 		num: -77,
@@ -24432,6 +24444,7 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 		contestType: "Cool",
 		desc: "If this move is successful and the user has not fainted, the user switches out even if it is trapped and is replaced immediately by a selected party member. The user does not switch out if there are no unfainted party members, or if the target switched out using an Eject Button or through the effect of the Emergency Exit or Wimp Out Abilities.",
 		shortDesc: "User switches out after damaging the target.",
+		isNonstandard: "Custom",
 	},
 	bigbang: {
 		num: -78,
@@ -24457,6 +24470,7 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 		contestType: "Tough",
 		desc: "This move and its effects ignore the Abilities of other Pokemon, as well as resistances and immunities.",
 		shortDesc: "Ignores the Abilities of other Pokemon, resistances and immunities.",
+		isNonstandard: "Custom",
 	},
 	ningencry: {
 		num: -79,
@@ -24483,6 +24497,7 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 		shortDesc: "Raises the user's Atk by 1. Summons Snow.",
 		zMove: { effect: 'clearnegativeboost' },
 		contestType: "Beautiful",
+		isNonstandard: "Custom",
 	},
 	mantisslash: {
 		num: -80,
@@ -24503,6 +24518,7 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 		type: "Grass",
 		desc: "Lowers the user's Speed by 2 stages.",
 		shortDesc: "Lowers the user's Speed by 2.",
+		isNonstandard: "Custom",
 	},
 	intrepidcrash: {
 		num: -81,

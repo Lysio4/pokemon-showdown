@@ -7329,72 +7329,52 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 	freegullet: {
 		onBasePowerPriority: 19,
 		onBasePower(basePower, attacker, defender, move) {
-			if (move.id === 'surf' || move.id === 'dive') {
+			if (['cramorantmega', 'cramorantgulpingmega', 'cramorantgorgingmega'].includes(attacker.species.id) && (move.id === 'surf' || move.id === 'dive')) {
 				return this.chainModify(1.5);
 			}
 		},
 		onSourceHit(target, source, move) {
 			if (!move || !target) return;
-			if (move.id === 'surf' || move.id === 'dive') {
+			if (['cramorantgulpingmega'].includes(source.species.id) && (move.id === 'surf' || move.id === 'dive')) {
 				source.addVolatile('stockpile');
 			}
+			if (['cramorantgorgingmega'].includes(source.species.id) && (move.id === 'thunderbolt' || move.id === 'wildcharge')) {
+				source.addVolatile('charge');
+			}
+			if (['cramorantmega'].includes(source.species.id) && (move.id === 'ventilation' || move.id === 'bravebird')) {
+				this.damage(source.baseMaxhp / 8, source, target);
+			}
+		},
+		onDamagingHit(damage, target, source, move) {
+			if (!source.hp || !source.isActive || target.isSemiInvulnerable()) return;
+			if (['cramorantgulping', 'cramorantgorging'].includes(target.species.id)) {
+				this.damage(source.baseMaxhp / 4, source, target);
+				if (target.species.id === 'cramorantgulping') {
+					this.boost({ def: -1 }, source, target, null, true);
+				} else {
+					source.trySetStatus('par', target, move);
+				}
+				target.formeChange('cramorant', move);
+			}
+		},
+		onBeforeMovePriority: 0.5,
+		onBeforeMove(attacker, defender, move) {
+			if (attacker.species.baseSpecies !== 'Cramorant' || attacker.transformed) return;
+			const affectedMoves = ['surf', 'dive', 'ventilation', 'bravebird', 'thunderbolt', 'wildcharge']
+			if (affectedMoves.includes(move)) return;
+			var targetForme;
+			if (move.id === 'surf' || move.id === 'dive') targetForme = 'Cramorant-Gulping-Mega';
+			if (move.id === 'thunderbolt' || move.id === 'wildcharge') targetForme = 'Cramorant-Gorging-Mega';
+			if (move.id === 'ventilation' || move.id === 'bravebird') targetForme = 'Cramorant-Mega';
+			if (attacker.species.name !== targetForme) attacker.formeChange(targetForme);
+			this.add('-start', attacker, 'typechange', attacker.getTypes(true).join('/'), '[silent]');
 		},
 		flags: {cantsuppress: 1, notransform: 1},
 		name: "Free Gullet",
 		rating: 2.5,
 		num: -77,
-		shortDesc: "If the user uses Surf/Dive, it gains the Stockpile effect. Surf/Dive has 1.5x power.",
-		isNonstandard: "Custom",
-	},
-	gulp: {
-		onBasePowerPriority: 19,
-		onBasePower(basePower, attacker, defender, move) {
-			if (move.id === 'surf' || move.id === 'dive') {
-				return this.chainModify(1.5);
-			}
-		},
-      	onAfterMove(target, source, move) {
-			if (target !== source && (move.id === 'surf' || move.id === 'dive')) {
-				this.damage(source.baseMaxhp / 4, source, target);
-			}
-		},
-		onModifyMove(move) {
-			if (move.id === 'surf' || move.id === 'dive') delete move.flags['protect'];
-		},
-		flags: {cantsuppress: 1, notransform: 1},
-		name: "Gulp",
-		rating: 2.5,
-		num: -78,
-		shortDesc: "If the user uses Surf/Dive, the target takes 1/4 max HP on top of the damage. Surf/Dive has 1,5x power. Surf/Dive breaks protection.",
-		isNonstandard: "Custom",
-	},
-	gorge: {
-		onBasePowerPriority: 19,
-		onBasePower(basePower, attacker, defender, move) {
-			if (move.id === 'surf' || move.id === 'dive') {
-				return this.chainModify(1.5);
-			}
-		},
-		onSourceHit(target, source, move) {
-			if (!move || !target) return;
-			if (move.id === 'surf' || move.id === 'dive') {
-				target.addVolatile('charge');
-			}
-		},
-		onSourceDamagingHit(damage, target, source, move) {
-			// Despite not being a secondary, Shield Dust / Covert Cloak block the effect
-			if (target.hasAbility('shielddust') || target.hasItem('covertcloak')) return;
-			if (move.id === 'surf' || move.id === 'dive') {
-				if (this.randomChance(2, 10)) {
-					target.trySetStatus('par', source);
-				}
-			}
-		},
-		flags: {cantsuppress: 1, notransform: 1},
-		name: "Gorge",
-		rating: 2.5,
-		num: -79,
-		shortDesc: "If the user uses Surf/Dive, user gains the Charge effect. Surf/Dive has 1,5x power. Surf/Dive has an added 20% chance of paralysis",
+		desc: "Fails if this Pokemon isn't Cramorant-Mega. Surf/Dive, Gulping, Stockpile; Thunderbolt/Wild Charge, Gorging, Charge; Ventilation/Brave Bird, base form, enemy loses 1/8 HP. Surf/Dive have 1.5x power.",
+		shortDesc: "Cramorant-Mega: Surf/Dive, Gulping, Stockpile; Thunderbolt/Wild Charge, Gorging, Charge; Ventilation/Brave Bird, base form, enemy loses 1/8 HP. Surf/Dive have 1.5x power.",
 		isNonstandard: "Custom",
 	},
 	blindeye: {
@@ -7407,7 +7387,7 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 		desc: "This Pokemon's affinities are reversed.",
 		shortDesc: "This Pokemon's affinities are reversed.",
 		rating: 4.5,
-		num: -80,
+		num: -78,
 		isNonstandard: "Custom",
 	},
 	counterstrike: {
@@ -7440,7 +7420,7 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 		},
 		name: "Counter Strike",
 		rating: 3.5,
-		num: -81,
+		num: -79,
 		isNonstandard: "Custom",
 	},
 	climaticchange: {
@@ -7471,7 +7451,7 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 		},
 		name: "Climatic Change",
 		rating: 4,
-		num: -82,
+		num: -80,
 		isNonstandard: "Custom",
 	},
 	hyperglycemia: {
@@ -7509,7 +7489,7 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 		flags: {breakable: 1},
 		name: "Hyperglycemia",
 		rating: 4.5,
-		num: -83,
+		num: -81,
 		isNonstandard: "Custom",
 	},
 	graviton: {
@@ -7519,7 +7499,7 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 		},
 		name: "Graviton",
 		rating: 4,
-		num: -84,
+		num: -82,
 		isNonstandard: "Custom",
 	},
 	solarenergy: {
@@ -7542,7 +7522,7 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 		desc: "If Sunny Day is active, this Pokemon's Speed is multiplied by 1.5, and this Pokemon's Electric moves have x1.5. This effect is prevented if this Pokemon is holding a Utility Umbrella.",
 		shortDesc: "If Sunny Day is active, Speed x1.5, and Electric moves x1.5.",
 		rating: 3,
-		num: -85,		
+		num: -83,		
 		isNonstandard: "Custom",
 	},
 	punchprodigee: {
@@ -7551,7 +7531,7 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 			if (move.flags['punch']) return priority + 1;
 		},
 		name: "Punch Prodigee",
-		num: -86,
+		num: -84,
 		isNonstandard: "Custom",
 	},
 	heavyweapon: {
@@ -7571,7 +7551,7 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 			},
 		},
 		name: "Heavy Weapon",
-		num: -87,
+		num: -85,
 		isNonstandard: "Custom",
 	},
 	multiheaded: {
@@ -7601,7 +7581,7 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 		gen: 9,
 		desc: "This Pokemon's damaging moves hit 3x. Successive hits do 15% damage without added effects.",
 		shortDesc: "This Pokemon's damaging moves hit 3x. Successive hits do 15% damage without added effects.",
-		num: -88,
+		num: -86,
 		isNonstandard: "Custom",
 	},
 	lightpower: {
@@ -7612,7 +7592,7 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 		name: "Light Power",
 		shortDesc: "This Pokemon's Special Attack is doubled.",
 		rating: 5,
-		num: -89,
+		num: -87,
 		isNonstandard: "Custom",
 	},
 	thermalswitch: {
@@ -7673,11 +7653,11 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 		desc: "Immunity to Burn. This Pokemon has two forms, Passive and Active. It starts the fight with Passive form. If Sun is set or it's hit by a Fire-type move, it switches to Active form until it switches out. If Snow is set, it's frozen, or it's hit by an Ice-type move, it switches to Passive form.",
 		shortDesc: "Burn immunity. Sun or Fire-type move: Active form; Snow, frozen or Ice-type move: Passive form.",
 		rating: 4,
-		num: -90,
+		num: -88,
 		isNonstandard: "Custom",
 	},
 	ironbody: {
-		num: -92,
+		num: -89,
 		name: "Iron Body",
 		shortDesc: "On switch in, adds Steel type to the user. Has no effect if the user is Steel-type.",
 		onStart(pokemon) {
@@ -7714,7 +7694,7 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 		shortDesc: "When brought to 50% HP or less, restores lost items on user's side.",
 		flags: {failroleplay: 1, noreceiver: 1, noentrain: 1, notrace: 1, failskillswap: 1, cantsuppress: 1},
 		rating: 4,
-		num: -92,
+		num: -90,
 		onStart(pokemon) {
 			pokemon.addVolatile('rewind');
 		},
@@ -7791,7 +7771,7 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 		name: "Huge Clamp",
 		shortDesc: "This Pokemon's Atk is boosted by 1.5, but its Speed is halved.",
 		rating: 1.5,
-		num: -93,
+		num: -91,
 		isNonstandard: "Custom",
 	},
 	contrarian: {
@@ -7808,7 +7788,7 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 		name: "Contrarian",
 		shortDesc: "As long as this Pokémon is on the field, every Pokémon on the field is under Contrary effect.",
 		rating: 4.5,
-		num: -94,
+		num: -92,
 		isNonstandard: "Custom",
 	},
    	healingecho: {
@@ -7822,7 +7802,7 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 		flags: {},
 	    name: "Healing Echo",
 		rating: 3,
-		num: -95,
+		num: -93,
 		isNonstandard: "Custom",
 	},
 	mountainwalker: {
@@ -7841,7 +7821,7 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 		flags: { breakable: 1 },
 		name: "Mountain Walker",
 		rating: 3,
-		num: -96,
+		num: -94,
 		isNonstandard: "Custom",
 	},
 	meltingheart: {
@@ -7858,7 +7838,7 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 		flags: {},
 		name: "Melting Heart",
 		rating: 1,
-		num: -97,
+		num: -95,
 		isNonstandard: "Custom",
 	},
 	stormemperor: {
@@ -7869,7 +7849,7 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 		flags: {},
 		name: "Storm Emperor",
 		rating: 5,
-		num: -98,
+		num: -96,
 		shortDesc: "On switch-in, this Pokemon summons Rain Dance and Electric Terrain.",
 		isNonstandard: "Custom",
 	},

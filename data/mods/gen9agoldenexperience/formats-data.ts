@@ -241,11 +241,11 @@ export const FormatsData: { [k: string]: SpeciesFormatsData; } = {
 		tier: "LC",
 	},
 	sandslash: {
-		tier: "PU",
+		tier: "RUBL",
 		doublesTier: "DUU",
 	},
 	sandslashalola: {
-		tier: "PU",
+		tier: "RU",
 		doublesTier: "DUU",
 	},
 	nidoranf: {
@@ -412,11 +412,11 @@ export const FormatsData: { [k: string]: SpeciesFormatsData; } = {
 		tier: "LC",
 	},
 	arcanine: {
-		tier: "NUBL",
+		tier: "RU",
 		doublesTier: "DUU",
 	},
 	arcaninehisui: {
-		tier: "NUBL",
+		tier: "RU",
 		doublesTier: "DUU",
 	},
 	poliwag: {
@@ -1740,7 +1740,7 @@ export const FormatsData: { [k: string]: SpeciesFormatsData; } = {
 		tier: "NFE",
 	},
 	roserade: {
-		tier: "NU",
+		tier: "RU",
 		doublesTier: "DUU",
 	},
 	gulpin: {
@@ -2091,7 +2091,7 @@ export const FormatsData: { [k: string]: SpeciesFormatsData; } = {
 		doublesTier: "DUber",
 	},
 	jirachi: {
-		tier: "NU",
+		tier: "RU",
 		doublesTier: "DOU",
 	},
 	deoxys: {
@@ -2762,11 +2762,11 @@ export const FormatsData: { [k: string]: SpeciesFormatsData; } = {
 		tier: "NFE",
 	},
 	scolipede: {
-		tier: "RUBL",
+		tier: "RU",
 		doublesTier: "DUU",
 	},
 	scolipedemega: {
-		tier: "RUBL",
+		tier: "RU",
 		doublesTier: "DUU",
 	},
 	cottonee: {
@@ -3088,7 +3088,7 @@ export const FormatsData: { [k: string]: SpeciesFormatsData; } = {
 		tier: "NFE",
 	},
 	haxorus: {
-		tier: "RUBL",
+		tier: "RU",
 		doublesTier: "DUU",
 	},
 	cubchoo: {
@@ -3529,7 +3529,7 @@ export const FormatsData: { [k: string]: SpeciesFormatsData; } = {
 		doublesTier: "DUU",
 	},
 	aurorusmega: {
-		tier: "RU",
+		tier: "RUBL",
 		doublesTier: "DUU",
 	},
 	hawlucha: {
@@ -3953,7 +3953,7 @@ export const FormatsData: { [k: string]: SpeciesFormatsData; } = {
 		doublesTier: "DUU",
 	},
 	silvallyflying: {
-		tier: "RUBL",
+		tier: "RU",
 		doublesTier: "DUU",
 	},
 	silvallyghost: {
@@ -4117,7 +4117,7 @@ export const FormatsData: { [k: string]: SpeciesFormatsData; } = {
 		doublesTier: "DUU",
 	},
 	necrozma: {
-		tier: "NUBL",
+		tier: "RU",
 		doublesTier: "DUU",
 	},
 	necrozmaduskmane: {
@@ -4728,7 +4728,7 @@ export const FormatsData: { [k: string]: SpeciesFormatsData; } = {
 		tier: "NFE",
 	},
 	quaquaval: {
-		tier: "RUBL",
+		tier: "RU",
 		doublesTier: "DUU",
 	},
 	quaquavalmega: {

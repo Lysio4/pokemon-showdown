@@ -1,7 +1,5 @@
 import { consoleips } from "../../../config/config-example";
 
-const tailMoves = ['firelash', 'powerwhip', 'tailslap', 'wrap', 'constrict', 'irontail', 'dragontail', 'poisontail', 'aquatail', 'vinewhip', 'wringout',];
-
 export const Abilities: { [abilityid: string]: ModdedAbilityData; } = {
 	poisonousradula: {
 		inherit: true,
@@ -124,10 +122,6 @@ export const Abilities: { [abilityid: string]: ModdedAbilityData; } = {
 		isNonstandard: null,
 	},
 	striker: {
-		inherit: true,
-		isNonstandard: null,
-	},
-	deadlyblasts: {
 		inherit: true,
 		isNonstandard: null,
 	},
@@ -510,16 +504,6 @@ export const Abilities: { [abilityid: string]: ModdedAbilityData; } = {
 		desc: "If Sunny Day is active, this Pokemon's Defense is multiplied by 1.3, and it cannot become affected by a non-volatile status condition or Yawn, and Rest will fail for it. This effect is prevented if this Pokemon is holding a Utility Umbrella.",
 		shortDesc: "If Sunny Day is active, this Pokemon's Def is 1.3x; cannot be statused and Rest will fail for it.",
 	},
-	immunity: {
-		inherit: true,
-		onTryHit(target, source, move) {
-			if (target !== source && move.type === 'Poison') {
-				this.add('-immune', target, '[from] ability: Immunity');
-				return null;
-			}
-		},
-		shortDesc: "This Pokemon is immune to poison damages and Poison type moves",
-	},
 	stickyhold: {
 		//inherit: true,
 		onTakeItem(item, pokemon, source) {
@@ -692,46 +676,6 @@ export const Abilities: { [abilityid: string]: ModdedAbilityData; } = {
 		},
 		shortDesc: "At the end of each turn, if this Pokemon has no item, it gets Honey. If it has honey, it heals 1/8 of its HP.",
 	},
-	pastelveil: {
-		inherit: true,
-		desc: "This Pokemon and its allies cannot be poisoned or burned. Gaining this Ability while this Pokemon or its ally is poisoned or burned cures them. If this Ability is being ignored during an effect that causes poison or burn, this Pokemon is cured immediately but its ally is not.",
-		shortDesc: "This Pokemon and its allies cannot be poisoned or burned. On switch-in, cures poisoned and burned allies.",
-		onStart(pokemon) {
-			for (const ally of pokemon.allies()) {
-				if (['psn', 'tox', 'brn'].includes(ally.status)) {
-					this.add('-activate', pokemon, 'ability: Pastel Veil');
-					ally.cureStatus();
-				}
-			}
-		},
-		onUpdate(pokemon) {
-			if (['psn', 'tox', 'brn'].includes(pokemon.status)) {
-				this.add('-activate', pokemon, 'ability: Pastel Veil');
-				pokemon.cureStatus();
-			}
-		},
-		onAllySwitchIn(pokemon) {
-			if (['psn', 'tox', 'brn'].includes(pokemon.status)) {
-				this.add('-activate', this.effectState.target, 'ability: Pastel Veil');
-				pokemon.cureStatus();
-			}
-		},
-		onSetStatus(status, target, source, effect) {
-			if (!['psn', 'tox', 'brn'].includes(status.id)) return;
-			if ((effect as Move)?.status) {
-				this.add('-immune', target, '[from] ability: Pastel Veil');
-			}
-			return false;
-		},
-		onAllySetStatus(status, target, source, effect) {
-			if (!['psn', 'tox', 'brn'].includes(status.id)) return;
-			if ((effect as Move)?.status) {
-				const effectHolder = this.effectState.target;
-				this.add('-block', target, 'ability: Pastel Veil', '[of] ' + effectHolder);
-			}
-			return false;
-		},
-	},
 	defeatist: {
 		inherit: true,
 		onModifyAtkPriority: 5,
@@ -834,16 +778,6 @@ export const Abilities: { [abilityid: string]: ModdedAbilityData; } = {
 		},
 		desc: "If user is Cherrim and Sunny Day isn't active, its Def is 1.5x. If user is Cherrim and Sunny Day is active, it and its allies Atk and Sp. Def are 1.5x. and Cherrim gains the Fire type.",
 		shortDesc: "Cherrim: If Sunny Day is active, it and its allies Atk and Sp. Def are 1.5x, and Cherrim gains the Fire type; otherwise Def x1.5.",
-	},
-	icescales: {
-		inherit: true,
-		onSourceModifyDamage(damage, source, target, move) {
-			if (move.category === 'Special' || target.getMoveHitData(move).typeMod > 0) {
-				return this.chainModify(0.5);
-			}
-		},
-		shortDesc: "This Pokemon receives 1/2 damage from special attacks, as well as super effective attacks.",
-		desc: "This Pokemon receives 1/2 damage from special attacks, as well as super effective attacks.",
 	},
 	strongwill: {
 		inherit: true,

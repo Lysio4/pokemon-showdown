@@ -882,21 +882,6 @@ export const Scripts: ModdedBattleScriptsData = {
     this.modData('Learnsets', 'stonjourner').learnset.landslide = ['9M'];
     this.modData('Learnsets', 'ironthorns').learnset.landslide = ['9M'];
 
-    // epicenter 
-    this.modData('Learnsets', 'golem').learnset.epicenter = ['9L1'];
-    this.modData('Learnsets', 'rhydon').learnset.epicenter = ['9L1'];
-    this.modData('Learnsets', 'donphan').learnset.epicenter = ['9L1'];
-    this.modData('Learnsets', 'camerupt').learnset.epicenter = ['9L1'];
-    this.modData('Learnsets', 'claydol').learnset.epicenter = ['9L1'];
-    this.modData('Learnsets', 'metagross').learnset.epicenter = ['9L1'];
-    this.modData('Learnsets', 'torterra').learnset.epicenter = ['9L1'];
-    this.modData('Learnsets', 'rhyperior').learnset.epicenter = ['9L1'];
-    this.modData('Learnsets', 'gigalith').learnset.epicenter = ['9L1'];
-    this.modData('Learnsets', 'mudsdale').learnset.epicenter = ['9L1'];
-    this.modData('Learnsets', 'coalossal').learnset.epicenter = ['9L1'];
-    this.modData('Learnsets', 'copperajah').learnset.epicenter = ['9L1'];
-    this.modData('Learnsets', 'ironthorns').learnset.epicenter = ['9L1'];
-
     // downdraft 
     this.modData('Learnsets', 'rayquaza').learnset.downdraft = ['9L1'];
     this.modData('Learnsets', 'lugia').learnset.downdraft = ['9L1'];

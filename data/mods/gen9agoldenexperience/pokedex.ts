@@ -290,7 +290,6 @@ export const Pokedex: {[k: string]: ModdedSpeciesData;} = {
 	golemalola: {
 		inherit: true,
 		baseStats: {hp: 80, atk: 120, def: 140, spa: 45, spd: 65, spe: 45},
-		abilities: {0: "Magnet Pull", 1: "Deadly Blasts", H: "Galvanize"},
 	},
 	rapidash: {
 		inherit: true,
@@ -310,10 +309,6 @@ export const Pokedex: {[k: string]: ModdedSpeciesData;} = {
 	slowbromega: {
 		inherit: true,
 		abilities: {0: "Invincible"},
-	},
-	slowbrogalar: {
-		inherit: true,
-		abilities: {0: "Quick Draw", 1: "Deadly Blasts", H: "Regenerator"},
 	},
 	slowbrogalarmega: {
 		num: 80,
@@ -1607,17 +1602,13 @@ export const Pokedex: {[k: string]: ModdedSpeciesData;} = {
 		types: ["Normal", "Poison"],
 		abilities: {0: "Corrosion", 1: "Oblivious", H: "Cloud Nine"},
 	},
-	rhyperior: {
-		inherit: true,
-		abilities: {0: "Lightning Rod", 1: "Solid Rock", H: "Deadly Blasts"},
-	},
 	electivire: {
 		inherit: true,
 		abilities: {0: "Motor Drive", 1: "Electric Surge", H: "Vital Spirit"},
 	},
 	magmortar: {
 		inherit: true,
-		abilities: {0: "Deadly Blasts", 1: "Flame Body", H: "Neutralizing Gas"},
+		abilities: {0: "Flame Body", 1: "Neutralizing Gas", H: "Vital Spirit"},
 	},
 	togekiss: {
 		inherit: true,
@@ -2425,13 +2416,8 @@ export const Pokedex: {[k: string]: ModdedSpeciesData;} = {
 		inherit: true,
 		abilities: { 0: "Regenerator" },
 	},
-	clauncher: {
-		inherit: true,
-		abilities: {0: "Mega Launcher", H: "Deadly Blasts"},
-	},
 	clawitzer: {
 		inherit: true,
-		abilities: {0: "Mega Launcher", H: "Deadly Blasts"},
 		otherFormes: ["Clawitzer-Mega"],
 		formeOrder: ["Clawitzer", "Clawitzer-Mega"],
 	},

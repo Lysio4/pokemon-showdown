@@ -100050,7 +100050,6 @@ export const Learnsets: import('../sim/dex-species').LearnsetDataTable = {
 			earthquake: ["9M"],
 			ember: ["9L1"],
 			endure: ["9M"],
-			epicenter: ["9L64"],
 			explosion: ["9M"],
 			facade: ["9M"],
 			fireblast: ["9M"],

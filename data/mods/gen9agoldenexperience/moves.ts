@@ -125,10 +125,6 @@ export const Moves: { [k: string]: ModdedMoveData; } = {
 		inherit: true,
 		isNonstandard: null,
 	},
-	epicenter: {
-		inherit: true,
-		isNonstandard: null,
-	},
 	downdraft: {
 		inherit: true,
 		isNonstandard: null,
@@ -1213,265 +1209,52 @@ export const Moves: { [k: string]: ModdedMoveData; } = {
 		basePower: 90,
 	},
 	intrepidcrash: {
-		num: -81,
-		accuracy: 100,
-		basePower: 60,
-		category: "Physical",
-		name: "Intrepid Crash",
-		shortDesc: "Has 33% recoil. Usually goes first.",
-		pp: 10,
-		priority: 1,
-		flags: {contact: 1, protect: 1, mirror: 1 },
-		recoil: [1, 3],
-		secondary: null,
-		onPrepareHit(target, source) {
-			this.attrLastMove('[still]');
-			this.add('-anim', source, "Brave Bird", target);
-		},
-		target: "normal",
-		type: "Flying",
-		contestType: "Cool",
+		inherit: true,
+		isNonstandard: null,
 	},
 	doublehit: {
 		inherit: true,
 		basePower: 50,
 	},
 	timeparadox: {
-		num: -82,
-		accuracy: 75,
-		basePower: 100,
-		category: "Special",
-		name: "Time Paradox",
-		pp: 5,
-		priority: 0,
-		flags: {protect: 1, mirror: 1, metronome: 1},
-		volatileStatus: 'partiallytrapped',
-		secondary: null,
-		onPrepareHit(target, source) {
-			this.attrLastMove('[still]');
-			this.add('-anim', source, "Psywave", target);
-		},
-		target: "normal",
-		type: "Psychic",
-		contestType: "Tough",
-		desc: "Prevents the target from switching for four or five turns (seven turns if the user is holding Grip Claw). Causes damage to the target equal to 1/8 of its maximum HP (1/6 if the user is holding Binding Band), rounded down, at the end of each turn during effect. The target can still switch out if it is holding Shed Shell or uses Baton Pass, Flip Turn, Parting Shot, Shed Tail, Teleport, U-turn, or Volt Switch. The effect ends if either the user or the target leaves the field, or if the target uses Mortal Spin, Rapid Spin, or Substitute successfully. This effect is not stackable or reset by using this or another binding move.",
-		shortDesc: "Traps and damages the target for 4-5 turns.",
+		inherit: true,
+		isNonstandard: null,
 	},
 	corrosiveacid: {
-		num: -83,
-		accuracy: 100,
-		basePower: 70,
-		category: "Special",
-		name: "Corrosive Acid",
-		pp: 20,
-		priority: 0,
-		flags: {protect: 1, mirror: 1, metronome: 1},
-		ignoreImmunity: true,
-		onEffectiveness(typeMod, target, type) {
-			if (type === 'Steel') return 1;
-		},
-		secondary: {
-			chance: 10,
-			status: 'psn',
-		},
-		onPrepareHit(target, source) {
-			this.attrLastMove('[still]');
-			this.add('-anim', source, "Acid", target);
-		},
-		target: "normal",
-		type: "Poison",
-		contestType: "Beautiful",
-		desc: "Has a 10% chance to poison the target. This move's type effectiveness against Steel is changed to be super effective no matter what this move's type is.",
-		shortDesc: "10% chance to poison. Super effective on Steel.",
+		inherit: true,
+		isNonstandard: null,
 	},
 	jumpscare: {
-		num: -84,
-		accuracy: 100,
-		basePower: 40,
-		category: "Physical",
-		name: "Jumpscare",
-		pp: 10,
-		priority: 3,
-		flags: {contact: 1, protect: 1, mirror: 1, metronome: 1},
-		onTry(source) {
-			if (source.activeMoveActions > 1) {
-				this.hint("Jumpscare only works on your first turn out.");
-				return false;
-			}
-		},
-		onPrepareHit: function (target, source) {
-			this.attrLastMove('[still]');
-			this.add('-anim', source, "Scary Face", target);
-			this.add('-anim', source, "Crunch", target);
-			this.add('-anim', source, "Flash", target);
-		},
-		secondary: {
-			chance: 100,
-			volatileStatus: 'flinch',
-		},
-		target: "normal",
-		type: "Ghost",
-		contestType: "Cute",
-		desc: "Has a 100% chance to make the target flinch. Fails unless it is the user's first turn on the field.",
-		shortDesc: "Hits first. First turn out only. 100% flinch chance.",
+		inherit: true,
+		isNonstandard: null,
 	},
 	futuredoom: {
-		num: -85,
-		accuracy: 100,
-		basePower: 65,
-		category: "Special",
-		name: "Future Doom",
-		pp: 10,
-		priority: 0,
-		flags: {protect: 1, mirror: 1, metronome: 1},
-		volatileStatus: 'partiallytrapped',
-		secondary: {
-			chance: 100,
-			volatileStatus: 'taunt',
-		},
-		target: "normal",
-		type: "Psychic",
-		shortDesc: "Traps the target for 5 turns, and applies Taunt.",
+		inherit: true,
+		isNonstandard: null,
 	},
 	brainblast: {
-		num: -86,
-		accuracy: 100,
-		basePower: 65,
-		category: "Special",
-		name: "Brain Blast",
-		pp: 20,
-		priority: 0,
-		flags: {protect: 1, mirror: 1, metronome: 1},
-		onBasePower(basePower, source, target, move) {
-			const item = target.getItem();
-			if (!this.singleEvent('TakeItem', item, target.itemState, target, target, move, item)) return;
-			if (item.id) {
-				return this.chainModify(1.5);
-			}
-		},
-		onAfterHit(target, source) {
-			if (source.hp) {
-				const item = target.takeItem();
-				if (item) {
-					this.add('-enditem', target, item.name, '[from] move: Brain Blast', '[of] ' + source);
-				}
-			}
-		},
-		onPrepareHit: function (target, source) {
-			this.attrLastMove('[still]');
-			this.add('-anim', source, "Kinesis", target);
-		},
-		secondary: null,
-		target: "normal",
-		type: "Psychic",
-		contestType: "Clever",
-		desc: "If the target is holding an item that can be removed from it, ignoring the Sticky Hold Ability, this move's power is multiplied by 1.5. If the user has not fainted, the target loses its held item. This move cannot cause Pokemon with the Sticky Hold Ability to lose their held item or cause a Kyogre, a Groudon, a Giratina, an Arceus, a Genesect, a Silvally, a Zacian, or a Zamazenta to lose their Blue Orb, Red Orb, Griseous Orb, Plate, Drive, Memory, Rusted Sword, or Rusted Shield respectively. Items lost to this move cannot be regained with Recycle or the Harvest Ability.",
-		shortDesc: "1.5x damage if foe holds an item. Removes item.",
+		inherit: true,
+		isNonstandard: null,
 	},
 	rainbowdash: {
-		num: -87,
-		accuracy: 100,
-		basePower: 100,
-		category: "Physical",
-		name: "Rainbow Dash",
-		pp: 5,
-		priority: 0,
-		flags: {protect: 1, mirror: 1, metronome: 1},
-		onPrepareHit(target, source) {
-			this.attrLastMove('[still]');
-			this.add('-anim', source, "Dazzling Gleam", target);
-		},
-		secondary: null,
-		target: "allAdjacent",
-		type: "Fairy",
-		contestType: "Tough",
-		shortDesc: "No additional effect.",
+		inherit: true,
+		isNonstandard: null,
 	},
 	waterslash: {
-		num: -88,
-		accuracy: 100,
-		basePower: 85,
-		category: "Special",
-		overrideDefensiveStat: 'def',
-		name: "Water Slash",
-		pp: 10,
-		priority: 0,
-		flags: {protect: 1, mirror: 1, slicing: 1},
-		secondary: null,
-		target: "normal",
-		type: "Water",
-		onPrepareHit(target, source) {
-			this.attrLastMove('[still]');
-			this.add('-anim', source, "Aqua Cutter", target);
-		},
-		contestType: "Beautiful",
-		desc: "Deals damage to the target based on its Defense instead of Special Defense.",
-		shortDesc: "Damages target based on Defense, not Sp. Def.",
+		inherit: true,
+		isNonstandard: null,
 	},
 	marinebolt: {
-		num: -89,
-		accuracy: 100,
-		basePower: 75,
-		category: "Physical",
-		name: "Marine Bolt",
-		pp: 20,
-		priority: 0,
-		flags: {contact: 1, protect: 1, mirror: 1, bullet: 1},
-		overrideOffensiveStat: 'spe',
-		secondary: null,
-		onPrepareHit(target, source) {
-			this.attrLastMove('[still]');
-			this.add('-anim', source, "Flame Burst", target);
-		},
-		target: "normal",
-		type: "Fire",
-		shortDesc: "Uses user's Speed stat instead of Attack in damage calculation.",
+		inherit: true,
+		isNonstandard: null,
 	},
 	scaredyshell: {
-		num: -90,
-		accuracy: 100,
-		basePower: 60,
-		category: "Physical",
-		name: "Scaredy Shell",
-		pp: 20,
-		priority: 0,
-		flags: { contact: 1, protect: 1, mirror: 1, metronome: 1 },
-		selfSwitch: true,
-		secondary: null,
-		onPrepareHit(target, source) {
-			this.attrLastMove('[still]');
-			this.add('-anim', source, "Iron Defense", source);
-			this.add('-anim', source, "U-turn", target);
-		},
-		target: "normal",
-		type: "Steel",
-		desc: "If this move is successful and the user has not fainted, the user switches out even if it is trapped and is replaced immediately by a selected party member. The user does not switch out if there are no unfainted party members, or if the target switched out using an Eject Button or through the effect of the Emergency Exit or Wimp Out Abilities.",
-		shortDesc: "User switches out after damaging the target.",
-		switchOut: "#uturn",
+		inherit: true,
+		isNonstandard: null,
 	},
 	calmingbell: {
-		num: -91,
-		accuracy: 100,
-		basePower: 80,
-		category: "Special",
-		name: "Calming Bell",
-		pp: 10,
-		priority: 0,
-		flags: { protect: 1, mirror: 1, metronome: 1, sound: 1, bypasssub: 1 },
-		secondary: {
-			chance: 100,
-			boosts: {
-				spa: -1,
-			},
-		},
-		onPrepareHit(target, source) {
-			this.attrLastMove('[still]');
-			this.add('-anim', source, "Heal Bell", target);
-		},
-		target: "normal",
-		type: "Steel",
-		contestType: "Beautiful",
-		shortDesc: "100% chance to lower the target's SpA by 1.",
+		inherit: true,
+		isNonstandard: null,
 	},
 	paraboliccharge: {
 		inherit: true,
@@ -1490,111 +1273,20 @@ export const Moves: { [k: string]: ModdedMoveData; } = {
 		shortDesc: "Raises all stats by 2 (not acc/eva). Traps user.",
 	},
 	fullmoonstrike: {
-		num: -92,
-		accuracy: 100,
-		basePower: 120,
-		category: "Physical",
-		name: "Full Moon Strike",
-		pp: 5,
-		priority: 0,
-		flags: { contact: 1, protect: 1, mirror: 1, metronome: 1 },
-		self: {
-			boosts: {
-				def: -1,
-				spd: -1,
-			},
-		},
-		onPrepareHit(target, source) {
-			this.attrLastMove('[still]');
-			this.add('-anim', source, "Head Smash", target);
-		},
-		secondary: null,
-		target: "normal",
-		type: "Rock",
-		contestType: "Tough",
-		desc: "Lowers the user's Defense and Special Defense by 1 stage.",
-		shortDesc: "Lowers the user's Defense and Sp. Def by 1.",
+		inherit: true,
+		isNonstandard: null,
 	},
 	seasonpass: {
-		num: -93,
-		accuracy: 100,
-		basePower: 100,
-		category: "Physical",
-		name: "Season Pass",
-		pp: 10,
-		priority: 0,
-		flags: { contact: 1, protect: 1, mirror: 1, metronome: 1 },
-		onModifyType(move, pokemon) {
-			const types = pokemon.getTypes();
-			let type = types[0];
-			if (type === 'Bird') type = '???';
-			if (type === '???' && types[1]) type = types[1];
-			move.type = type;
-		},
-		onPrepareHit(target, source) {
-			this.attrLastMove('[still]');
-			this.add('-anim', source, "Weather Ball", target);
-		},
-		secondary: null,
-		target: "normal",
-		type: "Normal",
-		contestType: "Tough",
-		desc: "This move's type depends on the user's primary type. If the user's primary type is typeless, this move's type is the user's secondary type if it has one, otherwise the added type from Forest's Curse or Trick-or-Treat. This move is typeless if the user's type is typeless alone.",
-		shortDesc: "Type varies based on the user's primary type.",
+		inherit: true,
+		isNonstandard: null,
 	},
 	versatiledance: {
-		num: -94,
-		accuracy: true,
-		basePower: 0,
-		category: "Status",
-		name: "Versatile Dance",
-		pp: 20,
-		priority: 0,
-		flags: { snatch: 1, dance: 1, metronome: 1 },
-		boosts: {
-			atk: 1,
-			spa: 1,
-			spe: 1,
-		},
-		onPrepareHit(target, source) {
-			this.attrLastMove('[still]');
-			this.add('-anim', source, "Work Up", source);
-		},
-		secondary: null,
-		target: "self",
-		type: "Normal",
-		zMove: { boost: { atk: 1 } },
-		contestType: "Tough",
-		desc: "Raises the user's Attack, Special Attack and Speed by 1 stage.",
-		shortDesc: "Raises the user's Attack, Sp. Atk and Speed by 1.",
+		inherit: true,
+		isNonstandard: null,
 	},
 	chistrike: {
-		num: -95,
-		accuracy: 100,
-		basePower: 90,
-		onModifyMovePriority: -5,
-		onModifyMove(move, attacker, defender) {
-			if (!move.ignoreImmunity) move.ignoreImmunity = {};
-			if (move.ignoreImmunity !== true && this.field.isTerrain('chakraterrain') && defender.isGrounded()) {
-				this.hint(`${move.name}can hit grounded Ghost target.`);
-				move.ignoreImmunity['Fighting'] = true;
-			}
-		},
-		onPrepareHit(target, source) {
-			this.attrLastMove('[still]');
-			this.add('-anim', source, "Aura Sphere", target);
-		},
-		category: "Physical",
-		name: "Chi Strike",
-		pp: 20,
-		priority: 0,
-		flags: { protect: 1, mirror: 1, metronome: 1 },
-		secondary: null,
-		target: "normal",
-		type: "Fighting",
-		maxMove: { basePower: 140 },
-		desc: "If the current terrain is Chakra Terrain and the target is grounded, this move hits Ghost type targets.",
-		shortDesc: "Hits Ghost type grounded targets in Chakra Terrain.",
+		inherit: true,
+		isNonstandard: null,
 	},
 	psystrike: {
 		inherit: true,
@@ -1606,45 +1298,12 @@ export const Moves: { [k: string]: ModdedMoveData; } = {
 		desc: "Physical if user's Atk > Sp. Atk. Deals damage based on Def or SpD, whichever one is the lowest.",
 	},
 	cursedspeech: {
-		num: -96,
-		accuracy: 100,
-		basePower: 100,
-		category: "Special",
-		name: "Cursed Speech",
-		pp: 15,
-		priority: 0,
-		flags: { protect: 1, mirror: 1, metronome: 1, sound: 1, bypasssub: 1 },
-		secondary: {
-			chance: 100,
-			volatileStatus: 'torment',
-		},
-		onPrepareHit(target, source) {
-			this.attrLastMove('[still]');
-			this.add('-anim', source, "Spite", target);
-		},
-		target: "normal",
-		type: "Ghost",
-		contestType: "Clever",
-		shortDesc: "Applies Torment to the target.",
-		desc: "Applies Torment to the target.",
+		inherit: true,
+		isNonstandard: null,
 	},
 	threateningbite: {
-		num: -97,
-		accuracy: 100,
-		basePower: 160,
-		category: "Physical",
-		name: "Threatening Bite",
-		pp: 5,
-		priority: 0,
-		flags: { protect: 1, mirror: 1, metronome: 1, cantusetwice: 1, bite: 1 },
-		secondary: null,
-		target: "normal",
-		type: "Dark",
-		onPrepareHit(target, source) {
-			this.attrLastMove('[still]');
-			this.add('-anim', source, "Jaw Lock", target);
-		},
-		shortDesc: "Cannot be selected the turn after it's used.",
+		inherit: true,
+		isNonstandard: null,
 	},
 
 

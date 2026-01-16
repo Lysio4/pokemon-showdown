@@ -4081,7 +4081,7 @@ export const FormatsData: { [k: string]: SpeciesFormatsData; } = {
 		tier: "NFE",
 	},
 	solgaleo: {
-		tier: "Uber",
+		tier: "OU",
 		doublesTier: "DUber",
 	},
 	lunala: {
@@ -5046,7 +5046,7 @@ export const FormatsData: { [k: string]: SpeciesFormatsData; } = {
 		doublesTier: "DUU",
 	},
 	roaringmoon: {
-		tier: "Uber",
+		tier: "OU",
 		doublesTier: "DUU",
 	},
 	irontreads: {

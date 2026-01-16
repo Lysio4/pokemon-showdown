@@ -22925,7 +22925,7 @@ export const Pokedex: import('../sim/dex-species').SpeciesDataTable = {
 		name: "Nopainnogain",
 		types: ["Fighting", "Psychic"],
 		baseStats: {hp: 130, atk: 75, def: 70, spa: 80, spd: 75, spe: 85},
-		abilities: {0: "Rick Roll"},
+		abilities: {0: "Explosive"},
 		heightm: 1.6,
 		weightkg: 34,
 		eggGroups: ["Human-Like"],

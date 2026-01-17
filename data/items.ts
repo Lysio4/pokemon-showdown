@@ -8363,8 +8363,7 @@ export const Items: import('../sim/dex-items').ItemDataTable = {
 	cacturnite: {
 		name: "Cacturnite",
 		spritenum: 578,
-		megaStone: "Cacturne-Mega",
-		megaEvolves: "Cacturne",
+		megaStone: { "Cacturne": "Cacturne-Mega" },
 		itemUser: ["Cacturne"],
 		onTakeItem(item, source) {
 			if (item.megaEvolves === source.baseSpecies.baseSpecies) return false;
@@ -8378,8 +8377,7 @@ export const Items: import('../sim/dex-items').ItemDataTable = {
 	whiscashite: {
 		name: "Whiscashite",
 		spritenum: 578,
-		megaStone: "Whiscash-Mega",
-		megaEvolves: "Whiscash",
+		megaStone: { "Whiscash": "Whiscash-Mega" },
 		itemUser: ["Whiscash"],
 		onTakeItem(item, source) {
 			if (item.megaEvolves === source.baseSpecies.baseSpecies) return false;
@@ -8393,23 +8391,26 @@ export const Items: import('../sim/dex-items').ItemDataTable = {
 	castformite: {
 		name: "Castformite",
 		spritenum: 578,
-		megaStone: "Castform-Mega",
-		megaEvolves: "Castform",
-		itemUser: ["Castform"],
+		megaStone: {
+			"Castform": "Castform-Mega",
+			"Castform-Rainy": "Castform-Mega",
+			"Castform-Snowy": "Castform-Mega",
+			"Castform-Sunny": "Castform-Mega",
+		},
+		itemUser: ["Castform", "Castform-Rainy", "Castform-Snowy", "Castform-Sunny"],
 		onTakeItem(item, source) {
 			if (item.megaEvolves === source.baseSpecies.baseSpecies) return false;
 			return true;
 		},
 		num: -16,
 		gen: 9,
-		desc: "If held by a Castform, this item allows it to Mega Evolve in battle.",
+		desc: "If held by a Castform forme, this item allows it to Mega Evolve in battle.",
 		isNonstandard: "Custom",
 	},
 	empoleonite: {
 		name: "Empoleonite",
 		spritenum: 578,
-		megaStone: "Empoleon-Mega",
-		megaEvolves: "Empoleon",
+		megaStone: { "Empoleon": "Empoleon-Mega" },
 		itemUser: ["Empoleon"],
 		onTakeItem(item, source) {
 			if (item.megaEvolves === source.baseSpecies.baseSpecies) return false;
@@ -8423,8 +8424,7 @@ export const Items: import('../sim/dex-items').ItemDataTable = {
 	yanmeganite: {
 		name: "Yanmeganite",
 		spritenum: 578,
-		megaStone: "Yanmega-Mega",
-		megaEvolves: "Yanmega",
+		megaStone: { "Yanmega": "Yanmega-Mega" },
 		itemUser: ["Yanmega"],
 		onTakeItem(item, source) {
 			if (item.megaEvolves === source.baseSpecies.baseSpecies) return false;
@@ -8438,8 +8438,7 @@ export const Items: import('../sim/dex-items').ItemDataTable = {
 	serperiorite: {
 		name: "Serperiorite",
 		spritenum: 578,
-		megaStone: "Serperior-Mega",
-		megaEvolves: "Serperior",
+		megaStone: { "Serperior": "Serperior-Mega" },
 		itemUser: ["Serperior"],
 		onTakeItem(item, source) {
 			if (item.megaEvolves === source.baseSpecies.baseSpecies) return false;
@@ -8453,8 +8452,7 @@ export const Items: import('../sim/dex-items').ItemDataTable = {
 	samurottite: {
 		name: "Samurottite",
 		spritenum: 578,
-		megaStone: "Samurott-Mega",
-		megaEvolves: "Samurott",
+		megaStone: { "Samurott": "Samurott-Mega" },
 		itemUser: ["Samurott"],
 		onTakeItem(item, source) {
 			if (item.megaEvolves === source.baseSpecies.baseSpecies) return false;
@@ -8468,8 +8466,7 @@ export const Items: import('../sim/dex-items').ItemDataTable = {
 	krookodite: {
 		name: "Krookodite",
 		spritenum: 578,
-		megaStone: "Krookodile-Mega",
-		megaEvolves: "Krookodile",
+		megaStone: { "Krookodile": "Krookodile-Mega" },
 		itemUser: ["Krookodile"],
 		onTakeItem(item, source) {
 			if (item.megaEvolves === source.baseSpecies.baseSpecies) return false;
@@ -8483,8 +8480,7 @@ export const Items: import('../sim/dex-items').ItemDataTable = {
 	crustlite: {
 		name: "Crustlite",
 		spritenum: 578,
-		megaStone: "Crustle-Mega",
-		megaEvolves: "Crustle",
+		megaStone: { "Crustle": "Crustle-Mega" },
 		itemUser: ["Crustle"],
 		onTakeItem(item, source) {
 			if (item.megaEvolves === source.baseSpecies.baseSpecies) return false;
@@ -8498,9 +8494,11 @@ export const Items: import('../sim/dex-items').ItemDataTable = {
 	zoroarkite: {
 		name: "Zoroarkite",
 		spritenum: 578,
-		megaStone: "Zoroark-Mega",
-		megaEvolves: "Zoroark",
-		itemUser: ["Zoroark"],
+		megaStone: {
+			"Zoroark": "Zoroark-Mega",
+			"Zoroark-Hisui": "Zoroark-Hisui-Mega",
+		},
+		itemUser: ["Zoroark", "Zoroark-Hisui"],
 		onTakeItem(item, source) {
 			if (item.megaEvolves === source.baseSpecies.baseSpecies) return false;
 			return true;
@@ -8513,8 +8511,12 @@ export const Items: import('../sim/dex-items').ItemDataTable = {
 	sawsbuckite: {
 		name: "Sawsbuckite",
 		spritenum: 613,
-		megaStone: "Sawsbuck-Mega",
-		megaEvolves: "Sawsbuck",
+		megaStone: {
+			"Sawsbuck": "Sawsbuck-Spring-Mega",
+			"Sawsbuck-Summer": "Sawsbuck-Summer-Mega",
+			"Sawsbuck-Autumn": "Sawsbuck-Autumn-Mega",
+			"Sawsbuck-Winter": "Sawsbuck-Winter-Mega",
+		},
 		itemUser: ["Sawsbuck", "Sawsbuck-Summer", "Sawsbuck-Autumn", "Sawsbuck-Winter"],
 		onTakeItem(item, source) {
 			if (item.megaEvolves === source.baseSpecies.baseSpecies) return false;
@@ -8528,8 +8530,7 @@ export const Items: import('../sim/dex-items').ItemDataTable = {
 	clawitzerite: {
 		name: "Clawitzerite",
 		spritenum: 613,
-		megaStone: "Clawitzer-Mega",
-		megaEvolves: "Clawitzer",
+		megaStone: { "Clawitzer": "Clawitzer-Mega" },
 		itemUser: ["Clawitzer"],
 		onTakeItem(item, source) {
 			if (item.megaEvolves === source.baseSpecies.baseSpecies) return false;
@@ -8543,8 +8544,7 @@ export const Items: import('../sim/dex-items').ItemDataTable = {
 	tyrantrumite: {
 		name: "Tyrantrumite",
 		spritenum: 613,
-		megaStone: "Tyrantrum-Mega",
-		megaEvolves: "Tyrantrum",
+		megaStone: { "Tyrantrum": "Tyrantrum-Mega" },
 		itemUser: ["Tyrantrum"],
 		onTakeItem(item, source) {
 			if (item.megaEvolves === source.baseSpecies.baseSpecies) return false;
@@ -8558,8 +8558,7 @@ export const Items: import('../sim/dex-items').ItemDataTable = {
 	aurorusite: {
 		name: "Aurorusite",
 		spritenum: 613,
-		megaStone: "Aurorus-Mega",
-		megaEvolves: "Aurorus",
+		megaStone: { "Aurorus": "Aurorus-Mega" },
 		itemUser: ["Aurorus"],
 		onTakeItem(item, source) {
 			if (item.megaEvolves === source.baseSpecies.baseSpecies) return false;
@@ -8573,8 +8572,7 @@ export const Items: import('../sim/dex-items').ItemDataTable = {
 	ribombinite: {
 		name: "Ribombinite",
 		spritenum: 578,
-		megaStone: "Ribombee-Mega",
-		megaEvolves: "Ribombee",
+		megaStone: { "Ribombee": "Ribombee-Mega" },
 		itemUser: ["Ribombee"],
 		onTakeItem(item, source) {
 			if (item.megaEvolves === source.baseSpecies.baseSpecies) return false;
@@ -8588,8 +8586,7 @@ export const Items: import('../sim/dex-items').ItemDataTable = {
 	salazzlite: {
 		name: "Salazzlite",
 		spritenum: 578,
-		megaStone: "Salazzle-Mega",
-		megaEvolves: "Salazzle",
+		megaStone: { "Salazzle": "Salazzle-Mega" },
 		itemUser: ["Salazzle"],
 		onTakeItem(item, source) {
 			if (item.megaEvolves === source.baseSpecies.baseSpecies) return false;
@@ -8603,8 +8600,7 @@ export const Items: import('../sim/dex-items').ItemDataTable = {
 	dhelmite: {
 		name: "Dhelmite",
 		spritenum: 578,
-		megaStone: "Dhelmise-Mega",
-		megaEvolves: "Dhelmise",
+		megaStone: { "Dhelmise": "Dhelmise-Mega" },
 		itemUser: ["Dhelmise"],
 		onTakeItem(item, source) {
 			if (item.megaEvolves === source.baseSpecies.baseSpecies) return false;
@@ -8618,8 +8614,7 @@ export const Items: import('../sim/dex-items').ItemDataTable = {
 	cinderacite: {
 		name: "Cinderacite",
 		spritenum: 578,
-		megaStone: "Cinderace-Mega",
-		megaEvolves: "Cinderace",
+		megaStone: { "Cinderace": "Cinderace-Mega" },
 		itemUser: ["Cinderace"],
 		onTakeItem(item, source) {
 			if (item.megaEvolves === source.baseSpecies.baseSpecies) return false;
@@ -8632,9 +8627,12 @@ export const Items: import('../sim/dex-items').ItemDataTable = {
 	},
 	cramorantite: {
 		name: "Cramorantite",
-		megaStone: "Cramorant-Mega",
-		megaEvolves: "Cramorant",
-		itemUser: ["Cramorant"],
+		megaStone: {
+			"Cramorant": "Cramorant-Mega",
+			"Cramorant-Gulping": "Cramorant-Mega",
+			"Cramorant-Gorging": "Cramorant-Mega",
+		},
+		itemUser: ["Cramorant", "Cramorant-Gulping", "Cramorant-Gorging"],
 		onTakeItem(item, source) {
 			if (item.megaEvolves === source.baseSpecies.baseSpecies) return false;
 			return true;
@@ -8647,8 +8645,10 @@ export const Items: import('../sim/dex-items').ItemDataTable = {
 	toxtricitite: {
 		name: "Toxtricitite",
 		spritenum: 578,
-		megaStone: "Toxtricity-Mega",
-		megaEvolves: "Toxtricity",
+		megaStone: {
+			"Toxtricity": "Toxtricity-Mega",
+			"Toxtricity-Low-Key": "Toxtricity-Low-Key-Mega",
+		},
 		itemUser: ["Toxtricity", "Toxtricity-Low-Key"],
 		onTakeItem(item, source) {
 			if (item.megaEvolves === source.baseSpecies.baseSpecies) return false;
@@ -8662,8 +8662,7 @@ export const Items: import('../sim/dex-items').ItemDataTable = {
 	centiskorchitex: {
 		name: "Centiskorchite X",
 		spritenum: 578,
-		megaStone: "Centiskorch-Mega-X",
-		megaEvolves: "Centiskorch",
+		megaStone: { "Centiskorch": "Centiskorch-Mega-X" },
 		itemUser: ["Centiskorch"],
 		onTakeItem(item, source) {
 			if (item.megaEvolves === source.baseSpecies.baseSpecies) return false;
@@ -8677,8 +8676,7 @@ export const Items: import('../sim/dex-items').ItemDataTable = {
 	centiskorchitey: {
 		name: "Centiskorchite Y",
 		spritenum: 578,
-		megaStone: "Centiskorch-Mega-Y",
-		megaEvolves: "Centiskorch",
+		megaStone: { "Centiskorch": "Centiskorch-Mega-Y" },
 		itemUser: ["Centiskorch"],
 		onTakeItem(item, source) {
 			if (item.megaEvolves === source.baseSpecies.baseSpecies) return false;
@@ -8692,8 +8690,7 @@ export const Items: import('../sim/dex-items').ItemDataTable = {
 	centiskorchitez: {
 		name: "Centiskorchite Z",
 		spritenum: 578,
-		megaStone: "Centiskorch-Mega-Z",
-		megaEvolves: "Centiskorch",
+		megaStone: { "Centiskorch": "Centiskorch-Mega-Z" },
 		itemUser: ["Centiskorch"],
 		onTakeItem(item, source) {
 			if (item.megaEvolves === source.baseSpecies.baseSpecies) return false;
@@ -8707,8 +8704,7 @@ export const Items: import('../sim/dex-items').ItemDataTable = {
 	kleavorite: { 
 		name: "Kleavorite",
 		spritenum: 578,
-		megaStone: "Kleavor-Mega",
-		megaEvolves: "Kleavor",
+		megaStone: { "Kleavor": "Kleavor-Mega" },
 		itemUser: ["Kleavor"],
 		onTakeItem(item, source) {
 			if (item.megaEvolves === source.baseSpecies.baseSpecies) return false;
@@ -8721,8 +8717,7 @@ export const Items: import('../sim/dex-items').ItemDataTable = {
 	},
 	meowscaradite: {
 		name: "Meowscaradite",
-		megaStone: "Meowscarada-Mega",
-		megaEvolves: "Meowscarada",
+		megaStone: { "Meowscarada": "Meowscarada-Mega" },
 		itemUser: ["Meowscarada"],
 		onTakeItem(item, source) {
 			if (item.megaEvolves === source.baseSpecies.baseSpecies) return false;
@@ -8736,8 +8731,7 @@ export const Items: import('../sim/dex-items').ItemDataTable = {
 	skeledite: { 
 		name: "Skeledite",
 		spritenum: 578,
-		megaStone: "Skeledirge-Mega",
-		megaEvolves: "Skeledirge",
+		megaStone: { "Skeledirge": "Skeledirge-Mega" },
 		itemUser: ["Skeledirge"],
 		onTakeItem(item, source) {
 			if (item.megaEvolves === source.baseSpecies.baseSpecies) return false;
@@ -8750,8 +8744,7 @@ export const Items: import('../sim/dex-items').ItemDataTable = {
 	},
 	quaquavite: {
 		name: "Quaquavite",
-		megaStone: "Quaquaval-Mega",
-		megaEvolves: "Quaquaval",
+		megaStone: { "Quaquaval": "Quaquaval-Mega" },
 		itemUser: ["Quaquaval"],
 		onTakeItem(item, source) {
 			if (item.megaEvolves === source.baseSpecies.baseSpecies) return false;
@@ -8765,8 +8758,7 @@ export const Items: import('../sim/dex-items').ItemDataTable = {
 	rabscanite: { 
 		name: "Rabscanite",
 		spritenum: 578,
-		megaStone: "Rabsca-Mega",
-		megaEvolves: "Rabsca",
+		megaStone: { "Rabsca": "Rabsca-Mega" },
 		itemUser: ["Rabsca"],
 		onTakeItem(item, source) {
 			if (item.megaEvolves === source.baseSpecies.baseSpecies) return false;
@@ -8780,8 +8772,7 @@ export const Items: import('../sim/dex-items').ItemDataTable = {
 	brambleghite: {
 		name: "Brambleghite",
 		spritenum: 578,
-		megaStone: "Brambleghast-Mega",
-		megaEvolves: "Brambleghast",
+		megaStone: { "Brambleghast": "Brambleghast-Mega" },
 		itemUser: ["Brambleghast"],
 		onTakeItem(item, source) {
 			if (item.megaEvolves === source.baseSpecies.baseSpecies) return false;
@@ -8795,8 +8786,7 @@ export const Items: import('../sim/dex-items').ItemDataTable = {
 	baskironite: {
 		name: "Baskironite",
 		spritenum: 578,
-		megaStone: "Baskiron-Mega",
-		megaEvolves: "Baskiron",
+		megaStone: { "Baskiron": "Baskiron-Mega" },
 		itemUser: ["Baskiron"],
 		onTakeItem(item, source) {
 			if (item.megaEvolves === source.baseSpecies.baseSpecies) return false;
@@ -8810,8 +8800,7 @@ export const Items: import('../sim/dex-items').ItemDataTable = {
 	terreptilite: {
 		name: "Terreptilite",
 		spritenum: 578,
-		megaStone: "Terreptile-Mega",
-		megaEvolves: "Terreptile",
+		megaStone: { "Terreptile": "Terreptile-Mega" },
 		itemUser: ["Terreptile"],
 		onTakeItem(item, source) {
 			if (item.megaEvolves === source.baseSpecies.baseSpecies) return false;
@@ -8825,8 +8814,7 @@ export const Items: import('../sim/dex-items').ItemDataTable = {
 	infarmatemite: {
 		name: "Infarmatemite",
 		spritenum: 578,
-		megaStone: "Infarmatem-Mega",
-		megaEvolves: "Infarmatem",
+		megaStone: { "Infarmatem": "Infarmatem-Mega" },
 		itemUser: ["Infarmatem"],
 		onTakeItem(item, source) {
 			if (item.megaEvolves === source.baseSpecies.baseSpecies) return false;

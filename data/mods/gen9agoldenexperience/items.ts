@@ -365,11 +365,19 @@ export const Items: {[itemid: string]: ModdedItemData} = {
 	},
 	slowbronite: {
 		inherit: true,
+		megaStone: {
+			"Slowbro": "Slowbro-Mega",
+			"Slowbro-Galar": "Slowbro-Galar-Mega",
+		},
 		itemUser: ["Slowbro", "Slowbro-Galar"],
 		desc: "If held by a Slowbro forme, this item allows it to Mega Evolve in battle.",
 	},
 	scizorite: {
 		inherit: true,
+		megaStone: {
+			"Scizor": "Scizor-Mega",
+			"Scizor-Galar": "Scizor-Galar-Mega",
+		},
 		itemUser: ["Scizor", "Scizor-Galar"],
 		desc: "If held by a Scizor forme, this item allows it to Mega Evolve in battle.",
 	},

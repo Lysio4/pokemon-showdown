@@ -182,6 +182,7 @@ export const Formats: import('../sim/dex-formats').FormatList = [
 			'Uber', 'AG', 'OU', 'UUBL', 'Moody', 'Power Construct', 'King\'s Rock',
 			'Baton Pass', 'Last Respects', 'Quick Claw', 'Rage Fist', 'Razor Fang', 'Shed Tail',
 			'Drizzle', 'Drought', 'Light Clay', 
+			/*'Zoroark-Hisui + Zoroarkite', */
 		],
 		unbanlist: ['Light of Ruin'],
 	},
@@ -194,6 +195,7 @@ export const Formats: import('../sim/dex-formats').FormatList = [
 			'Uber', 'AG', 'OU', 'UUBL', 'UU', 'RUBL', 'Moody', 'Power Construct', 'King\'s Rock',
 			'Baton Pass', 'Last Respects', 'Quick Claw', 'Rage Fist', 'Razor Fang', 'Shed Tail',
 			'Drizzle', 'Drought', 'Light Clay', 
+			/*'Typhlosion + Typhlosionite', */
 		],
 		unbanlist: ['Light of Ruin'],
 	},

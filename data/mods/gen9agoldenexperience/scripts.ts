@@ -13,7 +13,7 @@ export const Scripts: ModdedBattleScriptsData = {
         return altForme.name;
       }
       if (!item.megaStone) return null;
-      if (item.name === "Raichunite X" && pokemon.baseSpecies.name === "Raichu-Alola") {
+      /*if (item.name === "Raichunite X" && pokemon.baseSpecies.name === "Raichu-Alola") {
         return null;
       }
       else if (item.name === "Raichunite Y" && pokemon.baseSpecies.name === "Raichu-Alola") {
@@ -48,7 +48,7 @@ export const Scripts: ModdedBattleScriptsData = {
       }
       else if (item.name === "Crobatite" && pokemon.baseSpecies.name === "Crobat") {
         return "Crobat-Mega";
-      }
+      }*/
       else if (item.name === "Scizorite" && pokemon.baseSpecies.name === "Scizor-Galar") {
         return "Scizor-Galar-Mega";
       }

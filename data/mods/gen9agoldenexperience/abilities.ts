@@ -1042,10 +1042,6 @@ export const Abilities: { [abilityid: string]: ModdedAbilityData; } = {
 		inherit: true,
 		isNonstandard: null,
 	},
-	multiheaded: {
-		inherit: true,
-		isNonstandard: null,
-	},
 	lightpower: {
 		inherit: true,
 		isNonstandard: null,

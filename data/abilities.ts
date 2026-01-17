@@ -7529,36 +7529,6 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 		num: -84,
 		isNonstandard: "Custom",
 	},
-	multiheaded: {
-		onPrepareHit(source, target, move) {
-			if (move.category === 'Status' || move.multihit || move.flags['noparentalbond'] || move.flags['charge'] ||
-				move.flags['futuremove'] || move.spreadHit || move.isZ || move.isMax) return;
-			move.multihit = 3;
-			move.multihitType = 'multiheaded' as 'parentalbond';
-		},
-		onTryBoost(boost, target, source, effect) {
-			if (effect.effectType === 'Move' && effect.multihitType && effect.hit > 1 &&
-				source && target === source) {
-				let i: keyof BoostsTable;
-				for (i in boost) {
-					delete boost[i];
-				}
-			}
-		},
-		// Damage modifier implemented in BattleActions#modifyDamage()
-		onSourceModifySecondaries(secondaries, target, source, move) {
-			if (move.multihitType && move.hit > 1) {
-				return [];
-			}
-		},
-		flags: {},
-		name: "Multiheaded",
-		gen: 9,
-		desc: "This Pokemon's damaging moves hit 3x. Successive hits do 15% damage without added effects.",
-		shortDesc: "This Pokemon's damaging moves hit 3x. Successive hits do 15% damage without added effects.",
-		num: -85,
-		isNonstandard: "Custom",
-	},
 	lightpower: {
 		onModifySpAPriority: 5,
 		onModifySpA(spa) {
@@ -7567,7 +7537,7 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 		name: "Light Power",
 		shortDesc: "This Pokemon's Special Attack is doubled.",
 		rating: 5,
-		num: -86,
+		num: -85,
 		isNonstandard: "Custom",
 	},
 	thermalswitch: {
@@ -7628,11 +7598,11 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 		desc: "Immunity to Burn. This Pokemon has two forms, Passive and Active. It starts the fight with Passive form. If Sun is set or it's hit by a Fire-type move, it switches to Active form until it switches out. If Snow is set, it's frozen, or it's hit by an Ice-type move, it switches to Passive form.",
 		shortDesc: "Burn immunity. Sun or Fire-type move: Active form; Snow, frozen or Ice-type move: Passive form.",
 		rating: 4,
-		num: -87,
+		num: -86,
 		isNonstandard: "Custom",
 	},
 	ironbody: {
-		num: -88,
+		num: -87,
 		name: "Iron Body",
 		shortDesc: "On switch in, adds Steel type to the user. Has no effect if the user is Steel-type.",
 		onStart(pokemon) {
@@ -7661,7 +7631,7 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 		name: "Psychic Prowess",
 		shortDesc: "This Pokemon's attacking stat is multiplied by 1.5 while using a Psychic type attack. Amnesia also boosts SpA by 2.",
 		rating: 3.5,
-		num: -89,
+		num: -88,
 		isNonstandard: "Custom",
 	},
 	rewind: {
@@ -7669,7 +7639,7 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 		shortDesc: "When brought to 50% HP or less, restores lost items on user's side.",
 		flags: {failroleplay: 1, noreceiver: 1, noentrain: 1, notrace: 1, failskillswap: 1, cantsuppress: 1},
 		rating: 4,
-		num: -90,
+		num: -89,
 		onStart(pokemon) {
 			pokemon.addVolatile('rewind');
 		},
@@ -7746,7 +7716,7 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 		name: "Huge Clamp",
 		shortDesc: "This Pokemon's Atk is boosted by 1.5, but its Speed is halved.",
 		rating: 1.5,
-		num: -91,
+		num: -90,
 		isNonstandard: "Custom",
 	},
 	contrarian: {
@@ -7763,7 +7733,7 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 		name: "Contrarian",
 		shortDesc: "As long as this Pokémon is on the field, every Pokémon on the field is under Contrary effect.",
 		rating: 4.5,
-		num: -92,
+		num: -91,
 		isNonstandard: "Custom",
 	},
    	healingecho: {
@@ -7777,7 +7747,7 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 		flags: {},
 	    name: "Healing Echo",
 		rating: 3,
-		num: -93,
+		num: -92,
 		isNonstandard: "Custom",
 	},
 	mountainwalker: {
@@ -7796,7 +7766,7 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 		flags: { breakable: 1 },
 		name: "Mountain Walker",
 		rating: 3,
-		num: -94,
+		num: -93,
 		isNonstandard: "Custom",
 	},
 	meltingheart: {
@@ -7813,7 +7783,7 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 		flags: {},
 		name: "Melting Heart",
 		rating: 1,
-		num: -95,
+		num: -94,
 		isNonstandard: "Custom",
 	},
 	stormemperor: {
@@ -7824,7 +7794,7 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 		flags: {},
 		name: "Storm Emperor",
 		rating: 5,
-		num: -96,
+		num: -95,
 		shortDesc: "On switch-in, this Pokemon summons Rain Dance and Electric Terrain.",
 		isNonstandard: "Custom",
 	},

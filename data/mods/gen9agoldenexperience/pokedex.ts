@@ -203,12 +203,10 @@ export const Pokedex: {[k: string]: ModdedSpeciesData;} = {
 	dugtrio: {
 		inherit: true,
 		baseStats: {hp: 35, atk: 115, def: 50, spa: 50, spd: 70, spe: 130},
-		abilities: {0: "Sand Veil", 1: "Arena Trap", H: "Multiheaded"},
 	},
 	dugtrioalola: {
 		inherit: true,
 		baseStats: {hp: 35, atk: 115, def: 70, spa: 50, spd: 70, spe: 110},
-		abilities: {0: "Sand Veil", 1: "Tangling Hair", H: "Multiheaded"},
 	},
 	persian: {
 		inherit: true,
@@ -327,11 +325,11 @@ export const Pokedex: {[k: string]: ModdedSpeciesData;} = {
 	},
 	doduo: {
 		inherit: true,
-		abilities: {0: "Run Away", 1: "Multiheaded", H: "Striker"},
+		abilities: {0: "Run Away", 1: "Early Bird", H: "Striker"},
 	},
 	dodrio: {
 		inherit: true,
-		abilities: {0: "Run Away", 1: "Multiheaded", H: "Striker"},
+		abilities: {0: "Run Away", 1: "Early Bird", H: "Striker"},
 	},
 	dewgong: {
 		inherit: true,
@@ -402,19 +400,14 @@ export const Pokedex: {[k: string]: ModdedSpeciesData;} = {
 		inherit: true,
 		abilities: {0: "Soundproof", 1: "Explosive", H: "Aftermath"},
 	},
-	exeggcute: {
-		inherit: true,
-		abilities: {0: "Chlorophyll", 1: "Multiheaded", H: "Harvest"},
-	},
 	exeggutor: {
 		inherit: true,
 		baseStats: {hp: 95, atk: 85, def: 85, spa: 125, spd: 75, spe: 65},
-		abilities: {0: "Chlorophyll", 1: "Multiheaded", H: "Harvest"},
 	},
 	exeggutoralola: {
 		inherit: true,
 		baseStats: {hp: 95, atk: 125, def: 85, spa: 125, spd: 75, spe: 25},
-		abilities: {0: "Unconcerned", 1: "Multiheaded", H: "Harvest"},
+		abilities: {0: "Unconcerned", H: "Harvest"},
 	},
 	hitmonlee: {
 		inherit: true,
@@ -2288,15 +2281,15 @@ export const Pokedex: {[k: string]: ModdedSpeciesData;} = {
 	},
 	deino: {
 		inherit: true,
-		abilities: {0: "Hustle", 1: "Unconcerned", H: "Strong Jaw"},
+		abilities: {0: "Hustle", H: "Unconcerned"},
 	},
 	zweilous: {
 		inherit: true,
-		abilities: {0: "Hustle", 1: "Unconcerned", H: "Multiheaded"},
+		abilities: {0: "Hustle", H: "Unconcerned"},
 	},
 	hydreigon: {
 		inherit: true,
-		abilities: {0: "Levitate", 1: "Unconcerned", H: "Multiheaded"},
+		abilities: {0: "Levitate", H: "Unconcerned"},
 	},
 	cobalion: {
 		inherit: true,
@@ -3211,10 +3204,6 @@ export const Pokedex: {[k: string]: ModdedSpeciesData;} = {
 	mrrime: {
 		inherit: true,
 		baseStats: {hp: 80, atk: 65, def: 95, spa: 110, spd: 100, spe: 70},
-	},
-	falinks: {
-		inherit: true,
-		abilities: {0: "Battle Armor", 1: "Multiheaded", H: "Defiant"},
 	},
 	falinksmega: {
 		inherit: true,

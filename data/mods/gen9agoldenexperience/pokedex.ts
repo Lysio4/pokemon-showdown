@@ -2377,11 +2377,11 @@ export const Pokedex: {[k: string]: ModdedSpeciesData;} = {
 	},
 	meowsticmmega: {
 		inherit: true,
-		abilities: { 0: "Protean" },
+		abilities: { 0: "Magic Eye" },
 	},
 	meowsticfmega: {
 		inherit: true,
-		abilities: { 0: "Protean" },
+		abilities: { 0: "Magic Eye" },
 	},
 	spritzee: {
 		inherit: true,
@@ -2398,8 +2398,7 @@ export const Pokedex: {[k: string]: ModdedSpeciesData;} = {
 	},
 	malamarmega: {
 		inherit: true,
-		baseStats: { hp: 86, atk: 102, def: 88, spa: 98, spd: 85, spe: 123 },
-		abilities: { 0: "Contrarian" },
+		abilities: { 0: "Psychic Surge" },
 	},
 	barbaraclemega: {
 		inherit: true,

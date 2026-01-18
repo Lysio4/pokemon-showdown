@@ -7798,6 +7798,18 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 		shortDesc: "On switch-in, this Pokemon summons Rain Dance and Electric Terrain.",
 		isNonstandard: "Custom",
 	},
+	magiceye: {
+		onStart(source) {
+			this.add('-activate', source, 'ability: Magic Eye');
+			this.field.addPseudoWeather('magicroom');
+		},
+		flags: {},
+		name: "Magic Eye",
+		shortDesc: "On switch-in, set Magic Room for 5 turns.",
+		rating: 4,
+		num: -96,
+		isNonstandard: "Custom",
+	},
 	// Touhou
 	hakkero: {
 		//effect in conditions.ts

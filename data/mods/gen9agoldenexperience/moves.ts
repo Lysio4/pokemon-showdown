@@ -427,11 +427,16 @@ export const Moves: { [k: string]: ModdedMoveData; } = {
 	aeroblast: {
 		inherit: true,
 		accuracy: 100,
-		desc: "Has a higher chance for a critical hit, and a 20% chance to freeze the target.",
-		shortDesc: "High critical hit ratio. 20% chance to freeze the target.",
+		pp: 10,
+		desc: "Heals the user's status, and a 20% chance to freeze the target.",
+		shortDesc: "Heals the user's status. 20% chance to freeze the target.",
 		secondary: {
 			chance: 20,
 			status: 'frz',
+		},
+		critRatio: 1,
+		onHit(pokemon) {
+			pokemon.cureStatus();
 		},
 	},
 	multiattack: {
@@ -1304,6 +1309,14 @@ export const Moves: { [k: string]: ModdedMoveData; } = {
 	threateningbite: {
 		inherit: true,
 		isNonstandard: null,
+	},
+	volttackle: {
+		inherit: true,
+		onModifyMove(move, pokemon, target) {
+			if (pokemon.baseSpecies.name === "Raichu-Mega-X") {
+				move.self = { boosts: { atk: 1 } };
+			}
+		},
 	},
 
 

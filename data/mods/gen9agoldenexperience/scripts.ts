@@ -1236,6 +1236,7 @@ export const Scripts: ModdedBattleScriptsData = {
 
     // Gen 3:
     this.modData('Learnsets', 'blaziken').learnset.drainpunch = ['9L1']; // ZA addition
+    this.modData('Learnsets', 'swampert').learnset.headlongrush = ['9L1'];
     this.modData('Learnsets', 'zigzagoongalar').learnset.extremespeed = ['9L1'];
     this.modData('Learnsets', 'linoonegalar').learnset.extremespeed = ['9L1'];
     this.modData('Learnsets', 'dustox').learnset.pollenpuff = ['9L1'];

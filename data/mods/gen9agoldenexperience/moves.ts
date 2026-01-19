@@ -1331,11 +1331,11 @@ export const Moves: { [k: string]: ModdedMoveData; } = {
 		onModifyMove(move, pokemon) {
 			if (pokemon?.hasItem('rustedsword')) {
 				move.boosts = { atk: 1, spa: 1, accuracy: 1 };
-				move.heal = [1, 4],
+				move.heal = [1, 4];
 			}
 			else if (pokemon?.hasItem('rustedshield')) {
 				move.boosts = { atk: 1, def: 1, spd: 1 };
-				move.heal = [1, 4],
+				move.heal = [1, 4];
 			}
 		},
 	},

@@ -24928,12 +24928,11 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 		desc: "If this move is successful, it sets up a hazard on the opposing side of the field, damaging each opposing Pokemon that switches in. Foes lose 1/32, 1/16, 1/8, 1/4, or 1/2 of their maximum HP, rounded down, based on their weakness to the Rock type; 0.25x, 0.5x, neutral, 2x, or 4x, respectively. Can be removed from the opposing side if any Pokemon uses Tidy Up, or if any opposing Pokemon uses Mortal Spin, Rapid Spin, or Defog successfully, or is hit by Defog.",
 		shortDesc: "Sets Stealth Rock on the target's side.",
 	},
-	gmaxwindrage: {
+	windrage: {
 		num: -98,
 		accuracy: 100,
 		basePower: 75,
 		category: "Physical",
-		isNonstandard: "Gigantamax",
 		name: "Wind Rage",
 		pp: 15,
 		priority: 0,
@@ -24966,6 +24965,7 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 		target: "adjacentFoe",
 		type: "Flying",
 		contestType: "Cool",
+		isNonstandard: "Custom",
 		desc: "If this move is successful, the effects of Electric Terrain, Grassy Terrain, Misty Terrain, and Psychic Terrain end, the effects of Reflect, Light Screen, Aurora Veil, Safeguard, Mist, G-Max Steelsurge, Spikes, Toxic Spikes, Stealth Rock, and Sticky Web end for the target's side, and the effects of G-Max Steelsurge, Spikes, Toxic Spikes, Stealth Rock, and Sticky Web end for the user's side.",
 		shortDesc: "Ends Terrain, hazards.",
 	},

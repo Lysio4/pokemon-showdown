@@ -1333,7 +1333,7 @@ export const Moves: { [k: string]: ModdedMoveData; } = {
 				move.boosts = { atk: 1, spa: 1, accuracy: 1 };
 				move.heal = [1, 4],
 			}
-			if (pokemon?.hasItem('rustedsword')) {
+			else if (pokemon?.hasItem('rustedshield')) {
 				move.boosts = { atk: 1, def: 1, spd: 1 };
 				move.heal = [1, 4],
 			}

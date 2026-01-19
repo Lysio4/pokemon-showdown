@@ -1318,6 +1318,27 @@ export const Moves: { [k: string]: ModdedMoveData; } = {
 			}
 		},
 	},
+	stonesurge: {
+		inherit: true,
+		isNonstandard: null,
+	},
+	windrage: {
+		inherit: true,
+		isNonstandard: null,
+	},
+	howl: {
+		inherit: true,
+		onModifyMove(move, pokemon) {
+			if (pokemon?.hasItem('rustedsword')) {
+				move.boosts = { atk: 1, spa: 1, accuracy: 1 };
+				move.heal = [1, 4],
+			}
+			if (pokemon?.hasItem('rustedsword')) {
+				move.boosts = { atk: 1, def: 1, spd: 1 };
+				move.heal = [1, 4],
+			}
+		},
+	},
 
 
 

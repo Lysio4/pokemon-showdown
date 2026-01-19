@@ -493,6 +493,51 @@ export const Items: {[itemid: string]: ModdedItemData} = {
 		itemUser: ["Lycanroc", "Lycanroc-Midnight", "Lycanroc-Dusk", "Lycanroc-Bloodmoon"],
 		shortDesc: "If held by a Lycanroc forme with Golem Strike, it can use Splintered Stormshards.",
 	},
+	rustedshield: {
+		inherit: true,
+		onSourceModifyAtkPriority: 6,
+		onSourceModifyAtk(atk, attacker, defender, move) {
+			if (move.type === 'Fairy') {
+				this.debug('Rusted Shield weaken');
+				return this.chainModify(0.5);
+			}
+		},
+		onSourceModifySpAPriority: 5,
+		onSourceModifySpA(atk, attacker, defender, move) {
+			if (move.type === 'Fairy') {
+				this.debug('Rusted Shield weaken');
+				return this.chainModify(0.5);
+			}
+		},
+		onSourceModifyDamage(damage, source, target, move) {
+			if (target.getMoveHitData(move).typeMod > 0) {
+				this.debug('Filter neutralize');
+				return this.chainModify(0.75);
+			}
+		},
+		shortDesc: "If held by a Zamazenta, this item changes its forme to Crowned Shield. Takes halved damage from Fairy-type moves, gets effects of Filter, and Howl gives +1 Atk, Def, SpD, and heals 25% HP.",
+	},
+	rustedsword: {
+		inherit: true,
+		onSourceModifyAtkPriority: 6,
+		onSourceModifyAtk(atk, attacker, defender, move) {
+			if (move.type === 'Fighting') {
+				this.debug('Rusted Sword weaken');
+				return this.chainModify(0.5);
+			}
+		},
+		onSourceModifySpAPriority: 5,
+		onSourceModifySpA(atk, attacker, defender, move) {
+			if (move.type === 'Fighting') {
+				this.debug('Rusted Sword weaken');
+				return this.chainModify(0.5);
+			}
+		},
+		onFlinch(pokemon) {
+			this.boost({ spe: 1 });
+		},
+		shortDesc: "If held by a Zacian, this item changes its forme to Crowned Sword. Takes halved damage from Fighting-type moves, gets effects of Steadfast, and Howl gives +1 Atk, SpA, Accuracy, and heals 25% HP.",
+	},
 	// everlasting winter
 	safetygoggles: {
 		inherit: true,

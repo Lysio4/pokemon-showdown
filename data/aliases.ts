@@ -1512,7 +1512,7 @@ export const Aliases: import('../sim/dex').AliasesTable = {
 	smite: "G-Max Smite",
 	snooze: "G-Max Snooze",
 	steelsurge: "G-Max Steelsurge",
-	stonesurge: "G-Max Stonesurge",
+	// stonesurge: "G-Max Stonesurge",
 	stunshock: "G-Max Stun Shock",
 	sweetness: "G-Max Sweetness",
 	tartness: "G-Max Tartness",
@@ -1521,7 +1521,7 @@ export const Aliases: import('../sim/dex').AliasesTable = {
 	volcalith: "G-Max Volcalith",
 	voltcrash: "G-Max Volt Crash",
 	wildfire: "G-Max Wildfire",
-	windrage: "G-Max Wind Rage",
+	// windrage: "G-Max Wind Rage",
 
 	// Japanese names --- ordered by dex number
 	fushigidane: "Bulbasaur",

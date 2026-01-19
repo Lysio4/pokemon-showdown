@@ -928,15 +928,6 @@ export const Abilities: { [abilityid: string]: ModdedAbilityData; } = {
 		inherit: true,
 		isNonstandard: null,
 	},
-	surgesurfer: {
-		inherit: true,
-		onModifySpe(spe) {
-			if (this.field.isTerrain('electricterrain') || this.field.isTerrain('psychicterrain') || this.field.isTerrain('grassyterrain') || this.field.isTerrain('mistyterrain') || this.field.isTerrain('chakraterrain')) {
-				return this.chainModify(2);
-			}
-		},
-		shortDesc: "If any Terrain is active, this Pokemon's Speed is doubled.",
-	},
 	pollution: {
 		inherit: true,
 		isNonstandard: null,

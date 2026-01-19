@@ -493,6 +493,11 @@ export const Items: {[itemid: string]: ModdedItemData} = {
 		itemUser: ["Lycanroc", "Lycanroc-Midnight", "Lycanroc-Dusk", "Lycanroc-Bloodmoon"],
 		shortDesc: "If held by a Lycanroc forme with Golem Strike, it can use Splintered Stormshards.",
 	},
+	aloraichiumz: {
+		inherit: true,
+		zMoveFrom: "Rising Voltage",
+		shortDesc: "If held by an Alolan Raichu with Rising Voltage, it can use Stoked Sparksurfer.",
+	},
 	rustedshield: {
 		inherit: true,
 		onSourceModifyAtkPriority: 6,

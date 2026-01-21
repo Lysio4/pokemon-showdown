@@ -1032,12 +1032,6 @@ export const Scripts: ModdedBattleScriptsData = {
     this.modData('Learnsets', 'venusaur').learnset.shadowclaw = ['9L1'];
     this.modData('Learnsets', 'venusaur').learnset.shadowsneak = ['9L1'];
     this.modData('Learnsets', 'venusaur').learnset.sludgewave = ['9L1']; // ZA addition
-    delete this.modData('Learnsets', 'squirtle').learnset.shellsmash;
-    delete this.modData('Learnsets', 'wartortle').learnset.shellsmash;
-    delete this.modData('Learnsets', 'blastoise').learnset.shellsmash;
-    this.modData('Learnsets', 'squirtle').learnset.calmmind = ['9L1'];
-    this.modData('Learnsets', 'wartortle').learnset.calmmind = ['9L1'];
-    this.modData('Learnsets', 'blastoise').learnset.calmmind = ['9L1'];
     this.modData('Learnsets', 'blastoise').learnset.meteormash = ['9L1'];
     this.modData('Learnsets', 'blastoise').learnset.scaredyshell = ['9L1'];
     this.modData('Learnsets', 'blastoise').learnset.ironhead = ['9L1']; // ZA addition
@@ -2009,6 +2003,7 @@ export const Scripts: ModdedBattleScriptsData = {
     this.modData('Learnsets', 'grafaiai').learnset.firstimpression = ['9L1']; // ZA addition
     this.modData('Learnsets', 'brambleghast').learnset.swordsdance = ['9L1'];
     this.modData('Learnsets', 'toedscruel').learnset.strengthsap = ['9L1'];
+    this.modData('Learnsets', 'klawf').learnset.scaredyshell = ['9L1'];
     this.modData('Learnsets', 'scovillain').learnset.scorchingsands = ['9L1'];
     this.modData('Learnsets', 'rabsca').learnset.teleport = ['9L1'];
     this.modData('Learnsets', 'rabsca').learnset.scorchingsands = ['9L1'];

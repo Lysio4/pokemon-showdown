@@ -34,7 +34,7 @@ export const Pokedex: {[k: string]: ModdedSpeciesData;} = {
 		forme: "Mega-X",
 		types: ["Water", "Steel"],
 		genderRatio: {M: 0.875, F: 0.125},
-		baseStats: {hp: 79, atk: 133, def: 110, spa: 85, spd: 115, spe: 108},
+		baseStats: {hp: 79, atk: 143, def: 110, spa: 95, spd: 115, spe: 88},
 		abilities: {0: "Anger Shell"},
 		heightm: 1.6,
 		weightkg: 101.1,
@@ -2302,11 +2302,6 @@ export const Pokedex: {[k: string]: ModdedSpeciesData;} = {
 	virizion: {
 		inherit: true,
 		abilities: {0: "Justified", H: "Sharpness"},
-	},
-	landorus: {
-		inherit: true,
-		baseStats: {hp: 89, atk: 115, def: 90, spa: 125, spd: 80, spe: 101},
-		abilities: {0: "Sand Force", H: "Wind Rider"},
 	},
 	keldeo: {
 		inherit: true,

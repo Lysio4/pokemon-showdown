@@ -54,7 +54,7 @@ export const FormatsData: { [k: string]: SpeciesFormatsData; } = {
 		doublesTier: "DUU",
 	},
 	blastoisemega: {
-		tier: "NU",
+		tier: "Uber",
 		doublesTier: "DUU",
 	},
 	blastoisemegax: {
@@ -3228,7 +3228,7 @@ export const FormatsData: { [k: string]: SpeciesFormatsData; } = {
 		doublesTier: "DUber",
 	},
 	landorus: {
-		tier: "UUBL",
+		tier: "Uber",
 		doublesTier: "DOU",
 	},
 	landorustherian: {

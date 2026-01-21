@@ -20982,7 +20982,7 @@ export const Pokedex: import('../sim/dex-species').SpeciesDataTable = {
 		forme: "Mega-X",
 		types: ["Water", "Steel"],
 		genderRatio: {M: 0.875, F: 0.125},
-		baseStats: {hp: 79, atk: 133, def: 110, spa: 85, spd: 115, spe: 108},
+		baseStats: {hp: 79, atk: 143, def: 110, spa: 95, spd: 115, spe: 88},
 		abilities: {0: "Anger Shell"},
 		heightm: 1.6,
 		weightkg: 101.1,

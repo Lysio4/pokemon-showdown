@@ -809,26 +809,13 @@ export const Abilities: { [abilityid: string]: ModdedAbilityData; } = {
 	seedsower: {
 		inherit: true,
 		onDamagingHit(damage, target, source, move) {
+			this.field.setTerrain('grassyterrain');
 			if (!source.hasType('Grass')) {
 				this.add('-activate', target, 'ability: Seed Sower');
 				source.addVolatile('leechseed', this.effectState.target);
 			}
 		},
-		shortDesc: "When this Pokemon is hit by an attack, the effect of Leech Seed begins.",
-	},
-	angershell: {
-		inherit: true,
-		onAfterMoveSecondary(target, source, move) {
-			this.effectState.checkedAngerShell = true;
-			if (!source || source === target || !target.hp || !move.totalDamage) return;
-			const lastAttackedBy = target.getLastAttackedBy();
-			if (!lastAttackedBy) return;
-			const damage = move.multihit ? move.totalDamage : lastAttackedBy.damage;
-			if (target.hp < target.maxhp) {
-				this.boost({atk: 1, spa: 1, spe: 1, def: -1, spd: -1}, target, target);
-			}
-		},
-		shortDesc: "If this Pokemon is hit by an attack, its Attack, Sp. Atk, and Speed are raised by 1 stage. Its Defense and Sp. Def are lowered by 1 stage.",
+		shortDesc: "When this Pokemon is hit by an attack, the effect of Grassy Terrain and Leech Seed begins.",
 	},
 	electromorphosis: {
 		inherit: true,

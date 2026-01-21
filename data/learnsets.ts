@@ -103751,7 +103751,6 @@ export const Learnsets: import('../sim/dex-species').LearnsetDataTable = {
 			moonblast: ["9L1"],
 			musclecare: ["9L1"],
 			naturesmadness: ["9L43"],
-			natureswrath: ["9T"],
 			payback: ["9M"],
 			poisonjab: ["9M"],
 			playrough: ["9M"],

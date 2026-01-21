@@ -669,7 +669,7 @@ export const FormatsData: { [k: string]: SpeciesFormatsData; } = {
 		doublesTier: "DUU",
 	},
 	electrodehisui: {
-		tier: "RU",
+		tier: "RUBL",
 		doublesTier: "DUU",
 	},
 	exeggcute: {
@@ -2399,7 +2399,7 @@ export const FormatsData: { [k: string]: SpeciesFormatsData; } = {
 		doublesTier: "DUU",
 	},
 	uxie: {
-		tier: "NU",
+		tier: "RU",
 		doublesTier: "DUU",
 	},
 	mesprit: {
@@ -3390,7 +3390,7 @@ export const FormatsData: { [k: string]: SpeciesFormatsData; } = {
 		doublesTier: "DOU",
 	},
 	florges: {
-		tier: "NU",
+		tier: "RU",
 		doublesTier: "DUU",
 	},
 	skiddo: {

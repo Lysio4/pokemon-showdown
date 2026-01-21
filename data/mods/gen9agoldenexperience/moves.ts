@@ -1339,6 +1339,34 @@ export const Moves: { [k: string]: ModdedMoveData; } = {
 			}
 		},
 	},
+	xrayvoltshock: {
+		inherit: true,
+		isNonstandard: null,
+	},
+	sunmothwrath: {
+		inherit: true,
+		isNonstandard: null,
+	},
+	taleofthemoon: {
+		inherit: true,
+		isNonstandard: null,
+	},
+	ultrapapercut: {
+		inherit: true,
+		isNonstandard: null,
+	},
+	maxscrewmeltdown: {
+		inherit: true,
+		isNonstandard: null,
+	},
+	armorbigblast: {
+		inherit: true,
+		isNonstandard: null,
+	},
+	thousandbladework: {
+		inherit: true,
+		isNonstandard: null,
+	},
 
 
 

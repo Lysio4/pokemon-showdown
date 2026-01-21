@@ -24944,13 +24944,13 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 			for (const targetCondition of removeTarget) {
 				if (source.side.foe.removeSideCondition(targetCondition)) {
 					if (!removeAll.includes(targetCondition)) continue;
-					this.add('-sideend', source.side.foe, this.dex.conditions.get(targetCondition).name, '[from] move: G-Max Wind Rage', `[of] ${source}`);
+					this.add('-sideend', source.side.foe, this.dex.conditions.get(targetCondition).name, '[from] move: Wind Rage', `[of] ${source}`);
 					success = true;
 				}
 			}
 			for (const sideCondition of removeAll) {
 				if (source.side.removeSideCondition(sideCondition)) {
-					this.add('-sideend', source.side, this.dex.conditions.get(sideCondition).name, '[from] move: G-Max Wind Rage', `[of] ${source}`);
+					this.add('-sideend', source.side, this.dex.conditions.get(sideCondition).name, '[from] move: Wind Rage', `[of] ${source}`);
 					success = true;
 				}
 			}
@@ -24968,6 +24968,218 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 		isNonstandard: "Custom",
 		desc: "If this move is successful, the effects of Electric Terrain, Grassy Terrain, Misty Terrain, and Psychic Terrain end, the effects of Reflect, Light Screen, Aurora Veil, Safeguard, Mist, G-Max Steelsurge, Spikes, Toxic Spikes, Stealth Rock, and Sticky Web end for the target's side, and the effects of G-Max Steelsurge, Spikes, Toxic Spikes, Stealth Rock, and Sticky Web end for the user's side.",
 		shortDesc: "Ends Terrain, hazards.",
+	},
+	xrayvoltshock: {
+		num: -99,
+		accuracy: true,
+		basePower: 185,
+		category: "Physical",
+		name: "X-Ray Volt Shock",
+		pp: 1,
+		priority: 0,
+		flags: {},
+		isZ: "luxriumz",
+		selfBoost: {
+			boosts: {
+				atk: 1,
+				def: 1,
+				spa: 1,
+				spd: 1,
+				spe: 1,
+			},
+		},
+		onPrepareHit(target, source) {
+			this.attrLastMove('[still]');
+			this.add('-anim', source, "Wild Charge", target);
+			this.add('-anim', source, "Gigavolt Havoc", target);
+		},
+		secondary: null,
+		target: "normal",
+		type: "Electric",
+		contestType: "Tough",
+		desc: "Raises the user's Attack, Defense, Special Attack, Special Defense, and Speed by 1 stage.",
+		shortDesc: "Raises the user's Atk/Def/SpAtk/SpDef/Spe by 1.",
+		isNonstandard: "Custom",
+	},
+	sunmothwrath: {
+		num: -100,
+		accuracy: true,
+		basePower: 185,
+		category: "Special",
+		name: "Sun Moth Wrath",
+		pp: 1,
+		priority: 0,
+		flags: {},
+		isZ: "volcaroniumz",
+		secondary: null,
+		onPrepareHit(target, source) {
+			this.attrLastMove('[still]');
+			this.add('-anim', source, "Fiery Dance", target);
+			this.add('-anim', source, "Inferno Overdrive", target);
+		},
+		target: "normal",
+		type: "Fire",
+		contestType: "Beautiful",
+		shortDesc: "No additional effect.",
+		isNonstandard: "Custom",
+	},
+	taleofthemoon: {
+		num: -101,
+		accuracy: true,
+		basePower: 175,
+		category: "Physical",
+		name: "Tale Of The Moon",
+		pp: 1,
+		priority: 0,
+		flags: {},
+		isZ: "celesteeliumz",
+		onHit(source) {
+			let success = false;
+			const removeAll = ['spikes', 'toxicspikes', 'stealthrock', 'stickyweb', 'gmaxsteelsurge'];
+			const removeTarget = ['reflect', 'lightscreen', 'auroraveil', 'safeguard', 'mist', ...removeAll];
+			for (const targetCondition of removeTarget) {
+				if (source.side.foe.removeSideCondition(targetCondition)) {
+					if (!removeAll.includes(targetCondition)) continue;
+					this.add('-sideend', source.side.foe, this.dex.conditions.get(targetCondition).name, '[from] move: Tale Of The Moon', `[of] ${source}`);
+					success = true;
+				}
+			}
+			for (const sideCondition of removeAll) {
+				if (source.side.removeSideCondition(sideCondition)) {
+					this.add('-sideend', source.side, this.dex.conditions.get(sideCondition).name, '[from] move: Tale Of The Moon', `[of] ${source}`);
+					success = true;
+				}
+			}
+			this.field.clearTerrain();
+			return success;
+		},
+		onPrepareHit(target, source) {
+			this.attrLastMove('[still]');
+			this.add('-anim', source, "Heavy Slam", target);
+			this.add('-anim', source, "Meteor Beam", target);
+		},
+		secondary: null,
+		target: "normal",
+		type: "Steel",
+		contestType: "Cool",
+		isNonstandard: "Custom",
+		desc: "If this move is successful, the effects of Electric Terrain, Grassy Terrain, Misty Terrain, and Psychic Terrain end, the effects of Reflect, Light Screen, Aurora Veil, Safeguard, Mist, G-Max Steelsurge, Spikes, Toxic Spikes, Stealth Rock, and Sticky Web end for the target's side, and the effects of G-Max Steelsurge, Spikes, Toxic Spikes, Stealth Rock, and Sticky Web end for the user's side.",
+		shortDesc: "Ends Terrain, hazards.",
+	},
+	ultrapapercut: {
+		num: -102,
+		accuracy: true,
+		basePower: 175,
+		category: "Physical",
+		name: "Ultra Paper Cut",
+		pp: 1,
+		priority: 0,
+		flags: {},
+		isZ: "kartaniumz",
+		onHit(source) {
+			let success = false;
+			const removeAll = ['spikes', 'toxicspikes', 'stealthrock', 'stickyweb', 'gmaxsteelsurge'];
+			const removeTarget = ['reflect', 'lightscreen', 'auroraveil', 'safeguard', 'mist', ...removeAll];
+			for (const targetCondition of removeTarget) {
+				if (source.side.foe.removeSideCondition(targetCondition)) {
+					if (!removeAll.includes(targetCondition)) continue;
+					this.add('-sideend', source.side.foe, this.dex.conditions.get(targetCondition).name, '[from] move: Ultra Paper Cut', `[of] ${source}`);
+					success = true;
+				}
+			}
+			for (const sideCondition of removeAll) {
+				if (source.side.removeSideCondition(sideCondition)) {
+					this.add('-sideend', source.side, this.dex.conditions.get(sideCondition).name, '[from] move: Ultra Paper Cut', `[of] ${source}`);
+					success = true;
+				}
+			}
+			this.field.clearTerrain();
+			return success;
+		},
+		onPrepareHit(target, source) {
+			this.attrLastMove('[still]');
+			this.add('-anim', source, "Leaf Blade", target);
+			this.add('-anim', source, "Bloom Doom", target);
+		},
+		secondary: null,
+		target: "normal",
+		type: "Grass",
+		contestType: "Tough",
+		isNonstandard: "Custom",
+		desc: "If this move is successful, the effects of Electric Terrain, Grassy Terrain, Misty Terrain, and Psychic Terrain end, the effects of Reflect, Light Screen, Aurora Veil, Safeguard, Mist, G-Max Steelsurge, Spikes, Toxic Spikes, Stealth Rock, and Sticky Web end for the target's side, and the effects of G-Max Steelsurge, Spikes, Toxic Spikes, Stealth Rock, and Sticky Web end for the user's side.",
+		shortDesc: "Ends Terrain, hazards.",
+	},
+	maxscrewmeltdown: {
+		num: -103,
+		accuracy: true,
+		basePower: 190,
+		category: "Physical",
+		name: "Max Screw Meltdown",
+		pp: 1,
+		priority: 0,
+		flags: {},
+		isZ: "melmetaliumz",
+		onHit(source, target, effect) {
+			for (const pokemon of source.foes()) {
+				if (!pokemon.volatiles['dynamax']) pokemon.addVolatile('torment', source, effect);
+			}
+		},
+		onPrepareHit(target, source) {
+			this.attrLastMove('[still]');
+			this.add('-anim', source, "G-Max Meltdown", target);
+		},
+		secondary: null,
+		target: "normal",
+		type: "Steel",
+		contestType: "Clever",
+		isNonstandard: "Custom",
+		shortDesc: "Foe is tormented.",
+	},
+	armorbigblast: {
+		num: -104,
+		accuracy: true,
+		basePower: 195,
+		category: "Special",
+		name: "Armor Big Blast",
+		pp: 1,
+		priority: 0,
+		flags: {},
+		isZ: "armariumz",
+		onPrepareHit(target, source) {
+			this.attrLastMove('[still]');
+			this.add('-anim', source, "Armor Cannon", target);
+			this.add('-anim', source, "Inferno Overdrive", target);
+		},
+		secondary: null,
+		target: "normal",
+		type: "Fire",
+		isNonstandard: "Custom",
+		shortDesc: "No additional effect.",
+	},
+	thousandbladework: {
+		num: -105,
+		accuracy: true,
+		basePower: 195,
+		category: "Physical",
+		name: "Thousand Blade Work",
+		pp: 1,
+		priority: 0,
+		flags: {},
+		isZ: "ceruliumz",
+		secondary: {
+			chance: 100,
+			volatileStatus: 'healblock',
+		},
+		onPrepareHit(target, source) {
+			this.attrLastMove('[still]');
+			this.add('-anim', source, "Bitter Blade", target);
+			this.add('-anim', source, "Inferno Overdrive", target);
+		},
+		target: "normal",
+		type: "Fire",
+		isNonstandard: "Custom",
+		desc: "For 5 turns, the target is prevented from restoring any HP as long as it remains active. During the effect, healing and draining moves are unusable, and Abilities and items that grant healing will not heal the user. If an affected Pokemon uses Baton Pass, the replacement will remain unable to restore its HP. Pain Split and the Regenerator Ability are unaffected.",
+		shortDesc: "For 5 turns, the target is prevented from healing.",
 	},
 	// Touhou
 	dreamseal: {

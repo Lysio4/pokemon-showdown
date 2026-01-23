@@ -457,6 +457,7 @@ export const Scripts: ModdedBattleScriptsData = {
     this.modData('Learnsets', 'relicanth').learnset.seajaws = ['9L1'];
 
     // roguewave 
+    this.modData('Learnsets', 'poliwrath').learnset.roguewave = ['9L1'];
     this.modData('Learnsets', 'azumarill').learnset.roguewave = ['9L1'];
     this.modData('Learnsets', 'kingdra').learnset.roguewave = ['9L1'];
     this.modData('Learnsets', 'sharpedo').learnset.roguewave = ['9L1'];
@@ -1842,6 +1843,7 @@ export const Scripts: ModdedBattleScriptsData = {
     this.modData('Learnsets', 'silvally').learnset.taunt = ['9L1'];
     this.modData('Learnsets', 'silvally').learnset.bulkup = ['9L1'];
     this.modData('Learnsets', 'silvally').learnset.calmmind = ['9L1'];
+    this.modData('Learnsets', 'silvally').learnset.shiftgear = ['9L1'];
     this.modData('Learnsets', 'turtonator').learnset.stealthrock = ['9L1'];
     this.modData('Learnsets', 'turtonator').learnset.lavaplume = ['9L1'];
     this.modData('Learnsets', 'turtonator').learnset.scaredyshell = ['9L1'];

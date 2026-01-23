@@ -1349,6 +1349,11 @@ export const Pokedex: {[k: string]: ModdedSpeciesData;} = {
 		inherit: true,
 		abilities: {0: "Clear Body", 1: "Bulletproof", H: "Light Metal"},
 	},
+	rayquazamega: {
+		inherit: true,
+		requiredMove: null,
+		requiredItem: "Jade Orb",
+	},
 	jirachi: {
 		inherit: true,
 		abilities: {0: "Karma"},
@@ -3738,6 +3743,10 @@ export const Pokedex: {[k: string]: ModdedSpeciesData;} = {
 	ironcrown: {
 		inherit: true,
 		abilities: {0: "Quark Drive", H: "Justified"},
+	},
+	terapagosstellar: {
+		inherit: true,
+		requiredItem: "Tera Orb",
 	},
 	pecharunt: {
 		inherit: true,

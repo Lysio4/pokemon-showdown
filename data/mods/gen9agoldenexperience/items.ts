@@ -571,6 +571,14 @@ export const Items: {[itemid: string]: ModdedItemData} = {
 		inherit: true,
 		isNonstandard: null,
 	},
+	jadeorb: {
+		inherit: true,
+		isNonstandard: null,
+	},
+	teraorb: {
+		inherit: true,
+		isNonstandard: null,
+	},
 	// everlasting winter
 	safetygoggles: {
 		inherit: true,

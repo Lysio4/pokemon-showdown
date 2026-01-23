@@ -2087,7 +2087,7 @@ export const FormatsData: { [k: string]: SpeciesFormatsData; } = {
 		doublesTier: "DUber",
 	},
 	rayquazamega: {
-		tier: "AG",
+		tier: "Uber",
 		doublesTier: "DUber",
 	},
 	jirachi: {
@@ -5240,8 +5240,8 @@ export const FormatsData: { [k: string]: SpeciesFormatsData; } = {
 		doublesTier: "DUU",
 	},
 	terapagosstellar: {
-		inherit: true,
-		tier: "Illegal",
+		tier: "Uber",
+		doublesTier: "DUber",
 	},
 	pecharunt: {
 		tier: "UU",

@@ -9051,6 +9051,46 @@ export const Items: import('../sim/dex-items').ItemDataTable = {
 		shortDesc: "If held by a Ceruledge with Bitter Blade, it can use Thousand Blade Work.",
 		isNonstandard: "Custom",
 	},
+	jadeorb: {
+		name: "Jade Orb",
+		spritenum: 578,
+		megaStone: { "Rayquaza": "Rayquaza-Mega" },
+		itemUser: ["Rayquaza"],
+		onTakeItem(item, source) {
+			if (item.megaEvolves === source.baseSpecies.baseSpecies) return false;
+			return true;
+		},
+		num: -59,
+		gen: 9,
+		desc: "If held by a Rayquaza, this item allows it to Mega Evolve in battle.",
+		isNonstandard: "Custom",
+	},
+	teraorb: {
+		name: "Tera Orb",
+		onStart(pokemon) {
+			if (pokemon.isActive && (pokemon.baseSpecies.name === 'Terapagos' || pokemon.baseSpecies.name === 'Terapagos-Terastal')) {
+				if (pokemon.species.id !== 'terapagosstellar') {
+					pokemon.formeChange('Terapagos-Stellar');
+					pokemon.baseMaxhp = Math.floor(Math.floor(
+						2 * pokemon.species.baseStats['hp'] + pokemon.set.ivs['hp'] + Math.floor(pokemon.set.evs['hp'] / 4) + 100
+					) * pokemon.level / 100 + 10);
+					const newMaxHP = pokemon.volatiles['dynamax'] ? (2 * pokemon.baseMaxhp) : pokemon.baseMaxhp;
+					pokemon.hp = newMaxHP - (pokemon.maxhp - pokemon.hp);
+					pokemon.maxhp = newMaxHP;
+					this.add('-heal', pokemon, pokemon.getHealth, '[silent]');
+				}
+			}
+		},
+		onTakeItem(item, source) {
+			if (source.baseSpecies.baseSpecies === 'Terapagos' || source.baseSpecies.baseSpecies === 'Terapagos-Terastal' || source.baseSpecies.baseSpecies === 'Terapagos-Stellar') return false;
+			return true;
+		},
+		gen: 9,
+		itemUser: ["Terapagos", "Terapagos-Terastal"],
+		desc: "If holder is a Terapagos, it becomes Stellar form.",
+		num: -60,
+		isNonstandard: "Custom",
+	},
 	// Touhou
 	summerbackdoor: {
 		name: "Summer Backdoor",

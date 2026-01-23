@@ -1226,7 +1226,7 @@ export const Pokedex: {[k: string]: ModdedSpeciesData;} = {
 	},
 	milotic: {
 		inherit: true,
-		types: ["Water", "Fairy"],
+		types: ["Water", "Dragon"],
 	},
 	castform: {
 		inherit: true,
@@ -2823,7 +2823,7 @@ export const Pokedex: {[k: string]: ModdedSpeciesData;} = {
 	},
 	silvallyice: {
 		inherit: true,
-		abilities: {0: "Refrigerate"},
+		abilities: {0: "Ice Scales"},
 		requiredItem: null,
 	},
 	silvallypoison: {

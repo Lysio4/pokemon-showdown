@@ -1300,8 +1300,7 @@ export const Scripts: ModdedBattleScriptsData = {
     this.modData('Learnsets', 'cradily').learnset.strengthsap = ['9L1'];
     this.modData('Learnsets', 'armaldo').learnset.flipturn = ['9L1'];
     this.modData('Learnsets', 'armaldo').learnset.wavecrash = ['9L1'];
-    this.modData('Learnsets', 'milotic').learnset.moonblast = ['9M'];
-    this.modData('Learnsets', 'milotic').learnset.dazzlinggleam = ['9M'];
+    this.modData('Learnsets', 'milotic').learnset.dracometeor = ['9M'];
     this.modData('Learnsets', 'milotic').learnset.calmmind = ['9M']; // ZA addition
     this.modData('Learnsets', 'castform').learnset.calmmind = ['9L1'];
     this.modData('Learnsets', 'castform').learnset.uturn = ['9L1'];
@@ -1311,6 +1310,7 @@ export const Scripts: ModdedBattleScriptsData = {
     this.modData('Learnsets', 'kecleon').learnset.conversion = ['9L1']; // ZA addition
     this.modData('Learnsets', 'kecleon').learnset.conversion2 = ['9L1']; // ZA addition
     this.modData('Learnsets', 'kecleon').learnset.firstimpression = ['9L1']; // ZA addition
+    this.modData('Learnsets', 'kecleon').learnset.colorfulhit = ['9L1'];
     this.modData('Learnsets', 'banette').learnset.mefirst = ['9L1'];
     this.modData('Learnsets', 'banette').learnset.copycat = ['9L1'];
     this.modData('Learnsets', 'banette').learnset.focuspunch = ['9L1'];
@@ -2058,10 +2058,8 @@ export const Scripts: ModdedBattleScriptsData = {
 		}
 
     // HiddenPower
-    const stillLearn = ['eevee', 'eeveestarter', 'jolteon', 'flareon', 'vaporeon', 'porygon', 'mew', 'espeon', 'umbreon', 'porygon2', 'unown', 'kecleon', 'leafeon', 'glaceon', 
-      'porygonz', 'sylveon', 'silvally'];
     for (const id in this.dataCache.Pokedex) {
-      if (this.dataCache.Learnsets[id] && this.dataCache.Learnsets[id].learnset && !stillLearn.includes(id)) {
+      if (this.dataCache.Learnsets[id] && this.dataCache.Learnsets[id].learnset && id !== 'unown') {
         delete this.modData('Learnsets', this.toID(id)).learnset.hiddenpower;
       }
     }

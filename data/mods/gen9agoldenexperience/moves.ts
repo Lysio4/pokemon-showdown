@@ -636,142 +636,6 @@ export const Moves: { [k: string]: ModdedMoveData; } = {
 		pp: 10,
 		type: "Steel",
 	},
-	hiddenpower: {
-		inherit: true,
-		basePower: 80,
-		shortDesc: "Varies in type based on the user's IVs. Physical if user's Atk > Sp. Atk.",
-		onModifyMove(move, pokemon) {
-			if (pokemon.getStat('atk', false, true) > pokemon.getStat('spa', false, true)) move.category = 'Physical';
-		},
-	},
-	hiddenpowerbug: {
-		inherit: true,
-		basePower: 80,
-		shortDesc: "Physical if user's Atk > Sp. Atk.",
-		onModifyMove(move, pokemon) {
-			if (pokemon.getStat('atk', false, true) > pokemon.getStat('spa', false, true)) move.category = 'Physical';
-		},
-	},
-	hiddenpowerdark: {
-		inherit: true,
-		basePower: 80,
-		shortDesc: "Physical if user's Atk > Sp. Atk.",
-		onModifyMove(move, pokemon) {
-			if (pokemon.getStat('atk', false, true) > pokemon.getStat('spa', false, true)) move.category = 'Physical';
-		},
-	},
-	hiddenpowerdragon: {
-		inherit: true,
-		basePower: 80,
-		shortDesc: "Physical if user's Atk > Sp. Atk.",
-		onModifyMove(move, pokemon) {
-			if (pokemon.getStat('atk', false, true) > pokemon.getStat('spa', false, true)) move.category = 'Physical';
-		},
-	},
-	hiddenpowerelectric: {
-		inherit: true,
-		basePower: 80,
-		shortDesc: "Physical if user's Atk > Sp. Atk.",
-		onModifyMove(move, pokemon) {
-			if (pokemon.getStat('atk', false, true) > pokemon.getStat('spa', false, true)) move.category = 'Physical';
-		},
-	},
-	hiddenpowerfighting: {
-		inherit: true,
-		basePower: 80,
-		shortDesc: "Physical if user's Atk > Sp. Atk.",
-		onModifyMove(move, pokemon) {
-			if (pokemon.getStat('atk', false, true) > pokemon.getStat('spa', false, true)) move.category = 'Physical';
-		},
-	},
-	hiddenpowerfire: {
-		inherit: true,
-		basePower: 80,
-		shortDesc: "Physical if user's Atk > Sp. Atk.",
-		onModifyMove(move, pokemon) {
-			if (pokemon.getStat('atk', false, true) > pokemon.getStat('spa', false, true)) move.category = 'Physical';
-		},
-	},
-	hiddenpowerflying: {
-		inherit: true,
-		basePower: 80,
-		shortDesc: "Physical if user's Atk > Sp. Atk.",
-		onModifyMove(move, pokemon) {
-			if (pokemon.getStat('atk', false, true) > pokemon.getStat('spa', false, true)) move.category = 'Physical';
-		},
-	},
-	hiddenpowerghost: {
-		inherit: true,
-		basePower: 80,
-		shortDesc: "Physical if user's Atk > Sp. Atk.",
-		onModifyMove(move, pokemon) {
-			if (pokemon.getStat('atk', false, true) > pokemon.getStat('spa', false, true)) move.category = 'Physical';
-		},
-	},
-	hiddenpowergrass: {
-		inherit: true,
-		basePower: 80,
-		shortDesc: "Physical if user's Atk > Sp. Atk.",
-		onModifyMove(move, pokemon) {
-			if (pokemon.getStat('atk', false, true) > pokemon.getStat('spa', false, true)) move.category = 'Physical';
-		},
-	},
-	hiddenpowerground: {
-		inherit: true,
-		basePower: 80,
-		shortDesc: "Physical if user's Atk > Sp. Atk.",
-		onModifyMove(move, pokemon) {
-			if (pokemon.getStat('atk', false, true) > pokemon.getStat('spa', false, true)) move.category = 'Physical';
-		},
-	},
-	hiddenpowerice: {
-		inherit: true,
-		basePower: 80,
-		shortDesc: "Physical if user's Atk > Sp. Atk.",
-		onModifyMove(move, pokemon) {
-			if (pokemon.getStat('atk', false, true) > pokemon.getStat('spa', false, true)) move.category = 'Physical';
-		},
-	},
-	hiddenpowerpoison: {
-		inherit: true,
-		basePower: 80,
-		shortDesc: "Physical if user's Atk > Sp. Atk.",
-		onModifyMove(move, pokemon) {
-			if (pokemon.getStat('atk', false, true) > pokemon.getStat('spa', false, true)) move.category = 'Physical';
-		},
-	},
-	hiddenpowerpsychic: {
-		inherit: true,
-		basePower: 80,
-		shortDesc: "Physical if user's Atk > Sp. Atk.",
-		onModifyMove(move, pokemon) {
-			if (pokemon.getStat('atk', false, true) > pokemon.getStat('spa', false, true)) move.category = 'Physical';
-		},
-	},
-	hiddenpowerrock: {
-		inherit: true,
-		basePower: 80,
-		shortDesc: "Physical if user's Atk > Sp. Atk.",
-		onModifyMove(move, pokemon) {
-			if (pokemon.getStat('atk', false, true) > pokemon.getStat('spa', false, true)) move.category = 'Physical';
-		},
-	},
-	hiddenpowersteel: {
-		inherit: true,
-		basePower: 80,
-		shortDesc: "Physical if user's Atk > Sp. Atk.",
-		onModifyMove(move, pokemon) {
-			if (pokemon.getStat('atk', false, true) > pokemon.getStat('spa', false, true)) move.category = 'Physical';
-		},
-	},
-	hiddenpowerwater: {
-		inherit: true,
-		basePower: 80,
-		shortDesc: "Physical if user's Atk > Sp. Atk.",
-		onModifyMove(move, pokemon) {
-			if (pokemon.getStat('atk', false, true) > pokemon.getStat('spa', false, true)) move.category = 'Physical';
-		},
-	},
 	snipeshot: {
 		inherit: true,
 		basePower: 60,
@@ -1364,6 +1228,10 @@ export const Moves: { [k: string]: ModdedMoveData; } = {
 		isNonstandard: null,
 	},
 	thousandbladework: {
+		inherit: true,
+		isNonstandard: null,
+	},
+	colorfulhit: {
 		inherit: true,
 		isNonstandard: null,
 	},

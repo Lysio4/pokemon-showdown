@@ -2486,7 +2486,6 @@ export const Pokedex: {[k: string]: ModdedSpeciesData;} = {
 	},
 	sliggoo: {
 		inherit: true,
-		types: ["Dragon", "Poison"],
 		baseStats: {hp: 68, atk: 55, def: 73, spa: 83, spd: 113, spe: 60},
 	},
 	sliggoohisui: {
@@ -2495,7 +2494,6 @@ export const Pokedex: {[k: string]: ModdedSpeciesData;} = {
 	},
 	goodra: {
 		inherit: true,
-		types: ["Dragon", "Poison"],
 		baseStats: {hp: 90, atk: 70, def: 100, spa: 110, spd: 150, spe: 80},
 	},
 	goodrahisui: {

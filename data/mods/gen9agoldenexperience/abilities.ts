@@ -833,10 +833,6 @@ export const Abilities: { [abilityid: string]: ModdedAbilityData; } = {
 		inherit: true,
 		isNonstandard: null,
 	},
-	lusterswap: { // taken from M4A
-		inherit: true,
-		isNonstandard: null,
-	},
 	cacophony: {
 		inherit: true,
 		isNonstandard: null,

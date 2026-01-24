@@ -2218,12 +2218,12 @@ export const Pokedex: {[k: string]: ModdedSpeciesData;} = {
 	},
 	elgyem: {
 		inherit: true,
-		abilities: {0: "Luster Swap", 1: "Cosmic Energy", H: "Analytic"},
+		abilities: {0: "Telepathy", 1: "Cosmic Energy", H: "Analytic"},
 	},
 	beheeyem: {
 		inherit: true,
 		baseStats: {hp: 95, atk: 55, def: 95, spa: 125, spd: 95, spe: 30},
-		abilities: {0: "Luster Swap", 1: "Cosmic Energy", H: "Analytic"},
+		abilities: {0: "Telepathy", 1: "Cosmic Energy", H: "Analytic"},
 	},
 	chandeluremega: {
 		inherit: true,

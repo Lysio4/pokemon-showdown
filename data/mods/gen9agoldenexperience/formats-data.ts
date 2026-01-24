@@ -982,7 +982,7 @@ export const FormatsData: { [k: string]: SpeciesFormatsData; } = {
 		tier: "LC",
 	},
 	snorlax: {
-		tier: "NUBL",
+		tier: "RU",
 		doublesTier: "DUU",
 	},
 	snorlaxgmax: {
@@ -1323,7 +1323,7 @@ export const FormatsData: { [k: string]: SpeciesFormatsData; } = {
 		tier: "NFE",
 	},
 	megacargo: {
-		tier: "NU",
+		tier: "RU",
 		doublesTier: "DUU",
 	},
 	swinub: {
@@ -1474,7 +1474,7 @@ export const FormatsData: { [k: string]: SpeciesFormatsData; } = {
 		tier: "NFE",
 	},
 	swampert: {
-		tier: "NU",
+		tier: "RU",
 		doublesTier: "DUU",
 	},
 	swampertmega: {
@@ -1723,7 +1723,7 @@ export const FormatsData: { [k: string]: SpeciesFormatsData; } = {
 		tier: "NFE",
 	},
 	glowtaire: {
-		tier: "RU",
+		tier: "NU",
 		doublesTier: "DUU",
 	},
 	illumise: {
@@ -4528,7 +4528,7 @@ export const FormatsData: { [k: string]: SpeciesFormatsData; } = {
 		tier: "LC",
 	},
 	copperajah: {
-		tier: "RU",
+		tier: "NU",
 		doublesTier: "DUU",
 	},
 	copperajahgmax: {

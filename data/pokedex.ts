@@ -22153,7 +22153,7 @@ export const Pokedex: import('../sim/dex-species').SpeciesDataTable = {
 		types: ["Bug", "Electric"],
 		gender: "M",
 		baseStats: {hp: 75, atk: 103, def: 70, spa: 127, spd: 75, spe: 105},
-		abilities: {0: "Illuminate", 1: "Luster Swap", H: "Prankster"},
+		abilities: {0: "Illuminate", 1: "Swarm", H: "Prankster"},
 		heightm: 0.7,
 		weightkg: 17.7,
 		color: "Gray",

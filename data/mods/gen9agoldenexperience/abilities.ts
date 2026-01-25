@@ -233,10 +233,6 @@ export const Abilities: { [abilityid: string]: ModdedAbilityData; } = {
 		inherit: true,
 		isNonstandard: null,
 	},
-	invincible: {
-		inherit: true,
-		isNonstandard: null,
-	},
 	sonar: {
 		inherit: true,
 		isNonstandard: null,
@@ -1019,16 +1015,6 @@ export const Abilities: { [abilityid: string]: ModdedAbilityData; } = {
 	lightpower: {
 		inherit: true,
 		isNonstandard: null,
-	},
-	comatose: {
-		inherit: true,
-		onResidualOrder: 5,
-		onResidualSubOrder: 4,
-		onResidual(pokemon) {
-			this.heal(pokemon.baseMaxhp / 16);
-		},
-		desc: "Heals 1/16 HP per turn. This Pokemon is considered to be asleep and cannot become affected by a non-volatile status condition or Yawn.",
-		shortDesc: "Heals 1/16 HP per turn. This Pokemon cannot be statused, and is considered to be asleep.",
 	},
 	thermalswitch: {
 		inherit: true,

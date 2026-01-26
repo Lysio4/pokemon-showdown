@@ -901,22 +901,9 @@ export const Pokedex: {[k: string]: ModdedSpeciesData;} = {
 		abilities: {0: "Natural Cure", H: "Rewind"},
 	},
 	// Gen 3 :
-	treecko: {
-		inherit: true,
-		baseStats: {hp: 40, atk: 65, def: 35, spa: 45, spd: 55, spe: 70},
-	},
-	grovyle: {
-		inherit: true,
-		baseStats: {hp: 50, atk: 85, def: 45, spa: 65, spd: 65, spe: 95},
-	},
-	sceptile: {
-		inherit: true,
-		baseStats: {hp: 70, atk: 105, def: 65, spa: 85, spd: 85, spe: 120},
-	},
 	sceptilemega: {
 		inherit: true,
-		baseStats: {hp: 70, atk: 135, def: 75, spa: 120, spd: 85, spe: 145},
-		abilities: {0: "Sharpness"},
+		abilities: {0: "Regenerator"},
 	},
 	blazikenmega: {
 		inherit: true,

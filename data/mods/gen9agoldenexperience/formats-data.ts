@@ -1450,7 +1450,7 @@ export const FormatsData: { [k: string]: SpeciesFormatsData; } = {
 		doublesTier: "DUU",
 	},
 	sceptilemega: {
-		tier: "UUBL",
+		tier: "UU",
 		doublesTier: "DUU",
 	},
 	torchic: {
@@ -3929,7 +3929,7 @@ export const FormatsData: { [k: string]: SpeciesFormatsData; } = {
 		doublesTier: "DUU",
 	},
 	silvallydark: {
-		tier: "NU",
+		tier: "RU",
 		doublesTier: "DUU",
 	},
 	silvallydragon: {

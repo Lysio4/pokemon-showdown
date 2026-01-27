@@ -84,36 +84,6 @@ export const Pokedex: {[k: string]: ModdedSpeciesData;} = {
 		baseStats: {hp: 65, atk: 100, def: 65, spa: 51, spd: 61, spe: 100},
 		abilities: {0: "Run Away", 1: "Stakeout", H: "Insomnia"},
 	},
-	pikachurockstar: {
-		inherit: true,
-		types: ["Electric", "Steel"],
-		baseStats: {hp: 35, atk: 65, def: 90, spa: 50, spd: 90, spe: 100},
-		abilities: {0: "Heavy Metal", H: "Hard Rock"},
-	},
-	pikachubelle: {
-		inherit: true,
-		types: ["Electric", "Ice"],
-		baseStats: {hp: 35, atk: 85, def: 60, spa: 70, spd: 70, spe: 110},
-		abilities: {0: "Snow Cloak", H: "Queenly Majesty"},
-	},
-	pikachupopstar: {
-		inherit: true,
-		types: ["Electric", "Fairy"],
-		baseStats: {hp: 35, atk: 55, def: 60, spa: 90, spd: 60, spe: 130},
-		abilities: {0: "Dazzling", H: "Cute Charm"},
-	},
-	pikachuphd: {
-		inherit: true,
-		types: ["Electric", "Psychic"],
-		baseStats: {hp: 35, atk: 55, def: 60, spa: 90, spd: 70, spe: 120},
-		abilities: {0: "Synchronize", H: "Neuroforce"},
-	},
-	pikachulibre: {
-		inherit: true,
-		types: ["Electric", "Fighting"],
-		baseStats: {hp: 35, atk: 95, def: 50, spa: 90, spd: 60, spe: 100},
-		abilities: {0: "Mold Breaker", H: "Scrappy"},
-	},
 	pikachustarter: {
 		inherit: true,
 		abilities: {0: "Adaptability"},
@@ -2199,8 +2169,17 @@ export const Pokedex: {[k: string]: ModdedSpeciesData;} = {
 		inherit: true,
 		baseStats: {hp: 80, atk: 77, def: 60, spa: 107, spd: 60, spe: 108},
 	},
+	klink: {
+		inherit: true,
+		types: ["Steel", "Electric"],
+	},
+	klang: {
+		inherit: true,
+		types: ["Steel", "Electric"],
+	},
 	klinklang: {
 		inherit: true,
+		types: ["Steel", "Electric"],
 		abilities: {0: "Plus", 1: "Minus", H: "Technician"},
 	},
 	elgyem: {
@@ -2773,7 +2752,7 @@ export const Pokedex: {[k: string]: ModdedSpeciesData;} = {
 	},
 	silvallyfairy: {
 		inherit: true,
-		abilities: {0: "Pastel Veil"},
+		abilities: {0: "Aroma Veil"},
 		requiredItem: null,
 	},
 	silvallyfighting: {
@@ -2833,7 +2812,7 @@ export const Pokedex: {[k: string]: ModdedSpeciesData;} = {
 	},
 	silvallywater: {
 		inherit: true,
-		abilities: {0: "Water Veil"},
+		abilities: {0: "Gooey"},
 		requiredItem: null,
 	},
 	minior: {

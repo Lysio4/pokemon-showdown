@@ -1111,6 +1111,15 @@ export const Abilities: { [abilityid: string]: ModdedAbilityData; } = {
 
 
 	// Taken from Joltemons, for Magician, damn
+	indecisiveorb: {
+		name: "Indecisive Orb",
+		onDisableMove: function(pokemon) {
+			if (pokemon.lastMove && pokemon.lastMove.id !== 'struggle') pokemon.disableMove(pokemon.lastMove.id);
+		},
+		onModifyDamage(damage, source, target, move) {
+			return this.chainModify(1.3);
+		},
+	},
 	lifeorb: {
 		onModifyDamage(damage, source, target, move) {
 			return this.chainModify(1.3);

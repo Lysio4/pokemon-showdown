@@ -476,6 +476,7 @@ export const Scripts: ModdedBattleScriptsData = {
     this.modData('Learnsets', 'luxray').learnset.parallelcircuit = ['9M'];
     this.modData('Learnsets', 'electivire').learnset.parallelcircuit = ['9M'];
     this.modData('Learnsets', 'zebstrika').learnset.parallelcircuit = ['9M'];
+    this.modData('Learnsets', 'klinklang').learnset.parallelcircuit = ['9M'];
     this.modData('Learnsets', 'zeraora').learnset.parallelcircuit = ['9M'];
     this.modData('Learnsets', 'boltund').learnset.parallelcircuit = ['9M'];
     this.modData('Learnsets', 'pincurchin').learnset.parallelcircuit = ['9M'];

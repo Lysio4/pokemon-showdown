@@ -791,13 +791,6 @@ export const Abilities: { [abilityid: string]: ModdedAbilityData; } = {
 		inherit: true,
 		isNonstandard: null,
 	},
-	truant: {
-		inherit: true,
-		onStart(pokemon) {},
-		onBeforeMove(pokemon) {},
-		shortDesc: "No competitive effect.",
-		desc: "No competitive effect.",
-	},
 	cheerleader: {
 		inherit: true,
 		isNonstandard: null,
@@ -1104,6 +1097,35 @@ export const Abilities: { [abilityid: string]: ModdedAbilityData; } = {
 	magiceye: {
 		inherit: true,
 		isNonstandard: null,
+	},
+	corrosion: {
+		inherit: true,
+		onModifyMovePriority: -5,
+		onModifyMove(move) {
+			if (!move.ignoreImmunity) move.ignoreImmunity = {};
+			if (move.ignoreImmunity !== true) {
+				move.ignoreImmunity['Poison'] = true;
+			}
+		},
+		rating: 3,
+		shortDesc: "This Pokemon can hit Steel types with Poison-type moves, and poison or badly poison a Pokemon regardless of its typing.",
+	},
+	truant: {
+		inherit: true,
+		onBeforeMove(pokemon, target, move) {
+			if (pokemon.removeVolatile('truant')) {
+				if (move.category !== 'Status') {
+					this.add('cant', pokemon, 'ability: Truant');
+					return false;
+				}
+				return true;
+			}
+			pokemon.addVolatile('truant');
+		},
+		onModifyMove(move) {
+			delete move.flags['protect'];
+		},
+		shortDesc: "This Pokemon can only use status moves every other turn. Its moves ignore the target's protection.",
 	},
 
 

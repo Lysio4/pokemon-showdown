@@ -23112,8 +23112,21 @@ export const Pokedex: import('../sim/dex-species').SpeciesDataTable = {
 		prevo: "Spidops",
 		eggGroups: ["Bug"],
 	},
-	corpsetrap: {
+	croaxitoad: {
 		num: -89,
+		name: "Croaxitoad",
+		types: ["Poison", "Fighting"],
+		baseStats: { hp: 83, atk: 116, def: 65, spa: 106, spd: 65, spe: 105 },
+		abilities: { 0: "Hydrophilic", 1: "Dry Skin", H: "Poison Touch" },
+		heightm: 1.3,
+		weightkg: 44.4,
+		color: "Blue",
+		prevo: "Toxicroak",
+		evoLevel: 54,
+		eggGroups: ["Human-Like"],
+	},
+	corpsetrap: {
+		num: -90,
 		name: "Corpsetrap",
 		types: ["Ghost", "Steel"],
 		baseStats: {hp: 80, atk: 115, def: 90, spa: 95, spd: 65, spe: 85},
@@ -23123,7 +23136,7 @@ export const Pokedex: import('../sim/dex-species').SpeciesDataTable = {
 		eggGroups: ["Undiscovered"],
 	},
 	gevauyena: {
-		num: -90,
+		num: -91,
 		name: "Gevauyena",
 		types: ["Dark"],
 		baseStats: {hp: 85, atk: 130, def: 70, spa: 40, spd: 60, spe: 120},
@@ -23134,7 +23147,7 @@ export const Pokedex: import('../sim/dex-species').SpeciesDataTable = {
 		eggGroups: ["Field"],
 	},
 	arsief: {
-		num: -91,
+		num: -92,
 		name: "Arsief",
 		types: ["Dark", "Fairy"],
 		baseStats: {hp: 75, atk: 58, def: 78, spa: 112, spd: 97, spe: 115},
@@ -23145,7 +23158,7 @@ export const Pokedex: import('../sim/dex-species').SpeciesDataTable = {
 		eggGroups: ["Field"],
 	},
 	draggoyle: {
-		num: -92,
+		num: -93,
 		name: "Draggoyle",
 		baseForme: "Passive",
 		types: ["Dragon"],
@@ -23162,7 +23175,7 @@ export const Pokedex: import('../sim/dex-species').SpeciesDataTable = {
 		formeOrder: ["Draggoyle", "Draggoyle-Active"],
 	},
 	draggoyleactive: {
-		num: -92,
+		num: -93,
 		name: "Draggoyle-Active",
 		baseSpecies: "Draggoyle",
 		forme: "Active",
@@ -23176,7 +23189,7 @@ export const Pokedex: import('../sim/dex-species').SpeciesDataTable = {
 		battleOnly: "Draggoyle",
 	},
 	remobault: {
-		num: -93,
+		num: -94,
 		name: "Remobault",
 		types: ["Water", "Fire"],
 		baseStats: {hp: 87, atk: 81, def: 82, spa: 35, spd: 78, spe: 122},
@@ -23190,7 +23203,7 @@ export const Pokedex: import('../sim/dex-species').SpeciesDataTable = {
 		eggGroups: ["Water 1", "Water 2"],
 	},
 	whitewhale: {
-		num: -94,
+		num: -95,
 		name: "White Whale",
 		types: ["Water", "Dark"],
 		gender: "N",
@@ -23203,7 +23216,7 @@ export const Pokedex: import('../sim/dex-species').SpeciesDataTable = {
 		eggGroups: ["Undiscovered"],
 	},
 	irondrill: {
-		num: -95,
+		num: -96,
 		name: "Iron Drill",
 		types: ["Steel", "Fighting"],
 		gender: "N",
@@ -23216,7 +23229,7 @@ export const Pokedex: import('../sim/dex-species').SpeciesDataTable = {
 		eggGroups: ["Undiscovered"],
 	},
 	purerainbow: {
-		num: -96,
+		num: -97,
 		name: "Pure Rainbow",
 		types: ["Fire", "Fairy"],
 		gender: "N",
@@ -23229,7 +23242,7 @@ export const Pokedex: import('../sim/dex-species').SpeciesDataTable = {
 		eggGroups: ["Undiscovered"],
 	},
 	irondart: {
-		num: -97,
+		num: -98,
 		name: "Iron Dart",
 		types: ["Water", "Psychic"],
 		gender: "N",

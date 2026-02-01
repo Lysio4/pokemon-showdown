@@ -2349,7 +2349,10 @@ export const FormatsData: { [k: string]: SpeciesFormatsData; } = {
 		tier: "LC",
 	},
 	toxicroak: {
-		tier: "NU",
+		tier: "NFE",
+	},
+	croaxitoad: {
+		tier: "RU",
 		doublesTier: "DUU",
 	},
 	carnivine: {

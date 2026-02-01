@@ -590,6 +590,8 @@ export const Abilities: { [abilityid: string]: ModdedAbilityData; } = {
 				this.add('-end', pokemon, 'typeadd', '[silent]');
 			}
 		},
+		desc: "This Pokemon gets a new type to match the active Terrain when this Pokemon acquires this Ability, or whenever a Terrain begins. Electric type during Electric Terrain, Grass type during Grassy Terrain, Fairy type during Misty Terrain, Psychic type during Psychic Terrain, and Fighting type during Chakra Terrain. If this Ability is acquired without an active Terrain, or a Terrain ends, this Pokemon's types become the original types for its species.",
+		shortDesc: "This Pokemon gets a new type to match the Terrain. Type reverts when Terrain ends.",
 	},
 	disguise: {
 		inherit: true,

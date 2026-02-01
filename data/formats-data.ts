@@ -6907,6 +6907,10 @@ export const FormatsData: import('../sim/dex-species').SpeciesFormatsDataTable =
 		isNonstandard: "Custom",
 		tier: "Illegal",
 	},
+	croaxitoad: {
+		isNonstandard: "Custom",
+		tier: "Illegal",
+	},
 	corpsetrap: {
 		isNonstandard: "Custom",
 		tier: "Illegal",

@@ -467,13 +467,7 @@ export const Moves: { [k: string]: ModdedMoveData; } = {
 	},
 	sizzlyslide: {
 		inherit: true,
-		basePower: 85,
 		isNonstandard: null,
-		shortDesc: "30% chance to burn target.",
-		secondary: {
-			chance: 30,
-			status: 'brn',
-		},
 	},
 	glitzyglow: {
 		inherit: true,
@@ -505,6 +499,7 @@ export const Moves: { [k: string]: ModdedMoveData; } = {
 	},
 	freezyfrost: {
 		inherit: true,
+		accuracy: 100,
 		isNonstandard: null,
 	},
 	sparklyswirl: {
@@ -553,7 +548,6 @@ export const Moves: { [k: string]: ModdedMoveData; } = {
 	},
 	triplearrows: {
 		inherit: true,
-		volatileStatus: 'focusenergy',
 		secondaries: [
 			{
 				chance: 50,
@@ -567,10 +561,15 @@ export const Moves: { [k: string]: ModdedMoveData; } = {
 						spe: 1,
 					},
 				},
+			}, {
+				chance: 100,
+				self: {
+					volatileStatus: 'focusenergy',
+				},
 			},
 		],
 		desc: "100% chance to raise the user's Speed by 1 stage. Raise crit ratio by 2 stages. Target: 50% -1 Defense.",
-		shortDesc: "100% chance to +1 Speed; +2 crit ratio; -1 Def to target.",
+		shortDesc: "100% chance to +1 Speed; +2 crit ratio; 50%: -1 Def to target.",
 	},
 	direclaw: {
 		inherit: true,
@@ -1234,6 +1233,11 @@ export const Moves: { [k: string]: ModdedMoveData; } = {
 	colorfulhit: {
 		inherit: true,
 		isNonstandard: null,
+	},
+	snaptrap: {
+		inherit: true,
+		basePower: 65,
+		type: "Steel",
 	},
 
 

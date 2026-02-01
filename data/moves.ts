@@ -513,7 +513,7 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 		name: "Aqua Step",
 		pp: 10,
 		priority: 0,
-		flags: { contact: 1, protect: 1, mirror: 1, dance: 1, metronome: 1 },
+		flags: { contact: 1, protect: 1, mirror: 1, dance: 1, metronome: 1, kick: 1 },
 		secondary: {
 			chance: 100,
 			self: {

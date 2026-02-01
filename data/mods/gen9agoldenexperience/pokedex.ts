@@ -230,18 +230,6 @@ export const Pokedex: {[k: string]: ModdedSpeciesData;} = {
 		eggGroups: ["Human-Like"],
 		requiredItem: "Machampite",
 	},
-	bellsprout: {
-		inherit: true,
-		abilities: {0: "Chlorophyll", 1: "Insectivorous", H: "Gluttony"},
-	},
-	weepinbell: {
-		inherit: true,
-		abilities: {0: "Chlorophyll", 1: "Insectivorous", H: "Gluttony"},
-	},
-	victreebel: {
-		inherit: true,
-		abilities: {0: "Chlorophyll", 1: "Insectivorous", H: "Gluttony"},
-	},
 	victreebelmega: {
 		inherit: true,
 		abilities: { 0: "Neutralizing Gas" },
@@ -1518,14 +1506,9 @@ export const Pokedex: {[k: string]: ModdedSpeciesData;} = {
 		baseStats: {hp: 70, atk: 110, def: 110, spa: 40, spd: 75, spe: 95},
 		abilities: {0: "Battle Armor", 1: "Sniper", H: "Steelbreaker"},
 	},
-	croagunk: {
-		inherit: true,
-		abilities: {0: "Hydrophilic", 1: "Dry Skin", H: "Poison Touch"},
-	},
 	toxicroak: {
 		inherit: true,
-		baseStats: {hp: 83, atk: 116, def: 65, spa: 66, spd: 65, spe: 100},
-		abilities: {0: "Hydrophilic", 1: "Dry Skin", H: "Poison Touch"},
+		evos: ["Croaxitoad"],
 	},
 	carnivine: {
 		inherit: true,

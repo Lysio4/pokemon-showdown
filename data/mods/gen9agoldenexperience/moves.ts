@@ -976,16 +976,6 @@ export const Moves: { [k: string]: ModdedMoveData; } = {
 		inherit: true,
 		isNonstandard: null,
 	},
-	twinbeam: {
-		inherit: true,
-		desc: "Lowers the target's Special Attack and Special Defense by 1 stage.",
-		shortDesc: "Lowers target's Sp. Atk, Sp. Def by 1.",
-		self: null,
-		boosts: {
-			spa: -1,
-			spd: -1,
-		},
-	},
 	clusterexplosion: {
 		inherit: true,
 		isNonstandard: null,

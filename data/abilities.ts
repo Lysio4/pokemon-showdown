@@ -5820,17 +5820,19 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 		isNonstandard: "Custom",
 	},
 	doublespirit: {
-		shortDesc: "Switches to Nocturnal form before using a Physical move, and to Diurnal form before using a Special move.",
+		shortDesc: "Girafatak: Applies Power Trick before using a Physical/Special move, and is Normal/Dark before a Physical move, Normal/Psychic before a Special move.",
 		onBeforeMovePriority: 0.5,
 		onBeforeMove(attacker, defender, move) {
 			if (attacker.species.baseSpecies !== 'Girafatak' || attacker.transformed) return;
 			if (move.category === 'Status') return;
-			const targetForme = (move.category === 'Special' ? 'Girafatak' : 'Girafatak-Nocturnal');
-			if (attacker.species.name !== targetForme) attacker.formeChange(targetForme);
 			const newatk = attacker.storedStats.spa;
 			const newspa = attacker.storedStats.atk;
 			attacker.storedStats.atk = newatk;
 			attacker.storedStats.spa = newspa;
+			const secondaryType = move.status === 'Physical' ? 'Dark' : 'Psychic'
+			if (!attacker.setType('Normal')) return;
+			if (!attacker.addType(secondaryType)) return;
+			this.add('-start', source, 'typechange', type, '[from] ability: Double Spirit');
 		},
 		flags: {failroleplay: 1, noreceiver: 1, noentrain: 1, notrace: 1, failskillswap: 1, cantsuppress: 1},
 		name: "Double Spirit",

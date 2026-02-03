@@ -5834,8 +5834,9 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 			const oldTypes = attacker.getTypes();
 			if (oldTypes.join() === types.join() || !attacker.setType(types)) return;
 			if (!attacker.setType('Normal')) return;
+			this.add('-start', attacker, 'typechange', 'Normal', '[from] ability: Double Spirit');
 			if (!attacker.addType(secondaryType)) return;
-			this.add('-start', attacker, 'typechange', types.join('/'), '[from] ability: Double Spirit');
+			this.add('-start', attacker, 'typechange', secondaryType, '[from] ability: Double Spirit');
 		},
 		flags: {failroleplay: 1, noreceiver: 1, noentrain: 1, notrace: 1, failskillswap: 1, cantsuppress: 1},
 		name: "Double Spirit",

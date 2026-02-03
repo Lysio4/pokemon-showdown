@@ -6635,10 +6635,6 @@ export const FormatsData: import('../sim/dex-species').SpeciesFormatsDataTable =
 		isNonstandard: "Custom",
 		tier: "Illegal",
 	},
-	girafataknocturnal: {
-		isNonstandard: "Custom",
-		tier: "Illegal",
-	},
 	sylvardian: {
 		isNonstandard: "Custom",
 		tier: "Illegal",

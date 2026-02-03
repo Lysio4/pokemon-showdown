@@ -5337,7 +5337,6 @@ export const FormatsData: { [k: string]: SpeciesFormatsData; } = {
 		tier: "PU",
 		doublesTier: "DUU",
 	},
-	girafataknocturnal: {},
 	sylvardian: {
 		tier: "PU",
 		doublesTier: "DUU",

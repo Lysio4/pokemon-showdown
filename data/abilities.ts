@@ -5831,8 +5831,8 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 			attacker.storedStats.spa = newspa;
 			const secondaryType = move.status === 'Physical' ? 'Dark' : 'Psychic'
 			const types = ["Normal", secondaryType]
-			const oldTypes = pokemon.getTypes();
-			if (oldTypes.join() === types.join() || !pokemon.setType(types)) return;
+			const oldTypes = attacker.getTypes();
+			if (oldTypes.join() === types.join() || !attacker.setType(types)) return;
 			if (!attacker.setType('Normal')) return;
 			if (!attacker.addType(secondaryType)) return;
 			this.add('-start', attacker, 'typechange', types.join('/'), '[from] ability: Double Spirit');

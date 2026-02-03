@@ -5836,14 +5836,14 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 				attacker.storedStats.spa = maxOffense;				
 			}
 			this.add('-ability', attacker, 'Double Spirit');
-			const secondaryType = move.status === 'Physical' ? 'Dark' : 'Psychic'
-			const types = [secondaryType, "Normal"]
+			const secondaryType = move.category === 'Physical' ? 'Dark' : 'Psychic'
+			const types = ["Normal", secondaryType]
 			const oldTypes = attacker.getTypes();
 			if (oldTypes.join() === types.join() || !attacker.setType(types)) return;
-			if (!attacker.addType(secondaryType)) return;
-			this.add('-start', attacker, 'typechange', secondaryType, '[from] ability: Double Spirit');
 			if (!attacker.setType('Normal')) return;
 			this.add('-start', attacker, 'typechange', 'Normal', '[from] ability: Double Spirit');
+			if (!attacker.addType(secondaryType)) return;
+			this.add('-start', attacker, 'typeadd', secondaryType, '[from] ability: Double Spirit');
 		},
 		flags: {failroleplay: 1, noreceiver: 1, noentrain: 1, notrace: 1, failskillswap: 1, cantsuppress: 1},
 		name: "Double Spirit",

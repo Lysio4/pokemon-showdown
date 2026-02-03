@@ -5825,18 +5825,25 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 		onBeforeMove(attacker, defender, move) {
 			if (attacker.species.baseSpecies !== 'Girafatak' || attacker.transformed) return;
 			if (move.category === 'Status') return;
-			const newatk = attacker.storedStats.spa;
-			const newspa = attacker.storedStats.atk;
-			attacker.storedStats.atk = newatk;
-			attacker.storedStats.spa = newspa;
+			const maxOffense = Math.max(attacker.storedStats.atk, attacker.storedStats.spa);
+			const minOffense = Math.max(attacker.storedStats.atk, attacker.storedStats.spa);
+			if (move.category === 'Physical') {
+				attacker.storedStats.atk = maxOffense;
+				attacker.storedStats.spa = minOffense;
+			}
+			if (move.category === 'Special') {
+				attacker.storedStats.atk = minOffense;
+				attacker.storedStats.spa = maxOffense;				
+			}
+			this.add('-ability', pokemon, 'Double Spirit');
 			const secondaryType = move.status === 'Physical' ? 'Dark' : 'Psychic'
-			const types = ["Normal", secondaryType]
+			const types = [secondaryType, "Normal"]
 			const oldTypes = attacker.getTypes();
 			if (oldTypes.join() === types.join() || !attacker.setType(types)) return;
-			if (!attacker.setType('Normal')) return;
-			this.add('-start', attacker, 'typechange', 'Normal', '[from] ability: Double Spirit');
 			if (!attacker.addType(secondaryType)) return;
 			this.add('-start', attacker, 'typechange', secondaryType, '[from] ability: Double Spirit');
+			if (!attacker.setType('Normal')) return;
+			this.add('-start', attacker, 'typechange', 'Normal', '[from] ability: Double Spirit');
 		},
 		flags: {failroleplay: 1, noreceiver: 1, noentrain: 1, notrace: 1, failskillswap: 1, cantsuppress: 1},
 		name: "Double Spirit",

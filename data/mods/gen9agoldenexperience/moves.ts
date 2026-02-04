@@ -1247,7 +1247,6 @@ export const Moves: { [k: string]: ModdedMoveData; } = {
 			case 'Ogerpon-Cornerstone': case 'Ogerpon-Cornerstone-Tera':
 				move.type = 'Rock';
 				break;
-			}
 			case 'Ogerpon-Mega':
 				move.type = 'Psychic';
 				break;

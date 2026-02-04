@@ -1818,6 +1818,7 @@ export const Scripts: ModdedBattleScriptsData = {
     this.modData('Learnsets', 'volcanion').learnset.hydrosteam = ['9L1'];
 
     // Gen 7:
+    this.modData('Learnsets', 'decidueye').learnset.willowisp = ['9L1'];
     this.modData('Learnsets', 'decidueyehisui').learnset.spikes = ['9L1'];
     this.modData('Learnsets', 'decidueyehisui').learnset.rainofarrows = ['9L1'];
     this.modData('Learnsets', 'incineroar').learnset.rapidspin = ['9L1'];

@@ -1913,6 +1913,7 @@ export const Scripts: ModdedBattleScriptsData = {
     this.modData('Learnsets', 'coalossal').learnset.recover = ['9L1'];
     this.modData('Learnsets', 'coalossal').learnset.lavaplume = ['9L1'];
     this.modData('Learnsets', 'sandaconda').learnset.shoreup = ['9L1'];
+    this.modData('Learnsets', 'sandaconda').learnset.rapidspin = ['9L1'];
     this.modData('Learnsets', 'cramorant').learnset.toxic = ['9L1'];
     this.modData('Learnsets', 'cramorant').learnset.ventilation = ['9L1'];
     this.modData('Learnsets', 'cramorant').learnset.flipturn = ['9L1'];

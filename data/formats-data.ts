@@ -6423,6 +6423,14 @@ export const FormatsData: import('../sim/dex-species').SpeciesFormatsDataTable =
 		isNonstandard: "Custom",
 		tier: "Illegal",
     },
+	decidueyemegax: {
+		isNonstandard: "Custom",
+		tier: "Illegal",
+	},
+	decidueyemegay: {
+		isNonstandard: "Custom",
+		tier: "Illegal",
+	},
 	ribombeemega: {
 		isNonstandard: "Custom",
 		tier: "Illegal",
@@ -6440,6 +6448,10 @@ export const FormatsData: import('../sim/dex-species').SpeciesFormatsDataTable =
 		tier: "Illegal",
 	},
 	cinderacemega: {
+		isNonstandard: "Custom",
+		tier: "Illegal",
+	},
+	sandacondamega: {
 		isNonstandard: "Custom",
 		tier: "Illegal",
 	},
@@ -6491,10 +6503,6 @@ export const FormatsData: import('../sim/dex-species').SpeciesFormatsDataTable =
 		isNonstandard: "Custom",
 		tier: "Illegal",
 	},
-	brambleghastmega: {
-		isNonstandard: "Custom",
-		tier: "Illegal",
-	},
 	rabscamega: {
 		isNonstandard: "Custom",
 		tier: "Illegal",
@@ -6524,6 +6532,10 @@ export const FormatsData: import('../sim/dex-species').SpeciesFormatsDataTable =
 		tier: "Illegal",
 	},
 	miraidonweakened: {
+		isNonstandard: "Custom",
+		tier: "Illegal",
+	},
+	ogerponmega: {
 		isNonstandard: "Custom",
 		tier: "Illegal",
 	},

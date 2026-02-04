@@ -1229,6 +1229,31 @@ export const Moves: { [k: string]: ModdedMoveData; } = {
 		basePower: 65,
 		type: "Steel",
 	},
+	ivycudgel: {
+		inherit: true,
+		onPrepareHit(target, source, move) {
+			if (move.type !== "Grass" && move.type !== "Psychic") {
+				this.attrLastMove('[anim] Ivy Cudgel ' + move.type);
+			}
+		},
+		onModifyType(move, pokemon) {
+			switch (pokemon.species.name) {
+			case 'Ogerpon-Wellspring': case 'Ogerpon-Wellspring-Tera':
+				move.type = 'Water';
+				break;
+			case 'Ogerpon-Hearthflame': case 'Ogerpon-Hearthflame-Tera':
+				move.type = 'Fire';
+				break;
+			case 'Ogerpon-Cornerstone': case 'Ogerpon-Cornerstone-Tera':
+				move.type = 'Rock';
+				break;
+			}
+			case 'Ogerpon-Cornerstone':
+				move.type = 'Psychic';
+				break;
+			}
+		},
+	},
 
 
 

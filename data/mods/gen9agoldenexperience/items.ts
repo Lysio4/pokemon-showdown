@@ -291,6 +291,14 @@ export const Items: {[itemid: string]: ModdedItemData} = {
 		inherit: true,
 		isNonstandard: null,
 	},
+	deciduitex: {
+		inherit: true,
+		isNonstandard: null,
+	},
+	deciduitey: {
+		inherit: true,
+		isNonstandard: null,
+	},
 	ribombinite: {
 		inherit: true,
 		isNonstandard: null,
@@ -304,6 +312,10 @@ export const Items: {[itemid: string]: ModdedItemData} = {
 		isNonstandard: null,
 	},
 	cinderacite: {
+		inherit: true,
+		isNonstandard: null,
+	},
+	sandacondite: {
 		inherit: true,
 		isNonstandard: null,
 	},
@@ -347,7 +359,7 @@ export const Items: {[itemid: string]: ModdedItemData} = {
 		inherit: true,
 		isNonstandard: null,
 	},
-	brambleghite: {
+	ogerponite: {
 		inherit: true,
 		isNonstandard: null,
 	},

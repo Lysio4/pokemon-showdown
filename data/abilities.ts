@@ -7771,6 +7771,17 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 		num: -94,
 		isNonstandard: "Custom",
 	},
+	almightymask: {
+		onStart(pokemon) {
+			this.boost({ spe: 1 }, pokemon);
+		},
+		flags: {},
+		name: "Almighty Mask",
+		rating: 3.5,
+		num: -95,
+		shortDesc: "On switch-in, this Pokemon's Speed is raised by 1 stage.",
+		isNonstandard: "Custom",
+	},
 	// Touhou
 	hakkero: {
 		//effect in conditions.ts

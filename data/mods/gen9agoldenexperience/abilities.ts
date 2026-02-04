@@ -1129,6 +1129,10 @@ export const Abilities: { [abilityid: string]: ModdedAbilityData; } = {
 		},
 		shortDesc: "This Pokemon can only use status moves every other turn. Its moves ignore the target's protection.",
 	},
+	almightymask: {
+		inherit: true,
+		isNonstandard: null,
+	},
 
 
 

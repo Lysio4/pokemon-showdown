@@ -3687,6 +3687,14 @@ export const FormatsData: { [k: string]: SpeciesFormatsData; } = {
 		tier: "PU",
 		doublesTier: "DUU",
 	},
+	decidueyemegax: {
+		tier: "RU",
+		doublesTier: "DUU",
+	},
+	decidueyemegay: {
+		tier: "RU",
+		doublesTier: "DUU",
+	},
 	litten: {
 		tier: "LC",
 	},
@@ -4362,6 +4370,10 @@ export const FormatsData: { [k: string]: SpeciesFormatsData; } = {
 		isNonstandard: "Past",
 		tier: "Illegal",
 	},
+	sandacondamega: {
+		tier: "UU",
+		doublesTier: "DUU",
+	},
 	cramorant: {
 		tier: "PU",
 		doublesTier: "DUU",
@@ -5002,10 +5014,6 @@ export const FormatsData: { [k: string]: SpeciesFormatsData; } = {
 		tier: "PU",
 		doublesTier: "DUU",
 	},
-	brambleghastmega: {
-		tier: "NU",
-		doublesTier: "DUU",
-	},
 	gimmighoul: {
 		tier: "LC",
 	},
@@ -5213,6 +5221,10 @@ export const FormatsData: { [k: string]: SpeciesFormatsData; } = {
 	ogerponcornerstonetera: {
 		inherit: true,
 		tier: "Illegal",
+	},
+	ogerponmega: {
+		tier: "RU",
+		doublesTier: "DUU",
 	},
 	archaludon: {
 		tier: "RU",

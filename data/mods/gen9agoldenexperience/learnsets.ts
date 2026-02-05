@@ -1059,6 +1059,7 @@ export const Learnsets: { [speciesid: string]: LearnsetData; } = {
 			powergem: ["9M"],
 			protect: ["9M"],
 			raindance: ["9M"],
+			razorwind: ["9M"],
 			rest: ["9M"],
 			return: ["9M"],
 			roar: ["9L1"],

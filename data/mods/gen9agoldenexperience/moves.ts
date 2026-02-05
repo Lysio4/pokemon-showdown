@@ -532,20 +532,6 @@ export const Moves: { [k: string]: ModdedMoveData; } = {
 		inherit: true,
 		isNonstandard: null,
 	},
-	bittermalice: {
-		inherit: true,
-		basePower: 60,
-		basePowerCallback(pokemon, target, move) {
-			if (target.status === 'frz' || target.hasAbility('comatose')) return move.basePower * 2;
-			return move.basePower;
-		},
-		desc: "Has a 30% chance to freeze the target. Power doubles if the target has a non-volatile status condition.",
-		shortDesc: "30% freeze. 2x power if target is already statused.",
-		secondary: {
-			chance: 30,
-			status: 'frz',
-		},
-	},
 	triplearrows: {
 		inherit: true,
 		secondaries: [

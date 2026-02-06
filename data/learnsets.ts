@@ -104733,7 +104733,8 @@ export const Learnsets: import('../sim/dex-species').LearnsetDataTable = {
 	meltic: {
 		learnset: {
 			flipturn: ["9L1"],
-			freezedry: ["9L1"],
+			wavecrash: ["9L1"],
+			mountaingale: ["9L1"],
 		},
 	},
 	sithbull: {
@@ -104755,6 +104756,7 @@ export const Learnsets: import('../sim/dex-species').LearnsetDataTable = {
 			speedswap: ["9L1"],
 			clearmind: ["9L1"],
 			magicpowder: ["9L1"],
+			razorwind: ["9L1"],
 		},
 	},
 	isaapple: {

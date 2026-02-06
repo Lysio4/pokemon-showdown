@@ -337,7 +337,7 @@ export const Pokedex: {[k: string]: ModdedSpeciesData;} = {
 	},
 	hypno: {
 		inherit: true,
-		baseStats: {hp: 85, atk: 90, def: 70, spa: 90, spd: 115, spe: 50},
+		baseStats: {hp: 85, atk: 93, def: 70, spa: 93, spd: 115, spe: 42},
 		abilities: {0: "Insomnia", 1: "Endless Dream", H: "Inner Focus"},
 	},
 	voltorb: {
@@ -1375,10 +1375,6 @@ export const Pokedex: {[k: string]: ModdedSpeciesData;} = {
 		inherit: true,
 		baseStats: {hp: 80, atk: 120, def: 79, spa: 70, spd: 79, spe: 95},
 		abilities: {0: "Ambush", 1: "Intimidate", H: "Guts"},
-	},
-	roserade: {
-		inherit: true,
-		abilities: {0: "Natural Cure", 1: "Merciless", H: "Technician"},
 	},
 	cranidos: {
 		inherit: true,

@@ -23237,8 +23237,21 @@ export const Pokedex: import('../sim/dex-species').SpeciesDataTable = {
 		evoCondition: "defeat a Clobbopus or a Grapploct",
 		eggGroups: ["Water 1", "Water 2"],
 	},
-	whitewhale: {
+	seatsya: {
 		num: -95,
+		name: "Seatsya",
+		types: ["Water", "Steel"],
+		baseStats: { hp: 90, atk: 127, def: 80, spa: 45, spd: 80, spe: 98 },
+		abilities: { 0: "Mighty Horn", 1: "Water Veil", H: "Lightning Rod" },
+		heightm: 2.3,
+		weightkg: 115,
+		color: "Red",
+		prevo: "Seaking",
+		evoLevel: 69,
+		eggGroups: ["Water 2"],
+	},
+	whitewhale: {
+		num: -96,
 		name: "White Whale",
 		types: ["Water", "Dark"],
 		gender: "N",
@@ -23251,7 +23264,7 @@ export const Pokedex: import('../sim/dex-species').SpeciesDataTable = {
 		eggGroups: ["Undiscovered"],
 	},
 	irondrill: {
-		num: -96,
+		num: -97,
 		name: "Iron Drill",
 		types: ["Steel", "Fighting"],
 		gender: "N",
@@ -23264,7 +23277,7 @@ export const Pokedex: import('../sim/dex-species').SpeciesDataTable = {
 		eggGroups: ["Undiscovered"],
 	},
 	purerainbow: {
-		num: -97,
+		num: -98,
 		name: "Pure Rainbow",
 		types: ["Fire", "Fairy"],
 		gender: "N",
@@ -23277,7 +23290,7 @@ export const Pokedex: import('../sim/dex-species').SpeciesDataTable = {
 		eggGroups: ["Undiscovered"],
 	},
 	irondart: {
-		num: -98,
+		num: -99,
 		name: "Iron Dart",
 		types: ["Water", "Psychic"],
 		gender: "N",

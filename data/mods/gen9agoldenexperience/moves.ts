@@ -1239,6 +1239,10 @@ export const Moves: { [k: string]: ModdedMoveData; } = {
 			}
 		},
 	},
+	oceanslance: {
+		inherit: true,
+		isNonstandard: null,
+	},
 
 
 

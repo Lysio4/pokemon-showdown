@@ -104978,6 +104978,20 @@ export const Learnsets: import('../sim/dex-species').LearnsetDataTable = {
 			marinebolt: ["9L1"],
 		},
 	},
+	seatsya: {
+		learnset: {
+			earthquake: ["9L1"],
+			dragondance: ["9L1"],
+			ironhead: ["9L1"],
+			mirrorshot: ["9L1"],
+			flashcannon: ["9L1"],
+			steelbeam: ["9L1"],
+			oceanslance: ["9L1"],
+			wavecrash: ["9L1"],
+			iciclespear: ["9L1"],
+			roguewave: ["9L1"],
+		},
+	},
 	corpsetrap: {
 		learnset: {
 			amnesia: ["9M"],

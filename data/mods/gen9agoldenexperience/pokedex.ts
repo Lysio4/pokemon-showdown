@@ -391,7 +391,7 @@ export const Pokedex: {[k: string]: ModdedSpeciesData;} = {
 	},
 	seaking: {
 		inherit: true,
-		baseStats: {hp: 80, atk: 117, def: 80, spa: 40, spd: 80, spe: 93},
+		evos: ["Seatsya"],
 	},
 	starmiemega: {
 		inherit: true,

@@ -7782,6 +7782,30 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 		shortDesc: "On switch-in, this Pokemon's Speed is raised by 1 stage.",
 		isNonstandard: "Custom",
 	},
+	mightyhorn: {
+		onBasePowerPriority: 23,
+		onBasePower(basePower, attacker, defender, move) {
+			if (move.flags['drill']) {
+				this.debug('Mighty Horn boost');
+				return this.chainModify([5325, 4096]);
+			}
+		},
+		onSourceModifyAccuracyPriority: -1,
+		onSourceModifyAccuracy(accuracy) {
+			if (typeof accuracy !== 'number') return;
+			if (move.flags['drill']) {
+				this.debug('Mighty Horn boost');
+				return this.chainModify([5325, 4096]);
+			}
+		},
+		flags: {},
+		name: "Mighty Horn",
+		rating: 3,
+		num: -96,
+		desc: "This Pokemon's drill-based attacks have their power and accuracy multiplied by 1.3.",
+		shortDesc: "This Pokemon's drill-based attacks have 1.3x power and 1.3x accuracy.",
+		isNonstandard: "Custom",
+	},
 	// Touhou
 	hakkero: {
 		//effect in conditions.ts

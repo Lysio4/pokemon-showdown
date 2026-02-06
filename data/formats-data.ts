@@ -6943,6 +6943,10 @@ export const FormatsData: import('../sim/dex-species').SpeciesFormatsDataTable =
 		isNonstandard: "Custom",
 		tier: "Illegal",
 	},
+	seatsya: {
+		isNonstandard: "Custom",
+		tier: "Illegal",
+	},
 	whitewhale: {
 		isNonstandard: "Custom",
 		tier: "Illegal",

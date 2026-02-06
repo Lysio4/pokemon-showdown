@@ -781,8 +781,7 @@ export const FormatsData: { [k: string]: SpeciesFormatsData; } = {
 		tier: "LC",
 	},
 	seaking: {
-		tier: "PU",
-		doublesTier: "DUU",
+		tier: "NFE",
 	},
 	staryu: {
 		tier: "LC",
@@ -5604,6 +5603,10 @@ export const FormatsData: { [k: string]: SpeciesFormatsData; } = {
 		doublesTier: "DOU",
 	},
 	remobault: {
+		tier: "RU",
+		doublesTier: "DUU",
+	},
+	seatsya: {
 		tier: "RU",
 		doublesTier: "DUU",
 	},

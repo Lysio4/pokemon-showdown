@@ -1209,14 +1209,6 @@ export const Pokedex: {[k: string]: ModdedSpeciesData;} = {
 		inherit: true,
 		baseStats: {hp: 64, atk: 165, def: 75, spa: 123, spd: 83, spe: 65},
 	},
-	duskull: {
-		inherit: true,
-		abilities: {0: "Levitate", 1: "Shadow Tag", H: "Frisk"},
-	},
-	dusclops: {
-		inherit: true,
-		abilities: {0: "Pressure", 1: "Shadow Tag", H: "Frisk"},
-	},
 	tropius: {
 		inherit: true,
 		evos: ["Sautropius"],
@@ -1581,7 +1573,7 @@ export const Pokedex: {[k: string]: ModdedSpeciesData;} = {
 	},
 	dusknoir: {
 		inherit: true,
-		abilities: {0: "Pressure", 1: "Shadow Tag", H: "Soul Devourer"},
+		abilities: {0: "Pressure", H: "Soul Devourer"},
 	},
 	froslassmega: {
 		inherit: true,

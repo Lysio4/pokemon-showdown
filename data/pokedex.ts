@@ -22857,7 +22857,7 @@ export const Pokedex: import('../sim/dex-species').SpeciesDataTable = {
 		name: "Sithbull",
 		types: ["Fairy", "Dark"],
 		baseStats: {hp: 120, atk: 140, def: 90, spa: 60, spd: 75, spe: 45},
-		abilities: {0: "Intimidate", 1: "Shadow Tag", H: "Rattled"},
+		abilities: {0: "Intimidate", 1: "Cursed Body", H: "Rattled"},
 		heightm: 1.71,
 		weightkg: 123,
 		prevo: "Granbull",

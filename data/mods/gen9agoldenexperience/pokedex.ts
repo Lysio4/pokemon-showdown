@@ -2433,17 +2433,12 @@ export const Pokedex: {[k: string]: ModdedSpeciesData;} = {
 		inherit: true,
 		baseStats: {hp: 68, atk: 55, def: 73, spa: 83, spd: 113, spe: 60},
 	},
-	sliggoohisui: {
-		inherit: true,
-		baseStats: {hp: 68, atk: 75, def: 83, spa: 83, spd: 113, spe: 30},
-	},
 	goodra: {
 		inherit: true,
 		baseStats: {hp: 90, atk: 70, def: 100, spa: 110, spd: 150, spe: 80},
 	},
 	goodrahisui: {
 		inherit: true,
-		baseStats: {hp: 90, atk: 100, def: 100, spa: 110, spd: 150, spe: 50},
 		abilities: {0: "Sap Sipper", 1: "Misty Surge", H: "Gooey"},
 	},
 	trevenant: {

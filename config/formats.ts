@@ -583,7 +583,7 @@ export const Formats: import('../sim/dex-formats').FormatList = [
 			'Palkia-Origin', 'Rayquaza', 'Reshiram', 'Solgaleo', 'Spectrier', 'Terapagos', 'Ursaluna', 'Ursaluna-Bloodmoon', 'Urshifu', 
 			'Zacian', 'Zacian-Crowned', 'Zekrom', 'Moody', 'Shadow Tag', 'Toxic Chain', 'Toxic Debris', 'Aromatic Mist', 'Baton Pass', 'Coaching',
 			'Court Change', 'Decorate', 'Dragon Cheer', 'Final Gambit', 'Flatter', 'Fling', 'Floral Healing', 'Follow Me', 'Heal Pulse', 'Heart Swap', 'Last Respects',
-			'Malignant Chain', 'Poison Fang', 'Rage Fist', 'Rage Powder', 'Shadow Tag', 'Skill Swap', 'Spicy Extract', 'Swagger', 'Toxic', 'Toxic Spikes', 'Tera Orb', 
+			'Malignant Chain', 'Poison Fang', 'Rage Fist', 'Rage Powder', 'Skill Swap', 'Spicy Extract', 'Swagger', 'Toxic', 'Toxic Spikes', 'Tera Orb', 
 		],
 		unbanlist: ['Light of Ruin'],
 	},

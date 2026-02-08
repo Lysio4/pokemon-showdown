@@ -398,10 +398,6 @@ export const Pokedex: {[k: string]: ModdedSpeciesData;} = {
 		baseStats: { hp: 60, atk: 100, def: 105, spa: 130, spd: 105, spe: 120 },
 		abilities: { 0: "Pure Power" },
 	},
-	mrmime: {
-		inherit: true,
-		baseStats: {hp: 40, atk: 45, def: 65, spa: 120, spd: 90, spe: 100},
-	},
 	scyther: {
 		inherit: true,
 		evos: ["Scizor", "Kleavor", "Scizor-Galar"],
@@ -1205,14 +1201,9 @@ export const Pokedex: {[k: string]: ModdedSpeciesData;} = {
 		eggGroups: ["Fairy", "Amorphous"],
         requiredItem: "Castformite",
 	},
-	shuppet: {
-		inherit: true,
-		abilities: {0: "Shadow Tag", 1: "Frisk", H: "Cursed Body"},
-	},
 	banette: {
 		inherit: true,
 		baseStats: {hp: 64, atk: 115, def: 65, spa: 103, spd: 63, spe: 65},
-		abilities: {0: "Shadow Tag", 1: "Frisk", H: "Cursed Body"},
 	},
 	banettemega: {
 		inherit: true,
@@ -2172,7 +2163,7 @@ export const Pokedex: {[k: string]: ModdedSpeciesData;} = {
 	},
 	chandeluremega: {
 		inherit: true,
-		abilities: { 0: "Shadow Tag" },
+		abilities: { 0: "Nightmare Heart" },
 	},
 	haxorus: {
 		inherit: true,

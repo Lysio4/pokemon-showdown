@@ -7787,6 +7787,32 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 		shortDesc: "This Pokemon's drill-based attacks have 1.3x power and 1.3x accuracy.",
 		isNonstandard: "Custom",
 	},
+	nightmareheart: {
+		desc: "When this Pokémon faints, the Pokémon that knocked it out is cursed, losing 1/4 of its maximum HP, rounded down, at the end of each turn while it is active. In addition, the Pokémon that knocked it out permanently receives this Ability, which persists even through switching, until it is knocked out and the Ability is passed along again.",
+		shortDesc: "If this Pokémon is KOed, the attacker is cursed, then permanently receives this Ability.",
+		onFaint(target, source, effect) {
+			if (!source || !effect || target.side === source.side) return;
+			if (effect.effectType === 'Move' && !effect.flags['futuremove']) {
+				this.add('-ability', target, 'Nightmare Heart');
+				source.addVolatile('curse');
+				const bannedAbilities = [
+					'battlebond', 'comatose', 'disguise', 'insomnia', 'multitype', 'powerconstruct', 'rkssystem', 'schooling', 'shieldsdown', 'stancechange', 'truant', 'zenmode',
+				];
+				if (bannedAbilities.includes(source.ability)) {
+					return;
+				} else {
+					source.setAbility('nightmareheart');
+					source.baseAbility = 'nightmareheart' as ID;
+					source.ability = 'nightmareheart' as ID;
+					this.add('-ability', source, 'Nightmare Heart', '[from] Ability: Nightmare Heart');
+				}
+			}
+		},
+		name: "Nightmare Heart",
+		rating: 3,
+		num: -97,
+		isNonstandard: "Custom",
+	},
 	// Touhou
 	hakkero: {
 		//effect in conditions.ts

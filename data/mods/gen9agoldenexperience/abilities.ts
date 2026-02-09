@@ -393,50 +393,6 @@ export const Abilities: { [abilityid: string]: ModdedAbilityData; } = {
 		},
 		shortDesc: "This Pokemon's attacks deal x1.5 damage and has x1.5 Speed during 1 turn.",
 	},
-	shadowtag: {
-		inherit: true,
-		onFoeTrapPokemon(pokemon) {	},
-		onFoeMaybeTrapPokemon(pokemon, source) {},
-		desc: "While this Pokémon is present, all Pokémon are prevented from restoring any HP. During the effect, healing and draining moves are unusable, and Abilities and items that grant healing will not heal the user. Regenerator is also suppressed.",
-		shortDesc: "While present, all Pokémon are prevented from healing and Regenerator is suppressed.",
-		onStart(source) {
-			let activated = false;
-			for (const pokemon of this.getAllActive()) {
-				if (!activated) {
-					this.add('-ability', source, 'Shadow Tag');
-				}
-				activated = true;
-				if (!pokemon.volatiles['healblock']) {
-					pokemon.addVolatile('healblock');
-				}
-			}
-		},
-		onAnySwitchIn(pokemon) {
-			if (!pokemon.volatiles['healblock']) {
-				pokemon.addVolatile('healblock');
-			}
-		},
-		onEnd(pokemon) {
-			for (const target of this.getAllActive()) {
-				if (target === pokemon) continue;
-				if (target.hasAbility('shadowtag')) return;
-			}
-			for (const target of this.getAllActive()) {
-				target.removeVolatile('healblock');
-			}
-		},
-	},
-	regenerator: { // modded for Shadow Tag
-		inherit: true,
-		onSwitchOut(pokemon) {
-			for (const target of this.getAllActive()) {
-				if (target.hasAbility('shadowtag')) {
-					return;
-				}
-			}
-			pokemon.heal(pokemon.baseMaxhp / 3);
-		},
-	},
 	sandveil: {
 		inherit: true,
 		onSetStatus(status, target, source, effect) {

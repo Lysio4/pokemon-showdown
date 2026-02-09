@@ -2991,7 +2991,7 @@ export const FormatsData: { [k: string]: SpeciesFormatsData; } = {
 		doublesTier: "DUU",
 	},
 	sawsbuckwintermega: {
-		tier: "RU",
+		tier: "NU",
 		doublesTier: "DUU",
 	},
 	emolga: {

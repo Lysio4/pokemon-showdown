@@ -713,10 +713,6 @@ export const Moves: { [k: string]: ModdedMoveData; } = {
 		inherit: true,
 		isNonstandard: null,
 	},
-	grassyglide: {
-		inherit: true,
-		basePower: 70,
-	},
 	milkdrink: {
 		inherit: true,
 		pp: 10,

@@ -359,6 +359,7 @@ export const Scripts: ModdedBattleScriptsData = {
     this.modData('Learnsets', 'reshiram').learnset.flamingsphere = ['9M'];
     this.modData('Learnsets', 'braixen').learnset.flamingsphere = ['9M'];
     this.modData('Learnsets', 'delphox').learnset.flamingsphere = ['9M'];
+    this.modData('Learnsets', 'pyroar').learnset.flamingsphere = ['9M'];
     this.modData('Learnsets', 'cinderace').learnset.flamingsphere = ['9M'];
     this.modData('Learnsets', 'scizorgalar').learnset.flamingsphere = ['9M'];
 

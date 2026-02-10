@@ -2267,7 +2267,7 @@ export const Pokedex: {[k: string]: ModdedSpeciesData;} = {
 	},
 	pyroarmega: {
 		inherit: true,
-		abilities: { 0: "Ambush" },
+		abilities: { 0: "Adaptability" },
 	},
 	flabebe: {
 		inherit: true,
@@ -2859,10 +2859,6 @@ export const Pokedex: {[k: string]: ModdedSpeciesData;} = {
 	xurkitree: {
 		inherit: true,
 		baseStats: {hp: 83, atk: 79, def: 67, spa: 173, spd: 71, spe: 97},
-	},
-	guzzlord: {
-		inherit: true,
-		baseStats: {hp: 211, atk: 101, def: 71, spa: 97, spd: 71, spe: 19},
 	},
 	necrozma: {
 		inherit: true,
@@ -3531,10 +3527,6 @@ export const Pokedex: {[k: string]: ModdedSpeciesData;} = {
 	flamigo: {
 		inherit: true,
 		baseStats: {hp: 82, atk: 125, def: 74, spa: 55, spd: 64, spe: 100},
-	},
-	cetitan: {
-		inherit: true,
-		types: ["Ice", "Ground"],
 	},
 	veluza: {
 		inherit: true,

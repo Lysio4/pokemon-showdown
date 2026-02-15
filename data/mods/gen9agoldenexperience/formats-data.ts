@@ -5060,7 +5060,7 @@ export const FormatsData: { [k: string]: SpeciesFormatsData; } = {
 		doublesTier: "DUU",
 	},
 	irontreads: {
-		tier: "UU",
+		tier: "OU",
 		doublesTier: "DUU",
 	},
 	ironmoth: {

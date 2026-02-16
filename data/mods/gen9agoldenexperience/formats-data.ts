@@ -4714,7 +4714,7 @@ export const FormatsData: { [k: string]: SpeciesFormatsData; } = {
 		tier: "NFE",
 	},
 	meowscarada: {
-		tier: "UU",
+		tier: "UUBL",
 		doublesTier: "DUU",
 	},
 	meowscaradamega: {

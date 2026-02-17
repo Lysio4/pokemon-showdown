@@ -199,12 +199,7 @@ export const Pokedex: {[k: string]: ModdedSpeciesData;} = {
 	},
 	arcanine: {
 		inherit: true,
-		baseStats: {hp: 90, atk: 115, def: 90, spa: 75, spd: 90, spe: 95},
 		abilities: {0: "Intimidate", 1: "Flash Fire", H: "Ignite"},
-	},
-	arcaninehisui: {
-		inherit: true,
-		baseStats: {hp: 95, atk: 115, def: 80, spa: 75, spd: 80, spe: 110},
 	},
 	poliwrath: {
 		inherit: true,
@@ -1560,7 +1555,7 @@ export const Pokedex: {[k: string]: ModdedSpeciesData;} = {
 	},
 	mamoswine: {
 		inherit: true,
-		baseStats: {hp: 110, atk: 130, def: 80, spa: 60, spd: 60, spe: 90},
+		baseStats: {hp: 110, atk: 130, def: 80, spa: 70, spd: 60, spe: 90},
 	},
 	gallademega: {
 		inherit: true,
@@ -1568,7 +1563,6 @@ export const Pokedex: {[k: string]: ModdedSpeciesData;} = {
 	},
 	probopass: {
 		inherit: true,
-		baseStats: {hp: 60, atk: 50, def: 145, spa: 90, spd: 150, spe: 30},
 		abilities: {0: "Sturdy", 1: "Magnet Pull", H: "Levitate"},
 	},
 	dusknoir: {
@@ -2317,7 +2311,7 @@ export const Pokedex: {[k: string]: ModdedSpeciesData;} = {
 	},
 	aromatisse: {
 		inherit: true,
-		baseStats: {hp: 101, atk: 72, def: 80, spa: 109, spd: 89, spe: 29},
+		baseStats: {hp: 101, atk: 72, def: 77, spa: 109, spd: 89, spe: 29},
 		abilities: {0: "Healer", 1: "Poison Heal", H: "Aroma Veil"},
 	},
 	slurpuff: {
@@ -2405,7 +2399,6 @@ export const Pokedex: {[k: string]: ModdedSpeciesData;} = {
 	},
 	sylveon: {
 		inherit: true,
-		baseStats: {hp: 95, atk: 60, def: 65, spa: 110, spd: 130, spe: 65},
 		abilities: {0: "Cute Charm", 1: "Trace", H: "Pixilate"},
 	},
 	carbink: {
@@ -3141,7 +3134,7 @@ export const Pokedex: {[k: string]: ModdedSpeciesData;} = {
 	},
 	obstagoon: {
 		inherit: true,
-		baseStats: {hp: 93, atk: 90, def: 101, spa: 50, spd: 81, spe: 105},
+		baseStats: {hp: 93, atk: 90, def: 101, spa: 60, spd: 81, spe: 105},
 	},
 	perrserker: {
 		inherit: true,

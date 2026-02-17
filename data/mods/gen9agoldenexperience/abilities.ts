@@ -1074,6 +1074,10 @@ export const Abilities: { [abilityid: string]: ModdedAbilityData; } = {
 		inherit: true,
 		isNonstandard: null,
 	},
+	petrify: {
+		inherit: true,
+		isNonstandard: null,
+	},
 
 
 

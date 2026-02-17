@@ -7813,6 +7813,28 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 		num: -97,
 		isNonstandard: "Custom",
 	},
+	petrify: {
+		onStart(pokemon) {
+			let activated = false;
+			for (const target of pokemon.adjacentFoes()) {
+				if (!activated && pokemon.setType('Rock')) {
+					this.add('-start', pokemon, 'typechange', 'Rock', '[from] ability: Petrify');
+					activated = true;
+				}
+				if (target.volatiles['substitute']) {
+					this.add('-immune', target);
+				} else {
+					this.boost({ atk: -1 }, target, pokemon, null, true);
+				}
+			}
+		},
+		flags: {},
+		name: "Petrify",
+		rating: 4,
+		num: -98,
+		shortDesc: "On switch-in, the opposing targets' type is changed to Rock.",
+		isNonstandard: "Custom",
+	},
 	// Touhou
 	hakkero: {
 		//effect in conditions.ts

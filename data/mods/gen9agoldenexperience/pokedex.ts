@@ -3147,10 +3147,13 @@ export const Pokedex: {[k: string]: ModdedSpeciesData;} = {
 		inherit: true,
 		baseStats: {hp: 90, atk: 120, def: 110, spa: 50, spd: 75, spe: 50},
 	},
+	corsolagalar: {
+		inherit: true,
+		abilities: { 0: "Weak Armor", 1: "Petrify", H: "Cursed Body" },
+	},
 	cursola: {
 		inherit: true,
-		baseStats: {hp: 60, atk: 65, def: 80, spa: 145, spd: 130, spe: 30},
-		abilities: { 0: "Purifying Salt", H: "Perish Body" },
+		abilities: { 0: "Weak Armor", 1: "Petrify", H: "Perish Body" },
 	},
 	sirfetchd: {
 		inherit: true,

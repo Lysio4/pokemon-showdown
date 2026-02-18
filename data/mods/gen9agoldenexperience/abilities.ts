@@ -928,13 +928,49 @@ export const Abilities: { [abilityid: string]: ModdedAbilityData; } = {
 		isNonstandard: null,
 	},
 	wanderingspirit: {
-		inherit: true,
-		onStart(pokemon) {
-			this.skillSwap(source, target);
+		shortDesc: "On switch-in, swaps ability with the opponent.",
+		onSwitchIn(pokemon) {
+			this.effectState.switchingIn = true;
 		},
-		onDamagingHit(damage, target, source, move) {},
-		desc: "On switch-in, this Pokemon swaps abilities with the target.",
-		shortDesc: "On switch-in, this Pokemon swaps abilities with the target.",
+		onStart(pokemon) {
+			if ((pokemon.side.foe.active.some(
+				foeActive => foeActive && pokemon.isAdjacent(foeActive) && foeActive.ability === 'noability'
+			)) ||
+			pokemon.species.id !== 'yamaskgalar' && pokemon.species.id !== 'runerigus') {
+				this.effectState.gaveUp = true;
+			}
+		},
+		onUpdate(pokemon) {
+			if (!pokemon.isStarted || this.effectState.gaveUp) return;
+			if (!this.effectState.switchingIn) return;
+			const possibleTargets = pokemon.side.foe.active.filter(foeActive => foeActive && pokemon.isAdjacent(foeActive));
+			while (possibleTargets.length) {
+				let rand = 0;
+				if (possibleTargets.length > 1) rand = this.random(possibleTargets.length);
+				const target = possibleTargets[rand];
+				const ability = target.getAbility();
+				const additionalBannedAbilities = [
+					// Zen Mode included here for compatability with Gen 5-6
+					'noability', 'flowergift', 'forecast', 'hungerswitch', 'illusion', 'wanderingspirit',
+					'imposter', 'neutralizinggas', 'powerofalchemy', 'receiver', 'trace', 'zenmode', 'concussion', 'gorillatactics', 'counterfeit',
+				];
+				if (target.getAbility().isPermanent || additionalBannedAbilities.includes(target.ability)) {
+					possibleTargets.splice(rand, 1);
+					continue;
+				}
+				target.setAbility('wanderingspirit', pokemon);
+				pokemon.setAbility(ability);
+
+				this.add('-activate', pokemon, 'ability: Wandering Spirit');
+				this.add('-activate', pokemon, 'Skill Swap', '', '', '[of] ' + target);
+				this.add('-activate', pokemon, 'ability: ' + ability.name);
+				this.add('-activate', target, 'ability: Wandering Spirit');
+				return;
+			}
+		},
+		name: "Wandering Spirit",
+		rating: 4,
+		num: 254,
 	},
 	heavyweapon: {
 		inherit: true,

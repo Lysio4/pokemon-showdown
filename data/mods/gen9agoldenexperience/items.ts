@@ -307,6 +307,10 @@ export const Items: {[itemid: string]: ModdedItemData} = {
 		inherit: true,
 		isNonstandard: null,
 	},
+	mimikyunite: {
+		inherit: true,
+		isNonstandard: null,
+	},
 	dhelmite: {
 		inherit: true,
 		isNonstandard: null,

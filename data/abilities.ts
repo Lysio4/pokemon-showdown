@@ -6211,7 +6211,7 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 	longtail: {
 		shortDesc: "Gives a +1 priority to tail and whip moves.",
 		onModifyPriority(priority, pokemon, target, move) {
-			if (move.flags['kick']) return priority + 1;
+			if (move.flags['tail']) return priority + 1;
 		},
 		name: "Long Tail",
 		num: -27,
@@ -7092,8 +7092,8 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 			}
 		},
 		flags: {},
-		desc: "This Pokemon's delayed moves have their power multiplied by 1.5. Wish restores 50% more HP, rounded half down.",
-		shortDesc: "This Pokemon's delayed moves have 1.5x power. Wish heals for 50% more HP.",
+		desc: "This Pokemon's delayed moves have their power multiplied by 1.5.",
+		shortDesc: "This Pokemon's delayed moves have 1.5x power.",
 		name: "Karma",
 		rating: 3,
 		num: -66,

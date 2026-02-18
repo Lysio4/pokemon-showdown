@@ -1100,18 +1100,6 @@ export const Moves: { [k: string]: ModdedMoveData; } = {
 		inherit: true,
 		basePower: 75,
 	},
-	noretreat: {
-		inherit: true,
-		boosts: {
-			atk: 2,
-			def: 2,
-			spa: 2,
-			spd: 2,
-			spe: 2,
-		},
-		desc: "Raises the user's Attack, Defense, Special Attack, Special Defense, and Speed by 2 stages, but it becomes prevented from switching out. The user can still switch out if it uses Baton Pass, Flip Turn, Parting Shot, Teleport, U-turn, or Volt Switch. Fails if the user has already been prevented from switching by this effect.",
-		shortDesc: "Raises all stats by 2 (not acc/eva). Traps user.",
-	},
 	fullmoonstrike: {
 		inherit: true,
 		isNonstandard: null,
@@ -1438,31 +1426,6 @@ export const Moves: { [k: string]: ModdedMoveData; } = {
 				break;
 			}
 			this.debug('BP: ' + move.basePower);
-		},
-	},
-	// Karma field
-	wish: {
-		inherit: true,
-		flags: {snatch: 1, heal: 1, metronome: 1, futuremove: 1},
-		condition: {
-			duration: 2,
-			onStart(pokemon, source) {
-				if (source.hasAbility('karma')) {
-					this.effectState.hp = 3* source.maxhp / 4;
-				} 
-				else {
-					this.effectState.hp = source.maxhp / 2;
-				}
-			},
-			onResidualOrder: 4,
-			onEnd(target) {
-				if (target && !target.fainted) {
-					const damage = this.heal(this.effectState.hp, target, target);
-					if (damage) {
-						this.add('-heal', target, target.getHealth, '[from] move: Wish', '[wisher] ' + this.effectState.source.name);
-					}
-				}
-			},
 		},
 	},
 	// Endless Dream field

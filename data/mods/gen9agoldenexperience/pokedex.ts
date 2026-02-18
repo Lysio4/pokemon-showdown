@@ -1956,15 +1956,15 @@ export const Pokedex: {[k: string]: ModdedSpeciesData;} = {
 	},
 	yamask: {
 		inherit: true,
-		abilities: {0: "Mummy", H: "Good as Gold"},
+		abilities: { 0: "Mummy", H: "Cursed Body" },
 	},
 	yamaskgalar: {
 		inherit: true,
-		abilities: {0: "Wandering Spirit", H: "Cursed Body"},
+		abilities: { 0: "Wandering Spirit", H: "Cursed Body" },
 	},
 	cofagrigus: {
 		inherit: true,
-		abilities: {0: "Mummy", H: "Good as Gold"},
+		abilities: { 0: "Mummy", H: "Good as Gold" },
 	},
 	carracosta: {
 		inherit: true,
@@ -2021,18 +2021,9 @@ export const Pokedex: {[k: string]: ModdedSpeciesData;} = {
 		inherit: true,
 		baseStats: {hp: 75, atk: 110, def: 60, spa: 65, spd: 60, spe: 115},
 	},
-	gothita: {
-		inherit: true,
-		abilities: {0: "Magician", 1: "Competitive", H: "Shadow Tag"},
-	},
-	gothorita: {
-		inherit: true,
-		abilities: {0: "Magician", 1: "Competitive", H: "Shadow Tag"},
-	},
 	gothitelle: {
 		inherit: true,
-		baseStats: {hp: 75, atk: 50, def: 95, spa: 95, spd: 110, spe: 65},
-		abilities: {0: "Magician", 1: "Competitive", H: "Shadow Tag"},
+		baseStats: {hp: 80, atk: 55, def: 95, spa: 95, spd: 110, spe: 65},
 	},
 	swanna: {
 		inherit: true,
@@ -2821,6 +2812,39 @@ export const Pokedex: {[k: string]: ModdedSpeciesData;} = {
 		inherit: true,
 		baseStats: {hp: 65, atk: 98, def: 63, spa: 40, spd: 73, spe: 101},
 	},
+	mimikyu: {
+		inherit: true,
+		otherFormes: ["Mimikyu-Busted", "Mimikyu-Totem", "Mimikyu-Busted-Totem", "Mimikyu-Mega", "Mimikyu-Busted-Mega"],
+		formeOrder: ["Mimikyu", "Mimikyu-Busted", "Mimikyu-Totem", "Mimikyu-Busted-Totem"],
+	},
+	mimikyumega: {
+		num: 778,
+		name: "Mimikyu-Mega",
+		baseSpecies: "Mimikyu",
+		forme: "Mega",
+		types: ["Ghost", "Fairy"],
+		baseStats: { hp: 55, atk: 120, def: 110, spa: 50, spd: 135, spe: 106 },
+		abilities: { 0: "Fluffy" },
+		heightm: 1.5,
+		weightkg: 0.7,
+		color: "Yellow",
+		eggGroups: ["Amorphous"],
+		requiredItem: "Mimikyunite",
+	},
+	mimikyubustedmega: {
+		num: 778,
+		name: "Mimikyu-Busted-Mega",
+		baseSpecies: "Mimikyu",
+		forme: "Mega-Busted",
+		types: ["Ghost", "Bug"],
+		baseStats: { hp: 55, atk: 130, def: 100, spa: 50, spd: 115, spe: 126 },
+		abilities: { 0: "Blind Rage" },
+		heightm: 1.5,
+		weightkg: 0.7,
+		color: "Yellow",
+		eggGroups: ["Amorphous"],
+		requiredItem: "Mimikyunite",
+	},
 	bruxish: {
 		inherit: true,
 		baseStats: {hp: 68, atk: 115, def: 70, spa: 55, spd: 70, spe: 112},
@@ -3116,18 +3140,6 @@ export const Pokedex: {[k: string]: ModdedSpeciesData;} = {
 		inherit: true,
 		types: ["Fighting", "Water"],
 	},
-	hatenna: {
-		inherit: true,
-		abilities: {0: "Healer", 1: "Magician", H: "Magic Bounce"},
-	},
-	hattrem: {
-		inherit: true,
-		abilities: {0: "Healer", 1: "Magician", H: "Magic Bounce"},
-	},
-	hatterene: {
-		inherit: true,
-		abilities: {0: "Healer", 1: "Magician", H: "Magic Bounce"},
-	},
 	grimmsnarl: {
 		inherit: true,
 		baseStats: {hp: 95, atk: 120, def: 75, spa: 75, spd: 85, spe: 60},
@@ -3154,7 +3166,7 @@ export const Pokedex: {[k: string]: ModdedSpeciesData;} = {
 	},
 	runerigus: {
 		inherit: true,
-		abilities: {0: "Wandering Spirit", H: "Cursed Body"},
+		abilities: { 0: "Wandering Spirit", H: "Magic Bounce" },
 	},
 	milcery: {
 		inherit: true,

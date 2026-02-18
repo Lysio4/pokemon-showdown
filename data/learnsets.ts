@@ -109863,7 +109863,6 @@ export const Learnsets: import('../sim/dex-species').LearnsetDataTable = {
 			forcepalm: ["9L1"],
 			icehammer: ["9L1"],
 			icespinner: ["9L1"],
-			thunderpunch: ["9L1"],
 			doubleedge: ["9L1"],
 			return: ["9L1"],
 			retaliate: ["9L1"],

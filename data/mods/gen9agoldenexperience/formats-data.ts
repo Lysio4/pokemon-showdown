@@ -2877,7 +2877,7 @@ export const FormatsData: { [k: string]: SpeciesFormatsData; } = {
 		doublesTier: "DUU",
 	},
 	runerigus: {
-		tier: "PU",
+		tier: "RU",
 		doublesTier: "DUU",
 	},
 	tirtouga: {
@@ -4127,7 +4127,7 @@ export const FormatsData: { [k: string]: SpeciesFormatsData; } = {
 		doublesTier: "DUU",
 	},
 	necrozma: {
-		tier: "RU",
+		tier: "RUBL",
 		doublesTier: "DUU",
 	},
 	necrozmaduskmane: {

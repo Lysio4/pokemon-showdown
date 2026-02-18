@@ -4034,6 +4034,14 @@ export const FormatsData: { [k: string]: SpeciesFormatsData; } = {
 		isNonstandard: "Past",
 		tier: "Illegal",
 	},
+	mimikyumega: {
+		tier: "RU",
+		doublesTier: "DUU",
+	},
+	mimikyubustedmega: {
+		tier: "RU",
+		doublesTier: "DUU",
+	},
 	bruxish: {
 		tier: "NU",
 		doublesTier: "DUU",

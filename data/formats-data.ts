@@ -6443,6 +6443,14 @@ export const FormatsData: import('../sim/dex-species').SpeciesFormatsDataTable =
 		isNonstandard: "Custom",
 		tier: "Illegal",
 	},
+	mimikyumega: {
+		isNonstandard: "Custom",
+		tier: "Illegal",
+	},
+	mimikyubustedmega: {
+		isNonstandard: "Custom",
+		tier: "Illegal",
+	},
 	dhelmisemega: {
 		isNonstandard: "Custom",
 		tier: "Illegal",

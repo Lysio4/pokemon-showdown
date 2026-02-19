@@ -756,7 +756,7 @@ export const FormatsData: { [k: string]: SpeciesFormatsData; } = {
 		tier: "NFE",
 	},
 	tangrowth: {
-		tier: "UU",
+		tier: "RU",
 		doublesTier: "DUU",
 	},
 	kangaskhan: {
@@ -952,7 +952,7 @@ export const FormatsData: { [k: string]: SpeciesFormatsData; } = {
 		doublesTier: "DOU",
 	},
 	porygonz: {
-		tier: "RUBL",
+		tier: "UU",
 		doublesTier: "DUU",
 	},
 	omanyte: {
@@ -1009,7 +1009,7 @@ export const FormatsData: { [k: string]: SpeciesFormatsData; } = {
 		doublesTier: "DUU",
 	},
 	moltresgalar: {
-		tier: "UU",
+		tier: "UUBL",
 		doublesTier: "DUU",
 	},
 	dratini: {
@@ -1089,7 +1089,7 @@ export const FormatsData: { [k: string]: SpeciesFormatsData; } = {
 		doublesTier: "DUU",
 	},
 	feraligatrmega: {
-		tier: "RUBL",
+		tier: "UU",
 		doublesTier: "DUU",
 	},
 	sentret: {
@@ -1449,7 +1449,7 @@ export const FormatsData: { [k: string]: SpeciesFormatsData; } = {
 		doublesTier: "DUU",
 	},
 	sceptilemega: {
-		tier: "UU",
+		tier: "RU",
 		doublesTier: "DUU",
 	},
 	torchic: {

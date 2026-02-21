@@ -6515,26 +6515,6 @@ export const FormatsData: import('../sim/dex-species').SpeciesFormatsDataTable =
 		isNonstandard: "Custom",
 		tier: "Illegal",
 	},
-	revavroomsegin: {
-		isNonstandard: "Custom",
-		tier: "Illegal",
-	},
-	revavroomschedar: {
-		isNonstandard: "Custom",
-		tier: "Illegal",
-	},
-	revavroomnavi: {
-		isNonstandard: "Custom",
-		tier: "Illegal",
-	},
-	revavroomruchbah: {
-		isNonstandard: "Custom",
-		tier: "Illegal",
-	},
-	revavroomcaph: {
-		isNonstandard: "Custom",
-		tier: "Illegal",
-	},
 	koraidonweakened: {
 		isNonstandard: "Custom",
 		tier: "Illegal",

@@ -4864,27 +4864,7 @@ export const FormatsData: { [k: string]: SpeciesFormatsData; } = {
 		tier: "LC",
 	},
 	revavroom: {
-		tier: "PU",
-		doublesTier: "DUU",
-	},
-	revavroomsegin: {
 		tier: "RU",
-		doublesTier: "DUU",
-	},
-	revavroomschedar: {
-		tier: "UU",
-		doublesTier: "DUU",
-	},
-	revavroomnavi: {
-		tier: "NU",
-		doublesTier: "DUU",
-	},
-	revavroomruchbah: {
-		tier: "RU",
-		doublesTier: "DUU",
-	},
-	revavroomcaph: {
-		tier: "UU",
 		doublesTier: "DUU",
 	},
 	orthworm: {

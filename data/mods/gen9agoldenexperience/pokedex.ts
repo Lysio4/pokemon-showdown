@@ -3348,18 +3348,6 @@ export const Pokedex: {[k: string]: ModdedSpeciesData;} = {
 		inherit: true,
 		baseStats: {hp: 88, atk: 59, def: 90, spa: 125, spd: 109, spe: 39},
 	},
-	charcadet: {
-		inherit: true,
-		abilities: {0: "Flash Fire", 1: "Justified", H: "Flame Body"},
-	},
-	armarouge: {
-		inherit: true,
-		abilities: {0: "Flash Fire", 1: "Justified", H: "Weak Armor"},
-	},
-	ceruledge: {
-		inherit: true,
-		abilities: {0: "Flash Fire", 1: "Justified", H: "Weak Armor"},
-	},
 	kilowattrel: {
 		inherit: true,
 		baseStats: {hp: 70, atk: 60, def: 60, spa: 115, spd: 60, spe: 125},

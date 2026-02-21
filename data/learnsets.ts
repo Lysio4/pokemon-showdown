@@ -105315,6 +105315,7 @@ export const Learnsets: import('../sim/dex-species').LearnsetDataTable = {
 			amnesia: ["9M"],
 			bodyslam: ["9M"],
 			brickbreak: ["9M"],
+			bulletpunch: ["9L80"],
 			chargebeam: ["9M"],
 			contrariety: ["9M"],
 			crunch: ["9M"],

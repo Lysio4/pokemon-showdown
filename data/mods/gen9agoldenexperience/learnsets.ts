@@ -2210,7 +2210,6 @@ export const Learnsets: { [speciesid: string]: LearnsetData; } = {
 			sunnyday: ["9M"],
 			sweetscent: ["9L20"],
 			taunt: ["9M"],
-			teleport: ["9M"],
 			thief: ["9M"],
 			thunder: ["9M"],
 			thunderbolt: ["9M"],

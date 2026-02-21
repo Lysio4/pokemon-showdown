@@ -412,7 +412,7 @@ export const FormatsData: { [k: string]: SpeciesFormatsData; } = {
 		tier: "LC",
 	},
 	arcanine: {
-		tier: "RU",
+		tier: "PU",
 		doublesTier: "DUU",
 	},
 	arcaninehisui: {

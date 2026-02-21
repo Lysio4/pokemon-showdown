@@ -71,10 +71,6 @@ export const Pokedex: {[k: string]: ModdedSpeciesData;} = {
 		inherit: true,
 		evos: ["Piratcy"],
 	},
-	pidgeot: {
-		inherit: true,
-		abilities: {0: "Keen Eye", 1: "Gale Wings", H: "Big Pecks"},
-	},
 	spearow: {
 		inherit: true,
 		abilities: {0: "Run Away", 1: "Stakeout", H: "Insomnia"},
@@ -192,14 +188,6 @@ export const Pokedex: {[k: string]: ModdedSpeciesData;} = {
 		types: ["Water", "Psychic"],
 		baseStats: {hp: 80, atk: 62, def: 78, spa: 105, spd: 80, spe: 95},
 		abilities: {0: "Psychic Prowess", 1: "Cloud Nine", H: "Swift Swim"},
-	},
-	growlithe: {
-		inherit: true,
-		abilities: {0: "Intimidate", 1: "Flash Fire", H: "Ignite"},
-	},
-	arcanine: {
-		inherit: true,
-		abilities: {0: "Intimidate", 1: "Flash Fire", H: "Ignite"},
 	},
 	poliwrath: {
 		inherit: true,

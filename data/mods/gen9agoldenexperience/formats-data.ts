@@ -871,7 +871,7 @@ export const FormatsData: { [k: string]: SpeciesFormatsData; } = {
 		doublesTier: "DUU",
 	},
 	taurospaldeablaze: {
-		tier: "NU",
+		tier: "RU",
 		doublesTier: "DUU",
 	},
 	taurospaldeaaqua: {

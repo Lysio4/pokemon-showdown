@@ -448,15 +448,15 @@ export const Pokedex: {[k: string]: ModdedSpeciesData;} = {
 	},
 	articunogalar: {
 		inherit : true,
-		abilities: {0: "Competitive", H: "Magic Guard"},
+		abilities: { 0: "Competitive", H: "Magic Guard" },
 	},
 	zapdosgalar: {
 		inherit : true,
-		abilities: {0: "Defiant", H: "Quick Feet"},
+		abilities: { 0: "Defiant", H: "Quick Feet" },
 	},
 	moltresgalar: {
 		inherit : true,
-		abilities: {0: "Berserk", H: "Flare Boost"},
+		abilities: { 0: "Berserk", H: "Regenerator" },
 	},
 	dragonitemega: {
 		inherit: true,
@@ -1457,7 +1457,7 @@ export const Pokedex: {[k: string]: ModdedSpeciesData;} = {
 	},
 	garchompmegaz: {
 		inherit: true,
-		abilities: { 0: "Levitate" },
+		abilities: { 0: "Wind Rider" },
 	},
 	lucariomegaz: {
 		inherit: true,
@@ -1466,7 +1466,7 @@ export const Pokedex: {[k: string]: ModdedSpeciesData;} = {
 	drapion: {
 		inherit: true,
 		baseStats: {hp: 70, atk: 110, def: 110, spa: 40, spd: 75, spe: 95},
-		abilities: {0: "Battle Armor", 1: "Sniper", H: "Steelbreaker"},
+		abilities: { 0: "Battle Armor", 1: "Sniper", H: "Steelbreaker" },
 	},
 	toxicroak: {
 		inherit: true,
@@ -1476,16 +1476,16 @@ export const Pokedex: {[k: string]: ModdedSpeciesData;} = {
 		inherit: true,
 		types: ["Grass", "Dark"],
 		baseStats: {hp: 94, atk: 120, def: 87, spa: 50, spd: 87, spe: 36},
-		abilities: {0: "Levitate", H: "Insectivorous"},
+		abilities: { 0: "Levitate", H: "Insectivorous" },
 	},
 	finneon: {
 		inherit: true,
-		abilities: {0: "Swift Swim", 1: "Light Power", H: "Water Veil"},
+		abilities: { 0: "Swift Swim", 1: "Light Power", H: "Water Veil" },
 	},
 	lumineon: {
 		inherit: true,
 		baseStats: {hp: 69, atk: 69, def: 86, spa: 69, spd: 86, spe: 91},
-		abilities: {0: "Swift Swim", 1: "Light Power", H: "Water Veil"},
+		abilities: { 0: "Swift Swim", 1: "Light Power", H: "Water Veil" },
 	},
 	abomasnow: {
 		inherit: true,
@@ -1495,12 +1495,12 @@ export const Pokedex: {[k: string]: ModdedSpeciesData;} = {
 	abomasnowmega: {
 		inherit: true,
 		baseStats: {hp: 90, atk: 142, def: 105, spa: 142, spd: 105, spe: 30},
-		abilities: {0: "Everlasting Winter"},
+		abilities: { 0: "Everlasting Winter" },
 	},
 	lickilicky: {
 		inherit: true,
 		types: ["Normal", "Poison"],
-		abilities: {0: "Corrosion", 1: "Oblivious", H: "Cloud Nine"},
+		abilities: { 0: "Corrosion", 1: "Oblivious", H: "Cloud Nine" },
 	},
 	electivire: {
 		inherit: true,

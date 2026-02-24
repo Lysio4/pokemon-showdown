@@ -3,7 +3,6 @@ export const Learnsets: { [speciesid: string]: LearnsetData; } = {
 	// Gen 1
 	pikachustarter: {
 		learnset: {
-			versatiledance: ["9L1"],
 			agility: ["8V", "7L27"],
 			brickbreak: ["8V", "7M"],
 			calmmind: ["8V", "7M"],
@@ -80,7 +79,6 @@ export const Learnsets: { [speciesid: string]: LearnsetData; } = {
 	},
 	eeveestarter: {
 		learnset: {
-			versatiledance: ["9L1"],
 			uturn: ["9L1"],
 			slackoff: ["9L1"],
 			baddybad: ["8V", "7T"],

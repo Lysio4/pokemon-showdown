@@ -24767,35 +24767,8 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 		shortDesc: "Type varies based on the user's primary type.",
 		isNonstandard: "Custom",
 	},
-	versatiledance: {
-		num: -93,
-		accuracy: true,
-		basePower: 0,
-		category: "Status",
-		name: "Versatile Dance",
-		pp: 20,
-		priority: 0,
-		flags: { snatch: 1, dance: 1, metronome: 1 },
-		boosts: {
-			atk: 1,
-			spa: 1,
-			spe: 1,
-		},
-		onPrepareHit(target, source) {
-			this.attrLastMove('[still]');
-			this.add('-anim', source, "Work Up", target);
-		},
-		secondary: null,
-		target: "self",
-		type: "Normal",
-		zMove: { boost: { atk: 1 } },
-		contestType: "Tough",
-		desc: "Raises the user's Attack, Special Attack and Speed by 1 stage.",
-		shortDesc: "Raises the user's Attack, Sp. Atk and Speed by 1.",
-		isNonstandard: "Custom",
-	},
 	chistrike: {
-		num: -94,
+		num: -93,
 		accuracy: 100,
 		basePower: 90,
 		onModifyMovePriority: -5,
@@ -24820,7 +24793,7 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 		isNonstandard: "Custom",
 	},
 	cursedspeech: {
-		num: -95,
+		num: -94,
 		accuracy: 100,
 		basePower: 100,
 		category: "Special",
@@ -24844,7 +24817,7 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 		isNonstandard: "Custom",
 	},
 	threateningbite: {
-		num: -96,
+		num: -95,
 		accuracy: 100,
 		basePower: 160,
 		category: "Physical",
@@ -24863,7 +24836,7 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 		isNonstandard: "Custom",
 	},
 	stonesurge: {
-		num: -97,
+		num: -96,
 		accuracy: 100,
 		basePower: 65,
 		category: "Physical",
@@ -24898,7 +24871,7 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 		shortDesc: "Sets Stealth Rock on the target's side.",
 	},
 	windrage: {
-		num: -98,
+		num: -97,
 		accuracy: 100,
 		basePower: 75,
 		category: "Physical",
@@ -24939,7 +24912,7 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 		shortDesc: "Ends Terrain, hazards.",
 	},
 	xrayvoltshock: {
-		num: -99,
+		num: -98,
 		accuracy: true,
 		basePower: 185,
 		category: "Physical",
@@ -24971,7 +24944,7 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 		isNonstandard: "Custom",
 	},
 	sunmothwrath: {
-		num: -100,
+		num: -99,
 		accuracy: true,
 		basePower: 185,
 		category: "Special",
@@ -24993,7 +24966,7 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 		isNonstandard: "Custom",
 	},
 	taleofthemoon: {
-		num: -101,
+		num: -100,
 		accuracy: true,
 		basePower: 175,
 		category: "Physical",
@@ -25036,7 +25009,7 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 		shortDesc: "Ends Terrain, hazards.",
 	},
 	ultrapapercut: {
-		num: -102,
+		num: -101,
 		accuracy: true,
 		basePower: 175,
 		category: "Physical",
@@ -25079,7 +25052,7 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 		shortDesc: "Ends Terrain, hazards.",
 	},
 	maxscrewmeltdown: {
-		num: -103,
+		num: -102,
 		accuracy: true,
 		basePower: 190,
 		category: "Physical",
@@ -25105,7 +25078,7 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 		shortDesc: "Foe is tormented.",
 	},
 	armorbigblast: {
-		num: -104,
+		num: -103,
 		accuracy: true,
 		basePower: 195,
 		category: "Special",
@@ -25126,7 +25099,7 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 		shortDesc: "No additional effect.",
 	},
 	thousandbladework: {
-		num: -105,
+		num: -104,
 		accuracy: true,
 		basePower: 195,
 		category: "Physical",
@@ -25151,7 +25124,7 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 		shortDesc: "For 5 turns, the target is prevented from healing.",
 	},
 	colorfulhit: {
-		num: -106,
+		num: -105,
 		accuracy: 100,
 		basePower: 90,
 		category: "Physical",
@@ -25179,7 +25152,7 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 		isNonstandard: "Custom",
 	},
 	oceanslance: {
-		num: -107,
+		num: -106,
 		accuracy: 85,
 		basePower: 120,
 		category: "Physical",

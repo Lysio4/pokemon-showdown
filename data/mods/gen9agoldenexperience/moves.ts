@@ -1108,10 +1108,6 @@ export const Moves: { [k: string]: ModdedMoveData; } = {
 		inherit: true,
 		isNonstandard: null,
 	},
-	versatiledance: {
-		inherit: true,
-		isNonstandard: null,
-	},
 	chistrike: {
 		inherit: true,
 		isNonstandard: null,

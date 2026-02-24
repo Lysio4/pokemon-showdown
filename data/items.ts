@@ -8516,7 +8516,7 @@ export const Items: import('../sim/dex-items').ItemDataTable = {
 		},
 		num: -25,
 		gen: 9,
-		desc: "If held by a Clawitzer forme, this item allows it to Mega Evolve in battle.",
+		desc: "If held by a Clawitzer, this item allows it to Mega Evolve in battle.",
 		isNonstandard: "Custom",
 	},
 	tyrantrumite: {
@@ -8529,7 +8529,7 @@ export const Items: import('../sim/dex-items').ItemDataTable = {
 		},
 		num: -26,
 		gen: 9,
-		desc: "If held by a Tyrantrum forme, this item allows it to Mega Evolve in battle.",
+		desc: "If held by a Tyrantrum, this item allows it to Mega Evolve in battle.",
 		isNonstandard: "Custom",
 	},
 	aurorusite: {
@@ -8542,7 +8542,7 @@ export const Items: import('../sim/dex-items').ItemDataTable = {
 		},
 		num: -27,
 		gen: 9,
-		desc: "If held by a Aurorus forme, this item allows it to Mega Evolve in battle.",
+		desc: "If held by a Aurorus, this item allows it to Mega Evolve in battle.",
 		isNonstandard: "Custom",
 	},
 	deciduitex: {
@@ -8610,7 +8610,7 @@ export const Items: import('../sim/dex-items').ItemDataTable = {
 		},
 		num: -32,
 		gen: 9,
-		desc: "If held by a Mimikyu, this item allows it to Mega Evolve in battle.",
+		desc: "If held by a Mimikyu forme, this item allows it to Mega Evolve in battle.",
 		isNonstandard: "Custom",
 	},
 	dhelmite: {

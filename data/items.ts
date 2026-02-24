@@ -9110,18 +9110,18 @@ export const Items: import('../sim/dex-items').ItemDataTable = {
 		},
 		onModifyAtkPriority: 1,
 		onModifyAtk(atk, pokemon) {
-			if (pokemon.baseSpecies.name === 'Meowth' || pokemon.baseSpecies.name === 'Meowth-Gmax' || pokemon.baseSpecies.name === 'Persian') {
+			if (pokemon.baseSpecies.baseSpecies === 'Meowth' || pokemon.baseSpecies.name === 'Persian') {
 				return this.chainModify(2);
 			}
 		},
 		onModifySpAPriority: 1,
 		onModifySpA(spa, pokemon) {
-			if (pokemon.baseSpecies.name === 'Meowth-Alola' || pokemon.baseSpecies.name === 'Persian-Alola') {
+			if (pokemon.baseSpecies.baseSpecies === 'Meowth' || pokemon.baseSpecies.name === 'Persian') {
 				return this.chainModify(2);
 			}
 		},
 		onStart(target) {
-			if (target.baseSpecies.name !== 'Meowth-Galar' && target.baseSpecies.baseSpecies !== 'Perrserker') return;
+			if (target.baseSpecies.baseSpecies !== 'Perrserker') return;
 			this.add('-item', target, 'Amulet Coin');
 			target.m.innates = Object.keys(target.species.abilities)
 					.map(key => this.toID(target.species.abilities[key as "0" | "1" | "H" | "S"]))
@@ -9134,7 +9134,7 @@ export const Items: import('../sim/dex-items').ItemDataTable = {
 			}
 		},
 		onSetAbility(ability, target, source, effect) {
-			if (target.baseSpecies.name !== 'Meowth-Galar' && target.baseSpecies.baseSpecies !== 'Perrserker') return;
+			if (target.baseSpecies.baseSpecies !== 'Perrserker') return;
 			if (effect && effect.effectType === 'Ability' && effect.name !== 'Trace') {
 				this.add('-ability', source, effect);
 			}
@@ -9144,7 +9144,7 @@ export const Items: import('../sim/dex-items').ItemDataTable = {
 		itemUser: ["Meowth", "Persian", "Meowth-Alola", "Persian-Alola", "Meowth-Galar", "Perrserker", "Meowth-Gmax"],
 		num: -66,
 		gen: 9,
-		shortDesc: "If held by a Meowth or a Persian, an effect happens.",
+		shortDesc: "If held by a Meowth or a Persian, its Atk and Sp. Atk are doubled. If held by a Perrserker, all of its abilities are active at once.",
 		isNonstandard: "Custom",
 	},
 	// Touhou

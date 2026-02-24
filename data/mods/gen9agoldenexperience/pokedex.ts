@@ -176,12 +176,7 @@ export const Pokedex: {[k: string]: ModdedSpeciesData;} = {
 	},
 	persian: {
 		inherit: true,
-		baseStats: {hp: 55, atk: 110, def: 50, spa: 105, spd: 55, spe: 120},
-		abilities: {0: "Super Luck", 1: "Technician", H: "Tough Claws"},
-	},
-	persianalola: {
-		inherit: true,
-		baseStats: {hp: 75, atk: 60, def: 70, spa: 95, spd: 70, spe: 125},
+		abilities: {0: "Limber", 1: "Technician", H: "Super Luck"},
 	},
 	golduck: {
 		inherit: true,
@@ -3135,10 +3130,6 @@ export const Pokedex: {[k: string]: ModdedSpeciesData;} = {
 	obstagoon: {
 		inherit: true,
 		baseStats: {hp: 93, atk: 90, def: 101, spa: 60, spd: 81, spe: 105},
-	},
-	perrserker: {
-		inherit: true,
-		baseStats: {hp: 90, atk: 120, def: 110, spa: 50, spd: 75, spe: 50},
 	},
 	corsolagalar: {
 		inherit: true,

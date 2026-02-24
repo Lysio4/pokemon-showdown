@@ -595,6 +595,10 @@ export const Items: {[itemid: string]: ModdedItemData} = {
 		inherit: true,
 		isNonstandard: null,
 	},
+	amuletcoin: {
+		inherit: true,
+		isNonstandard: null,
+	},
 	// everlasting winter
 	safetygoggles: {
 		inherit: true,

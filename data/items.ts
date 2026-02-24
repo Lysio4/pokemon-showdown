@@ -9103,6 +9103,50 @@ export const Items: import('../sim/dex-items').ItemDataTable = {
 		num: -65,
 		isNonstandard: "Custom",
 	},
+	amuletcoin: {
+		name: "Amulet Coin",
+		fling: {
+			basePower: 90,
+		},
+		onModifyAtkPriority: 1,
+		onModifyAtk(atk, pokemon) {
+			if ((pokemon.baseSpecies.baseSpecies === 'Meowth' || pokemon.baseSpecies.baseSpecies === 'Persian') && pokemon.baseSpecies.forme !== 'Alola' && pokemon.baseSpecies.forme !== 'Galar') {
+				return this.chainModify(2);
+			}
+		},
+		onModifySpAPriority: 1,
+		onModifySpA(spa, pokemon) {
+			if ((pokemon.baseSpecies.baseSpecies === 'Meowth' || pokemon.baseSpecies.baseSpecies === 'Persian') && pokemon.baseSpecies.forme === 'Alola') {
+				return this.chainModify(2);
+			}
+		},
+		onStart(target) {
+			if ((target.baseSpecies.baseSpecies !== 'Meowth' || target.baseSpecies.forme !== 'Galar') && target.baseSpecies.baseSpecies !== 'Perrserker') return;
+			this.add('-item', target, 'Amulet Coin');
+			target.m.innates = Object.keys(target.species.abilities)
+					.map(key => this.toID(target.species.abilities[key as "0" | "1" | "H" | "S"]))
+					.filter(ability => ability !== target.ability);
+			if (target.m.innates) {
+				for (const innate of target.m.innates) {
+					if (target.hasAbility(innate)) continue;
+					target.addVolatile("ability:" + innate, target);
+				}
+			}
+		},
+		onSetAbility(ability, target, source, effect) {
+			if ((target.baseSpecies.baseSpecies !== 'Meowth' || target.baseSpecies.forme !== 'Galar') && target.baseSpecies.baseSpecies !== 'Perrserker') return;
+			if (effect && effect.effectType === 'Ability' && effect.name !== 'Trace') {
+				this.add('-ability', source, effect);
+			}
+			this.add('-block', target, 'item: Amulet Coin');
+			return null;
+		},
+		itemUser: ["Meowth", "Persian", "Meowth-Alola", "Persian-Alola", "Meowth-Galar", "Perrserker", "Meowth-Gmax"],
+		num: -66,
+		gen: 9,
+		shortDesc: "If held by a Meowth or a Persian, an effect happens.",
+		isNonstandard: "Custom",
+	},
 	// Touhou
 	summerbackdoor: {
 		name: "Summer Backdoor",

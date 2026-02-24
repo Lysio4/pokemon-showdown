@@ -9110,18 +9110,18 @@ export const Items: import('../sim/dex-items').ItemDataTable = {
 		},
 		onModifyAtkPriority: 1,
 		onModifyAtk(atk, pokemon) {
-			if ((pokemon.baseSpecies.baseSpecies === 'Meowth' || pokemon.baseSpecies.baseSpecies === 'Persian') && pokemon.baseSpecies.forme !== 'Alola' && pokemon.baseSpecies.forme !== 'Galar') {
+			if (pokemon.baseSpecies.name === 'Meowth' || pokemon.baseSpecies.name === 'Meowth-Gmax' || pokemon.baseSpecies.name === 'Persian') {
 				return this.chainModify(2);
 			}
 		},
 		onModifySpAPriority: 1,
 		onModifySpA(spa, pokemon) {
-			if ((pokemon.baseSpecies.baseSpecies === 'Meowth' || pokemon.baseSpecies.baseSpecies === 'Persian') && pokemon.baseSpecies.forme === 'Alola') {
+			if (pokemon.baseSpecies.name === 'Meowth-Alola' || pokemon.baseSpecies.name === 'Persian-Alola') {
 				return this.chainModify(2);
 			}
 		},
 		onStart(target) {
-			if ((target.baseSpecies.baseSpecies !== 'Meowth' || target.baseSpecies.forme !== 'Galar') && target.baseSpecies.baseSpecies !== 'Perrserker') return;
+			if (target.baseSpecies.name !== 'Meowth-Galar' && target.baseSpecies.baseSpecies !== 'Perrserker') return;
 			this.add('-item', target, 'Amulet Coin');
 			target.m.innates = Object.keys(target.species.abilities)
 					.map(key => this.toID(target.species.abilities[key as "0" | "1" | "H" | "S"]))
@@ -9134,7 +9134,7 @@ export const Items: import('../sim/dex-items').ItemDataTable = {
 			}
 		},
 		onSetAbility(ability, target, source, effect) {
-			if ((target.baseSpecies.baseSpecies !== 'Meowth' || target.baseSpecies.forme !== 'Galar') && target.baseSpecies.baseSpecies !== 'Perrserker') return;
+			if (target.baseSpecies.name !== 'Meowth-Galar' && target.baseSpecies.baseSpecies !== 'Perrserker') return;
 			if (effect && effect.effectType === 'Ability' && effect.name !== 'Trace') {
 				this.add('-ability', source, effect);
 			}

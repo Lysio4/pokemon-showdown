@@ -7661,23 +7661,6 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 		num: -88,
 		isNonstandard: "Custom",
 	},
-	contrarian: {
-		onStart(source) {
-			this.add('-ability', source, 'Contrarian');
-			this.field.addPseudoWeather('contrarian');
-			this.hint("All Pokemon are under Contrary effect!");
-		},
-		onResidualOrder: 21,
-		onResidualSubOrder: 2,
-		onEnd(pokemon) {
-			this.field.removePseudoWeather('contrarian');
-		},
-		name: "Contrarian",
-		shortDesc: "As long as this Pokémon is on the field, every Pokémon on the field is under Contrary effect.",
-		rating: 4.5,
-		num: -89,
-		isNonstandard: "Custom",
-	},
    	healingecho: {
 		desc: "When this Pokémon uses a Sound move, it is healed by 25% of its HP.",
 		shortDesc: "Heals 25% HP if the Pokémon uses a Sound move.",
@@ -7689,7 +7672,7 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 		flags: {},
 	    name: "Healing Echo",
 		rating: 3,
-		num: -90,
+		num: -89,
 		isNonstandard: "Custom",
 	},
 	mountainwalker: {
@@ -7708,7 +7691,7 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 		flags: { breakable: 1 },
 		name: "Mountain Walker",
 		rating: 3,
-		num: -91,
+		num: -90,
 		isNonstandard: "Custom",
 	},
 	meltingheart: {
@@ -7725,7 +7708,7 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 		flags: {},
 		name: "Melting Heart",
 		rating: 1,
-		num: -92,
+		num: -91,
 		isNonstandard: "Custom",
 	},
 	stormemperor: {
@@ -7736,7 +7719,7 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 		flags: {},
 		name: "Storm Emperor",
 		rating: 5,
-		num: -93,
+		num: -92,
 		shortDesc: "On switch-in, this Pokemon summons Rain Dance and Electric Terrain.",
 		isNonstandard: "Custom",
 	},
@@ -7749,7 +7732,7 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 		name: "Magic Eye",
 		shortDesc: "On switch-in, set Magic Room for 5 turns.",
 		rating: 4,
-		num: -94,
+		num: -93,
 		isNonstandard: "Custom",
 	},
 	almightymask: {
@@ -7759,7 +7742,7 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 		flags: {},
 		name: "Almighty Mask",
 		rating: 3.5,
-		num: -95,
+		num: -94,
 		shortDesc: "On switch-in, this Pokemon's Speed is raised by 1 stage.",
 		isNonstandard: "Custom",
 	},
@@ -7782,7 +7765,7 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 		flags: {},
 		name: "Mighty Horn",
 		rating: 3,
-		num: -96,
+		num: -95,
 		desc: "This Pokemon's drill-based attacks have their power and accuracy multiplied by 1.3.",
 		shortDesc: "This Pokemon's drill-based attacks have 1.3x power and 1.3x accuracy.",
 		isNonstandard: "Custom",
@@ -7810,7 +7793,7 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 		},
 		name: "Nightmare Heart",
 		rating: 3,
-		num: -97,
+		num: -96,
 		isNonstandard: "Custom",
 	},
 	petrify: {
@@ -7831,7 +7814,7 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 		flags: {},
 		name: "Petrify",
 		rating: 4,
-		num: -98,
+		num: -97,
 		shortDesc: "On switch-in, the opposing targets' type is changed to Rock.",
 		isNonstandard: "Custom",
 	},

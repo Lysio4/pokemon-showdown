@@ -2139,10 +2139,6 @@ export const FormatsData: { [k: string]: SpeciesFormatsData; } = {
 		tier: "UU",
 		doublesTier: "DUU",
 	},
-	empoleonmega: {
-		tier: "OU",
-		doublesTier: "DOU",
-	},
 	starly: {
 		tier: "LC",
 	},
@@ -2312,7 +2308,7 @@ export const FormatsData: { [k: string]: SpeciesFormatsData; } = {
 		doublesTier: "DUU",
 	},
 	garchompmegaz: {
-		tier: "OU",
+		tier: "Uber",
 		doublesTier: "DUU",
 	},
 	riolu: {
@@ -2563,10 +2559,6 @@ export const FormatsData: { [k: string]: SpeciesFormatsData; } = {
 		doublesTier: "DUU",
 	},
 	serperiorgalar: {
-		tier: "UU",
-		doublesTier: "DUU",
-	},
-	serperiormega: {
 		tier: "UU",
 		doublesTier: "DUU",
 	},
@@ -4231,10 +4223,6 @@ export const FormatsData: { [k: string]: SpeciesFormatsData; } = {
 	cinderacegmax: {
 		isNonstandard: "Past",
 		tier: "Illegal",
-	},
-	cinderacemega: {
-		tier: "OU",
-		doublesTier: "DUU",
 	},
 	sobble: {
 		tier: "LC",

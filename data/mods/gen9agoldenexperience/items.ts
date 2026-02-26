@@ -247,15 +247,7 @@ export const Items: {[itemid: string]: ModdedItemData} = {
 		inherit: true,
 		isNonstandard: null,
 	},
-	empoleonite: {
-		inherit: true,
-		isNonstandard: null,
-	},
 	yanmeganite: {
-		inherit: true,
-		isNonstandard: null,
-	},
-	serperiorite: {
 		inherit: true,
 		isNonstandard: null,
 	},
@@ -312,10 +304,6 @@ export const Items: {[itemid: string]: ModdedItemData} = {
 		isNonstandard: null,
 	},
 	dhelmite: {
-		inherit: true,
-		isNonstandard: null,
-	},
-	cinderacite: {
 		inherit: true,
 		isNonstandard: null,
 	},

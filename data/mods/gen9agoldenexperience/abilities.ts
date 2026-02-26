@@ -910,10 +910,6 @@ export const Abilities: { [abilityid: string]: ModdedAbilityData; } = {
 		inherit: true,
 		isNonstandard: null,
 	},
-	contrarian: {
-		inherit: true,
-		isNonstandard: null,
-	},
 	merciless: {
 		inherit: true,
 		onModifyCritRatio(critRatio, source, target) {

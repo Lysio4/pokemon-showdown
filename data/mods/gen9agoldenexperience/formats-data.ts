@@ -5174,7 +5174,7 @@ export const FormatsData: { [k: string]: SpeciesFormatsData; } = {
 		tier: "Illegal",
 	},
 	ogerponwellspring: {
-		tier: "OU",
+		tier: "Uber",
 		doublesTier: "DOU",
 	},
 	ogerponwellspringtera: {

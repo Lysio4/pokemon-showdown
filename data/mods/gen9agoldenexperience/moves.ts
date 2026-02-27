@@ -406,13 +406,9 @@ export const Moves: { [k: string]: ModdedMoveData; } = {
 			},
 		},
 	},
-	lowsweep: {
-		inherit: true,
-		basePower: 60,
-	},
 	powergem: {
 		inherit: true,
-		basePower: 95,
+		basePower: 90,
 		desc: "Has a 10% chance to raise the user's Defense by 1 stage.",
 		shortDesc: "10% chance to raise user's Defense by 1.",
 		secondary: {
@@ -471,26 +467,13 @@ export const Moves: { [k: string]: ModdedMoveData; } = {
 	},
 	glitzyglow: {
 		inherit: true,
+		accuracy: 100,
 		isNonstandard: null,
-		desc: "Lowers the target's Special Attack and Special Defense by 1 stage.",
-		shortDesc: "Lowers target's Sp. Atk, Sp. Def by 1.",
-		self: null,
-		boosts: {
-			spa: -1,
-			spd: -1,
-		},
 	},
 	baddybad: {
 		inherit: true,
+		accuracy: 100,
 		isNonstandard: null,
-		category: "Physical",
-		desc: "Lowers the target's Attack and Defense by 1 stage.",
-		shortDesc: "Lowers target's Atk, Def by 1.",
-		self: null,
-		boosts: {
-			atk: -1,
-			def: -1,
-		},
 	},
 	sappyseed: {
 		inherit: true,
@@ -547,15 +530,10 @@ export const Moves: { [k: string]: ModdedMoveData; } = {
 						spe: 1,
 					},
 				},
-			}, {
-				chance: 100,
-				self: {
-					volatileStatus: 'focusenergy',
-				},
 			},
 		],
-		desc: "100% chance to raise the user's Speed by 1 stage. Raise crit ratio by 2 stages. Target: 50% -1 Defense.",
-		shortDesc: "100% chance to +1 Speed; +2 crit ratio; 50%: -1 Def to target.",
+		desc: "100% chance to raise the user's Speed by 1 stage. High crit ratio. Target: 50% -1 Defense.",
+		shortDesc: "100% chance to +1 Speed; high crit ratio; 50%: -1 Def to target.",
 	},
 	direclaw: {
 		inherit: true,
@@ -975,10 +953,6 @@ export const Moves: { [k: string]: ModdedMoveData; } = {
 		isNonstandard: null,
 	},
 	heatstorm: {
-		inherit: true,
-		isNonstandard: null,
-	},
-	genesiswave: {
 		inherit: true,
 		isNonstandard: null,
 	},

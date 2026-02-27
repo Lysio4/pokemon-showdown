@@ -278,7 +278,7 @@ export const Formats: import('../sim/dex-formats').FormatList = [
 		name: "[Gen 9] A Golden Experience Uber",
 		desc: `A fun metagame where we try to make everything viable, or at least usable. We also have new Fakemons!`,
 		mod: 'gen9agoldenexperience',
-		ruleset: ['Standard NatDex', 'Terastal Clause', 'Non-Signature Z-Move Clause'],
+		ruleset: ['Standard NatDex', 'Terastal Clause', 'Non-Signature Z-Move Clause', 'Sleep Moves Clause'],
 		banlist: [
 			'AG', 'King\'s Rock',
 			'Baton Pass', 'Light Clay', 'Quick Claw', 'Rage Fist', 'Razor Fang', 'Sticky Web', 
@@ -289,7 +289,7 @@ export const Formats: import('../sim/dex-formats').FormatList = [
 		name: "[Gen 9] A Golden Experience UU",
 		desc: `A fun metagame where we try to make everything viable, or at least usable. We also have new Fakemons!`,
 		mod: 'gen9agoldenexperience',
-		ruleset: ['Standard NatDex', 'Terastal Clause', 'Non-Signature Z-Move Clause'],
+		ruleset: ['Standard NatDex', 'Terastal Clause', 'Non-Signature Z-Move Clause', 'Sleep Moves Clause'],
 		banlist: [
 			'Uber', 'AG', 'OU', 'UUBL', 'Moody', 'Power Construct', 'King\'s Rock',
 			'Baton Pass', 'Last Respects', 'Quick Claw', 'Rage Fist', 'Razor Fang', 'Shadow Tag', 'Shed Tail',
@@ -301,7 +301,7 @@ export const Formats: import('../sim/dex-formats').FormatList = [
 		name: "[Gen 9] A Golden Experience RU",
 		desc: `A fun metagame where we try to make everything viable, or at least usable. We also have new Fakemons!`,
 		mod: 'gen9agoldenexperience',
-		ruleset: ['Standard NatDex', 'Terastal Clause', 'Non-Signature Z-Move Clause'],
+		ruleset: ['Standard NatDex', 'Terastal Clause', 'Non-Signature Z-Move Clause', 'Sleep Moves Clause'],
 		banlist: [
 			'Uber', 'AG', 'OU', 'UUBL', 'UU', 'RUBL', 'Moody', 'Power Construct', 'King\'s Rock',
 			'Baton Pass', 'Last Respects', 'Quick Claw', 'Rage Fist', 'Razor Fang', 'Shadow Tag', 'Shed Tail',
@@ -313,7 +313,7 @@ export const Formats: import('../sim/dex-formats').FormatList = [
 		name: "[Gen 9] A Golden Experience NU",
 		desc: `A fun metagame where we try to make everything viable, or at least usable. We also have new Fakemons!`,
 		mod: 'gen9agoldenexperience',
-		ruleset: ['Standard NatDex', 'Terastal Clause', 'Non-Signature Z-Move Clause'],
+		ruleset: ['Standard NatDex', 'Terastal Clause', 'Non-Signature Z-Move Clause', 'Sleep Moves Clause'],
 		banlist: [
 			'Uber', 'AG', 'OU', 'UUBL', 'UU', 'RUBL', 'RU', 'NUBL', 'Moody', 'Power Construct', 'King\'s Rock',
 			'Baton Pass', 'Last Respects', 'Quick Claw', 'Rage Fist', 'Razor Fang', 'Shadow Tag', 'Shed Tail',
@@ -326,7 +326,7 @@ export const Formats: import('../sim/dex-formats').FormatList = [
 		name: "[Gen 9] A Golden Experience PU",
 		desc: `A fun metagame where we try to make everything viable, or at least usable. We also have new Fakemons!`,
 		mod: 'gen9agoldenexperience',
-		ruleset: ['Standard NatDex', 'Terastal Clause', 'Non-Signature Z-Move Clause'],
+		ruleset: ['Standard NatDex', 'Terastal Clause', 'Non-Signature Z-Move Clause', 'Sleep Moves Clause'],
 		banlist: [
 			'Uber', 'AG', 'OU', 'UUBL', 'UU', 'RUBL', 'RU', 'NUBL', 'NU', 'PUBL', 'Moody', 'Power Construct', 'King\'s Rock',
 			'Baton Pass', 'Last Respects', 'Quick Claw', 'Rage Fist', 'Razor Fang', 'Shadow Tag', 'Shed Tail',
@@ -388,7 +388,8 @@ export const Formats: import('../sim/dex-formats').FormatList = [
 		banlist: [
 			'Cramorant-Gorging', 'Calyrex-Shadow', 'Darmanitan-Galar-Zen', 'Eternatus-Eternamax', 'Greninja-Ash', 'Groudon-Primal', 'Rayquaza-Mega', 'Shedinja', 'Terapagos-Stellar', 
 			'Contrary', 'Gorilla Tactics', 'Hadron Engine', 'Huge Power', 'Hydrophilic', 'Illusion', 'Innards Out', 'Light Power', 'Magnet Pull', 'Moody', 'Neutralizing Gas', 'Orichalcum Pulse', 'Parental Bond', 'Pure Power',
-			'Shadow Tag', 'Stakeout', 'Water Bubble', 'Wonder Guard', 'Berserk Gene', 'Belly Drum', 'Bolt Beak', 'Ceaseless Edge', 'Chatter', 'Double Iron Bash', 'Electrify', 'Imprison',
+			'Shadow Tag', 'Stakeout', 'Water Bubble', 'Wonder Guard', 'Berserk Gene', 
+			'Baddy Bad', 'Belly Drum', 'Bolt Beak', 'Ceaseless Edge', 'Chatter', 'Double Iron Bash', 'Electrify', 'Glitzy Glow', 'Imprison',
 			'Last Respects', 'Octolock', 'Rage Fist', 'Revival Blessing', 'Sappy Seed', 'Shed Tail', 'Shell Smash', 'Sleep Talk',
 		],
 		restricted: ['Arceus'],
@@ -554,9 +555,9 @@ export const Formats: import('../sim/dex-formats').FormatList = [
 			'Serperior', 'Solgaleo', 'Spectrier', 'Ursaluna', 'Ursaluna-Bloodmoon', 'Tapu Koko', 'Ting-Lu', 'Xerneas', 'Xurkitree', 'Yveltal', 'Zacian', 
 			'Zacian-Crowned', 'Zamazenta', 'Zamazenta-Crowned', 'Zekrom', 'Zoroark-Base', 'Zoroark-Hisui', 'Zygarde-Complete', 
 			'Damp Rock', 'Heat Rock', 'King\'s Rock', 'Razor Fang', 'Shadow Tag', 'Smooth Rock', 'Tera Orb', 
-			'Astral Barrage', 'Baneful Bunker', 'Baton Pass', 'Belly Drum', 'Big Bang', 'Bolt Beak', 'Boomburst', 'Burning Bulwark', 'Ceaseless Edge', 'Clangorous Soul', 
+			'Astral Barrage', 'Baddy Bad', 'Baneful Bunker', 'Baton Pass', 'Belly Drum', 'Big Bang', 'Bolt Beak', 'Boomburst', 'Burning Bulwark', 'Ceaseless Edge', 'Clangorous Soul', 
 			'Double Iron Bash', 'Dragon Energy', 'Electrify', 'Electro Shot', 'Eruption', 'Extreme Speed', 'Final Gambit', 'Fillet Away', 'Fishious Rend', 'Geomancy', 
-			'Jet Punch', 'Last Respects', 'Lumina Crash', 'No Retreat', 'Population Bomb', 'Quiver Dance', 'Rage Fist', 'Revival Blessing', 'Rising Voltage', 'Salt Cure', 
+			'Glitzy Glow', 'Jet Punch', 'Last Respects', 'Lumina Crash', 'No Retreat', 'Population Bomb', 'Quiver Dance', 'Rage Fist', 'Revival Blessing', 'Rising Voltage', 'Salt Cure', 
 			'Shed Tail', 'Shell Smash', 'Shift Gear', 'Surging Strikes', 'Tail Glow', 'Take Heart', 'Thousand Arrows', 'Transform', 'V-create', 'Victory Dance', 'Water Spout', 
 			'Wicked Blow', 'Power Construct', 'Regenerator > 2', 'Comatose',
 		],

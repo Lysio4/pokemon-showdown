@@ -1180,7 +1180,6 @@ export const Scripts: ModdedBattleScriptsData = {
     this.modData('Learnsets', 'dragonite').learnset.whirlwind = ['9L1']; // ZA addition
     this.modData('Learnsets', 'dragonite').learnset.vacuumwave = ['9L1']; // ZA addition
     this.modData('Learnsets', 'mewtwo').learnset.vacuumwave = ['9L1']; // ZA addition
-    this.modData('Learnsets', 'mew').learnset.genesiswave = ['9L1'];
 
     // Gen 2:
     this.modData('Learnsets', 'meganium').learnset.leafblade = ['9L1']; // ZA addition

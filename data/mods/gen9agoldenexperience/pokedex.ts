@@ -1839,7 +1839,7 @@ export const Pokedex: {[k: string]: ModdedSpeciesData;} = {
 	},
 	scolipedemega: {
 		inherit: true,
-		abilities: {0: "Tinted Lens"},
+		abilities: { 0: "Stamina" },
 	},
 	whimsicott: {
 		inherit: true,
@@ -2191,7 +2191,7 @@ export const Pokedex: {[k: string]: ModdedSpeciesData;} = {
 	// Gen 6 :
 	chesnaughtmega: {
 		inherit: true,
-		abilities: { 0: "Spiky Body" },
+		abilities: { 0: "Bulletproof" },
 	},
 	delphoxmega: {
 		inherit: true,

@@ -24841,49 +24841,8 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 		desc: "If this move is successful, it sets up a hazard on the opposing side of the field, damaging each opposing Pokemon that switches in. Foes lose 1/32, 1/16, 1/8, 1/4, or 1/2 of their maximum HP, rounded down, based on their weakness to the Rock type; 0.25x, 0.5x, neutral, 2x, or 4x, respectively. Can be removed from the opposing side if any Pokemon uses Tidy Up, or if any opposing Pokemon uses Mortal Spin, Rapid Spin, or Defog successfully, or is hit by Defog.",
 		shortDesc: "Sets Stealth Rock on the target's side.",
 	},
-	windrage: {
-		num: -96,
-		accuracy: 100,
-		basePower: 75,
-		category: "Physical",
-		name: "Wind Rage",
-		pp: 15,
-		priority: 0,
-		flags: { protect: 1, mirror: 1, metronome: 1 },
-		onHit(source) {
-			let success = false;
-			const removeAll = ['spikes', 'toxicspikes', 'stealthrock', 'stickyweb', 'gmaxsteelsurge'];
-			const removeTarget = ['reflect', 'lightscreen', 'auroraveil', 'safeguard', 'mist', ...removeAll];
-			for (const targetCondition of removeTarget) {
-				if (source.side.foe.removeSideCondition(targetCondition)) {
-					if (!removeAll.includes(targetCondition)) continue;
-					this.add('-sideend', source.side.foe, this.dex.conditions.get(targetCondition).name, '[from] move: Wind Rage', `[of] ${source}`);
-					success = true;
-				}
-			}
-			for (const sideCondition of removeAll) {
-				if (source.side.removeSideCondition(sideCondition)) {
-					this.add('-sideend', source.side, this.dex.conditions.get(sideCondition).name, '[from] move: Wind Rage', `[of] ${source}`);
-					success = true;
-				}
-			}
-			this.field.clearTerrain();
-			return success;
-		},
-		onPrepareHit(target, source) {
-			this.attrLastMove('[still]');
-			this.add('-anim', source, "G-Max Wind Rage", target);
-		},
-		secondary: null,
-		target: "adjacentFoe",
-		type: "Flying",
-		contestType: "Cool",
-		isNonstandard: "Custom",
-		desc: "If this move is successful, the effects of Electric Terrain, Grassy Terrain, Misty Terrain, and Psychic Terrain end, the effects of Reflect, Light Screen, Aurora Veil, Safeguard, Mist, G-Max Steelsurge, Spikes, Toxic Spikes, Stealth Rock, and Sticky Web end for the target's side, and the effects of G-Max Steelsurge, Spikes, Toxic Spikes, Stealth Rock, and Sticky Web end for the user's side.",
-		shortDesc: "Ends Terrain, hazards.",
-	},
 	xrayvoltshock: {
-		num: -97,
+		num: -96,
 		accuracy: true,
 		basePower: 185,
 		category: "Physical",
@@ -24915,7 +24874,7 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 		isNonstandard: "Custom",
 	},
 	sunmothwrath: {
-		num: -98,
+		num: -97,
 		accuracy: true,
 		basePower: 185,
 		category: "Special",
@@ -24937,7 +24896,7 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 		isNonstandard: "Custom",
 	},
 	taleofthemoon: {
-		num: -99,
+		num: -98,
 		accuracy: true,
 		basePower: 175,
 		category: "Physical",
@@ -24980,7 +24939,7 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 		shortDesc: "Ends Terrain, hazards.",
 	},
 	ultrapapercut: {
-		num: -100,
+		num: -99,
 		accuracy: true,
 		basePower: 175,
 		category: "Physical",
@@ -25023,7 +24982,7 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 		shortDesc: "Ends Terrain, hazards.",
 	},
 	maxscrewmeltdown: {
-		num: -101,
+		num: -100,
 		accuracy: true,
 		basePower: 190,
 		category: "Physical",
@@ -25049,7 +25008,7 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 		shortDesc: "Foe is tormented.",
 	},
 	armorbigblast: {
-		num: -102,
+		num: -101,
 		accuracy: true,
 		basePower: 195,
 		category: "Special",
@@ -25070,7 +25029,7 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 		shortDesc: "No additional effect.",
 	},
 	thousandbladework: {
-		num: -103,
+		num: -102,
 		accuracy: true,
 		basePower: 195,
 		category: "Physical",
@@ -25095,7 +25054,7 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 		shortDesc: "For 5 turns, the target is prevented from healing.",
 	},
 	colorfulhit: {
-		num: -104,
+		num: -103,
 		accuracy: 100,
 		basePower: 90,
 		category: "Physical",
@@ -25123,7 +25082,7 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 		isNonstandard: "Custom",
 	},
 	oceanslance: {
-		num: -105,
+		num: -104,
 		accuracy: 85,
 		basePower: 120,
 		category: "Physical",

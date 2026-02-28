@@ -1115,10 +1115,6 @@ export const Moves: { [k: string]: ModdedMoveData; } = {
 		inherit: true,
 		isNonstandard: null,
 	},
-	windrage: {
-		inherit: true,
-		isNonstandard: null,
-	},
 	howl: {
 		inherit: true,
 		onModifyMove(move, pokemon) {

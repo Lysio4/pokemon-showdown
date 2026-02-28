@@ -2189,18 +2189,6 @@ export const Pokedex: {[k: string]: ModdedSpeciesData;} = {
 	},
 
 	// Gen 6 :
-	chesnaughtmega: {
-		inherit: true,
-		abilities: { 0: "Bulletproof" },
-	},
-	delphoxmega: {
-		inherit: true,
-		abilities: { 0: "Levitate" },
-	},
-	greninjamega: {
-		inherit: true,
-		abilities: { 0: "Protean" },
-	},
 	pyroarmega: {
 		inherit: true,
 		abilities: { 0: "Adaptability" },

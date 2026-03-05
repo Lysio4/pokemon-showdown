@@ -588,6 +588,7 @@ export const Abilities: { [abilityid: string]: ModdedAbilityData; } = {
 			return oldAbility as false | null;
 		},
 		onResidual(pokemon) {},
+		onEnd(pokemon) {},
 		shortDesc: "If Darmanitan, changes Mode to Zen. Changes ability to Sheer Force (Darmanitan)/Gorilla Tactics (Darmanitan-Galar).",
 	},
 	runaway: {

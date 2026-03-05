@@ -1852,6 +1852,8 @@ export const Scripts: ModdedBattleScriptsData = {
     this.modData('Learnsets', 'yveltal').learnset.razorwind = ['9L1']; // ZA addition
     this.modData('Learnsets', 'zygarde').learnset.ironhead = ['9L1']; // ZA addition
     this.modData('Learnsets', 'hoopa').learnset.psychicfangs = ['9L1']; // ZA addition
+    this.modData('Learnsets', 'hoopa').learnset.spikes = ['9L1'];
+    this.modData('Learnsets', 'hoopa').learnset.moonlight = ['9L1'];
     this.modData('Learnsets', 'volcanion').learnset.hydrosteam = ['9L1'];
 
     // Gen 7:

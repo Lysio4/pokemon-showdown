@@ -7556,22 +7556,45 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 		isNonstandard: "Custom",
 	},
 	psychicprowess: {
-		onModifyAtkPriority: 5,
+		onSourceModifyAtkPriority: 5,
+		onSourceModifyAtk(atk, attacker, defender, move) {
+			if (move.type === 'Fighting') {
+				return this.chainModify(0.5);
+			}
+		},
+		onSourceModifySpAPriority: 5,
+		onSourceModifySpA(atk, attacker, defender, move) {
+			if (move.type === 'Fighting') {
+				return this.chainModify(0.5);
+			}
+		},
 		onModifyAtk(atk, attacker, defender, move) {
 			if (move.type === 'Psychic') {
-				this.debug('Psychic Prowess boost');
-				return this.chainModify(1.5);
+				return this.chainModify(2);
 			}
 		},
-		onModifySpAPriority: 5,
 		onModifySpA(atk, attacker, defender, move) {
 			if (move.type === 'Psychic') {
-				this.debug('Psychic Prowess boost');
-				return this.chainModify(1.5);
+				return this.chainModify(2);
 			}
 		},
+		onUpdate(pokemon) {
+			if (pokemon.status === 'par') {
+				this.add('-activate', pokemon, 'ability: Psychic Prowess');
+				pokemon.cureStatus();
+			}
+		},
+		onSetStatus(status, target, source, effect) {
+			if (status.id !== 'par') return;
+			if ((effect as Move)?.status) {
+				this.add('-immune', target, '[from] ability: Psychic Prowess');
+			}
+			return false;
+		},
+		flags: { breakable: 1 },
 		name: "Psychic Prowess",
-		shortDesc: "This Pokemon's attacking stat is multiplied by 1.5 while using a Psychic type attack. Amnesia also boosts SpA by 2.",
+		desc: "This Pokemon's offensive stat is doubled while using a Psychic-type attack. If a Pokemon uses a Fighting-type attack against this Pokemon, that Pokemon's offensive stat is halved when calculating the damage to this Pokemon. This Pokemon cannot be paralyzed. Gaining this Ability while burned cures it. Using Amnesia also boosts this Pokémon's Special Attack by 2 stages.",
+		shortDesc: "This Pokemon's Psychic power is 2x; it can't be paralyzed; Fighting power against it is halved; Amnesia also boosts SpA by 2.",
 		rating: 3.5,
 		num: -86,
 		isNonstandard: "Custom",

@@ -571,6 +571,7 @@ export const Abilities: { [abilityid: string]: ModdedAbilityData; } = {
 	},
 	zenmode: {
 		inherit: true,
+		flags: {}, // yes deleting the flags is an ugly way to do it but I need to find a better one lol
 		onResidual(pokemon) {
 			if (pokemon.baseSpecies.baseSpecies !== 'Darmanitan' || pokemon.transformed) {
 				return;
@@ -581,8 +582,15 @@ export const Abilities: { [abilityid: string]: ModdedAbilityData; } = {
 				pokemon.addVolatile('zenmode'); // in case of base Darmanitan-Zen
 				pokemon.removeVolatile('zenmode');
 			}
+			const abilityToGive = pokemon.species.forme === 'Zen' ? "Sheer Force" : "Gorilla Tactics";
+			const oldAbility = pokemon.setAbility(abilityToGive);
+			if (oldAbility) {
+				this.add('-ability', pokemon, abilityToGive, '[from] ability: RKS System');
+				return;
+			}
+			return oldAbility as false | null;
 		},
-		shortDesc: "If Darmanitan, changes Mode to Zen.",
+		shortDesc: "If Darmanitan, changes Mode to Zen. Changes ability to Sheer Force (Darmanitan)/Gorilla Tactics (Darmanitan-Galar).",
 	},
 	runaway: {
 		inherit: true,

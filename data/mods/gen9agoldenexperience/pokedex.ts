@@ -180,8 +180,7 @@ export const Pokedex: {[k: string]: ModdedSpeciesData;} = {
 	},
 	golduck: {
 		inherit: true,
-		types: ["Water", "Psychic"],
-		baseStats: {hp: 80, atk: 62, def: 78, spa: 105, spd: 80, spe: 95},
+		baseStats: {hp: 80, atk: 82, def: 78, spa: 105, spd: 80, spe: 95},
 		abilities: {0: "Psychic Prowess", 1: "Cloud Nine", H: "Swift Swim"},
 	},
 	poliwrath: {
@@ -744,7 +743,7 @@ export const Pokedex: {[k: string]: ModdedSpeciesData;} = {
 	},
 	octillery: {
 		inherit: true,
-		baseStats: {hp: 75, atk: 60, def: 75, spa: 125, spd: 75, spe: 70},
+		baseStats: {hp: 75, atk: 105, def: 75, spa: 125, spd: 75, spe: 45},
 		abilities: {0: "Suction Cups", 1: "Sniper", H: "Mega Launcher"},
 	},
 	delibird: {
@@ -1012,7 +1011,7 @@ export const Pokedex: {[k: string]: ModdedSpeciesData;} = {
 	},
 	grumpig: {
 		inherit: true,
-		baseStats: {hp: 80, atk: 45, def: 90, spa: 90, spd: 110, spe: 65},
+		baseStats: {hp: 80, atk: 45, def: 85, spa: 90, spd: 110, spe: 80},
 		abilities: {0: "Thick Fat", 1: "Magic Bounce", H: "Gluttony"},
 	},
 	vibrava: {
@@ -1122,7 +1121,7 @@ export const Pokedex: {[k: string]: ModdedSpeciesData;} = {
 	},
 	claydol: {
 		inherit: true,
-		baseStats: {hp: 80, atk: 50, def: 105, spa: 70, spd: 120, spe: 75},
+		baseStats: {hp: 70, atk: 70, def: 105, spa: 70, spd: 120, spe: 75},
 		abilities: {0: "Levitate", H: "Graviton"},
 	},
 	lileep: {
@@ -1368,7 +1367,7 @@ export const Pokedex: {[k: string]: ModdedSpeciesData;} = {
 	},
 	vespiquen: {
 		inherit: true,
-		baseStats: {hp: 90, atk: 100, def: 112, spa: 50, spd: 112, spe: 40},
+		baseStats: {hp: 80, atk: 80, def: 112, spa: 80, spd: 112, spe: 40},
 		abilities: {0: "Pressure", 1: "Magic Guard", H: "Unnerve"},
 	},
 	pachirisu: {
@@ -1381,7 +1380,7 @@ export const Pokedex: {[k: string]: ModdedSpeciesData;} = {
 	},
 	floatzel: {
 		inherit: true,
-		baseStats: {hp: 85, atk: 115, def: 55, spa: 75, spd: 50, spe: 115},
+		baseStats: {hp: 85, atk: 115, def: 55, spa: 85, spd: 50, spe: 115},
 		abilities: {0: "Swift Swim", 1: "Reckless", H: "Water Veil"},
 	},
 	cherubi: {
@@ -1399,7 +1398,7 @@ export const Pokedex: {[k: string]: ModdedSpeciesData;} = {
 	},
 	ambipom: {
 		inherit: true,
-		baseStats: {hp: 75, atk: 112, def: 60, spa: 60, spd: 60, spe: 115},
+		baseStats: {hp: 75, atk: 110, def: 66, spa: 60, spd: 66, spe: 115},
 	},
 	mismagius: {
 		inherit: true,
@@ -2224,7 +2223,7 @@ export const Pokedex: {[k: string]: ModdedSpeciesData;} = {
 	},
 	pangoro: {
 		inherit: true,
-		baseStats: {hp: 95, atk: 124, def: 78, spa: 48, spd: 71, spe: 79},
+		baseStats: {hp: 95, atk: 124, def: 78, spa: 69, spd: 71, spe: 78},
 		abilities: { 0: "Iron Fist", 1: "Blind Rage", H: "Scrappy" },
 	},
 	meowsticmmega: {
@@ -2349,7 +2348,7 @@ export const Pokedex: {[k: string]: ModdedSpeciesData;} = {
 	},
 	trevenant: {
 		inherit: true,
-		baseStats: {hp: 85, atk: 120, def: 106, spa: 45, spd: 82, spe: 56},
+		baseStats: {hp: 85, atk: 120, def: 86, spa: 65, spd: 82, spe: 56},
 		abilities: {0: "Natural Cure", 1: "Grassy Surge", H: "Harvest"},
 	},
 	pumpkaboo: {

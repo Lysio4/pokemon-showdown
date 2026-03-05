@@ -193,7 +193,7 @@ export const Scripts: ModdedBattleScriptsData = {
         this.battle.add('-hitcount', targets[0], hit - 1);
       }
 
-      if ((move.recoil || (move.id === 'chloroblast' && !pokemon.hasAbility('explosive') && !pokemon.hasAbility('nevergonnagiveyouup'))) && move.totalDamage) {
+      if ((move.recoil || (move.id === 'chloroblast' && !pokemon.hasAbility('explosive'))) && move.totalDamage) {
         const hpBeforeRecoil = pokemon.hp;
         this.battle.damage(this.calcRecoilDamage(move.totalDamage, move, pokemon), pokemon, pokemon, 'recoil');
         if (pokemon.hp <= pokemon.maxhp / 2 && hpBeforeRecoil > pokemon.maxhp / 2) {

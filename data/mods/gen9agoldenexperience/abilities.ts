@@ -578,14 +578,11 @@ export const Abilities: { [abilityid: string]: ModdedAbilityData; } = {
 			}
 			if (!['Zen', 'Galar-Zen'].includes(pokemon.species.forme)) {
 				pokemon.addVolatile('zenmode');
-			} else if (['Zen', 'Galar-Zen'].includes(pokemon.species.forme)) {
-				pokemon.addVolatile('zenmode'); // in case of base Darmanitan-Zen
-				pokemon.removeVolatile('zenmode');
-			}
+			} 
 			const abilityToGive = pokemon.species.forme === 'Zen' ? "Sheer Force" : "Gorilla Tactics";
 			const oldAbility = pokemon.setAbility(abilityToGive);
 			if (oldAbility) {
-				this.add('-ability', pokemon, abilityToGive, '[from] ability: RKS System');
+				this.add('-ability', pokemon, abilityToGive, '[from] ability: Zen Mode');
 				return;
 			}
 			return oldAbility as false | null;

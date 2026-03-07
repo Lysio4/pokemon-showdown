@@ -21838,7 +21838,7 @@ export const Pokedex: import('../sim/dex-species').SpeciesDataTable = {
 		types: ["Grass", "Dark"],
 		genderRatio: {M: 0.875, F: 0.125},
 		baseStats: {hp: 76, atk: 140, def: 90, spa: 81, spd: 90, spe: 153},
-		abilities: {0: "Illusion"},
+		abilities: {0: "Magic Guard"},
 		heightm: 1.5,
 		weightkg: 31.2,
 		color: "Green",

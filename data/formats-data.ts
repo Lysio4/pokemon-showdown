@@ -6267,10 +6267,6 @@ export const FormatsData: import('../sim/dex-species').SpeciesFormatsDataTable =
 		isNonstandard: "Custom",
 		tier: "Illegal",
 	},
-	gengarmegaz: {
-		isNonstandard: "Custom",
-		tier: "Illegal",
-	},
 	typhlosionmega: {
 		isNonstandard: "Custom",
 		tier: "Illegal",
@@ -6476,10 +6472,6 @@ export const FormatsData: import('../sim/dex-species').SpeciesFormatsDataTable =
 		tier: "Illegal",
 	},
 	centiskorchmegay: {
-		isNonstandard: "Custom",
-		tier: "Illegal",
-	},
-	centiskorchmegaz: {
 		isNonstandard: "Custom",
 		tier: "Illegal",
 	},

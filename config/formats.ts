@@ -407,7 +407,7 @@ export const Formats: import('../sim/dex-formats').FormatList = [
 		mod: 'mixandmegaage',
 		ruleset: ['Standard NatDex', 'Terastal Clause', 'Non-Signature Z-Move Clause'],
 		banlist: [
-			'Calyrex-Shadow', 'Koraidon', 'Kyogre', 'Miraidon', 'Moody', 'Aurorusite', 'Beedrillite', 'Blazikenite', 'Centiskorchite Z', 'Gengarite Z', 'Glalitite',
+			'Calyrex-Shadow', 'Koraidon', 'Kyogre', 'Miraidon', 'Moody', 'Aurorusite', 'Beedrillite', 'Blazikenite', 'Gengarite', 'Glalitite',
 			'Kangaskhanite', 'Lucarionite Z', 'Mawilite', 'Medichamite', 'Meowscaradite', 'Ogerponite', 'Pidgeotite', 'Red Orb', 
 			'Scovillainite', 'Slowbronite', 'Starminite', 'Victreebelite', 'Wigglytite', 'Yanmeganite', 
 			'Baton Pass', 'Shadow Tag', 'Shed Tail',
@@ -537,7 +537,7 @@ export const Formats: import('../sim/dex-formats').FormatList = [
 		banlist: [
 			'Absol-Mega-Z', 'Aerodactyl-Mega', 'Alakazam', 'Alakazam-Mega', 'Arceus', 'Blaziken-Mega', 'Beedrill-Mega', 'Calyrex-Ice', 'Calyrex-Shadow', 'Charizard-Mega-Y', 'Chi-Yu', 
 			'Chien-Pao', 'Comfey', 'Darmanitan-Base', 'Darmanitan-Galar', 'Deoxys-Normal', 'Deoxys-Attack', 'Dialga', 'Dialga-Origin', 'Dondozo', 'Enamorus-Incarnate', 
-			'Eternatus', 'Flutter Mane', 'Garchomp-Mega-Z', 'Genesect', 'Gengar-Mega', 'Gengar-Mega-Z', 'Giratina', 'Giratina-Origin', 'Groudon', 'Groudon-Primal', 'Ho-Oh', 'Hoopa-Unbound', 
+			'Eternatus', 'Flutter Mane', 'Garchomp-Mega-Z', 'Genesect', 'Gengar-Mega', 'Giratina', 'Giratina-Origin', 'Groudon', 'Groudon-Primal', 'Ho-Oh', 'Hoopa-Unbound', 
 			'Kangaskhan-Mega', 'Kartana', 'Koraidon', 'Kyogre', 'Kyogre-Primal', 'Kyurem', 'Kyurem-Black', 'Kyurem-White', 'Lucario-Mega', 'Lucario-Mega-Z', 'Lugia', 
 			'Lunala', 'Marshadow', 'Mawile-Mega', 'Medicham-Mega', 'Melmetal', 'Meowscarada-Mega', 'Metagross-Mega', 'Mewtwo', 'Miraidon', 'Necrozma-Dawn-Wings', 
 			'Necrozma-Dusk-Mane', 'Palafin', 'Palkia', 'Palkia-Origin', 'Pheromosa', 'Porygon-Z', 'Raichu-Mega-Y', 'Rayquaza', 'Regieleki', 'Reshiram', 'Roserade', 'Salamence-Mega', 

@@ -215,10 +215,6 @@ export const Items: {[itemid: string]: ModdedItemData} = {
 		inherit: true,
 		isNonstandard: null,
 	},
-	gengaritez: {
-		inherit: true,
-		isNonstandard: null,
-	},
 	typhlosionite: {
 		inherit: true,
 		isNonstandard: null,
@@ -324,10 +320,6 @@ export const Items: {[itemid: string]: ModdedItemData} = {
 		isNonstandard: null,
 	},
 	centiskorchitey: {
-		inherit: true,
-		isNonstandard: null,
-	},
-	centiskorchitez: {
 		inherit: true,
 		isNonstandard: null,
 	},

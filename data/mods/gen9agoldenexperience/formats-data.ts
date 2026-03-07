@@ -625,10 +625,6 @@ export const FormatsData: { [k: string]: SpeciesFormatsData; } = {
 		isNonstandard: "Past",
 		tier: "Illegal",
 	},
-	gengarmegaz: {
-		tier: "OU",
-		doublesTier: "DOU",
-	},
 	onix: {
 		tier: "LC",
 	},
@@ -4436,10 +4432,6 @@ export const FormatsData: { [k: string]: SpeciesFormatsData; } = {
 	},
 	centiskorchmegay: {
 		tier: "RU",
-		doublesTier: "DUU",
-	},
-	centiskorchmegaz: {
-		tier: "OU",
 		doublesTier: "DUU",
 	},
 	clobbopus: {

@@ -1193,6 +1193,10 @@ export const Moves: { [k: string]: ModdedMoveData; } = {
 		inherit: true,
 		isNonstandard: null,
 	},
+	needlearm: {
+		inherit: true,
+		basePower: 95,
+	},
 
 
 

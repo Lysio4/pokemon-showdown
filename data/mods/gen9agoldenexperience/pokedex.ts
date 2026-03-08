@@ -150,16 +150,16 @@ export const Pokedex: {[k: string]: ModdedSpeciesData;} = {
 	},
 	oddish: {
 		inherit: true,
-		abilities: {0: "Chlorophyll", 1: "Flower Veil", H: "Run Away"},
+		abilities: { 0: "Chlorophyll", 1: "Flower Veil", H: "Run Away" },
 	},
 	gloom: {
 		inherit: true,
-		abilities: {0: "Chlorophyll", 1: "Flower Veil", H: "Stench"},
+		abilities: { 0: "Chlorophyll", 1: "Flower Veil", H: "Stench" },
 	},
 	vileplume: {
 		inherit: true,
-		baseStats: {hp: 75, atk: 65, def: 95, spa: 110, spd: 100, spe: 50},
-		abilities: {0: "Chlorophyll", 1: "Flower Veil", H: "Effect Spore"},
+		baseStats: {hp: 75, atk: 80, def: 95, spa: 110, spd: 95, spe: 50},
+		abilities: { 0: "Chlorophyll", 1: "Flower Veil", H: "Effect Spore" },
 	},
 	parasect: {
 		inherit: true,
@@ -588,12 +588,12 @@ export const Pokedex: {[k: string]: ModdedSpeciesData;} = {
 	bellossom: {
 		inherit: true,
 		types: ["Grass", "Fairy"],
-		baseStats: {hp: 75, atk: 60, def: 95, spa: 100, spd: 100, spe: 60},
+		baseStats: {hp: 75, atk: 80, def: 95, spa: 95, spd: 100, spe: 60},
 		abilities: {0: "Chlorophyll", 1: "Flower Veil", H: "Healer"},
 	},
 	azumarill: {
 		inherit: true,
-		baseStats: {hp: 100, atk: 60, def: 80, spa: 50, spd: 80, spe: 50},
+		baseStats: {hp: 100, atk: 60, def: 80, spa: 60, spd: 80, spe: 50},
 	},
 	politoed: {
 		inherit: true,
@@ -614,9 +614,8 @@ export const Pokedex: {[k: string]: ModdedSpeciesData;} = {
 	},
 	sunflora: {
 		inherit: true,
-		types: ["Grass", "Fire"],
 		baseStats: {hp: 85, atk: 50, def: 75, spa: 125, spd: 95, spe: 30},
-		abilities: {0: "Chlorophyll", 1: "Solar Power", H: "Drought"},
+		abilities: { 0: "Chlorophyll", 1: "Solar Power", H: "Drought" },
 	},
 	espeon: {
 		inherit: true,
@@ -1843,46 +1842,16 @@ export const Pokedex: {[k: string]: ModdedSpeciesData;} = {
 		otherFormes: ["Krookodile-Mega"],
 		formeOrder: ["Krookodile", "Krookodile-Mega"],
 	},
-	krookodilemega: {
-		num: 553,
-		name: "Krookodile-Mega",
-		baseSpecies: "Krookodile",
-		forme: "Mega",
-		types: ["Ground", "Dark"],
-		baseStats: {hp: 95, atk: 140, def: 130, spa: 65, spd: 77, spe: 112},
-		abilities: {0: "Blind Rage"},
-		heightm: 1.5,
-		weightkg: 96.3,
-		color: "Red",
-		eggGroups: ["Field"],
-		requiredItem: "Krookodite",
-	},
 	maractus: {
 		inherit: true,
-		types: ["Grass", "Ground"],
-		baseStats: {hp: 90, atk: 100, def: 90, spa: 50, spd: 90, spe: 60},
-		abilities: {0: "Water Absorb", 1: "Chlorophyll", H: "Spiky Body"},
+		baseStats: { hp: 75, atk: 116, def: 67, spa: 106, spd: 67, spe: 60 },
+		abilities: { 0: "Water Absorb", 1: "Chlorophyll", H: "Spiky Body" },
 	},
 	crustle: {
 		inherit: true,
-		baseStats: {hp: 70, atk: 105, def: 125, spa: 55, spd: 85, spe: 45},
 		abilities: {0: "Sturdy", 1: "Tough Claws", H: "Weak Armor"},
 		otherFormes: ["Crustle-Mega"],
 		formeOrder: ["Crustle", "Crustle-Mega"],
-	},
-	crustlemega: {
-		num: 558,
-		name: "Crustle-Mega",
-		baseSpecies: "Crustle",
-		forme: "Mega",
-		types: ["Bug", "Rock"],
-		baseStats: {hp: 70, atk: 120, def: 185, spa: 70, spd: 105, spe: 35},
-		abilities: {0: "Hard Rock"},
-		heightm: 2.0,
-		weightkg: 250,
-		color: "Red",
-		eggGroups: ["Bug", "Mineral"],
-		requiredItem: "Crustlite",
 	},
 	scraftymega: {
 		inherit: true,
@@ -2033,12 +2002,12 @@ export const Pokedex: {[k: string]: ModdedSpeciesData;} = {
 	},
 	heatmor: {
 		inherit: true,
-		baseStats: {hp: 85, atk: 105, def: 66, spa: 97, spd: 66, spe: 65},
+		baseStats: {hp: 85, atk: 105, def: 66, spa: 100, spd: 66, spe: 65},
 		abilities: {0: "Long Tail", 1: "Flash Fire", H: "Insectivorous"},
 	},
 	durant: {
 		inherit: true,
-		baseStats: {hp: 58, atk: 109, def: 112, spa: 45, spd: 48, spe: 112},
+		baseStats: {hp: 58, atk: 109, def: 112, spa: 48, spd: 48, spe: 112},
 	},
 	deino: {
 		inherit: true,

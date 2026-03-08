@@ -270,7 +270,7 @@ export const Formats: import('../sim/dex-formats').FormatList = [
 		ruleset: ['Standard NatDex', 'Terastal Clause', 'Non-Signature Z-Move Clause', 'Sleep Moves Clause'],
 		banlist: [
 			'AG', 'King\'s Rock',
-			'Baton Pass', 'Light Clay', 'Quick Claw', 'Rage Fist', 'Razor Fang', 'Sticky Web', 
+			'Baton Pass', 'Light Clay', 'Quick Claw', 'Rage Fist', 'Razor Fang',
 		],
 		unbanlist: ['Light of Ruin'],
 	},
@@ -294,7 +294,7 @@ export const Formats: import('../sim/dex-formats').FormatList = [
 		banlist: [
 			'Uber', 'AG', 'OU', 'UUBL', 'UU', 'RUBL', 'Moody', 'Power Construct', 'King\'s Rock',
 			'Baton Pass', 'Last Respects', 'Quick Claw', 'Rage Fist', 'Razor Fang', 'Shadow Tag', 'Shed Tail',
-			'Drizzle', 'Drought', 'Light Clay', 'Tera Orb', 
+			'Drizzle', 'Drought', 'Light Clay', 'Spiky Body', 'Tera Orb', 
 		],
 		unbanlist: ['Light of Ruin'],
 	},
@@ -306,8 +306,7 @@ export const Formats: import('../sim/dex-formats').FormatList = [
 		banlist: [
 			'Uber', 'AG', 'OU', 'UUBL', 'UU', 'RUBL', 'RU', 'NUBL', 'Moody', 'Power Construct', 'King\'s Rock',
 			'Baton Pass', 'Last Respects', 'Quick Claw', 'Rage Fist', 'Razor Fang', 'Shadow Tag', 'Shed Tail',
-			'Drizzle', 'Drought', 'Light Clay', 'Tera Orb', 
-			'Dante\'s Inferno', 'Happy Dance', 'Sticky Web', 
+			'Drizzle', 'Drought', 'Light Clay', 'Spiky Body', 'Tera Orb', 
 		],
 		unbanlist: ['Light of Ruin'],
 	},
@@ -319,8 +318,7 @@ export const Formats: import('../sim/dex-formats').FormatList = [
 		banlist: [
 			'Uber', 'AG', 'OU', 'UUBL', 'UU', 'RUBL', 'RU', 'NUBL', 'NU', 'PUBL', 'Moody', 'Power Construct', 'King\'s Rock',
 			'Baton Pass', 'Last Respects', 'Quick Claw', 'Rage Fist', 'Razor Fang', 'Shadow Tag', 'Shed Tail',
-			'Drizzle', 'Drought', 'Light Clay', 'Tera Orb',  
-			'Dante\'s Inferno', 'Happy Dance', 'Sticky Web', 
+			'Drizzle', 'Drought', 'Light Clay', 'Spiky Body', 'Tera Orb',  
 		],
 		unbanlist: ['Light of Ruin'],
 	},

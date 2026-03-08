@@ -241,11 +241,11 @@ export const FormatsData: { [k: string]: SpeciesFormatsData; } = {
 		tier: "LC",
 	},
 	sandslash: {
-		tier: "RUBL",
+		tier: "PU",
 		doublesTier: "DUU",
 	},
 	sandslashalola: {
-		tier: "RUBL",
+		tier: "PU",
 		doublesTier: "DUU",
 	},
 	nidoranf: {
@@ -381,11 +381,11 @@ export const FormatsData: { [k: string]: SpeciesFormatsData; } = {
 		tier: "Illegal",
 	},
 	persian: {
-		tier: "NU",
+		tier: "RU",
 		doublesTier: "DUU",
 	},
 	persianalola: {
-		tier: "PU",
+		tier: "RU",
 		doublesTier: "DUU",
 	},
 	perrserker: {
@@ -1700,7 +1700,7 @@ export const FormatsData: { [k: string]: SpeciesFormatsData; } = {
 		doublesTier: "DUU",
 	},
 	manectricmega: {
-		tier: "NU",
+		tier: "RU",
 		doublesTier: "DUU",
 	},
 	plusle: {
@@ -4623,7 +4623,7 @@ export const FormatsData: { [k: string]: SpeciesFormatsData; } = {
 		doublesTier: "DUU",
 	},
 	regieleki: {
-		tier: "RU",
+		tier: "NU",
 		doublesTier: "DUU",
 	},
 	regidrago: {

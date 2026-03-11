@@ -25567,7 +25567,6 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 			this.attrLastMove('[still]');
 			this.add('-anim', pokemon, "", target);
 		},
-		secondary: null,
 		target: "normal",
 		secondary: {
 			chance: 20,

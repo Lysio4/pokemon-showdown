@@ -1,31 +1,10 @@
 export const Items: {[itemid: string]: ModdedItemData} = {
 	summerbackdoor: {
-		name: "Summer Backdoor",
-		spritenum: 751,
-		shortDesc: "If held by a Cirno, this item changes its forme to Tanned.",
-		onTakeItem(item, pokemon, source) {
-			if ((source && source.baseSpecies.num === 5) || pokemon.baseSpecies.num === 5) {
-				return false;
-			}
-			return true;
-		},
-		itemUser: ["Cirno-Tanned"],
+		inherit: true,
 		isNonstandard: null,
 	},
 	jeweledpagoda: {
-		name: "Jeweled Pagoda",
-		spritenum: 92,
-		shortDesc: "Nazrin, Shou Toramaru: Fairy moves have 1.5x power.",
-		onBasePowerPriority: 15,
-		onBasePower(basePower, source, target, move) {
-			// if (!(source && (source.baseSpecies.num === 57 || source.baseSpecies.num === 62) || !(source.baseSpecies.num === 57 || source.baseSpecies.num === 62))) return;
-			if (source.baseSpecies.baseSpecies === 'Nazrin' || source.baseSpecies.baseSpecies === 'Shou Toramaru') {
-				if (move && move.type === 'Fairy') {
-					return this.chainModify(1.5);
-				}
-			}
-		},
-		itemUser: ["Nazrin", "Shou Toramaru"],
+		inherit: true,
 		isNonstandard: null,
 	},
 	
@@ -199,5 +178,29 @@ export const Items: {[itemid: string]: ModdedItemData} = {
 			}
 			return true;
 		},
+	},
+	waterstone: {
+		inherit: true,
+		onStart(pokemon){
+			if (pokemon.baseSpecies.name === "Hecatia-Otherworld") {
+				pokemon.formeChange("Hecatia-Earth", this.effect, true);
+				this.add('-ability', pokemon, "Natural Cure", '[from] item: Water Stone');
+				pokemon.set.ability = "Natural Cure";
+				pokemon.eatItem();
+			}
+		},
+		shortDesc: "If held by Hecatia-Otherworld, consumed on entry and transforms into Hecatia-Earth",
+	},
+	moonstone: {
+		inherit: true,
+		onStart(pokemon){
+			if (pokemon.baseSpecies.name === "Hecatia-Otherworld") {
+				pokemon.formeChange("Hecatia-Moon", this.effect, true);
+				this.add('-ability', pokemon, "Dazzling", '[from] item: Moon Stone');
+				pokemon.set.ability = "Dazzling";
+				pokemon.eatItem();
+			}
+		},
+		shortDesc: "If held by Hecatia-Otherworld, consumed on entry and transforms into Hecatia-Moon",
 	},
 }

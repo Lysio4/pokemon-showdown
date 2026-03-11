@@ -7548,4 +7548,44 @@ export const FormatsData: import('../sim/dex-species').SpeciesFormatsDataTable =
 		tier: "Toho",
 		doublesTier: "DToho",
 	},
+	ubamechirizuka: {
+		isNonstandard: "Custom",
+		tier: "Toho",
+		doublesTier: "DToho",
+	},
+	chimihoujuu: {
+		isNonstandard: "Custom",
+		tier: "Toho",
+		doublesTier: "DToho",
+	},
+	narekomichigami: {
+		isNonstandard: "Custom",
+		tier: "Toho",
+		doublesTier: "DToho",
+	},
+	yuimanasama: {
+		isNonstandard: "Custom",
+		tier: "Toho",
+		doublesTier: "DToho",
+	},
+	watatsukinotoyohime: {
+		isNonstandard: "Custom",
+		tier: "Toho",
+		doublesTier: "DToho",
+	},
+	watatsukinoyorihime: {
+		isNonstandard: "Custom",
+		tier: "Toho",
+		doublesTier: "DToho",
+	},
+	ariyaiwanaga: {
+		isNonstandard: "Custom",
+		tier: "Toho",
+		doublesTier: "DToho",
+	},
+	ninawatari: {
+		isNonstandard: "Custom",
+		tier: "Toho",
+		doublesTier: "DToho",
+	},
 };

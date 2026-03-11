@@ -1,7 +1,7 @@
 import {Dex} from '../../../sim/dex';
 export const Scripts: {[k: string]: ModdedBattleScriptsData} = {
 	gen: 9,
-	/** teambuilderConfig: {
+	/*teambuilderConfig: {
 		// for micrometas to only show custom tiers
 		excludeStandardTiers: true,
 		// only to specify the order of custom tiers
@@ -521,7 +521,8 @@ export const Scripts: {[k: string]: ModdedBattleScriptsData} = {
 			return this.hasAbility('growbigger') && !this.hasDynamaxed;
 		},
 		effectiveWeather() {
-			if (this.hasAbility('lunatictorch') && this.battle.field.isTerrain('psychicterrain')) return 'sunnyday';
+			//console.log(this.ability + " " + this.battle.field.terrain);
+			//if (this.hasAbility('lunatictorch') && this.battle.field.isTerrain('psychicterrain')) return 'sunnyday';
 			const weather = this.battle.field.effectiveWeather();
 			switch (weather) {
 			case 'sunnyday':

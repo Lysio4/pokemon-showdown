@@ -5072,11 +5072,11 @@ export const FormatsData: { [k: string]: SpeciesFormatsData; } = {
 		doublesTier: "DOU",
 	},
 	koraidon: {
-		tier: "Uber",
+		tier: "AG",
 		doublesTier: "DUber",
 	},
 	miraidon: {
-		tier: "Uber",
+		tier: "AG",
 		doublesTier: "DUber",
 	},
 	koraidonweakened: {
@@ -5223,7 +5223,7 @@ export const FormatsData: { [k: string]: SpeciesFormatsData; } = {
 	},
 	terapagosstellar: {
 		tier: "Uber",
-		doublesTier: "DUber",
+		doublesTier: "DOU",
 	},
 	pecharunt: {
 		tier: "OU",

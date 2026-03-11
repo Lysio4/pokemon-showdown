@@ -1548,7 +1548,6 @@ export const Pokedex: {[k: string]: ModdedSpeciesData;} = {
 	},
 	uxie: {
 		inherit: true,
-		baseStats: {hp: 85, atk: 70, def: 130, spa: 70, spd: 130, spe: 95},
 		abilities: {0: "Levitate", 1: "Mirror Armor", H: "Magic Bounce"},
 	},
 	mesprit: {

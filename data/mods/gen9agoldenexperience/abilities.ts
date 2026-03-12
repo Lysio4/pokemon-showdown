@@ -1027,4 +1027,15 @@ export const Abilities: { [abilityid: string]: ModdedAbilityData; } = {
 		inherit: true,
 		isNonstandard: null,
 	},
+	fullmetalbody: {
+		inherit: true,
+		onTryBoost(boost, target, source, effect) {},
+		onTryHit(target, source, move) {
+			if (move.category === 'Status' && target !== source) {
+				this.add('-immune', target, '[from] ability: Good as Gold');
+				return null;
+			}
+		},
+		shortDesc: "This Pokemon is immune to Status moves.",
+	},
 };

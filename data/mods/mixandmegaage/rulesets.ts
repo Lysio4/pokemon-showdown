@@ -21,7 +21,26 @@ export const Rulesets: {[k: string]: ModdedFormatData} = {
 			if (item.zMove && !item.itemUser) return [`${set.name || set.species}'s item ${item.name} is banned by Non-Signature Z-Move Clause.`];
 		},
 		onBegin() {
-			this.add('rule', 'Non-Signature Z-Move Clause: non-signature Z-Moves are banned');
+			this.add('rule', 'Non-Signature Z-Move Clause: Non-signature Z-Moves are banned');
+		},
+	},
+	semisleepmovesclause: {
+		effectType: 'ValidatorRule',
+		name: 'Semi Sleep Moves Clause',
+		desc: "Bans all moves that induce sleep, such as Hypnosis, except Spore and Yawn",
+		banlist: [],
+		onBegin() {
+			this.add('rule', 'Sleep Moves Clause: Sleep-inducing moves are banned');
+		},
+		onValidateSet(set) {
+			const problems = [];
+			if (set.moves) {
+				for (const id of set.moves) {
+					const move = this.dex.moves.get(id);
+					if (move.status === 'slp' && move.name !== "Spore") problems.push(move.name + ' is banned by Sleep Moves Clause.');
+				}
+			}
+			return problems;
 		},
 	},
 };

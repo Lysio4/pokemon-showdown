@@ -24,10 +24,10 @@ export const Rulesets: {[k: string]: ModdedFormatData} = {
 			this.add('rule', 'Non-Signature Z-Move Clause: Non-signature Z-Moves are banned');
 		},
 	},
-	sleepmovesclause: {
+	semisleepmovesclause: {
 		effectType: 'ValidatorRule',
-		name: 'Sleep Moves Clause',
-		desc: "Bans all moves that induce sleep, such as Hypnosis",
+		name: 'Semi Sleep Moves Clause',
+		desc: "Bans all moves that induce sleep, such as Hypnosis, except Spore and Yawn",
 		banlist: [],
 		onBegin() {
 			this.add('rule', 'Sleep Moves Clause: Sleep-inducing moves are banned');

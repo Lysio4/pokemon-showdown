@@ -2319,7 +2319,7 @@ export const FormatsData: { [k: string]: SpeciesFormatsData; } = {
 		doublesTier: "DUU",
 	},
 	lucariomegaz: {
-		tier: "OU",
+		tier: "Uber",
 		doublesTier: "DUU",
 	},
 	hippopotas: {
@@ -3246,7 +3246,7 @@ export const FormatsData: { [k: string]: SpeciesFormatsData; } = {
 		doublesTier: "DUU",
 	},
 	meloetta: {
-		tier: "PU",
+		tier: "OU",
 		doublesTier: "DUU",
 	},
 	meloettapirouette: {

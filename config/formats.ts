@@ -335,7 +335,7 @@ export const Formats: import('../sim/dex-formats').FormatList = [
 		mod: 'mixandmegaage',
 		ruleset: ['Standard NatDex', 'Terastal Clause', 'Non-Signature Z-Move Clause', 'Semi Sleep Moves Clause'],
 		banlist: [
-			'Calyrex-Shadow', 'Koraidon', 'Kyogre', 'Miraidon', 'Moody', 'Beedrillite', 'Blazikenite', 'Gengarite', 'Glalitite',
+			'Calyrex-Shadow', 'Koraidon', 'Kyogre', 'Miraidon', 'Moody', 'Beedrillite', 'Blazikenite', 'Gengarite', 
 			'Kangaskhanite', 'Lucarionite Z', 'Mawilite', 'Medichamite', 'Meowscaradite', 'Ogerponite', 'Pidgeotite', 'Red Orb', 
 			'Scovillainite', 'Slowbronite', 'Starminite', 'Victreebelite', 'Wigglytite', 'Yanmeganite', 
 			'Baton Pass', 'Shadow Tag', 'Shed Tail',

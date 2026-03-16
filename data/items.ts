@@ -8865,26 +8865,9 @@ export const Items: import('../sim/dex-items').ItemDataTable = {
 		gen: 9,
 		isNonstandard: "Custom",
 	},
-	relicsheet: {
-		name: "Relic Sheet",
-		onSwitchIn(pokemon) {
-			if (pokemon.isActive && pokemon.baseSpecies.name === 'Meloetta') {
-				pokemon.formeChange('Meloetta-Pirouette');
-			}
-		},
-		onTakeItem(item, source) {
-			if (source.baseSpecies.baseSpecies === 'Meloetta') return false;
-			return true;
-		},
-		itemUser: ["Meloetta", "Meloetta-Pirouette"],
-		num: -50,
-		gen: 9,
-		desc: "If held by Meloetta: Pirouette form on entry.",
-		isNonstandard: "Custom",
-	},
 	anticamulet: {
 		name: "Antic Amulet",
-		num: -51,
+		num: -50,
 		gen: 9,
 		shortDesc: "Sigilyph: all abilities active at once, cannot have its abilities changed.",
 		onStart(target) {
@@ -8922,7 +8905,7 @@ export const Items: import('../sim/dex-items').ItemDataTable = {
 		zMove: "X-Ray Volt Shock",
 		zMoveFrom: "Wild Charge",
 		itemUser: ["Luxray"],
-		num: -52,
+		num: -51,
 		gen: 9,
 		shortDesc: "If held by a Luxray with Wild Charge, it can use X-Ray Volt Shock.",
 		isNonstandard: "Custom",
@@ -8934,7 +8917,7 @@ export const Items: import('../sim/dex-items').ItemDataTable = {
 		zMove: "Sun Moth Wrath",
 		zMoveFrom: "Fiery Dance",
 		itemUser: ["Volcarona"],
-		num: -53,
+		num: -52,
 		gen: 9,
 		shortDesc: "If held by a Volcarona with Fiery Dance, it can use Sun Moth Wrath.",
 		isNonstandard: "Custom",
@@ -8946,7 +8929,7 @@ export const Items: import('../sim/dex-items').ItemDataTable = {
 		zMove: "Tale Of The Moon",
 		zMoveFrom: "Heavy Slam",
 		itemUser: ["Celesteela"],
-		num: -54,
+		num: -53,
 		gen: 9,
 		shortDesc: "If held by a Celesteela with Heavy Slam, it can use Tale Of The Moon.",
 		isNonstandard: "Custom",
@@ -8958,7 +8941,7 @@ export const Items: import('../sim/dex-items').ItemDataTable = {
 		zMove: "Ultra Paper Cut",
 		zMoveFrom: "Leaf Blade",
 		itemUser: ["Kartana"],
-		num: -55,
+		num: -54,
 		gen: 9,
 		shortDesc: "If held by a Kartana with Leaf Blade, it can use Ultra Paper Cut.",
 		isNonstandard: "Custom",
@@ -8970,7 +8953,7 @@ export const Items: import('../sim/dex-items').ItemDataTable = {
 		zMove: "Max Screw Meltdown",
 		zMoveFrom: "Double Iron Bash",
 		itemUser: ["Melmetal"],
-		num: -56,
+		num: -55,
 		gen: 9,
 		shortDesc: "If held by a Melmetal with Double Iron Bash, it can use Max Screw Meltdown.",
 		isNonstandard: "Custom",
@@ -8982,7 +8965,7 @@ export const Items: import('../sim/dex-items').ItemDataTable = {
 		zMove: "Armor Big Blast",
 		zMoveFrom: "Armor Cannon",
 		itemUser: ["Armarouge"],
-		num: -57,
+		num: -56,
 		gen: 9,
 		shortDesc: "If held by an Armarouge with Armor Cannon, it can use Armor Big Blast.",
 		isNonstandard: "Custom",
@@ -8994,7 +8977,7 @@ export const Items: import('../sim/dex-items').ItemDataTable = {
 		zMove: "Thousand Blade Work",
 		zMoveFrom: "Bitter Blade",
 		itemUser: ["Ceruledge"],
-		num: -58,
+		num: -57,
 		gen: 9,
 		shortDesc: "If held by a Ceruledge with Bitter Blade, it can use Thousand Blade Work.",
 		isNonstandard: "Custom",
@@ -9007,7 +8990,7 @@ export const Items: import('../sim/dex-items').ItemDataTable = {
 		onTakeItem(item, source) {
 			return !item.megaStone?.[source.baseSpecies.baseSpecies];
 		},
-		num: -59,
+		num: -58,
 		gen: 9,
 		desc: "If held by a Rayquaza, this item allows it to Mega Evolve in battle.",
 		isNonstandard: "Custom",
@@ -9035,7 +9018,7 @@ export const Items: import('../sim/dex-items').ItemDataTable = {
 		gen: 9,
 		itemUser: ["Terapagos", "Terapagos-Terastal"],
 		desc: "If holder is a Terapagos, it becomes Stellar form.",
-		num: -60,
+		num: -59,
 		isNonstandard: "Custom",
 	},
 	amuletcoin: {
@@ -9077,7 +9060,7 @@ export const Items: import('../sim/dex-items').ItemDataTable = {
 			return null;
 		},
 		itemUser: ["Meowth", "Persian", "Meowth-Alola", "Persian-Alola", "Meowth-Galar", "Perrserker", "Meowth-Gmax"],
-		num: -61,
+		num: -60,
 		gen: 9,
 		shortDesc: "If held by a Meowth or a Persian, its Atk and Sp. Atk are doubled. If held by a Perrserker, all of its abilities are active at once.",
 		isNonstandard: "Custom",

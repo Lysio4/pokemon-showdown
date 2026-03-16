@@ -1197,6 +1197,15 @@ export const Moves: { [k: string]: ModdedMoveData; } = {
 		inherit: true,
 		basePower: 95,
 	},
+	relicsong: {
+		inherit: true,
+		basePower: 95,
+		onModifyMove(move, pokemon) {
+			if (pokemon.getStat('atk', false, true) > pokemon.getStat('spa', false, true)) move.category = 'Physical';
+		},
+		desc: "Has a 10% chance to cause the target to fall asleep. If this move is successful on at least one target and the user is a Meloetta, it changes to Pirouette Forme if it is currently in Aria Forme, or changes to Aria Forme if it is currently in Pirouette Forme. This forme change does not happen if the Meloetta has the Sheer Force Ability. The Pirouette Forme reverts to Aria Forme when Meloetta is not active. This move becomes a physical attack if the user's Attack is greater than its Special Attack, including stat stage changes.",
+		shortDesc: "10% chance to sleep foe(s). Meloetta transforms. Physical if user's Atk > Sp. Atk.",
+	},
 
 
 

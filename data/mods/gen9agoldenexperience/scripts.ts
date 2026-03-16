@@ -357,8 +357,6 @@ export const Scripts: ModdedBattleScriptsData = {
     this.modData('Learnsets', 'hooh').learnset.flamingsphere = ['9M'];
     this.modData('Learnsets', 'magmortar').learnset.flamingsphere = ['9M'];
     this.modData('Learnsets', 'reshiram').learnset.flamingsphere = ['9M'];
-    this.modData('Learnsets', 'braixen').learnset.flamingsphere = ['9M'];
-    this.modData('Learnsets', 'delphox').learnset.flamingsphere = ['9M'];
     this.modData('Learnsets', 'pyroar').learnset.flamingsphere = ['9M'];
     this.modData('Learnsets', 'cinderace').learnset.flamingsphere = ['9M'];
     this.modData('Learnsets', 'scizorgalar').learnset.flamingsphere = ['9M'];
@@ -2133,7 +2131,6 @@ export const Scripts: ModdedBattleScriptsData = {
     this.modData('Learnsets', 'wochien').learnset.synthesis = ['9L1'];
     this.modData('Learnsets', 'wochien').learnset.toxic = ['9L1'];
     this.modData('Learnsets', 'wochien').learnset.strengthsap = ['9L1'];
-    this.modData('Learnsets', 'okidogi').learnset.swordsdance = ['9L1'];
     this.modData('Learnsets', 'fezandipiti').learnset.defog = ['9L1'];
     this.modData('Learnsets', 'fezandipiti').learnset.knockoff = ['9L1'];
 

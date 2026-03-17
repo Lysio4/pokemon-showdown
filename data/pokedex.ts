@@ -23060,7 +23060,7 @@ export const Pokedex: import('../sim/dex-species').SpeciesDataTable = {
 		name: "Arsief",
 		types: ["Dark", "Fairy"],
 		baseStats: {hp: 75, atk: 58, def: 78, spa: 112, spd: 97, spe: 115},
-		abilities: {0: "Racketeering", 1: "Unburden", H: "Sleight of Hand"},
+		abilities: {0: "Racketeering", H: "Sleight of Hand"},
 		heightm: 1.75,
 		weightkg: 74.4,
 		prevo: "Thievul",

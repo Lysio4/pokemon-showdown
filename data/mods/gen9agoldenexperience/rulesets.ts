@@ -30,14 +30,14 @@ export const Rulesets: {[k: string]: ModdedFormatData} = {
 		desc: "Bans all moves that induce sleep, such as Hypnosis, except Spore and Yawn",
 		banlist: [],
 		onBegin() {
-			this.add('rule', 'Sleep Moves Clause: Sleep-inducing moves are banned');
+			this.add('rule', 'Semi Sleep Moves Clause: Sleep-inducing moves are banned except Spore and Yawn');
 		},
 		onValidateSet(set) {
 			const problems = [];
 			if (set.moves) {
 				for (const id of set.moves) {
 					const move = this.dex.moves.get(id);
-					if (move.status === 'slp' && move.name !== "Spore") problems.push(move.name + ' is banned by Sleep Moves Clause.');
+					if (move.status === 'slp' && move.name !== "Spore") problems.push(move.name + ' is banned by Semi Sleep Moves Clause.');
 				}
 			}
 			return problems;

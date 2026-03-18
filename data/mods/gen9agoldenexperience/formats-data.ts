@@ -878,7 +878,7 @@ export const FormatsData: { [k: string]: SpeciesFormatsData; } = {
 		tier: "LC",
 	},
 	gyarados: {
-		tier: "RU",
+		tier: "UU",
 		doublesTier: "DUU",
 	},
 	gyaradosmega: {
@@ -5166,7 +5166,7 @@ export const FormatsData: { [k: string]: SpeciesFormatsData; } = {
 		tier: "Illegal",
 	},
 	ogerponwellspring: {
-		tier: "Uber",
+		tier: "OU",
 		doublesTier: "DOU",
 	},
 	ogerponwellspringtera: {
@@ -5191,7 +5191,7 @@ export const FormatsData: { [k: string]: SpeciesFormatsData; } = {
 	},
 	ogerponmega: {
 		tier: "RU",
-		doublesTier: "DUU",
+		doublesTier: "DOU",
 	},
 	archaludon: {
 		tier: "RU",

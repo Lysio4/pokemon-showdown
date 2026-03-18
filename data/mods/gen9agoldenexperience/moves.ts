@@ -1128,11 +1128,23 @@ export const Moves: { [k: string]: ModdedMoveData; } = {
 			}
 		},
 	},
+	gigabbouncysplash: {
+		inherit: true,
+		isNonstandard: null,
+	},
 	xrayvoltshock: {
 		inherit: true,
 		isNonstandard: null,
 	},
+	sonicspeedstrike: {
+		inherit: true,
+		isNonstandard: null,
+	},
 	sunmothwrath: {
+		inherit: true,
+		isNonstandard: null,
+	},
+	furiousarrowraid: {
 		inherit: true,
 		isNonstandard: null,
 	},
@@ -1144,7 +1156,7 @@ export const Moves: { [k: string]: ModdedMoveData; } = {
 		inherit: true,
 		isNonstandard: null,
 	},
-	maxscrewmeltdown: {
+	maxspikybarrage: {
 		inherit: true,
 		isNonstandard: null,
 	},
@@ -1153,6 +1165,18 @@ export const Moves: { [k: string]: ModdedMoveData; } = {
 		isNonstandard: null,
 	},
 	thousandbladework: {
+		inherit: true,
+		isNonstandard: null,
+	},
+	anticmothstrike: {
+		inherit: true,
+		isNonstandard: null,
+	},
+	robotmothblast: {
+		inherit: true,
+		isNonstandard: null,
+	},
+	sweetsugarrush: {
 		inherit: true,
 		isNonstandard: null,
 	},

@@ -539,11 +539,23 @@ export const Items: {[itemid: string]: ModdedItemData} = {
 		},
 		shortDesc: "If held by a Zacian, this item changes its forme to Crowned Sword. Takes halved damage from Fighting-type moves, gets effects of Steadfast, and Howl gives +1 Atk, SpA, Accuracy, and heals 25% HP.",
 	},
+	gyaradosiumz: {
+		inherit: true,
+		isNonstandard: null,
+	},
 	luxriumz: {
 		inherit: true,
 		isNonstandard: null,
 	},
+	garchompiumz: {
+		inherit: true,
+		isNonstandard: null,
+	},
 	volcaroniumz: {
+		inherit: true,
+		isNonstandard: null,
+	},
+	hisudecidiumz: {
 		inherit: true,
 		isNonstandard: null,
 	},
@@ -555,7 +567,7 @@ export const Items: {[itemid: string]: ModdedItemData} = {
 		inherit: true,
 		isNonstandard: null,
 	},
-	melmetaliumz: {
+	overqwiliumz: {
 		inherit: true,
 		isNonstandard: null,
 	},
@@ -564,6 +576,18 @@ export const Items: {[itemid: string]: ModdedItemData} = {
 		isNonstandard: null,
 	},
 	ceruliumz: {
+		inherit: true,
+		isNonstandard: null,
+	},
+	slitheriumz: {
+		inherit: true,
+		isNonstandard: null,
+	},
+	ironmothiumz: {
+		inherit: true,
+		isNonstandard: null,
+	},
+	hydrappliumz: {
 		inherit: true,
 		isNonstandard: null,
 	},

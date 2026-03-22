@@ -95,6 +95,10 @@ export const Aliases: import('../sim/dex').AliasesTable = {
 	lcotm: "[Gen 9] 350 Cup",
 	ommotm: "[Gen 9] Pokebilities AAA",
 	ommspotlight: "[Gen 9] Pokebilities AAA",
+	// custom
+	agoldenexperience: "[Gen 9] A Golden Experience OU"
+	age: "[Gen 9] A Golden Experience OU"
+	toho: "[Gen 9] Touhoumons"
 
 	// mega evos --- 1st ordered alphabetically by species, 2nd by alias
 	megasnow: "Abomasnow-Mega",

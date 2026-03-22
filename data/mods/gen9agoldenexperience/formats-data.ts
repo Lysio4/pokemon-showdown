@@ -531,7 +531,7 @@ export const FormatsData: { [k: string]: SpeciesFormatsData; } = {
 		doublesTier: "DUU",
 	},
 	slowbromega: {
-		tier: "OU",
+		tier: "(OU)",
 		doublesTier: "DUU",
 	},
 	slowbrogalar: {
@@ -1302,7 +1302,7 @@ export const FormatsData: { [k: string]: SpeciesFormatsData; } = {
 		tier: "NFE",
 	},
 	weavile: {
-		tier: "UUBL",
+		tier: "OU",
 		doublesTier: "DUU",
 	},
 	teddiursa: {
@@ -4705,10 +4705,6 @@ export const FormatsData: { [k: string]: SpeciesFormatsData; } = {
 		tier: "UUBL",
 		doublesTier: "DUU",
 	},
-	meowscaradamega: {
-		tier: "OU",
-		doublesTier: "DUU",
-	},
 	fuecoco: {
 		tier: "LC",
 	},
@@ -4716,10 +4712,6 @@ export const FormatsData: { [k: string]: SpeciesFormatsData; } = {
 		tier: "NFE",
 	},
 	skeledirge: {
-		tier: "RU",
-		doublesTier: "DUU",
-	},
-	skeledirgemega: {
 		tier: "RU",
 		doublesTier: "DUU",
 	},
@@ -4731,10 +4723,6 @@ export const FormatsData: { [k: string]: SpeciesFormatsData; } = {
 	},
 	quaquaval: {
 		tier: "RU",
-		doublesTier: "DUU",
-	},
-	quaquavalmega: {
-		tier: "UU",
 		doublesTier: "DUU",
 	},
 	lechonk: {

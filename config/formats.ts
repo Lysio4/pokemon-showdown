@@ -467,7 +467,7 @@ export const Formats: import('../sim/dex-formats').FormatList = [
 			'Chien-Pao', 'Comfey', 'Darmanitan-Base', 'Darmanitan-Galar', 'Deoxys-Normal', 'Deoxys-Attack', 'Dialga', 'Dialga-Origin', 'Dondozo', 'Enamorus-Incarnate', 
 			'Eternatus', 'Flutter Mane', 'Garchomp-Mega-Z', 'Genesect', 'Gengar-Mega', 'Giratina', 'Giratina-Origin', 'Groudon', 'Groudon-Primal', 'Ho-Oh', 'Hoopa-Unbound', 
 			'Kangaskhan-Mega', 'Kartana', 'Koraidon', 'Kyogre', 'Kyogre-Primal', 'Kyurem', 'Kyurem-Black', 'Kyurem-White', 'Lucario-Mega', 'Lucario-Mega-Z', 'Lugia', 
-			'Lunala', 'Marshadow', 'Mawile-Mega', 'Medicham-Mega', 'Melmetal', 'Meowscarada-Mega', 'Metagross-Mega', 'Mewtwo', 'Miraidon', 'Necrozma-Dawn-Wings', 
+			'Lunala', 'Marshadow', 'Mawile-Mega', 'Medicham-Mega', 'Melmetal', 'Metagross-Mega', 'Mewtwo', 'Miraidon', 'Necrozma-Dawn-Wings', 
 			'Necrozma-Dusk-Mane', 'Palafin', 'Palkia', 'Palkia-Origin', 'Pheromosa', 'Porygon-Z', 'Raichu-Mega-Y', 'Rayquaza', 'Regieleki', 'Reshiram', 'Roserade', 'Salamence-Mega', 
 			'Serperior', 'Solgaleo', 'Spectrier', 'Ursaluna', 'Ursaluna-Bloodmoon', 'Tapu Koko', 'Ting-Lu', 'Xerneas', 'Xurkitree', 'Yveltal', 'Zacian', 
 			'Zacian-Crowned', 'Zamazenta', 'Zamazenta-Crowned', 'Zekrom', 'Zoroark-Base', 'Zoroark-Hisui', 'Zygarde-Complete', 

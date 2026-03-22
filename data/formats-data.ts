@@ -6479,18 +6479,6 @@ export const FormatsData: import('../sim/dex-species').SpeciesFormatsDataTable =
 		isNonstandard: "Custom",
 		tier: "Illegal",
 	},
-	meowscaradamega: {
-		isNonstandard: "Custom",
-		tier: "Illegal",
-	},
-	skeledirgemega: {
-		isNonstandard: "Custom",
-		tier: "Illegal",
-	},
-	quaquavalmega: {
-		isNonstandard: "Custom",
-		tier: "Illegal",
-	},
 	rabscamega: {
 		isNonstandard: "Custom",
 		tier: "Illegal",

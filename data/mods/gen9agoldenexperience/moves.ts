@@ -424,16 +424,9 @@ export const Moves: { [k: string]: ModdedMoveData; } = {
 		inherit: true,
 		accuracy: 100,
 		pp: 10,
-		desc: "Heals the user's status, and a 20% chance to freeze the target.",
-		shortDesc: "Heals the user's status. 20% chance to freeze the target.",
-		secondary: {
-			chance: 20,
-			status: 'frz',
-		},
-		critRatio: 1,
-		onHit(pokemon) {
-			pokemon.cureStatus();
-		},
+		desc: "Damage is calculated using the user's Sp. Defense stat as its Sp. Attack, including stat stage changes. Other effects that modify the Sp. Attack stat are used as normal. Has a higher chance for a critical hit.",
+		shortDesc: "Uses user's Sp. Def stat as Sp. Atk in damage calculation. High critical hit ratio.",
+		overrideOffensiveStat: 'spd',
 	},
 	multiattack: {
 		inherit: true,
@@ -941,18 +934,6 @@ export const Moves: { [k: string]: ModdedMoveData; } = {
 		isNonstandard: null,
 	},
 	lightofruin: {
-		inherit: true,
-		isNonstandard: null,
-	},
-	froststorm: {
-		inherit: true,
-		isNonstandard: null,
-	},
-	thunderstorm: {
-		inherit: true,
-		isNonstandard: null,
-	},
-	heatstorm: {
 		inherit: true,
 		isNonstandard: null,
 	},

@@ -350,7 +350,7 @@ export const Pokedex: {[k: string]: ModdedSpeciesData;} = {
 	},
 	articuno: {
 		inherit : true,
-		baseStats: {hp: 90, atk: 85, def: 95, spa: 100, spd: 85, spe: 125},
+		abilities: { 0: "Pressure", H: "Mountain Walker" },
 	},
 	articunogalar: {
 		inherit : true,
@@ -513,14 +513,6 @@ export const Pokedex: {[k: string]: ModdedSpeciesData;} = {
 	granbull: {
 		inherit: true,
 		evos: ["Sithbull"],
-	},
-	qwilfish: {
-		inherit: true,
-		abilities: { 0: "Spiky Body", 1: "Swift Swim", H: "Intimidate" },
-	},
-	qwilfishhisui: {
-		inherit: true,
-		abilities: { 0: "Spiky Body", 1: "Swift Swim", H: "Intimidate" },
 	},
 	scizor: {
 		inherit: true,
@@ -2391,10 +2383,6 @@ export const Pokedex: {[k: string]: ModdedSpeciesData;} = {
 		inherit: true,
 		abilities: {0: "Pressure", 1: "Inner Focus", H: "Poison Touch"},
 	},
-	overqwil: {
-		inherit: true,
-		abilities: { 0: "Spiky Body", 1: "Swift Swim", H: "Intimidate" },
-	},
 	enamorus: {
 		inherit: true,
 		abilities: {0: "Trace", H: "Contrary"},
@@ -2404,21 +2392,6 @@ export const Pokedex: {[k: string]: ModdedSpeciesData;} = {
 		abilities: {0: "Magic Guard"},
 	},
 	// Gen 9
-	meowscarada: {
-		inherit: true,
-		otherFormes: ["Meowscarada-Mega"],
-		formeOrder: ["Meowscarada", "Meowscarada-Mega"],
-	},
-	skeledirge: {
-		inherit: true,
-		otherFormes: ["Skeledirge-Mega"],
-		formeOrder: ["Skeledirge", "Skeledirge-Mega"],
-	},
-	quaquaval: {
-		inherit: true,
-		otherFormes: ["Quaquaval-Mega"],
-		formeOrder: ["Quaquaval", "Quaquaval-Mega"],
-	},
 	oinkologne: {
 		inherit: true,
 		baseStats: {hp: 110, atk: 100, def: 85, spa: 49, spd: 90, spe: 55},

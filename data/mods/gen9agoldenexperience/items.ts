@@ -327,18 +327,6 @@ export const Items: {[itemid: string]: ModdedItemData} = {
 		inherit: true,
 		isNonstandard: null,
 	},
-	meowscaradite: {
-		inherit: true,
-		isNonstandard: null,
-	},
-	skeledite: { 
-		inherit: true,
-		isNonstandard: null,
-	},
-	quaquavite: {
-		inherit: true,
-		isNonstandard: null,
-	},
 	rabscanite: { 
 		inherit: true,
 		isNonstandard: null,

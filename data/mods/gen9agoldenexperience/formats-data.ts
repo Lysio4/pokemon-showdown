@@ -5178,7 +5178,7 @@ export const FormatsData: { [k: string]: SpeciesFormatsData; } = {
 		tier: "Illegal",
 	},
 	ogerponmega: {
-		tier: "RU",
+		tier: "OU",
 		doublesTier: "DOU",
 	},
 	archaludon: {

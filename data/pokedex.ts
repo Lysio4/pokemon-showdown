@@ -24406,7 +24406,7 @@ export const Pokedex: import('../sim/dex-species').SpeciesDataTable = {
 		num: -2132,
 		name: "Watatsuki no Yorihime",
 		types: ["Fighting"],
-		baseStats: {hp: 100, atk: 130, def: 89, spa: 96, spd: 76, spe: 106},
+		baseStats: {hp: 100, atk: 130, def: 89, spa: 96, spd: 79, spe: 106},
 		abilities: {0: "Inner Focus"},
 	},
 	ariyaiwanaga: {

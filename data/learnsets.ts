@@ -102124,7 +102124,6 @@ export const Learnsets: import('../sim/dex-species').LearnsetDataTable = {
 			wingattack: ["9L1"],
 			gust: ["9L1"],
 			aircutter: ["9L1"],
-			hurricane: ["9L1"],
 			roost: ["9L1"],
 			defog: ["9L1"],
 			tailwind: ["9L1"],

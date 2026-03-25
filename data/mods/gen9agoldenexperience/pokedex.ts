@@ -42,7 +42,7 @@ export const Pokedex: {[k: string]: ModdedSpeciesData;} = {
 	},
 	raichumegax: {
 		inherit: true,
-		abilities: { 0: "Galvanize" },
+		abilities: { 0: "Electric Surge" },
 	},
 	raichumegay: {
 		inherit: true,
@@ -386,19 +386,10 @@ export const Pokedex: {[k: string]: ModdedSpeciesData;} = {
 	},
 
 	// Gen 2 :
-	meganiummega: {
-		inherit: true,
-		abilities: { 0: "Flower Veil" },
-	},
 	typhlosion: {
 		inherit: true,
 		otherFormes: ["Typhlosion-Hisui", "Typhlosion-Mega", "Typhlosion-Hisui-Mega"],
 		formeOrder: ["Typhlosion", "Typhlosion-Hisui", "Typhlosion-Mega", "Typhlosion-Hisui-Mega"],
-	},
-	feraligatrmega: {
-		inherit: true,
-		baseStats: { hp: 85, atk: 160, def: 125, spa: 79, spd: 93, spe: 88 },
-		abilities: { 0: "Strong Jaw" },
 	},
 	furret: {
 		inherit: true,
@@ -893,10 +884,6 @@ export const Pokedex: {[k: string]: ModdedSpeciesData;} = {
 		inherit: true,
 		abilities: {0: "Intimidate", H: "Sheer Force"},
 	},
-	beldum: {
-		inherit: true,
-		abilities: {0: "Clear Body", H: "Graviton"},
-	},
 	metang: {
 		inherit: true,
 		abilities: {0: "Clear Body", H: "Graviton"},
@@ -1303,10 +1290,6 @@ export const Pokedex: {[k: string]: ModdedSpeciesData;} = {
 		inherit: true,
 		otherFormes: ["Emboar-Mega", "Emboar-Galar"],
 		formeOrder: ["Emboar", "Emboar-Mega", "Emboar-Galar"],
-	},
-	emboarmega: {
-		inherit: true,
-		abilities: { 0: "Reckless" },
 	},
 	emboargalar: {
 		num: 500,

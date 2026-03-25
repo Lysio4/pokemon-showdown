@@ -311,7 +311,7 @@ export const Moves: { [k: string]: ModdedMoveData; } = {
 		priority: 1,
 		isNonstandard: null,
 		flags: { sound: 1, bypasssub: 1, protect: 1, mirror: 1 },
-		secondary: null,
+		secondary: undefined, // no inherit
 		target: "normal",
 		type: "Normal",
 	},
@@ -500,7 +500,7 @@ export const Moves: { [k: string]: ModdedMoveData; } = {
 		isNonstandard: null,
 		basePower: 50,
 		willCrit: true,
-		secondary: null,
+		secondary: undefined, // no inherit
 		desc: "This move is always a critical hit unless the target is under the effect of Lucky Chant or has the Battle Armor or Shell Armor Abilities.",
 		shortDesc: "Goes first. Always results in a critical hit.",
 	},
@@ -560,7 +560,7 @@ export const Moves: { [k: string]: ModdedMoveData; } = {
 		desc: "Sets Snow. User faints after use.",
 		shortDesc: "Sets Snow. User faints after use.",
 		weather: 'snow',
-		secondary: null,
+		secondary: undefined, // no inherit
 		selfdestruct: "always",
 	},
 	mistyexplosion: {

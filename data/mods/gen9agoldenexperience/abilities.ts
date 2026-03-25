@@ -1,6 +1,16 @@
 import { consoleips } from "../../../config/config-example";
 
 export const Abilities: { [abilityid: string]: ModdedAbilityData; } = {
+	// ZA stuff
+	dragonize: {
+		inherit: true,
+		isNonstandard: null,
+	},
+	megasol: {
+		inherit: true,
+		isNonstandard: null,
+	},
+	// custom stuff
 	poisonousradula: {
 		inherit: true,
 		isNonstandard: null,

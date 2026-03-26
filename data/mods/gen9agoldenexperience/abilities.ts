@@ -417,9 +417,6 @@ export const Abilities: { [abilityid: string]: ModdedAbilityData; } = {
 	},
 	snowcloak: {
 		inherit: true,
-		onImmunity(type, pokemon) {
-			if (type === 'hail' || type === 'eternalwinter') return false;
-		},
 		onSetStatus(status, target, source, effect) {
 			if (this.field.isWeather(['hail', 'snow', 'eternalwinter'])) {
 				if ((effect as Move)?.status) {

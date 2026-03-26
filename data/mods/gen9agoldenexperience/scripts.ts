@@ -1251,6 +1251,8 @@ export const Scripts: ModdedBattleScriptsData = {
     this.modData('Learnsets', 'suicune').learnset.flipturn = ['9L1'];
     this.modData('Learnsets', 'tyranitar').learnset.scorchingsands = ['9L1']; // ZA addition
     this.modData('Learnsets', 'tyranitar').learnset.partingshot = ['9L1'];
+    this.modData('Learnsets', 'lugia').learnset.amnesia = ['9L1'];
+    this.modData('Learnsets', 'lugia').learnset.refresh = ['9L1'];
     this.modData('Learnsets', 'celebi').learnset.revivalblessing = ['9L1'];
     this.modData('Learnsets', 'celebi').learnset.timeparadox = ['9L1'];
 
@@ -1361,6 +1363,7 @@ export const Scripts: ModdedBattleScriptsData = {
     this.modData('Learnsets', 'chimecho').learnset.flashcannon = ['9L1']; // ZA addition
     this.modData('Learnsets', 'chimecho').learnset.magnetbomb = ['9L1']; // ZA addition
     this.modData('Learnsets', 'chimecho').learnset.calmingbell = ['9L1']; 
+    this.modData('Learnsets', 'absol').learnset.sacredsword = ['9L1']; 
     this.modData('Learnsets', 'absol').learnset.shadowsneak = ['9L1']; // ZA addition
     this.modData('Learnsets', 'absol').learnset.razorwind = ['9L1']; // ZA addition
     this.modData('Learnsets', 'glalie').learnset.rapidspin = ['9L1'];

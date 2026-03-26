@@ -1217,57 +1217,17 @@ export const Moves: { [k: string]: ModdedMoveData; } = {
 
 
 
-	// Everlasting Winter field
+	// Eternal Winter field
 	auroraveil: {
 		inherit: true,
 		onTry() {
-			return this.field.isWeather(['hail', 'snow', 'everlastingwinter']);
+			return this.field.isWeather(['hail', 'snow', 'eternalwinter']);
 		},
 	},
 	blizzard: {
 		inherit: true,
 		onModifyMove(move) {
-			if (this.field.isWeather(['hail', 'snow', 'everlastingwinter'])) move.accuracy = true;
-		},
-	},
-	dig: {
-		inherit: true,
-		condition: {
-			duration: 2,
-			onImmunity(type, pokemon) {
-				if (type === 'sandstorm' || type === 'hail' || type === 'everlastingwinter') return false;
-			},
-			onInvulnerability(target, source, move) {
-				if (['earthquake', 'magnitude'].includes(move.id)) {
-					return;
-				}
-				return false;
-			},
-			onSourceModifyDamage(damage, source, target, move) {
-				if (move.id === 'earthquake' || move.id === 'magnitude') {
-					return this.chainModify(2);
-				}
-			},
-		},
-	},
-	dive: {
-		inherit: true,
-		condition: {
-			duration: 2,
-			onImmunity(type, pokemon) {
-				if (type === 'sandstorm' || type === 'hail' || type === 'everlastingwinter') return false;
-			},
-			onInvulnerability(target, source, move) {
-				if (['surf', 'whirlpool'].includes(move.id)) {
-					return;
-				}
-				return false;
-			},
-			onSourceModifyDamage(damage, source, target, move) {
-				if (move.id === 'surf' || move.id === 'whirlpool') {
-					return this.chainModify(2);
-				}
-			},
+			if (this.field.isWeather(['hail', 'snow', 'eternalwinter'])) move.accuracy = true;
 		},
 	},
 	moonlight: {
@@ -1284,7 +1244,7 @@ export const Moves: { [k: string]: ModdedMoveData; } = {
 			case 'sandstorm':
 			case 'hail':
 			case 'snow':
-			case 'everlastingwinter':
+			case 'eternalwinter':
 				factor = 0.25;
 				break;
 			}
@@ -1310,7 +1270,7 @@ export const Moves: { [k: string]: ModdedMoveData; } = {
 			case 'sandstorm':
 			case 'hail':
 			case 'snow':
-			case 'everlastingwinter':
+			case 'eternalwinter':
 				factor = 0.25;
 				break;
 			}
@@ -1325,7 +1285,7 @@ export const Moves: { [k: string]: ModdedMoveData; } = {
 	solarbeam: {
 		inherit: true,
 		onBasePower(basePower, pokemon, target) {
-			const weakWeathers = ['raindance', 'primordialsea', 'sandstorm', 'hail', 'snow', 'everlastingwinter'];
+			const weakWeathers = ['raindance', 'primordialsea', 'sandstorm', 'hail', 'snow', 'eternalwinter'];
 			if (weakWeathers.includes(pokemon.effectiveWeather())) {
 				this.debug('weakened by weather');
 				return this.chainModify(0.5);
@@ -1335,7 +1295,7 @@ export const Moves: { [k: string]: ModdedMoveData; } = {
 	solarblade: {
 		inherit: true,
 		onBasePower(basePower, pokemon, target) {
-			const weakWeathers = ['raindance', 'primordialsea', 'sandstorm', 'hail', 'snow', 'everlastingwinter'];
+			const weakWeathers = ['raindance', 'primordialsea', 'sandstorm', 'hail', 'snow', 'eternalwinter'];
 			if (weakWeathers.includes(pokemon.effectiveWeather())) {
 				this.debug('weakened by weather');
 				return this.chainModify(0.5);
@@ -1356,7 +1316,7 @@ export const Moves: { [k: string]: ModdedMoveData; } = {
 			case 'sandstorm':
 			case 'hail':
 			case 'snow':
-			case 'everlastingwinter':
+			case 'eternalwinter':
 				factor = 0.25;
 				break;
 			}
@@ -1385,7 +1345,7 @@ export const Moves: { [k: string]: ModdedMoveData; } = {
 				break;
 			case 'hail':
 			case 'snow':
-			case 'everlastingwinter':
+			case 'eternalwinter':
 				move.type = 'Ice';
 				break;
 			}
@@ -1405,7 +1365,7 @@ export const Moves: { [k: string]: ModdedMoveData; } = {
 				break;
 			case 'hail':
 			case 'snow':
-			case 'everlastingwinter':
+			case 'eternalwinter':
 				move.basePower *= 2;
 				break;
 			}

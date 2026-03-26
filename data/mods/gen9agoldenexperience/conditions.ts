@@ -54,18 +54,18 @@ export const Conditions: {[k: string]: ConditionData} = {
 			}
 		},
 	},
-	everlastingwinter: {
-		name: 'EverlastingWinter',
+	eternalwinter: {
+		name: 'eternalwinter',
 		effectType: 'Weather',
 		duration: 0,
 		onModifyDefPriority: 10,
 		onModifyDef(def, pokemon) {
-			if (pokemon.hasType('Ice') && this.field.isWeather('everlastingwinter')) {
+			if (pokemon.hasType('Ice') && this.field.isWeather('eternalwinter')) {
 				return this.modify(def, 1.5);
 			}
 		},
 		onFieldStart(field, source, effect) {
-			this.add('-weather', 'EverlastingWinter', '[from] ability: ' + effect.name, '[of] ' + source);
+			this.add('-weather', 'eternalwinter', '[from] ability: ' + effect.name, '[of] ' + source);
 		},
 		onImmunity(type, pokemon) {
 			if (pokemon.hasItem('utilityumbrella')) return;
@@ -73,11 +73,22 @@ export const Conditions: {[k: string]: ConditionData} = {
 		},
 		onFieldResidualOrder: 1,
 		onFieldResidual() {
-			this.add('-weather', 'EverlastingWinter', '[upkeep]');
+			this.add('-weather', 'eternalwinter', '[upkeep]');
 			this.eachEvent('Weather');
 		},
-		onWeather(target) {
-			if (!target.hasType('Ice')) this.damage(target.baseMaxhp / 16);
+		onSourceModifyAtkPriority: 6,
+		onSourceModifyAtk(atk, attacker, defender, move) {
+			if (defender.hasType('Ice') && (move.type === 'Fire' || move.type === 'Rock' || move.type === 'Fighting' || move.type === 'Steel')) {
+				this.debug('Eternal Winter weaken');
+				return this.chainModify(0.5);
+			}
+		},
+		onSourceModifySpAPriority: 5,
+		onSourceModifySpA(atk, attacker, defender, move) {
+			if (defender.hasType('Ice') && (move.type === 'Fire' || move.type === 'Rock' || move.type === 'Fighting' || move.type === 'Steel')) {
+				this.debug('Eternal Winter weaken');
+				return this.chainModify(0.5);
+			}
 		},
 		onFieldEnd() {
 			this.add('-weather', 'none');

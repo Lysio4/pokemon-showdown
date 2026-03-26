@@ -591,13 +591,6 @@ export const Items: {[itemid: string]: ModdedItemData} = {
 		inherit: true,
 		isNonstandard: null,
 	},
-	// everlasting winter
-	safetygoggles: {
-		inherit: true,
-		onImmunity(type, pokemon) {
-			if (type === 'sandstorm' || type === 'hail' || type === 'everlastingwinter' || type === 'powder') return false;
-		},
-	},
 
 	// Silvally Memories section
 	bugmemory: {

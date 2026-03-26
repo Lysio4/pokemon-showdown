@@ -132,7 +132,7 @@ export const Tags: { [id: IDEntry]: TagData } = {
 	// AGE flags
 	tail: {
 		name: "Tail",
-		desc: "Has +1 priority with Long Tail.",
+		desc: "Has +1 priority with Whiplash.",
 		moveFilter: move => 'tail' in move.flags,
 	},
 	kick: {

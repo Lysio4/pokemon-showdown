@@ -115,7 +115,7 @@ export const Abilities: { [abilityid: string]: ModdedAbilityData; } = {
 		inherit: true,
 		isNonstandard: null,
 	},
-	longtail: {
+	whiplash: {
 		inherit: true,
 		isNonstandard: null,
 	},
@@ -163,10 +163,6 @@ export const Abilities: { [abilityid: string]: ModdedAbilityData; } = {
 		inherit: true,
 		isNonstandard: null,
 	},
-	angelicnature: {
-		inherit: true,
-		isNonstandard: null,
-	},
 	blowhole: {
 		inherit: true,
 		isNonstandard: null,
@@ -175,43 +171,40 @@ export const Abilities: { [abilityid: string]: ModdedAbilityData; } = {
 		inherit: true,
 		isNonstandard: null,
 	},
-	everlastingwinter: {
+	eternalwinter: {
 		inherit: true,
 		isNonstandard: null,
 	},
 	// other strong weathers
 	deltastream: {
 		inherit: true,
-		desc: "On switch-in, the weather becomes strong winds that remove the weaknesses of the Flying type from Flying-type Pokemon. This weather remains in effect until this Ability is no longer active for any Pokemon, or the weather is changed by Desolate Land, Everlasting Winter or Primordial Sea.",
+		desc: "On switch-in, the weather becomes strong winds that remove the weaknesses of the Flying type from Flying-type Pokemon. This weather remains in effect until this Ability is no longer active for any Pokemon, or the weather is changed by Desolate Land, Eternal Winter or Primordial Sea.",
 		onAnySetWeather(target, source, weather) {
-			const strongWeathers = ['desolateland', 'primordialsea', 'deltastream', 'everlastingwinter'];
+			const strongWeathers = ['desolateland', 'primordialsea', 'deltastream', 'eternalwinter'];
 			if (this.field.getWeather().id === 'deltastream' && !strongWeathers.includes(weather.id)) return false;
 		},
 	},
 	desolateland: {
 		inherit: true,
-		desc: "On switch-in, the weather becomes extremely harsh sunlight that prevents damaging Water-type moves from executing, in addition to all the effects of Sunny Day. This weather remains in effect until this Ability is no longer active for any Pokemon, or the weather is changed by Delta Stream, Everlasting Winter or Primordial Sea.",
+		desc: "On switch-in, the weather becomes extremely harsh sunlight that prevents damaging Water-type moves from executing, in addition to all the effects of Sunny Day. This weather remains in effect until this Ability is no longer active for any Pokemon, or the weather is changed by Delta Stream, Eternal Winter or Primordial Sea.",
 		onAnySetWeather(target, source, weather) {
-			const strongWeathers = ['desolateland', 'primordialsea', 'deltastream', 'everlastingwinter'];
+			const strongWeathers = ['desolateland', 'primordialsea', 'deltastream', 'eternalwinter'];
 			if (this.field.getWeather().id === 'desolateland' && !strongWeathers.includes(weather.id)) return false;
 		},
 	},
 	primordialsea: {
 		inherit: true,
-		desc: "On switch-in, the weather becomes heavy rain that prevents damaging Fire-type moves from executing, in addition to all the effects of Rain Dance. This weather remains in effect until this Ability is no longer active for any Pokemon, or the weather is changed by Delta Stream, Desolate Land or Everlasting Winter.",
+		desc: "On switch-in, the weather becomes heavy rain that prevents damaging Fire-type moves from executing, in addition to all the effects of Rain Dance. This weather remains in effect until this Ability is no longer active for any Pokemon, or the weather is changed by Delta Stream, Desolate Land or Eternal Winter.",
 		onAnySetWeather(target, source, weather) {
-			const strongWeathers = ['desolateland', 'primordialsea', 'deltastream', 'everlastingwinter'];
+			const strongWeathers = ['desolateland', 'primordialsea', 'deltastream', 'eternalwinter'];
 			if (this.field.getWeather().id === 'primordialsea' && !strongWeathers.includes(weather.id)) return false;
 		},
 	},
 	// all snow and hail abilities
 	icebody: {
 		inherit: true,
-		onImmunity(type, pokemon) {
-			if (type === 'hail' || type === 'everlastingwinter') return false;
-		},
 		onWeather(target, source, effect) {
-			if (effect.id === 'hail' || effect.id === 'snow' || effect.id === 'everlastingwinter') {
+			if (effect.id === 'hail' || effect.id === 'snow' || effect.id === 'eternalwinter') {
 				this.heal(target.baseMaxhp / 16);
 			}
 		},
@@ -219,19 +212,13 @@ export const Abilities: { [abilityid: string]: ModdedAbilityData; } = {
 	slushrush: {
 		inherit: true,
 		onModifySpe(spe, pokemon) {
-			if (this.field.isWeather(['hail', 'snow', 'everlastingwinter'])) {
+			if (this.field.isWeather(['hail', 'snow', 'eternalwinter'])) {
 				return this.chainModify(2);
 			}
 		},
 	},
-	overcoat: {
-		inherit: true,
-		onImmunity(type, pokemon) {
-			if (type === 'sandstorm' || type === 'hail' || type === 'everlastingwinter' || type === 'powder') return false;
-		},
-	},
 	// end of snow and hail abilities
-	spikybody: {
+	thornytrussle: {
 		inherit: true,
 		isNonstandard: null,
 	},
@@ -326,7 +313,7 @@ export const Abilities: { [abilityid: string]: ModdedAbilityData; } = {
 	iceface: {
 		inherit: true,
 		onStart(pokemon) {
-			if (this.field.isWeather(['hail', 'snow', 'everlastingwinter']) && pokemon.species.id === 'eiscuenoice') {
+			if (this.field.isWeather(['hail', 'snow', 'eternalwinter']) && pokemon.species.id === 'eiscuenoice') {
 				this.add('-activate', pokemon, 'ability: Ice Face');
 				this.effectState.busted = false;
 				pokemon.formeChange('Eiscue', this.effect, true);
@@ -360,7 +347,7 @@ export const Abilities: { [abilityid: string]: ModdedAbilityData; } = {
 			// snow/hail resuming because Cloud Nine/Air Lock ended does not trigger Ice Face
 			if ((sourceEffect as Ability)?.suppressWeather) return;
 			if (!pokemon.hp) return;
-			if (this.field.isWeather(['hail', 'snow', 'everlastingwinter']) && pokemon.species.id === 'eiscuenoice') {
+			if (this.field.isWeather(['hail', 'snow', 'eternalwinter']) && pokemon.species.id === 'eiscuenoice') {
 				this.add('-activate', pokemon, 'ability: Ice Face');
 				this.effectState.busted = false;
 				pokemon.formeChange('Eiscue', this.effect, true);
@@ -431,10 +418,10 @@ export const Abilities: { [abilityid: string]: ModdedAbilityData; } = {
 	snowcloak: {
 		inherit: true,
 		onImmunity(type, pokemon) {
-			if (type === 'hail' || type === 'everlastingwinter') return false;
+			if (type === 'hail' || type === 'eternalwinter') return false;
 		},
 		onSetStatus(status, target, source, effect) {
-			if (this.field.isWeather(['hail', 'snow', 'everlastingwinter'])) {
+			if (this.field.isWeather(['hail', 'snow', 'eternalwinter'])) {
 				if ((effect as Move)?.status) {
 					this.add('-immune', target, '[from] ability: Snow Cloak');
 				}
@@ -442,13 +429,13 @@ export const Abilities: { [abilityid: string]: ModdedAbilityData; } = {
 			}
 		},
 		onTryAddVolatile(status, target) {
-			if (status.id === 'yawn' && this.field.isWeather(['hail', 'snow', 'everlastingwinter'])) {
+			if (status.id === 'yawn' && this.field.isWeather(['hail', 'snow', 'eternalwinter'])) {
 				this.add('-immune', target, '[from] ability: Snow Cloak');
 				return null;
 			}
 		},
 		onModifyDef(def, pokemon) {
-			if (this.field.isWeather(['hail', 'snow', 'everlastingwinter'])) {
+			if (this.field.isWeather(['hail', 'snow', 'eternalwinter'])) {
 				return this.chainModify(1.3);
 			}
 		},
@@ -983,10 +970,6 @@ export const Abilities: { [abilityid: string]: ModdedAbilityData; } = {
 		},
 		desc: "This Pokemon's offensive stat is multiplied by 1.5 while using an Fire-type attack. This Pokemon's moves and their effects ignore certain Abilities of other Pokemon. The Abilities that can be negated are Armor Tail, Aroma Veil, Aura Break, Battle Armor, Big Pecks, Bulletproof, Clear Body, Contrary, Damp, Dazzling, Disguise, Dry Skin, Earth Eater, Filter, Flash Fire, Flower Gift, Flower Veil, Fluffy, Friend Guard, Fur Coat, Good as Gold, Grass Pelt, Guard Dog, Heatproof, Heavy Metal, Hyper Cutter, Ice Face, Ice Scales, Illuminate, Immunity, Inner Focus, Insomnia, Keen Eye, Leaf Guard, Levitate, Light Metal, Lightning Rod, Limber, Magic Bounce, Magma Armor, Marvel Scale, Mind's Eye, Mirror Armor, Motor Drive, Multiscale, Oblivious, Overcoat, Own Tempo, Pastel Veil, Punk Rock, Purifying Salt, Queenly Majesty, Sand Veil, Sap Sipper, Shell Armor, Shield Dust, Simple, Snow Cloak, Solid Rock, Soundproof, Sticky Hold, Storm Drain, Sturdy, Suction Cups, Sweet Veil, Tangled Feet, Telepathy, Tera Shell, Thermal Exchange, Thick Fat, Unaware, Vital Spirit, Volt Absorb, Water Absorb, Water Bubble, Water Veil, Well-Baked Body, White Smoke, Wind Rider, Wonder Guard, and Wonder Skin. This affects every other Pokemon on the field, whether or not it is a target of this Pokemon's move, and whether or not their Ability is beneficial to this Pokemon.",
 		shortDesc: "This Pokemon's moves and their effects ignore the Abilities of other Pokemon. This Pokemon's offensive stat is multiplied by 1.5 while using an Fire-type attack.",
-	},
-	stormemperor: {
-		inherit: true,
-		isNonstandard: null,
 	},
 	magiceye: {
 		inherit: true,

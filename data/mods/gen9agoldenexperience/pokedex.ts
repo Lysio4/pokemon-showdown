@@ -63,7 +63,7 @@ export const Pokedex: {[k: string]: ModdedSpeciesData;} = {
 	},
 	clefablemega: {
 		inherit: true,
-		abilities: { 0: "Unaware" },
+		abilities: { 0: "Aerilate" },
 	},
 	ninetales: {
 		inherit: true,
@@ -850,7 +850,7 @@ export const Pokedex: {[k: string]: ModdedSpeciesData;} = {
 	},
 	absolmega: {
 		inherit: true,
-		abilities: {0: "Angelic Nature"},
+		abilities: { 0: "Sharpness" },
 	},
 	absolmegaz: {
 		inherit: true,
@@ -1123,7 +1123,7 @@ export const Pokedex: {[k: string]: ModdedSpeciesData;} = {
 	abomasnowmega: {
 		inherit: true,
 		baseStats: {hp: 90, atk: 142, def: 105, spa: 142, spd: 105, spe: 30},
-		abilities: { 0: "Everlasting Winter" },
+		abilities: { 0: "Eternal Winter" },
 	},
 	lickilicky: {
 		inherit: true,
@@ -1432,7 +1432,7 @@ export const Pokedex: {[k: string]: ModdedSpeciesData;} = {
 	zebstrika: {
 		inherit: true,
 		baseStats: {hp: 75, atk: 110, def: 60, spa: 70, spd: 60, spe: 122},
-		abilities: {0: "Reckless", 1: "Motor Drive", H: "Sap Sipper"},
+		abilities: {0: "Tempestuous", 1: "Motor Drive", H: "Sap Sipper"},
 	},
 	roggenrola: {
 		inherit: true,
@@ -1507,7 +1507,7 @@ export const Pokedex: {[k: string]: ModdedSpeciesData;} = {
 	maractus: {
 		inherit: true,
 		baseStats: { hp: 75, atk: 116, def: 67, spa: 106, spd: 67, spe: 60 },
-		abilities: { 0: "Water Absorb", 1: "Chlorophyll", H: "Spiky Body" },
+		abilities: { 0: "Water Absorb", 1: "Chlorophyll", H: "Thorny Trussle" },
 	},
 	crustle: {
 		inherit: true,
@@ -1603,6 +1603,10 @@ export const Pokedex: {[k: string]: ModdedSpeciesData;} = {
 		types: ["Steel", "Electric"],
 		abilities: {0: "Plus", 1: "Minus", H: "Technician"},
 	},
+	eelektrossmega: {
+		inherit: true,
+		abilities: { 0: "Sheer Force" },
+	},
 	elgyem: {
 		inherit: true,
 		abilities: {0: "Telepathy", 1: "Cosmic Energy", H: "Analytic"},
@@ -1665,7 +1669,7 @@ export const Pokedex: {[k: string]: ModdedSpeciesData;} = {
 	heatmor: {
 		inherit: true,
 		baseStats: {hp: 85, atk: 105, def: 66, spa: 100, spd: 66, spe: 65},
-		abilities: {0: "Long Tail", 1: "Flash Fire", H: "Insectivorous"},
+		abilities: {0: "Whiplash", 1: "Flash Fire", H: "Insectivorous"},
 	},
 	durant: {
 		inherit: true,
@@ -2134,7 +2138,7 @@ export const Pokedex: {[k: string]: ModdedSpeciesData;} = {
 	},
 	drampamega: {
 		inherit: true,
-		abilities: { 0: "Storm Emperor" },
+		abilities: { 0: "Drizzle" },
 	},
 	dhelmise: {
 		inherit: true,
@@ -2151,11 +2155,7 @@ export const Pokedex: {[k: string]: ModdedSpeciesData;} = {
 	},
 	zeraora: {
 		inherit: true,
-		abilities: {0: "Volt Absorb", H: "Iron Fist"},
-	},
-	zeraoramega: {
-		inherit: true,
-		abilities: { 0: "Tough Claws" },
+		abilities: { 0: "Volt Absorb", H: "Iron Fist" },
 	},
 
 	// Gen 8 :
@@ -2300,7 +2300,7 @@ export const Pokedex: {[k: string]: ModdedSpeciesData;} = {
 	pincurchin: {
 		inherit: true,
 		baseStats: {hp: 68, atk: 81, def: 115, spa: 91, spd: 105, spe: 15},
-		abilities: { 0: "Lightning Rod", 1: "Spiky Body", H: "Electric Surge" },
+		abilities: { 0: "Lightning Rod", 1: "Thorny Trussle", H: "Electric Surge" },
 	},
 	frosmoth: {
 		inherit: true,
@@ -2455,7 +2455,7 @@ export const Pokedex: {[k: string]: ModdedSpeciesData;} = {
 	},
 	glimmoramega: {
 		inherit: true,
-		abilities: { 0: "Adaptability" },
+		abilities: { 0: "Tinted Lens" },
 	},
 	houndstone: {
 		inherit: true,

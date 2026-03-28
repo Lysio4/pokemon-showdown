@@ -3246,11 +3246,11 @@ export const FormatsData: { [k: string]: SpeciesFormatsData; } = {
 		doublesTier: "DUU",
 	},
 	meloetta: {
-		tier: "OU",
+		tier: "RU",
 		doublesTier: "DUU",
 	},
 	meloettapirouette: {
-		tier: "OU",
+		tier: "RU",
 		doublesTier: "DUU",
 	},
 	genesect: {
@@ -4123,7 +4123,7 @@ export const FormatsData: { [k: string]: SpeciesFormatsData; } = {
 		doublesTier: "DUU",
 	},
 	necrozma: {
-		tier: "RUBL",
+		tier: "NUBL",
 		doublesTier: "DUU",
 	},
 	necrozmaduskmane: {
@@ -4174,7 +4174,7 @@ export const FormatsData: { [k: string]: SpeciesFormatsData; } = {
 		doublesTier: "DUU",
 	},
 	zeraora: {
-		tier: "UUBL",
+		tier: "UU",
 		doublesTier: "DOU",
 	},
 	zeraoramega: {

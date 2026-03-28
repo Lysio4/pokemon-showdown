@@ -366,7 +366,7 @@ export const Pokedex: {[k: string]: ModdedSpeciesData;} = {
 	},
 	dragonitemega: {
 		inherit: true,
-		abilities: { 0: "Drizzle" },
+		abilities: { 0: "Multiscale" },
 	},
 	mewtwo: {
 		inherit: true,
@@ -1187,7 +1187,7 @@ export const Pokedex: {[k: string]: ModdedSpeciesData;} = {
 	},
 	froslassmega: {
 		inherit: true,
-		abilities: { 0: "Cold Vengeance" },
+		abilities: { 0: "Snow Warning" },
 	},
 	rotom: {
 		inherit: true,
@@ -2148,10 +2148,6 @@ export const Pokedex: {[k: string]: ModdedSpeciesData;} = {
 	xurkitree: {
 		inherit: true,
 		baseStats: {hp: 83, atk: 79, def: 67, spa: 173, spd: 71, spe: 97},
-	},
-	necrozma: {
-		inherit: true,
-		abilities: {0: "Prism Armor", H: "Cosmic Energy"},
 	},
 	zeraora: {
 		inherit: true,

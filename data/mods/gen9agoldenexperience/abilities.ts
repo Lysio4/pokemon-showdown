@@ -217,6 +217,26 @@ export const Abilities: { [abilityid: string]: ModdedAbilityData; } = {
 			}
 		},
 	},
+	iceface: {
+		inherit: true,
+		onStart(pokemon) {
+			if (this.field.isWeather(['hail', 'snow', 'eternalwinter']) && pokemon.species.id === 'eiscuenoice') {
+				this.add('-activate', pokemon, 'ability: Ice Face');
+				this.effectState.busted = false;
+				pokemon.formeChange('Eiscue', this.effect, true);
+			}
+		},
+		onWeatherChange(pokemon, source, sourceEffect) {
+			// snow/hail resuming because Cloud Nine/Air Lock ended does not trigger Ice Face
+			if ((sourceEffect as Ability)?.suppressWeather) return;
+			if (!pokemon.hp) return;
+			if (this.field.isWeather(['hail', 'snow', 'eternalwinter']) && pokemon.species.id === 'eiscuenoice') {
+				this.add('-activate', pokemon, 'ability: Ice Face');
+				this.effectState.busted = false;
+				pokemon.formeChange('Eiscue', this.effect, true);
+			}
+		},
+	},
 	// end of snow and hail abilities
 	thornytrussle: {
 		inherit: true,
@@ -309,52 +329,6 @@ export const Abilities: { [abilityid: string]: ModdedAbilityData; } = {
 			}
 		},
 		shortDesc: "This Pokemon's type changes to the type of a move it's hit by before being hit, unless it has the type.",
-	},
-	iceface: {
-		inherit: true,
-		onStart(pokemon) {
-			if (this.field.isWeather(['hail', 'snow', 'eternalwinter']) && pokemon.species.id === 'eiscuenoice') {
-				this.add('-activate', pokemon, 'ability: Ice Face');
-				this.effectState.busted = false;
-				pokemon.formeChange('Eiscue', this.effect, true);
-			}
-		},
-		onDamage(damage, target, source, effect) {
-			if (effect?.effectType === 'Move' && target.species.id === 'eiscue') {
-				this.add('-activate', target, 'ability: Ice Face');
-				this.effectState.busted = true;
-				return 0;
-			}
-		},
-		onCriticalHit(target, type, move) {
-			if (!target) return;
-			if (target.species.id !== 'eiscue') return;
-			if (target.volatiles['substitute'] && !(move.flags['bypasssub'] || move.infiltrates)) return;
-			if (!target.runImmunity(move.type)) return;
-			return false;
-		},
-		onEffectiveness(typeMod, target, type, move) {
-			if (!target) return;
-			if (target.species.id !== 'eiscue') return;
-
-			const hitSub = target.volatiles['substitute'] && !move.flags['bypasssub'] && !(move.infiltrates && this.gen >= 6);
-			if (hitSub) return;
-
-			if (!target.runImmunity(move.type)) return;
-			return 0;
-		},
-		onWeatherChange(pokemon, source, sourceEffect) {
-			// snow/hail resuming because Cloud Nine/Air Lock ended does not trigger Ice Face
-			if ((sourceEffect as Ability)?.suppressWeather) return;
-			if (!pokemon.hp) return;
-			if (this.field.isWeather(['hail', 'snow', 'eternalwinter']) && pokemon.species.id === 'eiscuenoice') {
-				this.add('-activate', pokemon, 'ability: Ice Face');
-				this.effectState.busted = false;
-				pokemon.formeChange('Eiscue', this.effect, true);
-			}
-		},
-		desc: "If this Pokemon is an Eiscue, the first hit it takes in battle deals 0 neutral damage. Its ice face is then broken and it changes forme to Noice Face. Eiscue regains its Ice Face forme when Snow begins or when Eiscue switches in while Snow is active. Confusion damage also breaks the ice face.",
-		shortDesc: "If Eiscue, the first hit it takes deals 0 damage. Effect is restored in Snow.",
 	},
 	powerspot: {
 		inherit: true,

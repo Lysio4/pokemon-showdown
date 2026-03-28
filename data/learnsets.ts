@@ -105000,11 +105000,6 @@ export const Learnsets: import('../sim/dex-species').LearnsetDataTable = {
 	},
 	arsief: {
 		learnset: {
-			spiritbreak: ["9L1"],
-			drainingkiss: ["9L1"],
-			moonblast: ["9L1"],
-			dazzlinggleam: ["9L1"],
-			charm: ["9L1"],
 			trick: ["9L1"],
 		},
 	},

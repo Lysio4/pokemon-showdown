@@ -2146,7 +2146,7 @@ export const FormatsData: { [k: string]: SpeciesFormatsData; } = {
 		doublesTier: "DUU",
 	},
 	staraptormega: {
-		tier: "OU",
+		tier: "UU",
 		doublesTier: "DOU",
 	},
 	bidoof: {
@@ -2425,7 +2425,7 @@ export const FormatsData: { [k: string]: SpeciesFormatsData; } = {
 		doublesTier: "DOU",
 	},
 	heatranmega: {
-		tier: "OU",
+		tier: "(OU)",
 		doublesTier: "DOU",
 	},
 	regigigas: {
@@ -4039,7 +4039,7 @@ export const FormatsData: { [k: string]: SpeciesFormatsData; } = {
 		doublesTier: "DUU",
 	},
 	drampamega: {
-		tier: "OU",
+		tier: "UUBL",
 		doublesTier: "DUU",
 	},
 	dhelmise: {
@@ -4185,7 +4185,7 @@ export const FormatsData: { [k: string]: SpeciesFormatsData; } = {
 		tier: "LC",
 	},
 	melmetal: {
-		tier: "OU",
+		tier: "UUBL",
 		doublesTier: "DOU",
 	},
 	melmetalgmax: {
@@ -4400,11 +4400,11 @@ export const FormatsData: { [k: string]: SpeciesFormatsData; } = {
 		doublesTier: "DUU",
 	},
 	toxtricitymega: {
-		tier: "OU",
+		tier: "UU",
 		doublesTier: "DUU",
 	},
 	toxtricitylowkeymega: {
-		tier: "OU",
+		tier: "UU",
 		doublesTier: "DUU",
 	},
 	toxtricitygmax: {
@@ -5115,7 +5115,7 @@ export const FormatsData: { [k: string]: SpeciesFormatsData; } = {
 		doublesTier: "DUU",
 	},
 	annihilape: {
-		tier: "OU",
+		tier: "UU",
 		doublesTier: "DOU",
 	},
 	walkingwake: {

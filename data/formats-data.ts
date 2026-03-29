@@ -6495,10 +6495,6 @@ export const FormatsData: import('../sim/dex-species').SpeciesFormatsDataTable =
 		isNonstandard: "Custom",
 		tier: "Illegal",
 	},
-	ogerponmega: {
-		isNonstandard: "Custom",
-		tier: "Illegal",
-	},
 	tentarcolh: {
 		isNonstandard: "Custom",
 		tier: "Illegal",

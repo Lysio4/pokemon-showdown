@@ -451,7 +451,6 @@ export const Learnsets: { [speciesid: string]: LearnsetData; } = {
 			acidarmor: ["9E"],
 			amnesia: ["9M", "9L36"],
 			ancientpower: ["9L22"],
-			backfire: ["9M"],
 			bodyslam: ["9M", "9L41"],
 			bulldoze: ["9M"],
 			clearsmog: ["9L20"],
@@ -516,7 +515,6 @@ export const Learnsets: { [speciesid: string]: LearnsetData; } = {
 		learnset: {
 			amnesia: ["9M", "9L36"],
 			ancientpower: ["9L22"],
-			backfire: ["9M"],
 			bodyslam: ["9M", "9L43"],
 			bulldoze: ["9M"],
 			clearsmog: ["9L20"],
@@ -585,7 +583,6 @@ export const Learnsets: { [speciesid: string]: LearnsetData; } = {
 		learnset: {
 			amnesia: ["9M", "9L36"],
 			ancientpower: ["9L22"],
-			backfire: ["9M", "9L59"],
 			bodypress: ["9M"],
 			bodyslam: ["9M", "9L43"],
 			bulldoze: ["9M"],
@@ -655,7 +652,6 @@ export const Learnsets: { [speciesid: string]: LearnsetData; } = {
 	},
 	houndour: {
 		learnset: {
-			backfire: ["9M"],
 			beatup: ["9L25", "9E"],
 			bite: ["9L16"],
 			bodyslam: ["9M"],
@@ -733,7 +729,6 @@ export const Learnsets: { [speciesid: string]: LearnsetData; } = {
 	},
 	houndoom: {
 		learnset: {
-			backfire: ["9M"],
 			beatup: ["9L26", "9E"],
 			bite: ["9L16"],
 			bodyslam: ["9M"],
@@ -1100,7 +1095,6 @@ export const Learnsets: { [speciesid: string]: LearnsetData; } = {
 			crunch: ["9M", "9L41"],
 			darkpulse: ["9M"],
 			defog: ["9M"],
-			dissolution: ["9M"],
 			encore: ["9M"],
 			endure: ["9M"],
 			energyball: ["9M"],
@@ -2295,7 +2289,6 @@ export const Learnsets: { [speciesid: string]: LearnsetData; } = {
 			blizzard: ["9M"],
 			brine: ["9L32"],
 			calmmind: ["9M"],
-			clearmind: ["9M"],
 			condensate: ["9M"],
 			dazzlinggleam: ["9M"],
 			defog: ["9M", "9L38"],
@@ -2364,7 +2357,6 @@ export const Learnsets: { [speciesid: string]: LearnsetData; } = {
 			contrariety: ["9M"],
 			crunch: ["9M", "9L37"],
 			darkpulse: ["9M"],
-			dissolution: ["9M"],
 			doubleedge: ["9M"],
 			dracometeor: ["9M"],
 			dragonclaw: ["9M"],
@@ -2667,7 +2659,6 @@ export const Learnsets: { [speciesid: string]: LearnsetData; } = {
 			brickbreak: ["9M"],
 			bulletseed: ["9M"],
 			charm: ["9M"],
-			clearmind: ["9M"],
 			contrariety: ["9L1"],
 			darkpulse: ["9M"],
 			disarmingvoice: ["9M"],
@@ -3045,7 +3036,6 @@ export const Learnsets: { [speciesid: string]: LearnsetData; } = {
 			calmmind: ["9M"],
 			chargebeam: ["9M"],
 			charm: ["9M"],
-			clearmind: ["9M"],
 			confuseray: ["9M", "9L1"],
 			darkpulse: ["9M"],
 			dazzlinggleam: ["9M", "9L35", "9S0"],

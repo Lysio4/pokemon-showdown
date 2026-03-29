@@ -100418,7 +100418,6 @@ export const Learnsets: import('../sim/dex-species').LearnsetDataTable = {
 		learnset: {
 			amnesia: ["9M", "9L36"],
 			ancientpower: ["9L22"],
-			backfire: ["9M", "9L59"],
 			bodypress: ["9M"],
 			bodyslam: ["9M", "9L43"],
 			bulldoze: ["9M"],
@@ -101927,7 +101926,6 @@ export const Learnsets: import('../sim/dex-species').LearnsetDataTable = {
 			chakraterrain: ["9L1"],
 			martialpunch: ["9L1"],
 			musclecare: ["9L1"],
-			clearmind: ["9L1"],
 		},
 	},
 	sableyeunova: {
@@ -102219,7 +102217,6 @@ export const Learnsets: import('../sim/dex-species').LearnsetDataTable = {
 			heatcrash: ["9L1"],
 			wildcharge: ["9L1"],
 			highhorsepower: ["9L1"],
-			backfire: ["9L1"],
 		},
 	},
 	hydrookie: {
@@ -102456,7 +102453,6 @@ export const Learnsets: import('../sim/dex-species').LearnsetDataTable = {
 	},
 	houndourgalar: {
 		learnset: {
-			backfire: ["9M"],
 			beatup: ["9E"],
 			bite: ["9L16"],
 			block: ["9L1"],
@@ -102541,7 +102537,6 @@ export const Learnsets: import('../sim/dex-species').LearnsetDataTable = {
 	},
 	baskiron: {
 		learnset: {
-			backfire: ["9M"],
 			beatup: ["9L26", "9E"],
 			bite: ["9L16"],
 			block: ["9L1"],
@@ -102707,7 +102702,6 @@ export const Learnsets: import('../sim/dex-species').LearnsetDataTable = {
 			protect: ["9L1"],
 			substitute: ["9L1"],
 			thunderfang: ["9L1"],
-			backfire: ["9L1"],
 			sunnyday: ["9L1"],
 			willowisp: ["9L1"],
 			snore: ["9L1"],
@@ -103925,7 +103919,6 @@ export const Learnsets: import('../sim/dex-species').LearnsetDataTable = {
 			bulldoze: ["9M", "9L15"],
 			calmmind: ["9M"],
 			charm: ["9M"],
-			clearmind: ["9M"],
 			dazzlinggleam: ["9M"],
 			earthpower: ["9M", "9L45"],
 			earthquake: ["9M", "9L65"],
@@ -104314,7 +104307,6 @@ export const Learnsets: import('../sim/dex-species').LearnsetDataTable = {
 			swordsdance: ["9L1"],
 			suckerpunch: ["9L1"],	
 			machpunch: ["9L1"],
-			clearmind: ["9L1"],		
 			knockoff: ["9L1"],		
 			acupressure: ["9L33", "7L33", "6L33", "5L39"],
 			aerialace: ["9M"],
@@ -104424,7 +104416,6 @@ export const Learnsets: import('../sim/dex-species').LearnsetDataTable = {
 			swordsdance: ["9L1"],
 			suckerpunch: ["9L1"],	
 			machpunch: ["9L1"],
-			clearmind: ["9L1"],		
 			knockoff: ["9L1"],		
 			acupressure: ["9L33", "7L33", "6L33", "5L42"],
 			aerialace: ["9M"],
@@ -104553,7 +104544,6 @@ export const Learnsets: import('../sim/dex-species').LearnsetDataTable = {
 			bodyslam: ["9M"],
 			brickbreak: ["9M"],
 			bulldoze: ["9M"],
-			clearmind: ["9M"],
 			closecombat: ["9M"],
 			contrariety: ["9M"],
 			crosschop: ["9L70"],
@@ -104838,9 +104828,7 @@ export const Learnsets: import('../sim/dex-species').LearnsetDataTable = {
 		learnset: {
 			meteorbeam: ["9L1"],
 			speedswap: ["9L1"],
-			clearmind: ["9L1"],
 			magicpowder: ["9L1"],
-			razorwind: ["9L1"],
 		},
 	},
 	isaapple: {
@@ -104872,7 +104860,6 @@ export const Learnsets: import('../sim/dex-species').LearnsetDataTable = {
 			crunch: ["9M"],
 			dazzlinggleam: ["9M"],
 			disarmingvoice: ["9M"],
-			dissolution: ["9M"],
 			doubleedge: ["9M"],
 			drainingkiss: ["9L13", "9M"],
 			drainpunch: ["9M"],
@@ -104938,7 +104925,6 @@ export const Learnsets: import('../sim/dex-species').LearnsetDataTable = {
 			dazzlinggleam: ["9M"],
 			decorate: ["9L65"],
 			disarmingvoice: ["9M"],
-			dissolution: ["9M"],
 			doubleedge: ["9M"],
 			drainingkiss: ["9L21", "9M"],
 			drainpunch: ["9M"],
@@ -105017,7 +105003,6 @@ export const Learnsets: import('../sim/dex-species').LearnsetDataTable = {
 		learnset: {
 			flamewheel: ["9L1"],
 			flareblitz: ["9L1"],
-			backfire: ["9L1"],
 			flamingsphere: ["9L1"],
 			firefang: ["9L1"],
 			heatcrash: ["9L1"],
@@ -105174,7 +105159,6 @@ export const Learnsets: import('../sim/dex-species').LearnsetDataTable = {
 			airslash: ["9M", "8M"],
 			alluringvoice: ["9M"],
 			ancientpower: ["9L1", "8L1", "8S10", "7L57", "7V", "7S7", "7S8", "6L57", "5L57", "4T", "4L57", "4S2", "3L88"],
-			backfire: ["9L1"],
 			bodyslam: ["9M"],
 			bravebird: ["9M", "8M", "7L15", "7S6", "7S9", "6L15", "6S5", "5L15", "4L15"],
 			bulldoze: ["8M", "7M", "6M", "5M"],
@@ -105296,7 +105280,6 @@ export const Learnsets: import('../sim/dex-species').LearnsetDataTable = {
 			bubblebeam: ["9L7", "8L7", "7L1", "6L13", "6S3", "5L13", "5S0"],
 			calmmind: ["9M", "8M", "7M", "6M", "5M"],
 			chillingwater: ["9M"],
-			clearmind: ["9M"],
 			closecombat: ["9M", "9L70", "8M", "8L70", "7L73", "6L73", "5L73"],
 			coaching: ["9M", "8T"],
 			confide: ["7M", "6M"],

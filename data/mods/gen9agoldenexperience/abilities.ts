@@ -201,6 +201,16 @@ export const Abilities: { [abilityid: string]: ModdedAbilityData; } = {
 		},
 	},
 	// all snow and hail abilities
+	snowcloak: {
+		inherit: true,
+		onModifyAccuracy(accuracy) {
+			if (typeof accuracy !== 'number') return;
+			if (this.field.isWeather(['hail', 'snowscape', 'eternalwinter'])) {
+				this.debug('Snow Cloak - decreasing accuracy');
+				return this.chainModify([3277, 4096]);
+			}
+		},
+	},
 	icebody: {
 		inherit: true,
 		onWeather(target, source, effect) {
@@ -238,10 +248,6 @@ export const Abilities: { [abilityid: string]: ModdedAbilityData; } = {
 		},
 	},
 	// end of snow and hail abilities
-	thornytrussle: {
-		inherit: true,
-		isNonstandard: null,
-	},
 	disillusioned: {
 		inherit: true,
 		isNonstandard: null,
@@ -347,82 +353,6 @@ export const Abilities: { [abilityid: string]: ModdedAbilityData; } = {
 		},
 		desc: "This Pokemon and its allies have the power of their moves multiplied by 1.5. This affects Doom Desire and Future Sight, even if the user is not on the field.",
 		shortDesc: "This Pokemon and its allies have the power of their moves multiplied by 1.5.",
-	},
-	arenatrap: {
-		inherit: true,
-		onFoeTrapPokemon(pokemon) {},
-		onFoeMaybeTrapPokemon(pokemon, source) {},
-		onModifyDamage(damage, source, target, move) {
-			if (!(source.activeMoveActions > 1)) {
-				return this.chainModify(1.5);
-			}
-		},
-		onModifySpe(spe, pokemon) {
-			if (!(pokemon.activeMoveActions > 1)) {
-				return this.chainModify(1.5);
-			}
-		},
-		shortDesc: "This Pokemon's attacks deal x1.5 damage and has x1.5 Speed during 1 turn.",
-	},
-	sandveil: {
-		inherit: true,
-		onSetStatus(status, target, source, effect) {
-			if (this.field.isWeather('sandstorm')) {
-				if ((effect as Move)?.status) {
-					this.add('-immune', target, '[from] ability: Sand Veil');
-				}
-				return false;
-			}
-		},
-		onTryAddVolatile(status, target) {
-			if (status.id === 'yawn' && this.field.isWeather('sandstorm')) {
-				this.add('-immune', target, '[from] ability: Sand Veil');
-				return null;
-			}
-		},
-		onModifyDef(def, pokemon) {
-			if (this.field.isWeather('sandstorm')) {
-				return this.chainModify(1.3);
-			}
-		},
-		onModifyAccuracy(accuracy) {},
-		desc: "If Sandstorm is active, this Pokemon's Defense is multiplied by 1.3, and it cannot become affected by a non-volatile status condition or Yawn, and Rest will fail for it. This effect is prevented if this Pokemon is holding a Utility Umbrella.",
-		shortDesc: "If Sandstorm is active, this Pokemon's Def is 1.3x; cannot be statused and Rest will fail for it.",
-	},
-	snowcloak: {
-		inherit: true,
-		onSetStatus(status, target, source, effect) {
-			if (this.field.isWeather(['hail', 'snow', 'eternalwinter'])) {
-				if ((effect as Move)?.status) {
-					this.add('-immune', target, '[from] ability: Snow Cloak');
-				}
-				return false;
-			}
-		},
-		onTryAddVolatile(status, target) {
-			if (status.id === 'yawn' && this.field.isWeather(['hail', 'snow', 'eternalwinter'])) {
-				this.add('-immune', target, '[from] ability: Snow Cloak');
-				return null;
-			}
-		},
-		onModifyDef(def, pokemon) {
-			if (this.field.isWeather(['hail', 'snow', 'eternalwinter'])) {
-				return this.chainModify(1.3);
-			}
-		},
-		onModifyAccuracy(accuracy) {},
-		desc: "If Snow is active, this Pokemon's Defense is multiplied by 1.3, and it cannot become affected by a non-volatile status condition or Yawn, and Rest will fail for it. This effect is prevented if this Pokemon is holding a Utility Umbrella.",
-		shortDesc: "If Snow is active, this Pokemon's Def is 1.3x; cannot be statused and Rest will fail for it.",
-	},
-	leafguard: {
-		inherit: true,
-		onModifyDef(def, pokemon) {
-			if (this.field.isWeather(['sunnyday', 'desolateland'])) {
-				return this.chainModify(1.3);
-			}
-		},
-		desc: "If Sunny Day is active, this Pokemon's Defense is multiplied by 1.3, and it cannot become affected by a non-volatile status condition or Yawn, and Rest will fail for it. This effect is prevented if this Pokemon is holding a Utility Umbrella.",
-		shortDesc: "If Sunny Day is active, this Pokemon's Def is 1.3x; cannot be statused and Rest will fail for it.",
 	},
 	stickyhold: {
 		//inherit: true,
@@ -695,10 +625,6 @@ export const Abilities: { [abilityid: string]: ModdedAbilityData; } = {
 		},
 		desc: "If user is Cherrim and Sunny Day isn't active, its Def is 1.5x. If user is Cherrim and Sunny Day is active, it and its allies Atk and Sp. Def are 1.5x. and Cherrim gains the Fire type.",
 		shortDesc: "Cherrim: If Sunny Day is active, it and its allies Atk and Sp. Def are 1.5x, and Cherrim gains the Fire type; otherwise Def x1.5.",
-	},
-	strongwill: {
-		inherit: true,
-		isNonstandard: null,
 	},
 	dodge: {
 		inherit: true,
@@ -974,10 +900,6 @@ export const Abilities: { [abilityid: string]: ModdedAbilityData; } = {
 			delete move.flags['protect'];
 		},
 		shortDesc: "This Pokemon can only use status moves every other turn. Its moves ignore the target's protection.",
-	},
-	almightymask: {
-		inherit: true,
-		isNonstandard: null,
 	},
 	mightyhorn: {
 		inherit: true,

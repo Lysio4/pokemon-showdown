@@ -742,21 +742,16 @@ export const Pokedex: {[k: string]: ModdedSpeciesData;} = {
 	},
 	vibrava: {
 		inherit: true,
-		abilities: {0: "Levitate", 1:"Arena Trap", H: "Sand Stream"},
+		abilities: { 0: "Levitate", H: "Sand Stream" },
 	},
 	flygon: {
 		inherit: true,
-		abilities: {0: "Levitate", 1:"Arena Trap", H: "Sand Stream"},
+		abilities: { 0: "Levitate", H: "Sand Stream" },
 		otherFormes: ["Flygon-Mega"],
         formeOrder: ["Flygon", "Flygon-Mega"],
 	},
-	cacnea: {
-		inherit: true,
-		abilities: {0: "Sand Veil", 1:"Arena Trap", H: "Water Absorb"},
-	},
 	cacturne: {
 		inherit: true,
-		abilities: {0: "Sand Veil", 1:"Arena Trap", H: "Water Absorb"},
 		otherFormes: ["Cacturne-Mega", "Cacturne-Mega-Night"],
         formeOrder: ["Cacturne", "Cacturne-Mega", "Cacturne-Mega-Night"],
 	},
@@ -1251,10 +1246,6 @@ export const Pokedex: {[k: string]: ModdedSpeciesData;} = {
 		inherit: true,
 		abilities: { 0: "Dark Aura" },
 	},
-	shayminsky: {
-		inherit: true,
-		abilities: {0: "Natural Cure"},
-	},
 
 	// Gen 5 :
 	servine: {
@@ -1266,22 +1257,6 @@ export const Pokedex: {[k: string]: ModdedSpeciesData;} = {
 		otherFormes: ["Serperior-Galar"],
 		formeOrder: ["Serperior", "Serperior-Galar"],
 	},
-	serperiorgalar: {
-		num: 497,
-		name: "Serperior-Galar",
-		baseSpecies: "Serperior",
-		forme: "Galar",
-		types: ["Grass", "Dragon"],
-		genderRatio: {M: 0.875, F: 0.125},
-		baseStats: {hp: 80, atk: 60, def: 75, spa: 105, spd: 95, spe: 113},
-		abilities: {0: "Overgrow", H: "Unconcerned"},
-		heightm: 3.5,
-		weightkg: 60,
-		color: "Green",
-		prevo: "Servine",
-		evoLevel: 36,
-		eggGroups: ["Field", "Grass"],
-	},
 	pignite: {
 		inherit: true,
 		evos: ["Emboar", "Emboar-Galar"],
@@ -1291,22 +1266,6 @@ export const Pokedex: {[k: string]: ModdedSpeciesData;} = {
 		otherFormes: ["Emboar-Mega", "Emboar-Galar"],
 		formeOrder: ["Emboar", "Emboar-Mega", "Emboar-Galar"],
 	},
-	emboargalar: {
-		num: 500,
-		name: "Emboar-Galar",
-		baseSpecies: "Emboar",
-		forme: "Galar",
-		types: ["Fire", "Steel"],
-		genderRatio: {M: 0.875, F: 0.125},
-		baseStats: {hp: 110, atk: 123, def: 75, spa: 65, spd: 75, spe: 80},
-		abilities: {0: "Blaze", H: "Rock Head"},
-		heightm: 1.6,
-		weightkg: 400,
-		color: "Red",
-		prevo: "Pignite",
-		evoLevel: 36,
-		eggGroups: ["Field"],
-	},
 	dewott: {
 		inherit: true,
 		evos: ["Samurott", "Samurott-Hisui", "Samurott-Galar"],
@@ -1315,38 +1274,6 @@ export const Pokedex: {[k: string]: ModdedSpeciesData;} = {
 		inherit: true,
 		otherFormes: ["Samurott-Hisui", "Samurott-Galar"],
 		formeOrder: ["Samurott", "Samurott-Hisui", "Samurott-Galar"],
-	},
-	samurottgalar: {
-		num: 503,
-		name: "Samurott-Galar",
-		baseSpecies: "Samurott",
-		forme: "Galar",
-		types: ["Water", "Steel"],
-		genderRatio: {M: 0.875, F: 0.125},
-		baseStats: {hp: 85, atk: 118, def: 85, spa: 75, spd: 80, spe: 85},
-		abilities: {0: "Torrent", H: "Intimidate"},
-		heightm: 2,
-		weightkg: 94.6,
-		color: "Blue",
-		prevo: "Dewott",
-		evoLevel: 36,
-		eggGroups: ["Field"],
-	},
-	samurottmega: {
-		num: 503,
-		name: "Samurott-Mega",
-		baseSpecies: "Samurott",
-		forme: "Mega",
-		types: ["Water", "Fighting"],
-		genderRatio: { M: 0.875, F: 0.125 },
-		baseStats: { hp: 95, atk: 130, def: 95, spa: 138, spd: 70, spe: 100 },
-		abilities: { 0: "No Guard" },
-		heightm: 2,
-		weightkg: 94.6,
-		color: "Blue",
-		eggGroups: ["Field"],
-		requiredItem: "Samurottite",
-		gen: 9,
 	},
 	watchog: {
 		inherit: true,
@@ -1474,7 +1401,6 @@ export const Pokedex: {[k: string]: ModdedSpeciesData;} = {
 	sawk: {
 		inherit: true,
 		baseStats: {hp: 75, atk: 125, def: 75, spa: 30, spd: 75, spe: 105},
-		abilities: {0: "Sturdy", 1: "Strong Will", H: "Mold Breaker"},
 	},
 	leavanny: {
 		inherit: true,
@@ -1507,7 +1433,6 @@ export const Pokedex: {[k: string]: ModdedSpeciesData;} = {
 	maractus: {
 		inherit: true,
 		baseStats: { hp: 75, atk: 116, def: 67, spa: 106, spd: 67, spe: 60 },
-		abilities: { 0: "Water Absorb", 1: "Chlorophyll", H: "Thorny Trussle" },
 	},
 	crustle: {
 		inherit: true,
@@ -1791,7 +1716,7 @@ export const Pokedex: {[k: string]: ModdedSpeciesData;} = {
 	},
 	heliolisk: {
 		inherit: true,
-		abilities: {0: "Dry Skin", 1: "Sand Veil", H: "Solar Energy"},
+		abilities: { 0: "Dry Skin", 1: "Solar Energy", H: "Solar Power" },
 	},
 	tyrantrum: {
 		inherit: true,
@@ -1927,7 +1852,7 @@ export const Pokedex: {[k: string]: ModdedSpeciesData;} = {
 	},
 	crabominablemega: {
 		inherit: true,
-		abilities: { 0: "Strong Will" },
+		abilities: { 0: "Fur Coat" },
 	},
 	oricorio: {
 		inherit: true,
@@ -2008,14 +1933,6 @@ export const Pokedex: {[k: string]: ModdedSpeciesData;} = {
 	golisopodmega: {
 		inherit: true,
 		abilities: { 0: "Shell Armor" },
-	},
-	sandygast: {
-		inherit: true,
-		abilities: {0: "Water Compaction", 1: "Arena Trap", H: "Sand Veil"},
-	},
-	palossand: {
-		inherit: true,
-		abilities: {0: "Water Compaction", 1: "Arena Trap", H: "Sand Veil"},
 	},
 	silvally: {
 		inherit: true,
@@ -2296,7 +2213,6 @@ export const Pokedex: {[k: string]: ModdedSpeciesData;} = {
 	pincurchin: {
 		inherit: true,
 		baseStats: {hp: 68, atk: 81, def: 115, spa: 91, spd: 105, spe: 15},
-		abilities: { 0: "Lightning Rod", 1: "Thorny Trussle", H: "Electric Surge" },
 	},
 	frosmoth: {
 		inherit: true,
@@ -2360,7 +2276,7 @@ export const Pokedex: {[k: string]: ModdedSpeciesData;} = {
 	},
 	sneasler: {
 		inherit: true,
-		abilities: {0: "Pressure", 1: "Inner Focus", H: "Poison Touch"},
+		abilities: { 0: "Pressure", H: "Poison Touch" },
 	},
 	enamorus: {
 		inherit: true,
@@ -2581,11 +2497,6 @@ export const Pokedex: {[k: string]: ModdedSpeciesData;} = {
 		inherit: true,
 		baseStats: {hp: 88, atk: 70, def: 82, spa: 91, spd: 125, spe: 99},
 		abilities: {0: "Toxic Chain", 1: "Technician", H: "Levitate"},
-	},
-	ogerpon: {
-		inherit: true,
-		otherFormes: ["Ogerpon-Wellspring", "Ogerpon-Hearthflame", "Ogerpon-Cornerstone", "Ogerpon-Teal-Tera", "Ogerpon-Wellspring-Tera", "Ogerpon-Hearthflame-Tera", "Ogerpon-Cornerstone-Tera", "Ogerpon-Mega"],
-		formeOrder: ["Ogerpon", "Ogerpon-Wellspring", "Ogerpon-Hearthflame", "Ogerpon-Cornerstone", "Ogerpon-Teal-Tera", "Ogerpon-Wellspring-Tera", "Ogerpon-Hearthflame-Tera", "Ogerpon-Cornerstone-Tera", "Ogerpon-Mega"],
 	},
 	gougingfire: {
 		inherit: true,

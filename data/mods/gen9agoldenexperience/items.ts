@@ -331,10 +331,6 @@ export const Items: {[itemid: string]: ModdedItemData} = {
 		inherit: true,
 		isNonstandard: null,
 	},
-	ogerponite: {
-		inherit: true,
-		isNonstandard: null,
-	},
 	baskironite: {
 		inherit: true,
 		isNonstandard: null,

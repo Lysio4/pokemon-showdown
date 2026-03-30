@@ -364,10 +364,6 @@ export const Pokedex: {[k: string]: ModdedSpeciesData;} = {
 		inherit : true,
 		abilities: { 0: "Berserk", H: "Regenerator" },
 	},
-	dragonitemega: {
-		inherit: true,
-		abilities: { 0: "Multiscale" },
-	},
 	mewtwo: {
 		inherit: true,
 		abilities: { 0: "Pressure", H: "Berserk" },
@@ -393,8 +389,8 @@ export const Pokedex: {[k: string]: ModdedSpeciesData;} = {
 	},
 	furret: {
 		inherit: true,
-		baseStats: {hp: 85, atk: 86, def: 64, spa: 45, spd: 62, spe: 111},
-		abilities: {0: "Run Away", 1: "Keen Eye", H: "Fur Coat"},
+		baseStats: { hp: 85, atk: 86, def: 64, spa: 45, spd: 62, spe: 111 },
+		abilities: { 0: "Run Away", 1: "Keen Eye", H: "Fur Coat" },
 	},
 	noctowl: {
 		inherit: true,
@@ -1178,11 +1174,7 @@ export const Pokedex: {[k: string]: ModdedSpeciesData;} = {
 	},
 	dusknoir: {
 		inherit: true,
-		abilities: {0: "Pressure", H: "Soul Devourer"},
-	},
-	froslassmega: {
-		inherit: true,
-		abilities: { 0: "Snow Warning" },
+		abilities: { 0: "Pressure", H: "Soul Devourer" },
 	},
 	rotom: {
 		inherit: true,

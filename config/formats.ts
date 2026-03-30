@@ -277,7 +277,8 @@ export const Formats: import('../sim/dex-formats').FormatList = [
 		column: 2,
 	},
 	{
-		name: "[Gen 9] A Golden Experience Almost Any Ability",
+		// name: "[Gen 9] A Golden Experience Almost Any Ability",
+		name: "[Gen 9] A Golden Experience AAA",
 		desc: `Pok&eacute;mon have access to almost any ability.`,
 		mod: 'gen9agoldenexperience',
 		// searchShow: false,
@@ -295,7 +296,8 @@ export const Formats: import('../sim/dex-formats').FormatList = [
 		unbanlist: ['Light of Ruin'],
 	},
 	{
-		name: "[Gen 9] A Golden Experience Balanced Hackmons",
+		// name: "[Gen 9] A Golden Experience Balanced Hackmons",
+		name: "[Gen 9] A Golden Experience BH",
 		desc: `Anything directly hackable onto a set (EVs, IVs, forme, ability, item, and move) and is usable in local battles is allowed.`,
 		mod: 'gen9agoldenexperience',
 		// searchShow: false,

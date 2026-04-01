@@ -21698,6 +21698,7 @@ export const Pokedex: import('../sim/dex-species').SpeciesDataTable = {
 		color: "Yellow",
 		eggGroups: ["Amorphous"],
 		requiredItem: "Mimikyunite",
+		battleOnly: "Mimikyu-Busted",
 	},
 	dhelmisemega: {
 		num: 781,

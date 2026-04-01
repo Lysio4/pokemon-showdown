@@ -1009,7 +1009,6 @@ export const Scripts: ModdedBattleScriptsData = {
     this.modData('Learnsets', 'dewgong').learnset.flipturn = ['9L1'];
     this.modData('Learnsets', 'muk').learnset.recover = ['9L1'];
     this.modData('Learnsets', 'mukalola').learnset.recover = ['9L1'];
-    this.modData('Learnsets', 'mukalola').learnset.toxicspikes = ['9L1'];
     this.modData('Learnsets', 'gengar').learnset.jumpscare = ['9L1'];
     this.modData('Learnsets', 'gengar').learnset.icebeam = ['9L1'];
     this.modData('Learnsets', 'gengar').learnset.partingshot = ['9L1'];

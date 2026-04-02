@@ -880,14 +880,10 @@ export const Scripts: ModdedBattleScriptsData = {
 
     // sweetheart 
     this.modData('Learnsets', 'wigglytuff').learnset.sweetheart = ['9L1'];
-    this.modData('Learnsets', 'chansey').learnset.sweetheart = ['9L1'];
     this.modData('Learnsets', 'bellossom').learnset.sweetheart = ['9L1'];
-    this.modData('Learnsets', 'blissey').learnset.sweetheart = ['9L1'];
     this.modData('Learnsets', 'luvdisc').learnset.sweetheart = ['9L1'];
-    this.modData('Learnsets', 'audino').learnset.sweetheart = ['9L1'];
     this.modData('Learnsets', 'sylveon').learnset.sweetheart = ['9L1'];
     this.modData('Learnsets', 'florges').learnset.sweetheart = ['9L1'];
-    this.modData('Learnsets', 'primarina').learnset.sweetheart = ['9L1'];
     this.modData('Learnsets', 'mesprit').learnset.sweetheart = ['9L1'];
 
     // chakraterrain 
@@ -1732,6 +1728,7 @@ export const Scripts: ModdedBattleScriptsData = {
     this.modData('Learnsets', 'goodrahisui').learnset.steelroller = ['9L1'];
     this.modData('Learnsets', 'klefki').learnset.futuresight = ['9L1']; // ZA addition
     this.modData('Learnsets', 'klefki').learnset.magnetbomb = ['9L1']; // ZA addition
+    this.modData('Learnsets', 'klefki').learnset.moonblast = ['9L1'];
     this.modData('Learnsets', 'trevenant').learnset.highhorsepower = ['9L1'];
     this.modData('Learnsets', 'trevenant').learnset.shadowsneak = ['9L1'];
     this.modData('Learnsets', 'trevenant').learnset.healblock = ['9L1']; // ZA addition

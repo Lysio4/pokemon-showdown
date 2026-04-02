@@ -2275,6 +2275,10 @@ export const FormatsData: { [k: string]: SpeciesFormatsData; } = {
 		tier: "NU",
 		doublesTier: "DUU",
 	},
+	skuntankmega: {
+		tier: "RU",
+		doublesTier: "DUU",
+	},
 	bronzor: {
 		tier: "LC",
 	},
@@ -3558,6 +3562,10 @@ export const FormatsData: { [k: string]: SpeciesFormatsData; } = {
 	},
 	klefki: {
 		tier: "NU",
+		doublesTier: "DUU",
+	},
+	klefkimega: {
+		tier: "OU",
 		doublesTier: "DUU",
 	},
 	phantump: {
@@ -5084,6 +5092,10 @@ export const FormatsData: { [k: string]: SpeciesFormatsData; } = {
 	},
 	tinkaton: {
 		tier: "RU",
+		doublesTier: "DUU",
+	},
+	tinkaton: {
+		tier: "OU",
 		doublesTier: "DUU",
 	},
 	charcadet: {

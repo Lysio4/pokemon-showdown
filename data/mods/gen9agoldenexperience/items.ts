@@ -243,6 +243,10 @@ export const Items: {[itemid: string]: ModdedItemData} = {
 		inherit: true,
 		isNonstandard: null,
 	},
+	skuntankite: {
+		inherit: true,
+		isNonstandard: null,
+	},
 	yanmeganite: {
 		inherit: true,
 		isNonstandard: null,
@@ -276,6 +280,10 @@ export const Items: {[itemid: string]: ModdedItemData} = {
 		isNonstandard: null,
 	},
 	aurorusite: {
+		inherit: true,
+		isNonstandard: null,
+	},
+	klefkite: {
 		inherit: true,
 		isNonstandard: null,
 	},
@@ -328,6 +336,10 @@ export const Items: {[itemid: string]: ModdedItemData} = {
 		isNonstandard: null,
 	},
 	rabscanite: { 
+		inherit: true,
+		isNonstandard: null,
+	},
+	tinkatonite: { 
 		inherit: true,
 		isNonstandard: null,
 	},

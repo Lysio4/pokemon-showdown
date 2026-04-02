@@ -589,10 +589,6 @@ export const Pokedex: {[k: string]: ModdedSpeciesData;} = {
 		inherit: true,
 		abilities: {0: "Pressure", 1: "Inner Focus", H: "Mental Fortitude"},
 	},
-	tyranitar: {
-		inherit: true,
-		abilities: {0: "Sand Stream", H: "Guts"}
-	},
 	celebi: {
 		inherit: true,
 		abilities: {0: "Natural Cure", H: "Rewind"},
@@ -851,10 +847,6 @@ export const Pokedex: {[k: string]: ModdedSpeciesData;} = {
 		inherit: true,
 		abilities: {0: "Shadow Tag", 1: "Counter Strike", H: "Telepathy"},
 	},
-	glaliemega: {
-		inherit: true,
-		abilities: {0: "Explosive"},
-	},
 	walrein: {
 		inherit: true,
 		baseStats: {hp: 120, atk: 105, def: 100, spa: 60, spd: 100, spe: 45},
@@ -870,10 +862,6 @@ export const Pokedex: {[k: string]: ModdedSpeciesData;} = {
 	relicanth: {
 		inherit: true,
 		abilities: {0: "Hard Rock", 1: "Rock Head", H: "Sturdy"},
-	},
-	salamence: {
-		inherit: true,
-		abilities: {0: "Intimidate", H: "Sheer Force"},
 	},
 	metang: {
 		inherit: true,
@@ -1061,8 +1049,9 @@ export const Pokedex: {[k: string]: ModdedSpeciesData;} = {
 	},
 	skuntank: {
 		inherit: true,
-		baseStats: {hp: 123, atk: 93, def: 77, spa: 41, spd: 71, spe: 84},
-		abilities: {0: "Neutralizing Gas", 1: "Aftermath", H: "Keen Eye"},
+		baseStats: { hp: 113, atk: 93, def: 67, spa: 71, spd: 61, spe: 84 },
+		otherFormes: ["Skuntank-Mega"],
+		formeOrder: ["Skuntank", "Skuntank-Mega"],
 	},
 	chatot: {
 		inherit: true,
@@ -1108,12 +1097,10 @@ export const Pokedex: {[k: string]: ModdedSpeciesData;} = {
 	},
 	abomasnow: {
 		inherit: true,
-		baseStats: {hp: 90, atk: 102, def: 75, spa: 102, spd: 85, spe: 60},
 		abilities: { 0: "Snow Warning", H: "Mountain Walker" },
 	},
 	abomasnowmega: {
 		inherit: true,
-		baseStats: {hp: 90, atk: 142, def: 105, spa: 142, spd: 105, spe: 30},
 		abilities: { 0: "Eternal Winter" },
 	},
 	lickilicky: {
@@ -1425,6 +1412,7 @@ export const Pokedex: {[k: string]: ModdedSpeciesData;} = {
 	maractus: {
 		inherit: true,
 		baseStats: { hp: 75, atk: 116, def: 67, spa: 106, spd: 67, spe: 60 },
+		abilities: { 0: "Water Absorb", 1: "Chlorophyll", H: "Seed Sower" },
 	},
 	crustle: {
 		inherit: true,
@@ -1743,6 +1731,11 @@ export const Pokedex: {[k: string]: ModdedSpeciesData;} = {
 	goodrahisui: {
 		inherit: true,
 		abilities: {0: "Sap Sipper", 1: "Misty Surge", H: "Gooey"},
+	},
+	klefki: {
+		inherit: true,
+		otherFormes: ["Klefki-Mega"],
+		formeOrder: ["Klefki", "Klefki-Mega"],
 	},
 	trevenant: {
 		inherit: true,
@@ -2343,6 +2336,11 @@ export const Pokedex: {[k: string]: ModdedSpeciesData;} = {
 		abilities: {0: "Synchronize", 1: "Graviton", H: "Telepathy"},
 		otherFormes: ["Rabsca-Mega"],
 		formeOrder: ["Rabsca", "Rabsca-Mega"],
+	},
+	tinkaton: {
+		inherit: true,
+		otherFormes: ["Tinkaton-Mega"],
+		formeOrder: ["Tinkaton", "Tinkaton-Mega"],
 	},
 	wiglett: {
 		inherit: true,

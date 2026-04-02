@@ -21890,7 +21890,9 @@ export const Pokedex: import('../sim/dex-species').SpeciesDataTable = {
 	},
 	tinkatonmega: {
 		num: 959,
-		name: "Tinkaton",
+		name: "Tinkaton-Mega",
+		baseSpecies: "Tinkaton",
+		forme: "Mega",
 		types: ["Fairy", "Steel"],
 		gender: "F",
 		baseStats: { hp: 85, atk: 105, def: 97, spa: 70, spd: 145, spe: 104 },

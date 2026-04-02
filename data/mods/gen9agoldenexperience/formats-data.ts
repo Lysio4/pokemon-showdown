@@ -2474,7 +2474,7 @@ export const FormatsData: { [k: string]: SpeciesFormatsData; } = {
 		doublesTier: "DUber",
 	},
 	arceusbug: {
-		tier: "OU",
+		tier: "Uber",
 		doublesTier: "DUber",
 	},
 	arceusdark: {
@@ -3211,7 +3211,7 @@ export const FormatsData: { [k: string]: SpeciesFormatsData; } = {
 		doublesTier: "DUU",
 	},
 	reshiram: {
-		tier: "UUBL",
+		tier: "Uber",
 		doublesTier: "DUber",
 	},
 	zekrom: {
@@ -4573,11 +4573,11 @@ export const FormatsData: { [k: string]: SpeciesFormatsData; } = {
 		doublesTier: "DUU",
 	},
 	zacian: {
-		tier: "UU",
+		tier: "Uber",
 		doublesTier: "DUber",
 	},
 	zaciancrowned: {
-		tier: "OU",
+		tier: "Uber",
 		doublesTier: "DUber",
 	},
 	zamazenta: {

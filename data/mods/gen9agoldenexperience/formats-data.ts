@@ -5094,7 +5094,7 @@ export const FormatsData: { [k: string]: SpeciesFormatsData; } = {
 		tier: "RU",
 		doublesTier: "DUU",
 	},
-	tinkaton: {
+	tinkatonmega: {
 		tier: "OU",
 		doublesTier: "DUU",
 	},

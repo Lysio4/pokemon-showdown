@@ -1043,10 +1043,6 @@ export const Pokedex: {[k: string]: ModdedSpeciesData;} = {
 		inherit: true,
 		baseStats: {hp: 71, atk: 112, def: 64, spa: 64, spd: 59, spe: 112},
 	},
-	stunky: {
-		inherit: true,
-		abilities: {0: "Neutralizing Gas", 1: "Aftermath", H: "Keen Eye"},
-	},
 	skuntank: {
 		inherit: true,
 		baseStats: { hp: 113, atk: 93, def: 67, spa: 71, spd: 61, spe: 84 },
@@ -1124,20 +1120,6 @@ export const Pokedex: {[k: string]: ModdedSpeciesData;} = {
 		inherit: true,
 		otherFormes: ["Yanmega-Mega"],
 		formeOrder: ["Yanmega", "Yanmega-Mega"],
-	},
-	yanmegamega: {
-		num: 469,
-		name: "Yanmega-Mega",
-		baseSpecies: "Yanmega",
-		forme: "Mega",
-		types: ["Bug", "Dragon"],
-		baseStats: {hp: 86, atk: 100, def: 96, spa: 149, spd: 76, spe: 108},
-		abilities: {0: "Tinted Lens"},
-		heightm: 1.9,
-		weightkg: 51.5,
-		color: "Green",
-		eggGroups: ["Bug"],
-        requiredItem: "Yanmeganite",
 	},
 	leafeon: {
 		inherit: true,
@@ -1506,7 +1488,7 @@ export const Pokedex: {[k: string]: ModdedSpeciesData;} = {
 	klinklang: {
 		inherit: true,
 		types: ["Steel", "Electric"],
-		abilities: {0: "Plus", 1: "Minus", H: "Technician"},
+		abilities: { 0: "Plus", 1: "Minus", H: "Technician" },
 	},
 	eelektrossmega: {
 		inherit: true,

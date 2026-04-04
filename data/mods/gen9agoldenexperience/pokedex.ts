@@ -350,7 +350,7 @@ export const Pokedex: {[k: string]: ModdedSpeciesData;} = {
 	},
 	articuno: {
 		inherit : true,
-		abilities: { 0: "Pressure", H: "Mountain Walker" },
+		abilities: { 0: "Pressure", H: "Mountaineer" },
 	},
 	articunogalar: {
 		inherit : true,
@@ -1093,7 +1093,7 @@ export const Pokedex: {[k: string]: ModdedSpeciesData;} = {
 	},
 	abomasnow: {
 		inherit: true,
-		abilities: { 0: "Snow Warning", H: "Mountain Walker" },
+		abilities: { 0: "Snow Warning", H: "Mountaineer" },
 	},
 	abomasnowmega: {
 		inherit: true,
@@ -1762,7 +1762,7 @@ export const Pokedex: {[k: string]: ModdedSpeciesData;} = {
 	},
 	avalugghisui: {
 		inherit: true,
-		abilities: {0: "Mountain Walker", 1: "Sheer Force", H: "Sturdy"},
+		abilities: {0: "Mountaineer", 1: "Sheer Force", H: "Sturdy"},
 	},
 	noibat: {
 		inherit: true,
@@ -2129,7 +2129,7 @@ export const Pokedex: {[k: string]: ModdedSpeciesData;} = {
 	},
 	centiskorch: {
 		inherit: true,
-		abilities: { 0: "Flash Fire", 1: "Mountain Walker", H: "Flame Body" },
+		abilities: { 0: "Flash Fire", 1: "Mountaineer", H: "Flame Body" },
 		otherFormes: ["Centiskorch-Gmax", "Centiskorch-Mega-X", "Centiskorch-Mega-Y"],
 		formeOrder: ["Centiskorch", "Centiskorch-Gmax", "Centiskorch-Mega-X", "Centiskorch-Mega-Y"],
 	},
@@ -2213,7 +2213,7 @@ export const Pokedex: {[k: string]: ModdedSpeciesData;} = {
 	},
 	glastrier: {
 		inherit: true,
-		abilities: { 0: "Chilling Neigh", H: "Mountain Walker" },
+		abilities: { 0: "Chilling Neigh", H: "Mountaineer" },
 	},
 	spectrier: {
 		inherit: true,
@@ -2277,12 +2277,12 @@ export const Pokedex: {[k: string]: ModdedSpeciesData;} = {
 	},
 	arboliva: {
 		inherit: true,
-		baseStats: {hp: 88, atk: 59, def: 90, spa: 125, spd: 109, spe: 39},
+		baseStats: { hp: 88, atk: 69, def: 90, spa: 125, spd: 109, spe: 39 },
 	},
 	kilowattrel: {
 		inherit: true,
-		baseStats: {hp: 70, atk: 60, def: 60, spa: 115, spd: 60, spe: 125},
-		abilities: {0: "Wind Power", 1: "Volt Absorb", H: "No Guard"},
+		baseStats: { hp: 70, atk: 70, def: 60, spa: 115, spd: 60, spe: 125 },
+		abilities: { 0: "Wind Power", 1: "Volt Absorb", H: "No Guard" },
 	},
 	grafaiai: {
 		inherit: true,
@@ -2335,7 +2335,7 @@ export const Pokedex: {[k: string]: ModdedSpeciesData;} = {
 	},
 	cyclizar: {
 		inherit: true,
-		baseStats: {hp: 70, atk: 105, def: 65, spa: 95, spd: 85, spe: 121}, 
+		baseStats: { hp: 70, atk: 95, def: 75, spa: 85, spd: 75, spe: 121 }, 
 	},
 	glimmoramega: {
 		inherit: true,

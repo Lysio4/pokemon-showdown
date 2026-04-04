@@ -7681,25 +7681,6 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 		num: -86,
 		isNonstandard: "Custom",
 	},
-	mountainwalker: {
-		shortDesc: "This Pokemon is immune to all Rock-type attacks and Stealth Rock.",
-		onDamage(damage, target, source, effect) {
-			if (effect && effect.id === 'stealthrock') {
-				return false;
-			}
-		},
-		onTryHit(target, source, move) {
-			if (target !== source && move.type === 'Rock') {
-				this.add('-immune', target, '[from] ability: Mountain Walker');
-				return null;
-			}
-		},
-		flags: { breakable: 1 },
-		name: "Mountain Walker",
-		rating: 3,
-		num: -87,
-		isNonstandard: "Custom",
-	},
 	meltingheart: {
 		onDamagingHit(damage, target, source, move) {
 			this.field.setWeather('sunnyday');
@@ -7714,7 +7695,7 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 		flags: {},
 		name: "Melting Heart",
 		rating: 1,
-		num: -88,
+		num: -87,
 		isNonstandard: "Custom",
 	},
 	magiceye: {
@@ -7726,7 +7707,7 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 		name: "Magic Eye",
 		shortDesc: "On switch-in, set Magic Room for 5 turns.",
 		rating: 4,
-		num: -89,
+		num: -88,
 		isNonstandard: "Custom",
 	},
 	mightyhorn: {
@@ -7748,7 +7729,7 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 		flags: {},
 		name: "Mighty Horn",
 		rating: 3,
-		num: -90,
+		num: -89,
 		desc: "This Pokemon's drill-based attacks have their power and accuracy multiplied by 1.3.",
 		shortDesc: "This Pokemon's drill-based attacks have 1.3x power and 1.3x accuracy.",
 		isNonstandard: "Custom",
@@ -7776,7 +7757,7 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 		},
 		name: "Nightmare Heart",
 		rating: 3,
-		num: -91,
+		num: -90,
 		isNonstandard: "Custom",
 	},
 	petrify: {
@@ -7797,7 +7778,7 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 		flags: {},
 		name: "Petrify",
 		rating: 4,
-		num: -92,
+		num: -91,
 		shortDesc: "On switch-in, the opposing targets' type is changed to Rock.",
 		isNonstandard: "Custom",
 	},

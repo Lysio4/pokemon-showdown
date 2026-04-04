@@ -265,7 +265,7 @@ export const FormatsData: { [k: string]: SpeciesFormatsData; } = {
 		tier: "NFE",
 	},
 	nidoking: {
-		tier: "NUBL",
+		tier: "RU",
 		doublesTier: "DUU",
 	},
 	cleffa: {
@@ -536,11 +536,11 @@ export const FormatsData: { [k: string]: SpeciesFormatsData; } = {
 		doublesTier: "DUU",
 	},
 	slowbrogalar: {
-		tier: "NU",
+		tier: "RU",
 		doublesTier: "DUU",
 	},
 	slowbrogalarmega: {
-		tier: "NU",
+		tier: "RU",
 		doublesTier: "DUU",
 	},
 	slowking: {
@@ -1719,7 +1719,7 @@ export const FormatsData: { [k: string]: SpeciesFormatsData; } = {
 		tier: "NFE",
 	},
 	glowtaire: {
-		tier: "NU",
+		tier: "RU",
 		doublesTier: "DUU",
 	},
 	illumise: {
@@ -2043,7 +2043,7 @@ export const FormatsData: { [k: string]: SpeciesFormatsData; } = {
 		doublesTier: "DUU",
 	},
 	registeel: {
-		tier: "NU",
+		tier: "RU",
 		doublesTier: "DUU",
 	},
 	latias: {
@@ -2099,7 +2099,7 @@ export const FormatsData: { [k: string]: SpeciesFormatsData; } = {
 		doublesTier: "DUber",
 	},
 	deoxysdefense: {
-		tier: "NU",
+		tier: "NUBL",
 		doublesTier: "DUU",
 	},
 	deoxysspeed: {
@@ -3069,7 +3069,7 @@ export const FormatsData: { [k: string]: SpeciesFormatsData; } = {
 		tier: "NFE",
 	},
 	chandelure: {
-		tier: "NU",
+		tier: "NUBL",
 		doublesTier: "DUU",
 	},
 	chandeluremega: {
@@ -3451,7 +3451,7 @@ export const FormatsData: { [k: string]: SpeciesFormatsData; } = {
 		tier: "NFE",
 	},
 	slurpuff: {
-		tier: "NUBL",
+		tier: "NU",
 		doublesTier: "DUU",
 	},
 	inkay: {
@@ -4684,7 +4684,7 @@ export const FormatsData: { [k: string]: SpeciesFormatsData; } = {
 		doublesTier: "DOU",
 	},
 	basculegionf: {
-		tier: "NU",
+		tier: "RU",
 		doublesTier: "DUU",
 	},
 	sneasler: {

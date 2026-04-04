@@ -822,7 +822,7 @@ export const Abilities: { [abilityid: string]: ModdedAbilityData; } = {
 		inherit: true,
 		isNonstandard: null,
 	},
-	mountainwalker: {
+	mountaineer: {
 		inherit: true,
 		isNonstandard: null,
 	},

@@ -263,25 +263,10 @@ export const Moves: { [k: string]: ModdedMoveData; } = {
 	dragonpulse: {
 		inherit: true,
 		basePower: 90,
-		secondary: {
-			chance: 10,
-			boosts: {
-				spd: -1,
-			},
-		},
-		desc: "This move has 10% chance to lower the opponent's SpD.",
-		shortDesc: "10% chance to lower opponent's SpD.",
 	},
 	dragonclaw: {
 		inherit: true,
-		basePower: 95,
-		secondary: {
-			chance: 10,
-			boosts: {
-				def: -1,
-			},
-		},
-		shortDesc: "Has a 10% to lower the target's Def.",
+		basePower: 90,
 	},
 	sonicboom: {
 		inherit: true,

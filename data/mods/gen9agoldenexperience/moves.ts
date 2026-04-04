@@ -543,7 +543,7 @@ export const Moves: { [k: string]: ModdedMoveData; } = {
 		ohko: false,
 		desc: "Sets Snow. User faints after use.",
 		shortDesc: "Sets Snow. User faints after use.",
-		weather: 'snow',
+		weather: 'snowscape',
 		secondary: undefined, // no inherit
 		selfdestruct: "always",
 	},
@@ -1083,13 +1083,13 @@ export const Moves: { [k: string]: ModdedMoveData; } = {
 	auroraveil: {
 		inherit: true,
 		onTry() {
-			return this.field.isWeather(['hail', 'snow', 'eternalwinter']);
+			return this.field.isWeather(['hail', 'snowscape', 'eternalwinter']);
 		},
 	},
 	blizzard: {
 		inherit: true,
 		onModifyMove(move) {
-			if (this.field.isWeather(['hail', 'snow', 'eternalwinter'])) move.accuracy = true;
+			if (this.field.isWeather(['hail', 'snowscape', 'eternalwinter'])) move.accuracy = true;
 		},
 	},
 	moonlight: {
@@ -1105,7 +1105,7 @@ export const Moves: { [k: string]: ModdedMoveData; } = {
 			case 'primordialsea':
 			case 'sandstorm':
 			case 'hail':
-			case 'snow':
+			case 'snowscape':
 			case 'eternalwinter':
 				factor = 0.25;
 				break;
@@ -1131,7 +1131,7 @@ export const Moves: { [k: string]: ModdedMoveData; } = {
 			case 'primordialsea':
 			case 'sandstorm':
 			case 'hail':
-			case 'snow':
+			case 'snowscape':
 			case 'eternalwinter':
 				factor = 0.25;
 				break;
@@ -1147,7 +1147,7 @@ export const Moves: { [k: string]: ModdedMoveData; } = {
 	solarbeam: {
 		inherit: true,
 		onBasePower(basePower, pokemon, target) {
-			const weakWeathers = ['raindance', 'primordialsea', 'sandstorm', 'hail', 'snow', 'eternalwinter'];
+			const weakWeathers = ['raindance', 'primordialsea', 'sandstorm', 'hail', 'snowscape', 'eternalwinter'];
 			if (weakWeathers.includes(pokemon.effectiveWeather())) {
 				this.debug('weakened by weather');
 				return this.chainModify(0.5);
@@ -1157,7 +1157,7 @@ export const Moves: { [k: string]: ModdedMoveData; } = {
 	solarblade: {
 		inherit: true,
 		onBasePower(basePower, pokemon, target) {
-			const weakWeathers = ['raindance', 'primordialsea', 'sandstorm', 'hail', 'snow', 'eternalwinter'];
+			const weakWeathers = ['raindance', 'primordialsea', 'sandstorm', 'hail', 'snowscape', 'eternalwinter'];
 			if (weakWeathers.includes(pokemon.effectiveWeather())) {
 				this.debug('weakened by weather');
 				return this.chainModify(0.5);
@@ -1177,7 +1177,7 @@ export const Moves: { [k: string]: ModdedMoveData; } = {
 			case 'primordialsea':
 			case 'sandstorm':
 			case 'hail':
-			case 'snow':
+			case 'snowscape':
 			case 'eternalwinter':
 				factor = 0.25;
 				break;
@@ -1206,7 +1206,7 @@ export const Moves: { [k: string]: ModdedMoveData; } = {
 				move.type = 'Rock';
 				break;
 			case 'hail':
-			case 'snow':
+			case 'snowscape':
 			case 'eternalwinter':
 				move.type = 'Ice';
 				break;
@@ -1226,7 +1226,7 @@ export const Moves: { [k: string]: ModdedMoveData; } = {
 				move.basePower *= 2;
 				break;
 			case 'hail':
-			case 'snow':
+			case 'snowscape':
 			case 'eternalwinter':
 				move.basePower *= 2;
 				break;

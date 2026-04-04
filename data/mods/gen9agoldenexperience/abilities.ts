@@ -214,7 +214,7 @@ export const Abilities: { [abilityid: string]: ModdedAbilityData; } = {
 	icebody: {
 		inherit: true,
 		onWeather(target, source, effect) {
-			if (effect.id === 'hail' || effect.id === 'snow' || effect.id === 'eternalwinter') {
+			if (effect.id === 'hail' || effect.id === 'snowscape' || effect.id === 'eternalwinter') {
 				this.heal(target.baseMaxhp / 16);
 			}
 		},
@@ -222,7 +222,7 @@ export const Abilities: { [abilityid: string]: ModdedAbilityData; } = {
 	slushrush: {
 		inherit: true,
 		onModifySpe(spe, pokemon) {
-			if (this.field.isWeather(['hail', 'snow', 'eternalwinter'])) {
+			if (this.field.isWeather(['hail', 'snowscape', 'eternalwinter'])) {
 				return this.chainModify(2);
 			}
 		},
@@ -230,7 +230,7 @@ export const Abilities: { [abilityid: string]: ModdedAbilityData; } = {
 	iceface: {
 		inherit: true,
 		onStart(pokemon) {
-			if (this.field.isWeather(['hail', 'snow', 'eternalwinter']) && pokemon.species.id === 'eiscuenoice') {
+			if (this.field.isWeather(['hail', 'snowscape', 'eternalwinter']) && pokemon.species.id === 'eiscuenoice') {
 				this.add('-activate', pokemon, 'ability: Ice Face');
 				this.effectState.busted = false;
 				pokemon.formeChange('Eiscue', this.effect, true);
@@ -240,7 +240,7 @@ export const Abilities: { [abilityid: string]: ModdedAbilityData; } = {
 			// snow/hail resuming because Cloud Nine/Air Lock ended does not trigger Ice Face
 			if ((sourceEffect as Ability)?.suppressWeather) return;
 			if (!pokemon.hp) return;
-			if (this.field.isWeather(['hail', 'snow', 'eternalwinter']) && pokemon.species.id === 'eiscuenoice') {
+			if (this.field.isWeather(['hail', 'snowscape', 'eternalwinter']) && pokemon.species.id === 'eiscuenoice') {
 				this.add('-activate', pokemon, 'ability: Ice Face');
 				this.effectState.busted = false;
 				pokemon.formeChange('Eiscue', this.effect, true);

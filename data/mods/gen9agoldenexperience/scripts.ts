@@ -1294,6 +1294,7 @@ export const Scripts: ModdedBattleScriptsData = {
     this.modData('Learnsets', 'lopunny').learnset.drainingkiss = ['9L1']; // ZA addition
     this.modData('Learnsets', 'lopunny').learnset.cottonguard = ['9L1']; // ZA addition
     this.modData('Learnsets', 'lopunny').learnset.dynamicpunch = ['9L1']; // ZA addition
+    this.modData('Learnsets', 'lopunny').learnset.swordsdance = ['9L1']; // ZA addition
     this.modData('Learnsets', 'mismagius').learnset.cursedspeech = ['9L1'];
     this.modData('Learnsets', 'honchkrow').learnset.honeclaws = ['9L1'];
     this.modData('Learnsets', 'honchkrow').learnset.throatchop = ['9L1'];

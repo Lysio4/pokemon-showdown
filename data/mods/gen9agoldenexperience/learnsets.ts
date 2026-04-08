@@ -1046,13 +1046,11 @@ export const Learnsets: { [speciesid: string]: LearnsetData; } = {
 			liquidation: ["9M"],
 			metalclaw: ["9M"],
 			mudshot: ["9M"],
-			nastyplot: ["9M"],
 			outrage: ["9M"],
 			poisonjab: ["9M"],
 			powergem: ["9M"],
 			protect: ["9M"],
 			raindance: ["9M"],
-			razorwind: ["9M"],
 			rest: ["9M"],
 			return: ["9M"],
 			roar: ["9L1"],
@@ -1082,7 +1080,6 @@ export const Learnsets: { [speciesid: string]: LearnsetData; } = {
 			temperflare: ["9M"],
 			thunderfang: ["9M"],
 			twister: ["9E"],
-			vacuumwave: ["9M"],
 		},
 	},
 	carnivine: {
@@ -1674,7 +1671,6 @@ export const Learnsets: { [speciesid: string]: LearnsetData; } = {
 	excadrill: {
 		learnset: {
 			aerialace: ["9M"],
-			agility: ["9M"],
 			bodyslam: ["9M"],
 			brickbreak: ["9M"],
 			bulldoze: ["9M"],

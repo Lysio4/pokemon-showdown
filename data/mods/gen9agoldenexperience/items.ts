@@ -563,6 +563,7 @@ export const Items: {[itemid: string]: ModdedItemData} = {
 			}
 		},
 		desc: "If the holder is Flapple: 1.5x Speed.",
+		shortDesc: "If the holder is Flapple: 1.5x Speed.",
 	},
 	sweetapple: {
 		inherit: true,
@@ -574,6 +575,7 @@ export const Items: {[itemid: string]: ModdedItemData} = {
 			}
 		},
 		desc: "If the holder is Appletun: Heals 12.5% HP every turn.",
+		shortDesc: "If the holder is Appletun: Heals 12.5% HP every turn.",
 	},
 
 	// Silvally Memories section

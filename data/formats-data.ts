@@ -6795,14 +6795,6 @@ export const FormatsData: import('../sim/dex-species').SpeciesFormatsDataTable =
 		isNonstandard: "Custom",
 		tier: "Illegal",
 	},
-	isaapple: {
-		isNonstandard: "Custom",
-		tier: "Illegal",
-	},
-	badapple: {
-		isNonstandard: "Custom",
-		tier: "Illegal",
-	},
 	cookaos: {
 		isNonstandard: "Custom",
 		tier: "Illegal",

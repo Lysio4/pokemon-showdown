@@ -22746,32 +22746,8 @@ export const Pokedex: import('../sim/dex-species').SpeciesDataTable = {
 		prevo: "Xatu",
 		eggGroups: ["Flying"],
 	},
-	isaapple: {
-		num: -67,
-		name: "Isaapple",
-		types: ["Grass", "Dragon"],
-		baseStats: {hp: 90, atk: 130, def: 80, spa: 100, spd: 60, spe: 80},
-		abilities: {0: "Ripen", 1: "Newton's Law", H: "Hustle"},
-		heightm: 0.5,
-		weightkg: 1,
-		color: "Green",
-		prevo: "Flapple",
-		eggGroups: ["Grass", "Dragon"],
-	},
-	badapple: {
-		num: -68,
-		name: "Badapple",
-		types: ["Grass", "Dragon"],
-		baseStats: {hp: 130, atk: 85, def: 90, spa: 115, spd: 90, spe: 30},
-		abilities: {0: "Ripen", 1: "Corrosion", H: "Thick Fat"},
-		heightm: 0.5,
-		weightkg: 29,
-		color: "Green",
-		prevo: "Appletun",
-		eggGroups: ["Grass", "Dragon"],
-	},
 	cookaos: {
-		num: -69,
+		num: -67,
 		name: "Cookaos",
 		types: ["Dark", "Fairy"],
 		baseStats: {hp: 80, atk: 70, def: 60, spa: 40, spd: 50, spe: 50},
@@ -22783,7 +22759,7 @@ export const Pokedex: import('../sim/dex-species').SpeciesDataTable = {
 		eggGroups: ["Human-Like"],
 	},
 	catastrochef: {
-		num: -70,
+		num: -68,
 		name: "Catastrochef",
 		types: ["Dark", "Fairy"],
 		baseStats: {hp: 90, atk: 110, def: 80, spa: 40, spd: 80, spe: 100},
@@ -22796,7 +22772,7 @@ export const Pokedex: import('../sim/dex-species').SpeciesDataTable = {
 		eggGroups: ["Human-Like"],
 	},
 	goldiorno: {
-		num: -71,
+		num: -69,
 		name: "Goldiorno",
 		types: ["Fighting", "Fairy"],
 		baseStats: {hp: 80, atk: 110, def: 80, spa: 85, spd: 80, spe: 115},
@@ -22807,7 +22783,7 @@ export const Pokedex: import('../sim/dex-species').SpeciesDataTable = {
 		eggGroups: ["Human-Like"],
 	},
 	slendawful: {
-		num: -72,
+		num: -70,
 		name: "Slendawful",
 		types: ["Ghost", "Dark"],
 		baseStats: {hp: 70, atk: 130, def: 80, spa: 120, spd: 80, spe: 120}, 
@@ -22818,7 +22794,7 @@ export const Pokedex: import('../sim/dex-species').SpeciesDataTable = {
 		eggGroups: ["Human-Like"],
 	},
 	berkslash: {
-		num: -73,
+		num: -71,
 		name: "Berkslash",
 		types: ["Steel", "Poison"],
 		baseStats: {hp: 100, atk: 134, def: 98, spa: 65, spd: 68, spe: 55},
@@ -22828,7 +22804,7 @@ export const Pokedex: import('../sim/dex-species').SpeciesDataTable = {
 		eggGroups: ["Amorphous"],
 	},
 	nopainnogain: {
-		num: -74,
+		num: -72,
 		name: "Nopainnogain",
 		types: ["Fighting", "Psychic"],
 		baseStats: {hp: 130, atk: 75, def: 70, spa: 80, spd: 75, spe: 85},
@@ -22838,7 +22814,7 @@ export const Pokedex: import('../sim/dex-species').SpeciesDataTable = {
 		eggGroups: ["Human-Like"],
 	},
 	bubblure: {
-		num: -75,
+		num: -73,
 		name: "Bubblure",
 		types: ["Water", "Dark"],
 		baseStats: {hp: 50, atk: 65, def: 40, spa: 25, spd: 40, spe: 40},
@@ -22850,7 +22826,7 @@ export const Pokedex: import('../sim/dex-species').SpeciesDataTable = {
 		eggGroups: ["Water 1", "Dragon"],
 	},
 	abysshark: {
-		num: -76,
+		num: -74,
 		name: "Abysshark",
 		types: ["Water", "Dark"],
 		baseStats: {hp: 75, atk: 90, def: 50, spa: 50, spd: 50, spe: 85},
@@ -22864,7 +22840,7 @@ export const Pokedex: import('../sim/dex-species').SpeciesDataTable = {
 		eggGroups: ["Water 1", "Dragon"],
 	},
 	cymadalea: {
-		num: -77,
+		num: -75,
 		name: "Cymadalea",
 		types: ["Water", "Dragon"],
 		baseStats: {hp: 102, atk: 84, def: 89, spa: 130, spd: 118, spe: 77},
@@ -22877,7 +22853,7 @@ export const Pokedex: import('../sim/dex-species').SpeciesDataTable = {
 		eggGroups: ["Water 1", "Dragon"],
 	},
 	tapuwala: {
-        num: -78,
+        num: -76,
         name: "Tapu Wala",
         types: ["Fighting", "Fairy"],
         baseStats: {hp: 70, atk: 130, def: 85, spa: 95, spd: 75, spe: 115},
@@ -22887,7 +22863,7 @@ export const Pokedex: import('../sim/dex-species').SpeciesDataTable = {
         eggGroups: ["Undiscovered"],
     },
     snoxin: {
-		num: -79,
+		num: -77,
 		name: "Snoxin",
 		types: ["Ice", "Poison"],
 		gender: "N",
@@ -22899,7 +22875,7 @@ export const Pokedex: import('../sim/dex-species').SpeciesDataTable = {
 		eggGroups: ["Undiscovered"],
 	},
 	florhoper: {
-		num: -80,
+		num: -78,
 		name: "Florhoper",
 		types: ["Ground", "Fairy"],
 		gender: "N",
@@ -22910,7 +22886,7 @@ export const Pokedex: import('../sim/dex-species').SpeciesDataTable = {
 		eggGroups: ["Undiscovered"],
 	},
 	magroach: {
-		num: -81,
+		num: -79,
 		name: "Magroach",
 		types: ["Bug"],
 		baseStats: {hp: 90, atk: 110, def: 85, spa: 85, spd: 110, spe: 90},
@@ -22921,7 +22897,7 @@ export const Pokedex: import('../sim/dex-species').SpeciesDataTable = {
 		eggGroups: ["Field"], 
 	},
 	parafgufa: {
-        num: -82,
+        num: -80,
         name: "Parafgufa",
         types: ["Water", "Grass"],
 		gender: "N",
@@ -22932,7 +22908,7 @@ export const Pokedex: import('../sim/dex-species').SpeciesDataTable = {
 		eggGroups: ["Undiscovered"],
     },
 	infarmatem: {
-		num: -83,
+		num: -81,
 		name: "Infarmatem",
 		types: ["Rock", "Fairy"],
 		gender: "N",
@@ -22945,7 +22921,7 @@ export const Pokedex: import('../sim/dex-species').SpeciesDataTable = {
 		formeOrder: ["Infarmatem", "Infarmatem-Mega"],
 	},
 	infarmatemmega: {
-		num: -83,
+		num: -81,
 		name: "Infarmatem-Mega",
 		baseSpecies: "Infarmatem",
 		forme: "Mega",
@@ -22959,7 +22935,7 @@ export const Pokedex: import('../sim/dex-species').SpeciesDataTable = {
 		requiredItem: "Infarmatemite",
 	},
 	grimillia: {
-		num: -84,
+		num: -82,
 		name: "Grimillia",
 		types: ["Steel", "Dark"],
 		gender: "N",
@@ -22970,7 +22946,7 @@ export const Pokedex: import('../sim/dex-species').SpeciesDataTable = {
 		eggGroups: ["Undiscovered"],
 	},
 	adnocagem: {
-		num: -85,
+		num: -83,
 		name: "Adnocagem",
 		types: ["Poison", "Dark"],
 		baseStats: {hp: 95, atk: 102, def: 109, spa: 55, spd: 112, spe: 60},
@@ -22983,7 +22959,7 @@ export const Pokedex: import('../sim/dex-species').SpeciesDataTable = {
 		eggGroups: ["Field", "Dragon"],
 	},
 	truelewoodo: {
-		num: -86,
+		num: -84,
 		name: "Truelewoodo",
 		types: ["Rock", "Grass"],
 		baseStats: {hp: 110, atk: 130, def: 125, spa: 20, spd: 85, spe: 30},
@@ -22996,7 +22972,7 @@ export const Pokedex: import('../sim/dex-species').SpeciesDataTable = {
 		eggGroups: ["Mineral"],
 	},
 	mediyumi: {
-		num: -87,
+		num: -85,
 		name: "Mediyumi",
 		types: ["Ice", "Psychic"],
 		baseStats: {hp: 90, atk: 125, def: 70, spa: 125, spd: 70, spe: 60},
@@ -23009,7 +22985,7 @@ export const Pokedex: import('../sim/dex-species').SpeciesDataTable = {
 		eggGroups: ["Human-Like"],
 	},
 	spyarn: {
-		num: -88,
+		num: -86,
 		name: "Spyarn",
 		types: ["Bug", "Steel"],
 		baseStats: {hp: 90, atk: 99, def: 112, spa: 62, spd: 106, spe: 35},
@@ -23020,7 +22996,7 @@ export const Pokedex: import('../sim/dex-species').SpeciesDataTable = {
 		eggGroups: ["Bug"],
 	},
 	croaxitoad: {
-		num: -89,
+		num: -87,
 		name: "Croaxitoad",
 		types: ["Poison", "Fighting"],
 		baseStats: { hp: 83, atk: 116, def: 65, spa: 106, spd: 65, spe: 105 },
@@ -23033,7 +23009,7 @@ export const Pokedex: import('../sim/dex-species').SpeciesDataTable = {
 		eggGroups: ["Human-Like"],
 	},
 	corpsetrap: {
-		num: -90,
+		num: -88,
 		name: "Corpsetrap",
 		types: ["Ghost", "Steel"],
 		baseStats: {hp: 80, atk: 115, def: 90, spa: 95, spd: 65, spe: 85},
@@ -23043,7 +23019,7 @@ export const Pokedex: import('../sim/dex-species').SpeciesDataTable = {
 		eggGroups: ["Undiscovered"],
 	},
 	gevauyena: {
-		num: -91,
+		num: -89,
 		name: "Gevauyena",
 		types: ["Dark"],
 		baseStats: {hp: 85, atk: 130, def: 70, spa: 40, spd: 60, spe: 120},
@@ -23054,7 +23030,7 @@ export const Pokedex: import('../sim/dex-species').SpeciesDataTable = {
 		eggGroups: ["Field"],
 	},
 	arsief: {
-		num: -92,
+		num: -90,
 		name: "Arsief",
 		types: ["Dark"],
 		baseStats: {hp: 75, atk: 68, def: 68, spa: 102, spd: 92, spe: 115},
@@ -23065,7 +23041,7 @@ export const Pokedex: import('../sim/dex-species').SpeciesDataTable = {
 		eggGroups: ["Field"],
 	},
 	draggoyle: {
-		num: -93,
+		num: -91,
 		name: "Draggoyle",
 		baseForme: "Passive",
 		types: ["Dragon"],
@@ -23082,7 +23058,7 @@ export const Pokedex: import('../sim/dex-species').SpeciesDataTable = {
 		formeOrder: ["Draggoyle", "Draggoyle-Active"],
 	},
 	draggoyleactive: {
-		num: -93,
+		num: -91,
 		name: "Draggoyle-Active",
 		baseSpecies: "Draggoyle",
 		forme: "Active",
@@ -23096,7 +23072,7 @@ export const Pokedex: import('../sim/dex-species').SpeciesDataTable = {
 		battleOnly: "Draggoyle",
 	},
 	remobault: {
-		num: -94,
+		num: -92,
 		name: "Remobault",
 		types: ["Water", "Fire"],
 		baseStats: {hp: 87, atk: 81, def: 82, spa: 35, spd: 78, spe: 122},
@@ -23110,7 +23086,7 @@ export const Pokedex: import('../sim/dex-species').SpeciesDataTable = {
 		eggGroups: ["Water 1", "Water 2"],
 	},
 	seatsya: {
-		num: -95,
+		num: -93,
 		name: "Seatsya",
 		types: ["Water", "Steel"],
 		baseStats: { hp: 90, atk: 127, def: 80, spa: 45, spd: 80, spe: 98 },
@@ -23123,7 +23099,7 @@ export const Pokedex: import('../sim/dex-species').SpeciesDataTable = {
 		eggGroups: ["Water 2"],
 	},
 	whitewhale: {
-		num: -96,
+		num: -94,
 		name: "White Whale",
 		types: ["Water", "Dark"],
 		gender: "N",
@@ -23136,7 +23112,7 @@ export const Pokedex: import('../sim/dex-species').SpeciesDataTable = {
 		eggGroups: ["Undiscovered"],
 	},
 	irondrill: {
-		num: -97,
+		num: -95,
 		name: "Iron Drill",
 		types: ["Steel", "Fighting"],
 		gender: "N",
@@ -23149,7 +23125,7 @@ export const Pokedex: import('../sim/dex-species').SpeciesDataTable = {
 		eggGroups: ["Undiscovered"],
 	},
 	purerainbow: {
-		num: -98,
+		num: -96,
 		name: "Pure Rainbow",
 		types: ["Fire", "Fairy"],
 		gender: "N",
@@ -23162,7 +23138,7 @@ export const Pokedex: import('../sim/dex-species').SpeciesDataTable = {
 		eggGroups: ["Undiscovered"],
 	},
 	irondart: {
-		num: -99,
+		num: -97,
 		name: "Iron Dart",
 		types: ["Water", "Psychic"],
 		gender: "N",

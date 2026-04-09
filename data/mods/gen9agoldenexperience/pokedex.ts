@@ -14,7 +14,6 @@ export const Pokedex: {[k: string]: ModdedSpeciesData;} = {
 	},
 	butterfree: {
 		inherit: true,
-		baseStats: {hp: 60, atk: 40, def: 50, spa: 90, spd: 80, spe: 75},
 		abilities: {0: "Compound Eyes", H: "Magic Guard"},
 		otherFormes: ["Butterfree-Gmax", "Butterfree-Mega"],
 		formeOrder: ["Butterfree", "Butterfree-Gmax", "Butterfree-Mega"],
@@ -84,20 +83,6 @@ export const Pokedex: {[k: string]: ModdedSpeciesData;} = {
 		abilities: {0: "Sheer Force", 1: "Competitive", H: "Pixilate"},
 		otherFormes: ["Wigglytuff-Mega"],
 		formeOrder: ["Wigglytuff", "Wigglytuff-Mega"],
-	},
-	wigglytuffmega: {
-		num: 40,
-		name: "Wigglytuff-Mega",
-		baseSpecies: "Wigglytuff",
-		forme: "Mega",
-		types: ["Normal", "Fairy"],
-		baseStats: {hp: 140, atk: 93, def: 50, spa: 120, spd: 90, spe: 90},
-		abilities: {0: "Fur Coat"},
-		heightm: 1,
-		weightkg: 24,
-		color: "Pink",
-		eggGroups: ["Fairy"],
-		requiredItem: "Wigglytite",
 	},
 	oddish: {
 		inherit: true,

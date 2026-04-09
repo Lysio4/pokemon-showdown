@@ -104831,20 +104831,6 @@ export const Learnsets: import('../sim/dex-species').LearnsetDataTable = {
 			magicpowder: ["9L1"],
 		},
 	},
-	isaapple: {
-		learnset: {
-			earthquake: ["9L1"],
-			closecombat: ["9L1"],
-			skydrop: ["9L1"],
-			gravity: ["9L1"],
-			dragonclaw: ["9L1"],
-		},
-	},
-	badapple: {
-		learnset: {
-			toxic: ["9L1"],
-		},
-	},
 	cookaos: {
 		learnset: {
 			acrobatics: ["9M"],

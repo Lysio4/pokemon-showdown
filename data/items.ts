@@ -6192,6 +6192,7 @@ export const Items: import('../sim/dex-items').ItemDataTable = {
 		},
 		num: 1116,
 		gen: 8,
+		itemUser: ["Appletun"], //for AGE
 	},
 	syrupyapple: {
 		name: "Syrupy Apple",
@@ -6257,6 +6258,7 @@ export const Items: import('../sim/dex-items').ItemDataTable = {
 		},
 		num: 1117,
 		gen: 8,
+		itemUser: ["Flapple"], //for AGE
 	},
 	tatsugirinite: {
 		name: "Tatsugirinite",

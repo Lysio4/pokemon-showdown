@@ -268,10 +268,6 @@ export const Abilities: { [abilityid: string]: ModdedAbilityData; } = {
 		inherit: true,
 		isNonstandard: null,
 	},
-	newtonslaw: {
-		inherit: true,
-		isNonstandard: null,
-	},
 	hyperthermia: {
 		inherit: true,
 		isNonstandard: null,

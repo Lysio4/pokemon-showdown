@@ -554,6 +554,27 @@ export const Items: {[itemid: string]: ModdedItemData} = {
 		inherit: true,
 		isNonstandard: null,
 	},
+	tartapple: {
+		inherit: true,
+		onModifySpePriority: 1,
+		onModifySpe(spe, pokemon) {
+			if (pokemon.baseSpecies.baseSpecies === 'Flapple') {
+				return this.chainModify(1.5);
+			}
+		},
+		desc: "If the holder is Flapple: 1.5x Speed.",
+	},
+	sweetapple: {
+		inherit: true,
+		onResidualOrder: 5,
+		onResidualSubOrder: 5,
+		onResidual(pokemon) {
+			if (pokemon.baseSpecies.name === 'Appletun') {
+				this.heal(pokemon.baseMaxhp / 8);
+			}
+		},
+		desc: "If the holder is Appletun: Heals 12.5% HP every turn.",
+	},
 
 	// Silvally Memories section
 	bugmemory: {

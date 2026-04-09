@@ -4334,26 +4334,20 @@ export const FormatsData: { [k: string]: SpeciesFormatsData; } = {
 		tier: "LC",
 	},
 	flapple: {
-		tier: "NFE",
+		tier: "RU",
+		doublesTier: "DUU",
 	},
 	flapplegmax: {
 		isNonstandard: "Past",
 		tier: "Illegal",
 	},
-	isaapple: {
-		tier: "RU",
-		doublesTier: "DUU",
-	},
 	appletun: {
-		tier: "NFE",
+		tier: "NU",
+		doublesTier: "DUU",
 	},
 	appletungmax: {
 		isNonstandard: "Past",
 		tier: "Illegal",
-	},
-	badapple: {
-		tier: "NU",
-		doublesTier: "DUU",
 	},
 	dipplin: {
 		tier: "NU",

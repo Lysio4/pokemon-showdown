@@ -500,9 +500,9 @@ export const Moves: { [k: string]: ModdedMoveData; } = {
 	direclaw: {
 		inherit: true,
 		basePower: 90,
-		shortDesc: "50% chance to poison the target.",
+		shortDesc: "30% chance to poison the target.",
 		secondary: {
-			chance: 50,
+			chance: 30,
 			status: 'psn',
 		},
 	},
@@ -612,30 +612,13 @@ export const Moves: { [k: string]: ModdedMoveData; } = {
 		inherit: true,
 		isNonstandard: null,
 	},
-	junglehealing: {
-		inherit: true,
-		onHit(pokemon) {
-			const success = !!this.heal(this.modify(pokemon.maxhp, 0.33));
-			return pokemon.cureStatus() || success;
-		},
-		shortDesc: "User and allies: healed 1/3 max HP, status cured.",
-	},
 	lifedew: {
 		inherit: true,
 		onHit(pokemon) {
 			pokemon.cureStatus();
 		},
-		heal: [1, 3],
-		shortDesc: "User and allies: healed 1/3 max HP, status cured.",
-	},
-	lunarblessing: {
-		inherit: true,
-		pp: 10,
-		onHit(pokemon) {
-			const success = !!this.heal(this.modify(pokemon.maxhp, 0.33));
-			return pokemon.cureStatus() || success;
-		},
-		shortDesc: "User and allies: healed 1/3 max HP, status cured.",
+		desc: "Each Pokemon on the user's side restores 1/4 of its maximum HP, rounded half up, and has its status cured.",
+		shortDesc: "Heals the user and its allies by 1/4 their max HP, status cured.",
 	},
 	monkeybusiness: {
 		inherit: true,
@@ -978,19 +961,6 @@ export const Moves: { [k: string]: ModdedMoveData; } = {
 	stonesurge: {
 		inherit: true,
 		isNonstandard: null,
-	},
-	howl: {
-		inherit: true,
-		onModifyMove(move, pokemon) {
-			if (pokemon?.hasItem('rustedsword')) {
-				move.boosts = { atk: 1, spa: 1, accuracy: 1 };
-				move.heal = [1, 4];
-			}
-			else if (pokemon?.hasItem('rustedshield')) {
-				move.boosts = { atk: 1, def: 1, spd: 1 };
-				move.heal = [1, 4];
-			}
-		},
 	},
 	gigabbouncysplash: {
 		inherit: true,

@@ -280,7 +280,7 @@ export const FormatsData: { [k: string]: SpeciesFormatsData; } = {
 		doublesTier: "DUU",
 	},
 	clefablemega: {
-		tier: "(OU)",
+		tier: "OU",
 		doublesTier: "DUU",
 	},
 	vulpix: {
@@ -1020,7 +1020,7 @@ export const FormatsData: { [k: string]: SpeciesFormatsData; } = {
 		doublesTier: "DOU",
 	},
 	dragonitemega: {
-		tier: "OU",
+		tier: "(OU)",
 		doublesTier: "DOU",
 	},
 	mewtwo: {
@@ -4048,7 +4048,7 @@ export const FormatsData: { [k: string]: SpeciesFormatsData; } = {
 		doublesTier: "DUU",
 	},
 	drampamega: {
-		tier: "UUBL",
+		tier: "RU",
 		doublesTier: "DUU",
 	},
 	dhelmise: {
@@ -4694,7 +4694,7 @@ export const FormatsData: { [k: string]: SpeciesFormatsData; } = {
 		doublesTier: "DUU",
 	},
 	enamorustherian: {
-		tier: "UU",
+		tier: "OU",
 		doublesTier: "DUU",
 	},
 

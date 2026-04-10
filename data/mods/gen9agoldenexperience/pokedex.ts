@@ -62,7 +62,7 @@ export const Pokedex: {[k: string]: ModdedSpeciesData;} = {
 	},
 	clefablemega: {
 		inherit: true,
-		abilities: { 0: "Aerilate" },
+		abilities: { 0: "Magic Bounce" },
 	},
 	ninetales: {
 		inherit: true,
@@ -145,7 +145,7 @@ export const Pokedex: {[k: string]: ModdedSpeciesData;} = {
 	},
 	victreebelmega: {
 		inherit: true,
-		abilities: { 0: "Neutralizing Gas" },
+		abilities: { 0: "Innards Out" },
 	},
 	tentacruel: {
 		inherit: true,
@@ -1328,7 +1328,7 @@ export const Pokedex: {[k: string]: ModdedSpeciesData;} = {
 	},
 	excadrillmega: {
 		inherit: true,
-		abilities: { 0: "Sand Rush" },
+		abilities: { 0: "Mold Breaker" },
 	},
 	audinomega: {
 		inherit: true,
@@ -1506,13 +1506,13 @@ export const Pokedex: {[k: string]: ModdedSpeciesData;} = {
 	},
 	stunfisk: {
 		inherit: true,
-		baseStats: {hp: 109, atk: 66, def: 84, spa: 101, spd: 99, spe: 32},
-		abilities: {0: "Static", 1: "Storm Drain", H: "Sand Veil"},
+		baseStats: { hp: 109, atk: 66, def: 84, spa: 101, spd: 99, spe: 32 },
+		abilities: { 0: "Static", 1: "Storm Drain", H: "Sand Veil" },
 	},
 	stunfiskgalar: {
 		inherit: true,
-		baseStats: {hp: 109, atk: 101, def: 99, spa: 66, spd: 84, spe: 32},
-		abilities: {0: "Mimicry", 1: "Adaptability", H: "Arena Trap"},
+		baseStats: { hp: 109, atk: 101, def: 99, spa: 66, spd: 84, spe: 32 },
+		abilities: { 0: "Mimicry", H: "Adaptability" },
 	},
 	mienfoo: {
 		inherit: true,
@@ -1524,7 +1524,7 @@ export const Pokedex: {[k: string]: ModdedSpeciesData;} = {
 	},
 	golurkmega: {
 		inherit: true,
-		abilities: { 0: "Blind Rage" },
+		abilities: { 0: "Unseen Fist" },
 	},
 	bouffalant: {
 		inherit: true,
@@ -1804,7 +1804,7 @@ export const Pokedex: {[k: string]: ModdedSpeciesData;} = {
 	},
 	crabominablemega: {
 		inherit: true,
-		abilities: { 0: "Fur Coat" },
+		abilities: { 0: "Iron Fist" },
 	},
 	oricorio: {
 		inherit: true,
@@ -2007,7 +2007,7 @@ export const Pokedex: {[k: string]: ModdedSpeciesData;} = {
 	},
 	drampamega: {
 		inherit: true,
-		abilities: { 0: "Drizzle" },
+		abilities: { 0: "Berserk" },
 	},
 	dhelmise: {
 		inherit: true,
@@ -2292,7 +2292,7 @@ export const Pokedex: {[k: string]: ModdedSpeciesData;} = {
 	},
 	scovillainmega: {
 		inherit: true,
-		abilities: { 0: "Contrary" },
+		abilities: { 0: "Flame Body" },
 	},
 	rellor: {
 		inherit: true,
@@ -2324,7 +2324,7 @@ export const Pokedex: {[k: string]: ModdedSpeciesData;} = {
 	},
 	glimmoramega: {
 		inherit: true,
-		abilities: { 0: "Tinted Lens" },
+		abilities: { 0: "Adaptability" },
 	},
 	houndstone: {
 		inherit: true,

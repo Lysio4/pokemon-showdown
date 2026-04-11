@@ -1627,10 +1627,6 @@ export const Pokedex: {[k: string]: ModdedSpeciesData;} = {
 		otherFormes: ["Aurorus-Mega"],
 		formeOrder: ["Aurorus", "Aurorus-Mega"],
 	},
-	hawluchamega: {
-		inherit: true,
-		abilities: { 0: "Fluffy" },
-	},
 	sylveon: {
 		inherit: true,
 		abilities: {0: "Cute Charm", 1: "Trace", H: "Pixilate"},

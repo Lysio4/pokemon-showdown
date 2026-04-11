@@ -60,10 +60,6 @@ export const Pokedex: {[k: string]: ModdedSpeciesData;} = {
 		baseStats: {hp: 75, atk: 110, def: 120, spa: 25, spd: 65, spe: 85},
 		abilities: { 0: "Snow Cloak", 1: "Refrigerate", H: "Slush Rush" },
 	},
-	clefablemega: {
-		inherit: true,
-		abilities: { 0: "Magic Bounce" },
-	},
 	ninetales: {
 		inherit: true,
 		baseStats: {hp: 73, atk: 59, def: 75, spa: 91, spd: 100, spe: 107},
@@ -127,25 +123,6 @@ export const Pokedex: {[k: string]: ModdedSpeciesData;} = {
 		inherit: true,
 		otherFormes: ["Machamp-Gmax", "Machamp-Mega"],
 		formeOrder: ["Machamp", "Machamp-Gmax", "Machamp-Mega"],
-	},
-	machampmega: {
-		num: 68,
-		name: "Machamp-Mega",
-		baseSpecies: "Machamp",
-		forme: "Mega",
-		types: ["Fighting"],
-		genderRatio: {M: 0.75, F: 0.25},
-		baseStats: {hp: 90, atk: 180, def: 110, spa: 65, spd: 105, spe: 55}, 
-		abilities: {0: "Scrappy"},
-		heightm: 1.6,
-		weightkg: 130,
-		color: "Gray",
-		eggGroups: ["Human-Like"],
-		requiredItem: "Machampite",
-	},
-	victreebelmega: {
-		inherit: true,
-		abilities: { 0: "Innards Out" },
 	},
 	tentacruel: {
 		inherit: true,
@@ -266,11 +243,6 @@ export const Pokedex: {[k: string]: ModdedSpeciesData;} = {
 	seaking: {
 		inherit: true,
 		evos: ["Seatsya"],
-	},
-	starmiemega: {
-		inherit: true,
-		baseStats: { hp: 60, atk: 100, def: 105, spa: 130, spd: 105, spe: 120 },
-		abilities: { 0: "Pure Power" },
 	},
 	scyther: {
 		inherit: true,
@@ -1326,10 +1298,6 @@ export const Pokedex: {[k: string]: ModdedSpeciesData;} = {
 		inherit: true,
 		baseStats: {hp: 97, atk: 47, def: 65, spa: 97, spd: 65, spe: 114},
 	},
-	excadrillmega: {
-		inherit: true,
-		abilities: { 0: "Mold Breaker" },
-	},
 	audinomega: {
 		inherit: true,
 		abilities: {0: "Regenerator"},
@@ -1522,10 +1490,6 @@ export const Pokedex: {[k: string]: ModdedSpeciesData;} = {
 		inherit: true,
 		abilities: {0: "Striker", 1: "Regenerator", H: "Chakra Surge"},
 	},
-	golurkmega: {
-		inherit: true,
-		abilities: { 0: "Unseen Fist" },
-	},
 	bouffalant: {
 		inherit: true,
 		abilities: {0: "Reckless", 1: "Sap Sipper", H: "Fluffy"},
@@ -1601,10 +1565,6 @@ export const Pokedex: {[k: string]: ModdedSpeciesData;} = {
 		inherit: true,
 		abilities: {0: "Flower Veil", 1: "Leaf Dress", H: "Symbiosis"},
 	},
-	floettemega: {
-		inherit: true,
-		abilities: { 0: "Fairy Aura" },
-	},
 	florges: {
 		inherit: true,
 		abilities: {0: "Flower Veil", 1: "Leaf Dress", H: "Symbiosis"},
@@ -1622,14 +1582,6 @@ export const Pokedex: {[k: string]: ModdedSpeciesData;} = {
 		inherit: true,
 		baseStats: {hp: 95, atk: 124, def: 78, spa: 69, spd: 71, spe: 78},
 		abilities: { 0: "Iron Fist", 1: "Blind Rage", H: "Scrappy" },
-	},
-	meowsticmmega: {
-		inherit: true,
-		abilities: { 0: "Magic Eye" },
-	},
-	meowsticfmega: {
-		inherit: true,
-		abilities: { 0: "Magic Eye" },
 	},
 	spritzee: {
 		inherit: true,
@@ -1801,10 +1753,6 @@ export const Pokedex: {[k: string]: ModdedSpeciesData;} = {
 		inherit: true,
 		baseStats: {hp: 77, atk: 60, def: 90, spa: 145, spd: 75, spe: 63},
 		abilities: {0: "Levitate", H: "Speed Boost"},
-	},
-	crabominablemega: {
-		inherit: true,
-		abilities: { 0: "Iron Fist" },
 	},
 	oricorio: {
 		inherit: true,
@@ -2004,10 +1952,6 @@ export const Pokedex: {[k: string]: ModdedSpeciesData;} = {
 	bruxish: {
 		inherit: true,
 		baseStats: {hp: 68, atk: 115, def: 70, spa: 55, spd: 70, spe: 112},
-	},
-	drampamega: {
-		inherit: true,
-		abilities: { 0: "Berserk" },
 	},
 	dhelmise: {
 		inherit: true,
@@ -2290,10 +2234,6 @@ export const Pokedex: {[k: string]: ModdedSpeciesData;} = {
 		inherit: true,
 		baseStats: {hp: 70, atk: 100, def: 115, spa: 35, spd: 55, spe: 85},
 	},
-	scovillainmega: {
-		inherit: true,
-		abilities: { 0: "Flame Body" },
-	},
 	rellor: {
 		inherit: true,
 		abilities: {0: "Compound Eyes", 1: "Swarm", H: "Shed Skin"},
@@ -2321,10 +2261,6 @@ export const Pokedex: {[k: string]: ModdedSpeciesData;} = {
 	cyclizar: {
 		inherit: true,
 		baseStats: { hp: 70, atk: 95, def: 75, spa: 85, spd: 75, spe: 121 }, 
-	},
-	glimmoramega: {
-		inherit: true,
-		abilities: { 0: "Adaptability" },
 	},
 	houndstone: {
 		inherit: true,

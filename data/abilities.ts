@@ -7706,18 +7706,6 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 		num: -86,
 		isNonstandard: "Custom",
 	},
-	magiceye: { // marked for deletion
-		onStart(source) {
-			this.add('-activate', source, 'ability: Magic Eye');
-			this.field.addPseudoWeather('magicroom');
-		},
-		flags: {},
-		name: "Magic Eye",
-		shortDesc: "On switch-in, set Magic Room for 5 turns.",
-		rating: 4,
-		num: -888888888888,
-		isNonstandard: "Custom",
-	},
 	mightyhorn: {
 		onBasePowerPriority: 23,
 		onBasePower(basePower, attacker, defender, move) {

@@ -10,6 +10,14 @@ export const Abilities: { [abilityid: string]: ModdedAbilityData; } = {
 		inherit: true,
 		isNonstandard: null,
 	},
+	piercingdrill: {
+		inherit: true,
+		isNonstandard: null,
+	},
+	spicyspray: {
+		inherit: true,
+		isNonstandard: null,
+	},
 	// custom stuff
 	poisonousradula: {
 		inherit: true,

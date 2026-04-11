@@ -59,10 +59,6 @@ export const Moves: { [k: string]: ModdedMoveData; } = {
 		inherit: true,
 		flags: { bypasssub: 1, allyanim: 1, metronome: 1, sound: 1 },
 	},
-	dragonclaw: {
-		inherit: true,
-		flags: { contact: 1, protect: 1, mirror: 1, metronome: 1, slicing: 1 },
-	},
 	dragonhammer: {
 		inherit: true,
 		basePower: 100,
@@ -161,10 +157,10 @@ export const Moves: { [k: string]: ModdedMoveData; } = {
 		inherit: true,
 		basePower: 120,
 	},
-	nightdaze: {
+	/**nightdaze: {
 		inherit: true,
 		basePower: 90,
-	},
+	},*/
 	nightslash: {
 		inherit: true,
 		pp: 20,
@@ -525,6 +521,7 @@ export const Moves: { [k: string]: ModdedMoveData; } = {
 	dragonclaw: {
 		inherit: true,
 		basePower: 90,
+		flags: { contact: 1, protect: 1, mirror: 1, metronome: 1, slicing: 1 },
 	},
 	sonicboom: {
 		inherit: true,

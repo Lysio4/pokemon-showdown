@@ -124,10 +124,6 @@ export const Moves: { [k: string]: ModdedMoveData; } = {
 		inherit: true,
 		type: "Grass",
 	},
-	hyperdrill: {
-		inherit: true,
-		basePower: 120,
-	},
 	infernalparade: {
 		inherit: true,
 		basePower: 65,
@@ -967,6 +963,7 @@ export const Moves: { [k: string]: ModdedMoveData; } = {
 	hyperdrill: {
 		inherit: true,
 		shortDesc: "Bypasses protection without breaking it. 50% chance to lower target's Def by 2 stages.",
+		basePower: 120,
 		secondary: {
 			chance: 50,
 			boosts: {

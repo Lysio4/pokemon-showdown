@@ -68,6 +68,7 @@ export const Formats: import('../sim/dex-formats').FormatList = [
 		onBegin() {
 			this.reportPercentages = true;
 		},
+	},
 	{
 		name: "[Gen 9] OU",
 		mod: 'gen9',

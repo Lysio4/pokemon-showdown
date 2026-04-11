@@ -1,4 +1,20 @@
 export const Items: {[itemid: string]: ModdedItemData} = {
+	// Champions
+	whiteherb: {
+		inherit: true,
+		onAnyAfterMove() {
+			// Desync: proceed from Parting Shot's point of view
+			this.queue.insertChoice({
+				choice: 'event',
+				event: 'WhiteHerb',
+				order: 99, // before switches
+				pokemon: this.effectState.target,
+			});
+		},
+		onWhiteHerb(pokemon) {
+			((this.effect as any).onStart as (p: Pokemon) => void).call(this, this.effectState.target);
+		},
+	},
 	// ZA mega stones
 	barbaracite: {
 		inherit: true,

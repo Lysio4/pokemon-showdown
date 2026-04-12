@@ -1,6 +1,38 @@
 export const Items: {[itemid: string]: ModdedItemData} = {
-	// ZA mega stones not in Champions
+	// Champions
+	whiteherb: {
+		inherit: true,
+		onAnyAfterMove() {
+			// Desync: proceed from Parting Shot's point of view
+			this.queue.insertChoice({
+				choice: 'event',
+				event: 'WhiteHerb',
+				order: 99, // before switches
+				pokemon: this.effectState.target,
+			});
+		},
+		onWhiteHerb(pokemon) {
+			((this.effect as any).onStart as (p: Pokemon) => void).call(this, this.effectState.target);
+		},
+	},
+	// ZA mega stones
 	barbaracite: {
+		inherit: true,
+		isNonstandard: null,
+	},
+	chandelurite: {
+		inherit: true,
+		isNonstandard: null,
+	},
+	chesnaughtite: {
+		inherit: true,
+		isNonstandard: null,
+	},
+	clefablite: {
+		inherit: true,
+		isNonstandard: null,
+	},
+	delphoxite: {
 		inherit: true,
 		isNonstandard: null,
 	},
@@ -8,7 +40,23 @@ export const Items: {[itemid: string]: ModdedItemData} = {
 		inherit: true,
 		isNonstandard: null,
 	},
+	dragoninite: {
+		inherit: true,
+		isNonstandard: null,
+	},
+	drampanite: {
+		inherit: true,
+		isNonstandard: null,
+	},
 	eelektrossite: {
+		inherit: true,
+		isNonstandard: null,
+	},
+	emboarite: {
+		inherit: true,
+		isNonstandard: null,
+	},
+	excadrite: {
 		inherit: true,
 		isNonstandard: null,
 	},
@@ -16,7 +64,31 @@ export const Items: {[itemid: string]: ModdedItemData} = {
 		inherit: true,
 		isNonstandard: null,
 	},
+	feraligite: {
+		inherit: true,
+		isNonstandard: null,
+	},
+	floettite: {
+		inherit: true,
+		isNonstandard: null,
+	},
+	froslassite: {
+		inherit: true,
+		isNonstandard: null,
+	},
+	greninjite: {
+		inherit: true,
+		isNonstandard: null,
+	},
+	hawluchanite: {
+		inherit: true,
+		isNonstandard: null,
+	},
 	malamarite: {
+		inherit: true,
+		isNonstandard: null,
+	},
+	meganiumite: {
 		inherit: true,
 		isNonstandard: null,
 	},
@@ -32,6 +104,18 @@ export const Items: {[itemid: string]: ModdedItemData} = {
 		inherit: true,
 		isNonstandard: null,
 	},
+	skarmorite: {
+		inherit: true,
+		isNonstandard: null,
+	},
+	starminite: {
+		inherit: true,
+		isNonstandard: null,
+	},
+	victreebelite: {
+		inherit: true,
+		isNonstandard: null,
+	},
 	zygardite: {
 		inherit: true,
 		isNonstandard: null,
@@ -44,6 +128,14 @@ export const Items: {[itemid: string]: ModdedItemData} = {
 		inherit: true,
 		isNonstandard: null,
 	},
+	chimechite: {
+		inherit: true,
+		isNonstandard: null,
+	},
+	crabominite: {
+		inherit: true,
+		isNonstandard: null,
+	},
 	darkranite: {
 		inherit: true,
 		isNonstandard: null,
@@ -52,7 +144,15 @@ export const Items: {[itemid: string]: ModdedItemData} = {
 		inherit: true,
 		isNonstandard: null,
 	},
+	glimmoranite: {
+		inherit: true,
+		isNonstandard: null,
+	},
 	golisopite: {
+		inherit: true,
+		isNonstandard: null,
+	},
+	golurkite: {
 		inherit: true,
 		isNonstandard: null,
 	},
@@ -68,11 +168,19 @@ export const Items: {[itemid: string]: ModdedItemData} = {
 		inherit: true,
 		isNonstandard: null,
 	},
+	meowsticite: {
+		inherit: true,
+		isNonstandard: null,
+	},
 	raichunitex: {
 		inherit: true,
 		isNonstandard: null,
 	},
 	raichunitey: {
+		inherit: true,
+		isNonstandard: null,
+	},
+	scovillainite: {
 		inherit: true,
 		isNonstandard: null,
 	},
@@ -88,7 +196,7 @@ export const Items: {[itemid: string]: ModdedItemData} = {
 		inherit: true,
 		isNonstandard: null,
 	},
-	// end of ZA mega stones not in Champions
+	// end of ZA mega stones
     paraorb: {
 		inherit: true,
 		isNonstandard: null,

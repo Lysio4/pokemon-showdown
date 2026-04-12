@@ -755,8 +755,7 @@ export const Moves: { [k: string]: ModdedMoveData; } = {
 	direclaw: {
 		inherit: true,
 		basePower: 90,
-		desc: "Has a 30% chance to cause the target to become poisoned.",
-		shortDesc: "30% chance to poison target.",
+		shortDesc: "30% chance to poison the target.",
 		secondary: {
 			chance: 30,
 			status: 'psn',
@@ -1112,6 +1111,7 @@ export const Moves: { [k: string]: ModdedMoveData; } = {
 	psyshieldbash: {
 		inherit: true,
 		accuracy: 100,
+		basePower: 80,
 	},
 	ningencry: {
 		inherit: true,
@@ -1265,6 +1265,7 @@ export const Moves: { [k: string]: ModdedMoveData; } = {
 	snaptrap: {
 		inherit: true,
 		basePower: 65,
+		type: "Steel",
 	},
 	oceanslance: {
 		inherit: true,

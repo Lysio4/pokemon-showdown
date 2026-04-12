@@ -1,6 +1,15 @@
+import { Learnsets } from "../../learnsets";
+export const ChampsLearnsets: {[speciesid: string]: LearnsetData} = Learnsets
+
 export const Scripts: ModdedBattleScriptsData = {
   gen: 9,
   inherit: 'champions',
+  // restore natdex movepools
+  function getMergedLearnset(speciesId: string) {
+    const base = Dex.mod('base').data.Learnsets[speciesId]?.learnset ?? {};
+    const champ = Dex.mod('champions').data.Learnsets[speciesId]?.learnset ?? {};
+    return { ...Learnsets, ...ChampsLearnsets }; // les moves de champions écrasent ceux de base en cas de conflit
+  }
   checkMoveBreaksProtect(move, attacker, defender, blockStatus = true) {
     if (move.flags['protect'] && (move.category !== 'Status' || blockStatus)) {
       return false;
@@ -273,13 +282,6 @@ export const Scripts: ModdedBattleScriptsData = {
 
 
   init() {
-    // restore natdex movepools
-    function getMergedLearnset(speciesId: string) {
-      const base = Dex.mod('base').data.Learnsets[speciesId]?.learnset ?? {};
-      const champ = Dex.mod('champions').data.Learnsets[speciesId]?.learnset ?? {};
-
-      return { ...base, ...champ }; // les moves de champions écrasent ceux de base en cas de conflit
-    }
 
     // magicmissile 
     this.modData('Learnsets', 'rayquaza').learnset.magicmissile = ['9L1'];

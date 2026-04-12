@@ -5,7 +5,7 @@ export const Scripts: ModdedBattleScriptsData = {
   gen: 9,
   inherit: 'champions',
   // restore natdex movepools
-  function getMergedLearnset(speciesId: string) {
+  getMergedLearnset(speciesId: string) {
     const base = Dex.mod('base').data.Learnsets[speciesId]?.learnset ?? {};
     const champ = Dex.mod('champions').data.Learnsets[speciesId]?.learnset ?? {};
     return { ...Learnsets, ...ChampsLearnsets }; // les moves de champions écrasent ceux de base en cas de conflit

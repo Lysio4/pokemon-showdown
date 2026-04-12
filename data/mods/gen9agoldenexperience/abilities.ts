@@ -2,7 +2,7 @@ import { consoleips } from "../../../config/config-example";
 
 export const Abilities: { [abilityid: string]: ModdedAbilityData; } = {
 	// Champions stuff
-	healer: {
+	/*healer: {
 		inherit: true,
 		onResidual(pokemon) {
 			for (const allyActive of pokemon.adjacentAllies()) {
@@ -30,7 +30,7 @@ export const Abilities: { [abilityid: string]: ModdedAbilityData; } = {
 	unseenfist: {
 		inherit: true,
 		shortDesc: "This Pokemon's contact moves ignore a target's protection and deal 1/4 the usual damage.",
-	},
+	},*/
 	// ZA stuff
 	dragonize: {
 		inherit: true,

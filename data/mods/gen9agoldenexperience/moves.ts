@@ -16,11 +16,11 @@ export const Moves: { [k: string]: ModdedMoveData; } = {
 		inherit: true,
 		pp: 5,
 	},*/
-	beakblast: {
+	/*beakblast: {
 		inherit: true,
 		basePower: 120,
 		pp: 5,
-	},
+	},*/
 	bloodmoon: {
 		inherit: true,
 		basePower: 130,

@@ -1,5 +1,6 @@
 export const Scripts: ModdedBattleScriptsData = {
   gen: 9,
+  inherit: 'champions',
   checkMoveBreaksProtect(move, attacker, defender, blockStatus = true) {
     if (move.flags['protect'] && (move.category !== 'Status' || blockStatus)) {
       return false;
@@ -1594,7 +1595,7 @@ export const Scripts: ModdedBattleScriptsData = {
     this.modData('Learnsets', 'stunfiskgalar').learnset.ironhead = ['9L1'];
     this.modData('Learnsets', 'mienshao').learnset.courtchange = ['9L1'];
     this.modData('Learnsets', 'druddigon').learnset.roost = ['9L1'];
-    this.modData('Learnsets', 'golurk').learnset.headlongrush = ['9L1']; // Champions addition
+    // this.modData('Learnsets', 'golurk').learnset.headlongrush = ['9L1']; // Champions addition
     this.modData('Learnsets', 'golurk').learnset.ironhead = ['9L1']; // Champions addition
     this.modData('Learnsets', 'bouffalant').learnset.headsmash = ['9L1'];
     this.modData('Learnsets', 'bouffalant').learnset.milkdrink = ['9L1'];

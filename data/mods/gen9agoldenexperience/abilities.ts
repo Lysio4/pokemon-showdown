@@ -1,53 +1,6 @@
 import { consoleips } from "../../../config/config-example";
 
 export const Abilities: { [abilityid: string]: ModdedAbilityData; } = {
-	// Champions stuff
-	/*healer: {
-		inherit: true,
-		onResidual(pokemon) {
-			for (const allyActive of pokemon.adjacentAllies()) {
-				if (allyActive.status && this.randomChance(1, 2)) {
-					this.add('-activate', pokemon, 'ability: Healer');
-					allyActive.cureStatus();
-				}
-			}
-		},
-		desc: "50% chance this Pokemon's ally has its non-volatile status condition cured at the end of each turn.",
-		shortDesc: "50% chance this Pokemon's ally has its status cured at the end of each turn.",
-	},
-	shedskin: {
-		inherit: true,
-		onResidual(pokemon) {
-			if (pokemon.hp && pokemon.status && this.randomChance(3, 10)) {
-				this.debug('shed skin');
-				this.add('-activate', pokemon, 'ability: Shed Skin');
-				pokemon.cureStatus();
-			}
-		},
-		desc: "This Pokemon has a 30% chance to have its non-volatile status condition cured at the end of each turn.",
-		shortDesc: "This Pokemon has a 30% chance to have its status cured at the end of each turn.",
-	},
-	unseenfist: {
-		inherit: true,
-		shortDesc: "This Pokemon's contact moves ignore a target's protection and deal 1/4 the usual damage.",
-	},*/
-	// ZA stuff
-	dragonize: {
-		inherit: true,
-		isNonstandard: null,
-	},
-	megasol: {
-		inherit: true,
-		isNonstandard: null,
-	},
-	piercingdrill: {
-		inherit: true,
-		isNonstandard: null,
-	},
-	spicyspray: {
-		inherit: true,
-		isNonstandard: null,
-	},
 	// custom stuff
 	poisonousradula: {
 		inherit: true,

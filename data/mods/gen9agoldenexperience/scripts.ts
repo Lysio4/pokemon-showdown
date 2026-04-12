@@ -1,66 +1,7 @@
 export const Scripts: ModdedBattleScriptsData = {
   gen: 9,
   inherit: 'champions',
-  checkMoveBreaksProtect(move, attacker, defender, blockStatus = true) {
-    if (move.flags['protect'] && (move.category !== 'Status' || blockStatus)) {
-      return false;
-    }
-    if ((move.isZOrMaxPowered || attacker.hasAbility(['piercingdrill', 'unseenfist'])) &&
-      !['gmaxoneblow', 'gmaxrapidflow'].includes(move.id)) {
-      defender.getMoveHitData(move).brokeProtect = true;
-    }
-    return true;
-  },
   actions: {
-    canMegaEvo(pokemon) {
-      const species = pokemon.baseSpecies;
-      const altForme = species.otherFormes && this.dex.species.get(species.otherFormes[0]);
-      const item = pokemon.getItem();
-      // Mega Rayquaza
-      if ((this.battle.gen <= 7 || this.battle.ruleTable.has('+pokemontag:past') ||
-        this.battle.ruleTable.has('+pokemontag:future')) &&
-        altForme?.isMega && altForme?.requiredMove &&
-        pokemon.baseMoves.includes(this.battle.toID(altForme.requiredMove)) && !item.zMove) {
-        return altForme.name;
-      }
-      if (!item.megaStone) return null;
-      return item.megaStone[species.name];
-    },
-    runMegaEvo(pokemon) {
-      const speciesid = pokemon.canMegaEvo || pokemon.canUltraBurst;
-      if (!speciesid) return false;
-
-      pokemon.formeChange(speciesid, pokemon.getItem(), true);
-
-      // Limit one mega evolution
-      const wasMega = pokemon.canMegaEvo;
-      for (const ally of pokemon.side.pokemon) {
-        if (wasMega) {
-          ally.canMegaEvo = false;
-        } else {
-          ally.canUltraBurst = null;
-        }
-      }
-
-      // will finish coding this later, not important since zygarde is banned
-      if (speciesid === 'Zygarde-Mega') {
-        const coreEnforcer = pokemon.moveSlots.findIndex(x => x.id === 'coreenforcer');
-        if (coreEnforcer >= 0) {
-          const nihilLight = this.battle.dex.moves.get('nihillight');
-          pokemon.moveSlots[coreEnforcer] = pokemon.baseMoveSlots[coreEnforcer] = {
-            id: nihilLight.id,
-            move: nihilLight.name,
-            pp: pokemon.moveSlots[coreEnforcer].pp,
-            maxpp: pokemon.moveSlots[coreEnforcer].maxpp,
-            disabled: false,
-            used: false,
-          };
-        }
-      }
-
-      this.battle.runEvent('AfterMega', pokemon);
-      return true;
-    },
 
     runSwitch(pokemon: Pokemon) {
       const switchersIn = [pokemon];
@@ -928,7 +869,6 @@ export const Scripts: ModdedBattleScriptsData = {
     // Gen 1: 
     this.modData('Learnsets', 'venusaur').learnset.shadowclaw = ['9L1'];
     this.modData('Learnsets', 'venusaur').learnset.shadowsneak = ['9L1'];
-    this.modData('Learnsets', 'venusaur').learnset.sludgewave = ['9L1']; // Champions addition
     this.modData('Learnsets', 'charizard').learnset.dracometeor = ['9M'];
     this.modData('Learnsets', 'blastoise').learnset.heavyslam = ['9L1'];
     this.modData('Learnsets', 'blastoise').learnset.scaredyshell = ['9L1'];

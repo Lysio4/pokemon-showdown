@@ -3316,6 +3316,10 @@ export const FormatsData: { [k: string]: SpeciesFormatsData; } = {
 		tier: "UU",
 		doublesTier: "DUU",
 	},
+	greninjabond: {
+		tier: "UU",
+		doublesTier: "DUU",
+	},
 	greninjamega: {
 		tier: "OU",
 		doublesTier: "DUU",

@@ -10,7 +10,6 @@ export const Scripts: ModdedBattleScriptsData = {
     }
     return true;
   },
->>>>>>> parent of 5902a4cf7 (test inherit champions)
   actions: {
 
     runSwitch(pokemon: Pokemon) {

@@ -48,7 +48,6 @@ export const Abilities: { [abilityid: string]: ModdedAbilityData; } = {
 		inherit: true,
 		isNonstandard: null,
 	},
->>>>>>> parent of 5902a4cf7 (test inherit champions)
 	// custom stuff
 	poisonousradula: {
 		inherit: true,

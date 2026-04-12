@@ -275,7 +275,7 @@ export const Scripts: ModdedBattleScriptsData = {
   init() {
     // restore Natdex movepools
     const baseLearnsets = this.dataCache.Learnsets;
-    console.log(baseLearnsets);
+    console.log(baseLearnsets['incineroar']);
     /*for (const id in this.dataCache.Pokedex) {
       if (this.dataCache.Learnsets[id] && this.dataCache.Learnsets[id].learnset) {
         this.modData('Learnsets', this.toID(id)).learnset.return = ["9M"];

@@ -1,3 +1,5 @@
+import { baseLearnsets } from "../../learnsets";
+
 export const Scripts: ModdedBattleScriptsData = {
   gen: 9,
   inherit: 'champions',
@@ -274,8 +276,8 @@ export const Scripts: ModdedBattleScriptsData = {
 
   init() {
     // restore Natdex movepools
-    const baseLearnsets = this.dataCache.Learnsets;
-    console.log(baseLearnsets['incineroar']);
+    const base = this.dataCache.baseLearnsets;
+    console.log(base['incineroar']);
     /*for (const id in this.dataCache.Pokedex) {
       if (this.dataCache.Learnsets[id] && this.dataCache.Learnsets[id].learnset) {
         this.modData('Learnsets', this.toID(id)).learnset.return = ["9M"];

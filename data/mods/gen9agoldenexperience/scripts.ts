@@ -3,6 +3,12 @@ import { baseLearnsets } from "../../learnsets";
 export const Scripts: ModdedBattleScriptsData = {
   gen: 9,
   inherit: 'champions',
+  calculatePP(move: Move, ppUps = 3) {
+    if (move.noPPBoosts) return move.pp;
+    let pp = move.pp * (5 + ppUps) / 5;
+    if (this.gen <= 2 && move.pp === 40) pp -= ppUps;
+    return pp;
+  }
   actions: {
     runSwitch(pokemon: Pokemon) {
       const switchersIn = [pokemon];
@@ -215,6 +221,11 @@ export const Scripts: ModdedBattleScriptsData = {
 
 
   init() {
+    for (const i in this.data.Moves) {
+      if (this.data.Moves[i].pp > 20) {
+        continue;
+      }
+    }
     // restore Natdex movepools
     const base = this.dataCache.baseLearnsets;
     /*for (const id in this.dataCache.Pokedex) {

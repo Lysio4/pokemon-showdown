@@ -1,6 +1,3 @@
-import { baseLearnsets } from "../../learnsets";
-export const champLearnsets: {[speciesid: string]: LearnsetData} = Learnsets;
-
 export const Scripts: ModdedBattleScriptsData = {
   gen: 9,
   inherit: 'champions',
@@ -279,12 +276,12 @@ export const Scripts: ModdedBattleScriptsData = {
     // restore Natdex movepools
     const baseLearnsets = Dex.mod('base').data.Learnsets;
     console.log(baseLearnsets);
-    for (const id in this.dataCache.Pokedex) {
+    /*for (const id in this.dataCache.Pokedex) {
       if (this.dataCache.Learnsets[id] && this.dataCache.Learnsets[id].learnset) {
         this.modData('Learnsets', this.toID(id)).learnset.return = ["9M"];
         this.modData('Learnsets', this.toID(id)).learnset.frustration = ["9M"];
       }
-    }
+    }*/
 
     // magicmissile 
     this.modData('Learnsets', 'rayquaza').learnset.magicmissile = ['9L1'];

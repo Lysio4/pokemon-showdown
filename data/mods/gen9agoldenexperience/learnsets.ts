@@ -20689,7 +20689,6 @@ export const Learnsets: import('../../../sim/dex-species').ModdedLearnsetDataTab
 			wish: ["9L28", "9S0"],
 		},
 	},
-};
 	tinkaton: {
 		learnset: {
 			astonish: ["9L1"],

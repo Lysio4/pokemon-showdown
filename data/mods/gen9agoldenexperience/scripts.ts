@@ -1,33 +1,9 @@
-import { Learnsets } from "../learnsets";
-// export const champLearnsets: {[speciesid: string]: LearnsetData} = Learnsets;
+import { baseLearnsets } from "../../learnsets";
+export const champLearnsets: {[speciesid: string]: LearnsetData} = Learnsets;
 
 export const Scripts: ModdedBattleScriptsData = {
   gen: 9,
   inherit: 'champions',
-  // restore natdex movepools
-  getMove(pokemon, moveid) {
-    for (const id in this.dataCache.Pokedex) {
-      if (this.dataCache.Learnsets[id] && this.dataCache.Learnsets[id].learnset) {
-        this.modData('Learnsets', this.toID(id)).learnset.return = ["9M"];
-        this.modData('Learnsets', this.toID(id)).learnset.frustration = ["9M"];
-      }
-    }
-    const speciesId = pokemon.species.id;
-
-    const baseLearnsets   = Dex.mod('gen9').data.Learnsets;
-    const champLearnsets  = Dex.mod('champions').data.Learnsets;
-
-    const inBase  = moveid in (baseLearnsets[speciesId]?.learnset ?? {});
-    const inChamp = moveid in (champLearnsets[speciesId]?.learnset ?? {});
-
-    if (inBase && inChamp) {
-      // move présent dans les deux
-    } else if (inBase) {
-      // move uniquement dans le learnset de base
-    } else if (inChamp) {
-      // move uniquement dans champions
-    }
-  },
   checkMoveBreaksProtect(move, attacker, defender, blockStatus = true) {
     if (move.flags['protect'] && (move.category !== 'Status' || blockStatus)) {
       return false;
@@ -300,6 +276,15 @@ export const Scripts: ModdedBattleScriptsData = {
 
 
   init() {
+    // restore Natdex movepools
+    const baseLearnsets = Dex.mod('base').data.Learnsets;
+    console.log(baseLearnsets);
+    for (const id in this.dataCache.Pokedex) {
+      if (this.dataCache.Learnsets[id] && this.dataCache.Learnsets[id].learnset) {
+        this.modData('Learnsets', this.toID(id)).learnset.return = ["9M"];
+        this.modData('Learnsets', this.toID(id)).learnset.frustration = ["9M"];
+      }
+    }
 
     // magicmissile 
     this.modData('Learnsets', 'rayquaza').learnset.magicmissile = ['9L1'];

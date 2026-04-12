@@ -1774,14 +1774,14 @@ export const Pokedex: {[k: string]: ModdedSpeciesData;} = {
 	lycanroc: {
 		inherit: true,
 		types: ["Rock", "Ground"],
-		abilities: {0: "Keen Eye", 1: "Sand Rush", H: "Technician"},
+		abilities: { 0: "Keen Eye", 1: "Sand Rush", H: "Skill Link" },
 		otherFormes: ["Lycanroc-Midnight", "Lycanroc-Dusk", "Lycanroc-Bloodmoon"],
 		formeOrder: ["Lycanroc", "Lycanroc-Midnight", "Lycanroc-Dusk", "Lycanroc-Bloodmoon"],
 	},
 	lycanrocmidnight: {
 		inherit: true,
 		types: ["Rock", "Dark"],
-		abilities: {0: "Keen Eye", 1: "Fur Coat", H: "No Guard"},
+		abilities: { 0: "Keen Eye", 1: "Fur Coat", H: "No Guard" },
 	},
 	lycanrocdusk: {
 		inherit: true,

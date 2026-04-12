@@ -8,7 +8,7 @@ export const Scripts: ModdedBattleScriptsData = {
     let pp = move.pp * (5 + ppUps) / 5;
     if (this.gen <= 2 && move.pp === 40) pp -= ppUps;
     return pp;
-  }
+  },
   actions: {
     runSwitch(pokemon: Pokemon) {
       const switchersIn = [pokemon];

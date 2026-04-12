@@ -1,5 +1,6 @@
 export const Scripts: ModdedBattleScriptsData = {
   gen: 9,
+  inherit: 'champions',
   checkMoveBreaksProtect(move, attacker, defender, blockStatus = true) {
     if (move.flags['protect'] && (move.category !== 'Status' || blockStatus)) {
       return false;
@@ -272,6 +273,13 @@ export const Scripts: ModdedBattleScriptsData = {
 
 
   init() {
+    // restore natdex movepools
+    function getMergedLearnset(speciesId: string) {
+      const base = Dex.mod('base').data.Learnsets[speciesId]?.learnset ?? {};
+      const champ = Dex.mod('champions').data.Learnsets[speciesId]?.learnset ?? {};
+
+      return { ...base, ...champ }; // les moves de champions écrasent ceux de base en cas de conflit
+    }
 
     // magicmissile 
     this.modData('Learnsets', 'rayquaza').learnset.magicmissile = ['9L1'];
@@ -1479,8 +1487,8 @@ export const Scripts: ModdedBattleScriptsData = {
     this.modData('Learnsets', 'stunfiskgalar').learnset.ironhead = ['9L1'];
     this.modData('Learnsets', 'mienshao').learnset.courtchange = ['9L1'];
     this.modData('Learnsets', 'druddigon').learnset.roost = ['9L1'];
-    this.modData('Learnsets', 'golurk').learnset.headlongrush = ['9L1']; // Champions addition
-    this.modData('Learnsets', 'golurk').learnset.ironhead = ['9L1']; // Champions addition
+    // this.modData('Learnsets', 'golurk').learnset.headlongrush = ['9L1']; // Champions addition
+    // this.modData('Learnsets', 'golurk').learnset.ironhead = ['9L1']; // Champions addition
     this.modData('Learnsets', 'bouffalant').learnset.headsmash = ['9L1'];
     this.modData('Learnsets', 'bouffalant').learnset.milkdrink = ['9L1'];
     this.modData('Learnsets', 'bouffalant').learnset.headlongrush = ['9L1'];

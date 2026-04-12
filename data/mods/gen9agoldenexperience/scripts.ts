@@ -1,14 +1,32 @@
-import { Learnsets } from "../../learnsets";
-export const ChampsLearnsets: {[speciesid: string]: LearnsetData} = Learnsets;
+import { Learnsets } from "../learnsets";
+// export const champLearnsets: {[speciesid: string]: LearnsetData} = Learnsets;
 
 export const Scripts: ModdedBattleScriptsData = {
   gen: 9,
   inherit: 'champions',
   // restore natdex movepools
-  getMergedLearnset(speciesId: string) {
-    const base = Dex.mod('base').data.Learnsets[speciesId]?.learnset ?? {};
-    const champ = Dex.mod('champions').data.Learnsets[speciesId]?.learnset ?? {};
-    return { ...Learnsets, ...ChampsLearnsets }; // les moves de champions écrasent ceux de base en cas de conflit
+  getMove(pokemon, moveid) {
+    for (const id in this.dataCache.Pokedex) {
+      if (this.dataCache.Learnsets[id] && this.dataCache.Learnsets[id].learnset) {
+        this.modData('Learnsets', this.toID(id)).learnset.return = ["9M"];
+        this.modData('Learnsets', this.toID(id)).learnset.frustration = ["9M"];
+      }
+    }
+    const speciesId = pokemon.species.id;
+
+    const baseLearnsets   = Dex.mod('gen9').data.Learnsets;
+    const champLearnsets  = Dex.mod('champions').data.Learnsets;
+
+    const inBase  = moveid in (baseLearnsets[speciesId]?.learnset ?? {});
+    const inChamp = moveid in (champLearnsets[speciesId]?.learnset ?? {});
+
+    if (inBase && inChamp) {
+      // move présent dans les deux
+    } else if (inBase) {
+      // move uniquement dans le learnset de base
+    } else if (inChamp) {
+      // move uniquement dans champions
+    }
   },
   checkMoveBreaksProtect(move, attacker, defender, blockStatus = true) {
     if (move.flags['protect'] && (move.category !== 'Status' || blockStatus)) {

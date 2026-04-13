@@ -1,247 +1,4 @@
 export const Moves: { [k: string]: ModdedMoveData; } = {
-	// Champions
-	anchorshot: {
-		inherit: true,
-		basePower: 90,
-	},
-	appleacid: {
-		inherit: true,
-		basePower: 90,
-	},
-	astralbarrage: {
-		inherit: true,
-		basePower: 110,
-	},
-	banefulbunker: {
-		inherit: true,
-		pp: 5,
-	},
-	beakblast: {
-		inherit: true,
-		basePower: 120,
-		pp: 5,
-	},
-	bloodmoon: {
-		inherit: true,
-		basePower: 130,
-	},
-	boltbeak: {
-		inherit: true,
-		basePower: 80,
-	},
-	bonerush: {
-		inherit: true,
-		basePower: 30,
-	},
-	clangoroussoul: {
-		inherit: true,
-		accuracy: true,
-	},
-	crabhammer: {
-		inherit: true,
-		accuracy: 95,
-	},
-	crushclaw: {
-		inherit: true,
-		flags: { contact: 1, protect: 1, mirror: 1, metronome: 1, slicing: 1 },
-	},
-	dragoncheer: {
-		inherit: true,
-		flags: { bypasssub: 1, allyanim: 1, metronome: 1, sound: 1 },
-	},
-	dragonclaw: {
-		inherit: true,
-		flags: { contact: 1, protect: 1, mirror: 1, metronome: 1, slicing: 1 },
-	},
-	dragonhammer: {
-		inherit: true,
-		basePower: 100,
-	},
-	encore: {
-		inherit: true,
-		condition: {
-			inherit: true,
-			onStart(target) {
-				let move: Move | ActiveMove | null = target.lastMove;
-				if (!move || target.volatiles['dynamax']) return false;
-
-				// Encore only works on Max Moves if the base move is not itself a Max Move
-				if (move.isMax && move.baseMove) move = this.dex.moves.get(move.baseMove);
-				const moveSlot = target.getMoveData(move.id);
-				if (move.isZ || move.isMax || move.flags['failencore'] || !moveSlot || moveSlot.pp <= 0) {
-					// it failed
-					return false;
-				}
-				this.effectState.move = move.id;
-				this.add('-start', target, 'Encore');
-				const action = this.queue.willMove(target);
-				if (!action) {
-					this.effectState.duration!++;
-					// TODO: this is a quick fix, check if move priority is changed when Mental Herb cures Encore
-				} else if (!target.hasItem('mentalherb')) {
-					this.queue.changeAction(target, {
-						choice: 'move',
-						// target: undefined,
-						// targetLoc: undefined,
-						moveid: move.id,
-						order: action.order, // TODO: check Quash + Encore interaction
-					});
-				}
-			},
-		},
-	},
-	firelash: {
-		inherit: true,
-		basePower: 90,
-	},
-	firstimpression: {
-		inherit: true,
-		basePower: 100,
-	},
-	fishiousrend: {
-		inherit: true,
-		basePower: 80,
-	},
-	geargrind: {
-		inherit: true,
-		accuracy: 90,
-		basePower: 60,
-	},
-	gravapple: {
-		inherit: true,
-		basePower: 90,
-	},
-	growth: {
-		inherit: true,
-		type: "Grass",
-	},
-	infernalparade: {
-		inherit: true,
-		basePower: 65,
-	},
-	ironhead: {
-		inherit: true,
-		secondary: {
-			chance: 20,
-			volatileStatus: 'flinch',
-		},
-		desc: "Has a 20% chance to make the target flinch.",
-		shortDesc: "20% chance to make the target flinch.",
-	},
-	kingsshield: {
-		inherit: true,
-		pp: 5,
-	},
-	makeitrain: {
-		inherit: true,
-		accuracy: 95,
-	},
-	metalclaw: {
-		inherit: true,
-		flags: { contact: 1, protect: 1, mirror: 1, metronome: 1, slicing: 1 },
-	},
-	moonblast: {
-		inherit: true,
-		secondary: {
-			chance: 10,
-			boosts: {
-				spa: -1,
-			},
-		},
-		desc: "Has a 10% chance to lower the target's Special Attack by 1 stage.",
-		shortDesc: "10% chance to lower the target's Sp. Atk by 1.",
-	},
-	mountaingale: {
-		inherit: true,
-		basePower: 120,
-	},
-	nightslash: {
-		inherit: true,
-		pp: 20,
-	},
-	nihillight: {
-		inherit: true,
-		pp: 5,
-	},
-	obstruct: {
-		inherit: true,
-		pp: 5,
-	},
-	protect: {
-		inherit: true,
-		pp: 5,
-	},
-	purify: {
-		inherit: true,
-		pp: 5,
-	},
-	revelationdance: {
-		inherit: true,
-		basePower: 100,
-	},
-	saltcure: {
-		inherit: true,
-		condition: {
-			inherit: true,
-			onResidual(pokemon) {
-				this.damage(pokemon.baseMaxhp / (pokemon.hasType(['Water', 'Steel']) ? 8 : 16));
-			},
-		},
-		desc: "Causes damage to the target equal to 1/16 of its maximum HP (1/8 if the target is Steel or Water type), rounded down, at the end of each turn during effect. This effect ends when the target is no longer active.",
-		shortDesc: "Deals 1/16 max HP each turn; 1/8 on Steel, Water.",
-	},
-	sandstorm: {
-		inherit: true,
-		pp: 5,
-	},
-	shadowclaw: {
-		inherit: true,
-		flags: { contact: 1, protect: 1, mirror: 1, metronome: 1, slicing: 1 },
-	},
-	shelltrap: {
-		inherit: true,
-		pp: 10,
-	},
-	snowscape: {
-		inherit: true,
-		pp: 5,
-	},
-	spikyshield: {
-		inherit: true,
-		pp: 5,
-	},
-	spinout: {
-		inherit: true,
-		pp: 10,
-	},
-	spiritshackle: {
-		inherit: true,
-		basePower: 90,
-	},
-	syrupbomb: {
-		inherit: true,
-		accuracy: 90,
-	},
-	toxicthread: {
-		inherit: true,
-		boosts: {
-			spe: -2,
-		},
-		desc: "Lowers the target's Speed by 2 stages and poisons it.",
-		shortDesc: "Lowers the target's Speed by 2 and poisons it.",
-	},
-	trickortreat: {
-		inherit: true,
-		isNonstandard: null,
-	},
-	tripledive: {
-		inherit: true,
-		basePower: 35,
-	},
-	tropkick: {
-		inherit: true,
-		basePower: 85,
-	},
 	// new moves
 	tentacatch: {
 		inherit: true,
@@ -1001,7 +758,6 @@ export const Moves: { [k: string]: ModdedMoveData; } = {
 	direclaw: {
 		inherit: true,
 		basePower: 90,
-		flags: { contact: 1, protect: 1, mirror: 1, metronome: 1, slicing: 1 },
 		shortDesc: "30% chance to poison the target.",
 		secondary: {
 			chance: 30,
@@ -1146,7 +902,6 @@ export const Moves: { [k: string]: ModdedMoveData; } = {
 	},
 	hyperdrill: {
 		inherit: true,
-		basePower: 120,
 		shortDesc: "Bypasses protection without breaking it. 50% chance to lower target's Def by 2 stages.",
 		secondary: {
 			chance: 50,
@@ -1226,7 +981,6 @@ export const Moves: { [k: string]: ModdedMoveData; } = {
 	psyshieldbash: {
 		inherit: true,
 		accuracy: 100,
-		basePower: 90,
 	},
 	tropkick: {
 		inherit: true,
@@ -1259,7 +1013,6 @@ export const Moves: { [k: string]: ModdedMoveData; } = {
 	},
 	snaptrap: {
 		inherit: true,
-		type: "Steel",
 		basePower: 65,
 	},
 	needlearm: {

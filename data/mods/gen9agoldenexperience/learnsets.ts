@@ -14989,7 +14989,6 @@ export const Learnsets: import('../../../sim/dex-species').ModdedLearnsetDataTab
 			trick: ["9M"],
 			vinewhip: ["9L1", "6L1"],
 			wish: ["9L20", "6L20"],
-			wish: ["9M"],
 			worryseed: ["7T"],
 		},
 	},

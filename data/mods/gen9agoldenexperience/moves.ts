@@ -1,4 +1,5 @@
 export const Moves: { [k: string]: ModdedMoveData; } = {
+	// new moves
 	tentacatch: {
 		inherit: true,
 		isNonstandard: null,
@@ -18,15 +19,6 @@ export const Moves: { [k: string]: ModdedMoveData; } = {
 	stellarpunch: {
 		inherit: true,
 		isNonstandard: null,
-	},
-	toxicthread: {
-		inherit: true,
-		boosts: {
-			spe: -2,
-		},
-		status: 'tox',
-		desc: "Lowers the target's Speed by 2 stages and badly poisons it.",
-		shortDesc: "Lowers the target's Speed by 2 and badly poisons it.",
 	},
 	toxicsting: {
 		inherit: true,
@@ -262,6 +254,268 @@ export const Moves: { [k: string]: ModdedMoveData; } = {
 			if (target.getTypes().join() === newType || !target.setType(newType)) return false;
 			this.add('-start', target, 'typechange', newType);
 		},
+	},
+	lightningassault: {
+		inherit: true,
+		isNonstandard: null,
+	},
+	conversionz: {
+		inherit: true,
+		isNonstandard: null,
+	},
+	zawalludo: {
+		inherit: true,
+		isNonstandard: null,
+	},
+	awakening: {
+		inherit: true,
+		isNonstandard: null,
+	},
+	fulldevotion: {
+		inherit: true,
+		isNonstandard: null,
+	},
+	braveblade: {
+		inherit: true,
+		isNonstandard: null,
+	},
+	teramorphosis: {
+		inherit: true,
+		isNonstandard: null,
+	},
+	happydance: {
+		inherit: true,
+		isNonstandard: null,
+	},
+	windscall: {
+		inherit: true,
+		isNonstandard: null,
+	},
+	houndshowl: {
+		inherit: true,
+		isNonstandard: null,
+	},
+	dantesinferno: {
+		inherit: true,
+		isNonstandard: null,
+	},
+	monkeybusiness: {
+		inherit: true,
+		isNonstandard: null,
+	},
+	swarming: {
+		inherit: true,
+		isNonstandard: null,
+	},
+	hardwareheat: {
+		inherit: true,
+		isNonstandard: null,
+	},
+	shattering: {
+		inherit: true,
+		isNonstandard: null,
+	},
+	roguewave: {
+		inherit: true,
+		isNonstandard: null,
+	},
+	natureswrath: {
+		inherit: true,
+		isNonstandard: null,
+	},
+	magicmissile: {
+		inherit: true,
+		isNonstandard: null,
+	},
+	fatbombing: {
+		inherit: true,
+		isNonstandard: null,
+	},
+	poisonivy: {
+		inherit: true,
+		isNonstandard: null,
+	},
+	clusterexplosion: {
+		inherit: true,
+		isNonstandard: null,
+	},
+	lightofruin: {
+		inherit: true,
+		isNonstandard: null,
+	},
+	athosrapier: {
+		inherit: true,
+		isNonstandard: null,
+	},
+	aramisdagger: {
+		inherit: true,
+		isNonstandard: null,
+	},
+	porthosbroadsword: {
+		inherit: true,
+		isNonstandard: null,
+	},
+	befuddlepowder: {
+		inherit: true,
+		isNonstandard: null,
+	},
+	piercingdart: {
+		inherit: true,
+		isNonstandard: null,
+	},
+	hindenburg: {
+		inherit: true,
+		isNonstandard: null,
+	},
+	ventilation: {
+		inherit: true,
+		isNonstandard: null,
+	},
+	emushdance: {
+		inherit: true,
+		isNonstandard: null,
+	},
+	rainofarrows: {
+		inherit: true,
+		isNonstandard: null,
+	},
+	wyvernflight: {
+		inherit: true,
+		isNonstandard: null,
+	},
+	bigbang: {
+		inherit: true,
+		isNonstandard: null,
+	},
+	ningencry: {
+		inherit: true,
+		isNonstandard: null,
+	},
+	mantisslash: {
+		inherit: true,
+		isNonstandard: null,
+	},
+	intrepidcrash: {
+		inherit: true,
+		isNonstandard: null,
+	},
+	timeparadox: {
+		inherit: true,
+		isNonstandard: null,
+	},
+	jumpscare: {
+		inherit: true,
+		isNonstandard: null,
+	},
+	futuredoom: {
+		inherit: true,
+		isNonstandard: null,
+	},
+	brainblast: {
+		inherit: true,
+		isNonstandard: null,
+	},
+	rainbowdash: {
+		inherit: true,
+		isNonstandard: null,
+	},
+	waterslash: {
+		inherit: true,
+		isNonstandard: null,
+	},
+	marinebolt: {
+		inherit: true,
+		isNonstandard: null,
+	},
+	scaredyshell: {
+		inherit: true,
+		isNonstandard: null,
+	},
+	calmingbell: {
+		inherit: true,
+		isNonstandard: null,
+	},
+	fullmoonstrike: {
+		inherit: true,
+		isNonstandard: null,
+	},
+	seasonpass: {
+		inherit: true,
+		isNonstandard: null,
+	},
+	chistrike: {
+		inherit: true,
+		isNonstandard: null,
+	},
+	cursedspeech: {
+		inherit: true,
+		isNonstandard: null,
+	},
+	threateningbite: {
+		inherit: true,
+		isNonstandard: null,
+	},
+	stonesurge: {
+		inherit: true,
+		isNonstandard: null,
+	},
+	gigabbouncysplash: {
+		inherit: true,
+		isNonstandard: null,
+	},
+	xrayvoltshock: {
+		inherit: true,
+		isNonstandard: null,
+	},
+	sonicspeedstrike: {
+		inherit: true,
+		isNonstandard: null,
+	},
+	furiousarrowraid: {
+		inherit: true,
+		isNonstandard: null,
+	},
+	taleofthemoon: {
+		inherit: true,
+		isNonstandard: null,
+	},
+	ultrapapercut: {
+		inherit: true,
+		isNonstandard: null,
+	},
+	maxspikybarrage: {
+		inherit: true,
+		isNonstandard: null,
+	},
+	armorbigblast: {
+		inherit: true,
+		isNonstandard: null,
+	},
+	thousandbladework: {
+		inherit: true,
+		isNonstandard: null,
+	},
+	sweetsugarrush: {
+		inherit: true,
+		isNonstandard: null,
+	},
+	colorfulhit: {
+		inherit: true,
+		isNonstandard: null,
+	},
+	oceanslance: {
+		inherit: true,
+		isNonstandard: null,
+	},
+	// modified moves
+	toxicthread: {
+		inherit: true,
+		boosts: {
+			spe: -2,
+		},
+		status: 'tox',
+		desc: "Lowers the target's Speed by 2 stages and badly poisons it.",
+		shortDesc: "Lowers the target's Speed by 2 and badly poisons it.",
 	},
 	dragonpulse: {
 		inherit: true,
@@ -572,50 +826,6 @@ export const Moves: { [k: string]: ModdedMoveData; } = {
 		shortDesc: "Always results in a critical hit. Cannot be redirected.",
 		desc: "Always results in a critical hit. Cannot be redirected.",
 	},
-	lightningassault: {
-		inherit: true,
-		isNonstandard: null,
-	},
-	conversionz: {
-		inherit: true,
-		isNonstandard: null,
-	},
-	zawalludo: {
-		inherit: true,
-		isNonstandard: null,
-	},
-	awakening: {
-		inherit: true,
-		isNonstandard: null,
-	},
-	fulldevotion: {
-		inherit: true,
-		isNonstandard: null,
-	},
-	braveblade: {
-		inherit: true,
-		isNonstandard: null,
-	},
-	teramorphosis: {
-		inherit: true,
-		isNonstandard: null,
-	},
-	happydance: {
-		inherit: true,
-		isNonstandard: null,
-	},
-	windscall: {
-		inherit: true,
-		isNonstandard: null,
-	},
-	houndshowl: {
-		inherit: true,
-		isNonstandard: null,
-	},
-	dantesinferno: {
-		inherit: true,
-		isNonstandard: null,
-	},
 	lifedew: {
 		inherit: true,
 		onHit(pokemon) {
@@ -623,22 +833,6 @@ export const Moves: { [k: string]: ModdedMoveData; } = {
 		},
 		desc: "Each Pokemon on the user's side restores 1/4 of its maximum HP, rounded half up, and has its status cured.",
 		shortDesc: "Heals the user and its allies by 1/4 their max HP, status cured.",
-	},
-	monkeybusiness: {
-		inherit: true,
-		isNonstandard: null,
-	},
-	swarming: {
-		inherit: true,
-		isNonstandard: null,
-	},
-	hardwareheat: {
-		inherit: true,
-		isNonstandard: null,
-	},
-	shattering: {
-		inherit: true,
-		isNonstandard: null,
 	},
 	milkdrink: {
 		inherit: true,
@@ -752,18 +946,6 @@ export const Moves: { [k: string]: ModdedMoveData; } = {
 		shortDesc: "20% chance to lower target's Atk by 1.",
 		desc: "20% chance to lower target's Atk by 1.",
 	},
-	roguewave: {
-		inherit: true,
-		isNonstandard: null,
-	},
-	natureswrath: {
-		inherit: true,
-		isNonstandard: null,
-	},
-	magicmissile: {
-		inherit: true,
-		isNonstandard: null,
-	},
 	chatter: {
 		inherit: true,
 		basePower: 80,
@@ -796,145 +978,21 @@ export const Moves: { [k: string]: ModdedMoveData; } = {
 		inherit: true,
 		flags: { heal: 1, nosketch: 1, noassist: 1 },
 	},
-	fatbombing: {
-		inherit: true,
-		isNonstandard: null,
-	},
-	poisonivy: {
-		inherit: true,
-		isNonstandard: null,
-	},
-	clusterexplosion: {
-		inherit: true,
-		isNonstandard: null,
-	},
-	lightofruin: {
-		inherit: true,
-		isNonstandard: null,
-	},
-	athosrapier: {
-		inherit: true,
-		isNonstandard: null,
-	},
-	aramisdagger: {
-		inherit: true,
-		isNonstandard: null,
-	},
-	porthosbroadsword: {
-		inherit: true,
-		isNonstandard: null,
-	},
-	befuddlepowder: {
-		inherit: true,
-		isNonstandard: null,
-	},
-	piercingdart: {
-		inherit: true,
-		isNonstandard: null,
-	},
-	hindenburg: {
-		inherit: true,
-		isNonstandard: null,
-	},
-	ventilation: {
-		inherit: true,
-		isNonstandard: null,
-	},
-	emushdance: {
-		inherit: true,
-		isNonstandard: null,
-	},
-	rainofarrows: {
-		inherit: true,
-		isNonstandard: null,
-	},
-	wyvernflight: {
-		inherit: true,
-		isNonstandard: null,
-	},
-	bigbang: {
-		inherit: true,
-		isNonstandard: null,
-	},
 	psyshieldbash: {
 		inherit: true,
 		accuracy: 100,
-	},
-	ningencry: {
-		inherit: true,
-		isNonstandard: null,
-	},
-	mantisslash: {
-		inherit: true,
-		isNonstandard: null,
 	},
 	tropkick: {
 		inherit: true,
 		basePower: 90,
 	},
-	intrepidcrash: {
-		inherit: true,
-		isNonstandard: null,
-	},
 	doublehit: {
 		inherit: true,
 		basePower: 50,
 	},
-	timeparadox: {
-		inherit: true,
-		isNonstandard: null,
-	},
-	corrosiveacid: {
-		inherit: true,
-		isNonstandard: null,
-	},
-	jumpscare: {
-		inherit: true,
-		isNonstandard: null,
-	},
-	futuredoom: {
-		inherit: true,
-		isNonstandard: null,
-	},
-	brainblast: {
-		inherit: true,
-		isNonstandard: null,
-	},
-	rainbowdash: {
-		inherit: true,
-		isNonstandard: null,
-	},
-	waterslash: {
-		inherit: true,
-		isNonstandard: null,
-	},
-	marinebolt: {
-		inherit: true,
-		isNonstandard: null,
-	},
-	scaredyshell: {
-		inherit: true,
-		isNonstandard: null,
-	},
-	calmingbell: {
-		inherit: true,
-		isNonstandard: null,
-	},
 	paraboliccharge: {
 		inherit: true,
 		basePower: 75,
-	},
-	fullmoonstrike: {
-		inherit: true,
-		isNonstandard: null,
-	},
-	seasonpass: {
-		inherit: true,
-		isNonstandard: null,
-	},
-	chistrike: {
-		inherit: true,
-		isNonstandard: null,
 	},
 	psystrike: {
 		inherit: true,
@@ -945,14 +1003,6 @@ export const Moves: { [k: string]: ModdedMoveData; } = {
 		shortDesc: "Physical if user's Atk > Sp. Atk. Deals damage based on Def or SpD, whichever one is the lowest.",
 		desc: "Physical if user's Atk > Sp. Atk. Deals damage based on Def or SpD, whichever one is the lowest.",
 	},
-	cursedspeech: {
-		inherit: true,
-		isNonstandard: null,
-	},
-	threateningbite: {
-		inherit: true,
-		isNonstandard: null,
-	},
 	volttackle: {
 		inherit: true,
 		onModifyMove(move, pokemon, target) {
@@ -961,61 +1011,9 @@ export const Moves: { [k: string]: ModdedMoveData; } = {
 			}
 		},
 	},
-	stonesurge: {
-		inherit: true,
-		isNonstandard: null,
-	},
-	gigabbouncysplash: {
-		inherit: true,
-		isNonstandard: null,
-	},
-	xrayvoltshock: {
-		inherit: true,
-		isNonstandard: null,
-	},
-	sonicspeedstrike: {
-		inherit: true,
-		isNonstandard: null,
-	},
-	furiousarrowraid: {
-		inherit: true,
-		isNonstandard: null,
-	},
-	taleofthemoon: {
-		inherit: true,
-		isNonstandard: null,
-	},
-	ultrapapercut: {
-		inherit: true,
-		isNonstandard: null,
-	},
-	maxspikybarrage: {
-		inherit: true,
-		isNonstandard: null,
-	},
-	armorbigblast: {
-		inherit: true,
-		isNonstandard: null,
-	},
-	thousandbladework: {
-		inherit: true,
-		isNonstandard: null,
-	},
-	sweetsugarrush: {
-		inherit: true,
-		isNonstandard: null,
-	},
-	colorfulhit: {
-		inherit: true,
-		isNonstandard: null,
-	},
 	snaptrap: {
 		inherit: true,
 		basePower: 65,
-	},
-	oceanslance: {
-		inherit: true,
-		isNonstandard: null,
 	},
 	needlearm: {
 		inherit: true,

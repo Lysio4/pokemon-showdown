@@ -28,12 +28,12 @@ export const Pokedex: {[k: string]: ModdedSpeciesData;} = {
 	},
 	spearow: {
 		inherit: true,
-		abilities: {0: "Run Away", 1: "Stakeout", H: "Insomnia"},
+		abilities: { 0: "Keen Eye", 1: "Sniper", H: "Stakeout" },
 	},
 	fearow: {
 		inherit: true,
-		baseStats: {hp: 65, atk: 100, def: 65, spa: 51, spd: 61, spe: 100},
-		abilities: {0: "Run Away", 1: "Stakeout", H: "Insomnia"},
+		baseStats: { hp: 65, atk: 110, def: 65, spa: 61, spd: 61, spe: 100 },
+		abilities: { 0: "Keen Eye", 1: "Sniper", H: "Stakeout" },
 	},
 	pikachustarter: {
 		inherit: true,
@@ -516,15 +516,15 @@ export const Pokedex: {[k: string]: ModdedSpeciesData;} = {
 	hitmontop: {
 		inherit: true,
 		baseStats: {hp: 60, atk: 95, def: 95, spa: 35, spd: 110, spe: 80},
-		abilities: {0: "Intimidate", 1: "Technician", H: "Quick Feet"},
+		abilities: { 0: "Intimidate", 1: "Technician", H: "Quick Feet" },
 	},
 	elekid: {
 		inherit: true,
-		abilities: {0: "Static", 1: "Motor Drive", H: "Vital Spirit"},
+		abilities: { 0: "Static", 1: "Motor Drive", H: "Vital Spirit" },
 	},
 	magby: {
 		inherit: true,
-		abilities: {0: "Flame Body", 1: "Flash Fire", H: "Vital Spirit"},
+		abilities: { 0: "Flame Body", 1: "Flash Fire", H: "Vital Spirit" },
 	},
 	miltank: {
 		inherit: true,
@@ -532,28 +532,28 @@ export const Pokedex: {[k: string]: ModdedSpeciesData;} = {
 	},
 	blissey: {
 		inherit: true,
-		abilities: {0: "Natural Cure", 1: "Rebound Belly", H: "Healer"},
+		abilities: { 0: "Natural Cure", 1: "Rebound Belly", H: "Healer" },
 	},
 	raikou: {
 		inherit: true,
-		abilities: {0: "Pressure", 1: "Inner Focus", H: "Berserk"},
+		abilities: { 0: "Pressure", 1: "Inner Focus", H: "Berserk" },
 	},
 	entei: {
 		inherit: true,
-		abilities: {0: "Pressure", 1: "Inner Focus", H: "Searing Touch"},
+		abilities: { 0: "Pressure", 1: "Inner Focus", H: "Thermal Boost" },
 	},
 	suicune: {
 		inherit: true,
-		abilities: {0: "Pressure", 1: "Inner Focus", H: "Mental Fortitude"},
+		abilities: { 0: "Pressure", 1: "Inner Focus", H: "Mental Fortitude" },
 	},
 	celebi: {
 		inherit: true,
-		abilities: {0: "Natural Cure", H: "Rewind"},
+		abilities: { 0: "Natural Cure", H: "Rewind" },
 	},
 	// Gen 3 :
 	sceptilemega: {
 		inherit: true,
-		abilities: {0: "Regenerator"},
+		abilities: { 0: "Regenerator" },
 	},
 	blazikenmega: {
 		inherit: true,
@@ -562,7 +562,7 @@ export const Pokedex: {[k: string]: ModdedSpeciesData;} = {
 	beautifly: {
 		inherit: true,
 		baseStats: {hp: 60, atk: 70, def: 50, spa: 110, spd: 50, spe: 85},
-		abilities: {0: "Dazzling", H: "Rivalry"},
+		abilities: { 0: "Dazzling", H: "Rivalry" },
 	},
 	dustox: {
 		inherit: true,
@@ -1866,7 +1866,7 @@ export const Pokedex: {[k: string]: ModdedSpeciesData;} = {
 	},
 	silvallyfire: {
 		inherit: true,
-		abilities: {0: "Searing Touch"},
+		abilities: {0: "Flame Body"},
 		requiredItem: null,
 	},
 	silvallyflying: {

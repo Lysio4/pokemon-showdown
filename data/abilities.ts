@@ -6779,24 +6779,6 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 		num: -50,
 		isNonstandard: "Custom",
 	},
-	searingtouch: {
-		onModifyMove(move) {
-			if (!move || !move.flags['contact'] || move.target === 'self') return;
-			if (!move.secondaries) {
-				move.secondaries = [];
-			}
-			move.secondaries.push({
-				chance: 30,
-				status: 'brn',
-				ability: this.dex.abilities.get('searingtouch'),
-			});
-		},
-		name: "Searing Touch",
-		shortDesc: "This Pokemon's contact moves have a 30% chance of burning.",
-		rating: 2,
-		num: -51,
-		isNonstandard: "Custom",
-	},
 	virality: {
 		name: "Virality",
 		shortDesc: "Pokemon making contact with this Pokemon have their Ability changed to Mummy.",
@@ -6816,7 +6798,7 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 			if (move.multihitType === 'parentalbond' && move.hit > 1) return this.chainModify(0.25);
 		},
 		rating: 2,
-		num: -52,
+		num: -51,
 		isNonstandard: "Custom",
 	},
 	oldschool: {
@@ -6837,7 +6819,7 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 			}
 		},
 		rating: 3.5,
-		num: -53,
+		num: -52,
 		isNonstandard: "Custom",
 	},
 	dodge: {
@@ -6856,7 +6838,7 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 			return newSpD;
 		},
 		rating: 3.5,
-		num: -54,
+		num: -53,
 		isNonstandard: "Custom",
 	},
 	reboundbelly: {
@@ -6869,7 +6851,7 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 		name: "Rebound Belly",
 		shortDesc: "The opponent receives 1/8 recoil damage from special non-Sound moves.",
 		rating: 2.5,
-		num: -55,
+		num: -54,
 		isNonstandard: "Custom",
 	},
 	faithfulcompanion: {
@@ -6920,7 +6902,7 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 		name: "Faithful Companion",
 		shortDesc: "If the ally is Piratcy, gives to the ally this Pokemon's item, and steals an item from the opponent.",
 		rating: 0,
-		num: -56,
+		num: -55,
 		isNonstandard: "Custom",
 	},
 	cheerleader: {
@@ -6971,7 +6953,7 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 		},
 		name: "Cheerleader",
 		rating: 0,
-		num: -57,
+		num: -56,
 		isNonstandard: "Custom",
 	},
 	withering: {
@@ -6990,7 +6972,7 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 		name: "Withering",
 		shortDesc: "This Pokemon's contact moves lower the target's Speed by one stage.",
 		rating: 2,
-		num: -58,
+		num: -57,
 		isNonstandard: "Custom",
 	},
 	cacophony: {
@@ -7012,7 +6994,7 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 		shortDesc: "This Pokemon receives 1/2 damage from sound moves. Its own have 1.3x power.",
 		name: "Cacophony",
 		rating: 3.5,
-		num: -59,
+		num: -58,
 		isNonstandard: "Custom",
 	},
 	happygolucky: {
@@ -7041,7 +7023,7 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 		desc: "This Pokemon's Attack, Defense, Special Attack, and Special Defense get a boost depending on the happiness of the Pokemon (maximum 10%).",
 		shortDesc: "Boosts Attack, Defense, Special Attack, and Special Defense by 1% per 25 happiness.",
 		rating: 4,
-		num: -60,
+		num: -59,
 		isNonstandard: "Custom",
 	},
 	mightywall: {
@@ -7071,7 +7053,7 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 		shortDesc: "This Pokemon's Defense and Special Defense are multiplied by 1.5, and by 0.5 when it switches out.",
 		name: "Mighty Wall",
 		rating: 4,
-		num: -61,
+		num: -60,
 		isNonstandard: "Custom",
 	},
 	karma: {
@@ -7086,7 +7068,7 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 		shortDesc: "This Pokemon's delayed moves have 1.5x power.",
 		name: "Karma",
 		rating: 3,
-		num: -62,
+		num: -61,
 		isNonstandard: "Custom",
 	},
 	souldevourer: {
@@ -7107,7 +7089,7 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 		shortDesc: "If any target is trapped, this target loses 1/8 of its max HP, and this Pokemon heals for the same amount.",
 		name: "Soul Devourer",
 		rating: 3,
-		num: -63,
+		num: -62,
 		isNonstandard: "Custom",
 	},
 	soothingfragrance: {
@@ -7128,7 +7110,7 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 		flags: {},
 		name: "Soothing Fragrance",
 		rating: 2,
-		num: -64,
+		num: -63,
 		isNonstandard: "Custom",
 	},
 	tempestuous: {
@@ -7148,7 +7130,7 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 		},
 		name: "Tempestuous",
 		rating: 3,
-		num: -65,
+		num: -64,
 		isNonstandard: "Custom",
 	},
 	ambush: {
@@ -7158,7 +7140,7 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 		},
 		name: "Ambush",
 		rating: 4,
-		num: -66,
+		num: -65,
 		isNonstandard: "Custom",
 	},
 	steelbreaker: {
@@ -7168,7 +7150,7 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 		},
 		name: "Steelbreaker",
 		rating: 3,
-		num: -67,
+		num: -66,
 		isNonstandard: "Custom",
 	},
 	bitterhatred: {
@@ -7204,7 +7186,7 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 		},
 		flags: {},
 		name: "Bitter Hatred",
-		num: -68,
+		num: -67,
 		isNonstandard: "Custom",
 	},
 	pollution: {
@@ -7242,7 +7224,7 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 		desc: "Poison Point. This Pokemon's offensive stat is doubled while using a Poison-type attack. If a Pokemon uses a Water-type attack against this Pokemon, that Pokemon's offensive stat is halved when calculating the damage to this Pokemon.",
 		shortDesc: "Poison Point. This Pokemon's Poison power is 2x; Water power against it is halved.",
 		rating: 4.5,
-		num: -69,
+		num: -68,
 		isNonstandard: "Custom",
 	},
 	freegullet: {
@@ -7279,7 +7261,7 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 		flags: {cantsuppress: 1, notransform: 1},
 		name: "Free Gullet",
 		rating: 2.5,
-		num: -70,
+		num: -69,
 		desc: "Fails if this Pokemon isn't Cramorant-Mega. Surf/Dive, Gulping, Stockpile; Thunderbolt/Wild Charge, Gorging, Charge; Ventilation/Brave Bird, base form, enemy loses 1/8 HP. Surf/Dive have 1.5x power.",
 		shortDesc: "Cramorant-Mega: Surf/Dive, Gulping, Stockpile; Thunderbolt/Wild Charge, Gorging, Charge; Ventilation/Brave Bird, base form, enemy loses 1/8 HP. Surf/Dive have 1.5x power.",
 		isNonstandard: "Custom",
@@ -7294,7 +7276,7 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 		desc: "This Pokemon's affinities are reversed.",
 		shortDesc: "This Pokemon's affinities are reversed.",
 		rating: 4.5,
-		num: -71,
+		num: -70,
 		isNonstandard: "Custom",
 	},
 	counterstrike: {
@@ -7327,7 +7309,7 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 		},
 		name: "Counter Strike",
 		rating: 3.5,
-		num: -72,
+		num: -71,
 		isNonstandard: "Custom",
 	},
 	climaticchange: {
@@ -7358,7 +7340,7 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 		},
 		name: "Climatic Change",
 		rating: 4,
-		num: -73,
+		num: -72,
 		isNonstandard: "Custom",
 	},
 	hyperglycemia: {
@@ -7396,7 +7378,7 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 		flags: {breakable: 1},
 		name: "Hyperglycemia",
 		rating: 4.5,
-		num: -74,
+		num: -73,
 		isNonstandard: "Custom",
 	},
 	graviton: {
@@ -7406,7 +7388,7 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 		},
 		name: "Graviton",
 		rating: 4,
-		num: -75,
+		num: -74,
 		isNonstandard: "Custom",
 	},
 	solarenergy: {
@@ -7429,7 +7411,7 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 		desc: "If Sunny Day is active, this Pokemon's Speed is multiplied by 1.5, and this Pokemon's Electric moves have x1.5. This effect is prevented if this Pokemon is holding a Utility Umbrella.",
 		shortDesc: "If Sunny Day is active, Speed x1.5, and Electric moves x1.5.",
 		rating: 3,
-		num: -76,		
+		num: -75,		
 		isNonstandard: "Custom",
 	},
 	punchprodigee: {
@@ -7438,7 +7420,7 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 			if (move.flags['punch']) return priority + 1;
 		},
 		name: "Punch Prodigee",
-		num: -77,
+		num: -76,
 		isNonstandard: "Custom",
 	},
 	heavyweapon: {
@@ -7458,7 +7440,7 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 			},
 		},
 		name: "Heavy Weapon",
-		num: -78,
+		num: -77,
 		isNonstandard: "Custom",
 	},
 	lightpower: {
@@ -7469,7 +7451,7 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 		name: "Light Power",
 		shortDesc: "This Pokemon's Special Attack is doubled.",
 		rating: 5,
-		num: -79,
+		num: -78,
 		isNonstandard: "Custom",
 	},
 	thermalswitch: {
@@ -7530,11 +7512,11 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 		desc: "Immunity to Burn. This Pokemon has two forms, Passive and Active. It starts the fight with Passive form. If Sun is set or it's hit by a Fire-type move, it switches to Active form until it switches out. If Snow is set, it's frozen, or it's hit by an Ice-type move, it switches to Passive form.",
 		shortDesc: "Burn immunity. Sun or Fire-type move: Active form; Snow, frozen or Ice-type move: Passive form.",
 		rating: 4,
-		num: -80,
+		num: -79,
 		isNonstandard: "Custom",
 	},
 	ironbody: {
-		num: -81,
+		num: -80,
 		name: "Iron Body",
 		shortDesc: "On switch in, adds Steel type to the user. Has no effect if the user is Steel-type.",
 		onStart(pokemon) {
@@ -7586,7 +7568,7 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 		desc: "This Pokemon's offensive stat is doubled while using a Psychic-type attack. If a Pokemon uses a Fighting-type attack against this Pokemon, that Pokemon's offensive stat is halved when calculating the damage to this Pokemon. This Pokemon cannot be paralyzed. Gaining this Ability while burned cures it. Using Amnesia also boosts this Pokémon's Special Attack by 2 stages.",
 		shortDesc: "This Pokemon's Psychic power is 2x; it can't be paralyzed; Fighting power against it is halved; Amnesia also boosts SpA by 2.",
 		rating: 3.5,
-		num: -82,
+		num: -81,
 		isNonstandard: "Custom",
 	},
 	rewind: {
@@ -7594,7 +7576,7 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 		shortDesc: "When brought to 50% HP or less, restores lost items on user's side.",
 		flags: {failroleplay: 1, noreceiver: 1, noentrain: 1, notrace: 1, failskillswap: 1, cantsuppress: 1},
 		rating: 4,
-		num: -83,
+		num: -82,
 		onStart(pokemon) {
 			pokemon.addVolatile('rewind');
 		},
@@ -7671,7 +7653,7 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 		name: "Huge Clamp",
 		shortDesc: "This Pokemon's Atk is boosted by 1.5, but its Speed is halved.",
 		rating: 1.5,
-		num: -84,
+		num: -83,
 		isNonstandard: "Custom",
 	},
    	healingecho: {
@@ -7685,7 +7667,7 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 		flags: {},
 	    name: "Healing Echo",
 		rating: 3,
-		num: -85,
+		num: -84,
 		isNonstandard: "Custom",
 	},
 	meltingheart: {
@@ -7702,7 +7684,7 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 		flags: {},
 		name: "Melting Heart",
 		rating: 1,
-		num: -86,
+		num: -85,
 		isNonstandard: "Custom",
 	},
 	mightyhorn: {
@@ -7724,7 +7706,7 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 		flags: {},
 		name: "Mighty Horn",
 		rating: 3,
-		num: -87,
+		num: -86,
 		desc: "This Pokemon's drill-based attacks have their power and accuracy multiplied by 1.3.",
 		shortDesc: "This Pokemon's drill-based attacks have 1.3x power and 1.3x accuracy.",
 		isNonstandard: "Custom",
@@ -7752,7 +7734,7 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 		},
 		name: "Nightmare Heart",
 		rating: 3,
-		num: -88,
+		num: -87,
 		isNonstandard: "Custom",
 	},
 	petrify: {
@@ -7773,8 +7755,30 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 		flags: {},
 		name: "Petrify",
 		rating: 4,
-		num: -89,
+		num: -88,
 		shortDesc: "On switch-in, the opposing targets' type is changed to Rock.",
+		isNonstandard: "Custom",
+	},
+	thermalboost: {
+		onModifyAtkPriority: 5,
+		onModifyAtk(atk, attacker, defender, move) {
+			if (move.type === 'Fire') {
+				this.debug('Thermal Boost boost');
+				return this.chainModify(1.5);
+			}
+		},
+		onModifySpAPriority: 5,
+		onModifySpA(atk, attacker, defender, move) {
+			if (move.type === 'Fire') {
+				this.debug('Thermal Boost boost');
+				return this.chainModify(1.5);
+			}
+		},
+		flags: {},
+		name: "Thermal Boost",
+		shortDesc: "This Pokemon's offensive stat is multiplied by 1.5 while using a Fire-type attack.",
+		rating: 3.5,
+		num: -89,
 		isNonstandard: "Custom",
 	},
 	// Touhou

@@ -23409,36 +23409,8 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 		shortDesc: "Traps and damages the target for 4-5 turns.",
 		isNonstandard: "Custom",
 	},
-	corrosiveacid: {
-		num: -74,
-		accuracy: 100,
-		basePower: 70,
-		category: "Special",
-		name: "Corrosive Acid",
-		pp: 20,
-		priority: 0,
-		flags: {protect: 1, mirror: 1, metronome: 1},
-		ignoreImmunity: true,
-		onEffectiveness(typeMod, target, type) {
-			if (type === 'Steel') return 1;
-		},
-		secondary: {
-			chance: 10,
-			status: 'psn',
-		},
-		onPrepareHit(target, source) {
-			this.attrLastMove('[still]');
-			this.add('-anim', source, "Acid", target);
-		},
-		target: "normal",
-		type: "Poison",
-		contestType: "Beautiful",
-		desc: "Has a 10% chance to poison the target. This move's type effectiveness against Steel is changed to be super effective no matter what this move's type is.",
-		shortDesc: "10% chance to poison. Super effective on Steel.",
-		isNonstandard: "Custom",
-	},
 	jumpscare: {
-		num: -75,
+		num: -74,
 		accuracy: 100,
 		basePower: 40,
 		category: "Physical",
@@ -23470,7 +23442,7 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 		isNonstandard: "Custom",
 	},
 	futuredoom: {
-		num: -76,
+		num: -75,
 		accuracy: 100,
 		basePower: 65,
 		category: "Special",
@@ -23489,7 +23461,7 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 		isNonstandard: "Custom",
 	},
 	brainblast: {
-		num: -77,
+		num: -76,
 		accuracy: 100,
 		basePower: 65,
 		category: "Special",
@@ -23524,7 +23496,7 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 		isNonstandard: "Custom",
 	},
 	rainbowdash: {
-		num: -78,
+		num: -77,
 		accuracy: 100,
 		basePower: 100,
 		category: "Physical",
@@ -23543,7 +23515,7 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 		isNonstandard: "Custom",
 	},
 	waterslash: {
-		num: -79,
+		num: -78,
 		accuracy: 100,
 		basePower: 85,
 		category: "Special",
@@ -23564,7 +23536,7 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 		isNonstandard: "Custom",
 	},
 	marinebolt: {
-		num: -80,
+		num: -79,
 		accuracy: 100,
 		basePower: 75,
 		category: "Physical",
@@ -23583,7 +23555,7 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 		isNonstandard: "Custom",
 	},
 	scaredyshell: {
-		num: -81,
+		num: -80,
 		accuracy: 100,
 		basePower: 60,
 		category: "Physical",
@@ -23605,7 +23577,7 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 		isNonstandard: "Custom",
 	},
 	calmingbell: {
-		num: -82,
+		num: -81,
 		accuracy: 100,
 		basePower: 80,
 		category: "Special",
@@ -23630,7 +23602,7 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 		isNonstandard: "Custom",
 	},
 	fullmoonstrike: {
-		num: -83,
+		num: -82,
 		accuracy: 100,
 		basePower: 120,
 		category: "Physical",
@@ -23656,7 +23628,7 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 		isNonstandard: "Custom",
 	},
 	seasonpass: {
-		num: -84,
+		num: -83,
 		accuracy: 100,
 		basePower: 100,
 		category: "Physical",
@@ -23683,7 +23655,7 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 		isNonstandard: "Custom",
 	},
 	chistrike: {
-		num: -85,
+		num: -84,
 		accuracy: 100,
 		basePower: 90,
 		onModifyMovePriority: -5,
@@ -23707,7 +23679,7 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 		isNonstandard: "Custom",
 	},
 	cursedspeech: {
-		num: -86,
+		num: -85,
 		accuracy: 100,
 		basePower: 100,
 		category: "Special",
@@ -23731,7 +23703,7 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 		isNonstandard: "Custom",
 	},
 	threateningbite: {
-		num: -87,
+		num: -86,
 		accuracy: 100,
 		basePower: 160,
 		category: "Physical",
@@ -23749,7 +23721,7 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 		isNonstandard: "Custom",
 	},
 	stonesurge: {
-		num: -88,
+		num: -87,
 		accuracy: 100,
 		basePower: 65,
 		category: "Physical",
@@ -23783,7 +23755,7 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 		shortDesc: "Sets Stealth Rock on the target's side.",
 	},
 	gigabbouncysplash: {
-		num: -89,
+		num: -88,
 		accuracy: true,
 		basePower: 180,
 		category: "Physical",
@@ -23803,7 +23775,7 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 		isNonstandard: "Custom",
 	},
 	xrayvoltshock: {
-		num: -90,
+		num: -89,
 		accuracy: true,
 		basePower: 185,
 		category: "Physical",
@@ -23834,7 +23806,7 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 		isNonstandard: "Custom",
 	},
 	sonicspeedstrike: {
-		num: -91,
+		num: -90,
 		accuracy: true,
 		basePower: 185,
 		category: "Physical",
@@ -23854,7 +23826,7 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 		isNonstandard: "Custom",
 	},
 	furiousarrowraid: {
-		num: -92,
+		num: -91,
 		accuracy: true,
 		basePower: 180,
 		category: "Physical",
@@ -23875,7 +23847,7 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 		isNonstandard: "Custom",
 	},
 	taleofthemoon: {
-		num: -93,
+		num: -92,
 		accuracy: true,
 		basePower: 175,
 		category: "Physical",
@@ -23917,7 +23889,7 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 		shortDesc: "Ends Terrain, hazards.",
 	},
 	ultrapapercut: {
-		num: -94,
+		num: -93,
 		accuracy: true,
 		basePower: 175,
 		category: "Physical",
@@ -23959,7 +23931,7 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 		shortDesc: "Ends Terrain, hazards.",
 	},
 	maxspikybarrage: {
-		num: -95,
+		num: -94,
 		accuracy: true,
 		basePower: 180,
 		category: "Physical",
@@ -23983,7 +23955,7 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 		isNonstandard: "Custom",
 	},
 	armorbigblast: {
-		num: -96,
+		num: -95,
 		accuracy: true,
 		basePower: 195,
 		category: "Special",
@@ -24003,7 +23975,7 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 		shortDesc: "No additional effect.",
 	},
 	thousandbladework: {
-		num: -97,
+		num: -96,
 		accuracy: true,
 		basePower: 185,
 		category: "Physical",
@@ -24028,7 +24000,7 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 		shortDesc: "For 5 turns, the target is prevented from healing.",
 	},
 	sweetsugarrush: {
-		num: -98,
+		num: -97,
 		accuracy: true,
 		basePower: 170,
 		category: "Special",
@@ -24044,7 +24016,7 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 		isNonstandard: "Custom",
 	},
 	colorfulhit: {
-		num: -99,
+		num: -98,
 		accuracy: 100,
 		basePower: 90,
 		category: "Physical",
@@ -24071,7 +24043,7 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 		isNonstandard: "Custom",
 	},
 	oceanslance: {
-		num: -100,
+		num: -99,
 		accuracy: 85,
 		basePower: 120,
 		category: "Physical",

@@ -1,6 +1,7 @@
 import { consoleips } from "../../../config/config-example";
 
 export const Abilities: { [abilityid: string]: ModdedAbilityData; } = {
+	// new abilities
 	poisonousradula: {
 		inherit: true,
 		isNonstandard: null,
@@ -274,10 +275,6 @@ export const Abilities: { [abilityid: string]: ModdedAbilityData; } = {
 		inherit: true,
 		isNonstandard: null,
 	},
-	searingtouch: {
-		inherit: true,
-		isNonstandard: null,
-	},
 	virality: {
 		inherit: true,
 		isNonstandard: null,
@@ -286,6 +283,159 @@ export const Abilities: { [abilityid: string]: ModdedAbilityData; } = {
 		inherit: true,
 		isNonstandard: null,
 	},
+	dodge: {
+		inherit: true,
+		isNonstandard: null,
+	},
+	reboundbelly: {
+		inherit: true,
+		isNonstandard: null,
+	},
+	faithfulcompanion: {
+		inherit: true,
+		isNonstandard: null,
+	},
+	cheerleader: {
+		inherit: true,
+		isNonstandard: null,
+	},
+	withering: {
+		inherit: true,
+		isNonstandard: null,
+	},
+	cacophony: {
+		inherit: true,
+		isNonstandard: null,
+	},
+	happygolucky: {
+		inherit: true,
+		isNonstandard: null,
+	},
+	mightywall: {
+		inherit: true,
+		isNonstandard: null,
+	},
+	karma: {
+		inherit: true,
+		isNonstandard: null,
+	},
+	souldevourer: {
+		inherit: true,
+		isNonstandard: null,
+	},
+	soothingfragrance: {
+		inherit: true,
+		isNonstandard: null,
+	},
+	tempestuous: {
+		inherit: true,
+		isNonstandard: null,
+	},
+	ambush: {
+		inherit: true,
+		isNonstandard: null,
+	},
+	steelbreaker: {
+		inherit: true,
+		isNonstandard: null,
+	},
+	bitterhatred: {
+		inherit: true,
+		isNonstandard: null,
+	},
+	pollution: {
+		inherit: true,
+		isNonstandard: null,
+	},
+	freegullet: {
+		inherit: true,
+		isNonstandard: null,
+	},
+	blindeye: {
+		inherit: true,
+		isNonstandard: null,
+	},
+	counterstrike: {
+		inherit: true,
+		isNonstandard: null,
+	},
+	climaticchange: {
+		inherit: true,
+		isNonstandard: null,
+	},
+	hyperglycemia: {
+		inherit: true,
+		isNonstandard: null,
+	},
+	graviton: {
+		inherit: true,
+		isNonstandard: null,
+	},
+	solarenergy: {
+		inherit: true,
+		isNonstandard: null,
+	},
+	punchprodigee: {
+		inherit: true,
+		isNonstandard: null,
+	},
+	heavyweapon: {
+		inherit: true,
+		isNonstandard: null,
+	},
+	lightpower: {
+		inherit: true,
+		isNonstandard: null,
+	},
+	thermalswitch: {
+		inherit: true,
+		isNonstandard: null,
+	},
+	ironbody: {
+		inherit: true,
+		isNonstandard: null,
+	},
+	psychicprowess: {
+		inherit: true,
+		isNonstandard: null,
+	},
+	rewind: {
+		inherit: true,
+		isNonstandard: null,
+	},
+	hugeclamp: {
+		inherit: true,
+		isNonstandard: null,
+	},
+   	healingecho: {
+		inherit: true,
+		isNonstandard: null,
+	},
+	mountaineer: {
+		inherit: true,
+		isNonstandard: null,
+	},
+	meltingheart: {
+		inherit: true,
+		isNonstandard: null,
+	},
+	mightyhorn: {
+		inherit: true,
+		isNonstandard: null,
+	},
+	nightmareheart: {
+		inherit: true,
+		isNonstandard: null,
+	},
+	petrify: {
+		inherit: true,
+		isNonstandard: null,
+	},
+	thermalboost: {
+		inherit: true,
+		isNonstandard: null,
+	},
+	// modified abilities
 	justified: {
 		inherit: true,
 		onTryHit(target, source, move) {
@@ -612,22 +762,6 @@ export const Abilities: { [abilityid: string]: ModdedAbilityData; } = {
 		desc: "If user is Cherrim and Sunny Day isn't active, its Def is 1.5x. If user is Cherrim and Sunny Day is active, it and its allies Atk and Sp. Def are 1.5x. and Cherrim gains the Fire type.",
 		shortDesc: "Cherrim: If Sunny Day is active, it and its allies Atk and Sp. Def are 1.5x, and Cherrim gains the Fire type; otherwise Def x1.5.",
 	},
-	dodge: {
-		inherit: true,
-		isNonstandard: null,
-	},
-	reboundbelly: {
-		inherit: true,
-		isNonstandard: null,
-	},
-	faithfulcompanion: {
-		inherit: true,
-		isNonstandard: null,
-	},
-	cheerleader: {
-		inherit: true,
-		isNonstandard: null,
-	},
 	seedsower: {
 		inherit: true,
 		onDamagingHit(damage, target, source, move) {
@@ -651,30 +785,6 @@ export const Abilities: { [abilityid: string]: ModdedAbilityData; } = {
 			}
 		},
 	},
-	withering: {
-		inherit: true,
-		isNonstandard: null,
-	},
-	cacophony: {
-		inherit: true,
-		isNonstandard: null,
-	},
-	happygolucky: {
-		inherit: true,
-		isNonstandard: null,
-	},
-	mightywall: {
-		inherit: true,
-		isNonstandard: null,
-	},
-	karma: {
-		inherit: true,
-		isNonstandard: null,
-	},
-	souldevourer: {
-		inherit: true,
-		isNonstandard: null,
-	},
 	lingeringaroma: {
 		inherit: true,
 		onDamagingHit(damage, target, source, move) {},
@@ -692,22 +802,6 @@ export const Abilities: { [abilityid: string]: ModdedAbilityData; } = {
 		},
 		desc: "Opposing Pokemon have their Defense reduced by 25%, and allies have their Attack raised by 25%.",
 		shortDesc: "Opposing Pokemon have their Defense reduced by 25%, and allies have their Attack raised by 25%.",
-	},
-	soothingfragrance: {
-		inherit: true,
-		isNonstandard: null,
-	},
-	tempestuous: {
-		inherit: true,
-		isNonstandard: null,
-	},
-	ambush: {
-		inherit: true,
-		isNonstandard: null,
-	},
-	steelbreaker: {
-		inherit: true,
-		isNonstandard: null,
 	},
 	rattled: {
 		inherit: true,
@@ -729,92 +823,12 @@ export const Abilities: { [abilityid: string]: ModdedAbilityData; } = {
 		desc: "Bug/Ghost/Dark resistances. This Pokemon's Speed is raised by 1 stage if hit by a Bug-, Dark-, or Ghost-type attack, or if an opposing Pokemon affected this Pokemon with the Intimidate Ability.",
 		shortDesc: "Bug/Ghost/Dark resistances. Speed is raised 1 stage if hit by a Bug-, Dark-, or Ghost-type attack, or Intimidated.",
 	},
-	bitterhatred: {
-		inherit: true,
-		isNonstandard: null,
-	},
-	pollution: {
-		inherit: true,
-		isNonstandard: null,
-	},
-	freegullet: {
-		inherit: true,
-		isNonstandard: null,
-	},
-	blindeye: {
-		inherit: true,
-		isNonstandard: null,
-	},
-	counterstrike: {
-		inherit: true,
-		isNonstandard: null,
-	},
-	climaticchange: {
-		inherit: true,
-		isNonstandard: null,
-	},
-	hyperglycemia: {
-		inherit: true,
-		isNonstandard: null,
-	},
-	graviton: {
-		inherit: true,
-		isNonstandard: null,
-	},
-	solarenergy: {
-		inherit: true,
-		isNonstandard: null,
-	},
-	punchprodigee: {
-		inherit: true,
-		isNonstandard: null,
-	},
-	heavyweapon: {
-		inherit: true,
-		isNonstandard: null,
-	},
-	lightpower: {
-		inherit: true,
-		isNonstandard: null,
-	},
-	thermalswitch: {
-		inherit: true,
-		isNonstandard: null,
-	},
-	ironbody: {
-		inherit: true,
-		isNonstandard: null,
-	},
-	psychicprowess: {
-		inherit: true,
-		isNonstandard: null,
-	},
-	rewind: {
-		inherit: true,
-		isNonstandard: null,
-	},
-	hugeclamp: {
-		inherit: true,
-		isNonstandard: null,
-	},
 	merciless: {
 		inherit: true,
 		onModifyCritRatio(critRatio, source, target) {
 			if (target && ['psn', 'tox', 'brn', 'par', 'frz', 'slp'].includes(target.status)) return 5;
 		},
 		shortDesc: "This Pokemon's attacks are critical hits if the target is statused.",
-	},
-   	healingecho: {
-		inherit: true,
-		isNonstandard: null,
-	},
-	mountaineer: {
-		inherit: true,
-		isNonstandard: null,
-	},
-	meltingheart: {
-		inherit: true,
-		isNonstandard: null,
 	},
 	teravolt: {
 		inherit: true,
@@ -854,10 +868,6 @@ export const Abilities: { [abilityid: string]: ModdedAbilityData; } = {
 		desc: "This Pokemon's offensive stat is multiplied by 1.5 while using an Fire-type attack. This Pokemon's moves and their effects ignore certain Abilities of other Pokemon. The Abilities that can be negated are Armor Tail, Aroma Veil, Aura Break, Battle Armor, Big Pecks, Bulletproof, Clear Body, Contrary, Damp, Dazzling, Disguise, Dry Skin, Earth Eater, Filter, Flash Fire, Flower Gift, Flower Veil, Fluffy, Friend Guard, Fur Coat, Good as Gold, Grass Pelt, Guard Dog, Heatproof, Heavy Metal, Hyper Cutter, Ice Face, Ice Scales, Illuminate, Immunity, Inner Focus, Insomnia, Keen Eye, Leaf Guard, Levitate, Light Metal, Lightning Rod, Limber, Magic Bounce, Magma Armor, Marvel Scale, Mind's Eye, Mirror Armor, Motor Drive, Multiscale, Oblivious, Overcoat, Own Tempo, Pastel Veil, Punk Rock, Purifying Salt, Queenly Majesty, Sand Veil, Sap Sipper, Shell Armor, Shield Dust, Simple, Snow Cloak, Solid Rock, Soundproof, Sticky Hold, Storm Drain, Sturdy, Suction Cups, Sweet Veil, Tangled Feet, Telepathy, Tera Shell, Thermal Exchange, Thick Fat, Unaware, Vital Spirit, Volt Absorb, Water Absorb, Water Bubble, Water Veil, Well-Baked Body, White Smoke, Wind Rider, Wonder Guard, and Wonder Skin. This affects every other Pokemon on the field, whether or not it is a target of this Pokemon's move, and whether or not their Ability is beneficial to this Pokemon.",
 		shortDesc: "This Pokemon's moves and their effects ignore the Abilities of other Pokemon. This Pokemon's offensive stat is multiplied by 1.5 while using an Fire-type attack.",
 	},
-	magiceye: {
-		inherit: true,
-		isNonstandard: null,
-	},
 	corrosion: {
 		inherit: true,
 		onModifyMovePriority: -5,
@@ -886,18 +896,6 @@ export const Abilities: { [abilityid: string]: ModdedAbilityData; } = {
 			delete move.flags['protect'];
 		},
 		shortDesc: "This Pokemon can only use status moves every other turn. Its moves ignore the target's protection.",
-	},
-	mightyhorn: {
-		inherit: true,
-		isNonstandard: null,
-	},
-	nightmareheart: {
-		inherit: true,
-		isNonstandard: null,
-	},
-	petrify: {
-		inherit: true,
-		isNonstandard: null,
 	},
 	fullmetalbody: {
 		inherit: true,

@@ -9,6 +9,7 @@ export const Scripts: ModdedBattleScriptsData = {
     if (this.gen <= 2 && move.pp === 40) pp -= ppUps;
     return pp;
   },
+  statModify(baseStats, set, statName) {},
   actions: {
     runSwitch(pokemon: Pokemon) {
       const switchersIn = [pokemon];

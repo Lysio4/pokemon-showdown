@@ -1955,7 +1955,7 @@ export const FormatsData: { [k: string]: SpeciesFormatsData; } = {
 		doublesTier: "DUU",
 	},
 	absolmegaz: {
-		tier: "OU",
+		tier: "Uber",
 		doublesTier: "DOU",
 	},
 	snorunt: {
@@ -3385,7 +3385,7 @@ export const FormatsData: { [k: string]: SpeciesFormatsData; } = {
 		doublesTier: "DUU",
 	},
 	floettemega: {
-		tier: "UU",
+		tier: "OU",
 		doublesTier: "DOU",
 	},
 	florges: {

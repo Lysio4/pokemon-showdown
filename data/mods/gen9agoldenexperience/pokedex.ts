@@ -792,13 +792,9 @@ export const Pokedex: {[k: string]: ModdedSpeciesData;} = {
 		inherit: true,
 		abilities: { 0: "Healing Echo" },
 	},
-	absolmega: {
-		inherit: true,
-		abilities: { 0: "Sharpness" },
-	},
 	absolmegaz: {
 		inherit: true,
-		abilities: { 0: "Perish Body" },
+		abilities: { 0: "Sharpness" },
 	},
 	wynaut: {
 		inherit: true,

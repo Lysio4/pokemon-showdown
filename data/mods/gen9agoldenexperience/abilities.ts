@@ -908,4 +908,21 @@ export const Abilities: { [abilityid: string]: ModdedAbilityData; } = {
 		},
 		shortDesc: "This Pokemon is immune to Status moves.",
 	},
+	arenatrap: {
+		inherit: true,
+		onFoeTrapPokemon(pokemon) {
+			if ((pokemon.hasType('Grass') || pokemon.hasType('Ground') || pokemon.hasType('Rock')) && pokemon.isAdjacent(this.effectState.target)) {
+				pokemon.tryTrap(true);
+			}
+		},
+		onFoeMaybeTrapPokemon(pokemon, source) {
+			if (!source) source = this.effectState.target;
+			if (!source || !pokemon.isAdjacent(source)) return;
+			if (!pokemon.knownType || (pokemon.hasType('Grass') || pokemon.hasType('Ground') || pokemon.hasType('Rock'))) {
+				pokemon.maybeTrapped = true;
+			}
+		},
+		desc: "Prevents opposing Grass-type, Ground-type and Rock-type Pokemon from choosing to switch out, unless they are holding a Shed Shell or are a Ghost type.",
+		shortDesc: "Prevents opposing Grass-type, Ground-type and Rock-type Pokemon from choosing to switch out.",
+	},
 };

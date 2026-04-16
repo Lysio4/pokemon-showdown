@@ -100,11 +100,11 @@ export const Pokedex: {[k: string]: ModdedSpeciesData;} = {
 	},
 	dugtrio: {
 		inherit: true,
-		baseStats: {hp: 35, atk: 115, def: 50, spa: 50, spd: 70, spe: 130},
+		baseStats: { hp: 35, atk: 115, def: 50, spa: 50, spd: 70, spe: 120 },
 	},
 	dugtrioalola: {
 		inherit: true,
-		baseStats: {hp: 35, atk: 115, def: 70, spa: 50, spd: 70, spe: 110},
+		baseStats: { hp: 35, atk: 115, def: 60, spa: 50, spd: 70, spe: 110 },
 	},
 	persian: {
 		inherit: true,
@@ -2247,12 +2247,12 @@ export const Pokedex: {[k: string]: ModdedSpeciesData;} = {
 	},
 	wiglett: {
 		inherit: true,
-		abilities: {0: "Gooey", 1: "Rattled", H: "Technician"},
+		abilities: { 0: "Gooey", 1: "Rattled", H: "Technician" },
 	},
 	wugtrio: {
 		inherit: true,
-		baseStats: {hp: 35, atk: 125, def: 50, spa: 50, spd: 70, spe: 120},
-		abilities: {0: "Gooey", 1: "Rattled", H: "Technician"},
+		baseStats: { hp: 35, atk: 115, def: 50, spa: 50, spd: 70, spe: 120 },
+		abilities: { 0: "Gooey", 1: "Rattled", H: "Technician" },
 	},
 	cyclizar: {
 		inherit: true,

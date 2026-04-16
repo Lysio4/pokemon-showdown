@@ -226,7 +226,7 @@ export const Formats: import('../sim/dex-formats').FormatList = [
 		ruleset: ['Standard NatDex', 'Terastal Clause', 'Non-Signature Z-Move Clause', 'Semi Sleep Moves Clause'],
 		banlist: [
 			'Uber', 'AG', 'Moody', 'Power Construct', 'King\'s Rock',
-			'Arena Trap', 'Baton Pass', 'Last Respects', 'Quick Claw', 'Razor Fang', 'Shadow Tag', 'Shed Tail', 'Tera Orb', 
+			'Baton Pass', 'Last Respects', 'Quick Claw', 'Razor Fang', 'Shadow Tag', 'Shed Tail', 'Tera Orb', 
 		],
 		unbanlist: ['Light of Ruin'],
 	},
@@ -248,7 +248,7 @@ export const Formats: import('../sim/dex-formats').FormatList = [
 		ruleset: ['Standard NatDex', 'Terastal Clause', 'Non-Signature Z-Move Clause', 'Semi Sleep Moves Clause'],
 		banlist: [
 			'Uber', 'AG', 'OU', 'UUBL', 'Moody', 'Power Construct', 'King\'s Rock',
-			'Arena Trap', 'Baton Pass', 'Last Respects', 'Quick Claw', 'Razor Fang', 'Shadow Tag', 'Shed Tail',
+			'Baton Pass', 'Last Respects', 'Quick Claw', 'Razor Fang', 'Shadow Tag', 'Shed Tail',
 			'Drizzle', 'Drought', 'Light Clay', 'Tera Orb', 
 		],
 		unbanlist: ['Light of Ruin'],
@@ -260,7 +260,7 @@ export const Formats: import('../sim/dex-formats').FormatList = [
 		ruleset: ['Standard NatDex', 'Terastal Clause', 'Non-Signature Z-Move Clause', 'Semi Sleep Moves Clause'],
 		banlist: [
 			'Uber', 'AG', 'OU', 'UUBL', 'UU', 'RUBL', 'Moody', 'Power Construct', 'King\'s Rock',
-			'Arena Trap', 'Baton Pass', 'Last Respects', 'Quick Claw', 'Razor Fang', 'Shadow Tag', 'Shed Tail',
+			'Baton Pass', 'Last Respects', 'Quick Claw', 'Razor Fang', 'Shadow Tag', 'Shed Tail',
 			'Drizzle', 'Drought', 'Light Clay', 'Tera Orb', 
 		],
 		unbanlist: ['Light of Ruin'],
@@ -272,7 +272,7 @@ export const Formats: import('../sim/dex-formats').FormatList = [
 		ruleset: ['Standard NatDex', 'Terastal Clause', 'Non-Signature Z-Move Clause', 'Semi Sleep Moves Clause'],
 		banlist: [
 			'Uber', 'AG', 'OU', 'UUBL', 'UU', 'RUBL', 'RU', 'NUBL', 'Moody', 'Power Construct', 'King\'s Rock',
-			'Arena Trap', 'Baton Pass', 'Last Respects', 'Quick Claw', 'Razor Fang', 'Shadow Tag', 'Shed Tail',
+			'Baton Pass', 'Last Respects', 'Quick Claw', 'Razor Fang', 'Shadow Tag', 'Shed Tail',
 			'Drizzle', 'Drought', 'Light Clay', 'Tera Orb', 
 		],
 		unbanlist: ['Light of Ruin'],
@@ -440,7 +440,7 @@ export const Formats: import('../sim/dex-formats').FormatList = [
 			'Ogerpon-Wellspring', 'Palkia', 'Palkia-Origin', 'Porygon-Z', 'Pheromosa', 'Rayquaza', 'Reshiram', 'Salamence-Mega', 'Shaymin-Sky', 'Silvally', 'Solgaleo', 'Spectrier', 
 			'Tapu Koko', 'Tapu Lele', 'Terapagos', 'Ursaluna-Bloodmoon', 'Urshifu-Single-Strike', 'Walking Wake', 'Xerneas', 'Xurkitree', 'Yveltal', 'Zacian', 'Zacian-Crowned', 
 			'Zamazenta-Crowned', 'Zekrom', 'Zoroark-Hisui',	'Zygarde-50%', 'Moody', 'Power Construct', 'Damp Rock', 'King\'s Rock', 'Quick Claw', 'Razor Fang', 'Baton Pass', 
-			'Arena Trap', 'Comatose', 'Last Respects', 'Rage Fist', 'Shadow Tag', 'Shed Tail', 'Tera Orb', 
+			'Comatose', 'Last Respects', 'Rage Fist', 'Shadow Tag', 'Shed Tail', 'Tera Orb', 
 		],
 		restricted: [
 			'Astral Barrage', 'Belly Drum', 'Big Bang', 'Bolt Beak', 'Chatter', 'Clangorous Soul', 'Dire Claw', 'Double Iron Bash', 'Dragon Energy', 'Electrify', 'Extreme Speed',
@@ -480,7 +480,7 @@ export const Formats: import('../sim/dex-formats').FormatList = [
 			'Kyurem', 'Kyurem-Black', 'Kyurem-White', 'Landorus-Incarnate', 'Lugia', 'Lunala', 'Magearna', 'Manaphy', 'Mewtwo', 'Miraidon', 'Necrozma-Dawn-Wings', 'Necrozma-Dusk-Mane',
 			'Palafin', 'Palkia', 'Palkia-Origin', 'Pheromosa', 'Rayquaza', 'Reshiram', 'Roaring Moon', 'Shaymin-Sky', 'Sneasler', 'Solgaleo', 'Spectrier', 'Tornadus-Therian', 'Ursaluna-Bloodmoon',
 			'Volcarona', 'Xerneas', 'Yveltal', 'Zacian', 'Zacian-Crowned', 'Zamazenta-Crowned', 'Zekrom', 'Zygarde-50', 'Moody', 'Booster Energy', 'King\'s Rock', 'Light Clay', 'Razor Fang',
-			'Arena Trap', 'Baton Pass', 'Last Respects', 'Shadow Tag', 'Shed Tail', 'Tera Orb', 
+			'Baton Pass', 'Last Respects', 'Shadow Tag', 'Shed Tail', 'Tera Orb', 
 		],
 		unbanlist: ['Light of Ruin'],
 	},
@@ -518,7 +518,7 @@ export const Formats: import('../sim/dex-formats').FormatList = [
 			'Ho-Oh', 'Iron Bundle', 'Koraidon', 'Kyogre', 'Kyurem-Black', 'Kyurem-White', 'Lugia', 'Lunala', 'Magearna', 'Miraidon', 'Mewtwo', 'Naganadel', 'Necrozma-Dusk-Mane',
 			'Necrozma-Dawn-Wings', 'Ogerpon-Hearthflame', 'Palafin', 'Palkia', 'Palkia-Origin', 'Pheromosa', 'Porygon-Z', 'Rayquaza', 'Reshiram', 'Roaring Moon', 'Shaymin-Sky', 'Solgaleo', 
 			'Spectrier', 'Ursaluna-Bloodmoon', 'Urshifu-Single-Strike', 'Xerneas', 'Yveltal', 'Zacian', 'Zacian-Crowned', 'Zamazenta-Crowned',
-			'Zekrom', 'Zygarde-50', 'Arena Trap', 'Moody', 'Damp Rock', 'Icy Rock', 'King\'s Rock', 'Smooth Rock', 'Baton Pass', 'Shadow Tag', 'Shed Tail', 'Tera Orb', 
+			'Zekrom', 'Zygarde-50', 'Moody', 'Damp Rock', 'Icy Rock', 'King\'s Rock', 'Smooth Rock', 'Baton Pass', 'Shadow Tag', 'Shed Tail', 'Tera Orb', 
 			'Last Respects',
 		],
 		unbanlist: ['Light of Ruin'],
@@ -585,7 +585,7 @@ export const Formats: import('../sim/dex-formats').FormatList = [
 			'Giratina', 'Giratina-Origin', 'Groudon', 'Ho-Oh', 'Hoopa-Unbound', 'Keldeo', 'Koraidon', 'Kyogre', 'Kyurem-Black', 'Kyurem-White', 'Lugia', 'Lunala', 'Magearna',
 			'Mew', 'Mewtwo', 'Miraidon', 'Naganadel', 'Necrozma-Dawn-Wings', 'Necrozma-Dusk-Mane', 'Ogerpon-Hearthflame', 'Palkia', 'Palkia-Origin', 'Raging Bolt', 'Rayquaza', 'Reshiram',
 			'Slaking', 'Smeargle', 'Solgaleo', 'Spectrier', 'Urshifu-Base', 'Weavile', 'Xerneas', 'Yveltal', 'Zacian', 'Zacian-Crowned', 
-			'Zekrom', 'Zygarde-50', 'Arena Trap', 'Moody', 'Light Clay', 'Baton Pass', 'Last Respects', 'Revival Blessing', 'Shadow Tag', 'Shed Tail', 'Tera Orb', 
+			'Zekrom', 'Zygarde-50', 'Moody', 'Light Clay', 'Baton Pass', 'Last Respects', 'Revival Blessing', 'Shadow Tag', 'Shed Tail', 'Tera Orb', 
 		],
 		restricted: [
 			'Agility', 'Baneful Bunker', 'Belly Drum', 'Block', 'Burning Bulwark', 'Chilly Reception', 'Confuse Ray', 'Copycat', 'Dragon Dance', 'Detect', 'Destiny Bond',

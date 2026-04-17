@@ -757,11 +757,13 @@ export const Moves: { [k: string]: ModdedMoveData; } = {
 	},
 	direclaw: {
 		inherit: true,
-		basePower: 90,
-		shortDesc: "30% chance to poison the target.",
+		shortDesc: "30% chance to poison or paralyze target.",
 		secondary: {
-			chance: 30,
-			status: 'psn',
+			chance: 50,
+			onHit(target, source) {
+				const status = this.sample(['psn', 'par']);
+				target.trySetStatus(status, source);
+			},
 		},
 	},
 	fissure: {
@@ -801,6 +803,7 @@ export const Moves: { [k: string]: ModdedMoveData; } = {
 		inherit: true,
 		accuracy: 100,
 		basePower: 90,
+		flags: { contact: 1, protect: 1, mirror: 1, metronome: 1, slicing: 1 },
 		ohko: false,
 		desc: "Raises user's Attack by 1 if this KOes the target.",
 		shortDesc: "Raises user's Attack by 1 if this KOes the target.",
@@ -988,7 +991,7 @@ export const Moves: { [k: string]: ModdedMoveData; } = {
 	},
 	doublehit: {
 		inherit: true,
-		basePower: 50,
+		basePower: 45,
 	},
 	paraboliccharge: {
 		inherit: true,

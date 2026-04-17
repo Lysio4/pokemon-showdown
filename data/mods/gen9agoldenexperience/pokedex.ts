@@ -1458,7 +1458,7 @@ export const Pokedex: {[k: string]: ModdedSpeciesData;} = {
 	},
 	haxorus: {
 		inherit: true,
-		abilities: {0: "Rivalry", 1: "Mold Breaker", H: "Steelbreaker"},
+		abilities: { 0: "Sharpness", 1: "Mold Breaker", H: "Steelbreaker" },
 	},
 	cryogonal: {
 		inherit: true,

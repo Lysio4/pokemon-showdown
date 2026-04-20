@@ -823,13 +823,6 @@ export const Abilities: { [abilityid: string]: ModdedAbilityData; } = {
 		desc: "Bug/Ghost/Dark resistances. This Pokemon's Speed is raised by 1 stage if hit by a Bug-, Dark-, or Ghost-type attack, or if an opposing Pokemon affected this Pokemon with the Intimidate Ability.",
 		shortDesc: "Bug/Ghost/Dark resistances. Speed is raised 1 stage if hit by a Bug-, Dark-, or Ghost-type attack, or Intimidated.",
 	},
-	merciless: {
-		inherit: true,
-		onModifyCritRatio(critRatio, source, target) {
-			if (target && ['psn', 'tox', 'brn', 'par', 'frz', 'slp'].includes(target.status)) return 5;
-		},
-		shortDesc: "This Pokemon's attacks are critical hits if the target is statused.",
-	},
 	teravolt: {
 		inherit: true,
 		onModifyAtkPriority: 5,

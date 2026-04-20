@@ -1461,7 +1461,6 @@ export const Scripts: ModdedBattleScriptsData = {
     // Gen 6:
     this.modData('Learnsets', 'pyroar').learnset.earthpower = ['9L1']; // ZA addition
     this.modData('Learnsets', 'floetteeternal').learnset.revivalblessing = ['9L1'];
-    this.modData('Learnsets', 'floetteeternal').learnset.psychicnoise = ['9L1'];
     this.modData('Learnsets', 'gogoat').learnset.stealthrock = ['9L1'];
     this.modData('Learnsets', 'gogoat').learnset.swordsdance = ['9L1'];
     this.modData('Learnsets', 'gogoat').learnset.stoneedge = ['9L1'];
@@ -1477,8 +1476,6 @@ export const Scripts: ModdedBattleScriptsData = {
     this.modData('Learnsets', 'malamar').learnset.poisonjab = ['9L1']; // ZA addition
     this.modData('Learnsets', 'malamar').learnset.octolock = ['9L1']; // ZA addition
     this.modData('Learnsets', 'barbaracle').learnset.closecombat = ['9L1']; // ZA addition
-    this.modData('Learnsets', 'barbaracle').learnset.waterfall = ['9L1']; // ZA addition
-    this.modData('Learnsets', 'dragalge').learnset.poisonjab = ['9L1']; // ZA addition
     this.modData('Learnsets', 'heliolisk').learnset.earthpower = ['9L1'];
     this.modData('Learnsets', 'heliolisk').learnset.scorchingsands = ['9L1'];
     this.modData('Learnsets', 'aurorus').learnset.powergem = ['9L1'];

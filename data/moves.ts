@@ -22831,13 +22831,12 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 	natureswrath: {
 		num: -54,
 		accuracy: 100,
-		basePower: 70,
+		basePower: 80,
 		category: "Special",
-		shortDesc: "Either Grass or Ground-type, whichever is more effective. Heals user by 12.5% of damage dealt.",
+		shortDesc: "Either Grass or Ground-type, whichever is more effective.",
 		name: "Nature's Wrath",
 		pp: 10,
-		flags: { protect: 1, mirror: 1, heal: 1, metronome: 1 },
-		drain: [1, 8],
+		flags: { protect: 1, mirror: 1, metronome: 1 },
 		onPrepareHit(target, source) {
 			this.attrLastMove('[still]');
 			this.add('-anim', source, "Leaf Storm", target);
@@ -22938,8 +22937,6 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 		multihit: 2,
 		onPrepareHit(target, source) {
 			this.attrLastMove('[still]');
-			this.add('-anim', source, "Power Whip", target);
-			this.add('-anim', source, "Sludge Wave", target);
 			this.add('-anim', source, "Power Whip", target);
 			this.add('-anim', source, "Sludge Wave", target);
 		},
@@ -23281,7 +23278,6 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 		onPrepareHit(target, source) {
 			this.attrLastMove('[still]');
 			this.add('-anim', source, "Boomburst", target);
-			this.add('-anim', source, "U-turn", target);
 		},
 		target: "normal",
 		type: "Dragon",
@@ -23349,11 +23345,15 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 		name: "Mantis Slash",
 		pp: 5,
 		priority: 0,
-		flags: {contact: 1, protect: 1, mirror: 1, metronome: 1},
+		flags: { contact: 1, protect: 1, mirror: 1, metronome: 1, slicing: 1 },
 		self: {
 			boosts: {
 				spe: -2,
 			},
+		},
+		onPrepareHit(target, source) {
+			this.attrLastMove('[still]');
+			this.add('-anim', source, "Leech Life", target);
 		},
 		target: "normal",
 		type: "Grass",

@@ -18736,7 +18736,6 @@ export const Learnsets: import('../../../sim/dex-species').ModdedLearnsetDataTab
 			meanlook: ["9L1"],
 			mirrormove: ["9L38"],
 			naturesmadness: ["9L43"],
-			natureswrath: ["9T"],
 			parallelcircuit: ["9M"],
 			payback: ["9M"],
 			powerswap: ["9L1"],

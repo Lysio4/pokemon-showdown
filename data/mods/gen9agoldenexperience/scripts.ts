@@ -1020,8 +1020,6 @@ export const Scripts: ModdedBattleScriptsData = {
     this.modData('Learnsets', 'moltresgalar').learnset.roost = ['9L1'];
 
     // Gen 2:
-    this.modData('Learnsets', 'meganium').learnset.moonblast = ['9L1'];
-    this.modData('Learnsets', 'meganium').learnset.growth = ['9L1'];
     this.modData('Learnsets', 'typhlosion').learnset.gravity = ['9L1'];
     this.modData('Learnsets', 'typhlosion').learnset.morningsun = ['9L1'];
     this.modData('Learnsets', 'typhlosion').learnset.earthpower = ['9L1'];

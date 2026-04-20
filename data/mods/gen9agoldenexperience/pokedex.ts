@@ -2120,9 +2120,8 @@ export const Pokedex: {[k: string]: ModdedSpeciesData;} = {
 	},
 	copperajah: {
 		inherit: true,
-		types: ["Steel", "Ground"],
-		baseStats: {hp: 122, atk: 130, def: 89, spa: 40, spd: 89, spe: 30},
-		abilities: {0: "Sheer Force", 1: "Dry Skin", H: "Heavy Metal"},
+		baseStats: { hp: 122, atk: 130, def: 89, spa: 40, spd: 89, spe: 30 },
+		abilities: { 0: "Sheer Force", 1: "Dry Skin", H: "Heavy Metal" },
 	},
 	zarude: {
 		inherit: true,

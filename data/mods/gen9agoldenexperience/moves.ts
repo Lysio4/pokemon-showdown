@@ -1054,7 +1054,7 @@ export const Moves: { [k: string]: ModdedMoveData; } = {
 		inherit: true,
 		onHit(pokemon) {
 			let factor = 0.5;
-			switch (pokemon.effectiveWeather()) {
+			switch (pokemon.effectiveWeather(true)) {
 			case 'sunnyday':
 			case 'desolateland':
 				factor = 0.667;
@@ -1080,7 +1080,7 @@ export const Moves: { [k: string]: ModdedMoveData; } = {
 		inherit: true,
 		onHit(pokemon) {
 			let factor = 0.5;
-			switch (pokemon.effectiveWeather()) {
+			switch (pokemon.effectiveWeather(true)) {
 			case 'sunnyday':
 			case 'desolateland':
 				factor = 0.667;
@@ -1106,7 +1106,7 @@ export const Moves: { [k: string]: ModdedMoveData; } = {
 		inherit: true,
 		onBasePower(basePower, pokemon, target) {
 			const weakWeathers = ['raindance', 'primordialsea', 'sandstorm', 'hail', 'snowscape', 'eternalwinter'];
-			if (weakWeathers.includes(pokemon.effectiveWeather())) {
+			if (weakWeathers.includes(pokemon.effectiveWeather(true))) {
 				this.debug('weakened by weather');
 				return this.chainModify(0.5);
 			}
@@ -1116,7 +1116,7 @@ export const Moves: { [k: string]: ModdedMoveData; } = {
 		inherit: true,
 		onBasePower(basePower, pokemon, target) {
 			const weakWeathers = ['raindance', 'primordialsea', 'sandstorm', 'hail', 'snowscape', 'eternalwinter'];
-			if (weakWeathers.includes(pokemon.effectiveWeather())) {
+			if (weakWeathers.includes(pokemon.effectiveWeather(true))) {
 				this.debug('weakened by weather');
 				return this.chainModify(0.5);
 			}
@@ -1126,7 +1126,7 @@ export const Moves: { [k: string]: ModdedMoveData; } = {
 		inherit: true,
 		onHit(pokemon) {
 			let factor = 0.5;
-			switch (pokemon.effectiveWeather()) {
+			switch (pokemon.effectiveWeather(true)) {
 			case 'sunnyday':
 			case 'desolateland':
 				factor = 0.667;
@@ -1151,7 +1151,7 @@ export const Moves: { [k: string]: ModdedMoveData; } = {
 	weatherball: {
 		inherit: true,
 		onModifyType(move, pokemon) {
-			switch (pokemon.effectiveWeather()) {
+			switch (pokemon.effectiveWeather(true)) {
 			case 'sunnyday':
 			case 'desolateland':
 				move.type = 'Fire';
@@ -1171,7 +1171,7 @@ export const Moves: { [k: string]: ModdedMoveData; } = {
 			}
 		},
 		onModifyMove(move, pokemon) {
-			switch (pokemon.effectiveWeather()) {
+			switch (pokemon.effectiveWeather(true)) {
 			case 'sunnyday':
 			case 'desolateland':
 				move.basePower *= 2;

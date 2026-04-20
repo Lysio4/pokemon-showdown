@@ -977,9 +977,14 @@ export const Moves: { [k: string]: ModdedMoveData; } = {
 		shortDesc: "Sets Electric Terrain upon use. During Electric Terrain: 1.5x power.",
 		desc: "Sets Electric Terrain upon use. During Electric Terrain: 1.5x power.",
 	},
+	doubleshock: {
+		inherit: true,
+		isNonstandard: null,
+	},
 	revivalblessing: {
 		inherit: true,
 		flags: { heal: 1, nosketch: 1, noassist: 1 },
+		isNonstandard: null,
 	},
 	psyshieldbash: {
 		inherit: true,

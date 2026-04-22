@@ -11,11 +11,11 @@ export const ItemsText: { [id: IDEntry]: ItemText } = {
 	},
 	absolite: {
 		name: "Absolite",
-		shortDesc: "If held by an Absol, this item allows it to Mega Evolve in battle.",
+		shortDesc: "If held by an Absol, this item allows it to Mega Evolve into Mega Absol in battle.",
 	},
 	absolitez: {
 		name: "Absolite Z",
-		shortDesc: "If held by an Absol, this item allows it to Mega Evolve in battle.",
+		shortDesc: "If held by an Absol, this item allows it to Mega Evolve into Mega Absol Z in battle.",
 	},
 	absorbbulb: {
 		name: "Absorb Bulb",
@@ -244,11 +244,11 @@ export const ItemsText: { [id: IDEntry]: ItemText } = {
 	},
 	charizarditex: {
 		name: "Charizardite X",
-		shortDesc: "If held by a Charizard, this item allows it to Mega Evolve in battle.",
+		shortDesc: "If held by a Charizard, this item allows it to Mega Evolve into Mega Charizard X.",
 	},
 	charizarditey: {
 		name: "Charizardite Y",
-		shortDesc: "If held by a Charizard, this item allows it to Mega Evolve in battle.",
+		shortDesc: "If held by a Charizard, this item allows it to Mega Evolve into Mega Charizard Y.",
 	},
 	chartiberry: {
 		name: "Charti Berry",
@@ -747,11 +747,11 @@ export const ItemsText: { [id: IDEntry]: ItemText } = {
 	},
 	garchompite: {
 		name: "Garchompite",
-		shortDesc: "If held by a Garchomp, this item allows it to Mega Evolve in battle.",
+		shortDesc: "If held by a Garchomp, this item allows it to Mega Evolve into Mega Garchomp.",
 	},
 	garchompitez: {
 		name: "Garchompite Z",
-		shortDesc: "If held by a Garchomp, this item allows it to Mega Evolve in battle.",
+		shortDesc: "If held by a Garchomp, this item allows it to Mega Evolve into Mega Garchomp Z.",
 	},
 	gardevoirite: {
 		name: "Gardevoirite",
@@ -1113,11 +1113,11 @@ export const ItemsText: { [id: IDEntry]: ItemText } = {
 	},
 	lucarionite: {
 		name: "Lucarionite",
-		shortDesc: "If held by a Lucario, this item allows it to Mega Evolve in battle.",
+		shortDesc: "If held by a Lucario, this item allows it to Mega Evolve into Mega Lucario in battle.",
 	},
 	lucarionitez: {
 		name: "Lucarionite Z",
-		shortDesc: "If held by a Lucario, this item allows it to Mega Evolve in battle.",
+		shortDesc: "If held by a Lucario, this item allows it to Mega Evolve into Mega Lucario Z in battle.",
 	},
 	luckypunch: {
 		name: "Lucky Punch",
@@ -1164,7 +1164,7 @@ export const ItemsText: { [id: IDEntry]: ItemText } = {
 	},
 	magearnite: {
 		name: "Magearnite",
-		shortDesc: "If held by a Magearna forme, this item allows it to Mega Evolve in battle.",
+		shortDesc: "If held by a Magearna, this item allows it to Mega Evolve in battle.",
 	},
 	magmarizer: {
 		name: "Magmarizer",
@@ -1248,7 +1248,7 @@ export const ItemsText: { [id: IDEntry]: ItemText } = {
 	},
 	meowsticite: {
 		name: "Meowsticite",
-		shortDesc: "If held by a Meowstic forme, this item allows it to Mega Evolve in battle.",
+		shortDesc: "If held by a Meowstic, this item allows it to Mega Evolve in battle.",
 	},
 	metagrossite: {
 		name: "Metagrossite",
@@ -1287,11 +1287,11 @@ export const ItemsText: { [id: IDEntry]: ItemText } = {
 	},
 	mewtwonitex: {
 		name: "Mewtwonite X",
-		shortDesc: "If held by a Mewtwo, this item allows it to Mega Evolve in battle.",
+		shortDesc: "If held by a Mewtwo, this item allows it to Mega Evolve into Mega Mewtwo X in battle.",
 	},
 	mewtwonitey: {
 		name: "Mewtwonite Y",
-		shortDesc: "If held by a Mewtwo, this item allows it to Mega Evolve in battle.",
+		shortDesc: "If held by a Mewtwo, this item allows it to Mega Evolve into Mega Mewtwo Y in battle.",
 	},
 	micleberry: {
 		name: "Micle Berry",
@@ -1592,11 +1592,11 @@ export const ItemsText: { [id: IDEntry]: ItemText } = {
 	},
 	raichunitex: {
 		name: "Raichunite X",
-		shortDesc: "If held by a Raichu, this item allows it to Mega Evolve in battle.",
+		shortDesc: "If held by a Raichu, this item allows it to Mega Evolve into Mega Raichu X in battle.",
 	},
 	raichunitey: {
 		name: "Raichunite Y",
-		shortDesc: "If held by a Raichu, this item allows it to Mega Evolve in battle.",
+		shortDesc: "If held by a Raichu, this item allows it to Mega Evolve into Mega Raichu Y in battle.",
 	},
 	rarebone: {
 		name: "Rare Bone",
@@ -1981,7 +1981,7 @@ export const ItemsText: { [id: IDEntry]: ItemText } = {
 	},
 	tatsugirinite: {
 		name: "Tatsugirinite",
-		shortDesc: "If held by a Tatsugiri forme, this item allows it to Mega Evolve in battle.",
+		shortDesc: "If held by a Tatsugiri, this item allows it to Mega Evolve in battle.",
 	},
 	terrainextender: {
 		name: "Terrain Extender",

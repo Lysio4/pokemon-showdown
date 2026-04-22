@@ -8297,7 +8297,7 @@ export const Items: import('../sim/dex-items').ItemDataTable = {
 		},
 		num: -9,
 		gen: 9,
-		desc: "If held by a Typhlosion forme, this item allows it to Mega Evolve in battle.",
+		desc: "If held by a Typhlosion, this item allows it to Mega Evolve in battle.",
 		isNonstandard: "Custom",
 	},
 	noctowlite: {
@@ -8461,7 +8461,7 @@ export const Items: import('../sim/dex-items').ItemDataTable = {
 		},
 		num: -21,
 		gen: 9,
-		desc: "If held by a Zoroark forme, this item allows it to Mega Evolve in battle.",
+		desc: "If held by a Zoroark, this item allows it to Mega Evolve in battle.",
 		isNonstandard: "Custom",
 	},
 	sawsbuckite: {
@@ -8479,7 +8479,7 @@ export const Items: import('../sim/dex-items').ItemDataTable = {
 		},
 		num: -22,
 		gen: 9,
-		desc: "If held by a Sawsbuck forme, this item allows it to Mega Evolve in battle.",
+		desc: "If held by a Sawsbuck, this item allows it to Mega Evolve in battle.",
 		isNonstandard: "Custom",
 	},
 	clawitzerite: {
@@ -8599,7 +8599,7 @@ export const Items: import('../sim/dex-items').ItemDataTable = {
 		},
 		num: -31,
 		gen: 9,
-		desc: "If held by a Mimikyu forme, this item allows it to Mega Evolve in battle.",
+		desc: "If held by a Mimikyu, this item allows it to Mega Evolve in battle.",
 		isNonstandard: "Custom",
 	},
 	dhelmite: {
@@ -8641,7 +8641,7 @@ export const Items: import('../sim/dex-items').ItemDataTable = {
 		},
 		num: -34,
 		gen: 9,
-		desc: "If held by a Cramorant forme, this item allows it to Mega Evolve in battle.",
+		desc: "If held by a Cramorant, this item allows it to Mega Evolve in battle.",
 		isNonstandard: "Custom",
 	},
 	toxtricitite: {
@@ -8657,7 +8657,7 @@ export const Items: import('../sim/dex-items').ItemDataTable = {
 		},
 		num: -34,
 		gen: 9,
-		desc: "If held by a Toxtricity forme, this item allows it to Mega Evolve in battle.",
+		desc: "If held by a Toxtricity, this item allows it to Mega Evolve in battle.",
 		isNonstandard: "Custom",
 	},
 	centiskorchitex: {

@@ -498,6 +498,7 @@ export const Scripts: ModdedBattleScriptsData = {
     this.modData('Learnsets', 'coalossal').learnset.landslide = ['9M'];
     this.modData('Learnsets', 'sandaconda').learnset.landslide = ['9M'];
     this.modData('Learnsets', 'stonjourner').learnset.landslide = ['9M'];
+    this.modData('Learnsets', 'copperajah').learnset.landslide = ['9M'];
     this.modData('Learnsets', 'ironthorns').learnset.landslide = ['9M'];
 
     // downdraft 
@@ -508,6 +509,7 @@ export const Scripts: ModdedBattleScriptsData = {
     this.modData('Learnsets', 'moltres').learnset.downdraft = ['9L1'];
     this.modData('Learnsets', 'moltresgalar').learnset.downdraft = ['9L1'];
     this.modData('Learnsets', 'dragonite').learnset.downdraft = ['9L1'];
+    this.modData('Learnsets', 'mew').learnset.downdraft = ['9L1'];
     this.modData('Learnsets', 'noctowl').learnset.downdraft = ['9L1'];
     this.modData('Learnsets', 'lugia').learnset.downdraft = ['9L1'];
     this.modData('Learnsets', 'hooh').learnset.downdraft = ['9L1'];
@@ -596,7 +598,6 @@ export const Scripts: ModdedBattleScriptsData = {
     this.modData('Learnsets', 'terrakion').learnset.golemstrike = ['9M'];
     this.modData('Learnsets', 'chesnaught').learnset.golemstrike = ['9M'];
     this.modData('Learnsets', 'diggersby').learnset.golemstrike = ['9M'];
-    this.modData('Learnsets', 'gogoat').learnset.golemstrike = ['9M'];
     this.modData('Learnsets', 'binacle').learnset.golemstrike = ['9M'];
     this.modData('Learnsets', 'barbaracle').learnset.golemstrike = ['9M'];
     this.modData('Learnsets', 'avalugghisui').learnset.golemstrike = ['9M'];
@@ -871,11 +872,13 @@ export const Scripts: ModdedBattleScriptsData = {
 
     // sweetheart 
     this.modData('Learnsets', 'wigglytuff').learnset.sweetheart = ['9L1'];
+    this.modData('Learnsets', 'chansey').learnset.sweetheart = ['9L1'];
     this.modData('Learnsets', 'bellossom').learnset.sweetheart = ['9L1'];
+    this.modData('Learnsets', 'blissey').learnset.sweetheart = ['9L1'];
     this.modData('Learnsets', 'luvdisc').learnset.sweetheart = ['9L1'];
-    this.modData('Learnsets', 'sylveon').learnset.sweetheart = ['9L1'];
-    this.modData('Learnsets', 'florges').learnset.sweetheart = ['9L1'];
     this.modData('Learnsets', 'mesprit').learnset.sweetheart = ['9L1'];
+    this.modData('Learnsets', 'florges').learnset.sweetheart = ['9L1'];
+    this.modData('Learnsets', 'sylveon').learnset.sweetheart = ['9L1'];
 
     // chakraterrain 
     this.modData('Learnsets', 'hitmonchan').learnset.chakraterrain = ['9L1'];
@@ -1460,10 +1463,7 @@ export const Scripts: ModdedBattleScriptsData = {
 
     // Gen 6:
     this.modData('Learnsets', 'pyroar').learnset.earthpower = ['9L1']; // ZA addition
-    this.modData('Learnsets', 'floetteeternal').learnset.revivalblessing = ['9L1'];
-    this.modData('Learnsets', 'gogoat').learnset.stealthrock = ['9L1'];
-    this.modData('Learnsets', 'gogoat').learnset.swordsdance = ['9L1'];
-    this.modData('Learnsets', 'gogoat').learnset.stoneedge = ['9L1'];
+    this.modData('Learnsets', 'gogoat').learnset.goatup = ['9L1'];
     this.modData('Learnsets', 'gogoat').learnset.megahorn = ['9L1']; // ZA addition
     this.modData('Learnsets', 'pangoro').learnset.machpunch = ['9L1'];
     this.modData('Learnsets', 'furfrou').learnset.bodyslam = ['9L1'];

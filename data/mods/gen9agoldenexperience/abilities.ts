@@ -218,26 +218,6 @@ export const Abilities: { [abilityid: string]: ModdedAbilityData; } = {
 			}
 		},
 	},
-	iceface: {
-		inherit: true,
-		onStart(pokemon) {
-			if (this.field.isWeather(['hail', 'snowscape', 'eternalwinter']) && pokemon.species.id === 'eiscuenoice') {
-				this.add('-activate', pokemon, 'ability: Ice Face');
-				this.effectState.busted = false;
-				pokemon.formeChange('Eiscue', this.effect, true);
-			}
-		},
-		onWeatherChange(pokemon, source, sourceEffect) {
-			// snow/hail resuming because Cloud Nine/Air Lock ended does not trigger Ice Face
-			if ((sourceEffect as Ability)?.suppressWeather) return;
-			if (!pokemon.hp) return;
-			if (this.field.isWeather(['hail', 'snowscape', 'eternalwinter']) && pokemon.species.id === 'eiscuenoice') {
-				this.add('-activate', pokemon, 'ability: Ice Face');
-				this.effectState.busted = false;
-				pokemon.formeChange('Eiscue', this.effect, true);
-			}
-		},
-	},
 	// end of snow and hail abilities
 	disillusioned: {
 		inherit: true,
@@ -490,6 +470,39 @@ export const Abilities: { [abilityid: string]: ModdedAbilityData; } = {
 		desc: "This Pokemon and its allies have the power of their moves multiplied by 1.5. This affects Doom Desire and Future Sight, even if the user is not on the field.",
 		shortDesc: "This Pokemon and its allies have the power of their moves multiplied by 1.5.",
 	},
+	iceface: {
+		inherit: true,
+		onResidualOrder: 29,
+		onResidual(pokemon) {
+			if (pokemon.baseSpecies.baseSpecies !== 'Eiscue' || pokemon.transformed) {
+				return;
+			}
+			if (pokemon.hp <= pokemon.maxhp / 2 && !['Noice'].includes(pokemon.species.forme)) {
+				this.add('-activate', target, 'ability: Ice Face');
+				this.effectState.busted = true;
+				return 0;
+			}
+		},
+		onStart(pokemon) {
+			if (this.field.isWeather(['hail', 'snowscape', 'eternalwinter']) && pokemon.species.id === 'eiscuenoice') {
+				this.add('-activate', pokemon, 'ability: Ice Face');
+				this.effectState.busted = false;
+				pokemon.formeChange('Eiscue', this.effect, true);
+			}
+		},
+		onWeatherChange(pokemon, source, sourceEffect) {
+			// snow/hail resuming because Cloud Nine/Air Lock ended does not trigger Ice Face
+			if ((sourceEffect as Ability)?.suppressWeather) return;
+			if (!pokemon.hp) return;
+			if (this.field.isWeather(['hail', 'snowscape', 'eternalwinter']) && pokemon.species.id === 'eiscuenoice') {
+				this.add('-activate', pokemon, 'ability: Ice Face');
+				this.effectState.busted = false;
+				pokemon.formeChange('Eiscue', this.effect, true);
+			}
+		},
+		desc: "If this Pokemon is an Eiscue, forme changes if its HP drop under 50%. Also, the first physical hit it takes in battle deals 0 neutral damage. Its ice face is then broken and it changes forme to Noice Face. Eiscue regains its Ice Face forme when Snow begins or when Eiscue switches in while Snow is active. Confusion damage also breaks the ice face.",
+		shortDesc: "If Eiscue, the first physical hit it takes deals 0 damage. Effect is restored in Snow. Forme changes if its HP drop under 50%.",
+	},
 	stickyhold: {
 		//inherit: true,
 		onTakeItem(item, pokemon, source) {
@@ -727,14 +740,7 @@ export const Abilities: { [abilityid: string]: ModdedAbilityData; } = {
 				this.add('-activate', pokemon, 'ability: Grass Pelt');
 			}
 		},
-		onModifyDefPriority: 5,
-		onModifyDef(def, attacker, defender, move) {
-			if (this.field.isTerrain('grassyterrain') && attacker.isGrounded()) {
-				this.debug('Grass Pelt boost');
-				return this.chainModify([5461, 4096]);
-			}
-		},
-		shortDesc: "On switch-in, summons Grassy Terrain. During Grassy Terrain, Def is 1.3333x.",
+		shortDesc: "On switch-in, summons Grassy Terrain. During Grassy Terrain, Def is 1.5x.",
 	},
 	flowergift: {
 		inherit: true,

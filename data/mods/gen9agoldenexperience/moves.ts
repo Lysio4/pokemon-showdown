@@ -507,6 +507,10 @@ export const Moves: { [k: string]: ModdedMoveData; } = {
 		inherit: true,
 		isNonstandard: null,
 	},
+	goatup: {
+		inherit: true,
+		isNonstandard: null,
+	},
 	// modified moves
 	toxicthread: {
 		inherit: true,

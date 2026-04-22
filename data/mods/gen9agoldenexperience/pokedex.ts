@@ -1567,12 +1567,11 @@ export const Pokedex: {[k: string]: ModdedSpeciesData;} = {
 	},
 	skiddo: {
 		inherit: true,
-		baseStats: {hp: 66, atk: 65, def: 57, spa: 48, spd: 62, spe: 52},
+		baseStats: { hp: 66, atk: 65, def: 57, spa: 48, spd: 62, spe: 52 },
 	},
 	gogoat: {
 		inherit: true,
-		types: ["Grass", "Rock"],
-		baseStats: {hp: 123, atk: 100, def: 81, spa: 62, spd: 97, spe: 68},
+		baseStats: { hp: 123, atk: 100, def: 81, spa: 62, spd: 97, spe: 68 },
 	},
 	pangoro: {
 		inherit: true,
@@ -2073,10 +2072,6 @@ export const Pokedex: {[k: string]: ModdedSpeciesData;} = {
 	cursola: {
 		inherit: true,
 		abilities: { 0: "Weak Armor", 1: "Petrify", H: "Perish Body" },
-	},
-	sirfetchd: {
-		inherit: true,
-		abilities: {0: "Sniper", H: "Scrappy"},
 	},
 	runerigus: {
 		inherit: true,

@@ -24054,6 +24054,30 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 		shortDesc: "No additional effect.",
 		isNonstandard: "Custom",
 	},
+	goatup: {
+		num: -100,
+		accuracy: true,
+		basePower: 0,
+		category: "Status",
+		name: "Goat Up",
+		pp: 20,
+		priority: 0,
+		flags: { snatch: 1, metronome: 1 },
+		onModifyMove(move, pokemon) {
+			if (this.field.isTerrain('grassyterrain') && source.isGrounded()) move.boosts = { atk: 2, def: 2 };
+		},
+		boosts: {
+			atk: 1,
+			def: 1,
+		},
+		target: "self",
+		type: "Normal",
+		zMove: { boost: { spa: 1 } },
+		contestType: "Beautiful",
+		desc: "Raises the user's Attack and Defense by 1 stage. If the terrain is Grassy Terrain, this move raises the user's Attack and Defense by 2 stages.",
+		shortDesc: "Raises user's Attack and Def by 1; 2 in Grassy Terrain.",
+		isNonstandard: "Custom",
+	},
 	// Touhou
 	dreamseal: {
 		name: "Dream Seal",

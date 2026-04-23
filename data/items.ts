@@ -8409,19 +8409,6 @@ export const Items: import('../sim/dex-items').ItemDataTable = {
 		desc: "If held by a Yanmega, this item allows it to Mega Evolve in battle.",
 		isNonstandard: "Custom",
 	},
-	samurottite: {
-		name: "Samurottite",
-		spritenum: 578,
-		megaStone: { "Samurott": "Samurott-Mega" },
-		itemUser: ["Samurott"],
-		onTakeItem(item, source) {
-			return !item.megaStone?.[source.baseSpecies.baseSpecies];
-		},
-		num: -18,
-		gen: 9,
-		desc: "If held by a Samurott, this item allows it to Mega Evolve in battle.",
-		isNonstandard: "Custom",
-	},
 	krookodite: {
 		name: "Krookodite",
 		spritenum: 578,
@@ -8430,7 +8417,7 @@ export const Items: import('../sim/dex-items').ItemDataTable = {
 		onTakeItem(item, source) {
 			return !item.megaStone?.[source.baseSpecies.baseSpecies];
 		},
-		num: -19,
+		num: -18,
 		gen: 9,
 		desc: "If held by a Krookodile, this item allows it to Mega Evolve in battle.",
 		isNonstandard: "Custom",
@@ -8443,7 +8430,7 @@ export const Items: import('../sim/dex-items').ItemDataTable = {
 		onTakeItem(item, source) {
 			return !item.megaStone?.[source.baseSpecies.baseSpecies];
 		},
-		num: -20,
+		num: -19,
 		gen: 9,
 		desc: "If held by a Crustle, this item allows it to Mega Evolve in battle.",
 		isNonstandard: "Custom",
@@ -8459,7 +8446,7 @@ export const Items: import('../sim/dex-items').ItemDataTable = {
 		onTakeItem(item, source) {
 			return !item.megaStone?.[source.baseSpecies.baseSpecies];
 		},
-		num: -21,
+		num: -20,
 		gen: 9,
 		desc: "If held by a Zoroark, this item allows it to Mega Evolve in battle.",
 		isNonstandard: "Custom",
@@ -8477,7 +8464,7 @@ export const Items: import('../sim/dex-items').ItemDataTable = {
 		onTakeItem(item, source) {
 			return !item.megaStone?.[source.baseSpecies.baseSpecies];
 		},
-		num: -22,
+		num: -21,
 		gen: 9,
 		desc: "If held by a Sawsbuck, this item allows it to Mega Evolve in battle.",
 		isNonstandard: "Custom",
@@ -8490,7 +8477,7 @@ export const Items: import('../sim/dex-items').ItemDataTable = {
 		onTakeItem(item, source) {
 			return !item.megaStone?.[source.baseSpecies.baseSpecies];
 		},
-		num: -23,
+		num: -22,
 		gen: 9,
 		desc: "If held by a Clawitzer, this item allows it to Mega Evolve in battle.",
 		isNonstandard: "Custom",
@@ -8503,7 +8490,7 @@ export const Items: import('../sim/dex-items').ItemDataTable = {
 		onTakeItem(item, source) {
 			return !item.megaStone?.[source.baseSpecies.baseSpecies];
 		},
-		num: -24,
+		num: -23,
 		gen: 9,
 		desc: "If held by a Tyrantrum, this item allows it to Mega Evolve in battle.",
 		isNonstandard: "Custom",
@@ -8516,7 +8503,7 @@ export const Items: import('../sim/dex-items').ItemDataTable = {
 		onTakeItem(item, source) {
 			return !item.megaStone?.[source.baseSpecies.baseSpecies];
 		},
-		num: -25,
+		num: -24,
 		gen: 9,
 		desc: "If held by a Aurorus, this item allows it to Mega Evolve in battle.",
 		isNonstandard: "Custom",
@@ -8529,7 +8516,7 @@ export const Items: import('../sim/dex-items').ItemDataTable = {
 		onTakeItem(item, source) {
 			return !item.megaStone?.[source.baseSpecies.baseSpecies];
 		},
-		num: -26,
+		num: -25,
 		gen: 9,
 		desc: "If held by a Klefki, this item allows it to Mega Evolve in battle.",
 		isNonstandard: "Custom",
@@ -8542,7 +8529,7 @@ export const Items: import('../sim/dex-items').ItemDataTable = {
 		onTakeItem(item, source) {
 			return !item.megaStone?.[source.baseSpecies.baseSpecies];
 		},
-		num: -27,
+		num: -26,
 		gen: 9,
 		desc: "If held by a Decidueye, this item allows it to Mega Evolve in battle.",
 		isNonstandard: "Custom",
@@ -8555,7 +8542,7 @@ export const Items: import('../sim/dex-items').ItemDataTable = {
 		onTakeItem(item, source) {
 			return !item.megaStone?.[source.baseSpecies.baseSpecies];
 		},
-		num: -28,
+		num: -27,
 		gen: 9,
 		desc: "If held by a Decidueye, this item allows it to Mega Evolve in battle.",
 		isNonstandard: "Custom",
@@ -8568,7 +8555,7 @@ export const Items: import('../sim/dex-items').ItemDataTable = {
 		onTakeItem(item, source) {
 			return !item.megaStone?.[source.baseSpecies.baseSpecies];
 		},
-		num: -29,
+		num: -28,
 		gen: 9,
 		desc: "If held by a Ribombee, this item allows it to Mega Evolve in battle.",
 		isNonstandard: "Custom",
@@ -8581,7 +8568,7 @@ export const Items: import('../sim/dex-items').ItemDataTable = {
 		onTakeItem(item, source) {
 			return !item.megaStone?.[source.baseSpecies.baseSpecies];
 		},
-		num: -30,
+		num: -29,
 		gen: 9,
 		desc: "If held by a Salazzle, this item allows it to Mega Evolve in battle.",
 		isNonstandard: "Custom",
@@ -8597,7 +8584,7 @@ export const Items: import('../sim/dex-items').ItemDataTable = {
 		onTakeItem(item, source) {
 			return !item.megaStone?.[source.baseSpecies.baseSpecies];
 		},
-		num: -31,
+		num: -30,
 		gen: 9,
 		desc: "If held by a Mimikyu, this item allows it to Mega Evolve in battle.",
 		isNonstandard: "Custom",
@@ -8610,7 +8597,7 @@ export const Items: import('../sim/dex-items').ItemDataTable = {
 		onTakeItem(item, source) {
 			return !item.megaStone?.[source.baseSpecies.baseSpecies];
 		},
-		num: -32,
+		num: -31,
 		gen: 9,
 		desc: "If held by a Dhelmise, this item allows it to Mega Evolve in battle.",
 		isNonstandard: "Custom",
@@ -8623,7 +8610,7 @@ export const Items: import('../sim/dex-items').ItemDataTable = {
 		onTakeItem(item, source) {
 			return !item.megaStone?.[source.baseSpecies.baseSpecies];
 		},
-		num: -33,
+		num: -32,
 		gen: 9,
 		desc: "If held by a Sandaconda, this item allows it to Mega Evolve in battle.",
 		isNonstandard: "Custom",
@@ -8639,7 +8626,7 @@ export const Items: import('../sim/dex-items').ItemDataTable = {
 		onTakeItem(item, source) {
 			return !item.megaStone?.[source.baseSpecies.baseSpecies];
 		},
-		num: -34,
+		num: -33,
 		gen: 9,
 		desc: "If held by a Cramorant, this item allows it to Mega Evolve in battle.",
 		isNonstandard: "Custom",

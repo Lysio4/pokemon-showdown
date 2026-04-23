@@ -159,10 +159,6 @@ export const Items: {[itemid: string]: ModdedItemData} = {
 		inherit: true,
 		isNonstandard: null,
 	},
-	samurottite: {
-		inherit: true,
-		isNonstandard: null,
-	},
 	krookodite: {
 		inherit: true,
 		isNonstandard: null,

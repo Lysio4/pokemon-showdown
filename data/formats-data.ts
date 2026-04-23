@@ -6363,10 +6363,6 @@ export const FormatsData: import('../sim/dex-species').SpeciesFormatsDataTable =
 		isNonstandard: "Custom",
 		tier: "Illegal",
 	},
-	samurottmega: {
-		isNonstandard: "Custom",
-		tier: "Illegal",
-	},
 	unfezantf: {
 		isNonstandard: "Custom",
 		tier: "Illegal",

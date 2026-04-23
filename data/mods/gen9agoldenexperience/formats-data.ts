@@ -2588,7 +2588,7 @@ export const FormatsData: { [k: string]: SpeciesFormatsData; } = {
 		tier: "NFE",
 	},
 	samurott: {
-		tier: "NU",
+		tier: "RU",
 		doublesTier: "DUU",
 	},
 	samurotthisui: {
@@ -2596,10 +2596,6 @@ export const FormatsData: { [k: string]: SpeciesFormatsData; } = {
 		doublesTier: "DUU",
 	},
 	samurottgalar: {
-		tier: "RU",
-		doublesTier: "DUU",
-	},
-	samurottmega: {
 		tier: "RU",
 		doublesTier: "DUU",
 	},

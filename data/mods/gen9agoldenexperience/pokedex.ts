@@ -1186,6 +1186,7 @@ export const Pokedex: {[k: string]: ModdedSpeciesData;} = {
 	},
 	samurott: {
 		inherit: true,
+		abilities: { 0: "Torrent", H: "No Guard" },
 		otherFormes: ["Samurott-Hisui", "Samurott-Galar"],
 		formeOrder: ["Samurott", "Samurott-Hisui", "Samurott-Galar"],
 	},

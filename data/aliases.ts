@@ -97,7 +97,7 @@ export const Aliases: import('../sim/dex').AliasesTable = {
 	lcotm: "[Gen 9] Cross Evolution",
 	ommotm: "[Gen 9] STAAABmons",
 	ommspotlight: "[Gen 9] STAAABmons",
-	
+	ccapm: "[Gen 9] CCAPM2025 Random Battle",
 	// custom
 	agoldenexperienceou: "[Gen 9] A Golden Experience OU",
 	ageou: "[Gen 9] A Golden Experience OU",

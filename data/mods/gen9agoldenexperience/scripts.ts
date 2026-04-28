@@ -1769,7 +1769,7 @@ export const Scripts: ModdedBattleScriptsData = {
 
     // Tera Blast
     for (const id in this.dataCache.Pokedex) {
-      if (this.dataCache.Learnsets[id]) {
+      if (this.dataCache.Learnsets[id] && this.dataCache.Learnsets[id].learnset) {
         delete this.modData('Learnsets', this.toID(id)).learnset.terablast;
       }
     }

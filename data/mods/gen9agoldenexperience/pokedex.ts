@@ -53,50 +53,50 @@ export const Pokedex: {[k: string]: ModdedSpeciesData;} = {
 	},
 	sandslash: {
 		inherit: true,
-		baseStats: {hp: 75, atk: 110, def: 110, spa: 45, spd: 55, spe: 85},
+		baseStats: { hp: 75, atk: 110, def: 110, spa: 45, spd: 55, spe: 85 },
 	},
 	sandslashalola: {
 		inherit: true,
-		baseStats: {hp: 75, atk: 110, def: 120, spa: 25, spd: 65, spe: 85},
+		baseStats: { hp: 75, atk: 110, def: 120, spa: 25, spd: 65, spe: 85 },
 		abilities: { 0: "Snow Cloak", 1: "Refrigerate", H: "Slush Rush" },
 	},
 	ninetales: {
 		inherit: true,
-		baseStats: {hp: 73, atk: 59, def: 75, spa: 91, spd: 100, spe: 107},
+		baseStats: { hp: 73, atk: 59, def: 75, spa: 91, spd: 100, spe: 107 },
 	},
 	ninetalesalola: {
 		inherit: true,
-		baseStats: {hp: 73, atk: 52, def: 75, spa: 91, spd: 100, spe: 114},
+		baseStats: { hp: 73, atk: 52, def: 75, spa: 91, spd: 100, spe: 114 },
 	},
 	jigglypuff: {
 		inherit: true,
-		baseStats: {hp: 115, atk: 45, def: 30, spa: 60, spd: 43, spe: 30},
-		abilities: {0: "Sheer Force", 1: "Competitive", H: "Friend Guard"},
+		baseStats: { hp: 115, atk: 45, def: 30, spa: 60, spd: 43, spe: 30 },
+		abilities: { 0: "Sheer Force", 1: "Competitive", H: "Friend Guard" },
 	},
 	wigglytuff: {
 		inherit: true,
-		baseStats: {hp: 140, atk: 63, def: 50, spa: 105, spd: 60, spe: 65},
-		abilities: {0: "Sheer Force", 1: "Competitive", H: "Pixilate"},
+		baseStats: { hp: 140, atk: 63, def: 50, spa: 105, spd: 60, spe: 65 },
+		abilities: { 0: "Sheer Force", 1: "Competitive", H: "Frisk" },
 		otherFormes: ["Wigglytuff-Mega"],
 		formeOrder: ["Wigglytuff", "Wigglytuff-Mega"],
 	},
 	oddish: {
 		inherit: true,
-		abilities: { 0: "Chlorophyll", 1: "Flower Veil", H: "Run Away" },
+		abilities: { 0: "Chlorophyll", 1: "Aroma Veil", H: "Run Away" },
 	},
 	gloom: {
 		inherit: true,
-		abilities: { 0: "Chlorophyll", 1: "Flower Veil", H: "Stench" },
+		abilities: { 0: "Chlorophyll", 1: "Aroma Veil", H: "Stench" },
 	},
 	vileplume: {
 		inherit: true,
-		baseStats: {hp: 75, atk: 80, def: 95, spa: 110, spd: 95, spe: 50},
-		abilities: { 0: "Chlorophyll", 1: "Flower Veil", H: "Effect Spore" },
+		baseStats: { hp: 75, atk: 80, def: 95, spa: 110, spd: 95, spe: 50 },
+		abilities: { 0: "Chlorophyll", 1: "Aroma Veil", H: "Effect Spore" },
 	},
 	parasect: {
 		inherit: true,
-		baseStats: {hp: 60, atk: 95, def: 95, spa: 60, spd: 95, spe: 30},
-		abilities: {0: "Effect Spore", 1: "Dry Skin", H: "Parasitism"},
+		baseStats: { hp: 60, atk: 95, def: 95, spa: 60, spd: 95, spe: 30 },
+		abilities: { 0: "Effect Spore", 1: "Dry Skin", H: "Parasitism" },
 	},
 	dugtrio: {
 		inherit: true,
@@ -1009,8 +1009,8 @@ export const Pokedex: {[k: string]: ModdedSpeciesData;} = {
 	},
 	garchompmega: {
 		inherit: true,
-		baseStats: {hp: 108, atk: 170, def: 105, spa: 120, spd: 95, spe: 102},
-		abilities: { 0: "Technician" },
+		baseStats: { hp: 108, atk: 170, def: 105, spa: 120, spd: 95, spe: 102 },
+		abilities: { 0: "Sharpness" },
 	},
 	garchompmegaz: {
 		inherit: true,
@@ -1306,12 +1306,13 @@ export const Pokedex: {[k: string]: ModdedSpeciesData;} = {
 	},
 	throh: {
 		inherit: true,
-		baseStats: {hp: 120, atk: 100, def: 95, spa: 30, spd: 95, spe: 45},
-		abilities: {0: "Guts", 1: "Stamina", H: "Mold Breaker"},
+		baseStats: { hp: 120, atk: 100, def: 95, spa: 30, spd: 95, spe: 45 },
+		abilities: { 0: "Guts", 1: "Stamina", H: "Scrappy" },
 	},
 	sawk: {
 		inherit: true,
-		baseStats: {hp: 75, atk: 125, def: 75, spa: 30, spd: 75, spe: 105},
+		baseStats: { hp: 75, atk: 125, def: 75, spa: 30, spd: 75, spe: 105 },
+		abilities: { 0: "Sturdy", 1: "Inner Focus", H: "Scrappy" },
 	},
 	leavanny: {
 		inherit: true,
@@ -2344,18 +2345,6 @@ export const Pokedex: {[k: string]: ModdedSpeciesData;} = {
 	ironvaliant: {
 		inherit: true,
 		abilities: {0: "Quark Drive", H: "Trace"},
-	},
-	koraidon: {
-		inherit: true,
-		baseForme: "Final",
-		otherFormes: ["Koraidon-Weakened"],
-		formeOrder: ["Koraidon", "Koraidon-Weakened"],
-	},
-	miraidon: {
-		inherit: true,
-		baseForme: "Final",
-		otherFormes: ["Miraidon-Weakened"],
-		formeOrder: ["Miraidon", "Miraidon-Weakened"],
 	},
 	walkingwake: {
 		inherit: true,

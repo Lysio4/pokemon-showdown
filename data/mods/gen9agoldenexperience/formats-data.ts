@@ -5070,14 +5070,6 @@ export const FormatsData: { [k: string]: SpeciesFormatsData; } = {
 		tier: "AG",
 		doublesTier: "DUber",
 	},
-	koraidonweakened: {
-		tier: "OU",
-		doublesTier: "DOU",
-	},
-	miraidonweakened: {
-		tier: "OU",
-		doublesTier: "DOU",
-	},
 	tinkatink: {
 		tier: "LC",
 	},
@@ -5577,7 +5569,7 @@ export const FormatsData: { [k: string]: SpeciesFormatsData; } = {
 		tier: "OU",
 		doublesTier: "DUU",
 	},
-	purerainbow: {
+	timelord: {
 		tier: "UU",
 		doublesTier: "DUU",
 	},

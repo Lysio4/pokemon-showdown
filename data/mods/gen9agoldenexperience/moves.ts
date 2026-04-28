@@ -415,7 +415,7 @@ export const Moves: { [k: string]: ModdedMoveData; } = {
 		inherit: true,
 		isNonstandard: null,
 	},
-	rainbowdash: {
+	timecrash: {
 		inherit: true,
 		isNonstandard: null,
 	},
@@ -520,15 +520,6 @@ export const Moves: { [k: string]: ModdedMoveData; } = {
 		status: 'tox',
 		desc: "Lowers the target's Speed by 2 stages and badly poisons it.",
 		shortDesc: "Lowers the target's Speed by 2 and badly poisons it.",
-	},
-	dragonpulse: {
-		inherit: true,
-		basePower: 90,
-	},
-	dragonclaw: {
-		inherit: true,
-		basePower: 90,
-		flags: { contact: 1, protect: 1, mirror: 1, metronome: 1, slicing: 1 },
 	},
 	sonicboom: {
 		inherit: true,

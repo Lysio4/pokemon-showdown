@@ -387,6 +387,8 @@ export const Scripts: ModdedBattleScriptsData = {
     this.modData('Learnsets', 'stunfisk').learnset.highwater = ['9M'];
     this.modData('Learnsets', 'skrelp').learnset.highwater = ['9M'];
     this.modData('Learnsets', 'dragalge').learnset.highwater = ['9M'];
+    this.modData('Learnsets', 'clauncher').learnset.highwater = ['9M'];
+    this.modData('Learnsets', 'clawitzer').learnset.highwater = ['9M'];
     this.modData('Learnsets', 'volcanion').learnset.highwater = ['9M'];
     this.modData('Learnsets', 'araquanid').learnset.highwater = ['9M'];
     this.modData('Learnsets', 'grapploct').learnset.highwater = ['9M'];
@@ -1056,7 +1058,6 @@ export const Scripts: ModdedBattleScriptsData = {
     this.modData('Learnsets', 'octillery').learnset.terrainpulse = ['9L1'];
     this.modData('Learnsets', 'mantine').learnset.flipturn = ['9L1'];
     this.modData('Learnsets', 'porygon2').learnset.voltswitch = ['9L1']; // ZA addition
-    this.modData('Learnsets', 'porygon2').learnset.magnetbomb = ['9L1']; // ZA addition
     this.modData('Learnsets', 'raikou').learnset.slackoff = ['9L1'];
     this.modData('Learnsets', 'entei').learnset.earthquake = ['9L1'];
     this.modData('Learnsets', 'suicune').learnset.knockoff = ['9L1'];
@@ -1476,6 +1477,7 @@ export const Scripts: ModdedBattleScriptsData = {
     this.modData('Learnsets', 'malamar').learnset.poisonjab = ['9L1']; // ZA addition
     this.modData('Learnsets', 'malamar').learnset.octolock = ['9L1']; // ZA addition
     this.modData('Learnsets', 'barbaracle').learnset.closecombat = ['9L1']; // ZA addition
+    this.modData('Learnsets', 'clawitzer').learnset.dracometeor = ['9M'];
     this.modData('Learnsets', 'heliolisk').learnset.earthpower = ['9L1'];
     this.modData('Learnsets', 'heliolisk').learnset.scorchingsands = ['9L1'];
     this.modData('Learnsets', 'aurorus').learnset.powergem = ['9L1'];
@@ -1756,7 +1758,7 @@ export const Scripts: ModdedBattleScriptsData = {
 			}
 		}
 
-    // HiddenPower
+    // Hidden Power
     for (const id in this.dataCache.Pokedex) {
       if (this.dataCache.Learnsets[id] && this.dataCache.Learnsets[id].learnset && id !== 'unown') {
         delete this.modData('Learnsets', this.toID(id)).learnset.hiddenpower;
@@ -1764,5 +1766,14 @@ export const Scripts: ModdedBattleScriptsData = {
     }
     delete this.modData('Learnsets', 'rockruffdusk').learnset.hiddenpower;
     delete this.modData('Learnsets', 'lycanrocdusk').learnset.hiddenpower;
+
+    // Tera Blast
+    for (const id in this.dataCache.Pokedex) {
+      if (this.dataCache.Learnsets[id]) {
+        delete this.modData('Learnsets', this.toID(id)).learnset.terablast;
+      }
+    }
+    delete this.modData('Learnsets', 'rockruffdusk').learnset.terablast;
+    delete this.modData('Learnsets', 'lycanrocdusk').learnset.terablast;
   }
 };

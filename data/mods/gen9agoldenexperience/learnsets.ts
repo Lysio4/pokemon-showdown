@@ -10427,6 +10427,7 @@ export const Learnsets: import('../../../sim/dex-species').ModdedLearnsetDataTab
 	garchomp: {
 		learnset: {
 			aerialace: ["9M"],
+			aquacutter: ["9M"],
 			bite: ["9L27"],
 			bodyslam: ["9M"],
 			breakingswipe: ["9M"],

@@ -6499,14 +6499,6 @@ export const FormatsData: import('../sim/dex-species').SpeciesFormatsDataTable =
 		isNonstandard: "Custom",
 		tier: "Illegal",
 	},
-	koraidonweakened: {
-		isNonstandard: "Custom",
-		tier: "Illegal",
-	},
-	miraidonweakened: {
-		isNonstandard: "Custom",
-		tier: "Illegal",
-	},
 	tentarcolh: {
 		isNonstandard: "Custom",
 		tier: "Illegal",
@@ -6915,7 +6907,7 @@ export const FormatsData: import('../sim/dex-species').SpeciesFormatsDataTable =
 		isNonstandard: "Custom",
 		tier: "Illegal",
 	},
-	purerainbow: {
+	timelord: {
 		isNonstandard: "Custom",
 		tier: "Illegal",
 	},

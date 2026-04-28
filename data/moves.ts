@@ -21532,20 +21532,20 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 	draconicwrath: {
 		num: -10,
 		accuracy: 100,
-		basePower: 50,
+		basePower: 65,
 		basePowerCallback(pokemon, target, move) {
-			if (!target.newlySwitched) {
-				this.debug('Draconic Wrath damage boost');
-				return move.basePower * 2;
+			if (target.newlySwitched || this.queue.willMove(target)) {
+				this.debug('Draconic Wrath NOT boosted');
+				return move.basePower;
 			}
-			this.debug('Draconic Wrath NOT boosted');
-			return move.basePower;
+			this.debug('Draconic Wrath damage boost');
+			return move.basePower * 2;
 		},
 		category: "Physical",
 		name: "Draconic Wrath",
-		shortDesc: "If a foe isn't switching in, hits it at 2x power.",
+		shortDesc: "Usually goes last. Power doubles if the user moves after the target.",
+		priority: -1,
 		pp: 10,
-		priority: 0,
 		flags: { contact: 1, protect: 1, mirror: 1 },
 		onPrepareHit(target, source) {
 			this.attrLastMove('[still]');
@@ -23488,23 +23488,25 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 		shortDesc: "1.5x damage if foe holds an item. Removes item.",
 		isNonstandard: "Custom",
 	},
-	rainbowdash: {
+	timecrash: {
 		num: -77,
 		accuracy: 100,
-		basePower: 100,
-		category: "Physical",
-		name: "Rainbow Dash",
-		pp: 5,
+		basePower: 80,
+		category: "Special",
+		name: "Time Crash",
+		pp: 10,
 		priority: 0,
-		flags: {protect: 1, mirror: 1, metronome: 1},
+		flags: { protect: 1, mirror: 1, distance: 1, heal: 1, metronome: 1 },
+		drain: [3, 4],
 		onPrepareHit(target, source) {
 			this.attrLastMove('[still]');
-			this.add('-anim', source, "Dazzling Gleam", target);
+			this.add('-anim', source, "Roar of Time", target);
 		},
 		target: "allAdjacent",
-		type: "Fairy",
-		contestType: "Tough",
-		shortDesc: "No additional effect.",
+		type: "Dragon",
+		contestType: "Cool",
+		desc: "The user recovers 3/4 the HP lost by the target, rounded half up. If Big Root is held by the user, the HP recovered is 1.3x normal, rounded half down.",
+		shortDesc: "User recovers 75% of the damage dealt.",
 		isNonstandard: "Custom",
 	},
 	waterslash: {

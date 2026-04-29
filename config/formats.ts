@@ -35,7 +35,7 @@ export const Formats: import('../sim/dex-formats').FormatList = [
 	},
 	{
 		name: "[Gen 9 Champions] National Dex OU",
-		mod: 'champions',
+		mod: 'nationaldexchampions',
 		ruleset: ['Standard NatDex'],
 		banlist: [
 			'ND Uber', 'ND AG', 'Arena Trap', 'Moody', 'Power Construct', 'Shadow Tag', 'King\'s Rock',

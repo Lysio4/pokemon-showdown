@@ -6875,7 +6875,7 @@ export const FormatsData: import('../sim/dex-species').SpeciesFormatsDataTable =
 		isNonstandard: "Custom",
 		tier: "Illegal",
 	},
-	gevauyena: {
+	mafdyena: {
 		isNonstandard: "Custom",
 		tier: "Illegal",
 	},

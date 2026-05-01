@@ -5533,7 +5533,7 @@ export const FormatsData: { [k: string]: SpeciesFormatsData; } = {
 		tier: "NU",
 		doublesTier: "DUU",
 	},
-	gevauyena: {
+	mafdyena: {
 		tier: "RU",
 		doublesTier: "DUU",
 	},

@@ -22971,12 +22971,12 @@ export const Pokedex: import('../sim/dex-species').SpeciesDataTable = {
 		weightkg: 92.1,
 		eggGroups: ["Undiscovered"],
 	},
-	gevauyena: {
+	mafdyena: {
 		num: -89,
-		name: "Gevauyena",
-		types: ["Dark"],
-		baseStats: {hp: 85, atk: 130, def: 70, spa: 40, spd: 60, spe: 120},
-		abilities: {0: "Intimidate", 1: "Strong Jaw", H: "Moxie"},
+		name: "Mafdyena",
+		types: ["Dark", "Ghost"],
+		baseStats: { hp: 85, atk: 110, def: 70, spa: 60, spd: 60, spe: 110 },
+		abilities: { 0: "Intimidate", 1: "Stakeout", H: "Poison Heal" },
 		heightm: 1.80,
 		weightkg: 74,
 		prevo: "Mightyena",

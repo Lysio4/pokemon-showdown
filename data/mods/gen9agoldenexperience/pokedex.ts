@@ -2422,7 +2422,7 @@ export const Pokedex: {[k: string]: ModdedSpeciesData;} = {
 	},
 	mightyena: {
 		inherit: true,
-		evos: ["Gevauyena"],
+		evos: ["Mafdyena"],
 	},
 	nickit: {
 		inherit: true,

@@ -104964,10 +104964,17 @@ export const Learnsets: import('../sim/dex-species').LearnsetDataTable = {
 			zenheadbutt: ["9M"],
 		},
 	},
-	gevauyena: {
+	mafdyena: {
 		learnset: {
 			pursuit: ["9L1"],
 			jawlock: ["9L1"],
+			willowisp: ["9L1"],
+			hex: ["9L1"],
+			poltergeist: ["9L1"],
+			shadowclaw: ["9L1"],
+			shadowsneak: ["9L1"],
+			phantomforce: ["9L1"],
+			punishingblow: ["9L1"],
 		},
 	},
 	arsief: {

@@ -103844,6 +103844,7 @@ export const Learnsets: import('../sim/dex-species').LearnsetDataTable = {
 			sandstorm: ["9M"],
 			stompingtantrum: ["9M"],
 			substitute: ["9M"],
+			swordsdance: ["9M"],
 			taunt: ["9M"],
 			thief: ["9M"],
 			upperhand: ["9M"],

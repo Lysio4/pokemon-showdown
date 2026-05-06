@@ -22240,8 +22240,8 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 		basePower: 0,
 		category: "Status",
 		name: "Chakra Terrain",
-		desc: "Summons Chakra Terrain for 5 turns. All Fighting moves have full accuracy, and pulse moves have x1.3 power.",
-		shortDesc: "Summons Chakra Terrain. 100% Acc for Fighting moves; x1.3 BP for pulse moves.",
+		desc: "For 5 turns, the terrain becomes Chakra Terrain. During the effect, Fighting-type attacks made by grounded Pokemon cannot miss and grounded Pokemon cannot be paralyzed; Pokemon already paralyzed are not healed of their status. Camouflage transforms the user into an Fighting type, Nature Power becomes Aura Sphere, and Secret Power has a 30% chance to lower target's Defense by 1 stage. Fails if the current terrain is Chakra Terrain.",
+		shortDesc: "5 turns. Grounded: Fighting moves have full accuracy, can't be paralyzed.",
 		pp: 10,
 		priority: 0,
 		flags: { nonsky: 1 },
@@ -22254,11 +22254,12 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 				}
 				return 5;
 			},
-			onBasePowerPriority: 6,
-			onBasePower(basePower, attacker, defender, move) {
-				if ((move.type === 'Fighting' || move.flags['pulse']) && attacker.isGrounded() && !attacker.isSemiInvulnerable()) {
-					this.debug('chakra terrain boost');
-					return this.chainModify([5325, 4096]);
+			onSetStatus(status, target, source, effect) {
+				if (status.id === 'par' && target.isGrounded() && !target.isSemiInvulnerable()) {
+					if (effect.effectType === 'Move' && !effect.secondaries) {
+						this.add('-activate', target, 'move: Chakra Terrain');
+					}
+					return false;
 				}
 			},
 			onModifyAccuracy(accuracy, target, source, move) {
@@ -22269,11 +22270,11 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 				if (effect?.effectType === 'Ability') {
 					this.add('-fieldstart', 'move: Chakra Terrain', '[from] ability: ' + effect.name, '[of] ' + source);
 					this.add('-message', "Fighting-type moves used by grounded Pokémon won't miss.");
-					this.add('-message', "Fighting-type and Pulse moves will be boosted by 30%.");
+					this.add('-message', "Grounded Pokémon can't be paralyzed");
 				} else {
 					this.add('-fieldstart', 'move: Chakra Terrain');
 					this.add('-message', "Fighting-type moves used by grounded Pokémon won't miss.");
-					this.add('-message', "Fighting-type and Pulse moves will be boosted by 30%.");
+					this.add('-message', "Grounded Pokémon can't be paralyzed");
 				}
 			},
 			onFieldResidualOrder: 27,
@@ -22281,10 +22282,6 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 			onFieldEnd() {
 				this.add('-fieldend', 'move: Chakra Terrain');
 			},
-		},
-		onPrepareHit(target, source) {
-			this.attrLastMove('[still]');
-			this.add('-anim', source, "Psychic Terrain", target);
 		},
 		target: "all",
 		type: "Fighting",

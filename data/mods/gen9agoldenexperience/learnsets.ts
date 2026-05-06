@@ -14196,7 +14196,6 @@ export const Learnsets: import('../../../sim/dex-species').ModdedLearnsetDataTab
 		learnset: {
 			acrobatics: ["9M"],
 			agility: ["9M", "9L25"],
-			airslash: ["9M"],
 			astonish: ["9L1"],
 			bite: ["9L15"],
 			bodyslam: ["9M"],
@@ -14226,7 +14225,6 @@ export const Learnsets: import('../../../sim/dex-species').ModdedLearnsetDataTab
 			grassknot: ["9M"],
 			hammerarm: ["9L55"],
 			healblock: ["9L25"],
-			hurricane: ["9M"],
 			hyperbeam: ["9M"],
 			knockoff: ["9M"],
 			leer: ["9L5"],
@@ -14238,6 +14236,7 @@ export const Learnsets: import('../../../sim/dex-species').ModdedLearnsetDataTab
 			raindance: ["9M"],
 			rest: ["9M"],
 			return: ["9M"],
+			risingvoltage: ["9M"],
 			scaryface: ["9M"],
 			shockwave: ["9L20"],
 			skydrop: ["9L50"],

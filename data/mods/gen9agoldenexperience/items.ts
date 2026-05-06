@@ -406,39 +406,11 @@ export const Items: {[itemid: string]: ModdedItemData} = {
 		inherit: true,
 		isNonstandard: null,
 	},
-	volcaroniumz: {
-		inherit: true,
-		isNonstandard: null,
-	},
 	hisudecidiumz: {
 		inherit: true,
 		isNonstandard: null,
 	},
-	celesteeliumz: {
-		inherit: true,
-		isNonstandard: null,
-	},
-	kartaniumz: {
-		inherit: true,
-		isNonstandard: null,
-	},
 	overqwiliumz: {
-		inherit: true,
-		isNonstandard: null,
-	},
-	armariumz: {
-		inherit: true,
-		isNonstandard: null,
-	},
-	ceruliumz: {
-		inherit: true,
-		isNonstandard: null,
-	},
-	slitheriumz: {
-		inherit: true,
-		isNonstandard: null,
-	},
-	ironmothiumz: {
 		inherit: true,
 		isNonstandard: null,
 	},

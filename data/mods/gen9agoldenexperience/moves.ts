@@ -475,23 +475,7 @@ export const Moves: { [k: string]: ModdedMoveData; } = {
 		inherit: true,
 		isNonstandard: null,
 	},
-	taleofthemoon: {
-		inherit: true,
-		isNonstandard: null,
-	},
-	ultrapapercut: {
-		inherit: true,
-		isNonstandard: null,
-	},
 	maxspikybarrage: {
-		inherit: true,
-		isNonstandard: null,
-	},
-	armorbigblast: {
-		inherit: true,
-		isNonstandard: null,
-	},
-	thousandbladework: {
 		inherit: true,
 		isNonstandard: null,
 	},

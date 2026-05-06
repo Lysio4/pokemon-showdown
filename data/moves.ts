@@ -23838,92 +23838,8 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 		shortDesc: "Raises the user's critical hit ratio by 2.",
 		isNonstandard: "Custom",
 	},
-	taleofthemoon: {
-		num: -92,
-		accuracy: true,
-		basePower: 175,
-		category: "Physical",
-		name: "Tale Of The Moon",
-		pp: 1,
-		priority: 0,
-		flags: {},
-		isZ: "celesteeliumz",
-		onHit(source) {
-			let success = false;
-			const removeAll = ['spikes', 'toxicspikes', 'stealthrock', 'stickyweb', 'gmaxsteelsurge'];
-			const removeTarget = ['reflect', 'lightscreen', 'auroraveil', 'safeguard', 'mist', ...removeAll];
-			for (const targetCondition of removeTarget) {
-				if (source.side.foe.removeSideCondition(targetCondition)) {
-					if (!removeAll.includes(targetCondition)) continue;
-					this.add('-sideend', source.side.foe, this.dex.conditions.get(targetCondition).name, '[from] move: Tale Of The Moon', `[of] ${source}`);
-					success = true;
-				}
-			}
-			for (const sideCondition of removeAll) {
-				if (source.side.removeSideCondition(sideCondition)) {
-					this.add('-sideend', source.side, this.dex.conditions.get(sideCondition).name, '[from] move: Tale Of The Moon', `[of] ${source}`);
-					success = true;
-				}
-			}
-			this.field.clearTerrain();
-			return success;
-		},
-		onPrepareHit(target, source) {
-			this.attrLastMove('[still]');
-			this.add('-anim', source, "Heavy Slam", target);
-			this.add('-anim', source, "Meteor Beam", target);
-		},
-		target: "normal",
-		type: "Steel",
-		contestType: "Cool",
-		isNonstandard: "Custom",
-		desc: "If this move is successful, the effects of Electric Terrain, Grassy Terrain, Misty Terrain, and Psychic Terrain end, the effects of Reflect, Light Screen, Aurora Veil, Safeguard, Mist, G-Max Steelsurge, Spikes, Toxic Spikes, Stealth Rock, and Sticky Web end for the target's side, and the effects of G-Max Steelsurge, Spikes, Toxic Spikes, Stealth Rock, and Sticky Web end for the user's side.",
-		shortDesc: "Ends Terrain, hazards.",
-	},
-	ultrapapercut: {
-		num: -93,
-		accuracy: true,
-		basePower: 175,
-		category: "Physical",
-		name: "Ultra Paper Cut",
-		pp: 1,
-		priority: 0,
-		flags: {},
-		isZ: "kartaniumz",
-		onHit(source) {
-			let success = false;
-			const removeAll = ['spikes', 'toxicspikes', 'stealthrock', 'stickyweb', 'gmaxsteelsurge'];
-			const removeTarget = ['reflect', 'lightscreen', 'auroraveil', 'safeguard', 'mist', ...removeAll];
-			for (const targetCondition of removeTarget) {
-				if (source.side.foe.removeSideCondition(targetCondition)) {
-					if (!removeAll.includes(targetCondition)) continue;
-					this.add('-sideend', source.side.foe, this.dex.conditions.get(targetCondition).name, '[from] move: Ultra Paper Cut', `[of] ${source}`);
-					success = true;
-				}
-			}
-			for (const sideCondition of removeAll) {
-				if (source.side.removeSideCondition(sideCondition)) {
-					this.add('-sideend', source.side, this.dex.conditions.get(sideCondition).name, '[from] move: Ultra Paper Cut', `[of] ${source}`);
-					success = true;
-				}
-			}
-			this.field.clearTerrain();
-			return success;
-		},
-		onPrepareHit(target, source) {
-			this.attrLastMove('[still]');
-			this.add('-anim', source, "Leaf Blade", target);
-			this.add('-anim', source, "Bloom Doom", target);
-		},
-		target: "normal",
-		type: "Grass",
-		contestType: "Tough",
-		isNonstandard: "Custom",
-		desc: "If this move is successful, the effects of Electric Terrain, Grassy Terrain, Misty Terrain, and Psychic Terrain end, the effects of Reflect, Light Screen, Aurora Veil, Safeguard, Mist, G-Max Steelsurge, Spikes, Toxic Spikes, Stealth Rock, and Sticky Web end for the target's side, and the effects of G-Max Steelsurge, Spikes, Toxic Spikes, Stealth Rock, and Sticky Web end for the user's side.",
-		shortDesc: "Ends Terrain, hazards.",
-	},
 	maxspikybarrage: {
-		num: -94,
+		num: -92,
 		accuracy: true,
 		basePower: 180,
 		category: "Physical",
@@ -23946,53 +23862,8 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 		shortDesc: "Badly poisons the target.",
 		isNonstandard: "Custom",
 	},
-	armorbigblast: {
-		num: -95,
-		accuracy: true,
-		basePower: 195,
-		category: "Special",
-		name: "Armor Big Blast",
-		pp: 1,
-		priority: 0,
-		flags: {},
-		isZ: "armariumz",
-		onPrepareHit(target, source) {
-			this.attrLastMove('[still]');
-			this.add('-anim', source, "Armor Cannon", target);
-			this.add('-anim', source, "Inferno Overdrive", target);
-		},
-		target: "normal",
-		type: "Fire",
-		isNonstandard: "Custom",
-		shortDesc: "No additional effect.",
-	},
-	thousandbladework: {
-		num: -96,
-		accuracy: true,
-		basePower: 185,
-		category: "Physical",
-		name: "Thousand Blade Work",
-		pp: 1,
-		priority: 0,
-		flags: {},
-		isZ: "ceruliumz",
-		secondary: {
-			chance: 100,
-			volatileStatus: 'healblock',
-		},
-		onPrepareHit(target, source) {
-			this.attrLastMove('[still]');
-			this.add('-anim', source, "Bitter Blade", target);
-			this.add('-anim', source, "Inferno Overdrive", target);
-		},
-		target: "normal",
-		type: "Fire",
-		isNonstandard: "Custom",
-		desc: "For 5 turns, the target is prevented from restoring any HP as long as it remains active. During the effect, healing and draining moves are unusable, and Abilities and items that grant healing will not heal the user. If an affected Pokemon uses Baton Pass, the replacement will remain unable to restore its HP. Pain Split and the Regenerator Ability are unaffected.",
-		shortDesc: "For 5 turns, the target is prevented from healing.",
-	},
 	sweetsugarrush: {
-		num: -97,
+		num: -93,
 		accuracy: true,
 		basePower: 170,
 		category: "Special",
@@ -24008,7 +23879,7 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 		isNonstandard: "Custom",
 	},
 	colorfulhit: {
-		num: -98,
+		num: -94,
 		accuracy: 100,
 		basePower: 90,
 		category: "Physical",
@@ -24035,7 +23906,7 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 		isNonstandard: "Custom",
 	},
 	oceanslance: {
-		num: -99,
+		num: -95,
 		accuracy: 85,
 		basePower: 120,
 		category: "Physical",
@@ -24054,7 +23925,7 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 		isNonstandard: "Custom",
 	},
 	goatup: {
-		num: -100,
+		num: -96,
 		accuracy: true,
 		basePower: 0,
 		category: "Status",

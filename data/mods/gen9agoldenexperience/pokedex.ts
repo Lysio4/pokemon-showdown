@@ -171,11 +171,11 @@ export const Pokedex: {[k: string]: ModdedSpeciesData;} = {
 	},
 	muk: {
 		inherit: true,
-		abilities: {0: "Corrosion", 1: "Sticky Hold", H: "Pollution"},
+		abilities: { 0: "Stench", 1: "Sticky Hold", H: "Pollution" },
 	},
 	mukalola: {
 		inherit: true,
-		abilities: {0: "Poison Touch", 1: "Water Absorb", H: "Power of Alchemy"},
+		abilities: { 0: "Pollution", 1: "Gluttony", H: "Power of Alchemy" },
 	},
 	gengar: {
 		inherit: true,
@@ -491,10 +491,6 @@ export const Pokedex: {[k: string]: ModdedSpeciesData;} = {
 		inherit: true,
 		baseStats: {hp: 85, atk: 40, def: 85, spa: 80, spd: 140, spe: 70},
 		abilities: {0: "Heavy Weapon", 1: "Water Absorb", H: "Water Veil"},
-	},
-	skarmorymega: {
-		inherit: true,
-		abilities: { 0: "Tough Claws" },
 	},
 	phanpy: {
 		inherit: true,

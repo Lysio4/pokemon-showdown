@@ -1365,7 +1365,7 @@ export const FormatsData: { [k: string]: SpeciesFormatsData; } = {
 		doublesTier: "DUU",
 	},
 	skarmorymega: {
-		tier: "OU",
+		tier: "UU",
 		doublesTier: "DUU",
 	},
 	houndour: {

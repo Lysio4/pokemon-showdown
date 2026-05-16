@@ -794,31 +794,37 @@ export const Pokedex: {[k: string]: ModdedSpeciesData;} = {
 	},
 	wynaut: {
 		inherit: true,
-		abilities: {0: "Shadow Tag", 1: "Counter Strike", H: "Telepathy"},
+		abilities: { 0: "Shadow Tag", 1: "Counter Strike", H: "Telepathy" },
 	},
 	walrein: {
 		inherit: true,
-		baseStats: {hp: 120, atk: 105, def: 100, spa: 60, spd: 100, spe: 45},
+		baseStats: { hp: 120, atk: 105, def: 100, spa: 60, spd: 100, spe: 45 },
+	},
+	clamperl: {
+		inherit: true,
+		abilities: { 0: "Shell Armor", 1: "Filter", H: "Rattled" },
 	},
 	huntail: {
 		inherit: true,
-		baseStats: {hp: 55, atk: 114, def: 105, spa: 54, spd: 75, spe: 82},
+		baseStats: { hp: 55, atk: 114, def: 105, spa: 54, spd: 75, spe: 82 },
+		abilities: { 0: "Swift Swim", 1: "Illuminate", H: "Water Veil" },
 	},
 	gorebyss: {
 		inherit: true,
-		baseStats: {hp: 55, atk: 54, def: 105, spa: 114, spd: 75, spe: 82},
+		baseStats: { hp: 55, atk: 54, def: 105, spa: 114, spd: 75, spe: 82 },
+		abilities: { 0: "Swift Swim", 1: "Dazzling", H: "Hydration" },
 	},
 	relicanth: {
 		inherit: true,
-		abilities: {0: "Hard Rock", 1: "Rock Head", H: "Sturdy"},
+		abilities: { 0: "Hard Rock", 1: "Rock Head", H: "Sturdy" },
 	},
 	metang: {
 		inherit: true,
-		abilities: {0: "Clear Body", H: "Graviton"},
+		abilities: { 0: "Clear Body", H: "Graviton" },
 	},
 	metagross: {
 		inherit: true,
-		abilities: {0: "Clear Body", H: "Graviton"},
+		abilities: { 0: "Clear Body", H: "Graviton" },
 	},
 	regirock: {
 		inherit: true,

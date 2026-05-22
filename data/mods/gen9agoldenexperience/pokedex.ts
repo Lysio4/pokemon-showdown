@@ -1965,18 +1965,6 @@ export const Pokedex: {[k: string]: ModdedSpeciesData;} = {
 		inherit: true,
 		baseStats: {hp: 120, atk: 95, def: 95, spa: 45, spd: 95, spe: 20},
 	},
-	rookidee: {
-		inherit: true,
-		abilities: { 0: "Keen Eye", 1: "Justified", H: "Big Pecks" },
-	},
-	corvisquire: {
-		inherit: true,
-		abilities: { 0: "Keen Eye", 1: "Justified", H: "Big Pecks" },
-	},
-	corviknight: {
-		inherit: true,
-		abilities: { 0: "Pressure", 1: "Justified", H: "Mirror Armor" },
-	},
 	orbeetle: {
 		inherit: true,
 		abilities: { 0: "Swarm", 1: "Graviton", H: "Telepathy" },

@@ -7666,19 +7666,30 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 		num: -84,
 		isNonstandard: "Custom",
 	},
-	meltingheart: {
-		onDamagingHit(damage, target, source, move) {
-			this.field.setWeather('sunnyday');
+	magmaggedon: {
+		onModifyAtkPriority: 5,
+		onModifyAtk(atk, attacker, defender, move) {
+			if (move.type === 'Fire') {
+				this.debug('Magmaggedon boost');
+				return this.chainModify(1.5);
+			}
+		},
+		onModifySpAPriority: 5,
+		onModifySpA(atk, attacker, defender, move) {
+			if (move.type === 'Fire') {
+				this.debug('Magmaggedon boost');
+				return this.chainModify(1.5);
+			}
 		},
 		onTryHit(target, source, move) {
 			if (target !== source && move.type === 'Water') {
-				this.add('-immune', target, '[from] ability: Melting Heart');
+				this.add('-immune', target, '[from] ability: Magmaggedon');
 				return null;
 			}
 		},
-		shortDesc: "This Pokemon is immune to Water type moves. When this Pokemon is hit by an attack, the effect of Sunny Day begins.",
+		shortDesc: "This Pokemon is immune to Water type moves. This Pokemon's offensive stat is multiplied by 1.5 while using a Fire-type attack. Solar Beam and Solar Blade hit immediately.",
 		flags: {},
-		name: "Melting Heart",
+		name: "Magmaggedon",
 		rating: 1,
 		num: -85,
 		isNonstandard: "Custom",

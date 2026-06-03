@@ -990,14 +990,6 @@ export const Moves: { [k: string]: ModdedMoveData; } = {
 		shortDesc: "Physical if user's Atk > Sp. Atk. Deals damage based on Def or SpD, whichever one is the lowest.",
 		desc: "Physical if user's Atk > Sp. Atk. Deals damage based on Def or SpD, whichever one is the lowest.",
 	},
-	volttackle: {
-		inherit: true,
-		onModifyMove(move, pokemon, target) {
-			if (pokemon.baseSpecies.name === "Raichu-Mega-X") {
-				move.self = { boosts: { atk: 1 } };
-			}
-		},
-	},
 	snaptrap: {
 		inherit: true,
 		basePower: 65,
@@ -1038,7 +1030,7 @@ export const Moves: { [k: string]: ModdedMoveData; } = {
 		inherit: true,
 		onHit(pokemon) {
 			let factor = 0.5;
-			switch (pokemon.effectiveWeather(true)) {
+			switch (pokemon.effectiveWeather(undefined, true)) {
 			case 'sunnyday':
 			case 'desolateland':
 				factor = 0.667;
@@ -1064,7 +1056,7 @@ export const Moves: { [k: string]: ModdedMoveData; } = {
 		inherit: true,
 		onHit(pokemon) {
 			let factor = 0.5;
-			switch (pokemon.effectiveWeather(true)) {
+			switch (pokemon.effectiveWeather(undefined, true)) {
 			case 'sunnyday':
 			case 'desolateland':
 				factor = 0.667;
@@ -1088,9 +1080,25 @@ export const Moves: { [k: string]: ModdedMoveData; } = {
 	},
 	solarbeam: {
 		inherit: true,
+		onTryMove(attacker, defender, move) {
+			if (attacker.removeVolatile(move.id)) {
+				return;
+			}
+			this.add('-prepare', attacker, move.name);
+			if (['sunnyday', 'desolateland'].includes(attacker.effectiveWeather(undefined, true)) || pokemon.hasAbility('magmaggedon')) {
+				this.attrLastMove('[still]');
+				this.addMove('-anim', attacker, move.name, defender);
+				return;
+			}
+			if (!this.runEvent('ChargeMove', attacker, defender, move)) {
+				return;
+			}
+			attacker.addVolatile('twoturnmove', defender);
+			return null;
+		},
 		onBasePower(basePower, pokemon, target) {
 			const weakWeathers = ['raindance', 'primordialsea', 'sandstorm', 'hail', 'snowscape', 'eternalwinter'];
-			if (weakWeathers.includes(pokemon.effectiveWeather(true))) {
+			if (weakWeathers.includes(pokemon.effectiveWeather(undefined, true))) {
 				this.debug('weakened by weather');
 				return this.chainModify(0.5);
 			}
@@ -1098,9 +1106,25 @@ export const Moves: { [k: string]: ModdedMoveData; } = {
 	},
 	solarblade: {
 		inherit: true,
+		onTryMove(attacker, defender, move) {
+			if (attacker.removeVolatile(move.id)) {
+				return;
+			}
+			this.add('-prepare', attacker, move.name);
+			if (['sunnyday', 'desolateland'].includes(attacker.effectiveWeather(undefined, true)) || pokemon.hasAbility('magmaggedon')) {
+				this.attrLastMove('[still]');
+				this.addMove('-anim', attacker, move.name, defender);
+				return;
+			}
+			if (!this.runEvent('ChargeMove', attacker, defender, move)) {
+				return;
+			}
+			attacker.addVolatile('twoturnmove', defender);
+			return null;
+		},
 		onBasePower(basePower, pokemon, target) {
 			const weakWeathers = ['raindance', 'primordialsea', 'sandstorm', 'hail', 'snowscape', 'eternalwinter'];
-			if (weakWeathers.includes(pokemon.effectiveWeather(true))) {
+			if (weakWeathers.includes(pokemon.effectiveWeather(undefined, true))) {
 				this.debug('weakened by weather');
 				return this.chainModify(0.5);
 			}
@@ -1110,7 +1134,7 @@ export const Moves: { [k: string]: ModdedMoveData; } = {
 		inherit: true,
 		onHit(pokemon) {
 			let factor = 0.5;
-			switch (pokemon.effectiveWeather(true)) {
+			switch (pokemon.effectiveWeather(undefined, true)) {
 			case 'sunnyday':
 			case 'desolateland':
 				factor = 0.667;
@@ -1135,7 +1159,7 @@ export const Moves: { [k: string]: ModdedMoveData; } = {
 	weatherball: {
 		inherit: true,
 		onModifyType(move, pokemon) {
-			switch (pokemon.effectiveWeather(true)) {
+			switch (pokemon.effectiveWeather(undefined, true)) {
 			case 'sunnyday':
 			case 'desolateland':
 				move.type = 'Fire';
@@ -1155,7 +1179,7 @@ export const Moves: { [k: string]: ModdedMoveData; } = {
 			}
 		},
 		onModifyMove(move, pokemon) {
-			switch (pokemon.effectiveWeather(true)) {
+			switch (pokemon.effectiveWeather(undefined, true)) {
 			case 'sunnyday':
 			case 'desolateland':
 				move.basePower *= 2;

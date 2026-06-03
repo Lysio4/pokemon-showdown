@@ -39,14 +39,6 @@ export const Pokedex: {[k: string]: ModdedSpeciesData;} = {
 		inherit: true,
 		abilities: {0: "Adaptability"},
 	},
-	raichumegax: {
-		inherit: true,
-		abilities: { 0: "Electric Surge" },
-	},
-	raichumegay: {
-		inherit: true,
-		abilities: { 0: "Adaptability" },
-	},
 	sandshrewalola: {
 		inherit: true,
 		abilities: { 0: "Snow Cloak", 1: "Refrigerate", H: "Slush Rush" },
@@ -1147,7 +1139,7 @@ export const Pokedex: {[k: string]: ModdedSpeciesData;} = {
 	},
 	heatranmega: {
 		inherit: true,
-		abilities: { 0: "Melting Heart" },
+		abilities: { 0: "Magmaggedon" },
 	},
 	regigigas: {
 		inherit: true,

@@ -231,7 +231,7 @@ export const FormatsData: { [k: string]: SpeciesFormatsData; } = {
 		doublesTier: "DOU",
 	},
 	raichumegay: {
-		tier: "UU",
+		tier: "OU",
 		doublesTier: "DOU",
 	},
 	sandshrew: {

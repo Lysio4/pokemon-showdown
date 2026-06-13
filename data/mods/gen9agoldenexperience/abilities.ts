@@ -418,15 +418,22 @@ export const Abilities: { [abilityid: string]: ModdedAbilityData; } = {
 	// modified abilities
 	justified: {
 		inherit: true,
-		onTryHit(target, source, move) {
-			if (target !== source && move.type === 'Dark') {
-				if (!this.boost({ atk: 1 })) {
-					this.add('-immune', target, '[from] ability: Justified');
-				}
-				return null;
+		onSourceModifyAtkPriority: 6,
+		onSourceModifyAtk(atk, attacker, defender, move) {
+			if (move.type === 'Dark') {
+				this.debug('Justified Atk weaken');
+				return this.chainModify(0.5);
 			}
 		},
-		shortDesc: "This Pokemon's Attack is raised by 1 stage after it is damaged by a Dark-type move. Dark immunity.",
+		onSourceModifySpAPriority: 5,
+		onSourceModifySpA(atk, attacker, defender, move) {
+			if (move.type === 'Dark') {
+				this.debug('Justified SpA weaken');
+				return this.chainModify(0.5);
+			}
+		},
+		desc: "If a Pokemon uses a Dark-type attack against this Pokemon, that Pokemon's offensive stat is halved when calculating the damage to this Pokemon. This Pokemon's Attack is raised by 1 stage after it is damaged by a Dark-type move.",
+		shortDesc: "Dark damage against this Pokemon is dealt with 1/2 offensive stat; Atk raised by 1 after it is damaged by a Dark-type move.",
 	},
 	colorchange: {
 		inherit: true,

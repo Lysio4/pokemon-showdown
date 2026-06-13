@@ -118,26 +118,25 @@ export const Pokedex: {[k: string]: ModdedSpeciesData;} = {
 	},
 	tentacruel: {
 		inherit: true,
-		baseStats: {hp: 90, atk: 70, def: 75, spa: 80, spd: 120, spe: 100},
-		abilities: {0: "Corrosion", 1: "Liquid Ooze", H: "Rain Dish"},
+		baseStats: { hp: 90, atk: 70, def: 75, spa: 80, spd: 120, spe: 100 },
 	},
 	golem: {
 		inherit: true,
-		baseStats: {hp: 80, atk: 130, def: 130, spa: 45, spd: 65, spe: 45},
+		baseStats: { hp: 80, atk: 130, def: 130, spa: 45, spd: 65, spe: 45 },
 	},
 	golemalola: {
 		inherit: true,
-		baseStats: {hp: 80, atk: 120, def: 140, spa: 45, spd: 65, spe: 45},
+		baseStats: { hp: 80, atk: 120, def: 140, spa: 45, spd: 65, spe: 45 },
 	},
 	rapidash: {
 		inherit: true,
-		baseStats: {hp: 65, atk: 110, def: 70, spa: 70, spd: 80, spe: 105},
-		abilities: {0: "Reckless", 1: "Flash Fire", H: "Flame Body"},
+		baseStats: { hp: 65, atk: 110, def: 70, spa: 70, spd: 80, spe: 105 },
+		abilities: { 0: "Reckless", 1: "Flash Fire", H: "Flame Body" },
 	},
 	rapidashgalar: {
 		inherit: true,
-		baseStats: {hp: 65, atk: 110, def: 70, spa: 70, spd: 80, spe: 105},
-		abilities: {0: "Run Away", 1: "Pastel Veil", H: "Pixilate"},
+		baseStats: { hp: 65, atk: 110, def: 70, spa: 70, spd: 80, spe: 105 },
+		abilities: { 0: "Run Away", 1: "Pastel Veil", H: "Pixilate" },
 	},
 	slowbro: {
 		inherit: true,
@@ -1079,10 +1078,6 @@ export const Pokedex: {[k: string]: ModdedSpeciesData;} = {
 		inherit: true,
 		baseStats: {hp: 110, atk: 130, def: 80, spa: 70, spd: 60, spe: 90},
 	},
-	gallademega: {
-		inherit: true,
-		abilities: {0: "Justified"},
-	},
 	probopass: {
 		inherit: true,
 		abilities: {0: "Sturdy", 1: "Magnet Pull", H: "Levitate"},
@@ -1956,6 +1951,18 @@ export const Pokedex: {[k: string]: ModdedSpeciesData;} = {
 	greedent: {
 		inherit: true,
 		baseStats: {hp: 120, atk: 95, def: 95, spa: 45, spd: 95, spe: 20},
+	},
+	rookidee: {
+		inherit: true,
+		abilities: { 0: "Keen Eye", 1: "Justified", H: "Big Pecks" },
+	},
+	corvisquire: {
+		inherit: true,
+		abilities: { 0: "Keen Eye", 1: "Justified", H: "Big Pecks" },
+	},
+	corviknight: {
+		inherit: true,
+		abilities: { 0: "Pressure", 1: "Justified", H: "Mirror Armor" },
 	},
 	orbeetle: {
 		inherit: true,

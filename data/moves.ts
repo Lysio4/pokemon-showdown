@@ -23748,8 +23748,33 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 		desc: "If this move is successful, it sets up a hazard on the opposing side of the field, damaging each opposing Pokemon that switches in. Foes lose 1/32, 1/16, 1/8, 1/4, or 1/2 of their maximum HP, rounded down, based on their weakness to the Rock type; 0.25x, 0.5x, neutral, 2x, or 4x, respectively. Can be removed from the opposing side if any Pokemon uses Tidy Up, or if any opposing Pokemon uses Mortal Spin, Rapid Spin, or Defog successfully, or is hit by Defog.",
 		shortDesc: "Sets Stealth Rock on the target's side.",
 	},
-	gigabbouncysplash: {
+	xrayshock: {
 		num: -88,
+		accuracy: 100,
+		basePower: 100,
+		category: "Physical",
+		name: "X-Ray Shock",
+		pp: 10,
+		priority: 0,
+		flags: {},
+		selfBoost: {
+			boosts: {
+				spe: 1,
+			},
+		},
+		onPrepareHit(target, source) {
+			this.attrLastMove('[still]');
+			this.add('-anim', source, "Wild Charge", target);
+		},
+		target: "normal",
+		type: "Electric",
+		contestType: "Tough",
+		desc: "Raises the user's Speed by 1 stage.",
+		shortDesc: "Raises the user's Spe by 1.",
+		isNonstandard: "Custom",
+	},
+	gigabbouncysplash: {
+		num: -89,
 		accuracy: true,
 		basePower: 180,
 		category: "Physical",
@@ -23766,37 +23791,6 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 		type: "Flying",
 		contestType: "Tough",
 		shortDesc: "No additional effect.",
-		isNonstandard: "Custom",
-	},
-	xrayvoltshock: {
-		num: -89,
-		accuracy: true,
-		basePower: 185,
-		category: "Physical",
-		name: "X-Ray Volt Shock",
-		pp: 1,
-		priority: 0,
-		flags: {},
-		isZ: "luxriumz",
-		selfBoost: {
-			boosts: {
-				atk: 1,
-				def: 1,
-				spa: 1,
-				spd: 1,
-				spe: 1,
-			},
-		},
-		onPrepareHit(target, source) {
-			this.attrLastMove('[still]');
-			this.add('-anim', source, "Wild Charge", target);
-			this.add('-anim', source, "Gigavolt Havoc", target);
-		},
-		target: "normal",
-		type: "Electric",
-		contestType: "Tough",
-		desc: "Raises the user's Attack, Defense, Special Attack, Special Defense, and Speed by 1 stage.",
-		shortDesc: "Raises the user's Atk/Def/SpAtk/SpDef/Spe by 1.",
 		isNonstandard: "Custom",
 	},
 	sonicspeedstrike: {

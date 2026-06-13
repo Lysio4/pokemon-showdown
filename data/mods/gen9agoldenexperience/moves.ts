@@ -459,11 +459,11 @@ export const Moves: { [k: string]: ModdedMoveData; } = {
 		inherit: true,
 		isNonstandard: null,
 	},
-	gigabbouncysplash: {
+	xrayshock: {
 		inherit: true,
 		isNonstandard: null,
 	},
-	xrayvoltshock: {
+	gigabbouncysplash: {
 		inherit: true,
 		isNonstandard: null,
 	},
@@ -520,12 +520,6 @@ export const Moves: { [k: string]: ModdedMoveData; } = {
 		secondary: undefined, // no inherit
 		target: "normal",
 		type: "Normal",
-	},
-	rockwrecker: {
-		inherit: true,
-		shortDesc: "Cannot be selected the turn after it's used.",
-		flags: { protect: 1, mirror: 1, metronome: 1, bullet: 1, cantusetwice: 1 },
-		self: null,
 	},
 	triplekick: {
 		inherit: true,

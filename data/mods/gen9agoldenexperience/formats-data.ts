@@ -528,11 +528,11 @@ export const FormatsData: { [k: string]: SpeciesFormatsData; } = {
 		tier: "LC",
 	},
 	slowbro: {
-		tier: "OU",
+		tier: "UU",
 		doublesTier: "DUU",
 	},
 	slowbromega: {
-		tier: "(OU)",
+		tier: "UU",
 		doublesTier: "DUU",
 	},
 	slowbrogalar: {
@@ -2430,7 +2430,7 @@ export const FormatsData: { [k: string]: SpeciesFormatsData; } = {
 		doublesTier: "DOU",
 	},
 	heatranmega: {
-		tier: "(OU)",
+		tier: "OU",
 		doublesTier: "DOU",
 	},
 	regigigas: {
@@ -3125,7 +3125,7 @@ export const FormatsData: { [k: string]: SpeciesFormatsData; } = {
 		doublesTier: "DUU",
 	},
 	golurkmega: {
-		tier: "RU",
+		tier: "NU",
 		doublesTier: "DUU",
 	},
 	pawniard: {
@@ -5570,8 +5570,8 @@ export const FormatsData: { [k: string]: SpeciesFormatsData; } = {
 		doublesTier: "DUU",
 	},
 	timelord: {
-		tier: "UU",
-		doublesTier: "DUU",
+		tier: "OU",
+		doublesTier: "DOU",
 	},
 	irondart: {
 		tier: "UU",

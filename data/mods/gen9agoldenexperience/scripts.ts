@@ -1177,7 +1177,6 @@ export const Scripts: ModdedBattleScriptsData = {
     this.modData('Learnsets', 'bibarel').learnset.icefang = ['9L1'];
     this.modData('Learnsets', 'bibarel').learnset.trailblaze = ['9L1'];
     this.modData('Learnsets', 'luxray').learnset.xrayshock = ['9L1'];
-    this.modData('Learnsets', 'roserade').learnset.quiverdance = ['9L1'];
     this.modData('Learnsets', 'roserade').learnset.poisonivy = ['9L1'];
     this.modData('Learnsets', 'roserade').learnset.mudshot = ['9L1'];
     this.modData('Learnsets', 'rampardos').learnset.wildcharge = ['9L1'];

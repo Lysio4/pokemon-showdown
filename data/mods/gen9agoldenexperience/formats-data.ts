@@ -1736,7 +1736,7 @@ export const FormatsData: { [k: string]: SpeciesFormatsData; } = {
 		tier: "NFE",
 	},
 	roserade: {
-		tier: "RUBL",
+		tier: "RU",
 		doublesTier: "DUU",
 	},
 	gulpin: {

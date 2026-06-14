@@ -5664,7 +5664,7 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 	poisonousradula: {
 		onSourceHit(target, source, move) {
 			if (!move || !target) return;
-			if (target !== source && move.category !== 'Status' && move.type === 'Poison' && !(target.getMoveHitData(move).typeMod < 0)) {
+			if (target !== source && move.category !== 'Status' && move.type === 'Poison' && target.getMoveHitData(move).typeMod > 0) {
 				if (!move.secondaries) move.secondaries = [];
 				if (move.category === 'Physical') {
 					move.secondaries.push({
@@ -5687,7 +5687,7 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 			}
 		},
 		name: "Poisonous Radula",
-		shortDesc: "Non resisted Poison moves lowers the target's corresponding defense by one stage.",
+		shortDesc: "Super effective Poison moves lowers the target's corresponding Defense stat by 1.",
 		rating: 2,
 		num: -1,
 		isNonstandard: "Custom",
@@ -7653,12 +7653,12 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 		isNonstandard: "Custom",
 	},
    	healingecho: {
-		desc: "When this Pokémon uses a Sound move, it is healed by 25% of its HP.",
-		shortDesc: "Heals 25% HP if the Pokémon uses a Sound move.",
-		onAfterMove(source: Pokemon, target: Pokemon, move: ActiveMove) {
+		desc: "When this Pokémon uses a Sound move, it is healed by 12.5% of its HP.",
+		shortDesc: "Heals 12.5% HP if the Pokémon uses a Sound move.",
+		onAfterMove(source, target, move) {
 			if (!move.flags['sound']) return;
 			this.add('-activate', source, 'ability: Healing Echo');
-			this.heal(source.baseMaxhp / 4);
+			this.heal(source.baseMaxhp / 8);
 		},
 		flags: {},
 	    name: "Healing Echo",

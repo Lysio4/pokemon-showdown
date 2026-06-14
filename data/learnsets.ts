@@ -100848,7 +100848,6 @@ export const Learnsets: import('../sim/dex-species').LearnsetDataTable = {
 			tentacatch: ["9L1"],
 			stoneedge: ["9L1"],
 			stealthrock: ["9L1"],
-			bodypress: ["9L1"],
 			strengthsap: ["9L1"],
 			darkpulse: ["9L1"],
 			dragonpulse: ["9L1"],

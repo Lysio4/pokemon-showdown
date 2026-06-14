@@ -21317,17 +21317,20 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 		basePower: 60,
 		category: "Physical",
 		name: "Tentacatch",
-		shortDesc: "Traps and damages the target for 4-5 turns. Lowers the target's Atk by 1 stage.",
-		desc: "Traps and damages the target for 4-5 turns. Lowers the target's Atk by 1 stage.",
+		shortDesc: "Traps and damages the target for 4-5 turns. Lowers the target's Atk by 1 stage if Poison-weak.",
 		pp: 20,
 		priority: 0,
 		flags: { contact: 1, protect: 1, mirror: 1 },
 		volatileStatus: 'partiallytrapped',
-		secondary: {
-			chance: 100,
-			boosts: {
-				atk: -1,
-			},
+		onModifyMove(move) {
+			if (move && target.getMoveHitData(move).typeMod > 0) {
+				move.secondaries.push({
+					chance: 100,
+					boosts: {
+						atk: -1,
+					},
+				});
+			}
 		},
 		onPrepareHit(target, source) {
 			this.attrLastMove('[still]');
@@ -22925,7 +22928,7 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 	poisonivy: {
 		num: -57,
 		accuracy: 100,
-		basePower: 50,
+		basePower: 45,
 		category: "Special",
 		name: "Poison Ivy",
 		shortDesc: "Hits twice. This move does not check accuracy.",

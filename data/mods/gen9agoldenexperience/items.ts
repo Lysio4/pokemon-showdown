@@ -123,7 +123,15 @@ export const Items: {[itemid: string]: ModdedItemData} = {
 		inherit: true,
 		isNonstandard: null,
 	},
+	galaslowbronite: {
+		inherit: true,
+		isNonstandard: null,
+	},
 	typhlosionite: {
+		inherit: true,
+		isNonstandard: null,
+	},
+	hisutyphlosionite: {
 		inherit: true,
 		isNonstandard: null,
 	},
@@ -132,6 +140,10 @@ export const Items: {[itemid: string]: ModdedItemData} = {
 		isNonstandard: null,
 	},
 	crobatite: {
+		inherit: true,
+		isNonstandard: null,
+	},
+	galascizorite: {
 		inherit: true,
 		isNonstandard: null,
 	},
@@ -168,6 +180,10 @@ export const Items: {[itemid: string]: ModdedItemData} = {
 		isNonstandard: null,
 	},
 	zoroarkite: {
+		inherit: true,
+		isNonstandard: null,
+	},
+	hisuzoroarkite: {
 		inherit: true,
 		isNonstandard: null,
 	},
@@ -258,24 +274,6 @@ export const Items: {[itemid: string]: ModdedItemData} = {
 	infarmatemite: {
 		inherit: true,
 		isNonstandard: null,
-	},
-	slowbronite: {
-		inherit: true,
-		megaStone: {
-			"Slowbro": "Slowbro-Mega",
-			"Slowbro-Galar": "Slowbro-Galar-Mega",
-		},
-		itemUser: ["Slowbro", "Slowbro-Galar"],
-		desc: "If held by a Slowbro forme, this item allows it to Mega Evolve in battle.",
-	},
-	scizorite: {
-		inherit: true,
-		megaStone: {
-			"Scizor": "Scizor-Mega",
-			"Scizor-Galar": "Scizor-Galar-Mega",
-		},
-		itemUser: ["Scizor", "Scizor-Galar"],
-		desc: "If held by a Scizor forme, this item allows it to Mega Evolve in battle.",
 	},
 
 	chakraseed: {

@@ -30,6 +30,30 @@ export const Scripts: ModdedBattleScriptsData = {
     return stat;
   },
   actions: {
+    canMegaEvo(pokemon: Pokemon) {
+      const species = pokemon.baseSpecies;
+      const altForme = species.otherFormes && this.dex.species.get(species.otherFormes[0]);
+      const item = pokemon.getItem();
+      // Mega Rayquaza
+      if ((this.battle.gen <= 7 || this.battle.ruleTable.has('+pokemontag:past') ||
+        this.battle.ruleTable.has('+pokemontag:future')) &&
+        altForme?.isMega && altForme?.requiredMove &&
+        pokemon.baseMoves.includes(toID(altForme.requiredMove)) && !item.zMove) {
+        return altForme.name;
+      }
+      // formes
+      if (item.name === "Galaslowbronite" && pokemon.species.name === "Slowbro-Galar") return "Slowbro-Galar-Mega";
+      if (item.name === "Hisutyphlosionite" && pokemon.species.name === "Typhlosion-Hisui") return "Typhlosion-Hisui-Mega";
+      if (item.name === "Galascizorite" && pokemon.species.name === "Scizor-Galar") return "Scizor-Galar-Mega";
+      if (item.name === "Sawsbuckite" && pokemon.species.id === "sawsbuck") return "Sawsbuck-Spring-Mega";
+      if (item.name === "Sawsbuckite" && pokemon.species.id === "sawsbucksummer") return "Sawsbuck-Summer-Mega";
+      if (item.name === "Sawsbuckite" && pokemon.species.id === "sawsbuckautumn") return "Sawsbuck-Autumn-Mega";
+      if (item.name === "Sawsbuckite" && pokemon.species.id === "sawsbuckwinter") return "Sawsbuck-Winter-Mega";
+      if (item.name === "Hisuzoroarkite" && pokemon.species.name === "Zoroark-Hisui") return "Zoroark-Hisui-Mega";
+      if (item.name === "Mimikyu" && pokemon.species.id === "mimikyubusted") return "Mimikyu-Busted-Mega";
+      if (item.name === "Toxtricitite" && pokemon.species.name === "Toxtricity-Low-Key") return "Toxtricity-Low-Key-Mega";
+      return item.megaStone?.[species.name] || null;
+    },
     runSwitch(pokemon: Pokemon) {
       const switchersIn = [pokemon];
       while (this.battle.queue.peek()?.choice === 'runSwitch') {

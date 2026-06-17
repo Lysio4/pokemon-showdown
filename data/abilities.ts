@@ -7766,28 +7766,6 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 		shortDesc: "On switch-in, the opposing targets' type is changed to Rock.",
 		isNonstandard: "Custom",
 	},
-	thermalboost: {
-		onModifyAtkPriority: 5,
-		onModifyAtk(atk, attacker, defender, move) {
-			if (move.type === 'Fire') {
-				this.debug('Thermal Boost boost');
-				return this.chainModify(1.5);
-			}
-		},
-		onModifySpAPriority: 5,
-		onModifySpA(atk, attacker, defender, move) {
-			if (move.type === 'Fire') {
-				this.debug('Thermal Boost boost');
-				return this.chainModify(1.5);
-			}
-		},
-		flags: {},
-		name: "Thermal Boost",
-		shortDesc: "This Pokemon's offensive stat is multiplied by 1.5 while using a Fire-type attack.",
-		rating: 3.5,
-		num: -89,
-		isNonstandard: "Custom",
-	},
 	// Touhou
 	hakkero: {
 		//effect in conditions.ts

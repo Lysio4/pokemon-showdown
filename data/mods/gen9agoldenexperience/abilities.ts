@@ -411,10 +411,6 @@ export const Abilities: { [abilityid: string]: ModdedAbilityData; } = {
 		inherit: true,
 		isNonstandard: null,
 	},
-	thermalboost: {
-		inherit: true,
-		isNonstandard: null,
-	},
 	// modified abilities
 	justified: {
 		inherit: true,

@@ -2147,7 +2147,7 @@ export const FormatsData: { [k: string]: SpeciesFormatsData; } = {
 		doublesTier: "DUU",
 	},
 	staraptormega: {
-		tier: "UU",
+		tier: "OU",
 		doublesTier: "DOU",
 	},
 	bidoof: {
@@ -5114,7 +5114,7 @@ export const FormatsData: { [k: string]: SpeciesFormatsData; } = {
 		doublesTier: "DUU",
 	},
 	annihilape: {
-		tier: "Uber",
+		tier: "OU",
 		doublesTier: "DUber",
 	},
 	walkingwake: {

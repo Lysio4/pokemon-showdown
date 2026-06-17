@@ -527,7 +527,7 @@ export const Pokedex: {[k: string]: ModdedSpeciesData;} = {
 	},
 	entei: {
 		inherit: true,
-		abilities: { 0: "Pressure", 1: "Inner Focus", H: "Thermal Boost" },
+		abilities: { 0: "Pressure", 1: "Inner Focus", H: "Fire Mane" },
 	},
 	suicune: {
 		inherit: true,
@@ -877,10 +877,6 @@ export const Pokedex: {[k: string]: ModdedSpeciesData;} = {
 	empoleon: {
 		inherit: true,
 		abilities: { 0: "Torrent", H: "Lightning Rod" },
-	},
-	staraptormega: {
-		inherit: true,
-		abilities: { 0: "Tough Claws" },
 	},
 	bibarel: {
 		inherit: true,
@@ -1422,10 +1418,6 @@ export const Pokedex: {[k: string]: ModdedSpeciesData;} = {
 		types: ["Steel", "Electric"],
 		abilities: { 0: "Plus", 1: "Minus", H: "Technician" },
 	},
-	eelektrossmega: {
-		inherit: true,
-		abilities: { 0: "Sheer Force" },
-	},
 	elgyem: {
 		inherit: true,
 		abilities: {0: "Telepathy", 1: "Cosmic Energy", H: "Analytic"},
@@ -1524,10 +1516,6 @@ export const Pokedex: {[k: string]: ModdedSpeciesData;} = {
 	},
 
 	// Gen 6 :
-	pyroarmega: {
-		inherit: true,
-		abilities: { 0: "Adaptability" },
-	},
 	flabebe: {
 		inherit: true,
 		abilities: {0: "Flower Veil", 1: "Leaf Dress", H: "Symbiosis"},
@@ -1573,14 +1561,6 @@ export const Pokedex: {[k: string]: ModdedSpeciesData;} = {
 	malamarmega: {
 		inherit: true,
 		abilities: { 0: "Psychic Surge" },
-	},
-	barbaraclemega: {
-		inherit: true,
-		abilities: { 0: "Tough Claws" },
-	},
-	dragalgemega: {
-		inherit: true,
-		abilities: { 0: "Regenerator" },
 	},
 	clawitzer: {
 		inherit: true,
@@ -2067,10 +2047,6 @@ export const Pokedex: {[k: string]: ModdedSpeciesData;} = {
 	mrrime: {
 		inherit: true,
 		baseStats: { hp: 80, atk: 85, def: 95, spa: 110, spd: 100, spe: 70 },
-	},
-	falinksmega: {
-		inherit: true,
-		abilities: { 0: "Defiant" },
 	},
 	pincurchin: {
 		inherit: true,

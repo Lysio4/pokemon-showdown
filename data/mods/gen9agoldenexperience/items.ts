@@ -1,37 +1,5 @@
 export const Items: {[itemid: string]: ModdedItemData} = {
 	// ZA mega stones not in Champions
-	barbaracite: {
-		inherit: true,
-		isNonstandard: null,
-	},
-	dragalgite: {
-		inherit: true,
-		isNonstandard: null,
-	},
-	eelektrossite: {
-		inherit: true,
-		isNonstandard: null,
-	},
-	falinksite: {
-		inherit: true,
-		isNonstandard: null,
-	},
-	malamarite: {
-		inherit: true,
-		isNonstandard: null,
-	},
-	pyroarite: {
-		inherit: true,
-		isNonstandard: null,
-	},
-	scolipite: {
-		inherit: true,
-		isNonstandard: null,
-	},
-	scraftinite: {
-		inherit: true,
-		isNonstandard: null,
-	},
 	zygardite: {
 		inherit: true,
 		isNonstandard: null,
@@ -65,18 +33,6 @@ export const Items: {[itemid: string]: ModdedItemData} = {
 		isNonstandard: null,
 	},
 	magearnite: {
-		inherit: true,
-		isNonstandard: null,
-	},
-	raichunitex: {
-		inherit: true,
-		isNonstandard: null,
-	},
-	raichunitey: {
-		inherit: true,
-		isNonstandard: null,
-	},
-	staraptite: {
 		inherit: true,
 		isNonstandard: null,
 	},

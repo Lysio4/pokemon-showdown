@@ -1765,24 +1765,24 @@ export const Pokedex: {[k: string]: ModdedSpeciesData;} = {
 	},
 	tsareena: {
 		inherit: true,
-		abilities: {0: "Leaf Guard", 1: "Queenly Majesty", H: "Striker"},
+		abilities: { 0: "Leaf Guard", 1: "Queenly Majesty", H: "Striker" },
 	},
 	comfey: {
 		inherit: true,
-		baseStats: {hp: 51, atk: 52, def: 90, spa: 82, spd: 110, spe: 100},
+		baseStats: { hp: 51, atk: 52, def: 90, spa: 82, spd: 110, spe: 100 },
 	},
 	oranguru: {
 		inherit: true,
-		baseStats: {hp: 100, atk: 50, def: 90, spa: 90, spd: 110, spe: 50},
-		abilities: {0: "Inner Focus", 1: "Divination", H: "Symbiosis"},
+		baseStats: { hp: 100, atk: 50, def: 90, spa: 90, spd: 110, spe: 50 },
+		abilities: { 0: "Inner Focus", 1: "Divination", H: "Symbiosis" },
 	},
 	passimian: {
 		inherit: true,
-		abilities: {0: "Receiver", 1: "Defiant", H: "Libero"},
+		abilities: { 0: "Receiver", 1: "Defiant", H: "Libero" },
 	},
 	golisopodmega: {
 		inherit: true,
-		abilities: { 0: "Shell Armor" },
+		abilities: { 0: "Long Reach" },
 	},
 	silvally: {
 		inherit: true,

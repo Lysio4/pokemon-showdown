@@ -1,4 +1,9 @@
 export const Moves: { [k: string]: ModdedMoveData; } = {
+	// nihillight
+	nihillight: {
+		inherit: true,
+		isNonstandard: null,
+	},	
 	// new moves
 	tentacatch: {
 		inherit: true,

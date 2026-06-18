@@ -1482,6 +1482,7 @@ export const Scripts: ModdedBattleScriptsData = {
     this.modData('Learnsets', 'aurorus').learnset.powergem = ['9L1'];
     this.modData('Learnsets', 'aurorus').learnset.voltswitch = ['9L1'];
     this.modData('Learnsets', 'aurorus').learnset.paraboliccharge = ['9L1'];
+    this.modData('Learnsets', 'aurorus').learnset.recover = ['9L1'];
     this.modData('Learnsets', 'sylveon').learnset.sparklyswirl = ['9L1'];
     this.modData('Learnsets', 'sylveon').learnset.slackoff = ['9L1'];
     this.modData('Learnsets', 'sylveon').learnset.uturn = ['9L1'];

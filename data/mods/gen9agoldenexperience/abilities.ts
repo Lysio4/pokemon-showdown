@@ -395,10 +395,6 @@ export const Abilities: { [abilityid: string]: ModdedAbilityData; } = {
 		inherit: true,
 		isNonstandard: null,
 	},
-	magmaggedon: {
-		inherit: true,
-		isNonstandard: null,
-	},
 	mightyhorn: {
 		inherit: true,
 		isNonstandard: null,

@@ -1130,7 +1130,7 @@ export const Pokedex: {[k: string]: ModdedSpeciesData;} = {
 	},
 	heatranmega: {
 		inherit: true,
-		abilities: { 0: "Magmaggedon" },
+		abilities: { 0: "Filter" },
 	},
 	regigigas: {
 		inherit: true,

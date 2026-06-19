@@ -7701,34 +7701,6 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 		num: -84,
 		isNonstandard: "Custom",
 	},
-	magmaggedon: {
-		onModifyAtkPriority: 5,
-		onModifyAtk(atk, attacker, defender, move) {
-			if (move.type === 'Fire') {
-				this.debug('Magmaggedon boost');
-				return this.chainModify(1.5);
-			}
-		},
-		onModifySpAPriority: 5,
-		onModifySpA(atk, attacker, defender, move) {
-			if (move.type === 'Fire') {
-				this.debug('Magmaggedon boost');
-				return this.chainModify(1.5);
-			}
-		},
-		onTryHit(target, source, move) {
-			if (target !== source && move.type === 'Water') {
-				this.add('-immune', target, '[from] ability: Magmaggedon');
-				return null;
-			}
-		},
-		shortDesc: "This Pokemon is immune to Water type moves. This Pokemon's offensive stat is multiplied by 1.5 while using a Fire-type attack. Solar Beam and Solar Blade hit immediately.",
-		flags: {},
-		name: "Magmaggedon",
-		rating: 1,
-		num: -85,
-		isNonstandard: "Custom",
-	},
 	mightyhorn: {
 		onBasePowerPriority: 23,
 		onBasePower(basePower, attacker, defender, move) {
@@ -7748,7 +7720,7 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 		flags: {},
 		name: "Mighty Horn",
 		rating: 3,
-		num: -86,
+		num: -85,
 		desc: "This Pokemon's drill-based attacks have their power and accuracy multiplied by 1.3.",
 		shortDesc: "This Pokemon's drill-based attacks have 1.3x power and 1.3x accuracy.",
 		isNonstandard: "Custom",
@@ -7776,7 +7748,7 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 		},
 		name: "Nightmare Heart",
 		rating: 3,
-		num: -87,
+		num: -86,
 		isNonstandard: "Custom",
 	},
 	petrify: {
@@ -7797,7 +7769,7 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 		flags: {},
 		name: "Petrify",
 		rating: 4,
-		num: -88,
+		num: -87,
 		shortDesc: "On switch-in, the opposing targets' type is changed to Rock.",
 		isNonstandard: "Custom",
 	},

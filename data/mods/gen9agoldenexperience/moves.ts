@@ -1079,22 +1079,6 @@ export const Moves: { [k: string]: ModdedMoveData; } = {
 	},
 	solarbeam: {
 		inherit: true,
-		onTryMove(attacker, defender, move) {
-			if (attacker.removeVolatile(move.id)) {
-				return;
-			}
-			this.add('-prepare', attacker, move.name);
-			if (['sunnyday', 'desolateland'].includes(attacker.effectiveWeather(undefined, true)) || pokemon.hasAbility('magmaggedon')) {
-				this.attrLastMove('[still]');
-				this.addMove('-anim', attacker, move.name, defender);
-				return;
-			}
-			if (!this.runEvent('ChargeMove', attacker, defender, move)) {
-				return;
-			}
-			attacker.addVolatile('twoturnmove', defender);
-			return null;
-		},
 		onBasePower(basePower, pokemon, target) {
 			const weakWeathers = ['raindance', 'primordialsea', 'sandstorm', 'hail', 'snowscape', 'eternalwinter'];
 			if (weakWeathers.includes(pokemon.effectiveWeather(undefined, true))) {
@@ -1105,22 +1089,6 @@ export const Moves: { [k: string]: ModdedMoveData; } = {
 	},
 	solarblade: {
 		inherit: true,
-		onTryMove(attacker, defender, move) {
-			if (attacker.removeVolatile(move.id)) {
-				return;
-			}
-			this.add('-prepare', attacker, move.name);
-			if (['sunnyday', 'desolateland'].includes(attacker.effectiveWeather(undefined, true)) || pokemon.hasAbility('magmaggedon')) {
-				this.attrLastMove('[still]');
-				this.addMove('-anim', attacker, move.name, defender);
-				return;
-			}
-			if (!this.runEvent('ChargeMove', attacker, defender, move)) {
-				return;
-			}
-			attacker.addVolatile('twoturnmove', defender);
-			return null;
-		},
 		onBasePower(basePower, pokemon, target) {
 			const weakWeathers = ['raindance', 'primordialsea', 'sandstorm', 'hail', 'snowscape', 'eternalwinter'];
 			if (weakWeathers.includes(pokemon.effectiveWeather(undefined, true))) {

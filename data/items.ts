@@ -4864,6 +4864,7 @@ export const Items: import('../sim/dex-items').ItemDataTable = {
 		},
 		num: 321,
 		gen: 4,
+		itemUser: ["Rhyperior"], //for AGE
 	},
 	psychicgem: {
 		name: "Psychic Gem",

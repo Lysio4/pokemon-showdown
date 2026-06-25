@@ -661,6 +661,7 @@ export const Moves: { [k: string]: ModdedMoveData; } = {
 	},
 	sizzlyslide: {
 		inherit: true,
+		basePower: 85,
 		isNonstandard: null,
 	},
 	glitzyglow: {
@@ -686,31 +687,6 @@ export const Moves: { [k: string]: ModdedMoveData; } = {
 	sparklyswirl: {
 		inherit: true,
 		accuracy: 100,
-		isNonstandard: null,
-	},
-	veeveevolley: {
-		inherit: true,
-		isNonstandard: null,
-	},
-	pikapapow: {
-		inherit: true,
-		isNonstandard: null,
-	},
-	splishysplash: {
-		inherit: true,
-		isNonstandard: null,
-	},
-	zippyzap: {
-		inherit: true,
-		isNonstandard: null,
-		basePower: 50,
-		willCrit: true,
-		secondary: undefined, // no inherit
-		desc: "This move is always a critical hit unless the target is under the effect of Lucky Chant or has the Battle Armor or Shell Armor Abilities.",
-		shortDesc: "Goes first. Always results in a critical hit.",
-	},
-	floatyfall: {
-		inherit: true,
 		isNonstandard: null,
 	},
 	triplearrows: {

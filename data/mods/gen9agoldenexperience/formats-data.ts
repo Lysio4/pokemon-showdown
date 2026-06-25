@@ -206,10 +206,6 @@ export const FormatsData: { [k: string]: SpeciesFormatsData; } = {
 		tier: "NU",
 		doublesTier: "DUU",
 	},
-	pikachustarter: {
-		tier: "NU",
-		doublesTier: "DUU",
-	},
 	pikachugmax: {
 		isNonstandard: "Past",
 		tier: "Illegal",
@@ -900,10 +896,6 @@ export const FormatsData: { [k: string]: SpeciesFormatsData; } = {
 	},
 	eevee: {
 		tier: "LC",
-	},
-	eeveestarter: {
-		tier: "NU",
-		doublesTier: "DUU",
 	},
 	eeveegmax: {
 		isNonstandard: "Past",

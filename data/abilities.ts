@@ -6131,7 +6131,7 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 		desc: "When replacing a fainted party member, its next move has x1.5 BP.",
 		shortDesc: "Its first move has x1.5 BP when replacing a fainted ally.",
 		onAfterMega(pokemon) {
-			if (!pokemon.side.faintedLastTurn || !pokemon.isMega) return;
+			if (!pokemon.side.faintedLastTurn || !pokemon.species.isMega) return;
 			pokemon.addVolatile('coldvengeance');
 		},
 		onStart(pokemon) {
@@ -7145,17 +7145,15 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 		isNonstandard: "Custom",
 	},
 	tempestuous: {
-		desc: "When replacing a fainted party member, this Pokémon's Special Defense is boosted, and it charges power to double the power of its Electric-type move on its first turn.",
+		desc: "When replacing a fainted party member, this Pokémon charges power to double the power of its Electric-type move on its next Electric-type move.",
 		shortDesc: "Gains the effect of Charge when replacing a fainted ally.",
 		onAfterMega(pokemon) {
-			if (!pokemon.side.faintedLastTurn || !pokemon.isMega) return;
-			this.boost({spd: 1}, pokemon);
+			if (!pokemon.side.faintedLastTurn || !pokemon.species.isMega) return;
 			this.add('-activate', pokemon, 'move: Charge');
 			pokemon.addVolatile('charge');
 		},
 		onStart(pokemon) {
 			if (!pokemon.side.faintedThisTurn) return;
-			this.boost({spd: 1}, pokemon);
 			this.add('-activate', pokemon, 'move: Charge');
 			pokemon.addVolatile('charge');
 		},
@@ -7771,6 +7769,18 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 		rating: 4,
 		num: -87,
 		shortDesc: "On switch-in, the opposing targets' type is changed to Rock.",
+		isNonstandard: "Custom",
+	},
+	muddyland: {
+		shortDesc: "On switch-in, summons Water Sport and Mud Sport.",
+		onStart(source) {
+			this.add('-ability', source, 'Muddy Land');
+			this.field.addPseudoWeather('watersport');
+			this.field.addPseudoWeather('mudsport');
+		},
+		name: "Muddy Land",
+		rating: 3.5,
+		num: -88,
 		isNonstandard: "Custom",
 	},
 	// Touhou

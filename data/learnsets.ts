@@ -105362,7 +105362,6 @@ export const Learnsets: import('../sim/dex-species').LearnsetDataTable = {
 			xscissor: ["9M", "8M", "7M", "6M", "5M"],
 		},
 	},
-	// Touhou
 	reimuhakurei: {
 		learnset: {
 			airslash: ["9L1"],

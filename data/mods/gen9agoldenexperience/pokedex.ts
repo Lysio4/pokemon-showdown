@@ -35,10 +35,6 @@ export const Pokedex: {[k: string]: ModdedSpeciesData;} = {
 		baseStats: { hp: 65, atk: 110, def: 65, spa: 61, spd: 61, spe: 100 },
 		abilities: { 0: "Keen Eye", 1: "Sniper", H: "Stakeout" },
 	},
-	pikachustarter: {
-		inherit: true,
-		abilities: {0: "Adaptability"},
-	},
 	sandshrewalola: {
 		inherit: true,
 		abilities: { 0: "Snow Cloak", 1: "Refrigerate", H: "Slush Rush" },
@@ -272,21 +268,17 @@ export const Pokedex: {[k: string]: ModdedSpeciesData;} = {
 		baseStats: {hp: 130, atk: 95, def: 80, spa: 65, spd: 95, spe: 70},
 		abilities: {0: "Water Absorb", 1: "Shell Armor", H: "Refrigerate"},
 	},
-	eeveestarter: {
-		inherit: true,
-		abilities: {0: "Protean"},
-	},
 	vaporeon: {
 		inherit: true,
-		abilities: {0: "Water Absorb", 1: "Natural Cure", H: "Hydration"},
+		abilities: { 0: "Water Absorb", 1: "Muddy Land", H: "Hydration" },
 	},
 	jolteon: {
 		inherit: true,
-		abilities: {0: "Volt Absorb", 1: "Tempestuous", H: "Quick Feet"},
+		abilities: { 0: "Volt Absorb", 1: "Tempestuous", H: "Quick Feet" },
 	},
     flareon: {
 		inherit: true,
-		abilities: {0: "Fluffy", 1: "Ignite", H: "Toxic Boost"},
+		abilities: { 0: "Flash Fire", 1: "Fur Coat", H: "Ignite" },
 	},
 	kabutops: {
 		inherit: true,
@@ -420,6 +412,14 @@ export const Pokedex: {[k: string]: ModdedSpeciesData;} = {
 		inherit: true,
 		baseStats: {hp: 85, atk: 50, def: 75, spa: 125, spd: 95, spe: 30},
 		abilities: { 0: "Chlorophyll", 1: "Solar Power", H: "Drought" },
+	},
+	wooper: {
+		inherit: true,
+		abilities: { 0: "Muddy Land", 1: "Water Absorb", H: "Unaware" },
+	},
+	quagsire: {
+		inherit: true,
+		abilities: { 0: "Muddy Land", 1: "Water Absorb", H: "Unaware" },
 	},
 	espeon: {
 		inherit: true,
@@ -709,8 +709,13 @@ export const Pokedex: {[k: string]: ModdedSpeciesData;} = {
 		inherit: true,
 		abilities: {0: "Levitate", H:"Drought"},
 	},
+	barboach: {
+		inherit: true,
+		abilities: { 0: "Oblivious", 1: "Muddy Land", H: "Hydration" },
+	},
 	whiscash: {
 		inherit: true,
+		abilities: { 0: "Oblivious", 1: "Muddy Land", H: "Hydration" },
 		otherFormes: ["Whiscash-Mega"],
         formeOrder: ["Whiscash", "Whiscash-Mega"],
 	},
@@ -1728,7 +1733,6 @@ export const Pokedex: {[k: string]: ModdedSpeciesData;} = {
 	lycanroc: {
 		inherit: true,
 		types: ["Rock", "Ground"],
-		abilities: { 0: "Keen Eye", 1: "Sand Rush", H: "Skill Link" },
 		otherFormes: ["Lycanroc-Midnight", "Lycanroc-Dusk", "Lycanroc-Bloodmoon"],
 		formeOrder: ["Lycanroc", "Lycanroc-Midnight", "Lycanroc-Dusk", "Lycanroc-Bloodmoon"],
 	},

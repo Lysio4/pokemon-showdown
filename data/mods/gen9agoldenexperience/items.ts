@@ -403,6 +403,17 @@ export const Items: {[itemid: string]: ModdedItemData} = {
 		desc: "If the holder is Appletun: Heals 12.5% HP every turn.",
 		shortDesc: "If the holder is Appletun: Heals 12.5% HP every turn.",
 	},
+	protector: {
+		inherit: true,
+		onModifySpDPriority: 1,
+		onModifySpD(spd, pokemon) {
+			if (pokemon.baseSpecies.baseSpecies === 'Rhyperior') {
+				return this.chainModify(2);
+			}
+		},
+		desc: "If the holder is Rhyperior: 2x Sp. Defense.",
+		shortDesc: "If the holder is Rhyperior: 2x Sp. Def.",
+	},
 
 	// Silvally Memories section
 	bugmemory: {

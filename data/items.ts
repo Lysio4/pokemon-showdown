@@ -7872,6 +7872,7 @@ export const Items: import('../sim/dex-items').ItemDataTable = {
 		},
 		num: 155,
 		gen: 2,
+		tags: ["True Past"],
 		isNonstandard: "Past",
 	},
 	berserkgene: {
@@ -7887,6 +7888,7 @@ export const Items: import('../sim/dex-items').ItemDataTable = {
 		},
 		num: 0,
 		gen: 2,
+		tags: ["True Past"],
 		isNonstandard: "Past",
 	},
 	bitterberry: {
@@ -7907,6 +7909,7 @@ export const Items: import('../sim/dex-items').ItemDataTable = {
 		},
 		num: 156,
 		gen: 2,
+		tags: ["True Past"],
 		isNonstandard: "Past",
 	},
 	burntberry: {
@@ -7929,6 +7932,7 @@ export const Items: import('../sim/dex-items').ItemDataTable = {
 		},
 		num: 153,
 		gen: 2,
+		tags: ["True Past"],
 		isNonstandard: "Past",
 	},
 	goldberry: {
@@ -7953,6 +7957,7 @@ export const Items: import('../sim/dex-items').ItemDataTable = {
 		},
 		num: 158,
 		gen: 2,
+		tags: ["True Past"],
 		isNonstandard: "Past",
 	},
 	iceberry: {
@@ -7975,6 +7980,7 @@ export const Items: import('../sim/dex-items').ItemDataTable = {
 		},
 		num: 152,
 		gen: 2,
+		tags: ["True Past"],
 		isNonstandard: "Past",
 	},
 	mintberry: {
@@ -7997,6 +8003,7 @@ export const Items: import('../sim/dex-items').ItemDataTable = {
 		},
 		num: 150,
 		gen: 2,
+		tags: ["True Past"],
 		isNonstandard: "Past",
 	},
 	miracleberry: {
@@ -8018,6 +8025,7 @@ export const Items: import('../sim/dex-items').ItemDataTable = {
 		},
 		num: 157,
 		gen: 2,
+		tags: ["True Past"],
 		isNonstandard: "Past",
 	},
 	mysteryberry: {
@@ -8057,6 +8065,7 @@ export const Items: import('../sim/dex-items').ItemDataTable = {
 		},
 		num: 154,
 		gen: 2,
+		tags: ["True Past"],
 		isNonstandard: "Past",
 	},
 	pinkbow: {
@@ -8069,6 +8078,7 @@ export const Items: import('../sim/dex-items').ItemDataTable = {
 		},
 		num: 251,
 		gen: 2,
+		tags: ["True Past"],
 		isNonstandard: "Past",
 	},
 	polkadotbow: {
@@ -8081,6 +8091,7 @@ export const Items: import('../sim/dex-items').ItemDataTable = {
 		},
 		num: 251,
 		gen: 2,
+		tags: ["True Past"],
 		isNonstandard: "Past",
 	},
 	przcureberry: {
@@ -8103,6 +8114,7 @@ export const Items: import('../sim/dex-items').ItemDataTable = {
 		},
 		num: 149,
 		gen: 2,
+		tags: ["True Past"],
 		isNonstandard: "Past",
 	},
 	psncureberry: {
@@ -8125,6 +8137,7 @@ export const Items: import('../sim/dex-items').ItemDataTable = {
 		},
 		num: 151,
 		gen: 2,
+		tags: ["True Past"],
 		isNonstandard: "Past",
 	},
 

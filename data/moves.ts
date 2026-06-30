@@ -23940,12 +23940,65 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 			atk: 1,
 			def: 1,
 		},
+		onPrepareHit(target, source) {
+			this.attrLastMove('[still]');
+			this.add('-anim', source, "Shift Gear", source);
+		},
 		target: "self",
 		type: "Normal",
 		zMove: { boost: { spa: 1 } },
 		contestType: "Beautiful",
 		desc: "Raises the user's Attack and Defense by 1 stage. If the terrain is Grassy Terrain, this move raises the user's Attack and Defense by 2 stages.",
 		shortDesc: "Raises user's Attack and Def by 1; 2 in Grassy Terrain.",
+		isNonstandard: "Custom",
+	},
+	poisonwhip: {
+		num: -97,
+		accuracy: 100,
+		basePower: 70,
+		category: "Physical",
+		name: "Poison Whip",
+		pp: 10,
+		priority: 0,
+		flags: { protect: 1, mirror: 1, metronome: 1, tail: 1 },
+		onBasePower(basePower, pokemon, target) {
+			if (target.status === 'psn' || target.status === 'tox') {
+				return this.chainModify(2);
+			}
+		},
+		secondary: {
+			chance: 50,
+			status: 'psn',
+		},
+		target: "normal",
+		type: "Poison",
+		desc: "Power doubles if the target is poisoned.",
+		shortDesc: "2x power if target poisoned.",
+		isNonstandard: "Custom",
+	},
+	casinoroyal: {
+		num: -98,
+		accuracy: 95,
+		basePower: 120,
+		category: "Special",
+		name: "Casino Royal",
+		pp: 5,
+		priority: 0,
+		flags: { protect: 1, mirror: 1 },
+		self: {
+			boosts: {
+				spa: -2,
+			},
+		},
+		onPrepareHit(target, source) {
+			this.attrLastMove('[still]');
+			this.add('-anim', source, "Pay Day", target);
+		},
+		target: "allAdjacentFoes",
+		type: "Steel",
+		contestType: "Beautiful",
+		desc: "Lowers the user's Special Attack by 2 stages.",
+		shortDesc: "Lowers the user's Sp. Atk by 2. Hits foe(s).",
 		isNonstandard: "Custom",
 	},
 	// Touhou

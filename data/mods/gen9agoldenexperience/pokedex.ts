@@ -96,7 +96,7 @@ export const Pokedex: {[k: string]: ModdedSpeciesData;} = {
 	},
 	persian: {
 		inherit: true,
-		abilities: {0: "Limber", 1: "Technician", H: "Super Luck"},
+		evos: ["Casbundle"],
 	},
 	golduck: {
 		inherit: true,
@@ -1854,7 +1854,7 @@ export const Pokedex: {[k: string]: ModdedSpeciesData;} = {
 	},
 	silvallypoison: {
 		inherit: true,
-		abilities: {0: "Regenerator"},
+		abilities: {0: "Toxic Debris"},
 		requiredItem: null,
 	},
 	silvallypsychic: {

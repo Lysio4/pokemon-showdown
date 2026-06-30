@@ -6743,6 +6743,10 @@ export const FormatsData: import('../sim/dex-species').SpeciesFormatsDataTable =
 		isNonstandard: "Custom",
 		tier: "Illegal",
     },
+	casbundle: {
+		isNonstandard: "Custom",
+		tier: "Illegal",
+	},
 	raticket: {
 		isNonstandard: "Custom",
 		tier: "Illegal",

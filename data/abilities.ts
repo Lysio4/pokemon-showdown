@@ -6832,22 +6832,11 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 		num: -51,
 		isNonstandard: "Custom",
 	},
-	oldschool: {
-		shortDesc: "This Pokemon's high crit rate moves always crit, and deal damages x2 instead of x1.5. This Pokemon's special moves use SpD in calculation.",
-		name: "Old School",
-		onModifyMove(move, attacker) {
-			if (move.category === 'Special') {
-				move.overrideOffensiveStat = 'spd';
-			}
-		},
+	goodluck: {
+		shortDesc: "If this Pokémon's Speed is higher than its target's Speed, its critical rate ratio is raised by 3.",
+		name: "Good Luck",
 		onModifyCritRatio(critRatio, source, target) {
-			if (critRatio >= 2) return 5;
-		},
-		onModifyDamage(damage, source, target, move) {
-			if (target.getMoveHitData(move).crit) {
-				this.debug('Old School boost');
-				return this.chainModify(2 / 1.5);
-			}
+			if (source.storedStats.spe > target.storedStats.spe) return critRatio + 3;
 		},
 		rating: 3.5,
 		num: -52,

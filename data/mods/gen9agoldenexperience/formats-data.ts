@@ -377,11 +377,10 @@ export const FormatsData: { [k: string]: SpeciesFormatsData; } = {
 		tier: "Illegal",
 	},
 	persian: {
-		tier: "RU",
-		doublesTier: "DUU",
+		tier: "NFE",
 	},
 	persianalola: {
-		tier: "RU",
+		tier: "NU",
 		doublesTier: "DUU",
 	},
 	perrserker: {
@@ -5486,6 +5485,10 @@ export const FormatsData: { [k: string]: SpeciesFormatsData; } = {
 		doublesTier: "DUU",
 	},
 	annoyog: {
+		tier: "UU",
+		doublesTier: "DUU",
+	},
+	casbundle: {
 		tier: "UU",
 		doublesTier: "DUU",
 	},

@@ -259,7 +259,7 @@ export const Abilities: { [abilityid: string]: ModdedAbilityData; } = {
 		inherit: true,
 		isNonstandard: null,
 	},
-	oldschool: {
+	goodluck: {
 		inherit: true,
 		isNonstandard: null,
 	},

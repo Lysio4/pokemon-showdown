@@ -376,10 +376,6 @@ export const Items: {[itemid: string]: ModdedItemData} = {
 		inherit: true,
 		isNonstandard: null,
 	},
-	amuletcoin: {
-		inherit: true,
-		isNonstandard: null,
-	},
 	tartapple: {
 		inherit: true,
 		onModifySpePriority: 1,

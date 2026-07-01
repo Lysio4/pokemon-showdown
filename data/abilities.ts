@@ -7417,7 +7417,7 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 		},
 		onBasePowerPriority: 21,
 		onBasePower(basePower, attacker, defender, move) {
-			if (['sunnyday', 'desolateland'].includes(pokemon.effectiveWeather())) {
+			if (['sunnyday', 'desolateland'].includes(attacker.effectiveWeather())) {
 				if (move.type === 'Electric') {
 					this.debug('Solar Energy boost');
 					return this.chainModify([5325, 4096]);

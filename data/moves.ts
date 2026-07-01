@@ -23995,7 +23995,7 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 			this.add('-anim', source, "Pay Day", target);
 		},
 		target: "allAdjacentFoes",
-		type: "Steel",
+		type: "Normal",
 		contestType: "Beautiful",
 		desc: "Lowers the user's Special Attack by 2 stages.",
 		shortDesc: "Lowers the user's Sp. Atk by 2. Hits foe(s).",

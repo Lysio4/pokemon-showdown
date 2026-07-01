@@ -3230,7 +3230,8 @@ export const FormatsData: import('../sim/dex-species').SpeciesFormatsDataTable =
 	},
 	basculegion: {
 		tier: "NU",
-		doublesTier: "DUber",
+		// doublesTier: "DUber",
+		doublesTier: "DOU",
 		natDexTier: "RU",
 	},
 	basculegionf: {

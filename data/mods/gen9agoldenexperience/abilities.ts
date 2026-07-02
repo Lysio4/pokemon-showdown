@@ -897,14 +897,31 @@ export const Abilities: { [abilityid: string]: ModdedAbilityData; } = {
 	},
 	fullmetalbody: {
 		inherit: true,
-		onTryBoost(boost, target, source, effect) {},
 		onTryHit(target, source, move) {
 			if (move.category === 'Status' && target !== source) {
-				this.add('-immune', target, '[from] ability: Good as Gold');
+				this.add('-immune', target, '[from] ability: Full Metal Body');
 				return null;
 			}
 		},
-		shortDesc: "This Pokemon is immune to Status moves.",
+		shortDesc: "This Pokemon is immune to Status moves. Prevents other Pokemon from lowering this Pokemon's stat stages.",
+	},
+	shadowshield: {
+		inherit: true,
+		onTryBoost(boost, target, source, effect) {
+			if (source && target === source) return;
+			let showMsg = false;
+			let i: BoostID;
+			for (i in boost) {
+				if (boost[i]! < 0) {
+					delete boost[i];
+					showMsg = true;
+				}
+			}
+			if (showMsg && !(effect as ActiveMove).secondaries && effect.id !== 'octolock') {
+				this.add("-fail", target, "unboost", "[from] ability: Shadow Shield", `[of] ${target}`);
+			}
+		},
+		shortDesc: "If this Pokemon is at full HP, damage taken from attacks is halved. Prevents other Pokemon from lowering this Pokemon's stat stages.",
 	},
 	arenatrap: {
 		inherit: true,

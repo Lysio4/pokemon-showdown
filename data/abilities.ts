@@ -7415,19 +7415,28 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 				return this.chainModify(1.5);
 			}
 		},
-		onBasePowerPriority: 21,
-		onBasePower(basePower, attacker, defender, move) {
+		onChargeMove(pokemon, target, move) {
+			if (['sunnyday', 'desolateland'].includes(pokemon.effectiveWeather())) {
+				this.debug('Solar Energy - remove charge turn for ' + move.id);
+				this.attrLastMove('[still]');
+				this.addMove('-anim', pokemon, move.name, target);
+				return false; // skip charge turn
+			}
+		},
+		onModifyMove(move, attacker) {
 			if (['sunnyday', 'desolateland'].includes(attacker.effectiveWeather())) {
-				if (move.type === 'Electric') {
-					this.debug('Solar Energy boost');
-					return this.chainModify([5325, 4096]);
-				}
+				delete move.flags['charge', 'recharge', 'cantusetwice'];
+			}
+		},
+		onUpdate(pokemon) {
+			if (['sunnyday', 'desolateland'].includes(pokemon.effectiveWeather()) && pokemon.volatiles['mustrecharge']) {
+				pokemon.removeVolatile('mustrecharge');
 			}
 		},
 		flags: {},
 		name: "Solar Energy",
-		desc: "If Sunny Day is active, this Pokemon's Speed is multiplied by 1.5, and this Pokemon's Electric moves have x1.5. This effect is prevented if this Pokemon is holding a Utility Umbrella.",
-		shortDesc: "If Sunny Day is active, Speed x1.5, and Electric moves x1.5.",
+		desc: "If Sunny Day is active, this Pokemon's Speed is multiplied by 1.5, and this Pokémon can skip the charging and recharging turn of its moves. This effect is prevented if this Pokemon is holding a Utility Umbrella.",
+		shortDesc: "If Sunny Day is active, Speed x1.5, and skip the charging and recharging turn of its moves.",
 		rating: 3,
 		num: -75,		
 		isNonstandard: "Custom",

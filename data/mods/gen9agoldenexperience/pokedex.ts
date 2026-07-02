@@ -48,14 +48,6 @@ export const Pokedex: {[k: string]: ModdedSpeciesData;} = {
 		baseStats: { hp: 75, atk: 110, def: 120, spa: 25, spd: 65, spe: 85 },
 		abilities: { 0: "Snow Cloak", 1: "Refrigerate", H: "Slush Rush" },
 	},
-	ninetales: {
-		inherit: true,
-		baseStats: { hp: 73, atk: 59, def: 75, spa: 91, spd: 100, spe: 107 },
-	},
-	ninetalesalola: {
-		inherit: true,
-		baseStats: { hp: 73, atk: 52, def: 75, spa: 91, spd: 100, spe: 114 },
-	},
 	jigglypuff: {
 		inherit: true,
 		baseStats: { hp: 115, atk: 45, def: 30, spa: 60, spd: 43, spe: 30 },
@@ -1069,19 +1061,19 @@ export const Pokedex: {[k: string]: ModdedSpeciesData;} = {
 	},
 	leafeon: {
 		inherit: true,
-		abilities: {0: "Leaf Guard", 1: "Sharpness", H: "Chlorophyll"},
+		abilities: { 0: "Leaf Guard", 1: "Sharpness", H: "Chlorophyll" },
 	},
 	glaceon: {
 		inherit: true,
-		abilities: {0: "Snow Cloak", 1: "North Wind", H: "Ice Body"},
+		abilities: { 0: "Snow Cloak", 1: "North Wind", H: "Ice Body" },
 	},
 	mamoswine: {
 		inherit: true,
-		baseStats: {hp: 110, atk: 130, def: 80, spa: 70, spd: 60, spe: 90},
+		baseStats: { hp: 110, atk: 130, def: 80, spa: 70, spd: 60, spe: 90 },
 	},
 	probopass: {
 		inherit: true,
-		abilities: {0: "Sturdy", 1: "Magnet Pull", H: "Levitate"},
+		abilities: { 0: "Sturdy", 1: "Magnet Pull", H: "Levitate" },
 	},
 	dusknoir: {
 		inherit: true,
@@ -1089,49 +1081,49 @@ export const Pokedex: {[k: string]: ModdedSpeciesData;} = {
 	},
 	rotom: {
 		inherit: true,
-		abilities: {0: "Levitate", H: "Unburden"},
+		abilities: { 0: "Levitate", H: "Unburden"},
 	},
 	rotomheat: {
 		inherit: true,
-		abilities: {0: "Levitate", H: "Flame Body"},
+		abilities: { 0: "Levitate", H: "Flame Body" },
 	},
 	rotomwash: {
 		inherit: true,
-		abilities: {0: "Levitate", H: "Storm Drain"},
+		abilities: { 0: "Levitate", H: "Storm Drain" },
 	},
 	rotomfrost: {
 		inherit: true,
-		abilities: {0: "Levitate", H: "Snow Warning"},
+		abilities: { 0: "Levitate", H: "Snow Warning" },
 	},
 	rotomfan: {
 		inherit: true,
-		abilities: {0: "Levitate", H: "Speed Boost"},
+		abilities: {0: "Levitate", H: "Wind Power" },
 	},
 	rotommow: {
 		inherit: true,
-		abilities: {0: "Levitate", H: "Wood Clearing"},
+		abilities: { 0: "Levitate", H: "Wood Clearing" },
 	},
 	uxie: {
 		inherit: true,
-		abilities: {0: "Levitate", 1: "Mirror Armor", H: "Magic Bounce"},
+		abilities: { 0: "Levitate", 1: "Mirror Armor", H: "Magic Bounce" },
 	},
 	mesprit: {
 		inherit: true,
 		types: ["Psychic", "Fairy"],
-		abilities: {0: "Levitate", 1: "Magician", H: "Mental Fortitude"},
+		abilities: { 0: "Levitate", 1: "Magician", H: "Mental Fortitude" },
 	},
 	azelf: {
 		inherit: true,
 		types: ["Psychic", "Fighting"],
-		abilities: {0: "Levitate", 1: "Defiant", H: "Competitive"},
+		abilities: { 0: "Levitate", 1: "Defiant", H: "Competitive" },
 	},
 	dialgaorigin: {
 		inherit: true,
-		abilities: {0: "Levitate"},
+		abilities: { 0: "Levitate" },
 	},
 	palkiaorigin: {
 		inherit: true,
-		abilities: {0: "Graviton"},
+		abilities: { 0: "Graviton" },
 	},
 	heatranmega: {
 		inherit: true,
@@ -1139,7 +1131,7 @@ export const Pokedex: {[k: string]: ModdedSpeciesData;} = {
 	},
 	regigigas: {
 		inherit: true,
-		abilities: {0: "Slow Start", H: "Clear Body"},
+		abilities: { 0: "Slow Start", H: "Clear Body" },
 	},
 	cresselia: {
 		inherit: true,
@@ -2214,10 +2206,6 @@ export const Pokedex: {[k: string]: ModdedSpeciesData;} = {
 	flamigo: {
 		inherit: true,
 		baseStats: {hp: 82, atk: 125, def: 74, spa: 55, spd: 64, spe: 100},
-	},
-	veluza: {
-		inherit: true,
-		abilities: {0: "Mold Breaker", 1: "Unburden", H: "Sharpness"},
 	},
 	tatsugiricurlymega: {
 		inherit: true,

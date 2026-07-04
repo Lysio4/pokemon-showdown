@@ -1785,7 +1785,7 @@ export class TeamValidator {
 
 		// const tier = tierSpecies.tier;
 		let tier;
-		if (this.format.mod === 'gen9agoldenexperience' && this.format.gameType === 'doubles' && tierSpecies.natDexDoublesOverride) doublesTier = tierSpecies.natDexDoublesOverride;
+		if (this.format.mod === 'gen9agoldenexperience' && this.format.gameType === 'doubles' && tierSpecies.natDexDoublesOverride) tier = tierSpecies.natDexDoublesOverride;
 		else tier = tierSpecies.tier
 		const tierTag = 'tag:' + toID(tier);
 		setHas[tierTag] = true;

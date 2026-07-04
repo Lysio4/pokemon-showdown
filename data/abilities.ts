@@ -7410,11 +7410,6 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 		isNonstandard: "Custom",
 	},
 	solarenergy: {
-		onModifySpe(spe, pokemon) {
-			if (['sunnyday', 'desolateland'].includes(pokemon.effectiveWeather())) {
-				return this.chainModify(1.5);
-			}
-		},
 		onChargeMove(pokemon, target, move) {
 			if (['sunnyday', 'desolateland'].includes(pokemon.effectiveWeather())) {
 				this.debug('Solar Energy - remove charge turn for ' + move.id);
@@ -7435,8 +7430,8 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 		},
 		flags: {},
 		name: "Solar Energy",
-		desc: "If Sunny Day is active, this Pokemon's Speed is multiplied by 1.5, and this Pokémon can skip the charging and recharging turn of its moves. This effect is prevented if this Pokemon is holding a Utility Umbrella.",
-		shortDesc: "If Sunny Day is active, Speed x1.5, and skip the charging and recharging turn of its moves.",
+		desc: "If Sunny Day is active, this Pokémon can skip the charging and recharging turn of its moves. This effect is prevented if this Pokemon is holding a Utility Umbrella.",
+		shortDesc: "If Sunny Day is active, this Pokémon skips the charging and recharging turn of its moves.",
 		rating: 3,
 		num: -75,		
 		isNonstandard: "Custom",

@@ -929,7 +929,7 @@ export const FormatsData: { [k: string]: SpeciesFormatsData; } = {
 		doublesTier: "DUU",
 	},
 	sylveon: {
-		tier: "RU",
+		tier: "OU",
 		doublesTier: "DUU",
 	},
 	porygon: {
@@ -1465,7 +1465,7 @@ export const FormatsData: { [k: string]: SpeciesFormatsData; } = {
 		doublesTier: "DUU",
 	},
 	swampertmega: {
-		tier: "RU",
+		tier: "OU",
 		doublesTier: "DOU",
 	},
 	poochyena: {
@@ -1539,7 +1539,7 @@ export const FormatsData: { [k: string]: SpeciesFormatsData; } = {
 		tier: "LC",
 	},
 	pelipper: {
-		tier: "NU",
+		tier: "OU",
 		doublesTier: "DOU",
 	},
 	ralts: {
@@ -2138,7 +2138,7 @@ export const FormatsData: { [k: string]: SpeciesFormatsData; } = {
 		doublesTier: "DUU",
 	},
 	staraptormega: {
-		tier: "OU",
+		tier: "UU",
 		doublesTier: "DOU",
 	},
 	bidoof: {
@@ -2300,7 +2300,7 @@ export const FormatsData: { [k: string]: SpeciesFormatsData; } = {
 		doublesTier: "DUU",
 	},
 	garchompmegaz: {
-		tier: "OU",
+		tier: "(OU)",
 		doublesTier: "DOU",
 	},
 	riolu: {
@@ -3218,7 +3218,7 @@ export const FormatsData: { [k: string]: SpeciesFormatsData; } = {
 		doublesTier: "DOU",
 	},
 	kyurem: {
-		tier: "OU",
+		tier: "UUBL",
 		doublesTier: "DUU",
 	},
 	kyuremblack: {
@@ -3475,7 +3475,7 @@ export const FormatsData: { [k: string]: SpeciesFormatsData; } = {
 		doublesTier: "DUU",
 	},
 	dragalgemega: {
-		tier: "RU",
+		tier: "OU",
 		doublesTier: "DUU",
 	},
 	clauncher: {
@@ -3971,7 +3971,7 @@ export const FormatsData: { [k: string]: SpeciesFormatsData; } = {
 		doublesTier: "DUU",
 	},
 	silvallypoison: {
-		tier: "OU",
+		tier: "UU",
 		doublesTier: "DUU",
 	},
 	silvallypsychic: {
@@ -5022,7 +5022,7 @@ export const FormatsData: { [k: string]: SpeciesFormatsData; } = {
 		doublesTier: "DOU",
 	},
 	ironjugulis: {
-		tier: "RU",
+		tier: "RUBL",
 		doublesTier: "DOU",
 	},
 	ironthorns: {

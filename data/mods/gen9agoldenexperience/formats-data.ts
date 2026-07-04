@@ -696,6 +696,7 @@ export const FormatsData: { [k: string]: SpeciesFormatsData; } = {
 	},
 	gengarmega: {
 		tier: "AG",
+		doublesTier: "DUber",
 		natDexDoublesOverride: "DUber",
 	},
 	gengargmax: {
@@ -1162,14 +1163,17 @@ export const FormatsData: { [k: string]: SpeciesFormatsData; } = {
 	},
 	mewtwo: {
 		tier: "Uber",
+		doublesTier: "DUber",
 		natDexDoublesOverride: "DUber",
 	},
 	mewtwomegax: {
 		tier: "Uber",
+		doublesTier: "DUber",
 		natDexDoublesOverride: "DUber",
 	},
 	mewtwomegay: {
 		tier: "Uber",
+		doublesTier: "DUber",
 		natDexDoublesOverride: "DUber",
 	},
 	mew: {
@@ -1617,10 +1621,12 @@ export const FormatsData: { [k: string]: SpeciesFormatsData; } = {
 	},
 	lugia: {
 		tier: "Uber",
+		doublesTier: "DUber",
 		natDexDoublesOverride: "DUber",
 	},
 	hooh: {
 		tier: "Uber",
+		doublesTier: "DUber",
 		natDexDoublesOverride: "DUber",
 	},
 	celebi: {
@@ -2319,6 +2325,7 @@ export const FormatsData: { [k: string]: SpeciesFormatsData; } = {
 	},
 	metagrossmega: {
 		tier: "Uber",
+		doublesTier: "DUber",
 		natDexDoublesOverride: "DUber",
 	},
 	regirock: {
@@ -2358,26 +2365,32 @@ export const FormatsData: { [k: string]: SpeciesFormatsData; } = {
 	},
 	kyogre: {
 		tier: "Uber",
+		doublesTier: "DUber",
 		natDexDoublesOverride: "DUber",
 	},
 	kyogreprimal: {
 		tier: "Uber",
+		doublesTier: "DUber",
 		natDexDoublesOverride: "DUber",
 	},
 	groudon: {
 		tier: "Uber",
+		doublesTier: "DUber",
 		natDexDoublesOverride: "DUber",
 	},
 	groudonprimal: {
 		tier: "Uber",
+		doublesTier: "DUber",
 		natDexDoublesOverride: "DUber",
 	},
 	rayquaza: {
 		tier: "Uber",
+		doublesTier: "DUber",
 		natDexDoublesOverride: "DUber",
 	},
 	rayquazamega: {
 		tier: "Uber",
+		doublesTier: "DUber",
 		natDexDoublesOverride: "DUber",
 	},
 	jirachi: {
@@ -2392,6 +2405,7 @@ export const FormatsData: { [k: string]: SpeciesFormatsData; } = {
 	},
 	deoxysattack: {
 		tier: "Uber",
+		doublesTier: "DUber",
 		natDexDoublesOverride: "DUber",
 	},
 	deoxysdefense: {
@@ -2760,18 +2774,22 @@ export const FormatsData: { [k: string]: SpeciesFormatsData; } = {
 	},
 	dialga: {
 		tier: "Uber",
+		doublesTier: "DUber",
 		natDexDoublesOverride: "DUber",
 	},
 	dialgaorigin: {
 		tier: "Uber",
+		doublesTier: "DUber",
 		natDexDoublesOverride: "DUber",
 	},
 	palkia: {
 		tier: "Uber",
+		doublesTier: "DUber",
 		natDexDoublesOverride: "DUber",
 	},
 	palkiaorigin: {
 		tier: "Uber",
+		doublesTier: "DUber",
 		natDexDoublesOverride: "DUber",
 	},
 	heatran: {
@@ -2791,10 +2809,12 @@ export const FormatsData: { [k: string]: SpeciesFormatsData; } = {
 	},
 	giratina: {
 		tier: "Uber",
+		doublesTier: "DUber",
 		natDexDoublesOverride: "DUber",
 	},
 	giratinaorigin: {
 		tier: "Uber",
+		doublesTier: "DUber",
 		natDexDoublesOverride: "DUber",
 	},
 	cresselia: {
@@ -2834,74 +2854,92 @@ export const FormatsData: { [k: string]: SpeciesFormatsData; } = {
 	},
 	arceus: {
 		tier: "Uber",
+		doublesTier: "DUber",
 		natDexDoublesOverride: "DUber",
 	},
 	arceusbug: {
 		tier: "Uber",
+		doublesTier: "DUber",
 		natDexDoublesOverride: "DUber",
 	},
 	arceusdark: {
 		tier: "Uber",
+		doublesTier: "DUber",
 		natDexDoublesOverride: "DUber",
 	},
 	arceusdragon: {
 		tier: "Uber",
+		doublesTier: "DUber",
 		natDexDoublesOverride: "DUber",
 	},
 	arceuselectric: {
 		tier: "Uber",
+		doublesTier: "DUber",
 		natDexDoublesOverride: "DUber",
 	},
 	arceusfairy: {
 		tier: "Uber",
+		doublesTier: "DUber",
 		natDexDoublesOverride: "DUber",
 	},
 	arceusfighting: {
 		tier: "Uber",
+		doublesTier: "DUber",
 		natDexDoublesOverride: "DUber",
 	},
 	arceusfire: {
 		tier: "Uber",
+		doublesTier: "DUber",
 		natDexDoublesOverride: "DUber",
 	},
 	arceusflying: {
 		tier: "Uber",
+		doublesTier: "DUber",
 		natDexDoublesOverride: "DUber",
 	},
 	arceusghost: {
 		tier: "Uber",
+		doublesTier: "DUber",
 		natDexDoublesOverride: "DUber",
 	},
 	arceusgrass: {
 		tier: "Uber",
+		doublesTier: "DUber",
 		natDexDoublesOverride: "DUber",
 	},
 	arceusground: {
 		tier: "Uber",
+		doublesTier: "DUber",
 		natDexDoublesOverride: "DUber",
 	},
 	arceusice: {
 		tier: "Uber",
+		doublesTier: "DUber",
 		natDexDoublesOverride: "DUber",
 	},
 	arceuspoison: {
 		tier: "Uber",
+		doublesTier: "DUber",
 		natDexDoublesOverride: "DUber",
 	},
 	arceuspsychic: {
 		tier: "Uber",
+		doublesTier: "DUber",
 		natDexDoublesOverride: "DUber",
 	},
 	arceusrock: {
 		tier: "Uber",
+		doublesTier: "DUber",
 		natDexDoublesOverride: "DUber",
 	},
 	arceussteel: {
 		tier: "Uber",
+		doublesTier: "DUber",
 		natDexDoublesOverride: "DUber",
 	},
 	arceuswater: {
 		tier: "Uber",
+		doublesTier: "DUber",
 		natDexDoublesOverride: "DUber",
 	},
 	victini: {
@@ -3676,10 +3714,12 @@ export const FormatsData: { [k: string]: SpeciesFormatsData; } = {
 	},
 	reshiram: {
 		tier: "Uber",
+		doublesTier: "DUber",
 		natDexDoublesOverride: "DUber",
 	},
 	zekrom: {
 		tier: "Uber",
+		doublesTier: "DUber",
 		natDexDoublesOverride: "DUber",
 	},
 	landorus: {
@@ -3704,6 +3744,7 @@ export const FormatsData: { [k: string]: SpeciesFormatsData; } = {
 	},
 	kyuremwhite: {
 		tier: "Uber",
+		doublesTier: "DUber",
 		natDexDoublesOverride: "DUber",
 	},
 	keldeo: {
@@ -3728,22 +3769,27 @@ export const FormatsData: { [k: string]: SpeciesFormatsData; } = {
 	},
 	genesect: {
 		tier: "Uber",
+		doublesTier: "DUber",
 		natDexDoublesOverride: "DUber",
 	},
 	genesectburn: {
 		tier: "Uber",
+		doublesTier: "DUber",
 		natDexDoublesOverride: "DUber",
 	},
 	genesectchill: {
 		tier: "Uber",
+		doublesTier: "DUber",
 		natDexDoublesOverride: "DUber",
 	},
 	genesectdouse: {
 		tier: "Uber",
+		doublesTier: "DUber",
 		natDexDoublesOverride: "DUber",
 	},
 	genesectshock: {
 		tier: "Uber",
+		doublesTier: "DUber",
 		natDexDoublesOverride: "DUber",
 	},
 	chespin: {
@@ -4152,6 +4198,7 @@ export const FormatsData: { [k: string]: SpeciesFormatsData; } = {
 	},
 	xerneas: {
 		tier: "Uber",
+		doublesTier: "DUber",
 		natDexDoublesOverride: "DUber",
 	},
 	xerneasneutral: {
@@ -4160,10 +4207,12 @@ export const FormatsData: { [k: string]: SpeciesFormatsData; } = {
 	},
 	yveltal: {
 		tier: "Uber",
+		doublesTier: "DUber",
 		natDexDoublesOverride: "DUber",
 	},
 	zygarde: {
 		tier: "Uber",
+		doublesTier: "DUber",
 		natDexDoublesOverride: "DUber",
 	},
 	zygarde10: {
@@ -4173,10 +4222,12 @@ export const FormatsData: { [k: string]: SpeciesFormatsData; } = {
 	},
 	zygardecomplete: {
 		tier: "Uber",
+		doublesTier: "DUber",
 		natDexDoublesOverride: "DUber",
 	},
 	zygardemega: {
 		tier: "Uber",
+		doublesTier: "DUber",
 		natDexDoublesOverride: "DUber",
 	},
 	diancie: {
@@ -4703,10 +4754,12 @@ export const FormatsData: { [k: string]: SpeciesFormatsData; } = {
 	},
 	solgaleo: {
 		tier: "Uber",
+		doublesTier: "DUber",
 		natDexDoublesOverride: "DUber",
 	},
 	lunala: {
 		tier: "Uber",
+		doublesTier: "DUber",
 		natDexDoublesOverride: "DUber",
 	},
 	nihilego: {
@@ -4751,30 +4804,37 @@ export const FormatsData: { [k: string]: SpeciesFormatsData; } = {
 	},
 	necrozmaduskmane: {
 		tier: "Uber",
+		doublesTier: "DUber",
 		natDexDoublesOverride: "DUber",
 	},
 	necrozmadawnwings: {
 		tier: "Uber",
+		doublesTier: "DUber",
 		natDexDoublesOverride: "DUber",
 	},
 	necrozmaultra: {
 		tier: "Uber",
+		doublesTier: "DUber",
 		natDexDoublesOverride: "DUber",
 	},
 	magearna: {
 		tier: "Uber",
+		doublesTier: "DUber",
 		natDexDoublesOverride: "DUber",
 	},
 	magearnaoriginal: {
 		tier: "Uber",
+		doublesTier: "DUber",
 		natDexDoublesOverride: "DUber",
 	},
 	magearnamega: {
 		tier: "Uber",
+		doublesTier: "DUber",
 		natDexDoublesOverride: "DUber",
 	},
 	magearnaoriginalmega: {
 		tier: "Uber",
+		doublesTier: "DUber",
 		natDexDoublesOverride: "DUber",
 	},
 	marshadow: {
@@ -5245,22 +5305,27 @@ export const FormatsData: { [k: string]: SpeciesFormatsData; } = {
 	},
 	zacian: {
 		tier: "Uber",
+		doublesTier: "DUber",
 		natDexDoublesOverride: "DUber",
 	},
 	zaciancrowned: {
 		tier: "Uber",
+		doublesTier: "DUber",
 		natDexDoublesOverride: "DUber",
 	},
 	zamazenta: {
 		tier: "OU",
+		doublesTier: "DUber",
 		natDexDoublesOverride: "DUber",
 	},
 	zamazentacrowned: {
 		tier: "Uber",
+		doublesTier: "DUber",
 		natDexDoublesOverride: "DUber",
 	},
 	eternatus: {
 		tier: "Uber",
+		doublesTier: "DUber",
 		natDexDoublesOverride: "DUber",
 	},
 	eternatuseternamax: {
@@ -5272,11 +5337,13 @@ export const FormatsData: { [k: string]: SpeciesFormatsData; } = {
 	},
 	urshifu: {
 		tier: "Uber",
-		natDexDoublesOverride: "DUber",
+		doublesTier: "DOU",
+		natDexDoublesOverride: "DOU",
 	},
 	urshifurapidstrike: {
 		tier: "OU",
-		natDexDoublesOverride: "DUber",
+		doublesTier: "DOU",
+		natDexDoublesOverride: "DOU",
 	},
 	urshifugmax: {
 		isNonstandard: "Past",
@@ -5323,10 +5390,12 @@ export const FormatsData: { [k: string]: SpeciesFormatsData; } = {
 	},
 	calyrexice: {
 		tier: "Uber",
+		doublesTier: "DUber",
 		natDexDoublesOverride: "DUber",
 	},
 	calyrexshadow: {
 		tier: "AG",
+		doublesTier: "DUber",
 		natDexDoublesOverride: "DUber",
 	},
 	wyrdeer: {
@@ -5476,6 +5545,7 @@ export const FormatsData: { [k: string]: SpeciesFormatsData; } = {
 	},
 	espathra: {
 		tier: "Uber",
+		doublesTier: "DUber",
 		natDexDoublesOverride: "DUber",
 	},
 	wiglett: {
@@ -5813,10 +5883,12 @@ export const FormatsData: { [k: string]: SpeciesFormatsData; } = {
 	},
 	koraidon: {
 		tier: "AG",
+		doublesTier: "DUber",
 		natDexDoublesOverride: "DUber",
 	},
 	miraidon: {
 		tier: "AG",
+		doublesTier: "DUber",
 		natDexDoublesOverride: "DUber",
 	},
 	tinkatink: {
@@ -5871,6 +5943,7 @@ export const FormatsData: { [k: string]: SpeciesFormatsData; } = {
 	},
 	annihilape: {
 		tier: "OU",
+		doublesTier: "DUber",
 		natDexDoublesOverride: "DUber",
 	},
 	walkingwake: {

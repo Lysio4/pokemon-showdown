@@ -1790,7 +1790,7 @@ export class TeamValidator {
 		// const doublesTier = tierSpecies.doublesTier === '(DUU)' ? 'DNU' : tierSpecies.doublesTier;
 		let doublesTier;
 		if (this.format.mod === 'gen9agoldenexperience' && tierSpecies.natDexDoublesOverride) doublesTier = tierSpecies.natDexDoublesOverride;
-		else ndTier	= tierSpecies.doublesTier === '(DUU)' ? 'DNU' : tierSpecies.doublesTier;
+		else doublesTier	= tierSpecies.doublesTier === '(DUU)' ? 'DNU' : tierSpecies.doublesTier;
 		const doublesTierTag = 'tag:' + toID(doublesTier);
 		setHas[doublesTierTag] = true;
 

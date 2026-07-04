@@ -1793,7 +1793,7 @@ export class TeamValidator {
 
 		// const ndTier = tierSpecies.natDexTier;
 		let ndTier;
-		if (this.format.gameType === 'doubles' && tierSpecies.natDexDoublesOverride && this.format.gameType.includes('agoldenexperience')) ndTier = tierSpecies.natDexDoublesOverride;
+		if (this.format.gameType === 'doubles' && tierSpecies.natDexDoublesOverride) ndTier = tierSpecies.natDexDoublesOverride;
 		else ndTier	= tierSpecies.natDexTier;
 		ndTier = ndTier === '(PU)' ? 'ZU' :	ndTier === '(NU)' ? 'PU' : ndTier;
 		const ndTierTag = 'tag:nd' + toID(ndTier);

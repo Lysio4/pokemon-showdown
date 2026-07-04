@@ -38,6 +38,8 @@ export interface SpeciesFormatsData {
 	isNonstandard?: Nonstandard | null;
 	natDexTier?: TierTypes.Singles | TierTypes.Other;
 	tier?: TierTypes.Singles | TierTypes.Other;
+
+	natDexDoublesOverride?: TierTypes.Singles | TierTypes.Other;
 }
 
 export type ModdedSpeciesFormatsData = SpeciesFormatsData & { inherit?: true };
@@ -281,6 +283,12 @@ export class Species extends BasicEffect implements Readonly<BasicEffect & Speci
 	 */
 	readonly natDexTier: TierTypes.Singles | TierTypes.Other;
 
+	/**
+	 * Override tier for national dex doubles, as that's currently not supported.
+	 * Because it's an optional override for singles tiering for use in a doubles format, it uses singles tiering.
+	 */
+	readonly natDexDoublesOverride: TierTypes.Singles | TierTypes.Other;
+
 	constructor(data: AnyObject) {
 		super(data);
 
@@ -301,6 +309,7 @@ export class Species extends BasicEffect implements Readonly<BasicEffect & Speci
 		this.tier = data.tier || '';
 		this.doublesTier = data.doublesTier || '';
 		this.natDexTier = data.natDexTier || '';
+		this.natDexDoublesOverride = data.natDexDoublesOverride || null;
 		this.evos = data.evos || [];
 		this.evoType = data.evoType || undefined;
 		this.evoMove = data.evoMove || undefined;

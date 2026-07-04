@@ -1783,22 +1783,18 @@ export class TeamValidator {
 			setHas['pokemon:rockruffdusk'] = true;
 		}
 
-		const tier = tierSpecies.tier;
+		// const tier = tierSpecies.tier;
+		let tier;
+		if (this.format.mod === 'gen9agoldenexperience' && this.format.gameType === 'doubles' && tierSpecies.natDexDoublesOverride) doublesTier = tierSpecies.natDexDoublesOverride;
+		else tier = tierSpecies.tier
 		const tierTag = 'tag:' + toID(tier);
 		setHas[tierTag] = true;
 
-		// const doublesTier = tierSpecies.doublesTier === '(DUU)' ? 'DNU' : tierSpecies.doublesTier;
-		let doublesTier;
-		if (this.format.mod === 'gen9agoldenexperience' && tierSpecies.natDexDoublesOverride) doublesTier = tierSpecies.natDexDoublesOverride;
-		else doublesTier	= tierSpecies.doublesTier === '(DUU)' ? 'DNU' : tierSpecies.doublesTier;
+		const doublesTier = tierSpecies.doublesTier === '(DUU)' ? 'DNU' : tierSpecies.doublesTier;
 		const doublesTierTag = 'tag:' + toID(doublesTier);
 		setHas[doublesTierTag] = true;
 
 		const ndTier = tierSpecies.natDexTier;
-		/*let ndTier;
-		if (this.format.gameType === 'doubles' && tierSpecies.natDexDoublesOverride) ndTier = tierSpecies.natDexDoublesOverride;
-		else ndTier	= tierSpecies.natDexTier;
-		ndTier = ndTier === '(PU)' ? 'ZU' :	ndTier === '(NU)' ? 'PU' : ndTier;*/
 		const ndTierTag = 'tag:nd' + toID(ndTier);
 		setHas[ndTierTag] = true;
 

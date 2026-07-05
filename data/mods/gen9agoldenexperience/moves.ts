@@ -69,10 +69,6 @@ export const Moves: { [k: string]: ModdedMoveData; } = {
 		inherit: true,
 		isNonstandard: null,
 	},
-	underdog: {
-		inherit: true,
-		isNonstandard: null,
-	},
 	flamingsphere: {
 		inherit: true,
 		isNonstandard: null,

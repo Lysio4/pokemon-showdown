@@ -3099,6 +3099,11 @@ export const FormatsData: { [k: string]: SpeciesFormatsData; } = {
 		doublesTier: "DUU",
 		natDexDoublesOverride: "DUU",
 	},
+	gigalithmega: {
+		tier: "RU",
+		doublesTier: "DOU",
+		natDexDoublesOverride: "DUU",
+	},
 	woobat: {
 		tier: "LC",
 	},

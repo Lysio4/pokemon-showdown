@@ -127,6 +127,10 @@ export const Items: {[itemid: string]: ModdedItemData} = {
 		inherit: true,
 		isNonstandard: null,
 	},
+	gigalite: {
+		inherit: true,
+		isNonstandard: null,
+	},
 	krookodite: {
 		inherit: true,
 		isNonstandard: null,

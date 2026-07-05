@@ -515,7 +515,7 @@ export const Pokedex: {[k: string]: ModdedSpeciesData;} = {
 	},
 	raikou: {
 		inherit: true,
-		abilities: { 0: "Pressure", 1: "Inner Focus", H: "Berserk" },
+		abilities: { 0: "Pressure", 1: "Inner Focus", H: "Dodge" },
 	},
 	entei: {
 		inherit: true,
@@ -523,7 +523,7 @@ export const Pokedex: {[k: string]: ModdedSpeciesData;} = {
 	},
 	suicune: {
 		inherit: true,
-		abilities: { 0: "Pressure", 1: "Inner Focus", H: "Mental Fortitude" },
+		abilities: { 0: "Pressure", 1: "Inner Focus", H: "Misty Surge" },
 	},
 	celebi: {
 		inherit: true,
@@ -1173,25 +1173,25 @@ export const Pokedex: {[k: string]: ModdedSpeciesData;} = {
 	},
 	watchog: {
 		inherit: true,
-		baseStats: {hp: 60, atk: 85, def: 69, spa: 60, spd: 69, spe: 97},
-		abilities: {0: "Illuminate", 1: "Tinted Lens", H: "Light Power"},
+		baseStats: { hp: 60, atk: 85, def: 69, spa: 60, spd: 69, spe: 97 },
+		abilities: { 0: "Illuminate", 1: "Tinted Lens", H: "Light Power" },
 	},
 	herdier: {
 		inherit: true,
-		abilities: {0: "Intimidate", 1: "Slush Rush", H: "Scrappy"},
+		abilities: { 0: "Intimidate", 1: "Slush Rush", H: "Scrappy" },
 	},
 	stoutland: {
 		inherit: true,
-		abilities: {0: "Fur Coat", 1: "Slush Rush", H: "Scrappy"},
+		abilities: { 0: "Intimidate", 1: "Slush Rush", H: "Scrappy" },
 	},
 	purrloin: {
 		inherit: true,
-		abilities: {0: "Racketeering", 1: "Unburden", H: "Prankster"},
+		abilities: { 0: "Racketeering", 1: "Unburden", H: "Prankster" },
 	},
 	liepard: {
 		inherit: true,
-		baseStats: {hp: 74, atk: 108, def: 60, spa: 58, spd: 60, spe: 120},
-		abilities: {0: "Racketeering", 1: "Unburden", H: "Prankster"},
+		baseStats: { hp: 74, atk: 108, def: 60, spa: 58, spd: 60, spe: 120 },
+		abilities: { 0: "Racketeering", 1: "Unburden", H: "Prankster" },
 	},
 	pansage: {
 		inherit: true,
@@ -1257,20 +1257,10 @@ export const Pokedex: {[k: string]: ModdedSpeciesData;} = {
 		baseStats: {hp: 75, atk: 110, def: 60, spa: 70, spd: 60, spe: 122},
 		abilities: {0: "Tempestuous", 1: "Motor Drive", H: "Sap Sipper"},
 	},
-	roggenrola: {
-		inherit: true,
-		baseStats: {hp: 55, atk: 25, def: 85, spa: 75, spd: 25, spe: 15},
-		abilities: {0: "Sturdy", 1: "Weak Armor", H: "Solar Power"},
-	},
-	boldore: {
-		inherit: true,
-		baseStats: {hp: 70, atk: 50, def: 105, spa: 105, spd: 40, spe: 20},
-		abilities: {0: "Sturdy", 1: "Weak Armor", H: "Solar Power"},
-	},
 	gigalith: {
 		inherit: true,
-		baseStats: {hp: 85, atk: 60, def: 130, spa: 135, spd: 80, spe: 25},
-		abilities: {0: "Sturdy", 1: "Sand Stream", H: "Solar Power"},
+		otherFormes: ["Gigalith-Mega"],
+		formeOrder: ["Gigalith", "Gigalith-Mega"],
 	},
 	swoobat: {
 		inherit: true,

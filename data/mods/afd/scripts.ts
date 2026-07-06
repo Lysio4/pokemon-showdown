@@ -11,7 +11,7 @@ export const Scripts: ModdedBattleScriptsData = {
 				if (this.data.Learnsets[id]?.learnset) this.modData('Learnsets', id).learnset.solarflare = ['9L1'];
 			}
 			const abilities = this.modData('Pokedex', id, true).abilities;
-			if (species.baseStats['atk'] >= 130) {
+			if (species.baseStats.atk >= 130) {
 				const hasHP = Object.values(abilities).includes('Huge Power') ||
 					Object.values(abilities).includes('Pure Power');
 				if (!hasHP) {

@@ -14,7 +14,6 @@ export const FormatsData: import('../sim/dex-species').SpeciesFormatsDataTable =
 		isNonstandard: "Past",
 		tier: "Illegal",
 		natDexTier: "UU",
-		natDexDoublesOverride: "UU",
 	},
 	venusaurgmax: {
 		isNonstandard: "Past",
@@ -35,13 +34,11 @@ export const FormatsData: import('../sim/dex-species').SpeciesFormatsDataTable =
 		isNonstandard: "Past",
 		tier: "Illegal",
 		natDexTier: "UUBL",
-		natDexDoublesOverride: "UU",
 	},
 	charizardmegay: {
 		isNonstandard: "Past",
 		tier: "Illegal",
 		natDexTier: "OU",
-		natDexDoublesOverride: "OU",
 	},
 	charizardgmax: {
 		isNonstandard: "Past",
@@ -62,7 +59,6 @@ export const FormatsData: import('../sim/dex-species').SpeciesFormatsDataTable =
 		isNonstandard: "Past",
 		tier: "Illegal",
 		natDexTier: "Uber",
-		natDexDoublesOverride: "UU",
 	},
 	blastoisegmax: {
 		isNonstandard: "Past",
@@ -516,13 +512,11 @@ export const FormatsData: import('../sim/dex-species').SpeciesFormatsDataTable =
 		isNonstandard: "Past",
 		tier: "Illegal",
 		natDexTier: "RUBL",
-		natDexDoublesOverride: "UU",
 	},
 	alakazammega: {
 		isNonstandard: "Past",
 		tier: "Illegal",
 		natDexTier: "Uber",
-		natDexDoublesOverride: "UU",
 	},
 	machop: {
 		isNonstandard: "Past",
@@ -618,13 +612,11 @@ export const FormatsData: import('../sim/dex-species').SpeciesFormatsDataTable =
 		tier: "RU",
 		doublesTier: "(DUU)",
 		natDexTier: "UU",
-		natDexDoublesOverride: "UU",
 	},
 	slowbromega: {
 		isNonstandard: "Past",
 		tier: "Illegal",
 		natDexTier: "RUBL",
-		natDexDoublesOverride: "UU",
 	},
 	slowbrogalar: {
 		tier: "PU",
@@ -635,13 +627,11 @@ export const FormatsData: import('../sim/dex-species').SpeciesFormatsDataTable =
 		tier: "UU",
 		doublesTier: "(DUU)",
 		natDexTier: "UU",
-		natDexDoublesOverride: "UU",
 	},
 	slowkinggalar: {
 		tier: "OU",
 		doublesTier: "(DUU)",
 		natDexTier: "OU",
-		natDexDoublesOverride: "UU",
 	},
 	magnemite: {
 		tier: "LC",
@@ -721,13 +711,11 @@ export const FormatsData: import('../sim/dex-species').SpeciesFormatsDataTable =
 		tier: "RU",
 		doublesTier: "(DUU)",
 		natDexTier: "RUBL",
-		natDexDoublesOverride: "UU",
 	},
 	gengarmega: {
 		isNonstandard: "Past",
 		tier: "Illegal",
 		natDexTier: "AG",
-		natDexDoublesOverride: "UU",
 	},
 	gengargmax: {
 		isNonstandard: "Past",
@@ -881,13 +869,11 @@ export const FormatsData: import('../sim/dex-species').SpeciesFormatsDataTable =
 		tier: "PU",
 		doublesTier: "NFE",
 		natDexTier: "UU",
-		natDexDoublesOverride: "UU",
 	},
 	blissey: {
 		tier: "RU",
 		doublesTier: "(DUU)",
 		natDexTier: "UU",
-		natDexDoublesOverride: "UU",
 	},
 	tangela: {
 		isNonstandard: "Past",
@@ -908,7 +894,6 @@ export const FormatsData: import('../sim/dex-species').SpeciesFormatsDataTable =
 		isNonstandard: "Past",
 		tier: "Illegal",
 		natDexTier: "Uber",
-		natDexDoublesOverride: "UU",
 	},
 	horsea: {
 		tier: "LC",
@@ -974,13 +959,11 @@ export const FormatsData: import('../sim/dex-species').SpeciesFormatsDataTable =
 		tier: "UU",
 		doublesTier: "(DUU)",
 		natDexTier: "UU",
-		natDexDoublesOverride: "UU",
 	},
 	scizormega: {
 		isNonstandard: "Past",
 		tier: "Illegal",
 		natDexTier: "OU",
-		natDexDoublesOverride: "UU",
 	},
 	kleavor: {
 		tier: "RU",
@@ -1028,7 +1011,6 @@ export const FormatsData: import('../sim/dex-species').SpeciesFormatsDataTable =
 		isNonstandard: "Past",
 		tier: "Illegal",
 		natDexTier: "UUBL",
-		natDexDoublesOverride: "UU",
 	},
 	tauros: {
 		tier: "ZU",
@@ -1057,13 +1039,11 @@ export const FormatsData: import('../sim/dex-species').SpeciesFormatsDataTable =
 		tier: "RUBL",
 		doublesTier: "(DUU)",
 		natDexTier: "UUBL",
-		natDexDoublesOverride: "UU",
 	},
 	gyaradosmega: {
 		isNonstandard: "Past",
 		tier: "Illegal",
 		natDexTier: "UUBL",
-		natDexDoublesOverride: "UU",
 	},
 	lapras: {
 		tier: "ZU",
@@ -1142,7 +1122,6 @@ export const FormatsData: import('../sim/dex-species').SpeciesFormatsDataTable =
 		tier: "RU",
 		doublesTier: "(DUU)",
 		natDexTier: "RUBL",
-		natDexDoublesOverride: "UU",
 	},
 	omanyte: {
 		isNonstandard: "Past",
@@ -1173,7 +1152,6 @@ export const FormatsData: import('../sim/dex-species').SpeciesFormatsDataTable =
 		isNonstandard: "Past",
 		tier: "Illegal",
 		natDexTier: "UU",
-		natDexDoublesOverride: "UU",
 	},
 	munchlax: {
 		tier: "LC",
@@ -1201,25 +1179,21 @@ export const FormatsData: import('../sim/dex-species').SpeciesFormatsDataTable =
 		tier: "OU",
 		doublesTier: "(DUU)",
 		natDexTier: "OU",
-		natDexDoublesOverride: "UU",
 	},
 	zapdosgalar: {
 		tier: "UU",
 		doublesTier: "(DUU)",
 		natDexTier: "UUBL",
-		natDexDoublesOverride: "UU",
 	},
 	moltres: {
 		tier: "OU",
 		doublesTier: "(DUU)",
 		natDexTier: "OU",
-		natDexDoublesOverride: "UU",
 	},
 	moltresgalar: {
 		tier: "UUBL",
 		doublesTier: "DOU",
 		natDexTier: "RUBL",
-		natDexDoublesOverride: "UU",
 	},
 	dratini: {
 		tier: "LC",
@@ -1231,7 +1205,6 @@ export const FormatsData: import('../sim/dex-species').SpeciesFormatsDataTable =
 		tier: "OU",
 		doublesTier: "DOU",
 		natDexTier: "OU",
-		natDexDoublesOverride: "UU",
 	},
 	dragonitemega: {
 		isNonstandard: "Future",
@@ -1241,25 +1214,21 @@ export const FormatsData: import('../sim/dex-species').SpeciesFormatsDataTable =
 		tier: "Uber",
 		doublesTier: "DUber",
 		natDexTier: "Uber",
-		natDexDoublesOverride: "UU",
 	},
 	mewtwomegax: {
 		isNonstandard: "Past",
 		tier: "Illegal",
 		natDexTier: "Uber",
-		natDexDoublesOverride: "UU",
 	},
 	mewtwomegay: {
 		isNonstandard: "Past",
 		tier: "Illegal",
 		natDexTier: "Uber",
-		natDexDoublesOverride: "UU",
 	},
 	mew: {
 		tier: "RU",
 		doublesTier: "DUU",
 		natDexTier: "UU",
-		natDexDoublesOverride: "UU",
 	},
 	chikorita: {
 		tier: "LC",
@@ -1400,7 +1369,6 @@ export const FormatsData: import('../sim/dex-species').SpeciesFormatsDataTable =
 		tier: "UU",
 		doublesTier: "(DUU)",
 		natDexTier: "RUBL",
-		natDexDoublesOverride: "UU",
 	},
 	bonsly: {
 		tier: "LC",
@@ -1459,7 +1427,6 @@ export const FormatsData: import('../sim/dex-species').SpeciesFormatsDataTable =
 	murkrow: {
 		tier: "NFE",
 		doublesTier: "DUU",
-		natDexDoublesOverride: "UU",
 	},
 	honchkrow: {
 		tier: "ZU",
@@ -1522,7 +1489,6 @@ export const FormatsData: import('../sim/dex-species').SpeciesFormatsDataTable =
 		tier: "OU",
 		doublesTier: "(DUU)",
 		natDexTier: "OU",
-		natDexDoublesOverride: "UU",
 	},
 	snubbull: {
 		tier: "LC",
@@ -1561,7 +1527,6 @@ export const FormatsData: import('../sim/dex-species').SpeciesFormatsDataTable =
 		isNonstandard: "Past",
 		tier: "Illegal",
 		natDexTier: "RUBL",
-		natDexDoublesOverride: "UU",
 	},
 	sneasel: {
 		tier: "ZU",
@@ -1577,13 +1542,11 @@ export const FormatsData: import('../sim/dex-species').SpeciesFormatsDataTable =
 		tier: "UU",
 		doublesTier: "(DUU)",
 		natDexTier: "UUBL",
-		natDexDoublesOverride: "UU",
 	},
 	sneasler: {
 		tier: "Uber",
 		doublesTier: "DOU",
 		natDexTier: "Uber",
-		natDexDoublesOverride: "UU",
 	},
 	teddiursa: {
 		tier: "LC",
@@ -1595,13 +1558,11 @@ export const FormatsData: import('../sim/dex-species').SpeciesFormatsDataTable =
 		tier: "UUBL",
 		doublesTier: "DOU",
 		natDexTier: "RUBL",
-		natDexDoublesOverride: "UU",
 	},
 	ursalunabloodmoon: {
 		tier: "Uber",
 		doublesTier: "DOU",
 		natDexTier: "Uber",
-		natDexDoublesOverride: "UU",
 	},
 	slugma: {
 		tier: "LC",
@@ -1621,7 +1582,6 @@ export const FormatsData: import('../sim/dex-species').SpeciesFormatsDataTable =
 		tier: "UU",
 		doublesTier: "(DUU)",
 		natDexTier: "RUBL",
-		natDexDoublesOverride: "UU",
 	},
 	corsola: {
 		isNonstandard: "Past",
@@ -1667,7 +1627,6 @@ export const FormatsData: import('../sim/dex-species').SpeciesFormatsDataTable =
 		tier: "UU",
 		doublesTier: "(DUU)",
 		natDexTier: "UU",
-		natDexDoublesOverride: "UU",
 	},
 	skarmorymega: {
 		isNonstandard: "Future",
@@ -1737,25 +1696,21 @@ export const FormatsData: import('../sim/dex-species').SpeciesFormatsDataTable =
 		tier: "UU",
 		doublesTier: "DOU",
 		natDexTier: "UU",
-		natDexDoublesOverride: "UU",
 	},
 	tyranitarmega: {
 		isNonstandard: "Past",
 		tier: "Illegal",
 		natDexTier: "OU",
-		natDexDoublesOverride: "UU",
 	},
 	lugia: {
 		tier: "Uber",
 		doublesTier: "DUber",
 		natDexTier: "Uber",
-		natDexDoublesOverride: "UU",
 	},
 	hooh: {
 		tier: "Uber",
 		doublesTier: "DUber",
 		natDexTier: "Uber",
-		natDexDoublesOverride: "UU",
 	},
 	celebi: {
 		isNonstandard: "Past",
@@ -1788,13 +1743,11 @@ export const FormatsData: import('../sim/dex-species').SpeciesFormatsDataTable =
 		tier: "UUBL",
 		doublesTier: "(DUU)",
 		natDexTier: "UUBL",
-		natDexDoublesOverride: "UU",
 	},
 	blazikenmega: {
 		isNonstandard: "Past",
 		tier: "Illegal",
 		natDexTier: "Uber",
-		natDexDoublesOverride: "UU",
 	},
 	mudkip: {
 		tier: "LC",
@@ -1806,13 +1759,11 @@ export const FormatsData: import('../sim/dex-species').SpeciesFormatsDataTable =
 		tier: "NU",
 		doublesTier: "(DUU)",
 		natDexTier: "UU",
-		natDexDoublesOverride: "UU",
 	},
 	swampertmega: {
 		isNonstandard: "Past",
 		tier: "Illegal",
 		natDexTier: "UU",
-		natDexDoublesOverride: "UU",
 	},
 	poochyena: {
 		tier: "LC",
@@ -1927,7 +1878,6 @@ export const FormatsData: import('../sim/dex-species').SpeciesFormatsDataTable =
 		isNonstandard: "Past",
 		tier: "Illegal",
 		natDexTier: "UU",
-		natDexDoublesOverride: "UU",
 	},
 	gallade: {
 		tier: "RU",
@@ -1938,7 +1888,6 @@ export const FormatsData: import('../sim/dex-species').SpeciesFormatsDataTable =
 		isNonstandard: "Past",
 		tier: "Illegal",
 		natDexTier: "UUBL",
-		natDexDoublesOverride: "UU",
 	},
 	surskit: {
 		tier: "LC",
@@ -2032,7 +1981,6 @@ export const FormatsData: import('../sim/dex-species').SpeciesFormatsDataTable =
 		isNonstandard: "Past",
 		tier: "Illegal",
 		natDexTier: "UU",
-		natDexDoublesOverride: "UU",
 	},
 	mawile: {
 		isNonstandard: "Past",
@@ -2043,7 +1991,6 @@ export const FormatsData: import('../sim/dex-species').SpeciesFormatsDataTable =
 		isNonstandard: "Past",
 		tier: "Illegal",
 		natDexTier: "UUBL",
-		natDexDoublesOverride: "UU",
 	},
 	aron: {
 		isNonstandard: "Past",
@@ -2077,7 +2024,6 @@ export const FormatsData: import('../sim/dex-species').SpeciesFormatsDataTable =
 		isNonstandard: "Past",
 		tier: "Illegal",
 		natDexTier: "UUBL",
-		natDexDoublesOverride: "UU",
 	},
 	electrike: {
 		isNonstandard: "Past",
@@ -2151,7 +2097,6 @@ export const FormatsData: import('../sim/dex-species').SpeciesFormatsDataTable =
 		isNonstandard: "Past",
 		tier: "Illegal",
 		natDexTier: "RUBL",
-		natDexDoublesOverride: "UU",
 	},
 	wailmer: {
 		isNonstandard: "Past",
@@ -2225,7 +2170,6 @@ export const FormatsData: import('../sim/dex-species').SpeciesFormatsDataTable =
 		isNonstandard: "Past",
 		tier: "Illegal",
 		natDexTier: "RUBL",
-		natDexDoublesOverride: "UU",
 	},
 	zangoose: {
 		tier: "ZU",
@@ -2308,15 +2252,12 @@ export const FormatsData: import('../sim/dex-species').SpeciesFormatsDataTable =
 	},
 	castformsunny: {
 		isNonstandard: "Past",
-		natDexDoublesOverride: "UU",
 	},
 	castformrainy: {
 		isNonstandard: "Past",
-		natDexDoublesOverride: "UU",
 	},
 	castformsnowy: {
 		isNonstandard: "Past",
-		natDexDoublesOverride: "UU",
 	},
 	kecleon: {
 		isNonstandard: "Past",
@@ -2450,13 +2391,11 @@ export const FormatsData: import('../sim/dex-species').SpeciesFormatsDataTable =
 		tier: "RUBL",
 		doublesTier: "(DUU)",
 		natDexTier: "RUBL",
-		natDexDoublesOverride: "UU",
 	},
 	salamencemega: {
 		isNonstandard: "Past",
 		tier: "Illegal",
 		natDexTier: "Uber",
-		natDexDoublesOverride: "UU",
 	},
 	beldum: {
 		tier: "LC",
@@ -2473,7 +2412,6 @@ export const FormatsData: import('../sim/dex-species').SpeciesFormatsDataTable =
 		isNonstandard: "Past",
 		tier: "Illegal",
 		natDexTier: "Uber",
-		natDexDoublesOverride: "UU",
 	},
 	regirock: {
 		tier: "ZU",
@@ -2499,73 +2437,61 @@ export const FormatsData: import('../sim/dex-species').SpeciesFormatsDataTable =
 		isNonstandard: "Past",
 		tier: "Illegal",
 		natDexTier: "RUBL",
-		natDexDoublesOverride: "UU",
 	},
 	latios: {
 		tier: "UU",
 		doublesTier: "(DUU)",
 		natDexTier: "UUBL",
-		natDexDoublesOverride: "UU",
 	},
 	latiosmega: {
 		isNonstandard: "Past",
 		tier: "Illegal",
 		natDexTier: "UUBL",
-		natDexDoublesOverride: "UU",
 	},
 	kyogre: {
 		tier: "Uber",
 		doublesTier: "DUber",
 		natDexTier: "Uber",
-		natDexDoublesOverride: "Uber",
 	},
 	kyogreprimal: {
 		isNonstandard: "Past",
 		tier: "Illegal",
 		natDexTier: "Uber",
-		natDexDoublesOverride: "Uber",
 	},
 	groudon: {
 		tier: "Uber",
 		doublesTier: "DUber",
 		natDexTier: "Uber",
-		natDexDoublesOverride: "Uber",
 	},
 	groudonprimal: {
 		isNonstandard: "Past",
 		tier: "Illegal",
 		natDexTier: "Uber",
-		natDexDoublesOverride: "Uber",
 	},
 	rayquaza: {
 		tier: "Uber",
 		doublesTier: "DUber",
 		natDexTier: "Uber",
-		natDexDoublesOverride: "Uber",
 	},
 	rayquazamega: {
 		isNonstandard: "Past",
 		tier: "Illegal",
 		natDexTier: "AG",
-		natDexDoublesOverride: "Uber",
 	},
 	jirachi: {
 		tier: "RU",
 		doublesTier: "(DUU)",
 		natDexTier: "RUBL",
-		natDexDoublesOverride: "UU",
 	},
 	deoxys: {
 		tier: "Uber",
 		doublesTier: "(DUU)",
 		natDexTier: "Uber",
-		natDexDoublesOverride: "UU",
 	},
 	deoxysattack: {
 		tier: "Uber",
 		doublesTier: "DUber",
 		natDexTier: "Uber",
-		natDexDoublesOverride: "UU",
 	},
 	deoxysdefense: {
 		tier: "NUBL",
@@ -2576,7 +2502,6 @@ export const FormatsData: import('../sim/dex-species').SpeciesFormatsDataTable =
 		tier: "OU",
 		doublesTier: "(DUU)",
 		natDexTier: "Uber",
-		natDexDoublesOverride: "UU",
 	},
 	turtwig: {
 		tier: "LC",
@@ -2729,7 +2654,6 @@ export const FormatsData: import('../sim/dex-species').SpeciesFormatsDataTable =
 	},
 	cherrimsunshine: {
 		isNonstandard: "Past",
-		natDexDoublesOverride: "UU",
 	},
 	shellos: {
 		tier: "LC",
@@ -2762,7 +2686,6 @@ export const FormatsData: import('../sim/dex-species').SpeciesFormatsDataTable =
 		isNonstandard: "Past",
 		tier: "Illegal",
 		natDexTier: "OU",
-		natDexDoublesOverride: "UU",
 	},
 	glameow: {
 		isNonstandard: "Past",
@@ -2810,13 +2733,11 @@ export const FormatsData: import('../sim/dex-species').SpeciesFormatsDataTable =
 		tier: "UUBL",
 		doublesTier: "DUU",
 		natDexTier: "OU",
-		natDexDoublesOverride: "UU",
 	},
 	garchompmega: {
 		isNonstandard: "Past",
 		tier: "Illegal",
 		natDexTier: "(OU)",
-		natDexDoublesOverride: "UU",
 	},
 	garchompmegaz: {
 		isNonstandard: "Future",
@@ -2834,7 +2755,6 @@ export const FormatsData: import('../sim/dex-species').SpeciesFormatsDataTable =
 		isNonstandard: "Past",
 		tier: "Illegal",
 		natDexTier: "Uber",
-		natDexDoublesOverride: "UU",
 	},
 	lucariomegaz: {
 		isNonstandard: "Future",
@@ -2847,7 +2767,6 @@ export const FormatsData: import('../sim/dex-species').SpeciesFormatsDataTable =
 		tier: "UU",
 		doublesTier: "DUU",
 		natDexTier: "UU",
-		natDexDoublesOverride: "UU",
 	},
 	skorupi: {
 		isNonstandard: "Past",
@@ -2907,7 +2826,6 @@ export const FormatsData: import('../sim/dex-species').SpeciesFormatsDataTable =
 		tier: "UU",
 		doublesTier: "(DUU)",
 		natDexTier: "UU",
-		natDexDoublesOverride: "UU",
 	},
 	rotomfrost: {
 		tier: "ZU",
@@ -2943,31 +2861,26 @@ export const FormatsData: import('../sim/dex-species').SpeciesFormatsDataTable =
 		tier: "Uber",
 		doublesTier: "DUber",
 		natDexTier: "Uber",
-		natDexDoublesOverride: "UU",
 	},
 	dialgaorigin: {
 		tier: "Uber",
 		doublesTier: "DUber",
 		natDexTier: "Uber",
-		natDexDoublesOverride: "UU",
 	},
 	palkia: {
 		tier: "Uber",
 		doublesTier: "DUber",
 		natDexTier: "Uber",
-		natDexDoublesOverride: "UU",
 	},
 	palkiaorigin: {
 		tier: "Uber",
 		doublesTier: "DUber",
 		natDexTier: "Uber",
-		natDexDoublesOverride: "UU",
 	},
 	heatran: {
 		tier: "UU",
 		doublesTier: "DUU",
 		natDexTier: "OU",
-		natDexDoublesOverride: "UU",
 	},
 	heatranmega: {
 		isNonstandard: "Future",
@@ -2982,13 +2895,11 @@ export const FormatsData: import('../sim/dex-species').SpeciesFormatsDataTable =
 		tier: "Uber",
 		doublesTier: "DUber",
 		natDexTier: "Uber",
-		natDexDoublesOverride: "UU",
 	},
 	giratinaorigin: {
 		tier: "Uber",
 		doublesTier: "DUber",
 		natDexTier: "Uber",
-		natDexDoublesOverride: "UU",
 	},
 	cresselia: {
 		tier: "NUBL",
@@ -3004,13 +2915,11 @@ export const FormatsData: import('../sim/dex-species').SpeciesFormatsDataTable =
 		tier: "UU",
 		doublesTier: "(DUU)",
 		natDexTier: "UUBL",
-		natDexDoublesOverride: "UU",
 	},
 	darkrai: {
 		tier: "OU",
 		doublesTier: "DUber",
 		natDexTier: "Uber",
-		natDexDoublesOverride: "UU",
 	},
 	darkraimega: {
 		isNonstandard: "Future",
@@ -3025,19 +2934,16 @@ export const FormatsData: import('../sim/dex-species').SpeciesFormatsDataTable =
 		tier: "Uber",
 		doublesTier: "(DUU)",
 		natDexTier: "Uber",
-		natDexDoublesOverride: "UU",
 	},
 	arceus: {
 		tier: "Uber",
 		doublesTier: "DUber",
 		natDexTier: "Uber",
-		natDexDoublesOverride: "UU",
 	},
 	victini: {
 		isNonstandard: "Past",
 		tier: "Illegal",
 		natDexTier: "UU",
-		natDexDoublesOverride: "UU",
 	},
 	snivy: {
 		tier: "NFE",
@@ -3049,7 +2955,6 @@ export const FormatsData: import('../sim/dex-species').SpeciesFormatsDataTable =
 		tier: "RUBL",
 		doublesTier: "(DUU)",
 		natDexTier: "UU",
-		natDexDoublesOverride: "UU",
 	},
 	tepig: {
 		tier: "LC",
@@ -3081,7 +2986,6 @@ export const FormatsData: import('../sim/dex-species').SpeciesFormatsDataTable =
 		tier: "OU",
 		doublesTier: "(DUU)",
 		natDexTier: "OU",
-		natDexDoublesOverride: "UU",
 	},
 	patrat: {
 		isNonstandard: "Past",
@@ -3213,7 +3117,6 @@ export const FormatsData: import('../sim/dex-species').SpeciesFormatsDataTable =
 		tier: "UU",
 		doublesTier: "(DUU)",
 		natDexTier: "UU",
-		natDexDoublesOverride: "UU",
 	},
 	excadrillmega: {
 		isNonstandard: "Future",
@@ -3241,7 +3144,6 @@ export const FormatsData: import('../sim/dex-species').SpeciesFormatsDataTable =
 		tier: "UU",
 		doublesTier: "(DUU)",
 		natDexTier: "RUBL",
-		natDexDoublesOverride: "UU",
 	},
 	tympole: {
 		isNonstandard: "Past",
@@ -3293,7 +3195,6 @@ export const FormatsData: import('../sim/dex-species').SpeciesFormatsDataTable =
 		isNonstandard: "Past",
 		tier: "Illegal",
 		natDexTier: "RUBL",
-		natDexDoublesOverride: "UU",
 	},
 	scolipedemega: {
 		isNonstandard: "Future",
@@ -3319,7 +3220,6 @@ export const FormatsData: import('../sim/dex-species').SpeciesFormatsDataTable =
 		tier: "RUBL",
 		doublesTier: "(DUU)",
 		natDexTier: "RUBL",
-		natDexDoublesOverride: "UU",
 	},
 	basculin: {
 		tier: "ZU",
@@ -3365,17 +3265,14 @@ export const FormatsData: import('../sim/dex-species').SpeciesFormatsDataTable =
 	},
 	darmanitanzen: {
 		isNonstandard: "Past",
-		natDexDoublesOverride: "UU",
 	},
 	darmanitangalar: {
 		isNonstandard: "Past",
 		tier: "Illegal",
 		natDexTier: "Uber",
-		natDexDoublesOverride: "UU",
 	},
 	darmanitangalarzen: {
 		isNonstandard: "Past",
-		natDexDoublesOverride: "UU",
 	},
 	maractus: {
 		isNonstandard: "Past",
@@ -3478,7 +3375,6 @@ export const FormatsData: import('../sim/dex-species').SpeciesFormatsDataTable =
 		tier: "RUBL",
 		doublesTier: "(DUU)",
 		natDexTier: "RUBL",
-		natDexDoublesOverride: "UU",
 	},
 	minccino: {
 		tier: "LC",
@@ -3563,7 +3459,6 @@ export const FormatsData: import('../sim/dex-species').SpeciesFormatsDataTable =
 		tier: "PU",
 		doublesTier: "DOU",
 		natDexTier: "UU",
-		natDexDoublesOverride: "UU",
 	},
 	frillish: {
 		isNonstandard: "Past",
@@ -3579,7 +3474,6 @@ export const FormatsData: import('../sim/dex-species').SpeciesFormatsDataTable =
 		tier: "OU",
 		doublesTier: "(DUU)",
 		natDexTier: "OU",
-		natDexDoublesOverride: "UU",
 	},
 	joltik: {
 		tier: "LC",
@@ -3598,7 +3492,6 @@ export const FormatsData: import('../sim/dex-species').SpeciesFormatsDataTable =
 		isNonstandard: "Past",
 		tier: "Illegal",
 		natDexTier: "OU",
-		natDexDoublesOverride: "UU",
 	},
 	klink: {
 		isNonstandard: "Past",
@@ -3665,7 +3558,6 @@ export const FormatsData: import('../sim/dex-species').SpeciesFormatsDataTable =
 		tier: "RUBL",
 		doublesTier: "(DUU)",
 		natDexTier: "RUBL",
-		natDexDoublesOverride: "UU",
 	},
 	cubchoo: {
 		tier: "LC",
@@ -3707,7 +3599,6 @@ export const FormatsData: import('../sim/dex-species').SpeciesFormatsDataTable =
 		tier: "RUBL",
 		doublesTier: "(DUU)",
 		natDexTier: "RUBL",
-		natDexDoublesOverride: "UU",
 	},
 	druddigon: {
 		isNonstandard: "Past",
@@ -3733,7 +3624,6 @@ export const FormatsData: import('../sim/dex-species').SpeciesFormatsDataTable =
 		tier: "RU",
 		doublesTier: "NFE",
 		natDexTier: "UU",
-		natDexDoublesOverride: "UU",
 	},
 	bouffalant: {
 		isNonstandard: "Past",
@@ -3781,7 +3671,6 @@ export const FormatsData: import('../sim/dex-species').SpeciesFormatsDataTable =
 		tier: "UU",
 		doublesTier: "(DUU)",
 		natDexTier: "UU",
-		natDexDoublesOverride: "UU",
 	},
 	larvesta: {
 		tier: "LC",
@@ -3790,7 +3679,6 @@ export const FormatsData: import('../sim/dex-species').SpeciesFormatsDataTable =
 		tier: "Uber",
 		doublesTier: "(DUU)",
 		natDexTier: "OU",
-		natDexDoublesOverride: "UU",
 	},
 	cobalion: {
 		tier: "UU",
@@ -3801,7 +3689,6 @@ export const FormatsData: import('../sim/dex-species').SpeciesFormatsDataTable =
 		tier: "RU",
 		doublesTier: "(DUU)",
 		natDexTier: "RUBL",
-		natDexDoublesOverride: "UU",
 	},
 	virizion: {
 		tier: "ZU",
@@ -3817,67 +3704,56 @@ export const FormatsData: import('../sim/dex-species').SpeciesFormatsDataTable =
 		tier: "OU",
 		doublesTier: "(DUU)",
 		natDexTier: "OU",
-		natDexDoublesOverride: "UU",
 	},
 	thundurus: {
 		tier: "RUBL",
 		doublesTier: "DUU",
 		natDexTier: "UU",
-		natDexDoublesOverride: "UU",
 	},
 	thundurustherian: {
 		tier: "UU",
 		doublesTier: "(DUU)",
 		natDexTier: "UUBL",
-		natDexDoublesOverride: "UU",
 	},
 	reshiram: {
 		tier: "Uber",
 		doublesTier: "DUber",
 		natDexTier: "Uber",
-		natDexDoublesOverride: "UU",
 	},
 	zekrom: {
 		tier: "Uber",
 		doublesTier: "DUber",
 		natDexTier: "Uber",
-		natDexDoublesOverride: "UU",
 	},
 	landorus: {
 		tier: "Uber",
 		doublesTier: "DOU",
 		natDexTier: "Uber",
-		natDexDoublesOverride: "UU",
 	},
 	landorustherian: {
 		tier: "OU",
 		doublesTier: "DOU",
 		natDexTier: "OU",
-		natDexDoublesOverride: "UU",
 	},
 	kyurem: {
 		tier: "OU",
 		doublesTier: "DOU",
 		natDexTier: "OU",
-		natDexDoublesOverride: "UU",
 	},
 	kyuremblack: {
 		tier: "Uber",
 		doublesTier: "DUber",
 		natDexTier: "Uber",
-		natDexDoublesOverride: "UU",
 	},
 	kyuremwhite: {
 		tier: "Uber",
 		doublesTier: "DUber",
 		natDexTier: "Uber",
-		natDexDoublesOverride: "UU",
 	},
 	keldeo: {
 		tier: "UU",
 		doublesTier: "(DUU)",
 		natDexTier: "UU",
-		natDexDoublesOverride: "UU",
 	},
 	meloetta: {
 		tier: "NU",
@@ -3888,31 +3764,26 @@ export const FormatsData: import('../sim/dex-species').SpeciesFormatsDataTable =
 		isNonstandard: "Past",
 		tier: "Illegal",
 		natDexTier: "Uber",
-		natDexDoublesOverride: "UU",
 	},
 	genesectburn: {
 		isNonstandard: "Past",
 		tier: "Illegal",
 		natDexTier: "Uber",
-		natDexDoublesOverride: "UU",
 	},
 	genesectchill: {
 		isNonstandard: "Past",
 		tier: "Illegal",
 		natDexTier: "Uber",
-		natDexDoublesOverride: "UU",
 	},
 	genesectdouse: {
 		isNonstandard: "Past",
 		tier: "Illegal",
 		natDexTier: "Uber",
-		natDexDoublesOverride: "UU",
 	},
 	genesectshock: {
 		isNonstandard: "Past",
 		tier: "Illegal",
 		natDexTier: "Uber",
-		natDexDoublesOverride: "UU",
 	},
 	chespin: {
 		tier: "LC",
@@ -3954,7 +3825,6 @@ export const FormatsData: import('../sim/dex-species').SpeciesFormatsDataTable =
 		tier: "UU",
 		doublesTier: "(DUU)",
 		natDexTier: "UUBL",
-		natDexDoublesOverride: "UU",
 	},
 	greninjaash: {
 		isNonstandard: "Past",
@@ -4080,11 +3950,9 @@ export const FormatsData: import('../sim/dex-species').SpeciesFormatsDataTable =
 		isNonstandard: "Past",
 		tier: "Illegal",
 		natDexTier: "UU",
-		natDexDoublesOverride: "UU",
 	},
 	aegislashblade: {
 		isNonstandard: "Past",
-		natDexDoublesOverride: "UU",
 	},
 	spritzee: {
 		isNonstandard: "Past",
@@ -4186,7 +4054,6 @@ export const FormatsData: import('../sim/dex-species').SpeciesFormatsDataTable =
 		tier: "RUBL",
 		doublesTier: "(DUU)",
 		natDexTier: "UUBL",
-		natDexDoublesOverride: "UU",
 	},
 	hawluchamega: {
 		isNonstandard: "Future",
@@ -4220,7 +4087,6 @@ export const FormatsData: import('../sim/dex-species').SpeciesFormatsDataTable =
 		tier: "RU",
 		doublesTier: "(DUU)",
 		natDexTier: "UU",
-		natDexDoublesOverride: "UU",
 	},
 	klefki: {
 		tier: "NU",
@@ -4242,15 +4108,12 @@ export const FormatsData: import('../sim/dex-species').SpeciesFormatsDataTable =
 	},
 	pumpkaboosmall: {
 		isNonstandard: "Past",
-		natDexDoublesOverride: "UU",
 	},
 	pumpkaboolarge: {
 		isNonstandard: "Past",
-		natDexDoublesOverride: "UU",
 	},
 	pumpkaboosuper: {
 		isNonstandard: "Past",
-		natDexDoublesOverride: "UU",
 	},
 	gourgeist: {
 		isNonstandard: "Past",
@@ -4259,15 +4122,12 @@ export const FormatsData: import('../sim/dex-species').SpeciesFormatsDataTable =
 	},
 	gourgeistsmall: {
 		isNonstandard: "Past",
-		natDexDoublesOverride: "UU",
 	},
 	gourgeistlarge: {
 		isNonstandard: "Past",
-		natDexDoublesOverride: "UU",
 	},
 	gourgeistsuper: {
 		isNonstandard: "Past",
-		natDexDoublesOverride: "UU",
 	},
 	bergmite: {
 		tier: "LC",
@@ -4294,7 +4154,6 @@ export const FormatsData: import('../sim/dex-species').SpeciesFormatsDataTable =
 		isNonstandard: "Past",
 		tier: "Illegal",
 		natDexTier: "AG",
-		natDexDoublesOverride: "UU",
 	},
 	xerneasneutral: {
 		isNonstandard: "Custom", // can't be used in battle
@@ -4304,13 +4163,11 @@ export const FormatsData: import('../sim/dex-species').SpeciesFormatsDataTable =
 		isNonstandard: "Past",
 		tier: "Illegal",
 		natDexTier: "Uber",
-		natDexDoublesOverride: "UU",
 	},
 	zygarde: {
 		isNonstandard: "Past",
 		tier: "Illegal",
 		natDexTier: "Uber",
-		natDexDoublesOverride: "UU",
 	},
 	zygarde10: {
 		isNonstandard: "Past",
@@ -4321,7 +4178,6 @@ export const FormatsData: import('../sim/dex-species').SpeciesFormatsDataTable =
 		isNonstandard: "Past",
 		tier: "Illegal",
 		natDexTier: "Uber",
-		natDexDoublesOverride: "UU",
 	},
 	zygardemega: {
 		isNonstandard: "Future",
@@ -4336,7 +4192,6 @@ export const FormatsData: import('../sim/dex-species').SpeciesFormatsDataTable =
 		isNonstandard: "Past",
 		tier: "Illegal",
 		natDexTier: "OU",
-		natDexDoublesOverride: "UU",
 	},
 	hoopa: {
 		tier: "PU",
@@ -4347,7 +4202,6 @@ export const FormatsData: import('../sim/dex-species').SpeciesFormatsDataTable =
 		tier: "UUBL",
 		doublesTier: "DUU",
 		natDexTier: "UUBL",
-		natDexDoublesOverride: "UU",
 	},
 	volcanion: {
 		tier: "RUBL",
@@ -4391,7 +4245,6 @@ export const FormatsData: import('../sim/dex-species').SpeciesFormatsDataTable =
 		tier: "OU",
 		doublesTier: "DOU",
 		natDexTier: "RUBL",
-		natDexDoublesOverride: "UU",
 	},
 	pikipek: {
 		tier: "LC",
@@ -4503,7 +4356,6 @@ export const FormatsData: import('../sim/dex-species').SpeciesFormatsDataTable =
 	},
 	wishiwashischool: {
 		isNonstandard: "Past",
-		natDexDoublesOverride: "UU",
 	},
 	mareanie: {
 		tier: "LC",
@@ -4512,7 +4364,6 @@ export const FormatsData: import('../sim/dex-species').SpeciesFormatsDataTable =
 		tier: "UU",
 		doublesTier: "(DUU)",
 		natDexTier: "OU",
-		natDexDoublesOverride: "UU",
 	},
 	mudbray: {
 		tier: "LC",
@@ -4792,7 +4643,6 @@ export const FormatsData: import('../sim/dex-species').SpeciesFormatsDataTable =
 		tier: "UUBL",
 		doublesTier: "(DUU)",
 		natDexTier: "UUBL",
-		natDexDoublesOverride: "UU",
 	},
 	kommoototem: {
 		isNonstandard: "Past",
@@ -4802,13 +4652,11 @@ export const FormatsData: import('../sim/dex-species').SpeciesFormatsDataTable =
 		isNonstandard: "Past",
 		tier: "Illegal",
 		natDexTier: "OU",
-		natDexDoublesOverride: "UU",
 	},
 	tapulele: {
 		isNonstandard: "Past",
 		tier: "Illegal",
 		natDexTier: "OU",
-		natDexDoublesOverride: "UU",
 	},
 	tapubulu: {
 		isNonstandard: "Past",
@@ -4819,7 +4667,6 @@ export const FormatsData: import('../sim/dex-species').SpeciesFormatsDataTable =
 		isNonstandard: "Past",
 		tier: "Illegal",
 		natDexTier: "UU",
-		natDexDoublesOverride: "UU",
 	},
 	cosmog: {
 		tier: "LC",
@@ -4831,13 +4678,11 @@ export const FormatsData: import('../sim/dex-species').SpeciesFormatsDataTable =
 		tier: "Uber",
 		doublesTier: "DUber",
 		natDexTier: "Uber",
-		natDexDoublesOverride: "UU",
 	},
 	lunala: {
 		tier: "Uber",
 		doublesTier: "DUber",
 		natDexTier: "Uber",
-		natDexDoublesOverride: "UU",
 	},
 	nihilego: {
 		isNonstandard: "Past",
@@ -4848,31 +4693,26 @@ export const FormatsData: import('../sim/dex-species').SpeciesFormatsDataTable =
 		isNonstandard: "Past",
 		tier: "Illegal",
 		natDexTier: "UU",
-		natDexDoublesOverride: "UU",
 	},
 	pheromosa: {
 		isNonstandard: "Past",
 		tier: "Illegal",
 		natDexTier: "Uber",
-		natDexDoublesOverride: "UU",
 	},
 	xurkitree: {
 		isNonstandard: "Past",
 		tier: "Illegal",
 		natDexTier: "UUBL",
-		natDexDoublesOverride: "UU",
 	},
 	celesteela: {
 		isNonstandard: "Past",
 		tier: "Illegal",
 		natDexTier: "UU",
-		natDexDoublesOverride: "UU",
 	},
 	kartana: {
 		isNonstandard: "Past",
 		tier: "Illegal",
 		natDexTier: "UUBL",
-		natDexDoublesOverride: "UU",
 	},
 	guzzlord: {
 		isNonstandard: "Past",
@@ -4888,25 +4728,21 @@ export const FormatsData: import('../sim/dex-species').SpeciesFormatsDataTable =
 		tier: "Uber",
 		doublesTier: "DUber",
 		natDexTier: "Uber",
-		natDexDoublesOverride: "UU",
 	},
 	necrozmadawnwings: {
 		tier: "Uber",
 		doublesTier: "DUber",
 		natDexTier: "Uber",
-		natDexDoublesOverride: "UU",
 	},
 	necrozmaultra: {
 		isNonstandard: "Past",
 		tier: "Illegal",
 		natDexTier: "Uber",
-		natDexDoublesOverride: "UU",
 	},
 	magearna: {
 		tier: "Uber",
 		doublesTier: "DUber",
 		natDexTier: "Uber",
-		natDexDoublesOverride: "UU",
 	},
 	magearnamega: {
 		isNonstandard: "Future",
@@ -4920,7 +4756,6 @@ export const FormatsData: import('../sim/dex-species').SpeciesFormatsDataTable =
 		isNonstandard: "Past",
 		tier: "Illegal",
 		natDexTier: "Uber",
-		natDexDoublesOverride: "UU",
 	},
 	poipole: {
 		isNonstandard: "Past",
@@ -4931,7 +4766,6 @@ export const FormatsData: import('../sim/dex-species').SpeciesFormatsDataTable =
 		isNonstandard: "Past",
 		tier: "Illegal",
 		natDexTier: "Uber",
-		natDexDoublesOverride: "UU",
 	},
 	stakataka: {
 		isNonstandard: "Past",
@@ -4942,13 +4776,11 @@ export const FormatsData: import('../sim/dex-species').SpeciesFormatsDataTable =
 		isNonstandard: "Past",
 		tier: "Illegal",
 		natDexTier: "UU",
-		natDexDoublesOverride: "UU",
 	},
 	zeraora: {
 		isNonstandard: "Past",
 		tier: "Illegal",
 		natDexTier: "UU",
-		natDexDoublesOverride: "UU",
 	},
 	zeraoramega: {
 		isNonstandard: "Future",
@@ -4963,7 +4795,6 @@ export const FormatsData: import('../sim/dex-species').SpeciesFormatsDataTable =
 		isNonstandard: "Past",
 		tier: "Illegal",
 		natDexTier: "OU",
-		natDexDoublesOverride: "UU",
 	},
 	melmetalgmax: {
 		isNonstandard: "Past",
@@ -4979,7 +4810,6 @@ export const FormatsData: import('../sim/dex-species').SpeciesFormatsDataTable =
 		tier: "OU",
 		doublesTier: "DOU",
 		natDexTier: "OU",
-		natDexDoublesOverride: "UU",
 	},
 	rillaboomgmax: {
 		isNonstandard: "Past",
@@ -4995,7 +4825,6 @@ export const FormatsData: import('../sim/dex-species').SpeciesFormatsDataTable =
 		tier: "OU",
 		doublesTier: "(DUU)",
 		natDexTier: "OU",
-		natDexDoublesOverride: "UU",
 	},
 	cinderacegmax: {
 		isNonstandard: "Past",
@@ -5034,7 +4863,6 @@ export const FormatsData: import('../sim/dex-species').SpeciesFormatsDataTable =
 		tier: "OU",
 		doublesTier: "(DUU)",
 		natDexTier: "OU",
-		natDexDoublesOverride: "UU",
 	},
 	corviknightgmax: {
 		isNonstandard: "Past",
@@ -5222,7 +5050,6 @@ export const FormatsData: import('../sim/dex-species').SpeciesFormatsDataTable =
 		tier: "UUBL",
 		doublesTier: "(DUU)",
 		natDexTier: "RUBL",
-		natDexDoublesOverride: "UU",
 	},
 	hatenna: {
 		tier: "LC",
@@ -5234,7 +5061,6 @@ export const FormatsData: import('../sim/dex-species').SpeciesFormatsDataTable =
 		tier: "OU",
 		doublesTier: "DOU",
 		natDexTier: "OU",
-		natDexDoublesOverride: "UU",
 	},
 	hatterenegmax: {
 		isNonstandard: "Past",
@@ -5340,7 +5166,6 @@ export const FormatsData: import('../sim/dex-species').SpeciesFormatsDataTable =
 		isNonstandard: "Past",
 		tier: "Illegal",
 		natDexTier: "Uber",
-		natDexDoublesOverride: "UU",
 	},
 	arctovish: {
 		isNonstandard: "Past",
@@ -5366,37 +5191,31 @@ export const FormatsData: import('../sim/dex-species').SpeciesFormatsDataTable =
 		tier: "OU",
 		doublesTier: "DUU",
 		natDexTier: "Uber",
-		natDexDoublesOverride: "UU",
 	},
 	zacian: {
 		tier: "Uber",
 		doublesTier: "DUber",
 		natDexTier: "Uber",
-		natDexDoublesOverride: "UU",
 	},
 	zaciancrowned: {
 		tier: "Uber",
 		doublesTier: "DUber",
 		natDexTier: "Uber",
-		natDexDoublesOverride: "UU",
 	},
 	zamazenta: {
 		tier: "OU",
 		doublesTier: "DUber",
 		natDexTier: "OU",
-		natDexDoublesOverride: "UU",
 	},
 	zamazentacrowned: {
 		tier: "Uber",
 		doublesTier: "DUber",
 		natDexTier: "Uber",
-		natDexDoublesOverride: "UU",
 	},
 	eternatus: {
 		tier: "Uber",
 		doublesTier: "DUber",
 		natDexTier: "Uber",
-		natDexDoublesOverride: "UU",
 	},
 	eternatuseternamax: {
 		isNonstandard: "Past",
@@ -5409,13 +5228,11 @@ export const FormatsData: import('../sim/dex-species').SpeciesFormatsDataTable =
 		tier: "Uber",
 		doublesTier: "DUber",
 		natDexTier: "Uber",
-		natDexDoublesOverride: "UU",
 	},
 	urshifurapidstrike: {
 		tier: "Uber",
 		doublesTier: "DUber",
 		natDexTier: "OU",
-		natDexDoublesOverride: "UU",
 	},
 	urshifugmax: {
 		isNonstandard: "Past",
@@ -5449,7 +5266,6 @@ export const FormatsData: import('../sim/dex-species').SpeciesFormatsDataTable =
 		tier: "Uber",
 		doublesTier: "(DUU)",
 		natDexTier: "Uber",
-		natDexDoublesOverride: "UU",
 	},
 	calyrex: {
 		tier: "ZU",
@@ -5460,19 +5276,16 @@ export const FormatsData: import('../sim/dex-species').SpeciesFormatsDataTable =
 		tier: "Uber",
 		doublesTier: "DUber",
 		natDexTier: "Uber",
-		natDexDoublesOverride: "UU",
 	},
 	calyrexshadow: {
 		tier: "AG",
 		doublesTier: "DUber",
 		natDexTier: "AG",
-		natDexDoublesOverride: "UU",
 	},
 	enamorus: {
 		tier: "OU",
 		doublesTier: "DUU",
 		natDexTier: "RUBL",
-		natDexDoublesOverride: "UU",
 	},
 	enamorustherian: {
 		tier: "RUBL",
@@ -5489,7 +5302,6 @@ export const FormatsData: import('../sim/dex-species').SpeciesFormatsDataTable =
 		tier: "UUBL",
 		doublesTier: "DUU",
 		natDexTier: "UUBL",
-		natDexDoublesOverride: "UU",
 	},
 	fuecoco: {
 		tier: "LC",
@@ -5512,7 +5324,6 @@ export const FormatsData: import('../sim/dex-species').SpeciesFormatsDataTable =
 		tier: "UUBL",
 		doublesTier: "(DUU)",
 		natDexTier: "RUBL",
-		natDexDoublesOverride: "UU",
 	},
 	lechonk: {
 		tier: "LC",
@@ -5566,7 +5377,6 @@ export const FormatsData: import('../sim/dex-species').SpeciesFormatsDataTable =
 		tier: "Uber",
 		doublesTier: "DUber",
 		natDexTier: "Uber",
-		natDexDoublesOverride: "UU",
 	},
 	wiglett: {
 		tier: "LC",
@@ -5580,7 +5390,6 @@ export const FormatsData: import('../sim/dex-species').SpeciesFormatsDataTable =
 		tier: "OU",
 		doublesTier: "(DUU)",
 		natDexTier: "UUBL",
-		natDexDoublesOverride: "UU",
 	},
 	veluza: {
 		tier: "ZU",
@@ -5594,7 +5403,6 @@ export const FormatsData: import('../sim/dex-species').SpeciesFormatsDataTable =
 		tier: "Uber",
 		doublesTier: "(DUU)",
 		natDexTier: "Uber",
-		natDexDoublesOverride: "UU",
 	},
 	smoliv: {
 		tier: "LC",
@@ -5666,7 +5474,6 @@ export const FormatsData: import('../sim/dex-species').SpeciesFormatsDataTable =
 		tier: "Uber",
 		doublesTier: "DUU",
 		natDexTier: "Uber",
-		natDexDoublesOverride: "UU",
 	},
 	baxcaliburmega: {
 		isNonstandard: "Future",
@@ -5751,7 +5558,6 @@ export const FormatsData: import('../sim/dex-species').SpeciesFormatsDataTable =
 		tier: "OU",
 		doublesTier: "DOU",
 		natDexTier: "UU",
-		natDexDoublesOverride: "UU",
 	},
 	glimmoramega: {
 		isNonstandard: "Future",
@@ -5799,13 +5605,11 @@ export const FormatsData: import('../sim/dex-species').SpeciesFormatsDataTable =
 		tier: "OU",
 		doublesTier: "DOU",
 		natDexTier: "OU",
-		natDexDoublesOverride: "UU",
 	},
 	greattusk: {
 		tier: "OU",
 		doublesTier: "(DUU)",
 		natDexTier: "OU",
-		natDexDoublesOverride: "UU",
 	},
 	brutebonnet: {
 		tier: "ZU",
@@ -5826,7 +5630,6 @@ export const FormatsData: import('../sim/dex-species').SpeciesFormatsDataTable =
 		tier: "Uber",
 		doublesTier: "DUber",
 		natDexTier: "Uber",
-		natDexDoublesOverride: "UU",
 	},
 	slitherwing: {
 		tier: "UU",
@@ -5837,25 +5640,21 @@ export const FormatsData: import('../sim/dex-species').SpeciesFormatsDataTable =
 		tier: "Uber",
 		doublesTier: "DOU",
 		natDexTier: "Uber",
-		natDexDoublesOverride: "UU",
 	},
 	irontreads: {
 		tier: "OU",
 		doublesTier: "(DUU)",
 		natDexTier: "OU",
-		natDexDoublesOverride: "UU",
 	},
 	ironmoth: {
 		tier: "OU",
 		doublesTier: "(DUU)",
 		natDexTier: "UUBL",
-		natDexDoublesOverride: "UU",
 	},
 	ironhands: {
 		tier: "UUBL",
 		doublesTier: "DOU",
 		natDexTier: "UUBL",
-		natDexDoublesOverride: "UU",
 	},
 	ironjugulis: {
 		tier: "UU",
@@ -5871,25 +5670,21 @@ export const FormatsData: import('../sim/dex-species').SpeciesFormatsDataTable =
 		tier: "Uber",
 		doublesTier: "DUU",
 		natDexTier: "Uber",
-		natDexDoublesOverride: "UU",
 	},
 	ironvaliant: {
 		tier: "OU",
 		doublesTier: "(DUU)",
 		natDexTier: "OU",
-		natDexDoublesOverride: "UU",
 	},
 	tinglu: {
 		tier: "OU",
 		doublesTier: "DOU",
 		natDexTier: "OU",
-		natDexDoublesOverride: "UU",
 	},
 	chienpao: {
 		tier: "Uber",
 		doublesTier: "DOU",
 		natDexTier: "Uber",
-		natDexDoublesOverride: "UU",
 	},
 	wochien: {
 		tier: "PU",
@@ -5900,19 +5695,16 @@ export const FormatsData: import('../sim/dex-species').SpeciesFormatsDataTable =
 		tier: "Uber",
 		doublesTier: "DOU",
 		natDexTier: "Uber",
-		natDexDoublesOverride: "UU",
 	},
 	koraidon: {
 		tier: "Uber",
 		doublesTier: "DUber",
 		natDexTier: "AG",
-		natDexDoublesOverride: "UU",
 	},
 	miraidon: {
 		tier: "AG",
 		doublesTier: "DUber",
 		natDexTier: "AG",
-		natDexDoublesOverride: "UU",
 	},
 	tinkatink: {
 		tier: "LC",
@@ -5937,7 +5729,6 @@ export const FormatsData: import('../sim/dex-species').SpeciesFormatsDataTable =
 		tier: "OU",
 		doublesTier: "(DUU)",
 		natDexTier: "OU",
-		natDexDoublesOverride: "UU",
 	},
 	toedscool: {
 		tier: "LC",
@@ -5951,31 +5742,26 @@ export const FormatsData: import('../sim/dex-species').SpeciesFormatsDataTable =
 		tier: "OU",
 		doublesTier: "DOU",
 		natDexTier: "OU",
-		natDexDoublesOverride: "UU",
 	},
 	clodsire: {
 		tier: "UU",
 		doublesTier: "(DUU)",
 		natDexTier: "OU",
-		natDexDoublesOverride: "UU",
 	},
 	annihilape: {
 		tier: "Uber",
 		doublesTier: "DUber",
 		natDexTier: "Uber",
-		natDexDoublesOverride: "UU",
 	},
 	walkingwake: {
 		tier: "OU",
 		doublesTier: "DOU",
 		natDexTier: "Uber",
-		natDexDoublesOverride: "UU",
 	},
 	ironleaves: {
 		tier: "RUBL",
 		doublesTier: "(DUU)",
 		natDexTier: "RUBL",
-		natDexDoublesOverride: "UU",
 	},
 	poltchageist: {
 		tier: "LC",
@@ -5989,7 +5775,6 @@ export const FormatsData: import('../sim/dex-species').SpeciesFormatsDataTable =
 		tier: "UUBL",
 		doublesTier: "DOU",
 		natDexTier: "UUBL",
-		natDexDoublesOverride: "UU",
 	},
 	munkidori: {
 		tier: "NU",
@@ -6010,73 +5795,61 @@ export const FormatsData: import('../sim/dex-species').SpeciesFormatsDataTable =
 		tier: "OU",
 		doublesTier: "DOU",
 		natDexTier: "OU",
-		natDexDoublesOverride: "UU",
 	},
 	ogerponhearthflame: {
 		tier: "Uber",
 		doublesTier: "DOU",
 		natDexTier: "Uber",
-		natDexDoublesOverride: "UU",
 	},
 	ogerponcornerstone: {
 		tier: "UUBL",
 		doublesTier: "DUU",
 		natDexTier: "UUBL",
-		natDexDoublesOverride: "UU",
 	},
 	archaludon: {
 		tier: "Uber",
 		doublesTier: "DUber",
 		natDexTier: "RUBL",
-		natDexDoublesOverride: "UU",
 	},
 	hydrapple: {
 		tier: "UU",
 		doublesTier: "(DUU)",
 		natDexTier: "UU",
-		natDexDoublesOverride: "UU",
 	},
 	gougingfire: {
 		tier: "Uber",
 		doublesTier: "DOU",
 		natDexTier: "Uber",
-		natDexDoublesOverride: "UU",
 	},
 	ragingbolt: {
 		tier: "OU",
 		doublesTier: "DOU",
 		natDexTier: "OU",
-		natDexDoublesOverride: "UU",
 	},
 	ironboulder: {
 		tier: "UUBL",
 		doublesTier: "(DUU)",
 		natDexTier: "RUBL",
-		natDexDoublesOverride: "UU",
 	},
 	ironcrown: {
 		tier: "UUBL",
 		doublesTier: "DUU",
 		natDexTier: "UUBL",
-		natDexDoublesOverride: "UU",
 	},
 	terapagos: {
 		tier: "Uber",
 		doublesTier: "DUber",
 		natDexTier: "OU",
-		natDexDoublesOverride: "UU",
 	},
 	terapagosstellar: {
 		tier: "Uber",
 		doublesTier: "DUber",
 		natDexTier: "Uber",
-		natDexDoublesOverride: "UU",
 	},
 	pecharunt: {
 		tier: "OU",
 		doublesTier: "(DUU)",
 		natDexTier: "UUBL",
-		natDexDoublesOverride: "UU",
 	},
 	missingno: {
 		isNonstandard: "Custom",
@@ -6085,402 +5858,322 @@ export const FormatsData: import('../sim/dex-species').SpeciesFormatsDataTable =
 	syclar: {
 		isNonstandard: "CAP",
 		tier: "CAP LC",
-		natDexDoublesOverride: "UU",
 	},
 	syclant: {
 		isNonstandard: "CAP",
 		tier: "CAP",
-		natDexDoublesOverride: "UU",
 	},
 	revenankh: {
 		isNonstandard: "CAP",
 		tier: "CAP",
-		natDexDoublesOverride: "UU",
 	},
 	embirch: {
 		isNonstandard: "CAP",
 		tier: "CAP LC",
-		natDexDoublesOverride: "UU",
 	},
 	flarelm: {
 		isNonstandard: "CAP",
 		tier: "CAP NFE",
-		natDexDoublesOverride: "UU",
 	},
 	pyroak: {
 		isNonstandard: "CAP",
 		tier: "CAP",
-		natDexDoublesOverride: "UU",
 	},
 	breezi: {
 		isNonstandard: "CAP",
 		tier: "CAP LC",
-		natDexDoublesOverride: "UU",
 	},
 	fidgit: {
 		isNonstandard: "CAP",
 		tier: "CAP",
-		natDexDoublesOverride: "UU",
 	},
 	rebble: {
 		isNonstandard: "CAP",
 		tier: "CAP LC",
-		natDexDoublesOverride: "UU",
 	},
 	tactite: {
 		isNonstandard: "CAP",
 		tier: "CAP NFE",
-		natDexDoublesOverride: "UU",
 	},
 	stratagem: {
 		isNonstandard: "CAP",
 		tier: "CAP",
-		natDexDoublesOverride: "UU",
 	},
 	privatyke: {
 		isNonstandard: "CAP",
 		tier: "CAP LC",
-		natDexDoublesOverride: "UU",
 	},
 	arghonaut: {
 		isNonstandard: "CAP",
 		tier: "CAP",
-		natDexDoublesOverride: "UU",
 	},
 	nohface: {
 		isNonstandard: "CAP",
 		tier: "CAP LC",
-		natDexDoublesOverride: "UU",
 	},
 	kitsunoh: {
 		isNonstandard: "CAP",
 		tier: "CAP",
-		natDexDoublesOverride: "UU",
 	},
 	monohm: {
 		isNonstandard: "CAP",
 		tier: "CAP LC",
-		natDexDoublesOverride: "UU",
 	},
 	duohm: {
 		isNonstandard: "CAP",
 		tier: "CAP NFE",
-		natDexDoublesOverride: "UU",
 	},
 	cyclohm: {
 		isNonstandard: "CAP",
 		tier: "CAP",
-		natDexDoublesOverride: "UU",
 	},
 	dorsoil: {
 		isNonstandard: "CAP",
 		tier: "CAP LC",
-		natDexDoublesOverride: "UU",
 	},
 	colossoil: {
 		isNonstandard: "CAP",
 		tier: "CAP",
-		natDexDoublesOverride: "UU",
 	},
 	protowatt: {
 		isNonstandard: "CAP",
 		tier: "CAP LC",
-		natDexDoublesOverride: "UU",
 	},
 	krilowatt: {
 		isNonstandard: "CAP",
 		tier: "CAP",
-		natDexDoublesOverride: "UU",
 	},
 	voodoll: {
 		isNonstandard: "CAP",
 		tier: "CAP LC",
-		natDexDoublesOverride: "UU",
 	},
 	voodoom: {
 		isNonstandard: "CAP",
 		tier: "CAP",
-		natDexDoublesOverride: "UU",
 	},
 	scratchet: {
 		isNonstandard: "CAP",
 		tier: "CAP LC",
-		natDexDoublesOverride: "UU",
 	},
 	tomohawk: {
 		isNonstandard: "CAP",
 		tier: "CAP",
-		natDexDoublesOverride: "UU",
 	},
 	necturine: {
 		isNonstandard: "CAP",
 		tier: "CAP LC",
-		natDexDoublesOverride: "UU",
 	},
 	necturna: {
 		isNonstandard: "CAP",
 		tier: "CAP",
-		natDexDoublesOverride: "UU",
 	},
 	mollux: {
 		isNonstandard: "CAP",
 		tier: "CAP",
-		natDexDoublesOverride: "UU",
 	},
 	cupra: {
 		isNonstandard: "CAP",
 		tier: "CAP LC",
-		natDexDoublesOverride: "UU",
 	},
 	argalis: {
 		isNonstandard: "CAP",
 		tier: "CAP NFE",
-		natDexDoublesOverride: "UU",
 	},
 	aurumoth: {
 		isNonstandard: "CAP",
 		tier: "CAP",
-		natDexDoublesOverride: "UU",
 	},
 	brattler: {
 		isNonstandard: "CAP",
 		tier: "CAP LC",
-		natDexDoublesOverride: "UU",
 	},
 	malaconda: {
 		isNonstandard: "CAP",
 		tier: "CAP",
-		natDexDoublesOverride: "UU",
 	},
 	cawdet: {
 		isNonstandard: "CAP",
 		tier: "CAP LC",
-		natDexDoublesOverride: "UU",
 	},
 	cawmodore: {
 		isNonstandard: "CAP",
 		tier: "CAP",
-		natDexDoublesOverride: "UU",
 	},
 	volkritter: {
 		isNonstandard: "CAP",
 		tier: "CAP LC",
-		natDexDoublesOverride: "UU",
 	},
 	volkraken: {
 		isNonstandard: "CAP",
 		tier: "CAP",
-		natDexDoublesOverride: "UU",
 	},
 	snugglow: {
 		isNonstandard: "CAP",
 		tier: "CAP LC",
-		natDexDoublesOverride: "UU",
 	},
 	plasmanta: {
 		isNonstandard: "CAP",
 		tier: "CAP",
-		natDexDoublesOverride: "UU",
 	},
 	floatoy: {
 		isNonstandard: "CAP",
 		tier: "CAP LC",
-		natDexDoublesOverride: "UU",
 	},
 	caimanoe: {
 		isNonstandard: "CAP",
 		tier: "CAP NFE",
-		natDexDoublesOverride: "UU",
 	},
 	naviathan: {
 		isNonstandard: "CAP",
 		tier: "CAP",
-		natDexDoublesOverride: "UU",
 	},
 	crucibelle: {
 		isNonstandard: "CAP",
 		tier: "CAP",
-		natDexDoublesOverride: "UU",
 	},
 	crucibellemega: {
 		isNonstandard: "CAP",
 		tier: "CAP",
-		natDexDoublesOverride: "UU",
 	},
 	pluffle: {
 		isNonstandard: "CAP",
 		tier: "CAP LC",
-		natDexDoublesOverride: "UU",
 	},
 	kerfluffle: {
 		isNonstandard: "CAP",
 		tier: "CAP",
-		natDexDoublesOverride: "UU",
 	},
 	pajantom: {
 		isNonstandard: "CAP",
 		tier: "CAP",
-		natDexDoublesOverride: "UU",
 	},
 	mumbao: {
 		isNonstandard: "CAP",
 		tier: "CAP LC",
-		natDexDoublesOverride: "UU",
 	},
 	jumbao: {
 		isNonstandard: "CAP",
 		tier: "CAP",
-		natDexDoublesOverride: "UU",
 	},
 	fawnifer: {
 		isNonstandard: "CAP",
 		tier: "CAP LC",
-		natDexDoublesOverride: "UU",
 	},
 	electrelk: {
 		isNonstandard: "CAP",
 		tier: "CAP NFE",
-		natDexDoublesOverride: "UU",
 	},
 	caribolt: {
 		isNonstandard: "CAP",
 		tier: "CAP",
-		natDexDoublesOverride: "UU",
 	},
 	smogecko: {
 		isNonstandard: "CAP",
 		tier: "CAP LC",
-		natDexDoublesOverride: "UU",
 	},
 	smoguana: {
 		isNonstandard: "CAP",
 		tier: "CAP NFE",
-		natDexDoublesOverride: "UU",
 	},
 	smokomodo: {
 		isNonstandard: "CAP",
 		tier: "CAP",
-		natDexDoublesOverride: "UU",
 	},
 	swirlpool: {
 		isNonstandard: "CAP",
 		tier: "CAP LC",
-		natDexDoublesOverride: "UU",
 	},
 	coribalis: {
 		isNonstandard: "CAP",
 		tier: "CAP NFE",
-		natDexDoublesOverride: "UU",
 	},
 	snaelstrom: {
 		isNonstandard: "CAP",
 		tier: "CAP",
-		natDexDoublesOverride: "UU",
 	},
 	justyke: {
 		isNonstandard: "CAP",
 		tier: "CAP LC",
-		natDexDoublesOverride: "UU",
 	},
 	equilibra: {
 		isNonstandard: "CAP",
 		tier: "CAP",
-		natDexDoublesOverride: "UU",
 	},
 	solotl: {
 		isNonstandard: "CAP",
 		tier: "CAP LC",
-		natDexDoublesOverride: "UU",
 	},
 	astrolotl: {
 		isNonstandard: "CAP",
 		tier: "CAP",
-		natDexDoublesOverride: "UU",
 	},
 	miasmite: {
 		isNonstandard: "CAP",
 		tier: "CAP LC",
-		natDexDoublesOverride: "UU",
 	},
 	miasmaw: {
 		isNonstandard: "CAP",
 		tier: "CAP",
-		natDexDoublesOverride: "UU",
 	},
 	chromera: {
 		isNonstandard: "CAP",
 		tier: "CAP",
-		natDexDoublesOverride: "UU",
 	},
 	venomicon: {
 		isNonstandard: "CAP",
 		tier: "CAP",
-		natDexDoublesOverride: "UU",
 	},
 	venomiconepilogue: {
 		isNonstandard: "CAP",
 		tier: "CAP",
-		natDexDoublesOverride: "UU",
 	},
 	saharascal: {
 		isNonstandard: "CAP",
 		tier: "CAP LC",
-		natDexDoublesOverride: "UU",
 	},
 	saharaja: {
 		isNonstandard: "CAP",
 		tier: "CAP",
-		natDexDoublesOverride: "UU",
 	},
 	ababo: {
 		isNonstandard: "CAP",
 		tier: "CAP LC",
-		natDexDoublesOverride: "UU",
 	},
 	scattervein: {
 		isNonstandard: "CAP",
 		tier: "CAP NFE",
-		natDexDoublesOverride: "UU",
 	},
 	hemogoblin: {
 		isNonstandard: "CAP",
 		tier: "CAP",
-		natDexDoublesOverride: "UU",
 	},
 	cresceidon: {
 		isNonstandard: "CAP",
 		tier: "CAP",
-		natDexDoublesOverride: "UU",
 	},
 	chuggon: {
 		isNonstandard: "CAP",
 		tier: "CAP LC",
-		natDexDoublesOverride: "UU",
 	},
 	draggalong: {
 		isNonstandard: "CAP",
 		tier: "CAP NFE",
-		natDexDoublesOverride: "UU",
 	},
 	chuggalong: {
 		isNonstandard: "CAP",
 		tier: "CAP",
-		natDexDoublesOverride: "UU",
 	},
 	flox: {
 		isNonstandard: "CAP",
 		tier: "CAP LC",
-		natDexDoublesOverride: "UU",
 	},
 	shox: {
 		isNonstandard: "CAP",
 		tier: "CAP",
-		natDexDoublesOverride: "UU",
 	},
 	ramnarok: {
 		isNonstandard: "CAP",
 		tier: "CAP",
-		natDexDoublesOverride: "UU",
 	},
 	ramnarokradiant: {
 		isNonstandard: "CAP",
@@ -6489,7 +6182,6 @@ export const FormatsData: import('../sim/dex-species').SpeciesFormatsDataTable =
 	obliteryx: {
 		isNonstandard: "CAP",
 		tier: "CAP",
-		natDexDoublesOverride: "UU",
 	},
 	pokestarsmeargle: {
 		isNonstandard: "Custom",
@@ -7238,786 +6930,655 @@ export const FormatsData: import('../sim/dex-species').SpeciesFormatsDataTable =
 		isNonstandard: "Custom",
 		tier: "Toho",
 		doublesTier: "DToho",
-		natDexDoublesOverride: "UU",
 	},
 	marisakirisame: {
 		isNonstandard: "Custom",
 		tier: "Toho",
 		doublesTier: "DToho",
-		natDexDoublesOverride: "UU",
 	},
 	rumia: {
 		isNonstandard: "Custom",
 		tier: "Toho",
 		doublesTier: "DToho",
-		natDexDoublesOverride: "UU",
 	},
 	daiyousei: {
 		isNonstandard: "Custom",
 		tier: "Toho",
 		doublesTier: "DToho",
-		natDexDoublesOverride: "UU",
 	},
 	cirno: {
 		isNonstandard: "Custom",
 		tier: "Toho",
 		doublesTier: "DToho",
-		natDexDoublesOverride: "UU",
 	},
 	cirnotanned: {
 		isNonstandard: "Custom",
 		tier: "Toho",
 		doublesTier: "DToho",
-		natDexDoublesOverride: "UU",
 	},
 	hongmeiling: {
 		isNonstandard: "Custom",
 		tier: "Toho",
 		doublesTier: "DToho",
-		natDexDoublesOverride: "UU",
 	},
 	koakuma: {
 		isNonstandard: "Custom",
 		tier: "Toho",
 		doublesTier: "DToho",
-		natDexDoublesOverride: "UU",
 	},
 	patchouliknowledge: {
 		isNonstandard: "Custom",
 		tier: "Toho",
 		doublesTier: "DToho",
-		natDexDoublesOverride: "UU",
 	},
 	sakuyaizayoi: {
 		isNonstandard: "Custom",
 		tier: "Toho",
 		doublesTier: "DToho",
-		natDexDoublesOverride: "UU",
 	},
 	remiliascarlet: {
 		isNonstandard: "Custom",
 		tier: "Toho",
 		doublesTier: "DToho",
-		natDexDoublesOverride: "UU",
 	},
 	flandrescarlet: {
 		isNonstandard: "Custom",
 		tier: "Toho",
 		doublesTier: "DToho",
-		natDexDoublesOverride: "UU",
 	},
 	lettywhiterock: {
 		isNonstandard: "Custom",
 		tier: "Toho",
 		doublesTier: "DToho",
-		natDexDoublesOverride: "UU",
 	},
 	chen: {
 		isNonstandard: "Custom",
 		tier: "Toho",
 		doublesTier: "DToho",
-		natDexDoublesOverride: "UU",
 	},
 	alicemargatroid: {
 		isNonstandard: "Custom",
 		tier: "Toho",
 		doublesTier: "DToho",
-		natDexDoublesOverride: "UU",
 	},
 	lilywhite: {
 		isNonstandard: "Custom",
 		tier: "Toho",
 		doublesTier: "DToho",
-		natDexDoublesOverride: "UU",
 	},
 	lunasaprismriver: {
 		isNonstandard: "Custom",
 		tier: "Toho",
 		doublesTier: "DToho",
-		natDexDoublesOverride: "UU",
 	},
 	merlinprismriver: {
 		isNonstandard: "Custom",
 		tier: "Toho",
 		doublesTier: "DToho",
-		natDexDoublesOverride: "UU",
 	},
 	lyricaprismriver: {
 		isNonstandard: "Custom",
 		tier: "Toho",
 		doublesTier: "DToho",
-		natDexDoublesOverride: "UU",
 	},
 	youmukonpaku: {
 		isNonstandard: "Custom",
 		tier: "Toho",
 		doublesTier: "DToho",
-		natDexDoublesOverride: "UU",
 	},
 	yuyukosaigyouji: {
 		isNonstandard: "Custom",
 		tier: "Toho",
 		doublesTier: "DToho",
-		natDexDoublesOverride: "UU",
 	},
 	ranyakumo: {
 		isNonstandard: "Custom",
 		tier: "Toho",
 		doublesTier: "DToho",
-		natDexDoublesOverride: "UU",
 	},
 	yukariyakumo: {
 		isNonstandard: "Custom",
 		tier: "Toho",
 		doublesTier: "DToho",
-		natDexDoublesOverride: "UU",
 	},
 	suikaibuki: {
 		isNonstandard: "Custom",
 		tier: "Toho",
 		doublesTier: "DToho",
-		natDexDoublesOverride: "UU",
 	},
 	wrigglenightbug: {
 		isNonstandard: "Custom",
 		tier: "Toho",
 		doublesTier: "DToho",
-		natDexDoublesOverride: "UU",
 	},
 	mystialorelei: {
 		isNonstandard: "Custom",
 		tier: "Toho",
 		doublesTier: "DToho",
-		natDexDoublesOverride: "UU",
 	},
 	keine: {
 		isNonstandard: "Custom",
 		tier: "Toho",
 		doublesTier: "DToho",
-		natDexDoublesOverride: "UU",
 	},
 	tewiinaba: {
 		isNonstandard: "Custom",
 		tier: "Toho",
 		doublesTier: "DToho",
-		natDexDoublesOverride: "UU",
 	},
 	reiseninaba: {
 		isNonstandard: "Custom",
 		tier: "Toho",
 		doublesTier: "DToho",
-		natDexDoublesOverride: "UU",
 	},
 	eirinyagokoro: {
 		isNonstandard: "Custom",
 		tier: "Toho",
 		doublesTier: "DToho",
-		natDexDoublesOverride: "UU",
 	},
 	kaguyahouraisan: {
 		isNonstandard: "Custom",
 		tier: "Toho",
 		doublesTier: "DToho",
-		natDexDoublesOverride: "UU",
 	},
 	fujiwaranomokou: {
 		isNonstandard: "Custom",
 		tier: "Toho",
 		doublesTier: "DToho",
-		natDexDoublesOverride: "UU",
 	},
 	ayashameimaru: {
 		isNonstandard: "Custom",
 		tier: "Toho",
 		doublesTier: "DToho",
-		natDexDoublesOverride: "UU",
 	},
 	medicinemelancholy: {
 		isNonstandard: "Custom",
 		tier: "Toho",
 		doublesTier: "DToho",
-		natDexDoublesOverride: "UU",
 	},
 	yuukakazami: {
 		isNonstandard: "Custom",
 		tier: "Toho",
 		doublesTier: "DToho",
-		natDexDoublesOverride: "UU",
 	},
 	komachionozuka: {
 		isNonstandard: "Custom",
 		tier: "Toho",
 		doublesTier: "DToho",
-		natDexDoublesOverride: "UU",
 	},
 	eikishiki: {
 		isNonstandard: "Custom",
 		tier: "Toho",
 		doublesTier: "DToho",
-		natDexDoublesOverride: "UU",
 	},
 	shizuhaaki: {
 		isNonstandard: "Custom",
 		tier: "Toho",
 		doublesTier: "DToho",
-		natDexDoublesOverride: "UU",
 	},
 	minorikoaki: {
 		isNonstandard: "Custom",
 		tier: "Toho",
 		doublesTier: "DToho",
-		natDexDoublesOverride: "UU",
 	},
 	hinakagiyama: {
 		isNonstandard: "Custom",
 		tier: "Toho",
 		doublesTier: "DToho",
-		natDexDoublesOverride: "UU",
 	},
 	nitorikawashiro: {
 		isNonstandard: "Custom",
 		tier: "Toho",
 		doublesTier: "DToho",
-		natDexDoublesOverride: "UU",
 	},
 	momijiinubashiri: {
 		isNonstandard: "Custom",
 		tier: "Toho",
 		doublesTier: "DToho",
-		natDexDoublesOverride: "UU",
 	},
 	sanaekochiya: {
 		isNonstandard: "Custom",
 		tier: "Toho",
 		doublesTier: "DToho",
-		natDexDoublesOverride: "UU",
 	},
 	kanakoyasaka: {
 		isNonstandard: "Custom",
 		tier: "Toho",
 		doublesTier: "DToho",
-		natDexDoublesOverride: "UU",
 	},
 	suwakomoriya: {
 		isNonstandard: "Custom",
 		tier: "Toho",
 		doublesTier: "DToho",
-		natDexDoublesOverride: "UU",
 	},
 	ikunagae: {
 		isNonstandard: "Custom",
 		tier: "Toho",
 		doublesTier: "DToho",
-		natDexDoublesOverride: "UU",
 	},
 	tenshihinanawi: {
 		isNonstandard: "Custom",
 		tier: "Toho",
 		doublesTier: "DToho",
-		natDexDoublesOverride: "UU",
 	},
 	kisume: {
 		isNonstandard: "Custom",
 		tier: "Toho",
 		doublesTier: "DToho",
-		natDexDoublesOverride: "UU",
 	},
 	yamamekurodani: {
 		isNonstandard: "Custom",
 		tier: "Toho",
 		doublesTier: "DToho",
-		natDexDoublesOverride: "UU",
 	},
 	parseemizuhashi: {
 		isNonstandard: "Custom",
 		tier: "Toho",
 		doublesTier: "DToho",
-		natDexDoublesOverride: "UU",
 	},
 	yuugihoshiguma: {
 		isNonstandard: "Custom",
 		tier: "Toho",
 		doublesTier: "DToho",
-		natDexDoublesOverride: "UU",
 	},
 	satorikomeiji: {
 		isNonstandard: "Custom",
 		tier: "Toho",
 		doublesTier: "DToho",
-		natDexDoublesOverride: "UU",
 	},
 	rinkaenbyou: {
 		isNonstandard: "Custom",
 		tier: "Toho",
 		doublesTier: "DToho",
-		natDexDoublesOverride: "UU",
 	},
 	utsuhoreiuji: {
 		isNonstandard: "Custom",
 		tier: "Toho",
 		doublesTier: "DToho",
-		natDexDoublesOverride: "UU",
 	},
 	koishikomeiji: {
 		isNonstandard: "Custom",
 		tier: "Toho",
 		doublesTier: "DToho",
-		natDexDoublesOverride: "UU",
 	},
 	nazrin: {
 		isNonstandard: "Custom",
 		tier: "Toho",
 		doublesTier: "DToho",
-		natDexDoublesOverride: "UU",
 	},
 	kogasatatara: {
 		isNonstandard: "Custom",
 		tier: "Toho",
 		doublesTier: "DToho",
-		natDexDoublesOverride: "UU",
 	},
 	ichirinkumoi: {
 		isNonstandard: "Custom",
 		tier: "Toho",
 		doublesTier: "DToho",
-		natDexDoublesOverride: "UU",
 	},
 	ichirinunzan: {
 		isNonstandard: "Custom",
 		tier: "Toho",
 		doublesTier: "DToho",
-		natDexDoublesOverride: "UU",
 	},
 	minamitsumurasa: {
 		isNonstandard: "Custom",
 		tier: "Toho",
 		doublesTier: "DToho",
-		natDexDoublesOverride: "UU",
 	},
 	shoutoramaru: {
 		isNonstandard: "Custom",
 		tier: "Toho",
 		doublesTier: "DToho",
-		natDexDoublesOverride: "UU",
 	},
 	byakurenhijiri: {
 		isNonstandard: "Custom",
 		tier: "Toho",
 		doublesTier: "DToho",
-		natDexDoublesOverride: "UU",
 	},
 	nuehoujuu: {
 		isNonstandard: "Custom",
 		tier: "Toho",
 		doublesTier: "DToho",
-		natDexDoublesOverride: "UU",
 	},
 	hatatehimekaidou: {
 		isNonstandard: "Custom",
 		tier: "Toho",
 		doublesTier: "DToho",
-		natDexDoublesOverride: "UU",
 	},
 	sunnymilk: {
 		isNonstandard: "Custom",
 		tier: "Toho",
 		doublesTier: "DToho",
-		natDexDoublesOverride: "UU",
 	},
 	lunachild: {
 		isNonstandard: "Custom",
 		tier: "Toho",
 		doublesTier: "DToho",
-		natDexDoublesOverride: "UU",
 	},
 	starsapphire: {
 		isNonstandard: "Custom",
 		tier: "Toho",
 		doublesTier: "DToho",
-		natDexDoublesOverride: "UU",
 	},
 	kyoukokasodani: {
 		isNonstandard: "Custom",
 		tier: "Toho",
 		doublesTier: "DToho",
-		natDexDoublesOverride: "UU",
 	},
 	yoshikamiyako: {
 		isNonstandard: "Custom",
 		tier: "Toho",
 		doublesTier: "DToho",
-		natDexDoublesOverride: "UU",
 	},
 	seigakaku: {
 		isNonstandard: "Custom",
 		tier: "Toho",
 		doublesTier: "DToho",
-		natDexDoublesOverride: "UU",
 	},
 	soganotojiko: {
 		isNonstandard: "Custom",
 		tier: "Toho",
 		doublesTier: "DToho",
-		natDexDoublesOverride: "UU",
 	},
 	mononobenofuto: {
 		isNonstandard: "Custom",
 		tier: "Toho",
 		doublesTier: "DToho",
-		natDexDoublesOverride: "UU",
 	},
 	toyosatomiminomiko: {
 		isNonstandard: "Custom",
 		tier: "Toho",
 		doublesTier: "DToho",
-		natDexDoublesOverride: "UU",
 	},
 	mamizoufutatsuiwa: {
 		isNonstandard: "Custom",
 		tier: "Toho",
 		doublesTier: "DToho",
-		natDexDoublesOverride: "UU",
 	},
 	kasenibaraki: {
 		isNonstandard: "Custom",
 		tier: "Toho",
 		doublesTier: "DToho",
-		natDexDoublesOverride: "UU",
 	},
 	hatanokokoro: {
 		isNonstandard: "Custom",
 		tier: "Toho",
 		doublesTier: "DToho",
-		natDexDoublesOverride: "UU",
 	},
 	wakasagihime: {
 		isNonstandard: "Custom",
 		tier: "Toho",
 		doublesTier: "DToho",
-		natDexDoublesOverride: "UU",
 	},
 	sekibanki: {
 		isNonstandard: "Custom",
 		tier: "Toho",
 		doublesTier: "DToho",
-		natDexDoublesOverride: "UU",
 	},
 	kagerouimaizumi: {
 		isNonstandard: "Custom",
 		tier: "Toho",
 		doublesTier: "DToho",
-		natDexDoublesOverride: "UU",
 	},
 	benbentsukumo: {
 		isNonstandard: "Custom",
 		tier: "Toho",
 		doublesTier: "DToho",
-		natDexDoublesOverride: "UU",
 	},
 	yatsuhashitsukumo: {
 		isNonstandard: "Custom",
 		tier: "Toho",
 		doublesTier: "DToho",
-		natDexDoublesOverride: "UU",
 	},
 	seijakijin: {
 		isNonstandard: "Custom",
 		tier: "Toho",
 		doublesTier: "DToho",
-		natDexDoublesOverride: "UU",
 	},
 	shinmyoumarusukuna: {
 		isNonstandard: "Custom",
 		tier: "Toho",
 		doublesTier: "DToho",
-		natDexDoublesOverride: "UU",
 	},
 	raikohorikawa: {
 		isNonstandard: "Custom",
 		tier: "Toho",
 		doublesTier: "DToho",
-		natDexDoublesOverride: "UU",
 	},
 	sumirekousami: {
 		isNonstandard: "Custom",
 		tier: "Toho",
 		doublesTier: "DToho",
-		natDexDoublesOverride: "UU",
 	},
 	seiran: {
 		isNonstandard: "Custom",
 		tier: "Toho",
 		doublesTier: "DToho",
-		natDexDoublesOverride: "UU",
 	},
 	ringo: {
 		isNonstandard: "Custom",
 		tier: "Toho",
 		doublesTier: "DToho",
-		natDexDoublesOverride: "UU",
 	},
 	doremysweet: {
 		isNonstandard: "Custom",
 		tier: "Toho",
 		doublesTier: "DToho",
-		natDexDoublesOverride: "UU",
 	},
 	sagumekishin: {
 		isNonstandard: "Custom",
 		tier: "Toho",
 		doublesTier: "DToho",
-		natDexDoublesOverride: "UU",
 	},
 	clownpiece: {
 		isNonstandard: "Custom",
 		tier: "Toho",
 		doublesTier: "DToho",
-		natDexDoublesOverride: "UU",
 	},
 	junko: {
 		isNonstandard: "Custom",
 		tier: "Toho",
 		doublesTier: "DToho",
-		natDexDoublesOverride: "UU",
 	},
 	hecatiaotherworld: {
 		isNonstandard: "Custom",
 		tier: "Toho",
 		doublesTier: "DToho",
-		natDexDoublesOverride: "UU",
 	},
 	joonyorigami: {
 		isNonstandard: "Custom",
 		tier: "Toho",
 		doublesTier: "DToho",
-		natDexDoublesOverride: "UU",
 	},
 	shionyorigami: {
 		isNonstandard: "Custom",
 		tier: "Toho",
 		doublesTier: "DToho",
-		natDexDoublesOverride: "UU",
 	},
 	eternitylarva: {
 		isNonstandard: "Custom",
 		tier: "Toho",
 		doublesTier: "DToho",
-		natDexDoublesOverride: "UU",
 	},
 	nemunosakata: {
 		isNonstandard: "Custom",
 		tier: "Toho",
 		doublesTier: "DToho",
-		natDexDoublesOverride: "UU",
 	},
 	aunnkomano: {
 		isNonstandard: "Custom",
 		tier: "Toho",
 		doublesTier: "DToho",
-		natDexDoublesOverride: "UU",
 	},
 	narumiyatadera: {
 		isNonstandard: "Custom",
 		tier: "Toho",
 		doublesTier: "DToho",
-		natDexDoublesOverride: "UU",
 	},
 	maiteireida: {
 		isNonstandard: "Custom",
 		tier: "Toho",
 		doublesTier: "DToho",
-		natDexDoublesOverride: "UU",
 	},
 	satononishida: {
 		isNonstandard: "Custom",
 		tier: "Toho",
 		doublesTier: "DToho",
-		natDexDoublesOverride: "UU",
 	},
 	okinamatara: {
 		isNonstandard: "Custom",
 		tier: "Toho",
 		doublesTier: "DToho",
-		natDexDoublesOverride: "UU",
 	},
 	eikaebisu: {
 		isNonstandard: "Custom",
 		tier: "Toho",
 		doublesTier: "DToho",
-		natDexDoublesOverride: "UU",
 	},
 	urumiushizaki: {
 		isNonstandard: "Custom",
 		tier: "Toho",
 		doublesTier: "DToho",
-		natDexDoublesOverride: "UU",
 	},
 	kutakaniwatari: {
 		isNonstandard: "Custom",
 		tier: "Toho",
 		doublesTier: "DToho",
-		natDexDoublesOverride: "UU",
 	},
 	yachiekicchou: {
 		isNonstandard: "Custom",
 		tier: "Toho",
 		doublesTier: "DToho",
-		natDexDoublesOverride: "UU",
 	},
 	mayumijoutouguu: {
 		isNonstandard: "Custom",
 		tier: "Toho",
 		doublesTier: "DToho",
-		natDexDoublesOverride: "UU",
 	},
 	keikihaniyasushin: {
 		isNonstandard: "Custom",
 		tier: "Toho",
 		doublesTier: "DToho",
-		natDexDoublesOverride: "UU",
 	},
 	sakikurokuma: {
 		isNonstandard: "Custom",
 		tier: "Toho",
 		doublesTier: "DToho",
-		natDexDoublesOverride: "UU",
 	},
 	yuumatoutetsu: {
 		isNonstandard: "Custom",
 		tier: "Toho",
 		doublesTier: "DToho",
-		natDexDoublesOverride: "UU",
 	},
 	mikegotoukuji: {
 		isNonstandard: "Custom",
 		tier: "Toho",
 		doublesTier: "DToho",
-		natDexDoublesOverride: "UU",
 	},
 	takaneyamashiro: {
 		isNonstandard: "Custom",
 		tier: "Toho",
 		doublesTier: "DToho",
-		natDexDoublesOverride: "UU",
 	},
 	sannyokomakusa: {
 		isNonstandard: "Custom",
 		tier: "Toho",
 		doublesTier: "DToho",
-		natDexDoublesOverride: "UU",
 	},
 	misumarutamatsukuri: {
 		isNonstandard: "Custom",
 		tier: "Toho",
 		doublesTier: "DToho",
-		natDexDoublesOverride: "UU",
 	},
 	tsukasakudamaki: {
 		isNonstandard: "Custom",
 		tier: "Toho",
 		doublesTier: "DToho",
-		natDexDoublesOverride: "UU",
 	},
 	megumuiizunamaru: {
 		isNonstandard: "Custom",
 		tier: "Toho",
 		doublesTier: "DToho",
-		natDexDoublesOverride: "UU",
 	},
 	chimatatenkyuu: {
 		isNonstandard: "Custom",
 		tier: "Toho",
 		doublesTier: "DToho",
-		natDexDoublesOverride: "UU",
 	},
 	momoyohimemushi: {
 		isNonstandard: "Custom",
 		tier: "Toho",
 		doublesTier: "DToho",
-		natDexDoublesOverride: "UU",
 	},
 	sonbiten: {
 		isNonstandard: "Custom",
 		tier: "Toho",
 		doublesTier: "DToho",
-		natDexDoublesOverride: "UU",
 	},
 	enokomitsugashira: {
 		isNonstandard: "Custom",
 		tier: "Toho",
 		doublesTier: "DToho",
-		natDexDoublesOverride: "UU",
 	},
 	chiyaritenkajin: {
 		isNonstandard: "Custom",
 		tier: "Toho",
 		doublesTier: "DToho",
-		natDexDoublesOverride: "UU",
 	},
 	hisamiyomotsu: {
 		isNonstandard: "Custom",
 		tier: "Toho",
 		doublesTier: "DToho",
-		natDexDoublesOverride: "UU",
 	},
 	zanmunippaku: {
 		isNonstandard: "Custom",
 		tier: "Toho",
 		doublesTier: "DToho",
-		natDexDoublesOverride: "UU",
 	},
 	vivit: {
 		isNonstandard: "Custom",
 		tier: "Toho",
 		doublesTier: "DToho",
-		natDexDoublesOverride: "UU",
 	},
 	ubamechirizuka: {
 		isNonstandard: "Custom",
 		tier: "Toho",
 		doublesTier: "DToho",
-		natDexDoublesOverride: "UU",
 	},
 	chimihoujuu: {
 		isNonstandard: "Custom",
 		tier: "Toho",
 		doublesTier: "DToho",
-		natDexDoublesOverride: "UU",
 	},
 	narekomichigami: {
 		isNonstandard: "Custom",
 		tier: "Toho",
 		doublesTier: "DToho",
-		natDexDoublesOverride: "UU",
 	},
 	yuimanasama: {
 		isNonstandard: "Custom",
 		tier: "Toho",
 		doublesTier: "DToho",
-		natDexDoublesOverride: "UU",
 	},
 	watatsukinotoyohime: {
 		isNonstandard: "Custom",
 		tier: "Toho",
 		doublesTier: "DToho",
-		natDexDoublesOverride: "UU",
 	},
 	watatsukinoyorihime: {
 		isNonstandard: "Custom",
 		tier: "Toho",
 		doublesTier: "DToho",
-		natDexDoublesOverride: "UU",
 	},
 	ariyaiwanaga: {
 		isNonstandard: "Custom",
 		tier: "Toho",
 		doublesTier: "DToho",
-		natDexDoublesOverride: "UU",
 	},
 	ninawatari: {
 		isNonstandard: "Custom",
 		tier: "Toho",
 		doublesTier: "DToho",
-		natDexDoublesOverride: "UU",
 	},
 };

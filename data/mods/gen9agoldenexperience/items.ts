@@ -87,10 +87,6 @@ export const Items: {[itemid: string]: ModdedItemData} = {
 		inherit: true,
 		isNonstandard: null,
 	},
-	hisutyphlosionite: {
-		inherit: true,
-		isNonstandard: null,
-	},
 	noctowlite: {
 		inherit: true,
 		isNonstandard: null,
@@ -357,10 +353,6 @@ export const Items: {[itemid: string]: ModdedItemData} = {
 		isNonstandard: null,
 	},
 	garchompiumz: {
-		inherit: true,
-		isNonstandard: null,
-	},
-	hisudecidiumz: {
 		inherit: true,
 		isNonstandard: null,
 	},

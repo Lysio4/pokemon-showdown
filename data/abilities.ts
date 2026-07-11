@@ -6638,22 +6638,6 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 		num: -43,
 		isNonstandard: "Custom",
 	},
-	sonar: {
-		shortDesc: "Reveals a random move of each adjacent opponent when this Pokemon hits them with a Sound move.",
-		onSourceHit(target, source, move){
-			if (move.flags['sound']) {
-				for (const targ of source.side.foe.active) {
-					if (targ.fainted) return;
-					const temp = this.sample(targ.moveSlots);
-					this.add('-message', target.name + "'s Sonar revealed the move " + temp.move + "!");
-				}
-			}
-		},
-		name: "Sonar",
-		rating: 3,
-		num: -44,
-		isNonstandard: "Custom",
-	},
 	unstableshell: {
 		shortDesc: "If a pokemon makes contact to this pokemon, this Pokemon loses 25% max HP and returns doubles of lost HP.",
 		onDamagingHitOrder: 1,
@@ -6859,19 +6843,6 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 		},
 		rating: 3.5,
 		num: -53,
-		isNonstandard: "Custom",
-	},
-	reboundbelly: {
-		onDamagingHitOrder: 1,
-		onDamagingHit(damage, target, source, move) {
-			if (target !== source && move?.category === 'Special' && !move.flags['sound']) {
-				this.damage(source.baseMaxhp / 8, source, target);
-			}
-		},
-		name: "Rebound Belly",
-		shortDesc: "The opponent receives 1/8 recoil damage from special non-Sound moves.",
-		rating: 2.5,
-		num: -54,
 		isNonstandard: "Custom",
 	},
 	faithfulcompanion: {
@@ -7774,6 +7745,29 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 		name: "Muddy Land",
 		rating: 3.5,
 		num: -88,
+		isNonstandard: "Custom",
+	},
+	aerodynamism: {
+		num: -5,
+		name: "Aerodynamism",
+		desc: "This Pokemon's Wind moves do not miss. Wind move and Sandstorm immunity.",
+		onImmunity(type, pokemon) {
+			if (type === 'sandstorm') return false;
+		},
+		onTryHit(target, source, move) {
+			if (target !== source && move.flags['wind']) {
+				move.accuracy = true;
+				this.add('-immune', target, '[from] ability: Aerodynamism');
+				return null;
+			}
+		},
+		onSourceAccuracy(accuracy, target, source, move) {
+			if (move && move.flags['wind'] && (source === this.effectState.target || target === this.effectState.target)) {
+				return true;
+			}
+			return accuracy;
+		},
+		flags: {breakable: 1},
 		isNonstandard: "Custom",
 	},
 	// Touhou

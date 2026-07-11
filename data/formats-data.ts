@@ -6280,10 +6280,6 @@ export const FormatsData: import('../sim/dex-species').SpeciesFormatsDataTable =
 		isNonstandard: "Custom",
 		tier: "Illegal",
 	},
-	typhlosionhisuimega: {
-		isNonstandard: "Custom",
-		tier: "Illegal",
-	},
 	noctowlmega: {
 		isNonstandard: "Custom",
 		tier: "Illegal",
@@ -6440,7 +6436,15 @@ export const FormatsData: import('../sim/dex-species').SpeciesFormatsDataTable =
 		isNonstandard: "Custom",
 		tier: "Illegal",
 	},
-	lycanrocbloodmoon: {
+	lycanrocsunshine: {
+		isNonstandard: "Custom",
+		tier: "Illegal",
+	},
+	lycanrocmoonlight: {
+		isNonstandard: "Custom",
+		tier: "Illegal",
+	},
+	lycanrocnihil: {
 		isNonstandard: "Custom",
 		tier: "Illegal",
 	},

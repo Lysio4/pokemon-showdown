@@ -1066,10 +1066,6 @@ export const FormatsData: { [k: string]: SpeciesFormatsData; } = {
 		tier: "NU",
 		doublesTier: "DUU",
 	},
-	typhlosionhisuimega: {
-		tier: "RU",
-		doublesTier: "DUU",
-	},
 	totodile: {
 		tier: "LC",
 	},
@@ -3841,18 +3837,26 @@ export const FormatsData: { [k: string]: SpeciesFormatsData; } = {
 		tier: "LC",
 	},
 	lycanroc: {
-		tier: "UU",
+		tier: "NU",
 		doublesTier: "DUU",
 	},
 	lycanrocmidnight: {
 		tier: "NU",
 		doublesTier: "DUU",
 	},
-	lycanrocbloodmoon: {
+	lycanrocdusk: {
+		tier: "RU",
+		doublesTier: "DUU",
+	},
+	lycanrocsunshine: {
 		tier: "UU",
 		doublesTier: "DUU",
 	},
-	lycanrocdusk: {
+	lycanrocmoonlight: {
+		tier: "UU",
+		doublesTier: "DUU",
+	},
+	lycanrocnihil: {
 		tier: "UU",
 		doublesTier: "DUU",
 	},

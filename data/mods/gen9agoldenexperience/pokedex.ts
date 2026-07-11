@@ -14,9 +14,13 @@ export const Pokedex: {[k: string]: ModdedSpeciesData;} = {
 	},
 	butterfree: {
 		inherit: true,
-		abilities: {0: "Compound Eyes", H: "Magic Guard"},
+		abilities: { 0: "Compound Eyes", H: "Magic Guard" },
 		otherFormes: ["Butterfree-Gmax", "Butterfree-Mega"],
 		formeOrder: ["Butterfree", "Butterfree-Gmax", "Butterfree-Mega"],
+	},
+	pidgeotmega: {
+		inherit: true,
+		abilities: { 0: "Aerodynamism" },
 	},
 	raticate: {
 		inherit: true,
@@ -215,10 +219,6 @@ export const Pokedex: {[k: string]: ModdedSpeciesData;} = {
 		inherit: true,
 		baseStats: {hp: 80, atk: 80, def: 120, spa: 95, spd: 80, spe: 35},
 	},
-	chansey: {
-		inherit: true,
-		abilities: {0: "Natural Cure", 1: "Rebound Belly", H: "Healer"},
-	},
 	seaking: {
 		inherit: true,
 		evos: ["Seatsya"],
@@ -316,8 +316,12 @@ export const Pokedex: {[k: string]: ModdedSpeciesData;} = {
 	// Gen 2 :
 	typhlosion: {
 		inherit: true,
-		otherFormes: ["Typhlosion-Hisui", "Typhlosion-Mega", "Typhlosion-Hisui-Mega"],
-		formeOrder: ["Typhlosion", "Typhlosion-Hisui", "Typhlosion-Mega", "Typhlosion-Hisui-Mega"],
+		otherFormes: ["Typhlosion-Hisui", "Typhlosion-Mega"],
+		formeOrder: ["Typhlosion", "Typhlosion-Hisui", "Typhlosion-Mega"],
+	},
+	typhlosionhisui: {
+		inherit : true,
+		abilities: { 0: "Blaze", H: "Serene Grace" },
 	},
 	furret: {
 		inherit: true,
@@ -350,11 +354,11 @@ export const Pokedex: {[k: string]: ModdedSpeciesData;} = {
 	},
 	togepi: {
 		inherit: true,
-		abilities: {0: "Hustle", 1: "Happy-Go-Lucky", H: "Super Luck"},
+		abilities: { 0: "Happy-Go-Lucky", 1: "Serene Grace", H: "Super Luck" },
 	},
 	togetic: {
 		inherit: true,
-		abilities: {0: "Hustle", 1: "Happy-Go-Lucky", H: "Super Luck"},
+		abilities: { 0: "Happy-Go-Lucky", 1: "Serene Grace", H: "Super Luck" },
 	},
 	mareep: {
 		inherit: true,
@@ -508,10 +512,6 @@ export const Pokedex: {[k: string]: ModdedSpeciesData;} = {
 	miltank: {
 		inherit: true,
 		baseStats: {hp: 95, atk: 80, def: 105, spa: 40, spd: 90, spe: 100},
-	},
-	blissey: {
-		inherit: true,
-		abilities: { 0: "Natural Cure", 1: "Rebound Belly", H: "Healer" },
 	},
 	raikou: {
 		inherit: true,
@@ -1006,6 +1006,10 @@ export const Pokedex: {[k: string]: ModdedSpeciesData;} = {
 		inherit: true,
 		abilities: { 0: "Mega Launcher" },
 	},
+	hippowdon: {
+		inherit: true,
+		abilities: { 0: "Sand Stream", H: "Thick Fat" },
+	},
 	drapion: {
 		inherit: true,
 		baseStats: { hp: 70, atk: 105, def: 110, spa: 60, spd: 75, spe: 95 },
@@ -1044,15 +1048,15 @@ export const Pokedex: {[k: string]: ModdedSpeciesData;} = {
 	},
 	electivire: {
 		inherit: true,
-		abilities: {0: "Motor Drive", 1: "Electric Surge", H: "Vital Spirit"},
+		abilities: { 0: "Motor Drive", 1: "Electric Surge", H: "Vital Spirit" },
 	},
 	magmortar: {
 		inherit: true,
-		abilities: {0: "Flame Body", 1: "Neutralizing Gas", H: "Vital Spirit"},
+		abilities: { 0: "Flame Body", 1: "Neutralizing Gas", H: "Vital Spirit" },
 	},
 	togekiss: {
 		inherit: true,
-		abilities: {0: "Hustle", 1: "Happy-Go-Lucky", H: "Super Luck"},
+		abilities: { 0: "Happy-Go-Lucky", 1: "Serene Grace", H: "Super Luck" },
 	},
 	yanmega: {
 		inherit: true,
@@ -1376,7 +1380,8 @@ export const Pokedex: {[k: string]: ModdedSpeciesData;} = {
 	},
 	emolga: {
 		inherit: true,
-		baseStats: {hp: 65, atk: 65, def: 70, spa: 85, spd: 70, spe: 118},
+		baseStats: { hp: 65, atk: 65, def: 70, spa: 85, spd: 70, spe: 118 },
+		abilities: { 0: "Static", 1: "Aerodynamism", H: "Motor Drive" },
 	},
 	escavalier: {
 		inherit: true,
@@ -1503,6 +1508,18 @@ export const Pokedex: {[k: string]: ModdedSpeciesData;} = {
 	},
 
 	// Gen 6 :
+	fletchling: {
+		inherit: true,
+		abilities: { 0: "Big Pecks", 1: "Aerodynamism", H: "Gale Wings" },
+	},
+	fletchinder: {
+		inherit: true,
+		abilities: { 0: "Big Pecks", 1: "Aerodynamism", H: "Gale Wings" },
+	},
+	talonflame: {
+		inherit: true,
+		abilities: { 0: "Big Pecks", 1: "Aerodynamism", H: "Gale Wings" },
+	},
 	flabebe: {
 		inherit: true,
 		abilities: {0: "Flower Veil", 1: "Leaf Dress", H: "Symbiosis"},
@@ -1632,31 +1649,31 @@ export const Pokedex: {[k: string]: ModdedSpeciesData;} = {
 	},
 	avalugg: {
 		inherit: true,
-		abilities: {0: "Snow Warning", 1: "Ice Body", H: "Sturdy"},
+		abilities: { 0: "Snow Warning", 1: "Ice Body", H: "Sturdy" },
 	},
 	avalugghisui: {
 		inherit: true,
-		abilities: {0: "Mountaineer", 1: "Sheer Force", H: "Sturdy"},
+		abilities: { 0: "Mountaineer", 1: "Sheer Force", H: "Sturdy" },
 	},
 	noibat: {
 		inherit: true,
-		abilities: {0: "Frisk", 1: "Infiltrator", H: "Sonar"},
+		abilities: { 0: "Frisk", 1: "Infiltrator", H: "Aerodynamism" },
 		otherFormes: ["Noibat-Sinnoh"],
 		formeOrder: ["Noibat", "Noibat-Sinnoh"],
 	},
 	noivern: {
 		inherit: true,
-		abilities: {0: "Frisk", 1: "Infiltrator", H: "Sonar"},
+		abilities: { 0: "Frisk", 1: "Infiltrator", H: "Aerodynamism" },
 		otherFormes: ["Noivern-Sinnoh"],
 		formeOrder: ["Noivern", "Noivern-Sinnoh"],
 	},
 	hoopa: {
 		inherit: true,
-		abilities: {0: "Magician", H: "Prankster"},
+		abilities: { 0: "Magician", H: "Prankster" },
 	},
 	hoopaunbound: {
 		inherit: true,
-		abilities: {0: "Magician", H: "Mold Breaker"},
+		abilities: { 0: "Magician", H: "Mold Breaker" },
 	},
 
 	// Gen 7 :
@@ -1714,18 +1731,8 @@ export const Pokedex: {[k: string]: ModdedSpeciesData;} = {
 	},
 	lycanroc: {
 		inherit: true,
-		types: ["Rock", "Ground"],
-		otherFormes: ["Lycanroc-Midnight", "Lycanroc-Dusk", "Lycanroc-Bloodmoon"],
-		formeOrder: ["Lycanroc", "Lycanroc-Midnight", "Lycanroc-Dusk", "Lycanroc-Bloodmoon"],
-	},
-	lycanrocmidnight: {
-		inherit: true,
-		types: ["Rock", "Dark"],
-		abilities: { 0: "Keen Eye", 1: "Fur Coat", H: "No Guard" },
-	},
-	lycanrocdusk: {
-		inherit: true,
-		types: ["Rock", "Fighting"],
+		otherFormes: ["Lycanroc-Midnight", "Lycanroc-Dusk", "Lycanroc-Sunshine", "Lycanroc-Moonlight", "Lycanroc-Nihil"],
+		formeOrder: ["Lycanroc", "Lycanroc-Midnight", "Lycanroc-Dusk", "Lycanroc-Sunshine", "Lycanroc-Moonlight", "Lycanroc-Nihil"],
 	},
 	araquanid: {
 		inherit: true,
@@ -2269,25 +2276,29 @@ export const Pokedex: {[k: string]: ModdedSpeciesData;} = {
 		inherit: true,
 		abilities: { 0: "Thermal Exchange" },
 	},
+	gholdengo: {
+		inherit: true,
+		abilities: { 0: "Good as Gold", H: "Surge Surfer" },
+	},
 	wochien: {
 		inherit: true,
-		baseStats: {hp: 115, atk: 85, def: 100, spa: 95, spd: 135, spe: 40},
+		baseStats: { hp: 115, atk: 85, def: 100, spa: 95, spd: 135, spe: 40 },
 	},
 	roaringmoon: {
 		inherit: true,
-		abilities: {0: "Protosynthesis", H: "Aerilate"},
+		abilities: { 0: "Protosynthesis", H: "Aerilate" },
 	},
 	ironvaliant: {
 		inherit: true,
-		abilities: {0: "Quark Drive", H: "Trace"},
+		abilities: { 0: "Quark Drive", H: "Trace" },
 	},
 	walkingwake: {
 		inherit: true,
-		abilities: {0: "Protosynthesis", H: "Pressure"},
+		abilities: { 0: "Protosynthesis", H: "Pressure" },
 	},
 	ironleaves: {
 		inherit: true,
-		abilities: {0: "Quark Drive", H: "Justified"},
+		abilities: { 0: "Quark Drive", H: "Justified" },
 	},
 	okidogi: {
 		inherit: true,

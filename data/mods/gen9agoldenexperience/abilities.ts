@@ -267,10 +267,6 @@ export const Abilities: { [abilityid: string]: ModdedAbilityData; } = {
 		inherit: true,
 		isNonstandard: null,
 	},
-	reboundbelly: {
-		inherit: true,
-		isNonstandard: null,
-	},
 	faithfulcompanion: {
 		inherit: true,
 		isNonstandard: null,
@@ -404,6 +400,14 @@ export const Abilities: { [abilityid: string]: ModdedAbilityData; } = {
 		isNonstandard: null,
 	},
 	petrify: {
+		inherit: true,
+		isNonstandard: null,
+	},
+	muddyland: {
+		inherit: true,
+		isNonstandard: null,
+	},
+	aerodynamism: {
 		inherit: true,
 		isNonstandard: null,
 	},
@@ -866,18 +870,6 @@ export const Abilities: { [abilityid: string]: ModdedAbilityData; } = {
 		desc: "This Pokemon's offensive stat is multiplied by 1.5 while using an Fire-type attack. This Pokemon's moves and their effects ignore certain Abilities of other Pokemon. The Abilities that can be negated are Armor Tail, Aroma Veil, Aura Break, Battle Armor, Big Pecks, Bulletproof, Clear Body, Contrary, Damp, Dazzling, Disguise, Dry Skin, Earth Eater, Filter, Flash Fire, Flower Gift, Flower Veil, Fluffy, Friend Guard, Fur Coat, Good as Gold, Grass Pelt, Guard Dog, Heatproof, Heavy Metal, Hyper Cutter, Ice Face, Ice Scales, Illuminate, Immunity, Inner Focus, Insomnia, Keen Eye, Leaf Guard, Levitate, Light Metal, Lightning Rod, Limber, Magic Bounce, Magma Armor, Marvel Scale, Mind's Eye, Mirror Armor, Motor Drive, Multiscale, Oblivious, Overcoat, Own Tempo, Pastel Veil, Punk Rock, Purifying Salt, Queenly Majesty, Sand Veil, Sap Sipper, Shell Armor, Shield Dust, Simple, Snow Cloak, Solid Rock, Soundproof, Sticky Hold, Storm Drain, Sturdy, Suction Cups, Sweet Veil, Tangled Feet, Telepathy, Tera Shell, Thermal Exchange, Thick Fat, Unaware, Vital Spirit, Volt Absorb, Water Absorb, Water Bubble, Water Veil, Well-Baked Body, White Smoke, Wind Rider, Wonder Guard, and Wonder Skin. This affects every other Pokemon on the field, whether or not it is a target of this Pokemon's move, and whether or not their Ability is beneficial to this Pokemon.",
 		shortDesc: "This Pokemon's moves and their effects ignore the Abilities of other Pokemon. This Pokemon's offensive stat is multiplied by 1.5 while using an Fire-type attack.",
 	},
-	corrosion: {
-		inherit: true,
-		onModifyMovePriority: -5,
-		onModifyMove(move) {
-			if (!move.ignoreImmunity) move.ignoreImmunity = {};
-			if (move.ignoreImmunity !== true) {
-				move.ignoreImmunity['Poison'] = true;
-			}
-		},
-		rating: 3,
-		shortDesc: "This Pokemon can hit Steel types with Poison-type moves, and poison or badly poison a Pokemon regardless of its typing.",
-	},
 	truant: {
 		inherit: true,
 		onBeforeMove(pokemon, target, move) {
@@ -939,5 +931,33 @@ export const Abilities: { [abilityid: string]: ModdedAbilityData; } = {
 		},
 		desc: "Prevents opposing Grass-type, Ground-type and Rock-type Pokemon from choosing to switch out, unless they are holding a Shed Shell or are a Ghost type.",
 		shortDesc: "Prevents opposing Grass-type, Ground-type and Rock-type Pokemon from choosing to switch out.",
+	},
+	windpower: {
+		inherit: true,
+		onImmunity(type, pokemon) {
+			if (type === 'sandstorm') return false;
+		},
+		onSideConditionStart(side, source, sideCondition) {
+			const pokemon = this.effectState.target;
+			if (sideCondition.id === 'tailwind' || this.field.isWeather('sandstorm')) {
+				pokemon.addVolatile('charge');
+			}
+		},
+		desc: "This Pokemon gains the Charge effect when it takes a hit from a wind move or when Tailwind begins on this Pokemon's side.",
+		shortDesc: "This Pokemon gains the Charge effect when hit by a wind move or Tailwind begins.",
+	},
+	windrider: {
+		inherit: true,
+		onImmunity(type, pokemon) {
+			if (type === 'sandstorm') return false;
+		},
+		onSideConditionStart(side, source, sideCondition) {
+			const pokemon = this.effectState.target;
+			if (sideCondition.id === 'tailwind' || this.field.isWeather('sandstorm')) {
+				this.boost({ atk: 1 }, pokemon, pokemon);
+			}
+		},
+		desc: "This Pokemon is immune to wind moves and raises its Attack by 1 stage when hit by a wind move or when Tailwind begins on this Pokemon's side.",
+		shortDesc: "Attack raised by 1 if hit by a wind move or Tailwind begins. Wind move immunity.",
 	},
 };

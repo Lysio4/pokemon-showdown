@@ -21406,7 +21406,7 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 		name: "Magisterial Wind",
 		pp: 10,
 		priority: 0,
-		flags: { protect: 1, mirror: 1 },
+		flags: { protect: 1, mirror: 1, wind: 1 },
 		ignoreAbility: true,
 		tracksTarget: true,
 		onPrepareHit(target, source) {
@@ -21461,47 +21461,17 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 		type: "Poison",
 		isNonstandard: "Custom",
 	},
-	detectmagic: {
-		num: -7,
-		accuracy: 100,
-		basePower: 70,
-		category: "Special",
-		name: "Detect Magic",
-		desc: "This move is super effective on Dark type targets.",
-		shortDesc: "Super effective on Dark targets.",
-		pp: 20,
-		priority: 0,
-		flags: { protect: 1, mirror: 1 },
-		onEffectiveness(typeMod, target, type) {
-			if (type === 'Dark') return 1;
-		},
-		onModifyMove(move) {
-			if (!move.ignoreImmunity) move.ignoreImmunity = {};
-			if (move.ignoreImmunity !== true) {
-				move.ignoreImmunity['Psychic'] = true;
-			}
-		},
-		onPrepareHit(target, source) {
-			this.attrLastMove('[still]');
-			this.add('-anim', source, "Psychic", target);
-		},
-		target: "normal",
-		type: "Psychic",
-		contestType: "Beautiful",
-		isNonstandard: "Custom",
-	},
 	dispelmagic: {
 		num: -8,
 		accuracy: true,
 		basePower: 70,
 		category: "Special",
 		name: "Dispel Magic",
-		pp: 15,
+		pp: 20,
 		priority: 0,
 		flags: { protect: 1, mirror: 1 },
-		onHit(target) {
-			target.clearBoosts();
-			this.add('-clearboost', target);
+		onEffectiveness(typeMod, target, type) {
+			if (type === 'Fairy') return 1;
 		},
 		onPrepareHit(target, source) {
 			this.attrLastMove('[still]');
@@ -21509,7 +21479,8 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 		},
 		target: "normal",
 		type: "Psychic",
-		shortDesc: "The target is cleared from all its stat changes.",
+		desc: "This move's type effectiveness against Fairy is changed to be super effective no matter what this move's type is.",
+		shortDesc: "Super effective on Fairy.",
 		isNonstandard: "Custom",
 	},
 	photopower: {
@@ -22007,11 +21978,11 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 		basePower: 90,
 		category: "Special",
 		name: "Downdraft",
-		desc: "If the opponent is Flying type or has Levitate, the opponent's Speed is lowered by one stage.",
-		shortDesc: "-1 Speed if the target has Levitate or is Flying type.",
+		desc: "If the target isn't grounded, its Speed is lowered by one stage.",
+		shortDesc: "-1 Speed if the target isn't grounded.",
 		pp: 15,
 		priority: 0,
-		flags: { protect: 1, mirror: 1 },
+		flags: { protect: 1, mirror: 1, wind: 1 },
 		onAfterHit(this, target, source, move) {
 			if (!(target.isGrounded())) {
 				this.boost({ spe: -1 }, target, target, null, true);
@@ -22193,21 +22164,15 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 		priority: 0,
 		flags: { contact: 1, protect: 1, mirror: 1 },
 		self: {
-			onHit(pokemon, source, move) {
-				this.add('-activate', source, 'move: Aromatherapy');
-				for (const ally of source.side.pokemon) {
-					if (ally !== source && (ally.volatiles['substitute'] && !move.infiltrates)) {
-						continue;
-					}
-					ally.cureStatus();
-				}
+			onHit(pokemon) {
+				pokemon.cureStatus();
 			},
 		},
 		onPrepareHit(target, source) {
 			this.attrLastMove('[still]');
 			this.add('-anim', source, "Dazzling Gleam", target);
 		},
-		shortDesc: "Heals the user's party's status conditions. Uses SpD instead of SpA.",
+		shortDesc: "Heals the user's status conditions. Uses SpD instead of SpA.",
 		overrideOffensiveStat: 'spd',
 		target: "normal",
 		type: "Fairy",
@@ -22708,7 +22673,7 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 	hardwareheat: {
 		num: -50,
 		accuracy: 100,
-		basePower: 90,
+		basePower: 100,
 		category: "Special",
 		name: "Hardware Heat",
 		shortDesc: "Lowers the user's Speed by one stage.",
@@ -22850,26 +22815,20 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 		basePower: 25,
 		category: "Special",
 		name: "Magic Missile",
-		shortDesc: "Hits 2-5 times in one turn. Does not check accuracy, bypasses immunities, and always hits for at least neutral damages.",
-		desc: "Hits two to five times. This move does not check accuracy, bypasses immunities, and always hits for at least neutral damages.",
+		shortDesc: "Hits 2-5 times in one turn. Does not check accuracy, ignores abilities, can't be redirected, and bypasses Screens.",
+		desc: "Hits two to five times. This move does not check accuracy, ignores abilities, can't be redirected, and bypasses Screens.",
 		pp: 20,
 		priority: 0,
-		flags: { protect: 1, mirror: 1 },
+		flags: { protect: 1, mirror: 1, infiltrates: 1 },
 		multihit: [2, 5],
-		ignoreImmunity: true,
+		ignoreAbility: true,
+		tracksTarget: true,
 		onPrepareHit(target, source) {
 			this.attrLastMove('[still]');
 			this.add('-anim', source, "Swift", target);
 		},
-		basePowerCallback(pokemon, target, move) {
-			if (target.getMoveHitData(move).typeMod < 0) {
-				this.debug('Magic Missile damage boost');
-				return move.basePower * 2;
-			}
-			return move.basePower;
-		},
 		target: "normal",
-		type: "Normal",
+		type: "Psychic",
 		zMove: { basePower: 140 },
 		maxMove: { basePower: 130 },
 		contestType: "Smart",
@@ -23241,27 +23200,6 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 		shortDesc: "Hits once in this turn, then hits again in the next turn. Ignores protection.",
 		isNonstandard: "Custom",
 	},
-	wyvernflight: {
-		num: -67,
-		accuracy: 100,
-		basePower: 70,
-		category: "Special",
-		name: "Wyvern Flight",
-		pp: 20,
-		priority: 0,
-		flags: {protect: 1, mirror: 1, sound: 1, bypasssub: 1, metronome: 1},
-		selfSwitch: true,
-		onPrepareHit(target, source) {
-			this.attrLastMove('[still]');
-			this.add('-anim', source, "Boomburst", target);
-		},
-		target: "normal",
-		type: "Dragon",
-		contestType: "Cool",
-		desc: "If this move is successful and the user has not fainted, the user switches out even if it is trapped and is replaced immediately by a selected party member. The user does not switch out if there are no unfainted party members, or if the target switched out using an Eject Button or through the effect of the Emergency Exit or Wimp Out Abilities.",
-		shortDesc: "User switches out after damaging the target.",
-		isNonstandard: "Custom",
-	},
 	bigbang: {
 		num: -68,
 		accuracy: 100,
@@ -23572,32 +23510,6 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 		shortDesc: "100% chance to lower the target's SpA by 1.",
 		isNonstandard: "Custom",
 	},
-	fullmoonstrike: {
-		num: -81,
-		accuracy: 100,
-		basePower: 120,
-		category: "Physical",
-		name: "Full Moon Strike",
-		pp: 5,
-		priority: 0,
-		flags: { contact: 1, protect: 1, mirror: 1, metronome: 1 },
-		self: {
-			boosts: {
-				def: -1,
-				spd: -1,
-			},
-		},
-		onPrepareHit(target, source) {
-			this.attrLastMove('[still]');
-			this.add('-anim', source, "Head Smash", target);
-		},
-		target: "normal",
-		type: "Rock",
-		contestType: "Tough",
-		desc: "Lowers the user's Defense and Special Defense by 1 stage.",
-		shortDesc: "Lowers the user's Defense and Sp. Def by 1.",
-		isNonstandard: "Custom",
-	},
 	seasonpass: {
 		num: -82,
 		accuracy: 100,
@@ -23719,7 +23631,7 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 			this.add('-anim', source, "G-Max Stonesurge", target);
 		},
 		target: "adjacentFoe",
-		type: "Water",
+		type: "Rock",
 		contestType: "Cool",
 		isNonstandard: "Custom",
 		desc: "If this move is successful, it sets up a hazard on the opposing side of the field, damaging each opposing Pokemon that switches in. Foes lose 1/32, 1/16, 1/8, 1/4, or 1/2 of their maximum HP, rounded down, based on their weakness to the Rock type; 0.25x, 0.5x, neutral, 2x, or 4x, respectively. Can be removed from the opposing side if any Pokemon uses Tidy Up, or if any opposing Pokemon uses Mortal Spin, Rapid Spin, or Defog successfully, or is hit by Defog.",
@@ -23788,27 +23700,6 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 		type: "Dragon",
 		contestType: "Tough",
 		shortDesc: "No additional effect.",
-		isNonstandard: "Custom",
-	},
-	furiousarrowraid: {
-		num: -90,
-		accuracy: true,
-		basePower: 180,
-		category: "Physical",
-		name: "Furious Arrow Raid",
-		pp: 1,
-		priority: 0,
-		flags: {},
-		isZ: "hisudecidiumz",
-		volatileStatus: 'focusenergy',
-		onPrepareHit(target, source) {
-			this.attrLastMove('[still]');
-			this.add('-anim', source, "Triple Arrows", target);
-		},
-		target: "normal",
-		type: "Fighting",
-		contestType: "Cool",
-		shortDesc: "Raises the user's critical hit ratio by 2.",
 		isNonstandard: "Custom",
 	},
 	maxspikybarrage: {
@@ -23972,6 +23863,68 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 		contestType: "Beautiful",
 		desc: "Lowers the user's Special Attack by 2 stages.",
 		shortDesc: "Lowers the user's Sp. Atk by 2. Hits foe(s).",
+		isNonstandard: "Custom",
+	},
+	mistystep: {
+		num: 881,
+		accuracy: true,
+		basePower: 0,
+		category: "Status",
+		name: "Misty Step",
+		pp: 10,
+		priority: 0,
+		flags: {},
+		priorityChargeCallback(source) {
+			source.addVolatile('mistystep');
+		},
+		terrain: 'mistyterrain',
+		selfSwitch: true,
+		condition: {
+			duration: 1,
+			onBeforeMovePriority: 100,
+			onBeforeMove(source, target, move) {
+				if (move.id !== 'mistystep') return;
+				this.add('-prepare', source, 'Misty Step', '[premajor]');
+			},
+		},
+		onPrepareHit(target, source, move) {
+			this.attrLastMove('[still]');
+			this.add('-anim', source, "Misty Explosion", target);
+		},
+		target: "all",
+		type: "Fairy",
+		desc: "For 5 turns, the terrain becomes Misty Terrain. The user switches out even if it is trapped and is replaced immediately by a selected party member. The user does not switch out if there are no unfainted party members.",
+		shortDesc: "Starts Misty Terrain. User switches out.",
+		isNonstandard: "Custom",
+	},
+	prevailingwind: {
+		num: -5,
+		accuracy: 100,
+		basePower: 65,
+		category: "Special",
+		name: "Prevailing Wind",
+		pp: 10,
+		priority: 3,
+		flags: {protect: 1, mirror: 1, metronome: 1, wind: 1},
+		onPrepareHit(target, source, move) {
+			this.attrLastMove('[still]');
+			this.add('-anim', source, "Tailwind", target);
+			this.add('-anim', target, "Aeroblast", target);
+		},
+		onTry(source, target) {
+			const action = this.queue.willMove(target);
+			const move = action?.choice === 'move' ? action.move : null;
+			if (!move || !move.flags['wind']) {
+				return false;
+			}
+		},
+		secondary: {
+			chance: 100,
+			volatileStatus: 'flinch',
+		},
+		target: "normal",
+		type: "Flying",
+		shortDesc: "100% flinch. Fails unless target using a wind move.",
 		isNonstandard: "Custom",
 	},
 	// Touhou

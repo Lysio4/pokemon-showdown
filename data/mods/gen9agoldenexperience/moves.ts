@@ -29,10 +29,6 @@ export const Moves: { [k: string]: ModdedMoveData; } = {
 		inherit: true,
 		isNonstandard: null,
 	},
-	detectmagic: {
-		inherit: true,
-		isNonstandard: null,
-	},
 	dispelmagic: {
 		inherit: true,
 		isNonstandard: null,
@@ -380,10 +376,6 @@ export const Moves: { [k: string]: ModdedMoveData; } = {
 		inherit: true,
 		isNonstandard: null,
 	},
-	wyvernflight: {
-		inherit: true,
-		isNonstandard: null,
-	},
 	bigbang: {
 		inherit: true,
 		isNonstandard: null,
@@ -436,10 +428,6 @@ export const Moves: { [k: string]: ModdedMoveData; } = {
 		inherit: true,
 		isNonstandard: null,
 	},
-	fullmoonstrike: {
-		inherit: true,
-		isNonstandard: null,
-	},
 	seasonpass: {
 		inherit: true,
 		isNonstandard: null,
@@ -472,10 +460,6 @@ export const Moves: { [k: string]: ModdedMoveData; } = {
 		inherit: true,
 		isNonstandard: null,
 	},
-	furiousarrowraid: {
-		inherit: true,
-		isNonstandard: null,
-	},
 	maxspikybarrage: {
 		inherit: true,
 		isNonstandard: null,
@@ -501,6 +485,14 @@ export const Moves: { [k: string]: ModdedMoveData; } = {
 		isNonstandard: null,
 	},
 	casinoroyal: {
+		inherit: true,
+		isNonstandard: null,
+	},
+	mistystep: {
+		inherit: true,
+		isNonstandard: null,
+	},
+	prevailingwind: {
 		inherit: true,
 		isNonstandard: null,
 	},
@@ -770,13 +762,6 @@ export const Moves: { [k: string]: ModdedMoveData; } = {
 
 		prepare: "[POKEMON] accumulated snow!",
 	},
-	mistyexplosion: {
-		inherit: true,
-		basePower: 150,
-		desc: "Sets Misty Terrain. User faints after use.",
-		shortDesc: "Sets Misty Terrain. User faints after use.",
-		terrain: 'mistyterrain',
-	},
 	guillotine: {
 		inherit: true,
 		accuracy: 100,
@@ -942,12 +927,6 @@ export const Moves: { [k: string]: ModdedMoveData; } = {
 		},
 		desc: "Has a 100% chance to raise the user's Special Attack by 1 stage.",
 		shortDesc: "100% chance to raise the user's Sp. Atk by 1.",
-	},
-	meteorassault: {
-		inherit: true,
-		flags: {cantusetwice: 1, slicing: 1, protect: 1, mirror: 1, failinstruct: 1},
-		self: null,
-		shortDesc: "Cannot be selected the turn after it's used.",
 	},
 	psyblade: {
 		inherit: true,

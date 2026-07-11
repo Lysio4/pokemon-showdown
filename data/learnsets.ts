@@ -100816,7 +100816,6 @@ export const Learnsets: import('../sim/dex-species').LearnsetDataTable = {
 	lycanrocnihil: {
 		learnset: {
 			accelerock: ["9L1"],
-			bodyslam: ["9M"],
 			bite: ["9L20"],
 			bodyslam: ["9M"],
 			brickbreak: ["9M"],

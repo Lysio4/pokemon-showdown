@@ -21753,7 +21753,7 @@ export const Pokedex: import('../sim/dex-species').SpeciesDataTable = {
 		baseSpecies: "Lycanroc",
 		forme: "Sunshine",
 		types: ["Rock", "Steel"],
-		baseStats: { hp: 65, atk: 125, def: 70, spa: 65, spd: 70, spe: 122 },
+		baseStats: { hp: 95, atk: 125, def: 70, spa: 65, spd: 70, spe: 122 },
 		abilities: { 0: "Sand Rush", H: "Full Metal Body" },
 		heightm: 2.1,
 		weightkg: 75,

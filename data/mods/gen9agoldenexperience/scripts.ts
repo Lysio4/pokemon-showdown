@@ -353,6 +353,7 @@ export const Scripts: ModdedBattleScriptsData = {
     this.modData('Learnsets', 'kleavor').learnset.prevailingwind = ['9L1'];
     this.modData('Learnsets', 'quaquaval').learnset.prevailingwind = ['9L1'];
     this.modData('Learnsets', 'kilowattrel').learnset.prevailingwind = ['9L1'];
+    this.modData('Learnsets', 'espathra').learnset.prevailingwind = ['9L1'];
     this.modData('Learnsets', 'ironjugulis').learnset.prevailingwind = ['9L1'];
 
     // hardwareheat 

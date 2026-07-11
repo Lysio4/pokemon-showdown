@@ -534,10 +534,6 @@ export const Pokedex: {[k: string]: ModdedSpeciesData;} = {
 		inherit: true,
 		abilities: { 0: "Regenerator" },
 	},
-	blazikenmega: {
-		inherit: true,
-		abilities: { 0: "Contrary" },
-	},
 	beautifly: {
 		inherit: true,
 		baseStats: {hp: 60, atk: 70, def: 50, spa: 110, spd: 50, spe: 85},
@@ -1447,28 +1443,28 @@ export const Pokedex: {[k: string]: ModdedSpeciesData;} = {
 	},
 	mienfoo: {
 		inherit: true,
-		abilities: {0: "Striker", 1: "Regenerator", H: "Chakra Surge"},
+		abilities: { 0: "Inner Focus", 1: "Regenerator", H: "Chakra Surge" },
 	},
 	mienshao: {
 		inherit: true,
-		abilities: {0: "Striker", 1: "Regenerator", H: "Chakra Surge"},
+		abilities: { 0: "Inner Focus", 1: "Regenerator", H: "Chakra Surge" },
 	},
 	bouffalant: {
 		inherit: true,
-		abilities: {0: "Reckless", 1: "Sap Sipper", H: "Fluffy"},
+		abilities: { 0: "Reckless", 1: "Sap Sipper", H: "Fluffy" },
 	},
 	braviary: {
 		inherit: true,
-		abilities: {0: "Hustle", 1: "Sheer Force", H: "Defiant"},
+		abilities: { 0: "Hustle", 1: "Sheer Force", H: "Defiant" },
 	},
 	braviaryhisui: {
 		inherit: true,
-		baseStats: {hp: 110, atk: 63, def: 70, spa: 112, spd: 70, spe: 85},
+		baseStats: { hp: 110, atk: 63, def: 70, spa: 112, spd: 70, spe: 85 },
 	},
 	heatmor: {
 		inherit: true,
-		baseStats: {hp: 85, atk: 105, def: 66, spa: 100, spd: 66, spe: 65},
-		abilities: {0: "Whiplash", 1: "Flash Fire", H: "Insectivorous"},
+		baseStats: { hp: 85, atk: 105, def: 66, spa: 100, spd: 66, spe: 65 },
+		abilities: { 0: "Whiplash", 1: "Flash Fire", H: "Insectivorous" },
 	},
 	durant: {
 		inherit: true,

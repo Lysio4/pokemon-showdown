@@ -3638,7 +3638,7 @@ export const Items: import('../sim/dex-items').ItemDataTable = {
 		onTakeItem: false,
 		zMove: "Splintered Stormshards",
 		zMoveFrom: "Stone Edge",
-		itemUser: ["Lycanroc", "Lycanroc-Midnight", "Lycanroc-Dusk", "Lycanroc-Bloodmoon"],
+		itemUser: ["Lycanroc", "Lycanroc-Midnight", "Lycanroc-Dusk", "Lycanroc-Sunshine", "Lycanroc-Moonlight", "Lycanroc-Nihil"],
 		num: 925,
 		gen: 7,
 		isNonstandard: "Past",

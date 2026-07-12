@@ -293,10 +293,10 @@ export const Scripts: ModdedBattleScriptsData = {
     this.modData('Learnsets', 'hatterene').learnset.magicmissile = ['9L1'];
 
     // mistystep 
-    this.modData('Learnsets', 'mrmime').learnset.magicmissile = ['9L1'];
-    this.modData('Learnsets', 'musharna').learnset.magicmissile = ['9L1'];
-    this.modData('Learnsets', 'florges').learnset.magicmissile = ['9L1'];
-    this.modData('Learnsets', 'hatterene').learnset.magicmissile = ['9L1'];
+    this.modData('Learnsets', 'mrmime').learnset.mistystep = ['9L1'];
+    this.modData('Learnsets', 'musharna').learnset.mistystep = ['9L1'];
+    this.modData('Learnsets', 'florges').learnset.mistystep = ['9L1'];
+    this.modData('Learnsets', 'hatterene').learnset.mistystep = ['9L1'];
 
     // prevailingwind 
     this.modData('Learnsets', 'pidgeot').learnset.chillblain = ['9L1'];

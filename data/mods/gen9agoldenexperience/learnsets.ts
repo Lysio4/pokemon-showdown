@@ -14988,7 +14988,6 @@ export const Learnsets: import('../../../sim/dex-species').ModdedLearnsetDataTab
 	},
 	landorus: {
 		learnset: {
-			acrobatics: ["9M"],
 			block: ["9L10"],
 			bodyslam: ["9M"],
 			brickbreak: ["9M"],
@@ -21670,7 +21669,6 @@ export const Learnsets: import('../../../sim/dex-species').ModdedLearnsetDataTab
 			torment: ["9L5"],
 			twister: ["9L15"],
 			uproar: ["9M", "9L50"],
-			uturn: ["9M"],
 			weatherball: ["9M"],
 			zenheadbutt: ["9M"],
 		},

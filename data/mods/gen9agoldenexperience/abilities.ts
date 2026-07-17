@@ -942,8 +942,8 @@ export const Abilities: { [abilityid: string]: ModdedAbilityData; } = {
 				pokemon.addVolatile('charge');
 			}
 		},
-		desc: "This Pokemon gains the Charge effect when it takes a hit from a wind move or when Tailwind begins on this Pokemon's side.",
-		shortDesc: "This Pokemon gains the Charge effect when hit by a wind move or Tailwind begins.",
+		desc: "This Pokemon gains the Charge effect when it takes a hit from a wind move or when Tailwind or Sandstorm begins on this Pokemon's side. Sandstorm immunity.",
+		shortDesc: "This Pokemon gains the Charge effect when hit by a wind move, Tailwind or Sandstorm begins. Sandstorm immunity.",
 	},
 	windrider: {
 		inherit: true,
@@ -956,7 +956,7 @@ export const Abilities: { [abilityid: string]: ModdedAbilityData; } = {
 				this.boost({ atk: 1 }, pokemon, pokemon);
 			}
 		},
-		desc: "This Pokemon is immune to wind moves and raises its Attack by 1 stage when hit by a wind move or when Tailwind begins on this Pokemon's side.",
-		shortDesc: "Attack raised by 1 if hit by a wind move or Tailwind begins. Wind move immunity.",
+		desc: "This Pokemon is immune to wind moves and raises its Attack by 1 stage when hit by a wind move or when Tailwind or Sandstorm begins on this Pokemon's side.",
+		shortDesc: "Attack raised by 1 if hit by a wind move or Tailwind or Sandstorm begins. Wind move and Sandstorm immunity.",
 	},
 };

@@ -1468,39 +1468,39 @@ export const Pokedex: {[k: string]: ModdedSpeciesData;} = {
 	},
 	durant: {
 		inherit: true,
-		baseStats: {hp: 58, atk: 109, def: 112, spa: 48, spd: 48, spe: 112},
+		baseStats: { hp: 58, atk: 109, def: 112, spa: 48, spd: 48, spe: 112 },
 	},
 	deino: {
 		inherit: true,
-		abilities: {0: "Hustle", H: "Unconcerned"},
+		abilities: { 0: "Hustle", H: "Unconcerned"},
 	},
 	zweilous: {
 		inherit: true,
-		abilities: {0: "Hustle", H: "Unconcerned"},
+		abilities: { 0: "Hustle", H: "Unconcerned"},
 	},
 	hydreigon: {
 		inherit: true,
-		abilities: {0: "Levitate", H: "Unconcerned"},
+		abilities: { 0: "Levitate", H: "Unconcerned"},
 	},
 	cobalion: {
 		inherit: true,
-		abilities: {0: "Justified", H: "Sharpness"},
+		abilities: { 0: "Justified", 1: "Sharpness", H: "Intimidate" },
 	},
 	terrakion: {
 		inherit: true,
-		abilities: {0: "Justified", H: "Sharpness"},
+		abilities: { 0: "Justified", 1: "Sharpness", H: "Guts" },
 	},
 	virizion: {
 		inherit: true,
-		abilities: {0: "Justified", H: "Sharpness"},
+		abilities: { 0: "Justified", 1: "Sharpness", H: "Flower Veil" },
 	},
 	keldeo: {
 		inherit: true,
-		abilities: {0: "Justified", H: "Sharpness"},
+		abilities: { 0: "Justified", 1: "Sharpness", H: "Water Veil" },
 	},
 	keldeoresolute: {
 		inherit: true,
-		abilities: {0: "Justified", H: "Sharpness"},
+		abilities: { 0: "Justified", 1: "Sharpness", H: "Water Veil" },
 	},
 
 	// Gen 6 :
@@ -1510,27 +1510,27 @@ export const Pokedex: {[k: string]: ModdedSpeciesData;} = {
 	},
 	fletchinder: {
 		inherit: true,
-		abilities: { 0: "Big Pecks", 1: "Aerodynamism", H: "Gale Wings" },
+		abilities: { 0: "Flame Body", 1: "Aerodynamism", H: "Gale Wings" },
 	},
 	talonflame: {
 		inherit: true,
-		abilities: { 0: "Big Pecks", 1: "Aerodynamism", H: "Gale Wings" },
+		abilities: { 0: "Flame Body", 1: "Aerodynamism", H: "Gale Wings" },
 	},
 	flabebe: {
 		inherit: true,
-		abilities: {0: "Flower Veil", 1: "Leaf Dress", H: "Symbiosis"},
+		abilities: { 0: "Flower Veil", 1: "Leaf Dress", H: "Symbiosis" },
 	},
 	floette: {
 		inherit: true,
-		abilities: {0: "Flower Veil", 1: "Leaf Dress", H: "Symbiosis"},
+		abilities: { 0: "Flower Veil", 1: "Leaf Dress", H: "Symbiosis" },
 	},
 	floetteeternal: {
 		inherit: true,
-		abilities: {0: "Flower Veil", 1: "Leaf Dress", H: "Symbiosis"},
+		abilities: { 0: "Flower Veil", 1: "Leaf Dress", H: "Symbiosis" },
 	},
 	florges: {
 		inherit: true,
-		abilities: {0: "Flower Veil", 1: "Leaf Dress", H: "Symbiosis"},
+		abilities: { 0: "Flower Veil", 1: "Leaf Dress", H: "Symbiosis" },
 	},
 	skiddo: {
 		inherit: true,

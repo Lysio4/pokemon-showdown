@@ -6400,6 +6400,10 @@ export const FormatsData: import('../sim/dex-species').SpeciesFormatsDataTable =
 		isNonstandard: "Custom",
 		tier: "Illegal",
 	},
+	mienshaomega: {
+		isNonstandard: "Custom",
+		tier: "Illegal",
+	},
 	clawitzermega: {
 		isNonstandard: "Custom",
 		tier: "Illegal",

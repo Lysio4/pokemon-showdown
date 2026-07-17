@@ -1582,7 +1582,7 @@ export const FormatsData: { [k: string]: SpeciesFormatsData; } = {
 	},
 	slaking: {
 		tier: "NUBL",
-		doublesTier: "DUU",
+		doublesTier: "DOU",
 	},
 	nincada: {
 		tier: "LC",
@@ -2019,7 +2019,7 @@ export const FormatsData: { [k: string]: SpeciesFormatsData; } = {
 	},
 	metagrossmega: {
 		tier: "Uber",
-		doublesTier: "DUber",
+		doublesTier: "DOU",
 	},
 	regirock: {
 		tier: "NU",
@@ -3104,6 +3104,10 @@ export const FormatsData: { [k: string]: SpeciesFormatsData; } = {
 	mienshao: {
 		tier: "UU",
 		doublesTier: "DUU",
+	},
+	mienshaomega: {
+		tier: "UU",
+		doublesTier: "DOU",
 	},
 	druddigon: {
 		tier: "NFE",
@@ -4570,7 +4574,7 @@ export const FormatsData: { [k: string]: SpeciesFormatsData; } = {
 		tier: "NFE",
 	},
 	dragapult: {
-		tier: "Uber",
+		tier: "OU",
 		doublesTier: "DUU",
 	},
 	zacian: {
@@ -4789,7 +4793,7 @@ export const FormatsData: { [k: string]: SpeciesFormatsData; } = {
 	},
 	dondozo: {
 		tier: "UUBL",
-		doublesTier: "DUU",
+		doublesTier: "DOU",
 	},
 	veluza: {
 		tier: "NU",
@@ -4871,19 +4875,19 @@ export const FormatsData: { [k: string]: SpeciesFormatsData; } = {
 	},
 	tatsugiri: {
 		tier: "NU",
-		doublesTier: "DUU",
+		doublesTier: "DOU",
 	},
 	tatsugiricurlymega: {
 		tier: "RU",
-		doublesTier: "DUU",
+		doublesTier: "DOU",
 	},
 	tatsugiridroopymega: {
 		tier: "RU",
-		doublesTier: "DUU",
+		doublesTier: "DOU",
 	},
 	tatsugiristretchymega: {
 		tier: "RU",
-		doublesTier: "DUU",
+		doublesTier: "DOU",
 	},
 	cyclizar: {
 		tier: "RU",
@@ -5081,7 +5085,7 @@ export const FormatsData: { [k: string]: SpeciesFormatsData; } = {
 	},
 	tinkatonmega: {
 		tier: "OU",
-		doublesTier: "DUU",
+		doublesTier: "DOU",
 	},
 	charcadet: {
 		tier: "LC",

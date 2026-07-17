@@ -147,6 +147,10 @@ export const Items: {[itemid: string]: ModdedItemData} = {
 		inherit: true,
 		isNonstandard: null,
 	},
+	mienshanite: {
+		inherit: true,
+		isNonstandard: null,
+	},
 	clawitzerite: {
 		inherit: true,
 		isNonstandard: null,

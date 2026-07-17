@@ -22892,133 +22892,8 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 		contestType: "Beautiful",
 		isNonstandard: "Custom",
 	},
-	athosrapier: {
-		num: -57,
-		accuracy: true,
-		basePower: 0,
-		category: "Status",
-		name: "Athos Rapier",
-		pp: 5,
-		priority: 4,
-		flags: {noassist: 1, failcopycat: 1, failinstruct: 1},
-		stallingMove: true,
-		volatileStatus: 'athosrapier',
-		onPrepareHit(target, source) {
-			this.attrLastMove('[still]');
-			this.add('-anim', source, "Smart Strike", source);
-			return !!this.queue.willAct() && this.runEvent('StallMove', pokemon);
-		},
-		onHit(pokemon) {
-			pokemon.addVolatile('stall');
-		},
-		condition: {
-			duration: 1,
-			onStart(target) {
-				this.add('-singleturn', target, 'Protect');
-			},
-			onTryHitPriority: 3,
-			onTryHit(target, source, move) {
-				if (!move.flags['protect'] || move.category === 'Status') {
-					if (['gmaxoneblow', 'gmaxrapidflow'].includes(move.id)) return;
-					if (move.isZ || move.isMax) target.getMoveHitData(move).zBrokeProtect = true;
-					return;
-				}
-				if (move.smartTarget) {
-					move.smartTarget = false;
-				} else {
-					this.add('-activate', target, 'move: Protect');
-				}
-				const lockedmove = source.getVolatile('lockedmove');
-				if (lockedmove) {
-					// Outrage counter is reset
-					if (source.volatiles['lockedmove'].duration === 2) {
-						delete source.volatiles['lockedmove'];
-					}
-				}
-				if (this.checkMoveMakesContact(move, source, target)) {
-					this.boost({def: 1}, target, target, this.dex.getActiveMove("Athos Rapier"));
-				}
-				return this.NOT_FAIL;
-			},
-			onHit(target, source, move) {
-				if (move.isZOrMaxPowered && this.checkMoveMakesContact(move, source, target)) {
-					this.boost({def: 1}, target, target, this.dex.getActiveMove("Athos Rapier"));
-				}
-			},
-		},
-		target: "self",
-		type: "Steel",
-		zMove: {effect: 'clearnegativeboost'},
-		contestType: "Cool",
-		desc: "The user is protected from most attacks made by other Pokemon during this turn, and Pokemon trying to make contact with the user raise its Defense by 1 stage. Non-damaging moves go through this protection. This move has a 1/X chance of being successful, where X starts at 1 and triples each time this move is successfully used. X resets to 1 if this move fails, if the user's last move used is not Baneful Bunker, Burning Bulwark, Detect, Endure, King's Shield, Max Guard, Obstruct, Protect, Quick Guard, Silk Trap, Spiky Shield, or Wide Guard, or if it was one of those moves and the user's protection was broken. Fails if the user moves last this turn.",
-		shortDesc: "Protects from damaging attacks. Contact: +1 Def.",
-		isNonstandard: "Custom",
-	},
-	aramisdagger: {
-		num: -58,
-		accuracy: 100,
-		basePower: 40,
-		category: "Physical",
-		name: "Aramis Dagger",
-		pp: 30,
-		priority: 1,
-		flags: {contact: 1, protect: 1, mirror: 1, metronome: 1, slicing: 1},
-		onPrepareHit(target, source) {
-			this.attrLastMove('[still]');
-			this.add('-anim', source, "Leaf Blade", target);
-		},
-		target: "normal",
-		type: "Grass",
-		contestType: "Cool",
-		desc: "No additional effect.",
-		shortDesc: "Usually goes first.",
-		isNonstandard: "Custom",
-	},
-	porthosbroadsword: {
-		num: -59,
-		accuracy: 100,
-		basePower: 120,
-		category: "Physical",
-		name: "Porthos Broadsword",
-		pp: 20,
-		priority: -3,
-		flags: {contact: 1, protect: 1, slicing: 1, failmefirst: 1, nosleeptalk: 1, noassist: 1, failcopycat: 1, failinstruct: 1},
-		priorityChargeCallback(pokemon) {
-			pokemon.addVolatile('focuspunch');
-		},
-		beforeMoveCallback(pokemon) {
-			if (pokemon.volatiles['focuspunch']?.lostFocus) {
-				this.add('cant', pokemon, 'Porthos Broadsword', 'Porthos Broadsword');
-				return true;
-			}
-		},
-		condition: {
-			duration: 1,
-			onStart(pokemon) {
-				this.add('-singleturn', pokemon, 'move: Porthos Broadsword');
-			},
-			onHit(pokemon, source, move) {
-				if (move.category !== 'Status') {
-					this.effectState.lostFocus = true;
-				}
-			},
-			onTryAddVolatile(status, pokemon) {
-				if (status.id === 'flinch') return null;
-			},
-		},
-		onPrepareHit(target, source) {
-			this.attrLastMove('[still]');
-			this.add('-anim', source, "Stone Edge", target);
-		},
-		target: "normal",
-		type: "Rock",
-		contestType: "Tough",
-		desc: "The user loses its focus and does nothing if it is hit by a damaging attack this turn before it can execute the move.",
-		shortDesc: "Fails if the user takes damage before it hits.",
-		isNonstandard: "Custom",
-	},
 	befuddlepowder: {
-		num: -60,
+		num: -57,
 		accuracy: 100,
 		basePower: 60,
 		category: "Special",
@@ -23045,7 +22920,7 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 	piercingdart: {
 		desc: "Hits Steel types for super effective damages.",
 		shortDesc: "Super effective on Steel targets.",
-		num: -61,
+		num: -58,
 		accuracy: 100,
 		basePower: 70,
 		category: "Physical",
@@ -23071,7 +22946,7 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 		isNonstandard: "Custom",
 	},
 	hindenburg: {
-		num: -62,
+		num: -59,
 		accuracy: 100,
 		basePower: 65,
 		basePowerCallback(pokemon, target, move) {
@@ -23090,7 +22965,7 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 		name: "Hindenburg",
 		pp: 15,
 		priority: 0,
-		flags: {contact: 1, protect: 1, mirror: 1, metronome: 1},
+		flags: { protect: 1, mirror: 1, metronome: 1 },
 		target: "any",
 		type: "Ghost",
 		contestType: "Cool",
@@ -23098,7 +22973,7 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 		isNonstandard: "Custom",
 	},
 	ventilation: {
-		num: -63,
+		num: -60,
 		accuracy: 100,
 		basePower: 80,
 		basePowerCallback(pokemon, target, move) {
@@ -23109,7 +22984,7 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 		name: "Ventilation",
 		pp: 10,
 		priority: 0,
-		flags: {protect: 1, metronome: 1},
+		flags: { protect: 1, metronome: 1, wind: 1 },
 		onPrepareHit(target, source) {
 			this.attrLastMove('[still]');
 			this.add('-anim', source, "Hurricane", target);
@@ -23121,14 +22996,14 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 		isNonstandard: "Custom",
 	},
 	emushdance: {
-		num: -64,
+		num: -61,
 		accuracy: 100,
 		basePower: 120,
 		category: "Special",
 		name: "Emush Dance",
 		pp: 10,
 		priority: 0,
-		flags: {charge: 1, protect: 1, mirror: 1, metronome: 1, dance: 1},
+		flags: { charge: 1, protect: 1, mirror: 1, metronome: 1, dance: 1 },
 		onTryMove(attacker, defender, move) {
 			if (attacker.removeVolatile(move.id)) {
 				return;
@@ -23156,14 +23031,14 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 		isNonstandard: "Custom",
 	},
 	rainofarrows: {
-		num: -65,
+		num: -62,
 		accuracy: 100,
 		basePower: 70,
 		category: "Physical",
 		name: "Rain Of Arrows",
 		pp: 15,
 		priority: 0,
-		flags: {mirror: 1, metronome: 1},
+		flags: { mirror: 1, metronome: 1 },
 		target: "normal",
 		type: "Ice",
 		onPrepareHit(target, source) {
@@ -23184,14 +23059,14 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 		isNonstandard: "Custom",
 	},
 	bigbang: {
-		num: -66,
+		num: -63,
 		accuracy: 100,
 		basePower: 140,
 		category: "Special",
 		name: "Big Bang",
 		pp: 10,
 		priority: 0,
-		flags: {protect: 1, mirror: 1, sound: 1, bypasssub: 1, metronome: 1},
+		flags: { protect: 1, mirror: 1, sound: 1, bypasssub: 1, metronome: 1 },
 		ignoreAbility: true,
 		ignoreImmunity: true,
 		onPrepareHit(target, source) {
@@ -23209,14 +23084,14 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 		isNonstandard: "Custom",
 	},
 	ningencry: {
-		num: -67,
+		num: -64,
 		accuracy: true,
 		basePower: 0,
 		category: "Status",
 		name: "Ningen Cry",
 		pp: 5,
 		priority: 0,
-		flags: {snatch: 1, dance: 1 },
+		flags: { snatch: 1, dance: 1 },
 		self: {
 			boosts: {
 				atk: 1,
@@ -23235,7 +23110,7 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 		isNonstandard: "Custom",
 	},
 	mantisslash: {
-		num: -68,
+		num: -65,
 		accuracy: 100,
 		basePower: 100,
 		category: "Physical",
@@ -23259,7 +23134,7 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 		isNonstandard: "Custom",
 	},
 	intrepidcrash: {
-		num: -69,
+		num: -66,
 		accuracy: 100,
 		basePower: 60,
 		category: "Physical",
@@ -23267,7 +23142,7 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 		shortDesc: "Has 33% recoil. Usually goes first.",
 		pp: 10,
 		priority: 1,
-		flags: {contact: 1, protect: 1, mirror: 1 },
+		flags: { contact: 1, protect: 1, mirror: 1 },
 		recoil: [1, 3],
 		onPrepareHit(target, source) {
 			this.attrLastMove('[still]');
@@ -23279,14 +23154,14 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 		isNonstandard: "Custom",
 	},
 	timeparadox: {
-		num: -70,
+		num: -67,
 		accuracy: 75,
 		basePower: 100,
 		category: "Special",
 		name: "Time Paradox",
 		pp: 5,
 		priority: 0,
-		flags: {protect: 1, mirror: 1, metronome: 1},
+		flags: { protect: 1, mirror: 1, metronome: 1 },
 		volatileStatus: 'partiallytrapped',
 		onPrepareHit(target, source) {
 			this.attrLastMove('[still]');
@@ -23300,14 +23175,14 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 		isNonstandard: "Custom",
 	},
 	jumpscare: {
-		num: -71,
+		num: -68,
 		accuracy: 100,
 		basePower: 40,
 		category: "Physical",
 		name: "Jumpscare",
 		pp: 10,
 		priority: 3,
-		flags: {contact: 1, protect: 1, mirror: 1, metronome: 1},
+		flags: { contact: 1, protect: 1, mirror: 1, metronome: 1 },
 		onTry(source) {
 			if (source.activeMoveActions > 1) {
 				this.hint("Jumpscare only works on your first turn out.");
@@ -23332,14 +23207,14 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 		isNonstandard: "Custom",
 	},
 	futuredoom: {
-		num: -72,
+		num: -69,
 		accuracy: 100,
 		basePower: 65,
 		category: "Special",
 		name: "Future Doom",
 		pp: 10,
 		priority: 0,
-		flags: {protect: 1, mirror: 1, metronome: 1},
+		flags: { protect: 1, mirror: 1, metronome: 1 },
 		volatileStatus: 'partiallytrapped',
 		secondary: {
 			chance: 100,
@@ -23351,14 +23226,14 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 		isNonstandard: "Custom",
 	},
 	brainblast: {
-		num: -73,
+		num: -70,
 		accuracy: 100,
 		basePower: 65,
 		category: "Special",
 		name: "Brain Blast",
 		pp: 20,
 		priority: 0,
-		flags: {protect: 1, mirror: 1, metronome: 1},
+		flags: { protect: 1, mirror: 1, metronome: 1 },
 		onBasePower(basePower, source, target, move) {
 			const item = target.getItem();
 			if (!this.singleEvent('TakeItem', item, target.itemState, target, target, move, item)) return;
@@ -23386,7 +23261,7 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 		isNonstandard: "Custom",
 	},
 	timecrash: {
-		num: -74,
+		num: -71,
 		accuracy: 100,
 		basePower: 80,
 		category: "Special",
@@ -23407,11 +23282,11 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 		isNonstandard: "Custom",
 	},
 	waterslash: {
-		num: -75,
+		num: -72,
 		accuracy: 100,
 		basePower: 85,
-		category: "Special",
-		overrideDefensiveStat: 'def',
+		category: "Physical",
+		overrideDefensiveStat: 'spd',
 		name: "Water Slash",
 		pp: 10,
 		priority: 0,
@@ -23423,19 +23298,19 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 			this.add('-anim', source, "Aqua Cutter", target);
 		},
 		contestType: "Beautiful",
-		desc: "Deals damage to the target based on its Defense instead of Special Defense.",
-		shortDesc: "Damages target based on Defense, not Sp. Def.",
+		desc: "Deals damage to the target based on its Special Defense instead of Defense.",
+		shortDesc: "Damages target based on Spd. Def, not Defense.",
 		isNonstandard: "Custom",
 	},
 	marinebolt: {
-		num: -76,
+		num: -73,
 		accuracy: 100,
 		basePower: 75,
 		category: "Physical",
 		name: "Marine Bolt",
 		pp: 20,
 		priority: 0,
-		flags: {contact: 1, protect: 1, mirror: 1, bullet: 1},
+		flags: { contact: 1, protect: 1, mirror: 1, bullet: 1 },
 		overrideOffensiveStat: 'spe',
 		onPrepareHit(target, source) {
 			this.attrLastMove('[still]');
@@ -23446,30 +23321,8 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 		shortDesc: "Uses user's Speed stat instead of Attack in damage calculation.",
 		isNonstandard: "Custom",
 	},
-	scaredyshell: {
-		num: -77,
-		accuracy: 100,
-		basePower: 60,
-		category: "Physical",
-		name: "Scaredy Shell",
-		pp: 20,
-		priority: 0,
-		flags: { contact: 1, protect: 1, mirror: 1, metronome: 1 },
-		selfSwitch: true,
-		onPrepareHit(target, source) {
-			this.attrLastMove('[still]');
-			this.add('-anim', source, "Iron Defense", source);
-			this.add('-anim', source, "U-turn", target);
-		},
-		target: "normal",
-		type: "Steel",
-		desc: "If this move is successful and the user has not fainted, the user switches out even if it is trapped and is replaced immediately by a selected party member. The user does not switch out if there are no unfainted party members, or if the target switched out using an Eject Button or through the effect of the Emergency Exit or Wimp Out Abilities.",
-		shortDesc: "User switches out after damaging the target.",
-		switchOut: "#uturn",
-		isNonstandard: "Custom",
-	},
 	calmingbell: {
-		num: -78,
+		num: -74,
 		accuracy: 100,
 		basePower: 80,
 		category: "Special",
@@ -23494,7 +23347,7 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 		isNonstandard: "Custom",
 	},
 	seasonpass: {
-		num: -79,
+		num: -75,
 		accuracy: 100,
 		basePower: 100,
 		category: "Physical",
@@ -23521,7 +23374,7 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 		isNonstandard: "Custom",
 	},
 	chistrike: {
-		num: -80,
+		num: -76,
 		accuracy: 100,
 		basePower: 90,
 		onModifyMovePriority: -5,
@@ -23545,7 +23398,7 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 		isNonstandard: "Custom",
 	},
 	cursedspeech: {
-		num: -81,
+		num: -77,
 		accuracy: 100,
 		basePower: 100,
 		category: "Special",
@@ -23569,7 +23422,7 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 		isNonstandard: "Custom",
 	},
 	threateningbite: {
-		num: -82,
+		num: -78,
 		accuracy: 100,
 		basePower: 160,
 		category: "Physical",
@@ -23587,7 +23440,7 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 		isNonstandard: "Custom",
 	},
 	stonesurge: {
-		num: -83,
+		num: -79,
 		accuracy: 100,
 		basePower: 65,
 		category: "Physical",
@@ -23621,7 +23474,7 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 		shortDesc: "Sets Stealth Rock on the target's side.",
 	},
 	xrayshock: {
-		num: -84,
+		num: -80,
 		accuracy: 100,
 		basePower: 100,
 		category: "Physical",
@@ -23646,7 +23499,7 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 		isNonstandard: "Custom",
 	},
 	gigabbouncysplash: {
-		num: -85,
+		num: -81,
 		accuracy: true,
 		basePower: 180,
 		category: "Physical",
@@ -23666,7 +23519,7 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 		isNonstandard: "Custom",
 	},
 	sonicspeedstrike: {
-		num: -86,
+		num: -82,
 		accuracy: true,
 		basePower: 185,
 		category: "Physical",
@@ -23686,7 +23539,7 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 		isNonstandard: "Custom",
 	},
 	maxspikybarrage: {
-		num: -87,
+		num: -83,
 		accuracy: true,
 		basePower: 180,
 		category: "Physical",
@@ -23710,7 +23563,7 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 		isNonstandard: "Custom",
 	},
 	sweetsugarrush: {
-		num: -88,
+		num: -84,
 		accuracy: true,
 		basePower: 170,
 		category: "Special",
@@ -23726,7 +23579,7 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 		isNonstandard: "Custom",
 	},
 	colorfulhit: {
-		num: -89,
+		num: -85,
 		accuracy: 100,
 		basePower: 90,
 		category: "Physical",
@@ -23753,7 +23606,7 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 		isNonstandard: "Custom",
 	},
 	oceanslance: {
-		num: -90,
+		num: -86,
 		accuracy: 85,
 		basePower: 120,
 		category: "Physical",
@@ -23772,7 +23625,7 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 		isNonstandard: "Custom",
 	},
 	goatup: {
-		num: -91,
+		num: -87,
 		accuracy: true,
 		basePower: 0,
 		category: "Status",
@@ -23800,7 +23653,7 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 		isNonstandard: "Custom",
 	},
 	poisonwhip: {
-		num: -92,
+		num: -88,
 		accuracy: 100,
 		basePower: 70,
 		category: "Physical",
@@ -23824,7 +23677,7 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 		isNonstandard: "Custom",
 	},
 	casinoroyal: {
-		num: -93,
+		num: -89,
 		accuracy: 95,
 		basePower: 120,
 		category: "Special",
@@ -23849,7 +23702,7 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 		isNonstandard: "Custom",
 	},
 	mistystep: {
-		num: -94,
+		num: -90,
 		accuracy: true,
 		basePower: 0,
 		category: "Status",
@@ -23881,7 +23734,7 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 		isNonstandard: "Custom",
 	},
 	prevailingwind: {
-		num: -95,
+		num: -91,
 		accuracy: 100,
 		basePower: 65,
 		category: "Special",

@@ -336,22 +336,6 @@ export const Moves: { [k: string]: ModdedMoveData; } = {
 		inherit: true,
 		isNonstandard: null,
 	},
-	lightofruin: {
-		inherit: true,
-		isNonstandard: null,
-	},
-	athosrapier: {
-		inherit: true,
-		isNonstandard: null,
-	},
-	aramisdagger: {
-		inherit: true,
-		isNonstandard: null,
-	},
-	porthosbroadsword: {
-		inherit: true,
-		isNonstandard: null,
-	},
 	befuddlepowder: {
 		inherit: true,
 		isNonstandard: null,

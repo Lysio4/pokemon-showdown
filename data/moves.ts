@@ -22484,7 +22484,7 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 		name: "Wind's Call",
 		pp: 5,
 		priority: 0,
-		flags: { snatch: 1, wind: 1, mirror: 1 },
+		flags: { snatch: 1, wind: 1, mirror: 1, wind: 1 },
 		self: {
 			boosts: {
 				atk: 1,
@@ -22833,7 +22833,7 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 		},
 		onPrepareHit(target, source) {
 			this.attrLastMove('[still]');
-			this.add('-anim', source, "Rock Blast", target);
+			this.add('-anim', source, "Rock Wrecker", target);
 		},
 		target: "normal",
 		type: "Rock",
@@ -22848,7 +22848,6 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 		category: "Special",
 		name: "Poison Ivy",
 		shortDesc: "Hits twice. This move does not check accuracy.",
-		desc: "Hits twice. This move does not check accuracy.",
 		pp: 10,
 		priority: 0,
 		flags: { protect: 1, mirror: 1 },
@@ -23091,7 +23090,7 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 		name: "Ningen Cry",
 		pp: 5,
 		priority: 0,
-		flags: { snatch: 1, dance: 1 },
+		flags: { snatch: 1 },
 		self: {
 			boosts: {
 				atk: 1,

@@ -679,13 +679,15 @@ export const Abilities: { [abilityid: string]: ModdedAbilityData; } = {
 		inherit: true,
 		onModifyAtkPriority: 5,
 		onModifyAtk(atk, pokemon) {
-			if (pokemon.side.totalFainted === 5) {
+			const allies = pokemon.side.pokemon.filter(ally => ally === pokemon || !ally.fainted && !ally.status);
+			if (allies === 0) {
 				return this.chainModify(0.5);
 			}
 		},
 		onModifySpAPriority: 5,
 		onModifySpA(spa, pokemon) {
-			if (pokemon.side.totalFainted === 5) {
+			const allies = pokemon.side.pokemon.filter(ally => ally === pokemon || !ally.fainted && !ally.status);
+			if (allies === 0) {
 				return this.chainModify(0.5);
 			}
 		},
@@ -784,10 +786,6 @@ export const Abilities: { [abilityid: string]: ModdedAbilityData; } = {
 	},
 	electromorphosis: {
 		inherit: true,
-		onDamagingHitOrder: 1,
-		onDamagingHit(damage, target, source, move) {
-			target.addVolatile('charge');
-		},
 		onSourceModifyDamage(damage, source, target, move) {
 			if (target.volatiles['charge']) {
 				return this.chainModify(0.75);
@@ -882,10 +880,11 @@ export const Abilities: { [abilityid: string]: ModdedAbilityData; } = {
 			}
 			pokemon.addVolatile('truant');
 		},
-		onModifyMove(move) {
-			delete move.flags['protect'];
+		onHitProtect(source, target, move) {
+			target.getMoveHitData(move).bypassProtect = this.effect;
+			return false;
 		},
-		shortDesc: "This Pokemon can only use status moves every other turn. Its moves ignore the target's protection.",
+		shortDesc: "This Pokemon can only use status moves every other turn. Its moves ignore a target's protection and deal 1/4 the usual damage.",
 	},
 	fullmetalbody: {
 		inherit: true,

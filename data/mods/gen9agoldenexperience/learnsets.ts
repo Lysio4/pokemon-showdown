@@ -7962,7 +7962,6 @@ export const Learnsets: import('../../../sim/dex-species').ModdedLearnsetDataTab
 			rockslide: ["9M"],
 			rocktomb: ["9M"],
 			sandstorm: ["9M"],
-			scaredyshell: ["9L68"],
 			scorchingsands: ["9M"],
 			shellsmash: ["9L60"],
 			skullbash: ["9E"],

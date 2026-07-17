@@ -404,10 +404,6 @@ export const Moves: { [k: string]: ModdedMoveData; } = {
 		inherit: true,
 		isNonstandard: null,
 	},
-	scaredyshell: {
-		inherit: true,
-		isNonstandard: null,
-	},
 	calmingbell: {
 		inherit: true,
 		isNonstandard: null,

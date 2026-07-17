@@ -22484,7 +22484,7 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 		name: "Wind's Call",
 		pp: 5,
 		priority: 0,
-		flags: { snatch: 1, wind: 1, mirror: 1, wind: 1 },
+		flags: { snatch: 1, wind: 1, mirror: 1 },
 		self: {
 			boosts: {
 				atk: 1,

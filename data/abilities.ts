@@ -7161,7 +7161,7 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 					this.add('-end', target, `fallen${this.effectState.fallen}`, '[silent]');
 				}
 				this.effectState.fallen++;
-				this.add('-activate', target, 'ability: Emperor\'s Clothes');
+				this.add('-activate', target, 'ability: Bitter Hatred');
 				this.add('-start', target, `fallen${this.effectState.fallen}`, '[silent]');
 			}
 		},

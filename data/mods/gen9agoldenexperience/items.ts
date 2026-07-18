@@ -59,6 +59,24 @@ export const Items: {[itemid: string]: ModdedItemData} = {
 	},
 
 	//mega stones
+	slowbronite: {
+		inherit: true,
+		megaStone: {
+			"Slowbro": "Slowbro-Mega",
+			"Slowbro-Galar": "Slowbro-Galar-Mega"
+		},
+		itemUser: ["Slowbro", "Slowbro-Galar"],
+		shortDesc: "If held by a Slowbro(-Galar), this item allows it to Mega Evolve in battle.",
+	},
+	scizorite: {
+		inherit: true,
+		megaStone: { 
+			"Scizor": "Scizor-Mega",
+			"Scizor-Galar": "Scizor-Galar-Mega"
+		},
+		itemUser: ["Scizor", "Scizor-Galar"],
+		shortDesc: "If held by a Scizor(-Galar), this item allows it to Mega Evolve in battle.",
+	},
 	venusauritey: {
 		inherit: true,
 		isNonstandard: null,
@@ -79,10 +97,6 @@ export const Items: {[itemid: string]: ModdedItemData} = {
 		inherit: true,
 		isNonstandard: null,
 	},
-	galaslowbronite: {
-		inherit: true,
-		isNonstandard: null,
-	},
 	typhlosionite: {
 		inherit: true,
 		isNonstandard: null,
@@ -92,10 +106,6 @@ export const Items: {[itemid: string]: ModdedItemData} = {
 		isNonstandard: null,
 	},
 	crobatite: {
-		inherit: true,
-		isNonstandard: null,
-	},
-	galascizorite: {
 		inherit: true,
 		isNonstandard: null,
 	},
@@ -136,10 +146,6 @@ export const Items: {[itemid: string]: ModdedItemData} = {
 		isNonstandard: null,
 	},
 	zoroarkite: {
-		inherit: true,
-		isNonstandard: null,
-	},
-	hisuzoroarkite: {
 		inherit: true,
 		isNonstandard: null,
 	},
@@ -248,6 +254,43 @@ export const Items: {[itemid: string]: ModdedItemData} = {
 		inherit: true,
 		isNonstandard: null,
 	},
+	identitycard: { 
+		inherit: true,
+		isNonstandard: null,
+	},
+	bananapeel: {
+		inherit: true,
+		isNonstandard: null,
+	},
+	anticamulet: {
+		inherit: true,
+		isNonstandard: null,
+	},
+	gyaradosiumz: {
+		inherit: true,
+		isNonstandard: null,
+	},
+	garchompiumz: {
+		inherit: true,
+		isNonstandard: null,
+	},
+	overqwiliumz: {
+		inherit: true,
+		isNonstandard: null,
+	},
+	hydrappliumz: {
+		inherit: true,
+		isNonstandard: null,
+	},
+	jadeorb: {
+		inherit: true,
+		isNonstandard: null,
+	},
+	teraorb: {
+		inherit: true,
+		isNonstandard: null,
+	},
+	// modified items
 	deepseascale: {
 		inherit: true,
 		name: "Deep Sea Scale",
@@ -271,18 +314,6 @@ export const Items: {[itemid: string]: ModdedItemData} = {
 			}
 		},
 		itemUser: ["Clamperl", "Huntail"],
-	},
-	identitycard: { 
-		inherit: true,
-		isNonstandard: null,
-	},
-	bananapeel: {
-		inherit: true,
-		isNonstandard: null,
-	},
-	relicsheet: {
-		inherit: true,
-		isNonstandard: null,
 	},
 	lightball: {
 		inherit: true,
@@ -337,10 +368,6 @@ export const Items: {[itemid: string]: ModdedItemData} = {
 		shortDesc: "If held by a Farfetch’d or Sirfetch’d, its moves will always crit.",
 		desc: "If held by a Farfetch’d or Sirfetch’d, its moves will always crit.",
 	},
-	anticamulet: {
-		inherit: true,
-		isNonstandard: null,
-	},
 	lycaniumz: {
 		inherit: true,
 		zMoveFrom: "Golem Strike",
@@ -351,30 +378,6 @@ export const Items: {[itemid: string]: ModdedItemData} = {
 		inherit: true,
 		zMoveFrom: "Rising Voltage",
 		shortDesc: "If held by an Alolan Raichu with Rising Voltage, it can use Stoked Sparksurfer.",
-	},
-	gyaradosiumz: {
-		inherit: true,
-		isNonstandard: null,
-	},
-	garchompiumz: {
-		inherit: true,
-		isNonstandard: null,
-	},
-	overqwiliumz: {
-		inherit: true,
-		isNonstandard: null,
-	},
-	hydrappliumz: {
-		inherit: true,
-		isNonstandard: null,
-	},
-	jadeorb: {
-		inherit: true,
-		isNonstandard: null,
-	},
-	teraorb: {
-		inherit: true,
-		isNonstandard: null,
 	},
 	tartapple: {
 		inherit: true,

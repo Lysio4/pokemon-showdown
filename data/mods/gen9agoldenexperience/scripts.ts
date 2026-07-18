@@ -42,13 +42,13 @@ export const Scripts: ModdedBattleScriptsData = {
         return altForme.name;
       }
       // formes
-      if (item.name === "Galaslowbronite" && pokemon.species.name === "Slowbro-Galar") return "Slowbro-Galar-Mega";
-      if (item.name === "Galascizorite" && pokemon.species.name === "Scizor-Galar") return "Scizor-Galar-Mega";
+      if (item.name === "Slowbronite" && pokemon.species.name === "Slowbro-Galar") return "Slowbro-Galar-Mega";
+      if (item.name === "Scizorite" && pokemon.species.name === "Scizor-Galar") return "Scizor-Galar-Mega";
       if (item.name === "Sawsbuckite" && pokemon.species.id === "sawsbuck") return "Sawsbuck-Spring-Mega";
       if (item.name === "Sawsbuckite" && pokemon.species.id === "sawsbucksummer") return "Sawsbuck-Summer-Mega";
       if (item.name === "Sawsbuckite" && pokemon.species.id === "sawsbuckautumn") return "Sawsbuck-Autumn-Mega";
       if (item.name === "Sawsbuckite" && pokemon.species.id === "sawsbuckwinter") return "Sawsbuck-Winter-Mega";
-      if (item.name === "Hisuzoroarkite" && pokemon.species.name === "Zoroark-Hisui") return "Zoroark-Hisui-Mega";
+      if (item.name === "Zoroarkite" && pokemon.species.name === "Zoroark-Hisui") return "Zoroark-Hisui-Mega";
       if (item.name === "Mimikyunite" && pokemon.species.id === "mimikyubusted") return "Mimikyu-Busted-Mega";
       if (item.name === "Toxtricitite" && pokemon.species.name === "Toxtricity-Low-Key") return "Toxtricity-Low-Key-Mega";
       return item.megaStone?.[species.name] || null;
@@ -1171,9 +1171,9 @@ export const Scripts: ModdedBattleScriptsData = {
     this.modData('Learnsets', 'zangoose').learnset.fakeout = ['9L1']; // ZA addition
     this.modData('Learnsets', 'seviper').learnset.scaleshot = ['9L1']; // ZA addition
     this.modData('Learnsets', 'lunatone').learnset.teleport = ['9L1'];
-    this.modData('Learnsets', 'solrock').learnset.teleport = ['9L1'];
     this.modData('Learnsets', 'solrock').learnset.earthquake = ['9L1'];
     this.modData('Learnsets', 'solrock').learnset.scorchingsands = ['9L1'];
+    this.modData('Learnsets', 'solrock').learnset.teleport = ['9L1'];
     this.modData('Learnsets', 'whiscash').learnset.slackoff = ['9L1'];
     this.modData('Learnsets', 'claydol').learnset.recover = ['9L1'];
     this.modData('Learnsets', 'cradily').learnset.powergem = ['9L1'];
@@ -1182,19 +1182,19 @@ export const Scripts: ModdedBattleScriptsData = {
     this.modData('Learnsets', 'armaldo').learnset.wavecrash = ['9L1'];
     this.modData('Learnsets', 'milotic').learnset.dracometeor = ['9M'];
     this.modData('Learnsets', 'castform').learnset.calmmind = ['9L1'];
-    this.modData('Learnsets', 'castform').learnset.uturn = ['9L1'];
     this.modData('Learnsets', 'castform').learnset.moonlight = ['9L1'];
     this.modData('Learnsets', 'castform').learnset.triattack = ['9L1'];
-    this.modData('Learnsets', 'kecleon').learnset.shedtail = ['9L1']; // ZA addition
-    this.modData('Learnsets', 'kecleon').learnset.firstimpression = ['9L1']; // ZA addition
-    this.modData('Learnsets', 'kecleon').learnset.scaleshot = ['9L1']; // ZA addition
-    this.modData('Learnsets', 'kecleon').learnset.powerwhip = ['9L1']; // ZA addition
+    this.modData('Learnsets', 'castform').learnset.uturn = ['9L1'];
     this.modData('Learnsets', 'kecleon').learnset.colorfulhit = ['9L1'];
-    this.modData('Learnsets', 'banette').learnset.mefirst = ['9L1'];
-    this.modData('Learnsets', 'banette').learnset.focuspunch = ['9L1'];
-    this.modData('Learnsets', 'banette').learnset.strengthsap = ['9L1'];
-    this.modData('Learnsets', 'banette').learnset.jumpscare = ['9L1'];
+    this.modData('Learnsets', 'kecleon').learnset.firstimpression = ['9L1']; // ZA addition
+    this.modData('Learnsets', 'kecleon').learnset.powerwhip = ['9L1']; // ZA addition
+    this.modData('Learnsets', 'kecleon').learnset.scaleshot = ['9L1']; // ZA addition
+    this.modData('Learnsets', 'kecleon').learnset.shedtail = ['9L1']; // ZA addition
     this.modData('Learnsets', 'banette').learnset.bittermalice = ['9L1'];
+    this.modData('Learnsets', 'banette').learnset.focuspunch = ['9L1'];
+    this.modData('Learnsets', 'banette').learnset.jumpscare = ['9L1'];
+    this.modData('Learnsets', 'banette').learnset.mefirst = ['9L1'];
+    this.modData('Learnsets', 'banette').learnset.strengthsap = ['9L1'];
     this.modData('Learnsets', 'chimecho').learnset.teleport = ['9L1'];
     this.modData('Learnsets', 'chimecho').learnset.calmingbell = ['9L1']; 
     this.modData('Learnsets', 'glalie').learnset.rapidspin = ['9L1'];
@@ -1209,8 +1209,8 @@ export const Scripts: ModdedBattleScriptsData = {
     this.modData('Learnsets', 'huntail').learnset.fissure = ['9L1'];
     this.modData('Learnsets', 'relicanth').learnset.flipturn = ['9L1'];
     this.modData('Learnsets', 'salamence').learnset.scaleshot = ['9L1']; // ZA addition
-    this.modData('Learnsets', 'metagross').learnset.teleport = ['9L1'];
     this.modData('Learnsets', 'metagross').learnset.swordsdance = ['9L1'];
+    this.modData('Learnsets', 'metagross').learnset.teleport = ['9L1'];
     this.modData('Learnsets', 'regirock').learnset.recover = ['9L1'];
     this.modData('Learnsets', 'regice').learnset.recover = ['9L1'];
     this.modData('Learnsets', 'registeel').learnset.recover = ['9L1'];

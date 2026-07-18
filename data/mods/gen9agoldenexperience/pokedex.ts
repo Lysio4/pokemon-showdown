@@ -82,14 +82,6 @@ export const Pokedex: {[k: string]: ModdedSpeciesData;} = {
 		baseStats: { hp: 60, atk: 95, def: 95, spa: 60, spd: 95, spe: 30 },
 		abilities: { 0: "Effect Spore", 1: "Dry Skin", H: "Parasitism" },
 	},
-	dugtrio: {
-		inherit: true,
-		baseStats: { hp: 35, atk: 115, def: 50, spa: 50, spd: 70, spe: 120 },
-	},
-	dugtrioalola: {
-		inherit: true,
-		baseStats: { hp: 35, atk: 115, def: 60, spa: 50, spd: 70, spe: 110 },
-	},
 	persian: {
 		inherit: true,
 		evos: ["Casbundle"],
@@ -1754,6 +1746,7 @@ export const Pokedex: {[k: string]: ModdedSpeciesData;} = {
 	},
 	tsareena: {
 		inherit: true,
+		baseStats: { hp: 72, atk: 120, def: 98, spa: 50, spd: 98, spe: 92 },
 		abilities: { 0: "Leaf Guard", 1: "Queenly Majesty", H: "Striker" },
 	},
 	comfey: {
@@ -2185,7 +2178,6 @@ export const Pokedex: {[k: string]: ModdedSpeciesData;} = {
 	},
 	wugtrio: {
 		inherit: true,
-		baseStats: { hp: 35, atk: 115, def: 50, spa: 50, spd: 70, spe: 120 },
 		abilities: { 0: "Gooey", 1: "Rattled", H: "Technician" },
 	},
 	cyclizar: {
@@ -2198,7 +2190,7 @@ export const Pokedex: {[k: string]: ModdedSpeciesData;} = {
 	},
 	flamigo: {
 		inherit: true,
-		baseStats: {hp: 82, atk: 125, def: 74, spa: 55, spd: 64, spe: 100},
+		baseStats: { hp: 82, atk: 125, def: 74, spa: 55, spd: 64, spe: 100 },
 	},
 	tatsugiricurlymega: {
 		inherit: true,
@@ -2214,59 +2206,59 @@ export const Pokedex: {[k: string]: ModdedSpeciesData;} = {
 	},
 	dudunsparce: {
 		inherit: true,
-		baseStats: {hp: 125, atk: 100, def: 90, spa: 85, spd: 85, spe: 55},
+		baseStats: { hp: 125, atk: 100, def: 90, spa: 85, spd: 85, spe: 55 },
 	},
 	dudunsparcethreesegment: {
 		inherit: true,
-		baseStats: {hp: 125, atk: 100, def: 90, spa: 85, spd: 85, spe: 55},
+		baseStats: { hp: 125, atk: 100, def: 90, spa: 85, spd: 85, spe: 55 },
 	},
 	greattusk: {
 		inherit: true,
-		abilities: {0: "Protosynthesis", H: "Sand Veil"},
+		abilities: { 0: "Protosynthesis", H: "Sand Veil" },
 	},
 	screamtail: {
 		inherit: true,
-		abilities: {0: "Protosynthesis", H: "Pixilate"},
+		abilities: { 0: "Protosynthesis", H: "Pixilate" },
 	},
 	brutebonnet: {
 		inherit: true,
-		abilities: {0: "Protosynthesis", H: "Regenerator"},
+		abilities: { 0: "Protosynthesis", H: "Regenerator" },
 	},
 	fluttermane: {
 		inherit: true,
-		abilities: {0: "Protosynthesis", H: "Levitate"},
+		abilities: { 0: "Protosynthesis", H: "Levitate" },
 	},
 	slitherwing: {
 		inherit: true,
-		abilities: {0: "Protosynthesis", H: "Swarm"},
+		abilities: { 0: "Protosynthesis", H: "Swarm" },
 	},
 	sandyshocks: {
 		inherit: true,
-		abilities: {0: "Protosynthesis", H: "Analytic"},
+		abilities: { 0: "Protosynthesis", H: "Analytic" },
 	},
 	irontreads: {
 		inherit: true,
-		abilities: {0: "Quark Drive", H: "Sturdy"},
+		abilities: { 0: "Quark Drive", H: "Sturdy" },
 	},
 	ironbundle: {
 		inherit: true,
-		abilities: {0: "Quark Drive", H: "Vital Spirit"},
+		abilities: { 0: "Quark Drive", H: "Vital Spirit" },
 	},
 	ironhands: {
 		inherit: true,
-		abilities: {0: "Quark Drive", H: "Thick Fat"},
+		abilities: { 0: "Quark Drive", H: "Thick Fat" },
 	},
 	ironjugulis: {
 		inherit: true,
-		abilities: {0: "Quark Drive", H: "Unconcerned"},
+		abilities: { 0: "Quark Drive", H: "Unconcerned" },
 	},
 	ironmoth: {
 		inherit: true,
-		abilities: {0: "Quark Drive", H: "Flame Body"},
+		abilities: { 0: "Quark Drive", H: "Flame Body" },
 	},
 	ironthorns: {
 		inherit: true,
-		abilities: {0: "Quark Drive", H: "Sand Stream"},
+		abilities: { 0: "Quark Drive", H: "Sand Stream" },
 	},
 	baxcaliburmega: {
 		inherit: true,

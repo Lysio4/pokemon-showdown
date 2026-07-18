@@ -22917,11 +22917,11 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 		isNonstandard: "Custom",
 	},
 	piercingdart: {
-		desc: "Hits Steel types for super effective damages.",
-		shortDesc: "Super effective on Steel targets.",
+		desc: "Hits Steel types for neutral damages.",
+		shortDesc: "Can hit Steel targets for neutral damages.",
 		num: -58,
 		accuracy: 100,
-		basePower: 70,
+		basePower: 75,
 		category: "Physical",
 		name: "Piercing Dart",
 		pp: 10,
@@ -22932,9 +22932,6 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 			if (move.ignoreImmunity !== true) {
 				move.ignoreImmunity['Poison'] = true;
 			}
-		},
-		onEffectiveness(typeMod, target, type) {
-			if (type === 'Steel') return 1;
 		},
 		onPrepareHit(target, source) {
 			this.attrLastMove('[still]');

@@ -21488,7 +21488,7 @@ export const Pokedex: import('../sim/dex-species').SpeciesDataTable = {
 		baseSpecies: "Gigalith",
 		forme: "Mega",
 		types: ["Rock"],
-		megaStats: { hp: 85, atk: 135, def: 160, spa: 100, spd: 110, spe: 25 },
+		baseStats: { hp: 85, atk: 135, def: 160, spa: 100, spd: 110, spe: 25 },
 		abilities: { 0: "Solar Energy" },
 		heightm: 1.9,
 		weightkg: 290,

@@ -21140,7 +21140,7 @@ export const Pokedex: import('../sim/dex-species').SpeciesDataTable = {
 		color: "Pink",
 		eggGroups: ["Monster", "Water 1"],
 		battleOnly: "Slowbro-Galar",
-		requiredItem: "Galaslowbronite",
+		requiredItem: "Slowbronite",
 	},
 	typhlosionmega: {
 		num: 157,
@@ -21212,7 +21212,7 @@ export const Pokedex: import('../sim/dex-species').SpeciesDataTable = {
 		color: "Red",
 		eggGroups: ["Bug"],
 		battleOnly: "Scizor-Galar",
-		requiredItem: "Galascizorite",
+		requiredItem: "Scizorite",
 	},
 	slugmasinnoh: {
 		num: 218,
@@ -21537,7 +21537,7 @@ export const Pokedex: import('../sim/dex-species').SpeciesDataTable = {
         color: "Gray",
         eggGroups: ["Field"],
 		battleOnly: "Zoroark-Hisui",
-        requiredItem: "Hisuzoroarkite",
+        requiredItem: "Zoroarkite",
     },
 	sawsbuckspringmega: {
 		num: 586,

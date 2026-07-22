@@ -274,15 +274,23 @@ export const Pokedex: {[k: string]: ModdedSpeciesData;} = {
 	},
 	articuno: {
 		inherit : true,
-		abilities: { 0: "Pressure", H: "Mountaineer" },
+		abilities: { 0: "Pressure", 1: "Aerodynamism", H: "Mountaineer" },
 	},
 	articunogalar: {
 		inherit : true,
 		abilities: { 0: "Competitive", H: "Magic Guard" },
 	},
+	zapdos: {
+		inherit : true,
+		abilities: { 0: "Pressure", 1: "Aerodynamism", H: "Static" },
+	},
 	zapdosgalar: {
 		inherit : true,
 		abilities: { 0: "Defiant", H: "Quick Feet" },
+	},
+	moltres: {
+		inherit : true,
+		abilities: { 0: "Pressure", 1: "Aerodynamism", H: "Flame Body" },
 	},
 	moltresgalar: {
 		inherit : true,
@@ -1187,34 +1195,34 @@ export const Pokedex: {[k: string]: ModdedSpeciesData;} = {
 	},
 	pansage: {
 		inherit: true,
-		abilities: {0: "Gluttony", 1: "Unburden", H: "Overgrow"},
+		abilities: { 0: "Gluttony", 1: "Hospitality", H: "Overgrow" },
 	},
 	simisage: {
 		inherit: true,
-		baseStats: {hp: 75, atk: 116, def: 60, spa: 80, spd: 60, spe: 107},
-		abilities: {0: "Ripen", 1: "Unburden", H: "Overgrow"},
+		baseStats: { hp: 75, atk: 98, def: 63, spa: 118, spd: 63, spe: 106 },
+		abilities: { 0: "Harvest", 1: "Hospitality", H: "Overgrow"},
 	},
 	pansear: {
 		inherit: true,
-		abilities: {0: "Gluttony", 1: "Unburden", H: "Blaze"},
+		abilities: { 0: "Gluttony", 1: "Hospitality", H: "Blaze"},
 	},
 	simisear: {
 		inherit: true,
-		baseStats: {hp: 75, atk: 98, def: 60, spa: 98, spd: 60, spe: 107},
-		abilities: {0: "Cheek Pouch", 1: "Unburden", H: "Blaze"},
+		baseStats: { hp: 75, atk: 98, def: 63, spa: 118, spd: 63, spe: 106 },
+		abilities: { 0: "Cheek Pouch", 1: "Hospitality", H: "Blaze" },
 	},
 	panpour: {
 		inherit: true,
-		abilities: {0: "Gluttony", 1: "Unburden", H: "Torrent"},
+		abilities: { 0: "Gluttony", 1: "Hospitality", H: "Torrent" },
 	},
 	simipour: {
 		inherit: true,
-		baseStats: {hp: 75, atk: 80, def: 60, spa: 116, spd: 60, spe: 107},
-		abilities: {0: "Harvest", 1: "Unburden", H: "Torrent"},
+		baseStats: { hp: 75, atk: 98, def: 63, spa: 118, spd: 63, spe: 106 },
+		abilities: { 0: "Ripen", 1: "Hospitality", H: "Torrent" },
 	},
 	musharna:{
 		inherit: true,
-		abilities: {0: "Comatose", 1: "Oblivious", H: "Telepathy"},
+		abilities: { 0: "Comatose", 1: "Oblivious", H: "Telepathy" },
 	},
 	tranquill: {
 		inherit: true,
@@ -1246,8 +1254,8 @@ export const Pokedex: {[k: string]: ModdedSpeciesData;} = {
 	},
 	zebstrika: {
 		inherit: true,
-		baseStats: {hp: 75, atk: 110, def: 60, spa: 70, spd: 60, spe: 122},
-		abilities: {0: "Tempestuous", 1: "Motor Drive", H: "Sap Sipper"},
+		baseStats: { hp: 75, atk: 110, def: 60, spa: 70, spd: 60, spe: 122 },
+		abilities: { 0: "Tempestuous", 1: "Motor Drive", H: "Sap Sipper" },
 	},
 	gigalith: {
 		inherit: true,
@@ -1256,7 +1264,7 @@ export const Pokedex: {[k: string]: ModdedSpeciesData;} = {
 	},
 	swoobat: {
 		inherit: true,
-		baseStats: {hp: 97, atk: 47, def: 65, spa: 97, spd: 65, spe: 114},
+		baseStats: { hp: 97, atk: 47, def: 65, spa: 97, spd: 65, spe: 114 },
 	},
 	audinomega: {
 		inherit: true,
@@ -1264,8 +1272,8 @@ export const Pokedex: {[k: string]: ModdedSpeciesData;} = {
 	},
 	seismitoad: {
 		inherit: true,
-		baseStats: {hp: 105, atk: 95, def: 75, spa: 85, spd: 75, spe: 74},
-		abilities: {0: "Swift Swim", 1: "Toxic Boost", H: "Water Absorb"},
+		baseStats: { hp: 105, atk: 95, def: 75, spa: 85, spd: 75, spe: 74 },
+		abilities: { 0: "Swift Swim", 1: "Toxic Boost", H: "Water Absorb" },
 	},
 	throh: {
 		inherit: true,
@@ -1279,8 +1287,8 @@ export const Pokedex: {[k: string]: ModdedSpeciesData;} = {
 	},
 	leavanny: {
 		inherit: true,
-		baseStats: {hp: 75, atk: 113, def: 80, spa: 50, spd: 80, spe: 102},
-		abilities: {0: "Swarm", 1: "Chlorophyll", H: "Leaf Dress"},
+		baseStats: { hp: 75, atk: 113, def: 80, spa: 50, spd: 80, spe: 102 },
+		abilities: { 0: "Swarm", 1: "Chlorophyll", H: "Leaf Dress" },
 	},
 	scolipedemega: {
 		inherit: true,

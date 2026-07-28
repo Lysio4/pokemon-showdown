@@ -94,6 +94,7 @@ export const Scripts: ModdedBattleScriptsData = {
 
     return recoilDamage;
   },
+},
 
   init() {
     for (const i in this.data.Moves) {

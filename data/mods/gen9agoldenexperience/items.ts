@@ -293,6 +293,7 @@ export const Items: {[itemid: string]: ModdedItemData} = {
 	// modified items
 	deepseascale: {
 		inherit: true,
+		modded: true, // this makes its description display in Data Mod
 		name: "Deep Sea Scale",
 		shortDesc: "If held by a Clamperl or a Gorebyss, its Sp. Atk is x1.5.",
 		onModifySpAPriority: 2,
@@ -305,6 +306,7 @@ export const Items: {[itemid: string]: ModdedItemData} = {
 	},
 	deepseatooth: {
 		inherit: true,
+		modded: true, // this makes its description display in Data Mod
 		name: "Deep Sea Tooth",
 		shortDesc: "If held by a Clamperl or a Huntail, its Atk is x1.5.",
 		onModifyAtkPriority: 1,
@@ -317,6 +319,7 @@ export const Items: {[itemid: string]: ModdedItemData} = {
 	},
 	lightball: {
 		inherit: true,
+		modded: true, // this makes its description display in Data Mod
 		onModifyAtkPriority: 1,
 		onModifyAtk(atk, pokemon) {
 			if (pokemon.baseSpecies.baseSpecies === 'Pikachu') {
@@ -360,6 +363,7 @@ export const Items: {[itemid: string]: ModdedItemData} = {
 	},
 	leek: {
 		inherit: true,
+		modded: true, // this makes its description display in Data Mod
 		onModifyCritRatio(critRatio, user) {
 			if (["farfetchd", "sirfetchd"].includes(this.toID(user.baseSpecies.baseSpecies))) {
 				return 5;
@@ -370,17 +374,20 @@ export const Items: {[itemid: string]: ModdedItemData} = {
 	},
 	lycaniumz: {
 		inherit: true,
+		modded: true, // this makes its description display in Data Mod
 		zMoveFrom: "Golem Strike",
 		itemUser: ["Lycanroc", "Lycanroc-Midnight", "Lycanroc-Dusk", "Lycanroc-Bloodmoon"],
 		shortDesc: "If held by a Lycanroc forme with Golem Strike, it can use Splintered Stormshards.",
 	},
 	aloraichiumz: {
 		inherit: true,
+		modded: true, // this makes its description display in Data Mod
 		zMoveFrom: "Rising Voltage",
 		shortDesc: "If held by an Alolan Raichu with Rising Voltage, it can use Stoked Sparksurfer.",
 	},
 	tartapple: {
 		inherit: true,
+		modded: true, // this makes its description display in Data Mod
 		onModifySpePriority: 1,
 		onModifySpe(spe, pokemon) {
 			if (pokemon.baseSpecies.baseSpecies === 'Flapple') {
@@ -392,6 +399,7 @@ export const Items: {[itemid: string]: ModdedItemData} = {
 	},
 	sweetapple: {
 		inherit: true,
+		modded: true, // this makes its description display in Data Mod
 		onResidualOrder: 5,
 		onResidualSubOrder: 5,
 		onResidual(pokemon) {
@@ -404,6 +412,7 @@ export const Items: {[itemid: string]: ModdedItemData} = {
 	},
 	protector: {
 		inherit: true,
+		modded: true, // this makes its description display in Data Mod
 		onModifySpDPriority: 1,
 		onModifySpD(spd, pokemon) {
 			if (pokemon.baseSpecies.baseSpecies === 'Rhyperior') {

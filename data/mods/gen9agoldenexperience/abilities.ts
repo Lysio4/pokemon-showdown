@@ -414,6 +414,7 @@ export const Abilities: { [abilityid: string]: ModdedAbilityData; } = {
 	// modified abilities
 	justified: {
 		inherit: true,
+		modded: true, // this makes its description display in Data Mod
 		onSourceModifyAtkPriority: 6,
 		onSourceModifyAtk(atk, attacker, defender, move) {
 			if (move.type === 'Dark') {
@@ -433,6 +434,7 @@ export const Abilities: { [abilityid: string]: ModdedAbilityData; } = {
 	},
 	colorchange: {
 		inherit: true,
+		modded: true, // this makes its description display in Data Mod
 		onAfterMoveSecondary(target, source, move) {},
 		onTryHit(target, source, move) {
 			if (!target.hp) return;
@@ -457,6 +459,7 @@ export const Abilities: { [abilityid: string]: ModdedAbilityData; } = {
 	},
 	powerspot: {
 		inherit: true,
+		modded: true, // this makes its description display in Data Mod
 		onAllyBasePower(basePower, attacker, defender, move) {
 			if (attacker !== this.effectState.target) {
 				this.debug('Power Spot boost');
@@ -475,6 +478,7 @@ export const Abilities: { [abilityid: string]: ModdedAbilityData; } = {
 	},
 	iceface: {
 		inherit: true,
+		modded: true, // this makes its description display in Data Mod
 		onResidualOrder: 29,
 		onResidual(pokemon) {
 			if (pokemon.baseSpecies.baseSpecies !== 'Eiscue' || pokemon.transformed) {
@@ -508,6 +512,7 @@ export const Abilities: { [abilityid: string]: ModdedAbilityData; } = {
 	},
 	stickyhold: {
 		//inherit: true,
+		modded: true, // this makes its description display in Data Mod
 		onTakeItem(item, pokemon, source) {
 			if (!pokemon.hp || pokemon.item === 'stickybarb') return;
 			if (!this.activeMove) throw new Error("Battle.activeMove is null");
@@ -534,6 +539,7 @@ export const Abilities: { [abilityid: string]: ModdedAbilityData; } = {
 	},
 	normalize: {
 		inherit: true,
+		modded: true, // this makes its description display in Data Mod
 		desc: "This Pokemon's moves are changed to be Normal type and have their power multiplied by 1.5, and ignores type affinities. This effect comes before other effects that change a move's type.",
 		shortDesc: "This Pokemon's moves are changed to be Normal type and have 1.5x power, and ignore typing.",
 		onBasePower(basePower, pokemon, target, move) {
@@ -552,6 +558,7 @@ export const Abilities: { [abilityid: string]: ModdedAbilityData; } = {
 	},
 	watercompaction: {
 		inherit: true,
+		modded: true, // this makes its description display in Data Mod
 		onDamagingHit(damage, target, source, move) {},
 		onTryHit(target, source, move) {
 			if (target !== source && move.type === 'Water') {
@@ -565,6 +572,7 @@ export const Abilities: { [abilityid: string]: ModdedAbilityData; } = {
 	},
 	mimicry: {
 		inherit: true,
+		modded: true, // this makes its description display in Data Mod
 		onTerrainChange(pokemon) {
 			let types;
 			switch (this.field.terrain) {
@@ -601,6 +609,7 @@ export const Abilities: { [abilityid: string]: ModdedAbilityData; } = {
 	},
 	toxicboost: {
 		inherit: true,
+		modded: true, // this makes its description display in Data Mod
 		onDamagePriority: 1,
 		onDamage(damage, target, source, effect) {
 			if (effect.id === 'psn' || effect.id === 'tox') {
@@ -611,6 +620,7 @@ export const Abilities: { [abilityid: string]: ModdedAbilityData; } = {
 	},
 	flareboost: {
 		inherit: true,
+		modded: true, // this makes its description display in Data Mod
 		onDamagePriority: 1,
 		onDamage(damage, target, source, effect) {
 			if (effect.id === 'brn') {
@@ -621,6 +631,7 @@ export const Abilities: { [abilityid: string]: ModdedAbilityData; } = {
 	},
 	zenmode: {
 		inherit: true,
+		modded: true, // this makes its description display in Data Mod
 		flags: {}, // yes deleting the flags is an ugly way to do it but I need to find a better one lol
 		onStart(pokemon) {
 			if (pokemon.baseSpecies.baseSpecies !== 'Darmanitan' || pokemon.transformed) {
@@ -643,6 +654,7 @@ export const Abilities: { [abilityid: string]: ModdedAbilityData; } = {
 	},
 	runaway: {
 		inherit: true,
+		modded: true, // this makes its description display in Data Mod
 		onTrapPokemonPriority: -10,
 		onTrapPokemon(pokemon) {
 			pokemon.trapped = pokemon.maybeTrapped = false;
@@ -651,6 +663,7 @@ export const Abilities: { [abilityid: string]: ModdedAbilityData; } = {
 	},
 	illuminate: {
 		inherit: true,
+		modded: true, // this makes its description display in Data Mod
 		onSourceModifyAccuracyPriority: 9,
 		onSourceModifyAccuracy(accuracy) {
 			if (typeof accuracy !== 'number') return;
@@ -662,6 +675,7 @@ export const Abilities: { [abilityid: string]: ModdedAbilityData; } = {
 	},
 	honeygather: {
 		inherit: true,
+		modded: true, // this makes its description display in Data Mod
 		onResidualOrder: 26,
 		onResidualSubOrder: 1,
 		onResidual(pokemon) {
@@ -677,6 +691,7 @@ export const Abilities: { [abilityid: string]: ModdedAbilityData; } = {
 	},
 	defeatist: {
 		inherit: true,
+		modded: true, // this makes its description display in Data Mod
 		onModifyAtkPriority: 5,
 		onModifyAtk(atk, pokemon) {
 			const allies = pokemon.side.pokemon.filter(ally => ally === pokemon || !ally.fainted && !ally.status);
@@ -696,6 +711,7 @@ export const Abilities: { [abilityid: string]: ModdedAbilityData; } = {
 	},
 	galewings: {
 		inherit: true,
+		modded: true, // this makes its description display in Data Mod
 		onModifyPriority(priority, pokemon, target, move) {
 			if (move && move.type === 'Flying') return priority + 1;
 		},
@@ -704,6 +720,7 @@ export const Abilities: { [abilityid: string]: ModdedAbilityData; } = {
 	},
 	schooling: {
 		inherit: true,
+		modded: true, // this makes its description display in Data Mod
 		onStart(pokemon) {
 			if (pokemon.baseSpecies.baseSpecies !== 'Wishiwashi' || pokemon.level < 20 || pokemon.transformed) return;
 			if (pokemon.species.id === 'wishiwashi') {
@@ -731,6 +748,7 @@ export const Abilities: { [abilityid: string]: ModdedAbilityData; } = {
 	},
 	grasspelt: {
 		inherit: true,
+		modded: true, // this makes its description display in Data Mod
 		onStart(pokemon) {
 			if (
 				!this.field.setTerrain('grassyterrain') &&
@@ -749,6 +767,7 @@ export const Abilities: { [abilityid: string]: ModdedAbilityData; } = {
 	},
 	flowergift: {
 		inherit: true,
+		modded: true, // this makes its description display in Data Mod
 		onModifyAtkPriority: 3,
 		onModifyAtk(atk, pokemon) {
 			if (this.effectState.target.baseSpecies.baseSpecies !== 'Cherrim') return;
@@ -775,6 +794,7 @@ export const Abilities: { [abilityid: string]: ModdedAbilityData; } = {
 	},
 	seedsower: {
 		inherit: true,
+		modded: true, // this makes its description display in Data Mod
 		onDamagingHit(damage, target, source, move) {
 			this.field.setTerrain('grassyterrain');
 			if (!source.hasType('Grass')) {
@@ -786,6 +806,7 @@ export const Abilities: { [abilityid: string]: ModdedAbilityData; } = {
 	},
 	electromorphosis: {
 		inherit: true,
+		modded: true, // this makes its description display in Data Mod
 		onSourceModifyDamage(damage, source, target, move) {
 			if (target.volatiles['charge']) {
 				return this.chainModify(0.75);
@@ -794,6 +815,7 @@ export const Abilities: { [abilityid: string]: ModdedAbilityData; } = {
 	},
 	lingeringaroma: {
 		inherit: true,
+		modded: true, // this makes its description display in Data Mod
 		onDamagingHit(damage, target, source, move) {},
 		onAnyModifyDef(def, target, source, move) {
 			const abilityHolder = this.effectState.target;
@@ -812,6 +834,7 @@ export const Abilities: { [abilityid: string]: ModdedAbilityData; } = {
 	},
 	rattled: {
 		inherit: true,
+		modded: true, // this makes its description display in Data Mod
 		onSourceModifyAtkPriority: 6,
 		onSourceModifyAtk(atk, attacker, defender, move) {
 			if (move.type === 'Bug' || move.type === 'Ghost' || move.type === 'Dark') {
@@ -832,6 +855,7 @@ export const Abilities: { [abilityid: string]: ModdedAbilityData; } = {
 	},
 	teravolt: {
 		inherit: true,
+		modded: true, // this makes its description display in Data Mod
 		onModifyAtkPriority: 5,
 		onModifyAtk(atk, attacker, defender, move) {
 			if (move.type === 'Electric') {
@@ -851,6 +875,7 @@ export const Abilities: { [abilityid: string]: ModdedAbilityData; } = {
 	},
 	turboblaze: {
 		inherit: true,
+		modded: true, // this makes its description display in Data Mod
 		onModifyAtkPriority: 5,
 		onModifyAtk(atk, attacker, defender, move) {
 			if (move.type === 'Fire') {
@@ -870,6 +895,7 @@ export const Abilities: { [abilityid: string]: ModdedAbilityData; } = {
 	},
 	truant: {
 		inherit: true,
+		modded: true, // this makes its description display in Data Mod
 		onBeforeMove(pokemon, target, move) {
 			if (pokemon.removeVolatile('truant')) {
 				if (move.category !== 'Status') {
@@ -888,6 +914,7 @@ export const Abilities: { [abilityid: string]: ModdedAbilityData; } = {
 	},
 	fullmetalbody: {
 		inherit: true,
+		modded: true, // this makes its description display in Data Mod
 		onTryHit(target, source, move) {
 			if (move.category === 'Status' && target !== source) {
 				this.add('-immune', target, '[from] ability: Full Metal Body');
@@ -898,6 +925,7 @@ export const Abilities: { [abilityid: string]: ModdedAbilityData; } = {
 	},
 	shadowshield: {
 		inherit: true,
+		modded: true, // this makes its description display in Data Mod
 		onTryBoost(boost, target, source, effect) {
 			if (source && target === source) return;
 			let showMsg = false;
@@ -916,6 +944,7 @@ export const Abilities: { [abilityid: string]: ModdedAbilityData; } = {
 	},
 	arenatrap: {
 		inherit: true,
+		modded: true, // this makes its description display in Data Mod
 		onFoeTrapPokemon(pokemon) {
 			if ((pokemon.hasType('Grass') || pokemon.hasType('Ground') || pokemon.hasType('Rock')) && pokemon.isAdjacent(this.effectState.target)) {
 				pokemon.tryTrap(true);
@@ -933,6 +962,7 @@ export const Abilities: { [abilityid: string]: ModdedAbilityData; } = {
 	},
 	windpower: {
 		inherit: true,
+		modded: true, // this makes its description display in Data Mod
 		onImmunity(type, pokemon) {
 			if (type === 'sandstorm') return false;
 		},
@@ -947,6 +977,7 @@ export const Abilities: { [abilityid: string]: ModdedAbilityData; } = {
 	},
 	windrider: {
 		inherit: true,
+		modded: true, // this makes its description display in Data Mod
 		onImmunity(type, pokemon) {
 			if (type === 'sandstorm') return false;
 		},

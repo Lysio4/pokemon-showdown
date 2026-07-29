@@ -475,6 +475,7 @@ export const Moves: { [k: string]: ModdedMoveData; } = {
 	// modified moves
 	toxicthread: {
 		inherit: true,
+		modded: true, // this makes its description display in Data Mod
 		boosts: {
 			spe: -2,
 		},
@@ -484,6 +485,7 @@ export const Moves: { [k: string]: ModdedMoveData; } = {
 	},
 	sonicboom: {
 		inherit: true,
+		modded: true, // this makes its description display in Data Mod
 		damage: null,
 		basePower: 40,
 		accuracy: 100,
@@ -500,15 +502,18 @@ export const Moves: { [k: string]: ModdedMoveData; } = {
 	},
 	triplekick: {
 		inherit: true,
+		modded: true, // this makes its description display in Data Mod
 		accuracy: 90,
 		basePower: 20,
 	},
 	playrough: {
 		inherit: true,
+		modded: true, // this makes its description display in Data Mod
 		accuracy: 100,
 	},
 	payback: {
 		inherit: true,
+		modded: true, // this makes its description display in Data Mod
 		basePower: 65,
 		basePowerCallback(pokemon, target, move) {
 			if (target.newlySwitched || this.queue.willMove(target)) {
@@ -523,6 +528,7 @@ export const Moves: { [k: string]: ModdedMoveData; } = {
 	},
 	avalanche: {
 		inherit: true,
+		modded: true, // this makes its description display in Data Mod
 		basePower: 65,
 		basePowerCallback(pokemon, target, move) {
 			if (target.newlySwitched || this.queue.willMove(target)) {
@@ -537,10 +543,12 @@ export const Moves: { [k: string]: ModdedMoveData; } = {
 	},
 	armthrust: {
 		inherit: true,
+		modded: true, // this makes its description display in Data Mod
 		basePower: 25,
 	},
 	crosschop: {
 		inherit: true,
+		modded: true, // this makes its description display in Data Mod
 		accuracy: 85,
 		basePower: 120,
 		pp: 10,
@@ -549,7 +557,7 @@ export const Moves: { [k: string]: ModdedMoveData; } = {
 	},
 	submission: {
 		inherit: true,
-		isViable: true,
+		modded: true, // this makes its description display in Data Mod
 		accuracy: 100,
 		basePower: 120,
 		pp: 15,
@@ -559,7 +567,7 @@ export const Moves: { [k: string]: ModdedMoveData; } = {
 	},
 	powdersnow: {
 		inherit: true,
-		isViable: true,
+		modded: true, // this makes its description display in Data Mod
 		basePower: 20,
 		pp: 20,
 		secondary: {
@@ -571,7 +579,7 @@ export const Moves: { [k: string]: ModdedMoveData; } = {
 	},
 	nightdaze: {
 		inherit: true,
-		isViable: true,
+		modded: true, // this makes its description display in Data Mod
 		accuracy: 100,
 		basePower: 95,
 		desc: "Has a 20% chance to lower the target's Attack by 1 stage.",
@@ -585,6 +593,7 @@ export const Moves: { [k: string]: ModdedMoveData; } = {
 	},
 	powergem: {
 		inherit: true,
+		modded: true, // this makes its description display in Data Mod
 		basePower: 90,
 		desc: "Has a 10% chance to raise the user's Defense by 1 stage.",
 		shortDesc: "10% chance to raise user's Defense by 1.",
@@ -599,6 +608,7 @@ export const Moves: { [k: string]: ModdedMoveData; } = {
 	},
 	aeroblast: {
 		inherit: true,
+		modded: true, // this makes its description display in Data Mod
 		accuracy: 100,
 		pp: 10,
 		desc: "Damage is calculated using the user's Sp. Defense stat as its Sp. Attack, including stat stage changes. Other effects that modify the Sp. Attack stat are used as normal. Has a higher chance for a critical hit.",
@@ -607,6 +617,7 @@ export const Moves: { [k: string]: ModdedMoveData; } = {
 	},
 	multiattack: {
 		inherit: true,
+		modded: true, // this makes its description display in Data Mod
 		desc: "This move's type depends on the user's primary type. If the user's primary type is typeless, this move's type is the user's secondary type if it has one, otherwise the added type from Forest's Curse or Trick-or-Treat. This move is typeless if the user's type is typeless alone.",
 		shortDesc: "Type varies based on the user's primary type.",
 		onModifyType(move, pokemon) {
@@ -617,11 +628,13 @@ export const Moves: { [k: string]: ModdedMoveData; } = {
 	},
 	bouncybubble: {
 		inherit: true,
+		modded: true, // this makes its description display in Data Mod
 		basePower: 90,
 		isNonstandard: null,
 	},
 	buzzybuzz: {
 		inherit: true,
+		modded: true, // this makes its description display in Data Mod
 		basePower: 120,
 		isNonstandard: null,
 		shortDesc: "10% to paralyze target.",
@@ -633,36 +646,43 @@ export const Moves: { [k: string]: ModdedMoveData; } = {
 	},
 	sizzlyslide: {
 		inherit: true,
+		modded: true, // this makes its description display in Data Mod
 		basePower: 85,
 		isNonstandard: null,
 	},
 	glitzyglow: {
 		inherit: true,
+		modded: true, // this makes its description display in Data Mod
 		accuracy: 100,
 		isNonstandard: null,
 	},
 	baddybad: {
 		inherit: true,
+		modded: true, // this makes its description display in Data Mod
 		accuracy: 100,
 		isNonstandard: null,
 	},
 	sappyseed: {
 		inherit: true,
+		modded: true, // this makes its description display in Data Mod
 		accuracy: 100,
 		isNonstandard: null,
 	},
 	freezyfrost: {
 		inherit: true,
+		modded: true, // this makes its description display in Data Mod
 		accuracy: 100,
 		isNonstandard: null,
 	},
 	sparklyswirl: {
 		inherit: true,
+		modded: true, // this makes its description display in Data Mod
 		accuracy: 100,
 		isNonstandard: null,
 	},
 	triplearrows: {
 		inherit: true,
+		modded: true, // this makes its description display in Data Mod
 		secondaries: [
 			{
 				chance: 50,
@@ -683,6 +703,7 @@ export const Moves: { [k: string]: ModdedMoveData; } = {
 	},
 	direclaw: {
 		inherit: true,
+		modded: true, // this makes its description display in Data Mod
 		shortDesc: "30% chance to poison or paralyze target.",
 		secondary: {
 			chance: 50,
@@ -694,6 +715,7 @@ export const Moves: { [k: string]: ModdedMoveData; } = {
 	},
 	fissure: {
 		inherit: true,
+		modded: true, // this makes its description display in Data Mod
 		accuracy: 100,
 		basePower: 90,
 		ohko: false,
@@ -709,6 +731,7 @@ export const Moves: { [k: string]: ModdedMoveData; } = {
 	},
 	sheercold: {
 		inherit: true,
+		modded: true, // this makes its description display in Data Mod
 		accuracy: 100,
 		basePower: 130,
 		ohko: false,
@@ -740,6 +763,7 @@ export const Moves: { [k: string]: ModdedMoveData; } = {
 	},
 	guillotine: {
 		inherit: true,
+		modded: true, // this makes its description display in Data Mod
 		accuracy: 100,
 		basePower: 90,
 		flags: { contact: 1, protect: 1, mirror: 1, metronome: 1, slicing: 1 },
@@ -753,6 +777,7 @@ export const Moves: { [k: string]: ModdedMoveData; } = {
 	},
 	horndrill: {
 		inherit: true,
+		modded: true, // this makes its description display in Data Mod
 		accuracy: 85,
 		basePower: 120,
 		ohko: false,
@@ -763,6 +788,7 @@ export const Moves: { [k: string]: ModdedMoveData; } = {
 	},
 	snipeshot: {
 		inherit: true,
+		modded: true, // this makes its description display in Data Mod
 		basePower: 60,
 		willCrit: true,
 		shortDesc: "Always results in a critical hit. Cannot be redirected.",
@@ -770,6 +796,7 @@ export const Moves: { [k: string]: ModdedMoveData; } = {
 	},
 	lifedew: {
 		inherit: true,
+		modded: true, // this makes its description display in Data Mod
 		onHit(pokemon) {
 			pokemon.cureStatus();
 		},
@@ -778,38 +805,47 @@ export const Moves: { [k: string]: ModdedMoveData; } = {
 	},
 	milkdrink: {
 		inherit: true,
+		modded: true, // this makes its description display in Data Mod
 		pp: 10,
 	},
 	recover: {
 		inherit: true,
+		modded: true, // this makes its description display in Data Mod
 		pp: 10,
 	},
 	rest: {
 		inherit: true,
+		modded: true, // this makes its description display in Data Mod
 		pp: 10,
 	},
 	roost: {
 		inherit: true,
+		modded: true, // this makes its description display in Data Mod
 		pp: 10,
 	},
 	shoreup: {
 		inherit: true,
+		modded: true, // this makes its description display in Data Mod
 		pp: 10,
 	},
 	slackoff: {
 		inherit: true,
+		modded: true, // this makes its description display in Data Mod
 		pp: 10,
 	},
 	softboiled: {
 		inherit: true,
+		modded: true, // this makes its description display in Data Mod
 		pp: 10,
 	},
 	axekick: {
 		inherit: true,
+		modded: true, // this makes its description display in Data Mod
 		type: "Dark",
 	},
 	ragingbull: {
 		inherit: true,
+		modded: true, // this makes its description display in Data Mod
 		basePower: 120,
 		secondary: {
 			chance: 10,
@@ -822,6 +858,7 @@ export const Moves: { [k: string]: ModdedMoveData; } = {
 	},
 	tidyup: {
 		inherit: true,
+		modded: true, // this makes its description display in Data Mod
 		shortDesc: "User +1 Atk, Spe, Acc. Clears all substitutes/hazards on user's side.",
 		onHit(pokemon) {
 			let success = false;
@@ -844,6 +881,7 @@ export const Moves: { [k: string]: ModdedMoveData; } = {
 	},
 	hyperdrill: {
 		inherit: true,
+		modded: true, // this makes its description display in Data Mod
 		shortDesc: "Bypasses protection without breaking it. 50% chance to lower target's Def by 2 stages.",
 		secondary: {
 			chance: 50,
@@ -862,6 +900,7 @@ export const Moves: { [k: string]: ModdedMoveData; } = {
 	},
 	magicaltorque: {
 		inherit: true,
+		modded: true, // this makes its description display in Data Mod
 		isNonstandard: null,
 		secondary: {
 			chance: 20,
@@ -878,6 +917,7 @@ export const Moves: { [k: string]: ModdedMoveData; } = {
 	},
 	wickedtorque: {
 		inherit: true,
+		modded: true, // this makes its description display in Data Mod
 		isNonstandard: null,
 		secondary: {
 			chance: 20,
@@ -890,6 +930,7 @@ export const Moves: { [k: string]: ModdedMoveData; } = {
 	},
 	chatter: {
 		inherit: true,
+		modded: true, // this makes its description display in Data Mod
 		basePower: 80,
 		isNonstandard: null,
 		pp: 10,
@@ -906,6 +947,7 @@ export const Moves: { [k: string]: ModdedMoveData; } = {
 	},
 	psyblade: {
 		inherit: true,
+		modded: true, // this makes its description display in Data Mod
 		terrain: 'electricterrain',
 		shortDesc: "Sets Electric Terrain upon use. During Electric Terrain: 1.5x power.",
 		desc: "Sets Electric Terrain upon use. During Electric Terrain: 1.5x power.",
@@ -916,18 +958,22 @@ export const Moves: { [k: string]: ModdedMoveData; } = {
 	},
 	psyshieldbash: {
 		inherit: true,
+		modded: true, // this makes its description display in Data Mod
 		accuracy: 100,
 	},
 	doublehit: {
 		inherit: true,
+		modded: true, // this makes its description display in Data Mod
 		basePower: 45,
 	},
 	paraboliccharge: {
 		inherit: true,
+		modded: true, // this makes its description display in Data Mod
 		basePower: 75,
 	},
 	psystrike: {
 		inherit: true,
+		modded: true, // this makes its description display in Data Mod
 		onModifyMove(move, pokemon, target) {
 			if (pokemon.getStat('atk', false, true) > pokemon.getStat('spa', false, true)) move.category = 'Physical';
 			if (target.getStat('def', false, true) > target.getStat('spd', false, true)) move.overrideDefensiveStat = 'spd';
@@ -937,14 +983,17 @@ export const Moves: { [k: string]: ModdedMoveData; } = {
 	},
 	snaptrap: {
 		inherit: true,
+		modded: true, // this makes its description display in Data Mod
 		basePower: 65,
 	},
 	needlearm: {
 		inherit: true,
+		modded: true, // this makes its description display in Data Mod
 		basePower: 95,
 	},
 	relicsong: {
 		inherit: true,
+		modded: true, // this makes its description display in Data Mod
 		basePower: 95,
 		onModifyMove(move, pokemon) {
 			if (pokemon.getStat('atk', false, true) > pokemon.getStat('spa', false, true)) move.category = 'Physical';
@@ -954,6 +1003,7 @@ export const Moves: { [k: string]: ModdedMoveData; } = {
 	},
 	tarshot: {
 		inherit: true,
+		modded: true, // this makes its description display in Data Mod
 		basePower: 80,
 		category: "Special",
 		name: "Tar Shot",

@@ -276,7 +276,7 @@ export const Formats: import('../sim/dex-formats').FormatList = [
 		name: "[Gen 9] A Golden Experience OU",
 		desc: `A fun metagame where we try to make everything viable, or at least usable. We also have new Fakemons!`,
 		mod: 'gen9agoldenexperience',
-		ruleset: ['Standard NatDex', 'Terastal Clause', 'Non-Signature Z-Move Clause', 'Inaccurate Sleep Moves Clause'],
+		ruleset: ['Standard NatDex', 'Terastal Clause', 'Non-Signature Z-Move Clause', 'Inaccurate Sleep Moves Clause', 'Data Mod'],
 		banlist: [
 			'Uber', 'AG', 'Moody', 'Power Construct', 'King\'s Rock',
 			'Baton Pass', 'Last Respects', 'Quick Claw', 'Razor Fang', 'Shadow Tag', 'Shed Tail', 'Tera Orb', 
@@ -287,7 +287,7 @@ export const Formats: import('../sim/dex-formats').FormatList = [
 		name: "[Gen 9] A Golden Experience Uber",
 		desc: `A fun metagame where we try to make everything viable, or at least usable. We also have new Fakemons!`,
 		mod: 'gen9agoldenexperience',
-		ruleset: ['Standard NatDex', 'Terastal Clause', 'Non-Signature Z-Move Clause', 'Inaccurate Sleep Moves Clause'],
+		ruleset: ['Standard NatDex', 'Terastal Clause', 'Non-Signature Z-Move Clause', 'Inaccurate Sleep Moves Clause', 'Data Mod'],
 		banlist: [
 			'AG', 'King\'s Rock',
 			'Baton Pass', 'Light Clay', 'Quick Claw', 'Razor Fang',
@@ -298,7 +298,7 @@ export const Formats: import('../sim/dex-formats').FormatList = [
 		name: "[Gen 9] A Golden Experience UU",
 		desc: `A fun metagame where we try to make everything viable, or at least usable. We also have new Fakemons!`,
 		mod: 'gen9agoldenexperience',
-		ruleset: ['Standard NatDex', 'Terastal Clause', 'Non-Signature Z-Move Clause', 'Inaccurate Sleep Moves Clause'],
+		ruleset: ['Standard NatDex', 'Terastal Clause', 'Non-Signature Z-Move Clause', 'Inaccurate Sleep Moves Clause', 'Data Mod'],
 		banlist: [
 			'Uber', 'AG', 'OU', 'UUBL', 'Moody', 'Power Construct', 'King\'s Rock',
 			'Baton Pass', 'Last Respects', 'Quick Claw', 'Razor Fang', 'Shadow Tag', 'Shed Tail',
@@ -310,7 +310,7 @@ export const Formats: import('../sim/dex-formats').FormatList = [
 		name: "[Gen 9] A Golden Experience RU",
 		desc: `A fun metagame where we try to make everything viable, or at least usable. We also have new Fakemons!`,
 		mod: 'gen9agoldenexperience',
-		ruleset: ['Standard NatDex', 'Terastal Clause', 'Non-Signature Z-Move Clause', 'Inaccurate Sleep Moves Clause'],
+		ruleset: ['Standard NatDex', 'Terastal Clause', 'Non-Signature Z-Move Clause', 'Inaccurate Sleep Moves Clause', 'Data Mod'],
 		banlist: [
 			'Uber', 'AG', 'OU', 'UUBL', 'UU', 'RUBL', 'Moody', 'Power Construct', 'King\'s Rock',
 			'Baton Pass', 'Last Respects', 'Quick Claw', 'Razor Fang', 'Shadow Tag', 'Shed Tail',
@@ -322,7 +322,7 @@ export const Formats: import('../sim/dex-formats').FormatList = [
 		name: "[Gen 9] A Golden Experience NU",
 		desc: `A fun metagame where we try to make everything viable, or at least usable. We also have new Fakemons!`,
 		mod: 'gen9agoldenexperience',
-		ruleset: ['Standard NatDex', 'Terastal Clause', 'Non-Signature Z-Move Clause', 'Inaccurate Sleep Moves Clause'],
+		ruleset: ['Standard NatDex', 'Terastal Clause', 'Non-Signature Z-Move Clause', 'Inaccurate Sleep Moves Clause', 'Data Mod'],
 		banlist: [
 			'Uber', 'AG', 'OU', 'UUBL', 'UU', 'RUBL', 'RU', 'NUBL', 'Moody', 'Power Construct', 'King\'s Rock',
 			'Baton Pass', 'Last Respects', 'Quick Claw', 'Razor Fang', 'Shadow Tag', 'Shed Tail',
@@ -335,7 +335,7 @@ export const Formats: import('../sim/dex-formats').FormatList = [
 		desc: `A fun metagame where we try to make everything viable, or at least usable. We also have new Fakemons!`,
 		mod: 'gen9agoldenexperience',
 		gameType: 'doubles',
-		ruleset: ['Standard Doubles', 'NatDex Mod', 'Evasion Abilities Clause', 'Terastal Clause', 'Non-Signature Z-Move Clause'],
+		ruleset: ['Standard Doubles', 'NatDex Mod', 'Evasion Abilities Clause', 'Terastal Clause', 'Non-Signature Z-Move Clause', 'Data Mod'],
 		banlist: [
 			'DUber', 'Shadow Tag', 'Eevium Z', 'Power Construct', 'Coaching', 'Dark Void', 'Swagger', 'Tera Orb', 
 		],
@@ -354,7 +354,7 @@ export const Formats: import('../sim/dex-formats').FormatList = [
 		desc: `Pok&eacute;mon have access to almost any ability.`,
 		mod: 'gen9agoldenexperience',
 		// searchShow: false,
-		ruleset: ['Standard NatDex', '!Obtainable Abilities', 'Ability Clause = 2', '!Sleep Clause Mod', 'Sleep Moves Clause', 'Terastal Clause', 'Non-Signature Z-Move Clause'],
+		ruleset: ['Standard NatDex', '!Obtainable Abilities', 'Ability Clause = 2', '!Sleep Clause Mod', 'Sleep Moves Clause', 'Terastal Clause', 'Non-Signature Z-Move Clause', 'Data Mod'],
 		banlist: [
 			'Annihilape', 'Arceus', 'Archeops', 'Baxcalibur', 'Blacephalon', 'Blastoise-Mega', 'Blaziken-Mega', 'Bisharp', 'Calyrex-Ice', 'Calyrex-Shadow', 'Ceruledge', 'Darkrai', 'Deoxys-Attack',
 			'Deoxys-Normal', 'Dialga', 'Dialga-Origin', 'Dracovish', 'Dragapult', 'Enamorus-Incarnate', 'Eternatus', 'Flutter Mane', 'Gengar-Mega', 'Giratina', 'Giratina-Origin', 'Gouging Fire', 'Groudon', 'Ho-Oh',
@@ -375,7 +375,7 @@ export const Formats: import('../sim/dex-formats').FormatList = [
 		// searchShow: false,
 		ruleset: [
 			'Standard AG', 'NatDex Mod', '!Obtainable',
-			'Forme Clause', 'Sleep Moves Clause', 'Ability Clause = 2', 'OHKO Clause', 'Evasion Moves Clause', 'Dynamax Clause', 'CFZ Clause', 'Terastal Clause', 'Non-Signature Z-Move Clause',
+			'Forme Clause', 'Sleep Moves Clause', 'Ability Clause = 2', 'OHKO Clause', 'Evasion Moves Clause', 'Dynamax Clause', 'CFZ Clause', 'Terastal Clause', 'Non-Signature Z-Move Clause', 'Data Mod'
 		],
 		banlist: [
 			'Cramorant-Gorging', 'Calyrex-Shadow', 'Eternatus-Eternamax', 'Greninja-Ash', 'Rayquaza-Mega', 'Shedinja', 'Terapagos-Stellar', 
@@ -408,7 +408,7 @@ export const Formats: import('../sim/dex-formats').FormatList = [
 		name: "[Gen 9] A Golden Experience Mix and Mega",
 		desc: `Mega evolve any Pok&eacute;mon with any mega stone, or transform them with Genesect Drives, Primal orbs, Origin orbs, Rusted items, Ogerpon Masks, Arceus Plates, and Silvally Memories with no limit. Mega and Primal boosts based on form changes from gen 7.`,
 		mod: 'mixandmegaage',
-		ruleset: ['Standard NatDex', 'Terastal Clause', 'Non-Signature Z-Move Clause', 'Inaccurate Sleep Moves Clause'],
+		ruleset: ['Standard NatDex', 'Terastal Clause', 'Non-Signature Z-Move Clause', 'Inaccurate Sleep Moves Clause', 'Data Mod'],
 		banlist: [
 			'Calyrex-Shadow', 'Koraidon', 'Kyogre', 'Miraidon', 'Moody', 'Beedrillite', 'Blazikenite', 'Gengarite', 
 			'Kangaskhanite', 'Lucarionite Z', 'Mawilite', 'Medichamite', 'Raichunite Y', 'Red Orb', 
@@ -478,7 +478,7 @@ export const Formats: import('../sim/dex-formats').FormatList = [
 		name: "[Gen 9] A Golden Experience STABmons",
 		desc: `Pok&eacute;mon can use any move of their typing, in addition to the moves they can normally learn.`,
 		mod: 'gen9agoldenexperience',
-		ruleset: ['Standard NatDex', 'STABmons Move Legality', '!Sleep Clause Mod', 'Sleep Moves Clause', 'Terastal Clause', 'Non-Signature Z-Move Clause'],
+		ruleset: ['Standard NatDex', 'STABmons Move Legality', '!Sleep Clause Mod', 'Sleep Moves Clause', 'Terastal Clause', 'Non-Signature Z-Move Clause', 'Data Mod'],
 		banlist: [
 			'Araquanid', 'Arceus', 'Azumarill', 'Baxcalibur', 'Blaziken-Mega', 'Basculegion', 'Basculegion-F', 'Calyrex-Ice', 'Calyrex-Shadow', 'Chi-Yu', 'Chien-Pao',
 			'Cloyster', 'Darkrai', 'Darmanitan-Galar', 'Deoxys-Attack', 'Deoxys-Normal', 'Dialga', 'Dialga-Origin', 'Dracovish', 'Dragapult', 'Dragonite', 'Enamorus-Incarnate', 
@@ -501,7 +501,7 @@ export const Formats: import('../sim/dex-formats').FormatList = [
 		name: "[Gen 9] A Golden Experience Godly Gift",
 		desc: `Each Pok&eacute;mon receives one base stat from a God (Restricted Pok&eacute;mon) depending on its position in the team. If there is no restricted Pok&eacute;mon, it uses the Pok&eacute;mon in the first slot.`,
 		mod: 'gen9agoldenexperience',
-		ruleset: ['Standard NatDex', 'Terastal Clause', '!Sleep Clause Mod', 'Sleep Moves Clause', 'Godly Gift Mod', 'Mega Rayquaza Clause', 'Non-Signature Z-Move Clause'],
+		ruleset: ['Standard NatDex', 'Terastal Clause', '!Sleep Clause Mod', 'Sleep Moves Clause', 'Godly Gift Mod', 'Mega Rayquaza Clause', 'Non-Signature Z-Move Clause', 'Data Mod'],
 		banlist: [
 			'Blissey', 'Calyrex-Shadow', 'Chansey', 'Deoxys-Attack', 'Groudon-Primal', 'Koraidon', 'Miraidon', 'Shuckle', 'Xerneas',
 			'Arena Trap', 'Huge Power', 'Light Power', 'Moody', 'Pure Power', 'Swift Swim', 'King\'s Rock', 'Quick Claw', 'Assist',
@@ -521,7 +521,7 @@ export const Formats: import('../sim/dex-formats').FormatList = [
 		name: "[Gen 9] A Golden Experience Pokebilities AAA",
 		desc: `Pok&eacute;mon have all of their released abilities simultaneously, as well as one ability they cannot normally use.`,
 		mod: 'pokebilitiesage',
-		ruleset: ['Standard NatDex', '!Obtainable Abilities', 'Ability Clause = 1', 'AAA Restricted Abilities', 'Inaccurate Sleep Moves Clause', 'Non-Signature Z-Move Clause'],
+		ruleset: ['Standard NatDex', '!Obtainable Abilities', 'Ability Clause = 1', 'AAA Restricted Abilities', 'Inaccurate Sleep Moves Clause', 'Non-Signature Z-Move Clause', 'Data Mod'],
 		banlist: [
 			'Annihilape', 'Arcanine-Hisui', 'Arceus', 'Archaludon', 'Azumarill', 'Basculegion', 'Basculin', 'Baxcalibur', 'Blaziken', 'Braviary-Hisui', 'Calyrex-Ice',
 			'Calyrex-Shadow', 'Ceruledge', 'Chi-Yu', 'Chien-Pao', 'Cinccino', 'Clefable', 'Cloyster', 'Conkeldurr', 'Darkrai', 'Deoxys-Normal', 'Deoxys-Attack', 'Dialga',
@@ -599,7 +599,7 @@ export const Formats: import('../sim/dex-formats').FormatList = [
 		name: "[Gen 9] A Golden Experience Trademarked",
 		desc: `Sacrifice your Pok&eacute;mon's ability for a status move that activates on switch-in.`,
 		mod: 'trademarkedage',
-		ruleset: ['Standard NatDex', 'Sleep Moves Clause', 'Terastal Clause', 'Non-Signature Z-Move Clause'],
+		ruleset: ['Standard NatDex', 'Sleep Moves Clause', 'Terastal Clause', 'Non-Signature Z-Move Clause', 'Data Mod'],
 		banlist: [
 			'Annihilape', 'Arceus', 'Calyrex-Ice', 'Calyrex-Shadow', 'Decidueye-Base', 'Deoxys-Attack', 'Deoxys-Base', 'Dialga', 'Dialga-Origin', 'Eternatus', 'Flutter Mane',
 			'Giratina', 'Giratina-Origin', 'Groudon', 'Ho-Oh', 'Hoopa-Unbound', 'Keldeo', 'Koraidon', 'Kyogre', 'Kyurem-Black', 'Kyurem-White', 'Lugia', 'Lunala', 'Magearna',

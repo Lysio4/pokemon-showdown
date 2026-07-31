@@ -375,10 +375,6 @@ export const Abilities: { [abilityid: string]: ModdedAbilityData; } = {
 		inherit: true,
 		isNonstandard: null,
 	},
-	rewind: {
-		inherit: true,
-		isNonstandard: null,
-	},
 	hugeclamp: {
 		inherit: true,
 		isNonstandard: null,
@@ -408,6 +404,10 @@ export const Abilities: { [abilityid: string]: ModdedAbilityData; } = {
 		isNonstandard: null,
 	},
 	aerodynamism: {
+		inherit: true,
+		isNonstandard: null,
+	},
+	sandsoftime: {
 		inherit: true,
 		isNonstandard: null,
 	},

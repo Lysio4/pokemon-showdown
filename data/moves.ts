@@ -23650,7 +23650,7 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 		isNonstandard: "Custom",
 	},
 	prevailingwind: {
-		num: 88,
+		num: -88,
 		accuracy: 100,
 		basePower: 65,
 		category: "Special",
@@ -23678,6 +23678,77 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 		type: "Flying",
 		shortDesc: "100% flinch. Fails unless target using a wind move.",
 		isNonstandard: "Custom",
+	},
+	crazedpunch: {
+		num: -89,
+		accuracy: 100,
+		basePower: 75,
+		category: "Physical",
+		name: "Crazed Punch",
+		pp: 10,
+		priority: 0,
+		flags: { contact: 1, protect: 1, mirror: 1, punch: 1 },
+		onModifyCritRatio(critRatio, source, target) {
+			if (target && ['psn', 'tox'].includes(target.status)) return 5;
+		},
+		onPrepareHit(target, source, move) {
+			this.attrLastMove('[still]');
+			this.add('-anim', source, "Poison Jab", target);
+		},
+		target: "normal",
+		type: "Poison",
+		shortDesc: "This attack is a critical hit if the target is poisoned.",
+		isNonstandard: "Custom",
+	},
+	dirtyheadshot: {
+		num: -90,
+		accuracy: 100,
+		basePower: 80,
+		onModifyMove(move) {
+			if (target && ['psn', 'tox'].includes(target.status)) {
+				move.secondaries.push({
+					chance: 100,
+					boosts: {
+						spe: -1,
+					},
+				});
+			}
+		},
+		onPrepareHit(target, source, move) {
+			this.attrLastMove('[still]');
+			this.add('-anim', source, "Extransensory", target);
+		},
+		category: "Special",
+		name: "Dirty Headshot",
+		pp: 10,
+		priority: 0,
+		flags: { protect: 1, mirror: 1, metronome: 1 },
+		target: "normal",
+		type: "Psychic",
+		contestType: "Clever",
+	},
+	cruelfeather: {
+		num: -91,
+		accuracy: 100,
+		basePower: 45,
+		category: "Physical",
+		name: "Cruel Feather",
+		pp: 10,
+		priority: 0,
+		flags: { protect: 1, mirror: 1, metronome: 1 },
+		multihit: 2,
+		onHit(pokemon) {
+			if (target && ['psn', 'tox'].includes(target.status)) return pokemon.cureStatus();
+		},
+		onPrepareHit(target, source, move) {
+			this.attrLastMove('[still]');
+			this.add('-anim', source, "Dual Wingbeat", target);
+		},
+		target: "normal",
+		type: "Fairy",
+		zMove: { basePower: 180 },
+		maxMove: { basePower: 140 },
+		contestType: "Clever",
 	},
 	// Touhou
 	dreamseal: {

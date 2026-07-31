@@ -527,7 +527,7 @@ export const Pokedex: {[k: string]: ModdedSpeciesData;} = {
 	},
 	celebi: {
 		inherit: true,
-		abilities: { 0: "Natural Cure", H: "Rewind" },
+		abilities: { 0: "Natural Cure", H: "Sands of Time" },
 	},
 	// Gen 3 :
 	sceptilemega: {
@@ -1119,7 +1119,7 @@ export const Pokedex: {[k: string]: ModdedSpeciesData;} = {
 	},
 	dialgaorigin: {
 		inherit: true,
-		abilities: { 0: "Levitate" },
+		abilities: { 0: "Levitate", H: "Sands of Time" },
 	},
 	palkiaorigin: {
 		inherit: true,
@@ -1569,7 +1569,7 @@ export const Pokedex: {[k: string]: ModdedSpeciesData;} = {
 	},
 	heliolisk: {
 		inherit: true,
-		abilities: { 0: "Dry Skin", 1: "Solar Energy", H: "Solar Power" },
+		abilities: { 0: "Dry Skin", 1: "Sands of Time", H: "Solar Energy" },
 	},
 	tyrantrum: {
 		inherit: true,
@@ -2116,28 +2116,32 @@ export const Pokedex: {[k: string]: ModdedSpeciesData;} = {
 	// Gen 9
 	oinkologne: {
 		inherit: true,
-		baseStats: {hp: 110, atk: 100, def: 85, spa: 49, spd: 90, spe: 55},
+		baseStats: { hp: 110, atk: 100, def: 85, spa: 49, spd: 90, spe: 55 },
 	},
 	oinkolognef: {
 		inherit: true,
-		baseStats: {hp: 115, atk: 80, def: 70, spa: 49, spd: 100, spe: 55},
-		abilities: {0: "Soothing Fragrance", 1: "Gluttony", H: "Thick Fat"},
+		baseStats: { hp: 115, atk: 80, def: 70, spa: 49, spd: 100, spe: 55 },
+		abilities: { 0: "Soothing Fragrance", 1: "Gluttony", H: "Thick Fat" },
 	},
 	lokix: {
 		inherit: true,
-		baseStats: {hp: 71, atk: 112, def: 78, spa: 52, spd: 55, spe: 92},
+		baseStats: { hp: 71, atk: 112, def: 78, spa: 52, spd: 55, spe: 92 },
 	},
 	fidough: {
 		inherit: true,
-		baseStats: {hp: 65, atk: 55, def: 70, spa: 30, spd: 55, spe: 37},
+		baseStats: { hp: 65, atk: 55, def: 70, spa: 30, spd: 55, spe: 37 },
 	},
 	dachsbun: {
 		inherit: true,
-		baseStats: {hp: 95, atk: 80, def: 115, spa: 50, spd: 80, spe: 57},
+		baseStats: { hp: 95, atk: 80, def: 115, spa: 50, spd: 80, spe: 57 },
 	},
 	arboliva: {
 		inherit: true,
 		baseStats: { hp: 88, atk: 69, def: 90, spa: 125, spd: 109, spe: 39 },
+	},
+	armarouge: {
+		inherit: true,
+		abilities: { 0: "Flash Fire", 1: "Sands of Time", H: "Weak Armor" },
 	},
 	kilowattrel: {
 		inherit: true,
@@ -2296,34 +2300,25 @@ export const Pokedex: {[k: string]: ModdedSpeciesData;} = {
 		inherit: true,
 		abilities: { 0: "Quark Drive", H: "Justified" },
 	},
-	okidogi: {
-		inherit: true,
-		abilities: {0: "Toxic Chain", 1: "Guard Dog", H: "Scrappy"},
-	},
 	munkidori: {
 		inherit: true,
-		abilities: {0: "Toxic Chain", 1: "Frisk", H: "Psychic Surge"},
-	},
-	fezandipiti: {
-		inherit: true,
-		baseStats: {hp: 88, atk: 70, def: 82, spa: 91, spd: 125, spe: 99},
-		abilities: {0: "Toxic Chain", 1: "Technician", H: "Levitate"},
+		abilities: {0: "Toxic Chain", H: "Magic Bounce"},
 	},
 	gougingfire: {
 		inherit: true,
-		abilities: {0: "Protosynthesis", H: "Pressure"},
+		abilities: { 0: "Protosynthesis", H: "Pressure"},
 	},
 	ragingbolt: {
 		inherit: true,
-		abilities: {0: "Protosynthesis", H: "Pressure"},
+		abilities: { 0: "Protosynthesis", H: "Pressure" },
 	},
 	ironboulder: {
 		inherit: true,
-		abilities: {0: "Quark Drive", H: "Justified"},
+		abilities: { 0: "Quark Drive", H: "Justified" },
 	},
 	ironcrown: {
 		inherit: true,
-		abilities: {0: "Quark Drive", H: "Justified"},
+		abilities: { 0: "Quark Drive", H: "Justified" },
 	},
 	terapagosstellar: {
 		inherit: true,

@@ -7552,76 +7552,6 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 		num: -79,
 		isNonstandard: "Custom",
 	},
-	rewind: {
-		name: "Rewind",
-		shortDesc: "When brought to 50% HP or less, restores lost items on user's side.",
-		flags: {failroleplay: 1, noreceiver: 1, noentrain: 1, notrace: 1, failskillswap: 1, cantsuppress: 1},
-		rating: 4,
-		num: -80,
-		onStart(pokemon) {
-			pokemon.addVolatile('rewind');
-		},
-		onDamage(damage, target, source, effect) {
-			const rewindState = target.volatiles['rewind'];
-			if (!rewindState || typeof damage !== 'number') return;
-			const hpBefore = target.hp;
-			const hpAfter = hpBefore - damage;
-			if (rewindState.triggeredThisTurn) return;
-			if (hpBefore > target.maxhp / 2 && hpAfter <= target.maxhp / 2) {
-				rewindState.shouldTrigger = true;
-				rewindState.triggeredThisTurn = true;
-			}
-		},
-		onResidualOrder: 29,
-		onResidual(pokemon) {
-			const rewindState = pokemon.volatiles['rewind'];
-			if (rewindState) {
-				rewindState.triggeredThisTurn = false;
-				if (rewindState.shouldTrigger) {
-					rewindState.shouldTrigger = false;
-					this.add('-message', `${pokemon.name} has triggered Rewind!`);
-					let itemRestored = false;
-					if (pokemon.side && Array.isArray(pokemon.side.pokemon)) {
-						for (const ally of pokemon.side.active) {
-							if (ally && !ally.item) {
-								this.actions.useMove('Recycle', ally);
-								itemRestored = true;
-							}
-						}
-						if (itemRestored) {
-							this.add('-message', `${pokemon.name} rewound time to restore its team's items!`);
-						}
-					}
-				}
-			}
-		},
-		onUpdate(pokemon) {
-			const rewindState = pokemon.volatiles['rewind'];
-			if (!rewindState || !rewindState.shouldTrigger) return;
-			rewindState.shouldTrigger = false;
-			let itemRestored = false;
-			this.add('-ability', pokemon, 'Rewind');
-			if (pokemon.side && Array.isArray(pokemon.side.pokemon)) {
-				for (const ally of pokemon.side.active) {
-					if (ally && !ally.item) {
-						this.actions.useMove('Recycle', ally);
-						itemRestored = true;
-					}
-				}
-				if (itemRestored) {
-					this.add('-message', `${pokemon.name} rewound time to restore its team's items!`);
-				}
-			}
-		},
-		condition: {
-			noCopy: true,
-			onStart() {
-				this.effectState.shouldTrigger = false;
-				this.effectState.triggeredThisTurn = false;
-			}
-		},
-		isNonstandard: "Custom",
-	},
 	hugeclamp: {
 		onModifyAtkPriority: 6,
 		onModifyAtk(pokemon) {
@@ -7634,7 +7564,7 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 		name: "Huge Clamp",
 		shortDesc: "This Pokemon's Atk is boosted by 1.5, but its Speed is halved.",
 		rating: 1.5,
-		num: -81,
+		num: -80,
 		isNonstandard: "Custom",
 	},
    	healingecho: {
@@ -7648,7 +7578,7 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 		flags: {},
 	    name: "Healing Echo",
 		rating: 3,
-		num: -82,
+		num: -81,
 		isNonstandard: "Custom",
 	},
 	mightyhorn: {
@@ -7670,7 +7600,7 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 		flags: {},
 		name: "Mighty Horn",
 		rating: 3,
-		num: -83,
+		num: -82,
 		desc: "This Pokemon's drill-based attacks have their power and accuracy multiplied by 1.3.",
 		shortDesc: "This Pokemon's drill-based attacks have 1.3x power and 1.3x accuracy.",
 		isNonstandard: "Custom",
@@ -7698,7 +7628,7 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 		},
 		name: "Nightmare Heart",
 		rating: 3,
-		num: -84,
+		num: -83,
 		isNonstandard: "Custom",
 	},
 	petrify: {
@@ -7719,7 +7649,7 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 		flags: {},
 		name: "Petrify",
 		rating: 4,
-		num: -85,
+		num: -84,
 		shortDesc: "On switch-in, the opposing targets' type is changed to Rock.",
 		isNonstandard: "Custom",
 	},
@@ -7732,11 +7662,11 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 		},
 		name: "Muddy Land",
 		rating: 3.5,
-		num: -86,
+		num: -85,
 		isNonstandard: "Custom",
 	},
 	aerodynamism: {
-		num: -87,
+		num: -86,
 		name: "Aerodynamism",
 		desc: "This Pokemon's Wind moves do not miss. Wind move and Sandstorm immunity.",
 		onImmunity(type, pokemon) {
@@ -7755,7 +7685,36 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 			}
 			return accuracy;
 		},
-		flags: {breakable: 1},
+		flags: { breakable: 1 },
+		isNonstandard: "Custom",
+	},
+	sandsoftime: {
+		num: -87,
+		desc: "Under Sandstorm, user skips Charge and Recharge turns. Immunity to Sandstorm damage. (note: this also ignores sand's damage reduction to moves like Solar Beam)",
+		shortDesc: "Under sandstorm, skips charge and recharge. Sand Immunity.",
+		onImmunity(type, pokemon) {
+			if (type === 'sandstorm') return false;
+		},
+		onChargeMove(pokemon, target, move) {
+			if (this.field.isWeather('sandstorm')) {
+				this.add('-ability', pokemon, 'Sands of Time');
+				this.debug('sandclock - remove charge turn for ' + move.id);
+				this.attrLastMove('[still]');
+				this.addMove('-anim', pokemon, move.name, target);
+				return false; // skip charge turn
+			}
+		},
+		onAfterMoveSecondarySelf(pokemon, target, move) {
+			if (this.field.isWeather('sandstorm')) {
+				if (pokemon.getVolatile('mustrecharge')) {
+					this.add('-ability', pokemon, 'Sands of Time');
+					pokemon.removeVolatile('mustrecharge');
+					this.add('-end', pokemon, 'mustrecharge');
+				}
+			}	
+		},
+		flags: {},
+		name: "Sands of Time",
 		isNonstandard: "Custom",
 	},
 	// Touhou

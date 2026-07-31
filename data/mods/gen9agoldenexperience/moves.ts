@@ -1076,7 +1076,7 @@ export const Moves: { [k: string]: ModdedMoveData; } = {
 		inherit: true,
 		onBasePower(basePower, pokemon, target) {
 			const weakWeathers = ['raindance', 'primordialsea', 'sandstorm', 'hail', 'snowscape', 'eternalwinter'];
-			if (weakWeathers.includes(pokemon.effectiveWeather(undefined, true))) {
+			if (weakWeathers.includes(pokemon.effectiveWeather(undefined, true)) && !(['sandstorm'].includes(pokemon.effectiveWeather()) && pokemon.hasAbility('sandsoftime'))) {
 				this.debug('weakened by weather');
 				return this.chainModify(0.5);
 			}
@@ -1086,7 +1086,7 @@ export const Moves: { [k: string]: ModdedMoveData; } = {
 		inherit: true,
 		onBasePower(basePower, pokemon, target) {
 			const weakWeathers = ['raindance', 'primordialsea', 'sandstorm', 'hail', 'snowscape', 'eternalwinter'];
-			if (weakWeathers.includes(pokemon.effectiveWeather(undefined, true))) {
+			if (weakWeathers.includes(pokemon.effectiveWeather(undefined, true)) && !(['sandstorm'].includes(pokemon.effectiveWeather()) && pokemon.hasAbility('sandsoftime'))) {
 				this.debug('weakened by weather');
 				return this.chainModify(0.5);
 			}

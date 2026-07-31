@@ -140,7 +140,7 @@ export const FormatsData: { [k: string]: SpeciesFormatsData; } = {
 	arbok: {
 		tier: "NFE",
 	},
-	adnocagem: {
+	adnocard: {
 		tier: "NU",
 		doublesTier: "DUU",
 	},

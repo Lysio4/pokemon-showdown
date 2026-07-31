@@ -23049,34 +23049,8 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 		shortDesc: "Ignores the Abilities of other Pokemon, resistances and immunities.",
 		isNonstandard: "Custom",
 	},
-	ningencry: {
-		num: -63,
-		accuracy: true,
-		basePower: 0,
-		category: "Status",
-		name: "Ningen Cry",
-		pp: 5,
-		priority: 0,
-		flags: { snatch: 1 },
-		self: {
-			boosts: {
-				atk: 1,
-			},
-		},
-		weather: 'snowscape',
-		onPrepareHit(target, source) {
-			this.attrLastMove('[still]');
-			this.add('-anim', source, "Snowscape", target);
-		},
-		target: "all",
-		type: "Ice",
-		shortDesc: "Raises the user's Atk by 1. Summons Snow.",
-		zMove: { effect: 'clearnegativeboost' },
-		contestType: "Beautiful",
-		isNonstandard: "Custom",
-	},
 	mantisslash: {
-		num: -64,
+		num: -63,
 		accuracy: 100,
 		basePower: 100,
 		category: "Physical",
@@ -23100,7 +23074,7 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 		isNonstandard: "Custom",
 	},
 	intrepidcrash: {
-		num: -65,
+		num: -64,
 		accuracy: 100,
 		basePower: 60,
 		category: "Physical",
@@ -23120,7 +23094,7 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 		isNonstandard: "Custom",
 	},
 	timeparadox: {
-		num: -66,
+		num: -65,
 		accuracy: 75,
 		basePower: 100,
 		category: "Special",
@@ -23141,7 +23115,7 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 		isNonstandard: "Custom",
 	},
 	jumpscare: {
-		num: -67,
+		num: -66,
 		accuracy: 100,
 		basePower: 40,
 		category: "Physical",
@@ -23173,7 +23147,7 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 		isNonstandard: "Custom",
 	},
 	futuredoom: {
-		num: -68,
+		num: -67,
 		accuracy: 100,
 		basePower: 65,
 		category: "Special",
@@ -23192,7 +23166,7 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 		isNonstandard: "Custom",
 	},
 	brainblast: {
-		num: -69,
+		num: -68,
 		accuracy: 100,
 		basePower: 65,
 		category: "Special",
@@ -23227,7 +23201,7 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 		isNonstandard: "Custom",
 	},
 	timecrash: {
-		num: -70,
+		num: -69,
 		accuracy: 100,
 		basePower: 80,
 		category: "Special",
@@ -23248,7 +23222,7 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 		isNonstandard: "Custom",
 	},
 	waterslash: {
-		num: -71,
+		num: -70,
 		accuracy: 100,
 		basePower: 85,
 		category: "Physical",
@@ -23269,7 +23243,7 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 		isNonstandard: "Custom",
 	},
 	marinebolt: {
-		num: -72,
+		num: -71,
 		accuracy: 100,
 		basePower: 75,
 		category: "Physical",
@@ -23288,7 +23262,7 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 		isNonstandard: "Custom",
 	},
 	calmingbell: {
-		num: -73,
+		num: -72,
 		accuracy: 100,
 		basePower: 80,
 		category: "Special",
@@ -23313,7 +23287,7 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 		isNonstandard: "Custom",
 	},
 	seasonpass: {
-		num: -74,
+		num: -73,
 		accuracy: 100,
 		basePower: 100,
 		category: "Physical",
@@ -23340,7 +23314,7 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 		isNonstandard: "Custom",
 	},
 	chistrike: {
-		num: -75,
+		num: -74,
 		accuracy: 100,
 		basePower: 90,
 		onModifyMovePriority: -5,
@@ -23364,7 +23338,7 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 		isNonstandard: "Custom",
 	},
 	cursedspeech: {
-		num: -76,
+		num: -75,
 		accuracy: 100,
 		basePower: 100,
 		category: "Special",
@@ -23388,7 +23362,7 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 		isNonstandard: "Custom",
 	},
 	threateningbite: {
-		num: -77,
+		num: -76,
 		accuracy: 100,
 		basePower: 160,
 		category: "Physical",
@@ -23406,7 +23380,7 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 		isNonstandard: "Custom",
 	},
 	stonesurge: {
-		num: -78,
+		num: -77,
 		accuracy: 100,
 		basePower: 65,
 		category: "Physical",
@@ -23440,7 +23414,7 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 		shortDesc: "Sets Stealth Rock on the target's side.",
 	},
 	xrayshock: {
-		num: -79,
+		num: -78,
 		accuracy: 100,
 		basePower: 100,
 		category: "Physical",
@@ -23465,7 +23439,7 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 		isNonstandard: "Custom",
 	},
 	gigabbouncysplash: {
-		num: -80,
+		num: -79,
 		accuracy: true,
 		basePower: 180,
 		category: "Physical",
@@ -23485,7 +23459,7 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 		isNonstandard: "Custom",
 	},
 	sonicspeedstrike: {
-		num: -81,
+		num: -80,
 		accuracy: true,
 		basePower: 185,
 		category: "Physical",
@@ -23504,32 +23478,8 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 		shortDesc: "No additional effect.",
 		isNonstandard: "Custom",
 	},
-	maxspikybarrage: {
-		num: -82,
-		accuracy: true,
-		basePower: 180,
-		category: "Physical",
-		name: "Max Spiky Barrage",
-		pp: 1,
-		priority: 0,
-		flags: {},
-		isZ: "overqwiliumz",
-		onPrepareHit(target, source) {
-			this.attrLastMove('[still]');
-			this.add('-anim', source, "Barb Barrage", target);
-		},
-		secondary: {
-			chance: 100,
-			status: 'tox',
-		},
-		target: "normal",
-		type: "Poison",
-		contestType: "Cool",
-		shortDesc: "Badly poisons the target.",
-		isNonstandard: "Custom",
-	},
 	sweetsugarrush: {
-		num: -83,
+		num: -81,
 		accuracy: true,
 		basePower: 170,
 		category: "Special",
@@ -23545,7 +23495,7 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 		isNonstandard: "Custom",
 	},
 	colorfulhit: {
-		num: -84,
+		num: -82,
 		accuracy: 100,
 		basePower: 90,
 		category: "Physical",
@@ -23572,7 +23522,7 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 		isNonstandard: "Custom",
 	},
 	oceanslance: {
-		num: -85,
+		num: -83,
 		accuracy: 85,
 		basePower: 120,
 		category: "Physical",
@@ -23591,7 +23541,7 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 		isNonstandard: "Custom",
 	},
 	goatup: {
-		num: -86,
+		num: -84,
 		accuracy: true,
 		basePower: 0,
 		category: "Status",
@@ -23619,7 +23569,7 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 		isNonstandard: "Custom",
 	},
 	poisonwhip: {
-		num: -87,
+		num: -85,
 		accuracy: 100,
 		basePower: 70,
 		category: "Physical",
@@ -23643,7 +23593,7 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 		isNonstandard: "Custom",
 	},
 	casinoroyal: {
-		num: -88,
+		num: -86,
 		accuracy: 95,
 		basePower: 120,
 		category: "Special",
@@ -23668,7 +23618,7 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 		isNonstandard: "Custom",
 	},
 	mistystep: {
-		num: -89,
+		num: -87,
 		accuracy: true,
 		basePower: 0,
 		category: "Status",
@@ -23700,7 +23650,7 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 		isNonstandard: "Custom",
 	},
 	prevailingwind: {
-		num: -90,
+		num: 88,
 		accuracy: 100,
 		basePower: 65,
 		category: "Special",

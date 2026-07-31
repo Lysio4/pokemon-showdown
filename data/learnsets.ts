@@ -104462,7 +104462,7 @@ export const Learnsets: import('../sim/dex-species').LearnsetDataTable = {
 			destinybond: ["9L1"],
 		},
 	},
-	adnocagem: {
+	adnocard: {
 		learnset: {
 			dragondance: ["9L1"],
 			earthquake: ["9L1"],

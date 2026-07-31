@@ -274,10 +274,6 @@ export const Items: {[itemid: string]: ModdedItemData} = {
 		inherit: true,
 		isNonstandard: null,
 	},
-	overqwiliumz: {
-		inherit: true,
-		isNonstandard: null,
-	},
 	hydrappliumz: {
 		inherit: true,
 		isNonstandard: null,

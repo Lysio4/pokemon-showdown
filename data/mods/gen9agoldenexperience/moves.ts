@@ -360,10 +360,6 @@ export const Moves: { [k: string]: ModdedMoveData; } = {
 		inherit: true,
 		isNonstandard: null,
 	},
-	ningencry: {
-		inherit: true,
-		isNonstandard: null,
-	},
 	mantisslash: {
 		inherit: true,
 		isNonstandard: null,
@@ -433,10 +429,6 @@ export const Moves: { [k: string]: ModdedMoveData; } = {
 		isNonstandard: null,
 	},
 	sonicspeedstrike: {
-		inherit: true,
-		isNonstandard: null,
-	},
-	maxspikybarrage: {
 		inherit: true,
 		isNonstandard: null,
 	},

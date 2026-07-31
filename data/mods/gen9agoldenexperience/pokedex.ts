@@ -782,7 +782,7 @@ export const Pokedex: {[k: string]: ModdedSpeciesData;} = {
 	},
 	walrein: {
 		inherit: true,
-		baseStats: { hp: 120, atk: 105, def: 100, spa: 60, spd: 100, spe: 45 },
+		baseStats: { hp: 115, atk: 80, def: 90, spa: 100, spd: 90, spe: 65 },
 	},
 	clamperl: {
 		inherit: true,
@@ -2364,7 +2364,7 @@ export const Pokedex: {[k: string]: ModdedSpeciesData;} = {
 	},
 	arbok: {
 		inherit: true,
-		evos: ["Adnocagem"],
+		evos: ["Adnocard"],
 	},
 	sudowoodo: {
 		inherit: true,

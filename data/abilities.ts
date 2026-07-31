@@ -6562,26 +6562,14 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 		isNonstandard: "Custom",
 	},
 	disillusioned: {
-		desc: "This Pokemon is immune to Fairy type moves, and can hit Fairy type opponents for neutral damages with Dark moves.",
-		shortDesc: "Hits Fairy opponents for neutral damages with Dark moves; Fairy immune.",
+		desc: "This Pokemon is immune to Fairy-type moves and raises its Sp. Defense by 1 stage when hit by a Fairy-type move.",
+		shortDesc: "This Pokemon's Sp. Def is raised 1 stage if hit by an Fairy move; Fairy immunity.",
 		onTryHit(target, source, move) {
 			if (target !== source && move.type === 'Fairy') {
-				this.add('-immune', target, '[from] ability: Disillusioned');
+				if (!this.boost({ spd: 1 })) {
+					this.add('-immune', target, '[from] ability: Disillusioned');
+				}
 				return null;
-			}
-		},
-		onModifyMove(move) {
-
-			if (!move.ignoreImmunity) move.ignoreImmunity = {};
-			if (move.ignoreImmunity !== true) {
-				move.ignoreImmunity['Dark'] = true;
-			}
-		},
-		onModifyDamage(damage, source, target, move) {
-			if (move.type !== 'Dark') return;
-			if (move.type === 'Dark' && target.hasType('Fairy')) {
-				this.debug('Disillusioned boost');
-				return this.chainModify(2);
 			}
 		},
 		flags: { breakable: 1 },
@@ -6991,28 +6979,28 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 	happygolucky: {
 		onModifyAtkPriority: 5,
 		onModifyAtk(atk, pokemon) {
-			const newAtk = atk * (1 + (Math.floor(pokemon.happiness / 25)/100));
+			const newAtk = max(atk * (1 + (Math.floor(pokemon.happiness / 12.5)/100)), 20);
 			return newAtk;
 		},
 		onModifyDefPriority: 5,
 		onModifyDef(def, pokemon) {
-			const newDef = def * (1 + (Math.floor(pokemon.happiness / 25)/100));
+			const newDef = max(def * (1 + (Math.floor(pokemon.happiness / 12.5)/100)), 20);
 			return newDef;
 		},
 		onModifySpAPriority: 5,
 		onModifySpA(spa, pokemon) {
-			const newSpA = spa * (1 + (Math.floor(pokemon.happiness / 25)/100));
+			const newSpA = max(spa * (1 + (Math.floor(pokemon.happiness / 12.5)/100)), 20);
 			return newSpA;
 		},
 		onModifySpDPriority: 5,
 		onModifySpD(spd, pokemon) {
-			const newSpD = spd * (1 + (Math.floor(pokemon.happiness / 25)/100));
+			const newSpD = max(spd * (1 + (Math.floor(pokemon.happiness / 12.5)/100)), 20);
 			return newSpD;
 		},
 		flags: {},
 		name: "Happy-Go-Lucky",
-		desc: "This Pokemon's Attack, Defense, Special Attack, and Special Defense get a boost depending on the happiness of the Pokemon (maximum 10%).",
-		shortDesc: "Boosts Attack, Defense, Special Attack, and Special Defense by 1% per 25 happiness.",
+		desc: "This Pokemon's Attack, Defense, Special Attack, and Special Defense get a boost depending on the happiness of the Pokemon (maximum 20%).",
+		shortDesc: "Boosts Attack, Defense, Special Attack, and Special Defense by 1% per 12.5 happiness.",
 		rating: 4,
 		num: -57,
 		isNonstandard: "Custom",

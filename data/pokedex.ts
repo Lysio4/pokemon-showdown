@@ -23030,9 +23030,9 @@ export const Pokedex: import('../sim/dex-species').SpeciesDataTable = {
 		weightkg: 80.5,
 		eggGroups: ["Undiscovered"],
 	},
-	adnocagem: {
+	adnocard: {
 		num: -83,
-		name: "Adnocagem",
+		name: "Adnocard",
 		types: ["Poison", "Dark"],
 		baseStats: {hp: 95, atk: 102, def: 109, spa: 55, spd: 112, spe: 60},
 		abilities: {0: "Intimidate", 1: "Shed Skin", H: "Regenerator"},

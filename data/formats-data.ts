@@ -6868,7 +6868,7 @@ export const FormatsData: import('../sim/dex-species').SpeciesFormatsDataTable =
 		isNonstandard: "Custom",
 		tier: "Illegal",
 	},
-	adnocagem: {
+	adnocard: {
 		isNonstandard: "Custom",
 		tier: "Illegal",
 	},

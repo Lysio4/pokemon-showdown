@@ -8938,18 +8938,6 @@ export const Items: import('../sim/dex-items').ItemDataTable = {
 		shortDesc: "If held by a Garchomp with Dragon Claw, it can use Sonic Speed Strike.",
 		isNonstandard: "Custom",
 	},
-	overqwiliumz: {
-		name: "Overqwilium Z",
-		spritenum: 638,
-		onTakeItem: false,
-		zMove: "Max Spiky Barrage",
-		zMoveFrom: "Barb Barrage",
-		itemUser: ["Overqwil"],
-		num: -53,
-		gen: 9,
-		shortDesc: "If held by a Overqwil with Barb Barrage, it can use Max Spiky Barrage.",
-		isNonstandard: "Custom",
-	},
 	hydrappliumz: {
 		name: "Hydrapplium Z",
 		spritenum: 645,
@@ -8957,7 +8945,7 @@ export const Items: import('../sim/dex-items').ItemDataTable = {
 		zMove: "Lovely Sweet Sugar Rush",
 		zMoveFrom: "Fickle Beam",
 		itemUser: ["Hydrapple"],
-		num: -54,
+		num: -53,
 		gen: 9,
 		shortDesc: "If held by a Hydrapple with Fickle Beam, it can use Lovely Sweet Sugar Rush.",
 		isNonstandard: "Custom",
@@ -8970,7 +8958,7 @@ export const Items: import('../sim/dex-items').ItemDataTable = {
 		onTakeItem(item, source) {
 			return !item.megaStone?.[source.baseSpecies.baseSpecies];
 		},
-		num: -55,
+		num: -54,
 		gen: 9,
 		desc: "If held by a Rayquaza, this item allows it to Mega Evolve in battle.",
 		isNonstandard: "Custom",
@@ -8999,7 +8987,7 @@ export const Items: import('../sim/dex-items').ItemDataTable = {
 		itemUser: ["Terapagos", "Terapagos-Terastal"],
 		desc: "If holder is a Terapagos, it becomes Stellar form.",
 		spritenum: 41,
-		num: -56,
+		num: -55,
 		isNonstandard: "Custom",
 	},
 	// Touhou

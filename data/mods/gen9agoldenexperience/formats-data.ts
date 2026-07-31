@@ -2421,7 +2421,7 @@ export const FormatsData: { [k: string]: SpeciesFormatsData; } = {
 		doublesTier: "DOU",
 	},
 	regigigas: {
-		tier: "RU",
+		tier: "OU",
 		doublesTier: "DOU",
 	},
 	giratina: {
@@ -2904,7 +2904,7 @@ export const FormatsData: { [k: string]: SpeciesFormatsData; } = {
 		doublesTier: "DUU",
 	},
 	zoroarkhisuimega: {
-		tier: "OU",
+		tier: "UU",
 		doublesTier: "DUU",
 	},
 	minccino: {

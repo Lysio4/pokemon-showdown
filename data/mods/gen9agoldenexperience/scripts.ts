@@ -72,6 +72,7 @@ export const Scripts: ModdedBattleScriptsData = {
       }
       return true;
     },
+  },
 
   init() {
     for (const i in this.data.Moves) {

@@ -101292,7 +101292,7 @@ export const Learnsets: import('../sim/dex-species').LearnsetDataTable = {
 			endure: ["9M", "9E"],
 			facade: ["9M"],
 			faketears: ["9M"],
-			firepunch: ["9M"],: ["9M"],
+			firepunch: ["9M"],
 			focuspunch: ["9M", "9E"],
 			frustration: ["9M"],
 			golemstrike: ["9M"],

@@ -812,6 +812,7 @@ export const Abilities: { [abilityid: string]: ModdedAbilityData; } = {
 				return this.chainModify(0.75);
 			}
 		},
+		shortDesc: "This Pokemon gains the Charge effect when it takes a hit from an attack. Takes 25% less damage from all moves while it has the Charge effect.",
 	},
 	lingeringaroma: {
 		inherit: true,
@@ -849,7 +850,7 @@ export const Abilities: { [abilityid: string]: ModdedAbilityData; } = {
 				return this.chainModify(0.5);
 			}
 		},
-		flags: {breakable: 1},
+		flags: { breakable: 1 },
 		desc: "Bug/Ghost/Dark resistances. This Pokemon's Speed is raised by 1 stage if hit by a Bug-, Dark-, or Ghost-type attack, or if an opposing Pokemon affected this Pokemon with the Intimidate Ability.",
 		shortDesc: "Bug/Ghost/Dark resistances. Speed is raised 1 stage if hit by a Bug-, Dark-, or Ghost-type attack, or Intimidated.",
 	},

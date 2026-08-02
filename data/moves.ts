@@ -23039,7 +23039,7 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 			this.attrLastMove('[still]');
 			this.add('-anim', source, "Boomburst", target);
 		},
-		onEffectiveness(typeMod, target, type) {
+		onEffectiveness(typeMod, target, type, move) {
 			if (target.getMoveHitData(move).typeMod < 0) return 0;
 		},
 		target: "allAdjacent",

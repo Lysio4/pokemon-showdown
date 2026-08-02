@@ -100461,7 +100461,6 @@ export const Learnsets: import('../sim/dex-species').LearnsetDataTable = {
 			flameburst: ["9L27"],
 			flamecharge: ["9M"],
 			flamethrower: ["9M", "9L54"],
-			flamingsphere: ["9M"],
 			flareblitz: ["9M"],
 			frustration: ["9M"],
 			gigaimpact: ["9M"],

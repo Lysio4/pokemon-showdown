@@ -22615,12 +22615,13 @@ export const Pokedex: import('../sim/dex-species').SpeciesDataTable = {
 	megacargo: {
 		num: -52,
 		name: "Megacargo",
-		types: ["Fire", "Ground"],
+		types: ["Fire", "Rock"],
 		baseStats: { hp: 80, atk: 60, def: 130, spa: 120, spd: 110, spe: 40 },
 		abilities: { 0: "Magma Armor", 1: "Flame Body", H: "Evaporate" },
 		heightm: 1.2,
 		weightkg: 70,
 		color: "Red",
+		prevo: "Magcargo",
 		eggGroups: ["Amorphous"],
 	},
 	leechuption: {

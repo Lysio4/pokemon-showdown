@@ -7570,7 +7570,6 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
    	healingecho: {
 		desc: "This Pokemon is immune to Ground-type attacks and the effects of Spikes, Toxic Spikes, Sticky Web, and the Arena Trap Ability. The effects of Gravity, Ingrain, Smack Down, Thousand Arrows, and Iron Ball nullify the immunity. Thousand Arrows can hit this Pokemon as if it did not have this Ability. When this Pokémon uses a Sound move, it is healed by 12.5% of its HP.",
 		shortDesc: "This Pokemon is immune to Ground; heals 12.5% HP if the Pokémon uses a Sound move.",
-		desc: "When this Pokémon uses a Sound move, it is healed by 12.5% of its HP.",
 		onAfterMove(source, target, move) {
 			if (!move.flags['sound']) return;
 			this.add('-activate', source, 'ability: Healing Echo');

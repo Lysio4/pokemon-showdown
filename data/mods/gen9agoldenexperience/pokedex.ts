@@ -2036,6 +2036,10 @@ export const Pokedex: {[k: string]: ModdedSpeciesData;} = {
 		inherit: true,
 		baseStats: { hp: 80, atk: 85, def: 95, spa: 110, spd: 100, spe: 70 },
 	},
+	falinksmega: {
+		inherit: true,
+		abilities: { 0: "Megazord" },
+	},
 	pincurchin: {
 		inherit: true,
 		baseStats: { hp: 68, atk: 81, def: 115, spa: 91, spd: 105, spe: 15 },
@@ -2054,7 +2058,7 @@ export const Pokedex: {[k: string]: ModdedSpeciesData;} = {
 	},
 	cufant: {
 		inherit: true,
-		abilities: {0: "Sheer Force", 1: "Dry Skin", H: "Heavy Metal"},
+		abilities: { 0: "Sheer Force", 1: "Dry Skin", H: "Heavy Metal" },
 	},
 	copperajah: {
 		inherit: true,
@@ -2063,11 +2067,11 @@ export const Pokedex: {[k: string]: ModdedSpeciesData;} = {
 	},
 	zarude: {
 		inherit: true,
-		abilities: {0: "Leaf Guard", H: "Defiant"},
+		abilities: { 0: "Leaf Guard", H: "Defiant" },
 	},
 	zarudedada: {
 		inherit: true,
-		abilities: {0: "Leaf Guard", H: "Defiant"},
+		abilities: { 0: "Leaf Guard", H: "Defiant" },
 	},
 	glastrier: {
 		inherit: true,
@@ -2079,8 +2083,8 @@ export const Pokedex: {[k: string]: ModdedSpeciesData;} = {
 	},
 	wyrdeer: {
 		inherit: true,
-		baseStats: {hp: 103, atk: 105, def: 82, spa: 65, spd: 85, spe: 85},
-		abilities: {0: "Intimidate", 1: "Speed Boost", H: "Sap Sipper"},
+		baseStats: { hp: 103, atk: 105, def: 82, spa: 65, spd: 85, spe: 85 },
+		abilities: { 0: "Intimidate", 1: "Speed Boost", H: "Sap Sipper" },
 	},
 	kleavor: {
 		inherit: true,
@@ -2089,15 +2093,15 @@ export const Pokedex: {[k: string]: ModdedSpeciesData;} = {
 	},
 	ursaluna: {
 		inherit: true,
-		abilities: {0: "Guts", 1: "Bulletproof", H: "Honey Gather"},
+		abilities: { 0: "Guts", 1: "Bulletproof", H: "Honey Gather" },
 	},
 	basculegion: {
 		inherit: true,
-		abilities: {0: "Swift Swim", 1: "Adaptability", H: "Reckless"}, 
+		abilities: { 0: "Swift Swim", 1: "Adaptability", H: "Reckless" }, 
 	},
 	basculegionf: {
 		inherit: true,
-		abilities: {0: "Swift Swim", 1: "Adaptability", H: "Rock Head"},
+		abilities: { 0: "Swift Swim", 1: "Adaptability", H: "Rock Head" },
 	},
 	sneasler: {
 		inherit: true,
@@ -2105,11 +2109,11 @@ export const Pokedex: {[k: string]: ModdedSpeciesData;} = {
 	},
 	enamorus: {
 		inherit: true,
-		abilities: {0: "Trace", H: "Contrary"},
+		abilities: { 0: "Trace", H: "Contrary" },
 	},
 	enamorustherian: {
 		inherit: true,
-		abilities: {0: "Magic Guard"},
+		abilities: { 0: "Magic Guard" },
 	},
 	// Gen 9
 	oinkologne: {

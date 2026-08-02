@@ -6695,43 +6695,15 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 	},
 	unconcerned: {
 		name: "Unconcerned",
-		onTryBoost(boost, target, source, effect) {
-			if (boost.atk) {
-				delete boost.atk;
-				if (!(effect as ActiveMove).secondaries) {
-					this.add("-fail", target, "unboost", "Attack", "[from] ability: Unconcerned", "[of] " + target);
-				}
-			}
-			if (boost.def) {
-				delete boost.def;
-				if (!(effect as ActiveMove).secondaries) {
-					this.add("-fail", target, "unboost", "Defense", "[from] ability: Unconcerned", "[of] " + target);
-				}
-			}
-			if (boost.spa) {
-				delete boost.spa;
-				if (!(effect as ActiveMove).secondaries) {
-					this.add("-fail", target, "unboost", "Special Attack", "[from] ability: Unconcerned", "[of] " + target);
-				}
-			}
-			if (boost.spd) {
-				delete boost.spd;
-				if (!(effect as ActiveMove).secondaries) {
-					this.add("-fail", target, "unboost", "Special Defense", "[from] ability: Unconcerned", "[of] " + target);
-				}
-			}
-			if (boost.accuracy) {
-				delete boost.accuracy;
-				if (!(effect as ActiveMove).secondaries) {
-					this.add("-fail", target, "unboost", "Accuracy", "[from] ability: Unconcerned", "[of] " + target);
-				}
-			}
-			if (boost.evasion) {
-				delete boost.evasion;
-				if (!(effect as ActiveMove).secondaries) {
-					this.add("-fail", target, "unboost", "Evasion", "[from] ability: Unconcerned", "[of] " + target);
-				}
-			}
+		onAnyModifyBoost(boosts, pokemon) {
+			const unconcernedUser = this.effectState.target;
+			if (unconcernedUser !== pokemon) return;
+			boosts['atk'] = 0;
+			boosts['def'] = 0;
+			boosts['spa'] = 0;
+			boosts['spd'] = 0;
+			boosts['accuracy'] = 0;
+			boosts['evasion'] = 0;
 		},
 		shortDesc: "This Pokemon ignores its own stat stages when taking or doing damage.",
 		rating: 4,
@@ -7716,6 +7688,25 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 		},
 		flags: {},
 		name: "Sands of Time",
+		isNonstandard: "Custom",
+	},
+	megazord: {
+		onSwitchInPriority: 1,
+		onStart(pokemon) {
+			if (pokemon.swordBoost || pokemon.shieldBoost) return;
+			pokemon.swordBoost = true;
+			this.boost({ atk: 1 }, pokemon);
+			pokemon.shieldBoost = true;
+			this.boost({ def: 1 }, pokemon);
+		},
+		flags: { failroleplay: 1, noreceiver: 1, noentrain: 1, notrace: 1, failskillswap: 1, cantsuppress: 1 },
+		name: "Megazord",
+		rating: 4.5,
+		num: -88,
+		name: "As One",
+		shortDesc: "Combination of the Intrepid Sword and Dauntless Shield Abilities.",
+
+		start: "  [POKEMON] has two Abilities!",
 		isNonstandard: "Custom",
 	},
 	// Touhou

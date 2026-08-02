@@ -23726,6 +23726,9 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 		target: "normal",
 		type: "Psychic",
 		contestType: "Clever",
+		isNonstandard: "Custom",
+		desc: "If the target is poisoned, its Speed will be lowered by 1.",
+		shortDesc: "Lowers target's Speed by 1 if poisoned.",
 	},
 	cruelfeather: {
 		num: -91,
@@ -23749,6 +23752,9 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 		zMove: { basePower: 180 },
 		maxMove: { basePower: 140 },
 		contestType: "Clever",
+		desc: "Hits twice. If the first hit breaks the target's substitute, it will take damage for the second hit. If the target is poisoned, heals the user's status condition.",
+		shortDesc: "Hits 2 times in one turn. Heals user's status if target is poisoned.",
+		isNonstandard: "Custom",
 	},
 	// Touhou
 	dreamseal: {

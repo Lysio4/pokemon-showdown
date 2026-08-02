@@ -464,6 +464,18 @@ export const Moves: { [k: string]: ModdedMoveData; } = {
 		inherit: true,
 		isNonstandard: null,
 	},
+	crazedpunch: {
+		inherit: true,
+		isNonstandard: null,
+	},
+	dirtyheadshot: {
+		inherit: true,
+		isNonstandard: null,
+	},
+	cruelfeather: {
+		inherit: true,
+		isNonstandard: null,
+	},
 	// modified moves
 	toxicthread: {
 		inherit: true,

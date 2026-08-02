@@ -7000,7 +7000,7 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 		flags: {},
 		name: "Happy-Go-Lucky",
 		desc: "This Pokemon's Attack, Defense, Special Attack, and Special Defense get a boost depending on the happiness of the Pokemon (maximum 20%).",
-		shortDesc: "Boosts Attack, Defense, Special Attack, and Special Defense by 1% per 12.5 happiness.",
+		shortDesc: "Boosts Attack, Defense, Special Attack, and Special Defense by 1% per 12.5 happiness (max 20%).",
 		rating: 4,
 		num: -57,
 		isNonstandard: "Custom",
@@ -7568,13 +7568,15 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 		isNonstandard: "Custom",
 	},
    	healingecho: {
+		desc: "This Pokemon is immune to Ground-type attacks and the effects of Spikes, Toxic Spikes, Sticky Web, and the Arena Trap Ability. The effects of Gravity, Ingrain, Smack Down, Thousand Arrows, and Iron Ball nullify the immunity. Thousand Arrows can hit this Pokemon as if it did not have this Ability. When this Pokémon uses a Sound move, it is healed by 12.5% of its HP.",
+		shortDesc: "This Pokemon is immune to Ground; heals 12.5% HP if the Pokémon uses a Sound move.",
 		desc: "When this Pokémon uses a Sound move, it is healed by 12.5% of its HP.",
-		shortDesc: "Heals 12.5% HP if the Pokémon uses a Sound move.",
 		onAfterMove(source, target, move) {
 			if (!move.flags['sound']) return;
 			this.add('-activate', source, 'ability: Healing Echo');
 			this.heal(source.baseMaxhp / 8);
 		},
+		// airborneness implemented in sim/pokemon.js:Pokemon#isGrounded
 		flags: {},
 	    name: "Healing Echo",
 		rating: 3,

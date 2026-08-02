@@ -721,38 +721,6 @@ export const Moves: { [k: string]: ModdedMoveData; } = {
 			},
 		},
 	},
-	sheercold: {
-		inherit: true,
-		modded: true, // this makes its description display in Data Mod
-		accuracy: 100,
-		basePower: 130,
-		ohko: false,
-		pp: 10,
-		flags: { charge: 1, protect: 1, mirror: 1, metronome: 1 },
-		onTryMove(attacker, defender, move) {
-			if (attacker.removeVolatile(move.id)) {
-				return;
-			}
-			this.add('-prepare', attacker, move.name);
-			this.boost({ spa: 1 }, attacker, attacker, move);
-			if (['hail', 'snowscape', 'eternalwinter'].includes(attacker.effectiveWeather())) {
-				this.attrLastMove('[still]');
-				this.addMove('-anim', attacker, move.name, defender);
-				return;
-			}
-			if (!this.runEvent('ChargeMove', attacker, defender, move)) {
-				return;
-			}
-			attacker.addVolatile('twoturnmove', defender);
-			return null;
-		},
-		hasSheerForceBoost: true,
-		secondary: undefined, // no inherit
-		desc: "This attack charges on the first turn and executes on the second. Raises the user's Special Attack by 1 stage on the first turn. If the user is holding a Power Herb or the weather is Eternal Winter or Snow, the move completes in one turn. If the user is holding Utility Umbrella and the weather is Eternal Winter or Snow, the move still requires a turn to charge.",
-		shortDesc: "Raises Sp. Atk by 1, hits turn 2. Snow: no charge.",
-
-		prepare: "[POKEMON] accumulated snow!",
-	},
 	guillotine: {
 		inherit: true,
 		modded: true, // this makes its description display in Data Mod

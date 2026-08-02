@@ -991,4 +991,32 @@ export const Abilities: { [abilityid: string]: ModdedAbilityData; } = {
 		desc: "This Pokemon is immune to wind moves and raises its Attack by 1 stage when hit by a wind move or when Tailwind or Sandstorm begins on this Pokemon's side.",
 		shortDesc: "Attack raised by 1 if hit by a wind move or Tailwind or Sandstorm begins. Wind move and Sandstorm immunity.",
 	},
+	magmaarmor: {
+		inherit: true,
+		modded: true, // this makes its description display in Data Mod
+		onSourceModifyAtkPriority: 5,
+		onSourceModifyAtk(atk, attacker, defender, move) {
+			if (move.type === 'Ice') {
+				return this.chainModify(0.5);
+			}
+		},
+		onSourceModifySpAPriority: 5,
+		onSourceModifySpA(atk, attacker, defender, move) {
+			if (move.type === 'Ice') {
+				return this.chainModify(0.5);
+			}
+		},
+		onModifyAtk(atk, attacker, defender, move) {
+			if (move.type === 'Fire') {
+				return this.chainModify(2);
+			}
+		},
+		onModifySpA(atk, attacker, defender, move) {
+			if (move.type === 'Fire') {
+				return this.chainModify(2);
+			}
+		},
+		desc: "This Pokemon's offensive stat is doubled while using a Fire-type attack. If a Pokemon uses an Ice-type attack against this Pokemon, that Pokemon's offensive stat is halved when calculating the damage to this Pokemon. This Pokemon cannot be frozen. Gaining this Ability while burned cures it.",
+		shortDesc: "This Pokemon's Fire power is 2x; it can't be frozen; Ice power against it is halved.",
+	},
 };

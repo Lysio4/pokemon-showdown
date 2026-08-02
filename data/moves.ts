@@ -16959,7 +16959,7 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 			noCopy: true,
 			onStart(pokemon) {
 				let applies = false;
-				if (pokemon.hasType('Flying') || pokemon.hasAbility(['levitate', 'eelevate'])) applies = true;
+				if (pokemon.hasType('Flying') || pokemon.hasAbility(['levitate', 'eelevate', 'healingecho'])) applies = true; // AGE modif
 				if (pokemon.hasItem('ironball') || pokemon.volatiles['ingrain'] ||
 					this.field.getPseudoWeather('gravity')) applies = false;
 				if (pokemon.removeVolatile('fly') || pokemon.removeVolatile('bounce')) {

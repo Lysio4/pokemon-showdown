@@ -7703,7 +7703,6 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 		name: "Megazord",
 		rating: 4.5,
 		num: -88,
-		name: "As One",
 		shortDesc: "Combination of the Intrepid Sword and Dauntless Shield Abilities.",
 
 		start: "  [POKEMON] has two Abilities!",

@@ -372,7 +372,6 @@ export const Items: {[itemid: string]: ModdedItemData} = {
 		inherit: true,
 		modded: true, // this makes its description display in Data Mod
 		zMoveFrom: "Golem Strike",
-		itemUser: ["Lycanroc", "Lycanroc-Midnight", "Lycanroc-Dusk", "Lycanroc-Bloodmoon"],
 		shortDesc: "If held by a Lycanroc forme with Golem Strike, it can use Splintered Stormshards.",
 	},
 	aloraichiumz: {

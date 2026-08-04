@@ -101418,7 +101418,6 @@ export const Learnsets: import('../sim/dex-species').LearnsetDataTable = {
 			shadowball: ["9L1"],
 			hyperbeam: ["9L1"],
 			lick: ["9L1"],
-			cosmicpunch: ["9L1"],
 			partingshot: ["9L1"],
 			bulkup: ["9L1"],
 			curse: ["9L1"],

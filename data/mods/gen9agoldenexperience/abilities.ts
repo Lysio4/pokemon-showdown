@@ -515,18 +515,18 @@ export const Abilities: { [abilityid: string]: ModdedAbilityData; } = {
 		shortDesc: "If Eiscue, the first physical hit it takes deals 0 damage. Effect is restored in Snow. Forme changes if its HP drop under 50%.",
 	},
 	stickyhold: {
-		//inherit: true,
+		inherit: true,
 		modded: true, // this makes its description display in Data Mod
 		onTakeItem(item, pokemon, source) {
 			if (!pokemon.hp || pokemon.item === 'stickybarb') return;
 			if (!this.activeMove) throw new Error("Battle.activeMove is null");
-			if ((source && source !== pokemon) || this.activeMove.id === 'knockoff' || this.activeMove.id === 'brainblast') {
+			if ((source && source !== pokemon) || this.activeMove.id === 'knockoff' || this.activeMove.id === 'brainblast' || this.activeMove.id === 'goodfishing') {
 				this.add('-activate', pokemon, 'ability: Sticky Hold');
 				return false;
 			}
 		},
 		onSourceModifyDamage(damage, source, target, move) {
-			if (move.name === 'Knock Off' || move.name === 'Brain Blast') {
+			if (move.name === 'Knock Off' || move.name === 'Brain Blast' || move.name === 'Good Fishing') {
 				this.debug('Sticky Hold weaken');
 				return this.chainModify(0.67);
 			}
@@ -537,9 +537,8 @@ export const Abilities: { [abilityid: string]: ModdedAbilityData; } = {
 				return null;
 			}
 		},
-		name: "Sticky Hold",
-		rating: 2,
-		num: 60,
+		desc: "This Pokemon cannot lose its held item due to another Pokemon's Ability or attack, unless the attack knocks out this Pokemon. A Sticky Barb will be transferred to other Pokemon regardless of this Ability. Knock Off, Brain Blast and Good Fishing are not boosted against this Pokemon, and Poltergeist fails when used against this Pokemon.",
+		shortDesc: "This Pokemon cannot lose its held item due to another Pokemon's Ability or attack. Knock Off, Brain Blast and Good Fishing are not boosted against this Pokemon, and Poltergeist fails when used against this Pokemon.",
 	},
 	normalize: {
 		inherit: true,

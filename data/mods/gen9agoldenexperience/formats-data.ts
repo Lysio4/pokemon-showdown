@@ -5208,8 +5208,7 @@ export const FormatsData: { [k: string]: SpeciesFormatsData; } = {
 		doublesTier: "DUU",
 	},
 	terapagosstellar: {
-		tier: "Uber",
-		doublesTier: "DOU",
+		tier: "Illegal",
 	},
 	pecharunt: {
 		tier: "OU",

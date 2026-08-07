@@ -70,7 +70,7 @@ export const Items: {[itemid: string]: ModdedItemData} = {
 	},
 	scizorite: {
 		inherit: true,
-		megaStone: { 
+		megaStone: {
 			"Scizor": "Scizor-Mega",
 			"Scizor-Galar": "Scizor-Galar-Mega"
 		},
@@ -217,15 +217,15 @@ export const Items: {[itemid: string]: ModdedItemData} = {
 		inherit: true,
 		isNonstandard: null,
 	},
-	kleavorite: { 
+	kleavorite: {
 		inherit: true,
 		isNonstandard: null,
 	},
-	rabscanite: { 
+	rabscanite: {
 		inherit: true,
 		isNonstandard: null,
 	},
-	tinkatonite: { 
+	tinkatonite: {
 		inherit: true,
 		isNonstandard: null,
 	},
@@ -254,7 +254,7 @@ export const Items: {[itemid: string]: ModdedItemData} = {
 		inherit: true,
 		isNonstandard: null,
 	},
-	identitycard: { 
+	identitycard: {
 		inherit: true,
 		isNonstandard: null,
 	},
@@ -279,10 +279,6 @@ export const Items: {[itemid: string]: ModdedItemData} = {
 		isNonstandard: null,
 	},
 	jadeorb: {
-		inherit: true,
-		isNonstandard: null,
-	},
-	teraorb: {
 		inherit: true,
 		isNonstandard: null,
 	},

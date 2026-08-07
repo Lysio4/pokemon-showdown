@@ -8463,7 +8463,7 @@ export const Items: import('../sim/dex-items').ItemDataTable = {
 	zoroarkite: {
 		name: "Zoroarkite",
 		spritenum: 504,
-		megaStone: { 
+		megaStone: {
 			"Zoroark": "Zoroark-Mega",
 			"Zoroark-Hisui": "Zoroark-Hisui-Mega"
 		},
@@ -8711,7 +8711,7 @@ export const Items: import('../sim/dex-items').ItemDataTable = {
 		desc: "If held by a Centiskorch, this item allows it to Mega Evolve in battle.",
 		isNonstandard: "Custom",
 	},
-	kleavorite: { 
+	kleavorite: {
 		name: "Kleavorite",
 		spritenum: 578,
 		megaStone: { "Kleavor": "Kleavor-Mega" },
@@ -8724,7 +8724,7 @@ export const Items: import('../sim/dex-items').ItemDataTable = {
 		desc: "If held by a Kleavor, this item allows it to Mega Evolve in battle.",
 		isNonstandard: "Custom",
 	},
-	rabscanite: { 
+	rabscanite: {
 		name: "Rabscanite",
 		spritenum: 578,
 		megaStone: { "Rabsca": "Rabsca-Mega" },
@@ -8737,7 +8737,7 @@ export const Items: import('../sim/dex-items').ItemDataTable = {
 		desc: "If held by a Rabsca, this item allows it to Mega Evolve in battle.",
 		isNonstandard: "Custom",
 	},
-	tinkatonite: { 
+	tinkatonite: {
 		name: "Tinkatonite",
 		spritenum: 598,
 		megaStone: { "Tinkaton": "Tinkaton-Mega" },
@@ -8852,7 +8852,7 @@ export const Items: import('../sim/dex-items').ItemDataTable = {
 		gen: 9,
 		isNonstandard: "Custom",
 	},
-	identitycard: { 
+	identitycard: {
 		name: "Identity Card",
 		shortDesc: "Holder's typing cannot be changed by any move.",
 		// Edited in scripts.ts
@@ -8961,33 +8961,6 @@ export const Items: import('../sim/dex-items').ItemDataTable = {
 		num: -54,
 		gen: 9,
 		desc: "If held by a Rayquaza, this item allows it to Mega Evolve in battle.",
-		isNonstandard: "Custom",
-	},
-	teraorb: {
-		name: "Tera Orb",
-		onStart(pokemon) {
-			if (pokemon.isActive && (pokemon.baseSpecies.name === 'Terapagos' || pokemon.baseSpecies.name === 'Terapagos-Terastal')) {
-				if (pokemon.species.id !== 'terapagosstellar') {
-					pokemon.formeChange('Terapagos-Stellar');
-					pokemon.baseMaxhp = Math.floor(Math.floor(
-						2 * pokemon.species.baseStats['hp'] + pokemon.set.ivs['hp'] + Math.floor(pokemon.set.evs['hp'] / 4) + 100
-					) * pokemon.level / 100 + 10);
-					const newMaxHP = pokemon.volatiles['dynamax'] ? (2 * pokemon.baseMaxhp) : pokemon.baseMaxhp;
-					pokemon.hp = newMaxHP - (pokemon.maxhp - pokemon.hp);
-					pokemon.maxhp = newMaxHP;
-					this.add('-heal', pokemon, pokemon.getHealth, '[silent]');
-				}
-			}
-		},
-		onTakeItem(item, source) {
-			if (source.baseSpecies.baseSpecies === 'Terapagos' || source.baseSpecies.baseSpecies === 'Terapagos-Terastal' || source.baseSpecies.baseSpecies === 'Terapagos-Stellar') return false;
-			return true;
-		},
-		gen: 9,
-		itemUser: ["Terapagos", "Terapagos-Terastal"],
-		desc: "If holder is a Terapagos, it becomes Stellar form.",
-		spritenum: 41,
-		num: -55,
 		isNonstandard: "Custom",
 	},
 	// Touhou

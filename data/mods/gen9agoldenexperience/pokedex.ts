@@ -4,11 +4,13 @@ export const Pokedex: {[k: string]: ModdedSpeciesData;} = {
 	// Gen 1 :
 	venusaur: {
 		inherit: true,
+		movepoolAdditions: true,
 		otherFormes: ["Venusaur-Mega", "Venusaur-Mega-Y"],
 		formeOrder: ["Venusaur", "Venusaur-Mega", "Venusaur-Mega-Y"],
 	},
 	blastoise: {
 		inherit: true,
+		movepoolAdditions: true,
 		otherFormes: ["Blastoise-Mega", "Blastoise-Mega-X"],
 		formeOrder: ["Blastoise", "Blastoise-Mega", "Blastoise-Mega-X"],
 	},
@@ -20,6 +22,7 @@ export const Pokedex: {[k: string]: ModdedSpeciesData;} = {
 	},
 	pidgeotmega: {
 		inherit: true,
+		movepoolAdditions: true,
 		abilities: { 0: "Aerodynamism" },
 	},
 	raticate: {
@@ -36,6 +39,7 @@ export const Pokedex: {[k: string]: ModdedSpeciesData;} = {
 	},
 	fearow: {
 		inherit: true,
+		movepoolAdditions: true,
 		baseStats: { hp: 65, atk: 110, def: 65, spa: 61, spd: 61, spe: 100 },
 		abilities: { 0: "Keen Eye", 1: "Sniper", H: "Stakeout" },
 	},
@@ -59,6 +63,7 @@ export const Pokedex: {[k: string]: ModdedSpeciesData;} = {
 	},
 	wigglytuff: {
 		inherit: true,
+		movepoolAdditions: true,
 		baseStats: { hp: 140, atk: 63, def: 50, spa: 105, spd: 60, spe: 65 },
 		abilities: { 0: "Sheer Force", 1: "Competitive", H: "Frisk" },
 		otherFormes: ["Wigglytuff-Mega"],
@@ -79,6 +84,7 @@ export const Pokedex: {[k: string]: ModdedSpeciesData;} = {
 	},
 	parasect: {
 		inherit: true,
+		movepoolAdditions: true,
 		baseStats: { hp: 60, atk: 95, def: 95, spa: 60, spd: 95, spe: 30 },
 		abilities: { 0: "Effect Spore", 1: "Dry Skin", H: "Parasitism" },
 	},
@@ -88,8 +94,9 @@ export const Pokedex: {[k: string]: ModdedSpeciesData;} = {
 	},
 	golduck: {
 		inherit: true,
-		baseStats: {hp: 80, atk: 82, def: 78, spa: 105, spd: 80, spe: 95},
-		abilities: {0: "Psychic Prowess", 1: "Cloud Nine", H: "Swift Swim"},
+		movepoolAdditions: true,
+		baseStats: { hp: 80, atk: 82, def: 78, spa: 105, spd: 80, spe: 95 },
+		abilities: { 0: "Psychic Prowess", 1: "Cloud Nine", H: "Swift Swim" },
 	},
 	poliwrath: {
 		inherit: true,
@@ -97,19 +104,23 @@ export const Pokedex: {[k: string]: ModdedSpeciesData;} = {
 	},
 	machamp: {
 		inherit: true,
+		movepoolAdditions: true,
 		otherFormes: ["Machamp-Gmax", "Machamp-Mega"],
 		formeOrder: ["Machamp", "Machamp-Gmax", "Machamp-Mega"],
 	},
 	tentacruel: {
 		inherit: true,
+		movepoolAdditions: true,
 		baseStats: { hp: 90, atk: 70, def: 75, spa: 80, spd: 120, spe: 100 },
 	},
 	golem: {
 		inherit: true,
+		movepoolAdditions: true,
 		baseStats: { hp: 80, atk: 130, def: 130, spa: 45, spd: 65, spe: 45 },
 	},
 	golemalola: {
 		inherit: true,
+		movepoolAdditions: true,
 		baseStats: { hp: 80, atk: 120, def: 140, spa: 45, spd: 65, spe: 45 },
 	},
 	rapidash: {
@@ -133,83 +144,95 @@ export const Pokedex: {[k: string]: ModdedSpeciesData;} = {
 	},
 	doduo: {
 		inherit: true,
-		abilities: {0: "Run Away", 1: "Early Bird", H: "Striker"},
+		abilities: { 0: "Run Away", 1: "Early Bird", H: "Striker" },
 	},
 	dodrio: {
 		inherit: true,
-		abilities: {0: "Run Away", 1: "Early Bird", H: "Striker"},
+		movepoolAdditions: true,
+		abilities: { 0: "Run Away", 1: "Early Bird", H: "Striker" },
 	},
 	dewgong: {
 		inherit: true,
-		baseStats: {hp: 90, atk: 70, def: 95, spa: 80, spd: 95, spe: 70},
-		abilities: {0: "Thick Fat", 1: "Hydrophilic", H: "Sap Sipper"},
+		movepoolAdditions: true,
+		baseStats: { hp: 90, atk: 70, def: 95, spa: 80, spd: 95, spe: 70 },
+		abilities: { 0: "Thick Fat", 1: "Hydrophilic", H: "Sap Sipper" },
 	},
 	muk: {
 		inherit: true,
+		movepoolAdditions: true,
 		abilities: { 0: "Stench", 1: "Sticky Hold", H: "Pollution" },
 	},
 	mukalola: {
 		inherit: true,
+		movepoolAdditions: true,
 		abilities: { 0: "Pollution", 1: "Gluttony", H: "Power of Alchemy" },
 	},
 	gengar: {
 		inherit: true,
+		movepoolAdditions: true,
 		abilities: { 0: "Levitate" },
 	},
 	kingler: {
 		inherit: true,
-		baseStats: {hp: 100, atk: 130, def: 115, spa: 50, spd: 50, spe: 50},
+		baseStats: { hp: 100, atk: 130, def: 115, spa: 50, spd: 50, spe: 50 },
 		abilities: { 0: "Hyper Cutter", 1: "Huge Clamp", H: "Sheer Force" },
 	},
 	hypno: {
 		inherit: true,
-		baseStats: {hp: 85, atk: 93, def: 70, spa: 93, spd: 115, spe: 42},
-		abilities: {0: "Insomnia", 1: "Endless Dream", H: "Inner Focus"},
+		movepoolAdditions: true,
+		baseStats: { hp: 85, atk: 93, def: 70, spa: 93, spd: 115, spe: 42 },
+		abilities: { 0: "Insomnia", 1: "Endless Dream", H: "Inner Focus" },
 	},
 	voltorb: {
 		inherit: true,
-		baseStats: {hp: 40, atk: 55, def: 50, spa: 30, spd: 55, spe: 100},
-		abilities: {0: "Soundproof", 1: "Explosive", H: "Aftermath"},
+		baseStats: { hp: 40, atk: 55, def: 50, spa: 30, spd: 55, spe: 100 },
+		abilities: { 0: "Soundproof", 1: "Explosive", H: "Aftermath" },
 	},
 	voltorbhisui: {
 		inherit: true,
-		abilities: {0: "Soundproof", 1: "Explosive", H: "Aftermath"},
+		abilities: { 0: "Soundproof", 1: "Explosive", H: "Aftermath" },
 	},
 	electrode: {
 		inherit: true,
-		baseStats: {hp: 60, atk: 80, def: 70, spa: 50, spd: 80, spe: 150},
-		abilities: {0: "Soundproof", 1: "Explosive", H: "Aftermath"},
+		baseStats: { hp: 60, atk: 80, def: 70, spa: 50, spd: 80, spe: 150 },
+		abilities: { 0: "Soundproof", 1: "Explosive", H: "Aftermath" },
 	},
 	electrodehisui: {
 		inherit: true,
-		abilities: {0: "Soundproof", 1: "Explosive", H: "Aftermath"},
+		abilities: { 0: "Soundproof", 1: "Explosive", H: "Aftermath" },
 	},
 	exeggutor: {
 		inherit: true,
-		baseStats: {hp: 95, atk: 85, def: 85, spa: 125, spd: 75, spe: 65},
+		movepoolAdditions: true,
+		baseStats: { hp: 95, atk: 85, def: 85, spa: 125, spd: 75, spe: 65 },
 	},
 	exeggutoralola: {
 		inherit: true,
-		baseStats: {hp: 95, atk: 125, def: 85, spa: 125, spd: 75, spe: 25},
-		abilities: {0: "Unconcerned", H: "Harvest"},
+		movepoolAdditions: true,
+		baseStats: { hp: 95, atk: 125, def: 85, spa: 125, spd: 75, spe: 25 },
+		abilities: { 0: "Unconcerned", H: "Harvest" },
 	},
 	hitmonlee: {
 		inherit: true,
-		baseStats: {hp: 60, atk: 120, def: 53, spa: 35, spd: 110, spe: 97},
-		abilities: {0: "Striker", 1: "Reckless", H: "Unburden"},
+		movepoolAdditions: true,
+		baseStats: { hp: 60, atk: 120, def: 53, spa: 35, spd: 110, spe: 97 },
+		abilities: { 0: "Striker", 1: "Reckless", H: "Unburden" },
 	},
 	hitmonchan: {
 		inherit: true,
-		baseStats: {hp: 60, atk: 105, def: 94, spa: 35, spd: 110, spe: 71},
-		abilities: {0: "Punch Prodigee", 1: "Iron Fist", H: "Inner Focus"},
+		movepoolAdditions: true,
+		baseStats: { hp: 60, atk: 105, def: 94, spa: 35, spd: 110, spe: 71 },
+		abilities: { 0: "Punch Prodigee", 1: "Iron Fist", H: "Inner Focus" },
 	},
 	weezing: {
 		inherit: true,
-		baseStats: {hp: 80, atk: 80, def: 120, spa: 95, spd: 80, spe: 35},
+		movepoolAdditions: true,
+		baseStats: { hp: 80, atk: 80, def: 120, spa: 95, spd: 80, spe: 35 },
 	},
 	weezinggalar: {
 		inherit: true,
-		baseStats: {hp: 80, atk: 80, def: 120, spa: 95, spd: 80, spe: 35},
+		movepoolAdditions: true,
+		baseStats: { hp: 80, atk: 80, def: 120, spa: 95, spd: 80, spe: 35 },
 	},
 	seaking: {
 		inherit: true,
@@ -553,7 +576,7 @@ export const Pokedex: {[k: string]: ModdedSpeciesData;} = {
 	},
 	ludicolo: {
 		inherit: true,
-		baseStats: {hp: 80, atk: 60, def: 70, spa: 100, spd: 100, spe: 80}, 
+		baseStats: {hp: 80, atk: 60, def: 70, spa: 100, spd: 100, spe: 80},
 	},
 	seedot: {
 		inherit: true,
@@ -1105,20 +1128,24 @@ export const Pokedex: {[k: string]: ModdedSpeciesData;} = {
 	},
 	uxie: {
 		inherit: true,
+		movepoolAdditions: true,
 		abilities: { 0: "Levitate", 1: "Mirror Armor", H: "Magic Bounce" },
 	},
 	mesprit: {
 		inherit: true,
+		movepoolAdditions: true,
 		types: ["Psychic", "Fairy"],
 		abilities: { 0: "Levitate", 1: "Magician", H: "Mental Fortitude" },
 	},
 	azelf: {
 		inherit: true,
+		movepoolAdditions: true,
 		types: ["Psychic", "Fighting"],
 		abilities: { 0: "Levitate", 1: "Defiant", H: "Competitive" },
 	},
 	dialgaorigin: {
 		inherit: true,
+		movepoolAdditions: true,
 		abilities: { 0: "Levitate", H: "Sands of Time" },
 	},
 	palkiaorigin: {
@@ -1131,7 +1158,7 @@ export const Pokedex: {[k: string]: ModdedSpeciesData;} = {
 	},
 	regigigas: {
 		inherit: true,
-		abilities: { 0: "Slow Start", H: "Clear Body" },
+		movepoolAdditions: true,
 	},
 	cresselia: {
 		inherit: true,
@@ -1313,11 +1340,13 @@ export const Pokedex: {[k: string]: ModdedSpeciesData;} = {
 	},
 	crustle: {
 		inherit: true,
+		movepoolAdditions: true,
 		otherFormes: ["Crustle-Mega"],
 		formeOrder: ["Crustle", "Crustle-Mega"],
 	},
 	scraftymega: {
 		inherit: true,
+		movepoolAdditions: true,
 		abilities: { 0: "Disillusioned" },
 	},
 	yamask: {
@@ -1330,12 +1359,21 @@ export const Pokedex: {[k: string]: ModdedSpeciesData;} = {
 	},
 	cofagrigus: {
 		inherit: true,
+		movepoolAdditions: true,
 		abilities: { 0: "Mummy", H: "Good as Gold" },
 	},
 	carracosta: {
 		inherit: true,
 		baseStats: { hp: 74, atk: 118, def: 133, spa: 73, spd: 65, spe: 32 },
 		abilities: { 0: "Solid Rock", 1: "Sheer Force", H: "Swift Swim" },
+	},
+	archen: {
+		inherit: true,
+		abilities: { 0: "Defeatist", H: "Early Bird" },
+	},
+	archeops: {
+		inherit: true,
+		abilities: { 0: "Defeatist", H: "Early Bird" },
 	},
 	trubbish: {
 		inherit: true,
@@ -2097,7 +2135,7 @@ export const Pokedex: {[k: string]: ModdedSpeciesData;} = {
 	},
 	basculegion: {
 		inherit: true,
-		abilities: { 0: "Swift Swim", 1: "Adaptability", H: "Reckless" }, 
+		abilities: { 0: "Swift Swim", 1: "Adaptability", H: "Reckless" },
 	},
 	basculegionf: {
 		inherit: true,
@@ -2196,7 +2234,7 @@ export const Pokedex: {[k: string]: ModdedSpeciesData;} = {
 	},
 	cyclizar: {
 		inherit: true,
-		baseStats: { hp: 70, atk: 95, def: 75, spa: 85, spd: 75, spe: 121 }, 
+		baseStats: { hp: 70, atk: 95, def: 75, spa: 85, spd: 75, spe: 121 },
 	},
 	houndstone: {
 		inherit: true,

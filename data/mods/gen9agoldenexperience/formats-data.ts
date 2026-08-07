@@ -1073,7 +1073,7 @@ export const FormatsData: { [k: string]: SpeciesFormatsData; } = {
 		doublesTier: "DUU",
 	},
 	feraligatrmega: {
-		tier: "RUBL",
+		tier: "UU",
 		doublesTier: "DUU",
 	},
 	sentret: {
@@ -1938,7 +1938,7 @@ export const FormatsData: { [k: string]: SpeciesFormatsData; } = {
 		doublesTier: "DUU",
 	},
 	absolmega: {
-		tier: "RU",
+		tier: "NU",
 		doublesTier: "DUU",
 	},
 	absolmegaz: {
@@ -2000,7 +2000,7 @@ export const FormatsData: { [k: string]: SpeciesFormatsData; } = {
 		tier: "NFE",
 	},
 	salamence: {
-		tier: "UU",
+		tier: "RU",
 		doublesTier: "DOU",
 	},
 	salamencemega: {
@@ -3943,7 +3943,7 @@ export const FormatsData: { [k: string]: SpeciesFormatsData; } = {
 		doublesTier: "DUU",
 	},
 	silvallydragon: {
-		tier: "UU",
+		tier: "RU",
 		doublesTier: "DUU",
 	},
 	silvallyelectric: {
@@ -4856,7 +4856,7 @@ export const FormatsData: { [k: string]: SpeciesFormatsData; } = {
 		tier: "LC",
 	},
 	cetitan: {
-		tier: "RUBL",
+		tier: "RU",
 		doublesTier: "DUU",
 	},
 	frigibax: {
@@ -5140,7 +5140,7 @@ export const FormatsData: { [k: string]: SpeciesFormatsData; } = {
 		doublesTier: "DUU",
 	},
 	munkidori: {
-		tier: "UU",
+		tier: "RU",
 		doublesTier: "DUU",
 	},
 	fezandipiti: {

@@ -643,7 +643,7 @@ export const Abilities: { [abilityid: string]: ModdedAbilityData; } = {
 			}
 			if (!['Zen', 'Galar-Zen'].includes(pokemon.species.forme)) {
 				pokemon.addVolatile('zenmode');
-			} 
+			}
 			const abilityToGive = pokemon.species.forme === 'Zen' ? "Sheer Force" : "Gorilla Tactics";
 			const oldAbility = pokemon.setAbility(abilityToGive);
 			if (oldAbility) {
@@ -692,26 +692,6 @@ export const Abilities: { [abilityid: string]: ModdedAbilityData; } = {
 			}
 		},
 		shortDesc: "At the end of each turn, if this Pokemon has no item, it gets Honey. If it has honey, it heals 1/8 of its HP.",
-	},
-	defeatist: {
-		inherit: true,
-		modded: true, // this makes its description display in Data Mod
-		onModifyAtkPriority: 5,
-		onModifyAtk(atk, pokemon) {
-			const allies = pokemon.side.pokemon.filter(ally => ally === pokemon || !ally.fainted && !ally.status);
-			if (allies === 0) {
-				return this.chainModify(0.5);
-			}
-		},
-		onModifySpAPriority: 5,
-		onModifySpA(spa, pokemon) {
-			const allies = pokemon.side.pokemon.filter(ally => ally === pokemon || !ally.fainted && !ally.status);
-			if (allies === 0) {
-				return this.chainModify(0.5);
-			}
-		},
-		desc: "If this Pokemon is the last Pokemon of the team, its Attack and Special Attack are halved.",
-		shortDesc: "If this Pokemon is the last Pokemon of the team, its Attack and Sp. Atk are halved.",
 	},
 	galewings: {
 		inherit: true,
@@ -1022,5 +1002,14 @@ export const Abilities: { [abilityid: string]: ModdedAbilityData; } = {
 		},
 		desc: "This Pokemon's offensive stat is doubled while using a Fire-type attack. If a Pokemon uses an Ice-type attack against this Pokemon, that Pokemon's offensive stat is halved when calculating the damage to this Pokemon. This Pokemon cannot be frozen. Gaining this Ability while burned cures it.",
 		shortDesc: "This Pokemon's Fire power is 2x; it can't be frozen; Ice power against it is halved.",
+	},
+	slowstart: {
+		inherit: true,
+		modded: true, // this makes its description display in Data Mod
+		onStart(pokemon) {
+			this.add('-start', pokemon, 'ability: Slow Start');
+			this.effectState.counter = 1;
+		},
+		shortDesc: "On switch-in, this Pokemon's Attack and Speed are halved for 1 turn.",
 	},
 };

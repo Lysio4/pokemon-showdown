@@ -3,7 +3,7 @@ export const Moves: { [k: string]: ModdedMoveData; } = {
 	nihillight: {
 		inherit: true,
 		isNonstandard: null,
-	},	
+	},
 	// new moves
 	tentacatch: {
 		inherit: true,
@@ -781,11 +781,6 @@ export const Moves: { [k: string]: ModdedMoveData; } = {
 		pp: 10,
 	},
 	recover: {
-		inherit: true,
-		modded: true, // this makes its description display in Data Mod
-		pp: 10,
-	},
-	rest: {
 		inherit: true,
 		modded: true, // this makes its description display in Data Mod
 		pp: 10,

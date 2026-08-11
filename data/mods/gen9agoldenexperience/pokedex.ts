@@ -203,14 +203,6 @@ export const Pokedex: {[k: string]: ModdedSpeciesData;} = {
 		baseStats: { hp: 60, atk: 105, def: 94, spa: 35, spd: 110, spe: 71 },
 		abilities: { 0: "Punch Prodigee", 1: "Iron Fist", H: "Inner Focus" },
 	},
-	weezing: {
-		inherit: true,
-		baseStats: { hp: 80, atk: 80, def: 120, spa: 95, spd: 80, spe: 35 },
-	},
-	weezinggalar: {
-		inherit: true,
-		baseStats: { hp: 80, atk: 80, def: 120, spa: 95, spd: 80, spe: 35 },
-	},
 	seaking: {
 		inherit: true,
 		evos: ["Seatsya"],
@@ -225,19 +217,19 @@ export const Pokedex: {[k: string]: ModdedSpeciesData;} = {
 	},
 	electabuzz: {
 		inherit: true,
-		abilities: {0: "Static", 1: "Motor Drive", H: "Vital Spirit"},
+		abilities: { 0: "Static", 1: "Motor Drive", H: "Vital Spirit" },
 	},
 	magmar: {
 		inherit: true,
-		abilities: {0: "Flame Body", 1: "Flash Fire", H: "Vital Spirit"},
+		abilities: { 0: "Flame Body", 1: "Flash Fire", H: "Vital Spirit" },
 	},
 	tauros: {
 		inherit: true,
-		baseStats: {hp: 75, atk: 120, def: 95, spa: 30, spd: 70, spe: 120},
+		baseStats: { hp: 75, atk: 120, def: 95, spa: 30, spd: 70, spe: 120 },
 	},
 	taurospaldeacombat: {
 		inherit: true,
-		baseStats: {hp: 75, atk: 120, def: 115, spa: 30, spd: 70, spe: 100},
+		baseStats: { hp: 75, atk: 120, def: 115, spa: 30, spd: 70, spe: 100 },
 	},
 	taurospaldeablaze: {
 		inherit: true,

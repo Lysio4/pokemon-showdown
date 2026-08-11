@@ -5703,7 +5703,7 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 					move.secondaries.push({
 						chance: 100,
 						boosts: {
-							def: -1,	
+							def: -1,
 						},
 						ability: this.dex.abilities.get('poisonousradula'),
 					});
@@ -5893,7 +5893,7 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 			}
 			if (move.category === 'Special') {
 				attacker.storedStats.atk = minOffense;
-				attacker.storedStats.spa = maxOffense;				
+				attacker.storedStats.spa = maxOffense;
 			}
 			this.add('-ability', attacker, 'Double Spirit');
 			const secondaryType = move.category === 'Physical' ? 'Dark' : 'Psychic'
@@ -6299,11 +6299,11 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 	boarding: {
 		onBasePower(basePower, pokemon, target) {
 			if (target.volatiles['trapped']) {
-				return this.chainModify(1.25);
+				return this.chainModify(1.3);
 			}
 		},
 		name: "Boarding",
-		shortDesc: "This Pokemon deals 1.25x damage to trapped opponents.",
+		shortDesc: "This Pokemon deals 1.3x damage to trapped opponents.",
 		rating: 3,
 		num: -28,
 		isNonstandard: "Custom",
@@ -6373,7 +6373,7 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 			this.debug('Cosmic Energy - remove charge turn for ' + move.id);
 			this.attrLastMove('[still]');
 			this.addMove('-anim', pokemon, move.name, target);
-			return false; 
+			return false;
 		},
 		onUpdate(pokemon) {
 			if (pokemon.volatiles['mustrecharge']) {
@@ -7362,7 +7362,7 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 		desc: "If Sunny Day is active, this Pokémon can skip the charging and recharging turn of its moves. This effect is prevented if this Pokemon is holding a Utility Umbrella.",
 		shortDesc: "If Sunny Day is active, this Pokémon skips the charging and recharging turn of its moves.",
 		rating: 3,
-		num: -73,		
+		num: -73,
 		isNonstandard: "Custom",
 	},
 	punchprodigee: {
@@ -7416,7 +7416,7 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 				if (pokemon.species.id !== 'draggoyleactive') {
 					pokemon.formeChange('Draggoyle-Active', this.effect, false, '[msg]');
 				}
-			}			
+			}
 			if (['hail', 'snow', 'eternalwinter'].includes(pokemon.effectiveWeather())) {
 				if (pokemon.species.id !== 'draggoyle') {
 					pokemon.formeChange('Draggoyle', this.effect, false, '[msg]');
@@ -7682,7 +7682,7 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 					pokemon.removeVolatile('mustrecharge');
 					this.add('-end', pokemon, 'mustrecharge');
 				}
-			}	
+			}
 		},
 		flags: {},
 		name: "Sands of Time",
@@ -7771,7 +7771,7 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 	},
 	vampirism: {
 		onModifyMove(move) {
-			if (move.flags['bite']) { 
+			if (move.flags['bite']) {
 				move.drain ||= [1, 4];
 			}
 		},

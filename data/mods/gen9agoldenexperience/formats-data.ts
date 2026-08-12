@@ -1290,7 +1290,7 @@ export const FormatsData: { [k: string]: SpeciesFormatsData; } = {
 		tier: "NFE",
 	},
 	weavile: {
-		tier: "UUBL",
+		tier: "UU",
 		doublesTier: "DUU",
 	},
 	teddiursa: {
@@ -3102,7 +3102,7 @@ export const FormatsData: { [k: string]: SpeciesFormatsData; } = {
 		tier: "LC",
 	},
 	mienshao: {
-		tier: "UU",
+		tier: "RU",
 		doublesTier: "DUU",
 	},
 	mienshaomega: {

@@ -8613,7 +8613,7 @@ export const Items: import('../sim/dex-items').ItemDataTable = {
 	},
 	mimikyunite: {
 		name: "Mimikyunite",
-		spritenum: 578,
+		spritenum: 496,
 		megaStone: {
 			"Mimikyu": "Mimikyu-Mega",
 			"Mimikyu-Busted": "Mimikyu-Busted-Mega",

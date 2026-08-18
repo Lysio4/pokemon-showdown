@@ -2191,8 +2191,7 @@ export const FormatsData: { [k: string]: SpeciesFormatsData; } = {
 		doublesTier: "DUU",
 	},
 	mothim: {
-		tier: "NU",
-		doublesTier: "DUU",
+		tier: "NFE",
 	},
 	combee: {
 		tier: "LC",
@@ -5262,6 +5261,10 @@ export const FormatsData: { [k: string]: SpeciesFormatsData; } = {
 		doublesTier: "DUU",
 	},
 	mosquitox: {
+		tier: "NU",
+		doublesTier: "DUU",
+	},
+	mothmhine: {
 		tier: "NU",
 		doublesTier: "DUU",
 	},

@@ -6580,6 +6580,10 @@ export const FormatsData: import('../sim/dex-species').SpeciesFormatsDataTable =
 		isNonstandard: "Custom",
 		tier: "Illegal",
 	},
+	mothmhine: {
+		isNonstandard: "Custom",
+		tier: "Illegal",
+	},
 	normear: {
 		isNonstandard: "Custom",
 		tier: "Illegal",
@@ -6591,7 +6595,7 @@ export const FormatsData: import('../sim/dex-species').SpeciesFormatsDataTable =
 	mossiden: {
 		isNonstandard: "Custom",
 		tier: "Illegal",
-    }, 
+    },
 	statimoss: {
 		isNonstandard: "Custom",
 		tier: "Illegal",
@@ -6611,11 +6615,11 @@ export const FormatsData: import('../sim/dex-species').SpeciesFormatsDataTable =
 	mercurino: {
 		isNonstandard: "Custom",
 		tier: "Illegal",
-    }, 
+    },
 	dauvifar: {
 		isNonstandard: "Custom",
 		tier: "Illegal",
-    }, 
+    },
 	girafatak: {
 		isNonstandard: "Custom",
 		tier: "Illegal",

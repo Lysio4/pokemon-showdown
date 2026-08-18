@@ -804,6 +804,9 @@ export class BattleActions {
 				if (move.id === "spectralthief") {
 					this.battle.addMove('-anim', pokemon, "Spectral Thief", target);
 				}
+				if (move.id === "midnightsnack") { // AGE
+					this.battle.addMove('-anim', pokemon, "Midnight Snack", target);
+				}
 			}
 		}
 		return undefined;

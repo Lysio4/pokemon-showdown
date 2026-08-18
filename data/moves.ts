@@ -21422,7 +21422,8 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 		isNonstandard: "Custom",
 	},
 	toxicsting: {
-		shortDesc: "50% drain; badly poison target.",
+		desc: "The user recovers 3/4 the HP lost by the target, rounded half up. If Big Root is held by the user, the HP recovered is 1.3x normal, rounded half down. Badly poisons target.",
+		shortDesc: "User recovers 75% of the damage dealt and badly poisons target.",
 		num: -6,
 		accuracy: 100,
 		basePower: 60,
@@ -21431,7 +21432,7 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 		pp: 10,
 		priority: 0,
 		flags: { protect: 1, mirror: 1, heal: 1, drill: 1 },
-		drain: [1, 2],
+		drain: [3, 4],
 		secondary: {
 			chance: 100,
 			status: 'tox',
@@ -21518,7 +21519,7 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 	purifyingstream: {
 		num: -10,
 		accuracy: true,
-		basePower: 90,
+		basePower: 100,
 		category: "Special",
 		name: "Purifying Stream",
 		shortDesc: "Resets all of the target's stat stages to 0.",
@@ -21834,7 +21835,7 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 	},
 	indomitablespirit: {
 		num: -23,
-		accuracy: 95,
+		accuracy: 100,
 		basePower: 75,
 		category: "Special",
 		shortDesc: "Power doubles if last move failed or was resisted.",
@@ -21958,7 +21959,7 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 	downdraft: {
 		num: -27,
 		accuracy: 100,
-		basePower: 90,
+		basePower: 85,
 		category: "Special",
 		name: "Downdraft",
 		desc: "If the target isn't grounded, its Speed is lowered by one stage.",
@@ -22790,7 +22791,7 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 	fatbombing: {
 		num: -53,
 		accuracy: 100,
-		basePower: 100,
+		basePower: 85,
 		category: "Physical",
 		name: "Fat Bombing",
 		pp: 10,
@@ -22837,10 +22838,10 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 	clusterexplosion: {
 		num: -55,
 		accuracy: 100,
-		basePower: 250,
+		basePower: 200,
 		category: "Physical",
 		name: "Cluster Explosion",
-		shortDesc: "Hits adjacent Pokemon. Sets Spikes. User faints.",
+		shortDesc: "Hits adjacent Pokemon. Sets Stealth Rock. User faints.",
 		pp: 5,
 		priority: 0,
 		flags: {protect: 1, mirror: 1, metronome: 1, noparentalbond: 1},
@@ -22851,14 +22852,14 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 		onTryMove(source, target, move) {
 			if (!move.hasSheerForce) {
 				for (const side of source.side.foeSidesWithConditions()) {
-					side.addSideCondition('spikes');
+					side.addSideCondition('stealthrock');
 				}
 			}
 		},
 		selfdestruct: "always",
 		target: "allAdjacent",
 		type: "Rock",
-		contestType: "Beautiful",
+		contestType: "Tough",
 		isNonstandard: "Custom",
 	},
 	befuddlepowder: {
@@ -23149,46 +23150,31 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 	futuredoom: {
 		num: -67,
 		accuracy: 100,
-		basePower: 65,
+		basePower: 70,
 		category: "Special",
 		name: "Future Doom",
 		pp: 10,
 		priority: 0,
 		flags: { protect: 1, mirror: 1, metronome: 1 },
-		volatileStatus: 'partiallytrapped',
 		secondary: {
 			chance: 100,
 			volatileStatus: 'taunt',
 		},
 		target: "normal",
 		type: "Psychic",
-		shortDesc: "Traps the target for 5 turns, and applies Taunt.",
+		shortDesc: "Target can't use status moves its next 3 turns.",
 		isNonstandard: "Custom",
 	},
 	brainblast: {
 		num: -68,
 		accuracy: 100,
-		basePower: 65,
+		basePower: 70,
 		category: "Special",
 		name: "Brain Blast",
 		pp: 20,
 		priority: 0,
 		flags: { protect: 1, mirror: 1, metronome: 1 },
-		onBasePower(basePower, source, target, move) {
-			const item = target.getItem();
-			if (!this.singleEvent('TakeItem', item, target.itemState, target, target, move, item)) return;
-			if (item.id) {
-				return this.chainModify(1.5);
-			}
-		},
-		onAfterHit(target, source) {
-			if (source.hp) {
-				const item = target.takeItem();
-				if (item) {
-					this.add('-enditem', target, item.name, '[from] move: Brain Blast', '[of] ' + source);
-				}
-			}
-		},
+		selfSwitch: true,
 		onPrepareHit: function (target, source) {
 			this.attrLastMove('[still]');
 			this.add('-anim', source, "Kinesis", target);
@@ -23196,8 +23182,8 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 		target: "normal",
 		type: "Psychic",
 		contestType: "Clever",
-		desc: "If the target is holding an item that can be removed from it, ignoring the Sticky Hold Ability, this move's power is multiplied by 1.5. If the user has not fainted, the target loses its held item. This move cannot cause Pokemon with the Sticky Hold Ability to lose their held item or cause a Kyogre, a Groudon, a Giratina, an Arceus, a Genesect, a Silvally, a Zacian, or a Zamazenta to lose their Blue Orb, Red Orb, Griseous Orb, Plate, Drive, Memory, Rusted Sword, or Rusted Shield respectively. Items lost to this move cannot be regained with Recycle or the Harvest Ability.",
-		shortDesc: "1.5x damage if foe holds an item. Removes item.",
+		desc: "If this move is successful and the user has not fainted, the user switches out even if it is trapped and is replaced immediately by a selected party member. The user does not switch out if there are no unfainted party members, or if the target switched out using an Eject Button or through the effect of the Emergency Exit or Wimp Out Abilities.",
+		shortDesc: "User switches out after damaging the target.",
 		isNonstandard: "Custom",
 	},
 	timecrash: {
@@ -23209,7 +23195,7 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 		pp: 10,
 		priority: 0,
 		flags: { protect: 1, mirror: 1, distance: 1, heal: 1, metronome: 1 },
-		drain: [3, 4],
+		drain: [1, 2],
 		onPrepareHit(target, source) {
 			this.attrLastMove('[still]');
 			this.add('-anim', source, "Roar of Time", target);
@@ -23217,8 +23203,8 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 		target: "allAdjacent",
 		type: "Dragon",
 		contestType: "Cool",
-		desc: "The user recovers 3/4 the HP lost by the target, rounded half up. If Big Root is held by the user, the HP recovered is 1.3x normal, rounded half down.",
-		shortDesc: "User recovers 75% of the damage dealt.",
+		desc: "The user recovers 1/2 the HP lost by the target, rounded half up. If Big Root is held by the user, the HP recovered is 1.3x normal, rounded half down.",
+		shortDesc: "User recovers 50% of the damage dealt.",
 		isNonstandard: "Custom",
 	},
 	waterslash: {
@@ -23245,7 +23231,7 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 	marinebolt: {
 		num: -71,
 		accuracy: 100,
-		basePower: 75,
+		basePower: 80,
 		category: "Physical",
 		name: "Marine Bolt",
 		pp: 20,
@@ -23364,7 +23350,7 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 	threateningbite: {
 		num: -76,
 		accuracy: 100,
-		basePower: 160,
+		basePower: 150,
 		category: "Physical",
 		name: "Threatening Bite",
 		pp: 5,
@@ -23754,6 +23740,30 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 		contestType: "Clever",
 		desc: "Hits twice. If the first hit breaks the target's substitute, it will take damage for the second hit. If the target is poisoned, heals the user's status condition.",
 		shortDesc: "Hits 2 times in one turn. Heals user's status if target is poisoned.",
+		isNonstandard: "Custom",
+	},
+	midnightsnack: {
+		num: -92,
+		accuracy: 100,
+		basePower: 90,
+		category: "Physical",
+		name: "Midnight Snack",
+		pp: 10,
+		priority: 0,
+		flags: { contact: 1, protect: 1, mirror: 1, bypasssub: 1 },
+		stealsBoosts: true,
+		// Boost stealing implemented in scripts.js
+		onPrepareHit(target, source, move) {
+			this.attrLastMove('[still]');
+			this.add('-anim', source, "Knock Off", target);
+		},
+		target: "normal",
+		type: "Dark",
+		contestType: "Cool",
+		desc: "The target's stat stages greater than 0 are stolen from it and applied to the user before dealing damage.",
+		shortDesc: "Steals target's boosts before dealing damage.",
+
+		clearBoost: "  [SOURCE] stole the target's boosted stats!",
 		isNonstandard: "Custom",
 	},
 	// Touhou

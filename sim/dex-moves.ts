@@ -64,6 +64,10 @@ interface MoveFlags {
 	snatch?: 1; // Can be stolen from the original user and instead used by another Pokemon using Snatch.
 	sound?: 1; // Has no effect on Pokemon with the Ability Soundproof.
 	wind?: 1; // Activates the Wind Power and Wind Rider Abilities.
+	// AGE
+	drill?: 1; // Power and accuracy are multiplied by 1.3 when used by a Pokemon with the Ability Mighty Horn.
+	kick?: 1; // Power is multiplied by 1.2 when used by a Pokemon with the Ability Striker.
+	tail?: 1; // Gains +1 priority when used by a Pokemon with the Ability Whiplash.
 }
 
 export interface HitEffect {

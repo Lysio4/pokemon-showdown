@@ -5755,10 +5755,10 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 		isNonstandard: "Custom",
 	},
 	racketeering: {
-		shortDesc: "Boosts the power of Knock Off, Thief and Pluck by 1.5x",
+		shortDesc: "Raises the power of healing moves, Good Fishing, Knock Off, Midnight Snack, Pluck, Spectral Thief and Thief by 50%.",
 		onBasePowerPriority: 8,
 		onBasePower(basePower, attacker, defender, move) {
-			if (move.name === 'Knock Off' || move.name === 'Thief' || move.name === 'Pluck') {
+			if (move.flags['heal'] || ['goodfishing', 'knockoff', 'midnightsnack', 'pluck', 'spectralthief', 'thief'].includes(move.id)) {
 				return this.chainModify(1.5);
 			}
 		},
@@ -7101,36 +7101,11 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 		isNonstandard: "Custom",
 	},
 	bitterhatred: {
-		shortDesc: "Deal 10% bonus damage for each hit taken (up to 50%)",
-		onStart(pokemon) {
-			if (!pokemon.hp) return;
-			let attacked = pokemon.timesAttacked;
-			if (attacked > 0) {
-				this.effectState.fallen = attacked > 5 ? 5 : attacked;
-				this.add('-start', pokemon, `fallen${this.effectState.fallen}`, '[silent]');
-			} else {
-				this.effectState.fallen = 0;
-			}
+		onDamagingHit(damage, target, source, effect) {
+			this.boost({ spa: 1 });
 		},
-		onDamagingHit(damage, target, source, move) {
-			if (!target.hp || this.effectState.fallen >= 5) return;
-			if (!move.isMax && !move.flags['futuremove'] && move.id !== 'struggle') {
-				if (this.effectState.fallen) {
-					this.add('-end', target, `fallen${this.effectState.fallen}`, '[silent]');
-				}
-				this.effectState.fallen++;
-				this.add('-activate', target, 'ability: Bitter Hatred');
-				this.add('-start', target, `fallen${this.effectState.fallen}`, '[silent]');
-			}
-		},
-		onBasePowerPriority: 21,
-		onBasePower(basePower, attacker, defender, move) {
-			if (this.effectState.fallen) {
-				const powMod = [4096, 4506, 4915, 5325, 5734, 6144];
-				this.debug(`Supreme Overlord boost: ${powMod[this.effectState.fallen]}/4096`);
-				return this.chainModify([powMod[this.effectState.fallen], 4096]);
-			}
-		},
+		shortDesc: "This Pokemon's Sp. Atk is raised by 1 when hit.",
+		rating: 3.5,
 		flags: {},
 		name: "Bitter Hatred",
 		num: -65,
@@ -7704,6 +7679,56 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 		shortDesc: "Combination of the Intrepid Sword and Dauntless Shield Abilities.",
 
 		start: "  [POKEMON] has two Abilities!",
+		isNonstandard: "Custom",
+	},
+	masquerade: {
+		num: -89,
+		desc: "This Pokémon inherits the Ability of the last unfainted Pokemon in its party until it takes direct damage from another Pokémon's attack. Permanent abilities cannot be copied.",
+		shortDesc: "Inherits the Ability of the last party member. Wears off when attacked.",
+		onUpdate(pokemon) {
+			if (!pokemon.isStarted || this.effectState.gaveUp || pokemon.volatiles['masquerade']) return;
+			pokemon.addVolatile('masquerade');
+			let i;
+			for (i = pokemon.side.pokemon.length - 1; i > pokemon.position; i--) {
+				if (!pokemon.side.pokemon[i]) continue;
+				const additionalBannedAbilities = [
+					'hugepower', 'lightpower', 'purepower', 'wonderguard',
+				];
+				if (
+					pokemon.side.pokemon[i].fainted ||
+					pokemon.side.pokemon[i].getAbility().flags['notrace'] || additionalBannedAbilities.includes(pokemon.side.pokemon[i].ability)) {
+						continue;
+					}
+				break;
+			}
+			if (!pokemon.side.pokemon[i] || pokemon === pokemon.side.pokemon[i]) {
+				this.effectState.gaveUp = true;
+				return;
+			}
+			const masquerade = pokemon.side.pokemon[i];
+			this.add('-ability', pokemon, 'Masquerade');
+			pokemon.setAbility(masquerade.ability);
+			this.hint(`${pokemon.name} inherited ${this.dex.abilities.get(pokemon.ability).name} from ${masquerade.name}!`);
+			this.add('-ability', pokemon, this.dex.abilities.get(pokemon.ability).name, '[silent]');
+		},
+		condition: {
+			onDamagingHit(damage, target, source, move) {
+				this.effectState.busted = true;
+			},
+			onFaint(pokemon) {
+				this.effectState.busted = true;
+			},
+			onUpdate(pokemon) {
+				if (pokemon.hasAbility('masquerade')) return;
+				if (this.effectState.busted) {
+					this.add('-ability', pokemon, 'Masquerade');
+					this.add('-message', `${pokemon.name}'s Masquerade wore off!`);
+					pokemon.setAbility('masquerade');
+				}
+			},
+		},
+		flags: { failroleplay: 1, noreceiver: 1, noentrain: 1, notrace: 1, failskillswap: 1 },
+		name: "Masquerade",
 		isNonstandard: "Custom",
 	},
 	// Touhou

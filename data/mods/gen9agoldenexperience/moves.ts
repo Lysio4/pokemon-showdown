@@ -476,6 +476,10 @@ export const Moves: { [k: string]: ModdedMoveData; } = {
 		inherit: true,
 		isNonstandard: null,
 	},
+	midnightsnack: {
+		inherit: true,
+		isNonstandard: null,
+	},
 	// modified moves
 	toxicthread: {
 		inherit: true,
@@ -859,10 +863,12 @@ export const Moves: { [k: string]: ModdedMoveData; } = {
 	},
 	blazingtorque: {
 		inherit: true,
+		modded: true, // this makes its description display in Data Mod
 		isNonstandard: null,
 	},
 	combattorque: {
 		inherit: true,
+		modded: true, // this makes its description display in Data Mod
 		isNonstandard: null,
 	},
 	magicaltorque: {
@@ -880,6 +886,7 @@ export const Moves: { [k: string]: ModdedMoveData; } = {
 	},
 	noxioustorque: {
 		inherit: true,
+		modded: true, // this makes its description display in Data Mod
 		isNonstandard: null,
 	},
 	wickedtorque: {
@@ -912,13 +919,6 @@ export const Moves: { [k: string]: ModdedMoveData; } = {
 		desc: "Has a 100% chance to raise the user's Special Attack by 1 stage.",
 		shortDesc: "100% chance to raise the user's Sp. Atk by 1.",
 	},
-	psyblade: {
-		inherit: true,
-		modded: true, // this makes its description display in Data Mod
-		terrain: 'electricterrain',
-		shortDesc: "Sets Electric Terrain upon use. During Electric Terrain: 1.5x power.",
-		desc: "Sets Electric Terrain upon use. During Electric Terrain: 1.5x power.",
-	},
 	revivalblessing: {
 		inherit: true,
 		flags: { heal: 1, nosketch: 1, noassist: 1 },
@@ -937,21 +937,6 @@ export const Moves: { [k: string]: ModdedMoveData; } = {
 		inherit: true,
 		modded: true, // this makes its description display in Data Mod
 		basePower: 75,
-	},
-	psystrike: {
-		inherit: true,
-		modded: true, // this makes its description display in Data Mod
-		onModifyMove(move, pokemon, target) {
-			if (pokemon.getStat('atk', false, true) > pokemon.getStat('spa', false, true)) move.category = 'Physical';
-			if (target.getStat('def', false, true) > target.getStat('spd', false, true)) move.overrideDefensiveStat = 'spd';
-		},
-		shortDesc: "Physical if user's Atk > Sp. Atk. Deals damage based on Def or SpD, whichever one is the lowest.",
-		desc: "Physical if user's Atk > Sp. Atk. Deals damage based on Def or SpD, whichever one is the lowest.",
-	},
-	snaptrap: {
-		inherit: true,
-		modded: true, // this makes its description display in Data Mod
-		basePower: 65,
 	},
 	needlearm: {
 		inherit: true,

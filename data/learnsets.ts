@@ -101436,6 +101436,16 @@ export const Learnsets: import('../sim/dex-species').LearnsetDataTable = {
 			throatchop: ["9L1"],
 		},
 	},
+	mothmhine: {
+		learnset: {
+			leechlife: ["9L40"],
+			knockoff: ["9L48"],
+			midnightsnack: ["9L1"],
+			suckerpunch: ["9T"],
+			throatchop: ["9L40"],
+			zenheadbutt: ["9T"],
+		},
+	},
 	normear: {
 		learnset: {
 			toxic: ["9L1"],

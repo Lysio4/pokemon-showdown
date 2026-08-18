@@ -415,6 +415,10 @@ export const Abilities: { [abilityid: string]: ModdedAbilityData; } = {
 		inherit: true,
 		isNonstandard: null,
 	},
+	masquerade: {
+		inherit: true,
+		isNonstandard: null,
+	},
 	// modified abilities
 	justified: {
 		inherit: true,
@@ -520,13 +524,13 @@ export const Abilities: { [abilityid: string]: ModdedAbilityData; } = {
 		onTakeItem(item, pokemon, source) {
 			if (!pokemon.hp || pokemon.item === 'stickybarb') return;
 			if (!this.activeMove) throw new Error("Battle.activeMove is null");
-			if ((source && source !== pokemon) || this.activeMove.id === 'knockoff' || this.activeMove.id === 'brainblast' || this.activeMove.id === 'goodfishing') {
+			if ((source && source !== pokemon) || this.activeMove.id === 'knockoff' || this.activeMove.id === 'goodfishing') {
 				this.add('-activate', pokemon, 'ability: Sticky Hold');
 				return false;
 			}
 		},
 		onSourceModifyDamage(damage, source, target, move) {
-			if (move.name === 'Knock Off' || move.name === 'Brain Blast' || move.name === 'Good Fishing') {
+			if (move.name === 'Knock Off' || move.name === 'Good Fishing') {
 				this.debug('Sticky Hold weaken');
 				return this.chainModify(0.67);
 			}
@@ -537,8 +541,8 @@ export const Abilities: { [abilityid: string]: ModdedAbilityData; } = {
 				return null;
 			}
 		},
-		desc: "This Pokemon cannot lose its held item due to another Pokemon's Ability or attack, unless the attack knocks out this Pokemon. A Sticky Barb will be transferred to other Pokemon regardless of this Ability. Knock Off, Brain Blast and Good Fishing are not boosted against this Pokemon, and Poltergeist fails when used against this Pokemon.",
-		shortDesc: "This Pokemon cannot lose its held item due to another Pokemon's Ability or attack. Knock Off, Brain Blast and Good Fishing are not boosted against this Pokemon, and Poltergeist fails when used against this Pokemon.",
+		desc: "This Pokemon cannot lose its held item due to another Pokemon's Ability or attack, unless the attack knocks out this Pokemon. A Sticky Barb will be transferred to other Pokemon regardless of this Ability. Knock Off and Good Fishing are not boosted against this Pokemon, and Poltergeist fails when used against this Pokemon.",
+		shortDesc: "This Pokemon cannot lose its held item due to another Pokemon's Ability or attack. Knock Off and Good Fishing are not boosted against this Pokemon, and Poltergeist fails when used against this Pokemon.",
 	},
 	normalize: {
 		inherit: true,
@@ -816,27 +820,6 @@ export const Abilities: { [abilityid: string]: ModdedAbilityData; } = {
 		desc: "Opposing Pokemon have their Defense reduced by 25%, and allies have their Attack raised by 25%.",
 		shortDesc: "Opposing Pokemon have their Defense reduced by 25%, and allies have their Attack raised by 25%.",
 	},
-	rattled: {
-		inherit: true,
-		modded: true, // this makes its description display in Data Mod
-		onSourceModifyAtkPriority: 6,
-		onSourceModifyAtk(atk, attacker, defender, move) {
-			if (move.type === 'Bug' || move.type === 'Ghost' || move.type === 'Dark') {
-				this.debug('Rattled weaken');
-				return this.chainModify(0.5);
-			}
-		},
-		onSourceModifySpAPriority: 5,
-		onSourceModifySpA(atk, attacker, defender, move) {
-			if (move.type === 'Bug' || move.type === 'Ghost' || move.type === 'Dark') {
-				this.debug('Rattled weaken');
-				return this.chainModify(0.5);
-			}
-		},
-		flags: { breakable: 1 },
-		desc: "Bug/Ghost/Dark resistances. This Pokemon's Speed is raised by 1 stage if hit by a Bug-, Dark-, or Ghost-type attack, or if an opposing Pokemon affected this Pokemon with the Intimidate Ability.",
-		shortDesc: "Bug/Ghost/Dark resistances. Speed is raised 1 stage if hit by a Bug-, Dark-, or Ghost-type attack, or Intimidated.",
-	},
 	teravolt: {
 		inherit: true,
 		modded: true, // this makes its description display in Data Mod
@@ -891,10 +874,12 @@ export const Abilities: { [abilityid: string]: ModdedAbilityData; } = {
 			pokemon.addVolatile('truant');
 		},
 		onHitProtect(source, target, move) {
-			target.getMoveHitData(move).bypassProtect = this.effect;
-			return false;
+			if (move.flags['contact']) {
+				target.getMoveHitData(move).bypassProtect = this.effect;
+				return false;
+			}
 		},
-		shortDesc: "This Pokemon can only use status moves every other turn. Its moves ignore a target's protection and deal 1/4 the usual damage.",
+		shortDesc: "This Pokemon can only use status moves every other turn. Its contact moves ignore a target's protection and deal 1/4 the usual damage.",
 	},
 	fullmetalbody: {
 		inherit: true,

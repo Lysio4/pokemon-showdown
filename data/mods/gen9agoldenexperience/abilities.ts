@@ -547,17 +547,10 @@ export const Abilities: { [abilityid: string]: ModdedAbilityData; } = {
 	normalize: {
 		inherit: true,
 		modded: true, // this makes its description display in Data Mod
-		desc: "This Pokemon's moves are changed to be Normal type and have their power multiplied by 1.5, and ignores type affinities. This effect comes before other effects that change a move's type.",
-		shortDesc: "This Pokemon's moves are changed to be Normal type and have 1.5x power, and ignore typing.",
+		desc: "This Pokemon's moves are changed to be Normal type and have their power multiplied by 1.5, and deal double damage if the hit is not very effective. This effect comes before other effects that change a move's type.",
+		shortDesc: "This Pokemon's moves are changed to be Normal type and have 1.5x power, and deal double damage if the hit is not very effective.",
 		onBasePower(basePower, pokemon, target, move) {
 			if (move.typeChangerBoosted === this.effect) return this.chainModify(1.5);
-		},
-		onModifyMove(move, pokemon, target) {
-			let type = move.type;
-			if (!move.ignoreImmunity) move.ignoreImmunity = {};
-			if (move.ignoreImmunity !== true) {
-				move.ignoreImmunity[type] = true;
-			}
 		},
 		onEffectiveness(typeMod, target, type) {
 			if (target.getMoveHitData(move).typeMod < 0) return 0;

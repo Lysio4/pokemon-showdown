@@ -958,7 +958,6 @@ export const Moves: { [k: string]: ModdedMoveData; } = {
 		modded: true, // this makes its description display in Data Mod
 		basePower: 80,
 		category: "Special",
-		name: "Tar Shot",
 		flags: { protect: 1, metronome: 1 },
 	},
 

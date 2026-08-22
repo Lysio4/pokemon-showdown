@@ -49,10 +49,29 @@ export const Scripts: ModdedBattleScriptsData = {
       if (item.name === "Sawsbuckite" && pokemon.species.id === "sawsbuckautumn") return "Sawsbuck-Autumn-Mega";
       if (item.name === "Sawsbuckite" && pokemon.species.id === "sawsbuckwinter") return "Sawsbuck-Winter-Mega";
       if (item.name === "Zoroarkite" && pokemon.species.name === "Zoroark-Hisui") return "Zoroark-Hisui-Mega";
-      if (item.name === "Mimikyunite" && pokemon.species.id === "mimikyubusted") return "Mimikyu-Busted-Mega";
       if (item.name === "Toxtricitite" && pokemon.species.name === "Toxtricity-Low-Key") return "Toxtricity-Low-Key-Mega";
       return item.megaStone?.[species.name] || null;
     },
+
+	runMegaEvo(pokemon: Pokemon) {
+		const speciesid = pokemon.canMegaEvo || pokemon.canUltraBurst;
+		if (!speciesid) return false;
+
+		// pokemon.formeChange(speciesid, pokemon.getItem(), true);
+
+		// Limit one mega evolution
+		const wasMega = pokemon.canMegaEvo;
+		for (const ally of pokemon.side.pokemon) {
+			if (wasMega) {
+				ally.canMegaEvo = false;
+			} else {
+				ally.canUltraBurst = null;
+			}
+		}
+
+		this.battle.runEvent('AfterMega', pokemon);
+		return true;
+	},
     runSwitch(pokemon: Pokemon) {
       const switchersIn = [pokemon];
       while (this.battle.queue.peek()?.choice === 'runSwitch') {

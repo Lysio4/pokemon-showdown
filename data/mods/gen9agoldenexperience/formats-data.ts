@@ -1239,7 +1239,7 @@ export const FormatsData: { [k: string]: SpeciesFormatsData; } = {
 	},
 	farigiraf: {
 		tier: "NU",
-		doublesTier: "DUU",
+		doublesTier: "DOU",
 	},
 	pineco: {
 		tier: "LC",
@@ -1581,7 +1581,7 @@ export const FormatsData: { [k: string]: SpeciesFormatsData; } = {
 		tier: "NFE",
 	},
 	slaking: {
-		tier: "NUBL",
+		tier: "UU",
 		doublesTier: "DOU",
 	},
 	nincada: {
@@ -2376,7 +2376,7 @@ export const FormatsData: { [k: string]: SpeciesFormatsData; } = {
 		doublesTier: "DUU",
 	},
 	rotomfan: {
-		tier: "RUBL",
+		tier: "NU",
 		doublesTier: "DUU",
 	},
 	rotommow: {
@@ -2416,12 +2416,12 @@ export const FormatsData: { [k: string]: SpeciesFormatsData; } = {
 		doublesTier: "DOU",
 	},
 	heatranmega: {
-		tier: "OU",
+		tier: "(OU)",
 		doublesTier: "DOU",
 	},
 	regigigas: {
 		tier: "OU",
-		doublesTier: "DOU",
+		doublesTier: "DUU",
 	},
 	giratina: {
 		tier: "Uber",
@@ -2670,7 +2670,7 @@ export const FormatsData: { [k: string]: SpeciesFormatsData; } = {
 	},
 	gigalithmega: {
 		tier: "RU",
-		doublesTier: "DOU",
+		doublesTier: "DUU",
 	},
 	woobat: {
 		tier: "LC",
@@ -3311,7 +3311,7 @@ export const FormatsData: { [k: string]: SpeciesFormatsData; } = {
 		doublesTier: "DUU",
 	},
 	greninjamega: {
-		tier: "OU",
+		tier: "UU",
 		doublesTier: "DUU",
 	},
 	greninjaash: {
@@ -3457,7 +3457,7 @@ export const FormatsData: { [k: string]: SpeciesFormatsData; } = {
 	},
 	malamarmega: {
 		tier: "RU",
-		doublesTier: "DOU",
+		doublesTier: "DUU",
 	},
 	binacle: {
 		tier: "LC",
@@ -5547,7 +5547,7 @@ export const FormatsData: { [k: string]: SpeciesFormatsData; } = {
 		doublesTier: "DUU",
 	},
 	arsief: {
-		tier: "OU",
+		tier: "UU",
 		doublesTier: "DUU",
 	},
 	corpsetrap: {

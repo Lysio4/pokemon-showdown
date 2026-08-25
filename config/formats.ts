@@ -341,6 +341,24 @@ export const Formats: import('../sim/dex-formats').FormatList = [
 		],
 		unbanlist: ['Light of Ruin'],
 	},
+	{
+		name: "[Gen 9] A Golden Experience Doubles Uber",
+		desc: `A fun metagame where we try to make everything viable, or at least usable. We also have new Fakemons!`,
+		mod: 'gen9agoldenexperience',
+		gameType: 'doubles',
+		ruleset: ['Standard Doubles', 'NatDex Mod', 'Evasion Abilities Clause', 'Terastal Clause', 'Non-Signature Z-Move Clause', 'Data Mod'],
+		banlist: [],
+		unbanlist: ['Light of Ruin'],
+	},
+	{
+		name: "[Gen 9] A Golden Experience VGC",
+		mod: 'gen9agoldenexperience',
+		gameType: 'doubles',
+		searchShow: false,
+		bestOfDefault: true,
+		ruleset: ['Flat Rules', '!! Adjust Level = 50', 'Min Source Gen = 9', 'VGC Timer', 'Open Team Sheets', 'Limit Two Restricted'],
+		restricted: ['Restricted Legendary'],
+	},
 
 	// AGE Other Metagames
 	///////////////////////////////////////////////////////////////////
@@ -590,75 +608,6 @@ export const Formats: import('../sim/dex-formats').FormatList = [
 				pokemon.removeVolatile(innate);
 			}
 			pokemon.m.innates = undefined;
-		},
-	},
-	{
-		name: "[Gen 9] A Golden Experience Trademarked",
-		desc: `Sacrifice your Pok&eacute;mon's ability for a status move that activates on switch-in.`,
-		mod: 'trademarkedage',
-		ruleset: ['Standard NatDex', 'Sleep Moves Clause', 'Terastal Clause', 'Non-Signature Z-Move Clause', 'Data Mod'],
-		banlist: [
-			'Annihilape', 'Arceus', 'Calyrex-Ice', 'Calyrex-Shadow', 'Decidueye-Base', 'Deoxys-Attack', 'Deoxys-Base', 'Dialga', 'Dialga-Origin', 'Eternatus', 'Flutter Mane',
-			'Giratina', 'Giratina-Origin', 'Groudon', 'Ho-Oh', 'Hoopa-Unbound', 'Keldeo', 'Koraidon', 'Kyogre', 'Kyurem-Black', 'Kyurem-White', 'Lugia', 'Lunala', 'Magearna',
-			'Mew', 'Mewtwo', 'Miraidon', 'Naganadel', 'Necrozma-Dawn-Wings', 'Necrozma-Dusk-Mane', 'Ogerpon-Hearthflame', 'Palkia', 'Palkia-Origin', 'Raging Bolt', 'Rayquaza', 'Reshiram',
-			'Slaking', 'Smeargle', 'Solgaleo', 'Spectrier', 'Urshifu-Base', 'Weavile', 'Xerneas', 'Yveltal', 'Zacian', 'Zacian-Crowned',
-			'Zekrom', 'Zygarde-50', 'Moody', 'Light Clay', 'Baton Pass', 'Last Respects', 'Revival Blessing', 'Shadow Tag', 'Shed Tail',
-		],
-		restricted: [
-			'Agility', 'Baneful Bunker', 'Belly Drum', 'Block', 'Burning Bulwark', 'Chilly Reception', 'Confuse Ray', 'Copycat', 'Dragon Dance', 'Detect', 'Destiny Bond',
-			'Endure', 'Encore', 'Fairy Lock', 'Flatter', 'Focus Energy', 'Glare', 'Heal Bell', 'Ingrain', 'Instruct', 'Mean Look', 'move:Metronome', 'Nasty Plot', 'Parting Shot',
-			'Poison Gas', 'Poison Powder', 'Protect', 'Roar', 'Silk Trap', 'Spiky Shield', 'Sleep Talk', 'Shell Smash', 'Stun Spore', 'Substitute', 'Supersonic', 'Swagger',
-			'Sweet Kiss', 'Switcheroo', 'Swords Dance', 'Tail Glow', 'Tailwind', 'Taunt', 'Teeter Dance', 'Teleport', 'Thunder Wave', 'Toxic', 'Toxic Thread', 'Trick',
-			'Trick Room', 'Will-O-Wisp', 'Wish', 'Whirlwind',
-		],
-		unbanlist: ['Light of Ruin'],
-		onValidateTeam(team, format, teamHas) {
-			const problems = [];
-			if (!teamHas.trademarks) return;
-			for (const trademark of teamHas.trademarks.keys()) {
-				if (teamHas.trademarks.get(trademark) > 1) {
-					problems.push(`You are limited to 1 of each Trademark.`, `(You have ${teamHas.trademarks.get(trademark)} Pok\u00e9mon with ${trademark} as a Trademark.)`);
-				}
-			}
-			return problems;
-		},
-		validateSet(set, teamHas) {
-			const dex = this.dex;
-			const ability = dex.moves.get(set.ability);
-			if (!ability.exists) { // Not even a real move
-				return this.validateSet(set, teamHas);
-			}
-			// Absolute trademark bans
-			if (ability.category !== 'Status') {
-				return [`${ability.name} is not a status move and cannot be used as a trademark.`];
-			}
-			// Contingent trademark bans
-			if (this.ruleTable.isRestricted(`move:${ability.id}`)) {
-				return [`${ability.name} is restricted from being used as a trademark.`];
-			}
-			if (set.moves.map(this.toID).includes(ability.id)) {
-				return [`${set.name} may not use ${ability.name} as both a trademark and one of its moves simultaneously.`];
-			}
-			const customRules = this.format.customRules || [];
-			if (!customRules.includes('!obtainableabilities')) customRules.push('!obtainableabilities');
-			if (!customRules.includes('+noability')) customRules.push('+noability');
-
-			const TeamValidator: typeof import('../sim/team-validator').TeamValidator =
-				require('../sim/team-validator').TeamValidator;
-
-			const validator = new TeamValidator(dex.formats.get(`${this.format.id}@@@${customRules.join(',')}`));
-			const moves = set.moves;
-			set.moves = [ability.id];
-			set.ability = 'No Ability';
-			let problems = validator.validateSet(set, {}) || [];
-			if (problems.length) return problems;
-			set.moves = moves;
-			set.ability = 'No Ability';
-			problems = problems.concat(validator.validateSet(set, teamHas) || []);
-			set.ability = ability.id;
-			if (!teamHas.trademarks) teamHas.trademarks = new this.dex.Multiset<string>();
-			teamHas.trademarks.add(ability.name);
-			return problems.length ? problems : null;
 		},
 	},
 

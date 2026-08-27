@@ -7703,4 +7703,69 @@ export const MovesText: { [id: IDEntry]: MoveText } = {
 			shortDesc: "Nearly always goes first. Always crits.",
 		},
 	},
+	// A Golden Experience
+	tentacatch: {
+		name: "Tentacatch",
+		desc: "Prevents the target from switching for four or five turns (seven turns if the user is holding Grip Claw). Causes damage to the target equal to 1/8 of its maximum HP (1/6 if the user is holding Binding Band), rounded down, at the end of each turn during effect. The target can still switch out if it is holding Shed Shell or uses Baton Pass, Flip Turn, Parting Shot, Shed Tail, Teleport, U-turn, or Volt Switch. The effect ends if either the user or the target leaves the field, or if the target uses Mortal Spin, Rapid Spin, or Substitute successfully. This effect is not stackable or reset by using this or another binding move. If the target is Poison-type weak, its Attack stat is lowered by 1.",
+		shortDesc: "Traps and damages the target for 4-5 turns. Lowers the target's Atk by 1 stage if Poison-weak.",
+
+		start: "  [POKEMON] has been caught by [SOURCE]'s tentacles!",
+	},
+	schuss: {
+		name: "Schuss",
+		desc: "If the target lost HP, the user takes recoil damage equal to 33% the HP lost by the target, rounded half up, but not less than 1 HP.",
+		shortDesc: "Has 33% recoil.",
+	},
+	goodfishing: {
+		name: "Good Fishing",
+		desc: "This move's power is multiplied by 1.5 if the target is holding an item, and the target loses its held item if the user has not fainted. A target with the Sticky Hold Ability does not lose its held item if it has not fainted. This move does not increase in power or remove the target's item if it is a Blue Orb, Red Orb, Adamant Crystal, Lustrous Globe, Griseous Core, Plate, Drive, Memory, Rusted Sword, Rusted Shield, Booster Energy, or Mask held by a Kyogre, Groudon, Dialga, Palkia, Giratina, Arceus, Genesect, Silvally, Zacian, Zamazenta, Paradox Pokemon, or Ogerpon, respectively, or if the user is one of those species and the target is holding the respective item. In this case, Paradox Pokemon include every species with the Protosynthesis and Quark Drive Abilities, except Gouging Fire, Raging Bolt, Iron Boulder, and Iron Crown. Items lost to this move cannot be regained with Recycle or the Harvest Ability.",
+		shortDesc: "1.5x damage if foe holds an item. Removes item.",
+	},
+	magisterialwind: {
+		name: "Magisterial Wind",
+		desc: "This move and its effects ignore the Abilities of other Pokemon. This move cannot be redirected to a different target by any effect.",
+		shortDesc: "Ignores the Abilities of other Pokemon. Cannot be redirected.",
+	},
+	stellarpunch: {
+		name: "Stellar Punch",
+		desc: "This move and its effects ignore the Abilities of other Pokemon.",
+		shortDesc: "Ignores the Abilities of other Pokemon.",
+	},
+	toxicsting: {
+		name: "Toxic Sting",
+		desc: "The user recovers 3/4 the HP lost by the target, rounded half up. If Big Root is held by the user, the HP recovered is 1.3x normal, rounded half down. Badly poisons target.",
+		shortDesc: "User recovers 75% of the damage dealt and badly poisons target.",
+	},
+	dispelmagic: {
+		name: "Dispel Magic",
+		desc: "This move's type effectiveness against Fairy is changed to be super effective no matter what this move's type is.",
+		shortDesc: "Super effective on Fairy.",
+	},
+	photopower: {
+		name: "Photo-Power",
+		shortDesc: "Raises user's Sp. Atk by 2 and Speed by 1 in Sun.",
+	},
+	draconicwrath: {
+		name: "Draconic Wrath",
+		shortDesc: "Usually goes last. Power doubles if the user moves after the target.",
+	},
+	purifyingstream: {
+		name: "Purifying Stream",
+		shortDesc: "Resets all of the target's stat stages to 0.",
+	},
+	railwaysmash: {
+		name: "Railway Smash",
+		desc: "If the target lost HP, the user takes recoil damage equal to 33% the HP lost by the target, rounded half up, but not less than 1 HP.",
+		shortDesc: "Has 33% recoil.",
+	},
+	goldenexperience: {
+		name: "Golden Experience",
+		desc: "The user recovers 1/2 the HP lost by the target, rounded half up. If Big Root is held by the user, the HP recovered is 1.3x normal, rounded half down.",
+		shortDesc: "User recovers 50% of the damage dealt.",
+	},
+	dimensionalbleeding: {
+		name: "Dimensional Bleeding",
+		desc: "This move becomes a physical attack if the user's Attack is greater than its Special Attack, including stat stage changes.",
+		shortDesc: "Physical if user's Atk > Sp. Atk.",
+	},
 };

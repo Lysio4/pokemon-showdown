@@ -7768,4 +7768,86 @@ export const MovesText: { [id: IDEntry]: MoveText } = {
 		desc: "This move becomes a physical attack if the user's Attack is greater than its Special Attack, including stat stage changes.",
 		shortDesc: "Physical if user's Atk > Sp. Atk.",
 	},
+	frostbite: {
+		name: "Frostbite",
+		desc: "The Pokémon at the user's position steals some of the target's maximum HP at the end of each turn. Damage begins at 1/16, rounded down, and increases each turn like Toxic. If Big Root is held by the recipient, the HP recovered is 1.3x normal, rounded half down. If the target uses Baton Pass, the replacement will continue being leeched. If the target switches out, the effect ends.",
+		shortDesc: "Target's HP is restored to user every turn. Damage increases like Toxic.",
+	},
+	aspiravoid: {
+		name: "Aspira Void",
+		desc: "The user recovers 1/2 the HP lost by the target, rounded half up. If Big Root is held by the user, the HP recovered is 1.3x normal, rounded half down.",
+		shortDesc: "User recovers 50% of the damage dealt.",
+	},
+	flamingsphere: {
+		name: "Flaming Sphere",
+		desc: "No additional effect.",
+		shortDesc: "Usually goes first.",
+	},
+	fireball: {
+		name: "Fire Ball",
+		desc: "Ends the effects of Electric Terrain, Grassy Terrain, Misty Terrain, Psychic Terrain, and Chakra Terrain.",
+		shortDesc: "Ends the effects of terrain.",
+	},
+	highwater: {
+		name: "High Water",
+		desc: "The user restores 1/2 of its maximum HP, rounded half up.",
+		shortDesc: "Heals the user by 50% of its max HP.",
+	},
+	seajaws: {
+		name: "Sea Jaws",
+		desc: "If this attack does not miss, the effects of Reflect, Light Screen, and Aurora Veil end for the target's side of the field before damage is calculated.",
+		shortDesc: "Destroys screens, unless the target is immune.",
+	},
+	parallelcircuit: {
+		name: "Parallel Circuit",
+		desc: "Hits two to five times. Has a 35% chance to hit two or three times and a 15% chance to hit four or five times. If one of the hits breaks the target's substitute, it will take damage for the remaining hits. If the user has the Skill Link Ability, this move will always hit five times. If the user is holding Loaded Dice, this move will hit 4-5 times.",
+		shortDesc: "Hits 2-5 times in one turn.",
+	},
+	condensate: {
+		name: "Condensate",
+		desc: "If the current terrain is Misty Terrain and the user is grounded, this move's power is doubled.",
+		shortDesc: "2x power if user is grounded in Misty Terrain.",
+	},
+	chillblain: {
+		name: "Chillblain",
+		desc: "Freezes the target.",
+		shortDesc: "Freezes the target.",
+	},
+	indomitablespirit: {
+		name: "Indomitable Spirit",
+		shortDesc: "Power doubles if last move failed or was resisted.",
+	},
+	martialpunch: {
+		name: "Martial Punch",
+		desc: "Deals damage to the target based on its Special Defense instead of Defense.",
+		shortDesc: "Damages target based on Sp. Def, not Defense.",
+	},
+	musclecare: {
+		name: "Muscle Care",
+		desc: "The user restores 1/2 of its maximum HP, rounded half up.",
+		shortDesc: "Heals the user by 50% of its max HP.",
+	},
+	landslide: {
+		name: "Landslide",
+		desc: "Lowers the target's Speed by 1 stage. If this move is successful and whether or not the target's evasiveness was affected, the effects of Reflect, Light Screen, Aurora Veil, Safeguard, Mist, Spikes, Toxic Spikes, Stealth Rock, and Sticky Web end for the target's side, and the effects of Spikes, Toxic Spikes, Stealth Rock, and Sticky Web end for the user's side. Ignores a target's substitute, although a substitute will still block the lowering of Speed.",
+		shortDesc: "-1 Speed; ends user and target hazards.",
+	},
+	downdraft: {
+		name: "Downdraft",
+		desc: "If the target isn't grounded, its Speed is lowered by 1 stage.",
+		shortDesc: "Lowers target's Speed by 1 if it isn't grounded.",
+	},
+	golemstrike: {
+		name: "Golem Strike",
+		desc: "Has a 10% chance to lower the target's Defense by 1 stage.",
+		shortDesc: "10% chance to lower the target's Defense by 1.",
+	},
+	punishingblow: {
+		name: "Punishing Blow",
+		shortDesc: "If the target has boosts, this move always results in a critical hit.",
+	},
+	contrariety: {
+		name: "Contrariety",
+		shortDesc: "Every Pokemon on the field gets Contrary as an ability.",
+	},
 };

@@ -7850,4 +7850,104 @@ export const MovesText: { [id: IDEntry]: MoveText } = {
 		name: "Contrariety",
 		shortDesc: "Every Pokemon on the field gets Contrary as an ability.",
 	},
+	blackflash: {
+		name: "Black Flash",
+		desc: "Lowers the user's Sp. Attack and Sp. Defense by 1 stage.",
+		shortDesc: "Lowers the user's Sp. Atk and Sp. Def by 1.",
+	},
+	sneakyassault: {
+		name: "Sneaky Assault",
+		shortDesc: "Hits three times. Each hit has 10% to lower the target's Def.",
+	},
+	mercuryshot: {
+		name: "Mercury Shot",
+		desc: "Has a 30% chance to poison the target.",
+		shortDesc: "30% chance to poison the target.",
+	},
+	sweetheart: {
+		name: "Sweetheart",
+		desc: "User cures its status condition. Damage is calculated using the user's Sp. Defense stat as its Sp. Attack, including stat stage changes. Other effects that modify the Attack stat are used as normal.",
+		shortDesc: "User cures its status. Uses user's Sp. Def stat as Sp. Atk in damage calculation.",
+	},
+	chakraterrain: {
+		name: "Chakra Terrain",
+		desc: "For 5 turns, the terrain becomes Chakra Terrain. During the effect, Fighting-type attacks made by grounded Pokemon cannot miss and grounded Pokemon cannot be paralyzed; Pokemon already paralyzed are not healed of their status. Camouflage transforms the user into an Fighting type, Nature Power becomes Aura Sphere, and Secret Power has a 30% chance to lower target's Defense by 1 stage. Fails if the current terrain is Chakra Terrain.",
+		shortDesc: "5 turns. Grounded: Fighting moves have full accuracy, can't be paralyzed.",
+	},
+	lightningassault: {
+		name: "Lightning Assault",
+		desc: "The power of this move depends on (user's current Speed / target's current Speed), rounded down. Power is equal to 150 if the result is 4 or more, 120 if 3, 80 if 2, 60 if 1, 40 if less than 1. If the target's current Speed is 0, this move's power is 40.",
+		shortDesc: "More power the faster the user is than the target.",
+	},
+	conversionz: {
+		name: "Conversion-Z",
+		shortDesc: "Fails if the user has an item. Raises all stats by 1, and user gets the type of its 3rd move.",
+	},
+	zawalludo: {
+		name: "Za Walludo",
+		desc: "Raises the user's Attack by 1 stage. The user sets Trick Room.",
+		shortDesc: "Raises user's Atk by 1. Sets Trick Room.",
+	},
+	awakening: {
+		name: "Awakening",
+		desc: "The user restores 1/2 of its maximum HP, rounded half up, and reveal one of opponent's move.",
+		shortDesc: "Heals the user by 50% of its max HP; reveals random opponent's move."
+	},
+	fulldevotion: {
+		name: "Full Devotion",
+		desc: "Every Pokemon in the user's party is cured of its non-volatile status condition.",
+		shortDesc: "Cures the user's party of all status conditions.",
+	},
+	braveblade: {
+		name: "Brave Blade",
+		desc: "Ignores the target's stat stage changes, including evasiveness. This move and its effects ignore the Abilities of other Pokemon.",
+		shortDesc: "Ignores the target's stat stage changes and the Abilities of other Pokemon.",
+	},
+	teramorphosis: {
+		name: "Teramorphosis",
+		desc: "If the target lost HP, the user takes recoil damage equal to 33% the HP lost by the target, rounded half up, but not less than 1 HP. Has a 100% chance to raise the user's Speed by 1 stage.",
+		shortDesc: "Has 33% recoil. 100% chance to raise the user's Speed by 1.",
+	},
+	happydance: {
+		name: "Happy Dance",
+		shortDesc: "Raises the user's Attack and Sp. Attack by 1. Summons Rain Dance.",
+	},
+	windscall: {
+		name: "Wind's Call",
+		shortDesc: "Raises the user's Attack and Sp. Attack by 1. Sets Tailwind.",
+	},
+	houndshowl: {
+		name: "Hound's Howl",
+		desc: "If an opposing Pokemon switches out this turn, this move hits that Pokemon before it leaves the field, even if it was not the original target. If the user moves after an opponent using Flip Turn, Parting Shot, Teleport, U-turn, or Volt Switch, but not Baton Pass, it will hit that opponent before it leaves the field. Power doubles and no accuracy check is done if the user hits an opponent switching out, and the user's turn is over; if an opponent faints from this, the replacement Pokemon does not become active until the end of the turn.",
+		shortDesc: "If a foe is switching out, hits it at 2x power.",
+
+		activate: "  ([TARGET] is being withdrawn...)",
+	},
+	dantesinferno: {
+		name: "Dante's Inferno",
+		desc: "For 5 turns, the weather becomes Sunny Day.",
+		shortDesc: "Starts Sunny Day.",
+	},
+	swarming: {
+		name: "Swarming",
+		shortDesc: "Lowers the user's and the target's Sp. Def by 1.",
+		desc: "Lowers the user's and the target's Special Defense by 1 stage.",
+	},
+	hardwareheat: {
+		name: "Hardware Heat",
+		desc: "Lowers the user's Speed by 1 stage.",
+		shortDesc: "Lowers the user's Speed by 1.",
+	},
+	shattering: {
+		name: "Shattering",
+		desc: "The held item is lost and it activates for the target if applicable. If there is no target or the target avoids this move by protecting itself, the user's held item is still lost. The user can regain a thrown item with Recycle or the Harvest Ability. Fails if the user has no held item, if the held item cannot be thrown, if the user is under the effect of Embargo or Magic Room, or if the user has the Klutz Ability.",
+		shortDesc: "Flings the user's item at the target.",
+
+		removeItem: "  [POKEMON] shattered its [ITEM]!",
+	},
+	roguewave: {
+		name: "Rogue Wave",
+		desc: "If the target lost HP, the user takes recoil damage equal to 33% the HP lost by the target, rounded half up, but not less than 1 HP.",
+		shortDesc: "Has 33% recoil. Usually goes first.",
+	},
 };

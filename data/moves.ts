@@ -22044,7 +22044,6 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 			this.add('-anim', source, "Night Daze", target);
 		},
 		target: "normal",
-		shortDesc: "Lowers the user's SpA and SpD by one afterward.",
 		type: "Dark",
 		contestType: "Tough",
 		isNonstandard: "Custom",
@@ -22054,7 +22053,6 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 		accuracy: 100,
 		basePower: 30,
 		category: "Physical",
-		shortDesc: "Hits three times. Each hit has 10% to lower the target's Def.",
 		name: "Sneaky Assault",
 		pp: 20,
 		priority: 0,
@@ -22089,7 +22087,6 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 			chance: 30,
 			status: 'psn',
 		},
-		shortDesc: "30% to poison the target.",
 		onPrepareHit(target, source) {
 			this.attrLastMove('[still]');
 			this.add('-anim', source, "Flash Cannon", target);
@@ -22117,7 +22114,6 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 			this.attrLastMove('[still]');
 			this.add('-anim', source, "Dazzling Gleam", target);
 		},
-		shortDesc: "Heals the user's status conditions. Uses SpD instead of SpA.",
 		overrideOffensiveStat: 'spd',
 		target: "normal",
 		type: "Fairy",
@@ -22129,8 +22125,6 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 		basePower: 0,
 		category: "Status",
 		name: "Chakra Terrain",
-		desc: "For 5 turns, the terrain becomes Chakra Terrain. During the effect, Fighting-type attacks made by grounded Pokemon cannot miss and grounded Pokemon cannot be paralyzed; Pokemon already paralyzed are not healed of their status. Camouflage transforms the user into an Fighting type, Nature Power becomes Aura Sphere, and Secret Power has a 30% chance to lower target's Defense by 1 stage. Fails if the current terrain is Chakra Terrain.",
-		shortDesc: "5 turns. Grounded: Fighting moves have full accuracy, can't be paralyzed.",
 		pp: 10,
 		priority: 0,
 		flags: { nonsky: 1 },
@@ -22191,7 +22185,6 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 		},
 		category: "Physical",
 		name: "Lightning Assault",
-		shortDesc: "More power the faster the user is than the target.",
 		pp: 10,
 		priority: 0,
 		flags: { protect: 1, mirror: 1 },
@@ -22212,10 +22205,9 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 		basePower: 0,
 		category: "Status",
 		name: "Conversion-Z",
-		shortDesc: "Fails if the user has an item. Raises all stats by 1, and user gets the type of its 3rd move.",
 		pp: 5,
 		priority: 0,
-		flags: { snatch: 1, sound: 1, dance: 1 },
+		flags: { snatch: 1, metronome: 1 },
 		onTryHit(pokemon, target, move) {
 			if (pokemon.item) {
 				return false;
@@ -22249,8 +22241,6 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 		basePower: 0,
 		category: "Status",
 		name: "Za Walludo",
-		desc: "Raises the user's Attack by 1 stage. The user sets Trick Room.",
-		shortDesc: "Raises user's Atk by 1. Sets Trick Room.",
 		pp: 5,
 		priority: -7,
 		pseudoWeather: 'trickroom',
@@ -22276,8 +22266,6 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 		name: "Awakening",
 		pp: 10,
 		priority: 0,
-		desc: "Heal this Pokemon for 50% HP, and reveal one of opponent's move.",
-		shortDesc: "Heal 50% HP; reveals random opponent's move.",
 		flags: { snatch: 1, heal: 1 },
 		heal: [1, 2],
 		onHit(pokemon) {
@@ -22299,32 +22287,21 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 	},
 	fulldevotion: {
 		num: -40,
-		accuracy: true,
-		basePower: 0,
-		category: "Status",
+		accuracy: 100,
+		basePower: 60,
+		category: "Special",
 		name: "Full Devotion",
-		shortDesc: "One adjacent ally's move power is 1.5x this turn. Lowers damages this ally receives of 25%.",
 		pp: 10,
 		priority: 0,
-		flags: { snatch: 1, heal: 1 },
-		volatileStatus: 'helpinghand',
-		onTryHit(target) {
-			if (!target.newlySwitched && !this.queue.willMove(target)) return false;
-		},
-		condition: {
-			duration: 1,
-			onStart(target, source) {
-				this.effectState.multiplier = 1.5;
-				this.add('-singleturn', target, 'Full Devotion', '[of] ' + source);
-			},
-			onBasePowerPriority: 10,
-			onBasePower(basePower) {
-				this.debug('Boosting from Full Devotion: ' + this.effectState.multiplier);
-				return this.chainModify(this.effectState.multiplier);
-			},
-			onDamagingHit(damage, target, source, move) {
-				if (source.side !== target.side) {
-					return damage *= 0.75;
+		flags: { protect: 1, mirror: 1 },
+		self: {
+			onHit(pokemon, source, move) {
+				this.add('-activate', source, 'move: Heal Bell');
+				for (const ally of source.side.pokemon) {
+					if (ally !== source && (ally.volatiles['substitute'] && !move.infiltrates)) {
+						continue;
+					}
+					ally.cureStatus();
 				}
 			},
 		},
@@ -22334,49 +22311,24 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 		},
 		target: "adjacentAlly",
 		type: "Psychic",
-		zMove: { effect: 'clearnegativeboost' },
 		contestType: "Clever",
 		isNonstandard: "Custom",
 	},
 	braveblade: {
-		desc: "Physical if it would be stronger (Shell Side Arm clone). Lowers user's Defense and Special Defense by 1.",
-		shortDesc: "Physical if stronger. Lowers the user's Defense and Sp. Def by 1.",
 		num: -41,
 		accuracy: 100,
-		basePower: 120,
-		category: "Special",
+		basePower: 90,
+		category: "Physical",
 		name: "Brave Blade",
-		pp: 5,
+		pp: 15,
 		priority: 0,
-		flags: { protect: 1, mirror: 1, slicing: 1 },
-		onModifyMove(move, pokemon, target) {
-			if (!target) return;
-			const atk = pokemon.getStat('atk', false, true);
-			const spa = pokemon.getStat('spa', false, true);
-			const def = target.getStat('def', false, true);
-			const spd = target.getStat('spd', false, true);
-			const physical = Math.floor(Math.floor(Math.floor(Math.floor(2 * pokemon.level / 5 + 2) * 90 * atk) / def) / 50);
-			const special = Math.floor(Math.floor(Math.floor(Math.floor(2 * pokemon.level / 5 + 2) * 90 * spa) / spd) / 50);
-			if (physical > special || (physical === special && this.random(2) === 0)) {
-				move.category = 'Physical';
-				move.flags.contact = 1;
-			}
-		},
-		onHit(target, source, move) {
-			this.hint(move.category + " Brave Blade");
-		},
-		onAfterSubDamage(damage, target, source, move) {
-			this.hint(move.category + " Brave Blade");
-		},
+		flags: { contact: 1, protect: 1, mirror: 1, metronome: 1, slicing: 1 },
+		ignoreEvasion: true,
+		ignoreDefensive: true,
+		ignoreAbility: true,
 		onPrepareHit(target, source) {
 			this.attrLastMove('[still]');
 			this.add('-anim', source, "Spacial Rend", target);
-		},
-		self: {
-			boosts: {
-				def: -1,
-				spd: -1,
-			},
 		},
 		target: "normal",
 		type: "Psychic",
@@ -22388,7 +22340,6 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 		basePower: 75,
 		category: "Physical",
 		name: "Teramorphosis",
-		shortDesc: "Has 33% recoil. 100% chance to raise the user's Spe by 1.",
 		pp: 10,
 		priority: 0,
 		flags: { contact: 1, protect: 1, mirror: 1 },
@@ -22432,7 +22383,6 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 		},
 		target: "all",
 		type: "Water",
-		shortDesc: "Raises the user's Atk and SpA by 1. Summons Rain Dance.",
 		zMove: { effect: 'clearnegativeboost' },
 		contestType: "Beautiful",
 		isNonstandard: "Custom",
@@ -22442,7 +22392,6 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 		accuracy: true,
 		basePower: 0,
 		category: "Status",
-		shortDesc: "Raises the user's Atk and SpA by 1. Sets Tailwind.",
 		name: "Wind's Call",
 		pp: 5,
 		priority: 0,
@@ -22469,8 +22418,6 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 		basePower: 40,
 		category: "Physical",
 		name: "Hound's Howl",
-		shortDesc: "If a foe is switching out, hits it at 2x power.",
-		desc: "If a foe is switching out, hits it at 2x power.",
 		basePowerCallback(pokemon, target, move) {
 			// You can't get here unless the pursuit succeeds
 			if (target.beingCalledBack) {
@@ -22541,7 +22488,6 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 		basePower: 80,
 		category: "Special",
 		name: "Dante's Inferno",
-		shortDesc: "Starts Sun.",
 		pp: 10,
 		priority: 0,
 		flags: { protect: 1, mirror: 1 },
@@ -22560,8 +22506,6 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 		basePower: 110,
 		category: "Special",
 		name: "Swarming",
-		shortDesc: "Lowers the user's and the target's SpD by one stage.",
-		desc: "Lowers the user's and the target's SpD by one stage.",
 		pp: 5,
 		priority: 0,
 		flags: { protect: 1, mirror: 1 },
@@ -22591,8 +22535,6 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 		basePower: 100,
 		category: "Special",
 		name: "Hardware Heat",
-		shortDesc: "Lowers the user's Speed by one stage.",
-		desc: "Lowers the user's Speed by one stage.",
 		pp: 10,
 		priority: 0,
 		flags: { protect: 1, mirror: 1 },
@@ -22616,8 +22558,6 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 		basePower: 120,
 		category: "Physical",
 		name: "Shattering",
-		shortDesc: "The user throws its held item. Fails if the user has no item.",
-		desc: "The user throws its held item. Fails if the user has no item.",
 		pp: 10,
 		priority: 0,
 		flags: { protect: 1, mirror: 1, allyanim: 1, noparentalbond: 1 },
@@ -22670,7 +22610,6 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 		basePower: 60,
 		category: "Physical",
 		name: "Rogue Wave",
-		shortDesc: "Has 33% recoil. Usually goes first.",
 		pp: 10,
 		priority: 1,
 		flags: { contact: 1, protect: 1, mirror: 1 },

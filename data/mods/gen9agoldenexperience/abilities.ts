@@ -86,10 +86,6 @@ export const Abilities: { [abilityid: string]: ModdedAbilityData; } = {
 		inherit: true,
 		isNonstandard: null,
 	},
-	coldvengeance: {
-		inherit: true,
-		isNonstandard: null,
-	},
 	blindrage: {
 		inherit: true,
 		isNonstandard: null,
@@ -240,10 +236,6 @@ export const Abilities: { [abilityid: string]: ModdedAbilityData; } = {
 		isNonstandard: null,
 	},
 	hyperthermia: {
-		inherit: true,
-		isNonstandard: null,
-	},
-	mentalfortitude: {
 		inherit: true,
 		isNonstandard: null,
 	},

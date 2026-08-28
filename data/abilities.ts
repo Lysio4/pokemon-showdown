@@ -6125,27 +6125,6 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 		flags: {failroleplay: 1, noreceiver: 1, noentrain: 1, notrace: 1, failskillswap: 1, cantsuppress: 1},
 		isNonstandard: "Custom",
 	},
-	coldvengeance: {
-		desc: "When replacing a fainted party member, its next move has x1.5 BP.",
-		shortDesc: "Its first move has x1.5 BP when replacing a fainted ally.",
-		onAfterMega(pokemon) {
-			if (!pokemon.side.faintedLastTurn || !pokemon.species.isMega) return;
-			pokemon.addVolatile('coldvengeance');
-		},
-		onStart(pokemon) {
-			if (!pokemon.side.faintedThisTurn) return;
-			pokemon.addVolatile('coldvengeance');
-		},
-		onModifyDamage(damage, source, target, move) {
-			if (source.volatiles['coldvengeance']) {
-				return this.chainModify(1.5);
-			}
-		},
-		name: "Cold Vengeance",
-		rating: 3,
-		num: -22,
-		isNonstandard: "Custom",
-	},
 	blindrage: {
 		onDamagingHit(damage, target, source, effect) {
 			this.boost({ atk: 1 });
@@ -6671,24 +6650,6 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 		shortDesc: "This Pokémon can't have its stats dropped by any means, including its own attacks.",
 		rating: 3,
 		num: -46,
-		isNonstandard: "Custom",
-	},
-	mentalfortitude: {
-		onAllyTryAddVolatile(status, target, source, effect) {
-			if (['attract', 'disable', 'encore', 'healblock', 'taunt', 'torment'].includes(status.id)) {
-				if (effect.effectType === 'Move') {
-					const effectHolder = this.effectState.target;
-					this.add('-block', target, 'ability: Aroma Veil', `[of] ${effectHolder}`);
-				}
-				return null;
-			}
-		},
-		desc: "This Pokemon and its allies cannot become affected by Attract, Disable, Encore, Heal Block, Taunt, or Torment.",
-		shortDesc: "Protects user/allies from Attract, Disable, Encore, Heal Block, Taunt, and Torment.",
-		flags: { breakable: 1 },
-		name: "Mental Fortitude",
-		rating: 2,
-		num: -47,
 		isNonstandard: "Custom",
 	},
 	unconcerned: {

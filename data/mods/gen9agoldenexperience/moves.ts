@@ -960,6 +960,12 @@ export const Moves: { [k: string]: ModdedMoveData; } = {
 		category: "Special",
 		flags: { protect: 1, metronome: 1 },
 	},
+	mysticalpower: {
+		inherit: true,
+		modded: true, // this makes its description display in Data Mod
+		accuracy: 100,
+		basePower: 90,
+	},
 
 
 

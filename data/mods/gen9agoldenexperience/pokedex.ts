@@ -1013,7 +1013,6 @@ export const Pokedex: {[k: string]: ModdedSpeciesData;} = {
 	},
 	carnivine: {
 		inherit: true,
-		types: ["Grass", "Dark"],
 		baseStats: { hp: 94, atk: 120, def: 87, spa: 50, spd: 87, spe: 36 },
 		abilities: { 0: "Levitate", H: "Insectivorous" },
 	},
@@ -1101,17 +1100,15 @@ export const Pokedex: {[k: string]: ModdedSpeciesData;} = {
 	},
 	uxie: {
 		inherit: true,
-		abilities: { 0: "Levitate", 1: "Mirror Armor", H: "Magic Bounce" },
+		abilities: { 0: "Levitate", H: "Magic Bounce" },
 	},
 	mesprit: {
 		inherit: true,
-		types: ["Psychic", "Fairy"],
-		abilities: { 0: "Levitate", 1: "Magician", H: "Mental Fortitude" },
+		abilities: { 0: "Levitate", H: "Regenerator" },
 	},
 	azelf: {
 		inherit: true,
-		types: ["Psychic", "Fighting"],
-		abilities: { 0: "Levitate", 1: "Defiant", H: "Competitive" },
+		abilities: { 0: "Levitate", H: "Sharpness" },
 	},
 	dialgaorigin: {
 		inherit: true,

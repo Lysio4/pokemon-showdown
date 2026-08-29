@@ -1953,7 +1953,7 @@ export const FormatsData: { [k: string]: SpeciesFormatsData; } = {
 		doublesTier: "DUU",
 	},
 	glaliemega: {
-		tier: "RUBL",
+		tier: "NU",
 		doublesTier: "DUU",
 	},
 	froslass: {

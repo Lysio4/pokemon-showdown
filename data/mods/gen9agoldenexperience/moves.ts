@@ -484,9 +484,6 @@ export const Moves: { [k: string]: ModdedMoveData; } = {
 	toxicthread: {
 		inherit: true,
 		modded: true, // this makes its description display in Data Mod
-		boosts: {
-			spe: -2,
-		},
 		status: 'tox',
 		desc: "Lowers the target's Speed by 2 stages and badly poisons it.",
 		shortDesc: "Lowers the target's Speed by 2 and badly poisons it.",
@@ -714,7 +711,7 @@ export const Moves: { [k: string]: ModdedMoveData; } = {
 		modded: true, // this makes its description display in Data Mod
 		shortDesc: "30% chance to poison or paralyze target.",
 		secondary: {
-			chance: 50,
+			chance: 30,
 			onHit(target, source) {
 				const status = this.sample(['psn', 'par']);
 				target.trySetStatus(status, source);

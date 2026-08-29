@@ -7950,4 +7950,98 @@ export const MovesText: { [id: IDEntry]: MoveText } = {
 		desc: "If the target lost HP, the user takes recoil damage equal to 33% the HP lost by the target, rounded half up, but not less than 1 HP.",
 		shortDesc: "Has 33% recoil. Usually goes first.",
 	},
+	natureswrath: {
+		name: "Nature's Wrath",
+		shortDesc: "Either Grass or Ground-type, whichever is more effective.",
+	},
+	magicmissile: {
+		name: "Magic Missile",
+		desc: "Hits two to five times. This move does not check accuracy, ignores abilities, can't be redirected, and bypasses Screens.",
+		shortDesc: "Hits 2-5 times in one turn. Does not check accuracy, ignores abilities, can't be redirected, and bypasses Screens.",
+	},
+	fatbombing: {
+		name: "Fat Bombing",
+		desc: "If Gravity is currently active, this move has its priority increased by 1.",
+		shortDesc: "During Gravity: +1 priority.",
+	},
+	poisonivy: {
+		name: "Poison Ivy",
+		desc: "Hits twice. If the first hit breaks the target's substitute, it will take damage for the second hit. This move does not check accuracy.",
+		shortDesc: "Hits twice. This move does not check accuracy.",
+	},
+	clusterexplosion: {
+		name: "Cluster Explosion",
+		shortDesc: "Hits adjacent Pokemon. Sets Stealth Rock. User faints.",
+	},
+	befuddlepowder: {
+		name: "Befuddle Powder",
+		shortDesc: "If this move would deal not very effective damage on a target, deals double damage.",
+	},
+	piercingdart: {
+		name: "Piercing Dart",
+		desc: "This move's type effectiveness against Steel is changed to be neutral no matter what this move's type is.",
+		shortDesc: "Neutral on Steel.",
+	},
+	hindenburg: {
+		name: "Hindenburg",
+		desc: "Power doubles if the user has no held item, or if it is burned.",
+		shortDesc: "Power doubles if the user has no held item or is burned.",
+	},
+	ventilation: {
+		name: "Ventilation",
+		shortDesc: "Lowers the target's Speed by 1. If user has 3 stacks of Stockpile, doubles in power.",
+	},
+	emushdance: {
+		name: "Emush Dance",
+		desc: "This attack charges on the first turn and executes on the second. If the user is holding a Power Herb or the terrain is Chakra or Grassy, the move completes in one turn.",
+		shortDesc: "Charges turn 1, hits turn 2. Chakra Terrain or Grassy Terrain: no charge.",
+	},
+	rainofarrows: {
+		name: "Rain Of Arrows",
+		shortDesc: "Hits once in this turn, then hits again in the next turn. Ignores protection.",
+	},
+	bigbang: {
+		name: "Big Bang",
+		desc: "This move and its effects ignore the Abilities of other Pokemon, as well as resistances and immunities.",
+		shortDesc: "Ignores the Abilities of other Pokemon, resistances and immunities.",
+	},
+	mantisslash: {
+		name: "Mantis Slash",
+		desc: "Lowers the user's Speed by 2 stages.",
+		shortDesc: "Lowers the user's Speed by 2.",
+	},
+	intrepidcrash: {
+		name: "Intrepid Crash",
+		desc: "If the target lost HP, the user takes recoil damage equal to 33% the HP lost by the target, rounded half up, but not less than 1 HP.",
+		shortDesc: "Has 33% recoil. Usually goes first.",
+	},
+	timeparadox: {
+		name: "Time Paradox",
+		desc: "Prevents the target from switching for four or five turns (seven turns if the user is holding Grip Claw). Causes damage to the target equal to 1/8 of its maximum HP (1/6 if the user is holding Binding Band), rounded down, at the end of each turn during effect. The target can still switch out if it is holding Shed Shell or uses Baton Pass, Flip Turn, Parting Shot, Shed Tail, Teleport, U-turn, or Volt Switch. The effect ends if either the user or the target leaves the field, or if the target uses Mortal Spin, Rapid Spin, or Substitute successfully. This effect is not stackable or reset by using this or another binding move.",
+		shortDesc: "Traps and damages the target for 4-5 turns.",
+	},
+	jumpscare: {
+		name: "Jumpscare",
+		desc: "Has a 100% chance to make the target flinch. Fails unless it is the user's first turn on the field.",
+		shortDesc: "Hits first. First turn out only. 100% flinch chance.",
+	},
+	futuredoom: {
+		name: "Future Doom",
+		shortDesc: "Target can't use status moves its next 3 turns.",
+	},
+	brainblast: {
+		name: "Brain Blast",
+		desc: "If this move is successful and the user has not fainted, the user switches out even if it is trapped and is replaced immediately by a selected party member. The user does not switch out if there are no unfainted party members, or if the target switched out using an Eject Button or through the effect of the Emergency Exit or Wimp Out Abilities.",
+		shortDesc: "User switches out after damaging the target.",
+	},
+	timecrash: {
+		name: "Time Crash",
+		desc: "The user recovers 1/2 the HP lost by the target, rounded half up. If Big Root is held by the user, the HP recovered is 1.3x normal, rounded half down.",
+		shortDesc: "User recovers 50% of the damage dealt.",
+	},
+	waterslash: {
+		name: "Water Slash",
+		desc: "Deals damage to the target based on its Special Defense instead of Defense.",
+		shortDesc: "Damages target based on Sp. Def, not Defense.",
+	},
 };

@@ -7237,7 +7237,7 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 	},
 	solarenergy: {
 		onChargeMove(pokemon, target, move) {
-			if (['sunnyday', 'desolateland'].includes(pokemon.effectiveWeather()) {
+			if (['sunnyday', 'desolateland'].includes(pokemon.effectiveWeather())) {
 				this.add('-ability', pokemon, 'Solar Energy');
 				this.debug('solarenergy - remove charge turn for ' + move.id);
 				this.attrLastMove('[still]');
@@ -7246,7 +7246,7 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 			}
 		},
 		onAfterMoveSecondarySelf(pokemon, target, move) {
-			if (['sunnyday', 'desolateland'].includes(pokemon.effectiveWeather()) {
+			if (['sunnyday', 'desolateland'].includes(pokemon.effectiveWeather())) {
 				if (pokemon.getVolatile('mustrecharge')) {
 					this.add('-ability', pokemon, 'Solar Energy');
 					pokemon.removeVolatile('mustrecharge');

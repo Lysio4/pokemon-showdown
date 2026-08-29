@@ -22628,7 +22628,6 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 		accuracy: 100,
 		basePower: 80,
 		category: "Special",
-		shortDesc: "Either Grass or Ground-type, whichever is more effective.",
 		name: "Nature's Wrath",
 		pp: 10,
 		flags: { protect: 1, mirror: 1, metronome: 1 },
@@ -22669,11 +22668,9 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 		basePower: 25,
 		category: "Special",
 		name: "Magic Missile",
-		shortDesc: "Hits 2-5 times in one turn. Does not check accuracy, ignores abilities, can't be redirected, and bypasses Screens.",
-		desc: "Hits two to five times. This move does not check accuracy, ignores abilities, can't be redirected, and bypasses Screens.",
 		pp: 20,
 		priority: 0,
-		flags: { protect: 1, mirror: 1, infiltrates: 1 },
+		flags: { protect: 1, mirror: 1 },
 		multihit: [2, 5],
 		ignoreAbility: true,
 		tracksTarget: true,
@@ -22708,8 +22705,6 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 		},
 		target: "normal",
 		type: "Rock",
-		desc: "If Gravity is active, this move has its priority increased by 1.",
-		shortDesc: "User on Gravity: +1 priority.",
 		isNonstandard: "Custom",
 	},
 	poisonivy: {
@@ -22718,7 +22713,6 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 		basePower: 45,
 		category: "Special",
 		name: "Poison Ivy",
-		shortDesc: "Hits twice. This move does not check accuracy.",
 		pp: 10,
 		priority: 0,
 		flags: { protect: 1, mirror: 1 },
@@ -22741,10 +22735,9 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 		basePower: 200,
 		category: "Physical",
 		name: "Cluster Explosion",
-		shortDesc: "Hits adjacent Pokemon. Sets Stealth Rock. User faints.",
 		pp: 5,
 		priority: 0,
-		flags: {protect: 1, mirror: 1, metronome: 1, noparentalbond: 1},
+		flags: { protect: 1, mirror: 1, metronome: 1, noparentalbond: 1 },
 		onPrepareHit(target, pokemon, move) {
 			this.attrLastMove('[still]');
 			this.add('-anim', pokemon, "Splintered Stormshards", pokemon);
@@ -22771,9 +22764,9 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 		pp: 10,
 		priority: 0,
 		flags: { protect: 1, mirror: 1, powder: 1 },
-		onModifyDamage(damage, source, target, move) {
+		onBasePower(basePower, source, target, move) {
 			if (target.getMoveHitData(move).typeMod < 0) {
-				this.debug('Tinted Lens boost');
+				this.debug('Befuddle Powder boost');
 				return this.chainModify(2);
 			}
 		},
@@ -22784,12 +22777,9 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 		target: "adjacentFoe",
 		type: "Bug",
 		contestType: "Cool",
-		shortDesc: "Double damage on targets that resist.",
 		isNonstandard: "Custom",
 	},
 	piercingdart: {
-		desc: "Hits Steel types for neutral damages.",
-		shortDesc: "Can hit Steel targets for neutral damages.",
 		num: -57,
 		accuracy: 100,
 		basePower: 75,
@@ -22836,7 +22826,6 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 		target: "any",
 		type: "Ghost",
 		contestType: "Cool",
-		shortDesc: "Power doubles if the user has no held item or is burned.",
 		isNonstandard: "Custom",
 	},
 	ventilation: {
@@ -22859,7 +22848,6 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 		target: "normal",
 		type: "Flying",
 		contestType: "Tough",
-		shortDesc: "Lowers the target's Speed by 1. If user has 3 stacks of Stockpile, doubles in power.",
 		isNonstandard: "Custom",
 	},
 	emushdance: {
@@ -22891,10 +22879,8 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 			this.attrLastMove('[still]');
 			this.add('-anim', source, "Zen Headbutt", target);
 		},
-		hasSheerForce: true,
 		target: "normal",
 		type: "Psychic",
-		shortDesc: "Charges on turn 1, then hits on turn 2. No charge in Chakra Terrain or Grassy Terrain.",
 		isNonstandard: "Custom",
 	},
 	rainofarrows: {
@@ -22922,7 +22908,6 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 				this.actions.useMove('rainofarrows', target, source);
 			},
 		},
-		shortDesc: "Hits once in this turn, then hits again in the next turn. Ignores protection.",
 		isNonstandard: "Custom",
 	},
 	bigbang: {
@@ -22946,8 +22931,6 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 		target: "allAdjacent",
 		type: "Normal",
 		contestType: "Tough",
-		desc: "This move and its effects ignore the Abilities of other Pokemon, as well as resistances and immunities.",
-		shortDesc: "Ignores the Abilities of other Pokemon, resistances and immunities.",
 		isNonstandard: "Custom",
 	},
 	mantisslash: {
@@ -22970,8 +22953,6 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 		},
 		target: "normal",
 		type: "Grass",
-		desc: "Lowers the user's Speed by 2 stages.",
-		shortDesc: "Lowers the user's Speed by 2.",
 		isNonstandard: "Custom",
 	},
 	intrepidcrash: {
@@ -22980,7 +22961,6 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 		basePower: 60,
 		category: "Physical",
 		name: "Intrepid Crash",
-		shortDesc: "Has 33% recoil. Usually goes first.",
 		pp: 10,
 		priority: 1,
 		flags: { contact: 1, protect: 1, mirror: 1 },
@@ -23011,8 +22991,6 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 		target: "normal",
 		type: "Psychic",
 		contestType: "Tough",
-		desc: "Prevents the target from switching for four or five turns (seven turns if the user is holding Grip Claw). Causes damage to the target equal to 1/8 of its maximum HP (1/6 if the user is holding Binding Band), rounded down, at the end of each turn during effect. The target can still switch out if it is holding Shed Shell or uses Baton Pass, Flip Turn, Parting Shot, Shed Tail, Teleport, U-turn, or Volt Switch. The effect ends if either the user or the target leaves the field, or if the target uses Mortal Spin, Rapid Spin, or Substitute successfully. This effect is not stackable or reset by using this or another binding move.",
-		shortDesc: "Traps and damages the target for 4-5 turns.",
 		isNonstandard: "Custom",
 	},
 	jumpscare: {
@@ -23043,8 +23021,6 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 		target: "normal",
 		type: "Ghost",
 		contestType: "Cute",
-		desc: "Has a 100% chance to make the target flinch. Fails unless it is the user's first turn on the field.",
-		shortDesc: "Hits first. First turn out only. 100% flinch chance.",
 		isNonstandard: "Custom",
 	},
 	futuredoom: {
@@ -23062,7 +23038,6 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 		},
 		target: "normal",
 		type: "Psychic",
-		shortDesc: "Target can't use status moves its next 3 turns.",
 		isNonstandard: "Custom",
 	},
 	brainblast: {
@@ -23082,8 +23057,6 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 		target: "normal",
 		type: "Psychic",
 		contestType: "Clever",
-		desc: "If this move is successful and the user has not fainted, the user switches out even if it is trapped and is replaced immediately by a selected party member. The user does not switch out if there are no unfainted party members, or if the target switched out using an Eject Button or through the effect of the Emergency Exit or Wimp Out Abilities.",
-		shortDesc: "User switches out after damaging the target.",
 		isNonstandard: "Custom",
 	},
 	timecrash: {
@@ -23103,8 +23076,6 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 		target: "allAdjacent",
 		type: "Dragon",
 		contestType: "Cool",
-		desc: "The user recovers 1/2 the HP lost by the target, rounded half up. If Big Root is held by the user, the HP recovered is 1.3x normal, rounded half down.",
-		shortDesc: "User recovers 50% of the damage dealt.",
 		isNonstandard: "Custom",
 	},
 	waterslash: {
@@ -23124,8 +23095,6 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 			this.add('-anim', source, "Aqua Cutter", target);
 		},
 		contestType: "Beautiful",
-		desc: "Deals damage to the target based on its Special Defense instead of Defense.",
-		shortDesc: "Damages target based on Spd. Def, not Defense.",
 		isNonstandard: "Custom",
 	},
 	marinebolt: {

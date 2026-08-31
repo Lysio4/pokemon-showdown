@@ -40,7 +40,8 @@ export const Scripts: ModdedBattleScriptsData = {
         altForme?.isMega && altForme?.requiredMove &&
         pokemon.baseMoves.includes(toID(altForme.requiredMove)) && !item.zMove) {
         return altForme.name;
-      }
+		  }
+		  pokemon.formeRegression = false;
       // formes
       if (item.name === "Slowbronite" && pokemon.species.name === "Slowbro-Galar") return "Slowbro-Galar-Mega";
       if (item.name === "Scizorite" && pokemon.species.name === "Scizor-Galar") return "Scizor-Galar-Mega";
@@ -49,6 +50,7 @@ export const Scripts: ModdedBattleScriptsData = {
       if (item.name === "Sawsbuckite" && pokemon.species.id === "sawsbuckautumn") return "Sawsbuck-Autumn-Mega";
       if (item.name === "Sawsbuckite" && pokemon.species.id === "sawsbuckwinter") return "Sawsbuck-Winter-Mega";
       if (item.name === "Zoroarkite" && pokemon.species.name === "Zoroark-Hisui") return "Zoroark-Hisui-Mega";
+      if (item.name === "Mimikyunite" && pokemon.species.id === "mimikyubusted") return "Mimikyu-Busted-Mega";
       if (item.name === "Toxtricitite" && pokemon.species.name === "Toxtricity-Low-Key") return "Toxtricity-Low-Key-Mega";
       return item.megaStone?.[species.name] || null;
     },

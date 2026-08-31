@@ -8044,4 +8044,110 @@ export const MovesText: { [id: IDEntry]: MoveText } = {
 		desc: "Deals damage to the target based on its Special Defense instead of Defense.",
 		shortDesc: "Damages target based on Sp. Def, not Defense.",
 	},
+	marinebolt: {
+		name: "Marine Bolt",
+		desc: "Damage is calculated using the user's Speed stat as its Attack, including stat stage changes. Other effects that modify the Attack stat are used as normal.",
+		shortDesc: "Uses user's Speed stat as Atk in damage calculation.",
+	},
+	calmingbell: {
+		name: "Calming Bell",
+		desc: "Has a 100% chance to lower the target's Special Attack by 1 stage.",
+		shortDesc: "100% chance to lower the target's Sp. Atk by 1.",
+	},
+	seasonpass: {
+		name: "Season Pass",
+		desc: "If the user's current form is a Mega Sawsbuck, this move's type changes to match. Fairy type for Spring-Mega, Fire type for Summer-Mega, Fire type for Autumn-Mega, and Ice type for Winter-Mega.",
+		shortDesc: "Type depends on user's form.",
+	},
+	chistrike: {
+		name: "Chi Strike",
+		desc: "If the current terrain is Chakra Terrain and the target is grounded, this move hits Ghost type targets.",
+		shortDesc: "Hits Ghost type grounded targets in Chakra Terrain.",
+	},
+	cursedspeech: {
+		name: "Cursed Speech",
+		desc: "Prevents the target from selecting the same move for use two turns in a row. This effect ends when the target is no longer active.",
+		shortDesc: "Target can't select the same move twice in a row.",
+	},
+	threateningbite: {
+		name: "Threatening Bite",
+		shortDesc: "Cannot be selected the turn after it's used.",
+	},
+	stonesurge: {
+		name: "Stonesurge",
+		desc: "If this move is successful, it sets up a hazard on the opposing side of the field, damaging each opposing Pokemon that switches in. Foes lose 1/32, 1/16, 1/8, 1/4, or 1/2 of their maximum HP, rounded down, based on their weakness to the Rock type; 0.25x, 0.5x, neutral, 2x, or 4x, respectively. Can be removed from the opposing side if any Pokemon uses Tidy Up, or if any opposing Pokemon uses Mortal Spin, Rapid Spin, or Defog successfully, or is hit by Defog.",
+		shortDesc: "Sets Stealth Rock on the target's side.",
+	},
+	xrayshock: {
+		name: "X-Ray Shock",
+		desc: "Has a 100% chance to raise the user's Speed by 1 stage.",
+		shortDesc: "100% chance to raise the user's Speed by 1.",
+	},
+	gigabbouncysplash: {
+		name: "Giga Bouncy Splash",
+		shortDesc: "No additional effect.",
+	},
+	sonicspeedstrike: {
+		name: "Sonic Speed Strike",
+		shortDesc: "No additional effect.",
+	},
+	sweetsugarrush: {
+		name: "Sweet Sugar Rush",
+		shortDesc: "No additional effect.",
+	},
+	colorfulhit: {
+		name: "Colorful Hit",
+		desc: "This move's type depends on the user's primary type. If the user's primary type is typeless, this move's type is the user's secondary type if it has one, otherwise the added type from Forest's Curse or Trick-or-Treat. This move is typeless if the user's type is typeless alone.",
+		shortDesc: "Type varies based on the user's primary type.",
+	},
+	oceanslance: {
+		name: "Ocean's Lance",
+		shortDesc: "No additional effect.",
+	},
+	goatup: {
+		name: "Goat Up",
+		desc: "Raises the user's Attack and Defense by 1 stage. If the terrain is Grassy Terrain, this move raises the user's Attack and Defense by 2 stages.",
+		shortDesc: "Raises user's Attack and Def by 1; 2 in Grassy Terrain.",
+	},
+	poisonwhip: {
+		name: "Poison Whip",
+		desc: "Power doubles if the target is poisoned.",
+		shortDesc: "2x power if target poisoned.",
+	},
+	casinoroyal: {
+		name: "Casino Royal",
+		desc: "Lowers the user's Special Attack by 2 stages.",
+		shortDesc: "Lowers the user's Sp. Atk by 2. Hits foe(s).",
+	},
+	mistystep: {
+		name: "Misty Step",
+		desc: "For 5 turns, the terrain becomes Misty Terrain. The user switches out even if it is trapped and is replaced immediately by a selected party member. The user does not switch out if there are no unfainted party members.",
+		shortDesc: "Starts Misty Terrain. User switches out.",
+	},
+	prevailingwind: {
+		name: "Prevailing Wind",
+		desc: "Has a 100% chance to make the target flinch. Fails if the target did not select a Wind-based physical or special attack for use this turn, or if the target moves before the user.",
+		shortDesc: "100% flinch. Fails unless target using Wind-based attack.",
+	},
+	crazedpunch: {
+		name: "Crazed Punch",
+		shortDesc: "This attack is a critical hit if the target is poisoned.",
+	},
+	dirtyheadshot: {
+		name: "Dirty Headshot",
+		desc: "If the target is poisoned, its Speed will be lowered by 1.",
+		shortDesc: "Lowers target's Speed by 1 if poisoned.",
+	},
+	cruelfeather: {
+		name: "Cruel Feather",
+		desc: "Hits twice. If the first hit breaks the target's substitute, it will take damage for the second hit. If the target is poisoned, heals the user's status condition.",
+		shortDesc: "Hits 2 times in one turn. Heals user's status if target is poisoned.",
+	},
+	midnightsnack: {
+		name: "Midnight Snack",
+		desc: "The target's stat stages greater than 0 are stolen from it and applied to the user before dealing damage.",
+		shortDesc: "Steals target's boosts before dealing damage.",
+
+		clearBoost: "  [SOURCE] stole the target's boosted stats!",
+	},
 };

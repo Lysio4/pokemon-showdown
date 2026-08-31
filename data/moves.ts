@@ -22904,8 +22904,8 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 		},
 		condition: {
 			duration: 1,
-			onResidual(pokemon) {
-				this.actions.useMove('rainofarrows', target, source);
+			onResidual(source, target) {
+				this.actions.useMove('rainofarrows', source, target);
 			},
 		},
 		isNonstandard: "Custom",
@@ -23087,7 +23087,7 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 		name: "Water Slash",
 		pp: 10,
 		priority: 0,
-		flags: {protect: 1, mirror: 1, slicing: 1},
+		flags: { protect: 1, mirror: 1, slicing: 1 },
 		target: "normal",
 		type: "Water",
 		onPrepareHit(target, source) {
@@ -23113,7 +23113,6 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 		},
 		target: "normal",
 		type: "Fire",
-		shortDesc: "Uses user's Speed stat instead of Attack in damage calculation.",
 		isNonstandard: "Custom",
 	},
 	calmingbell: {
@@ -23124,7 +23123,7 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 		name: "Calming Bell",
 		pp: 10,
 		priority: 0,
-		flags: {protect: 1, mirror: 1, metronome: 1, sound: 1},
+		flags: { protect: 1, mirror: 1, metronome: 1, sound: 1 },
 		secondary: {
 			chance: 100,
 			boosts: {
@@ -23138,7 +23137,6 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 		target: "normal",
 		type: "Steel",
 		contestType: "Beautiful",
-		shortDesc: "100% chance to lower the target's SpA by 1.",
 		isNonstandard: "Custom",
 	},
 	seasonpass: {
@@ -23151,11 +23149,17 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 		priority: 0,
 		flags: { contact: 1, protect: 1, mirror: 1, metronome: 1 },
 		onModifyType(move, pokemon) {
-			const types = pokemon.getTypes();
-			let type = types[0];
-			if (type === 'Bird') type = '???';
-			if (type === '???' && types[1]) type = types[1];
-			move.type = type;
+			switch (pokemon.species.name) {
+			case 'Tauros-Paldea-Combat':
+				move.type = 'Fighting';
+				break;
+			case 'Tauros-Paldea-Blaze':
+				move.type = 'Fire';
+				break;
+			case 'Tauros-Paldea-Aqua':
+				move.type = 'Water';
+				break;
+			}
 		},
 		onPrepareHit(target, source) {
 			this.attrLastMove('[still]');
@@ -23164,18 +23168,15 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 		target: "normal",
 		type: "Normal",
 		contestType: "Tough",
-		desc: "This move's type depends on the user's primary type. If the user's primary type is typeless, this move's type is the user's secondary type if it has one, otherwise the added type from Forest's Curse or Trick-or-Treat. This move is typeless if the user's type is typeless alone.",
-		shortDesc: "Type varies based on the user's primary type.",
 		isNonstandard: "Custom",
 	},
 	chistrike: {
 		num: -74,
 		accuracy: 100,
 		basePower: 90,
-		onModifyMovePriority: -5,
 		onModifyMove(move, attacker, defender) {
 			if (!move.ignoreImmunity) move.ignoreImmunity = {};
-			if (move.ignoreImmunity !== true && this.field.isTerrain('chakraterrain') && defender.isGrounded()) {
+			if (move.ignoreImmunity !== true && this.field.isTerrain('chakraterrain') && defender?.isGrounded()) {
 				this.hint(`${move.name}can hit grounded Ghost target.`);
 				move.ignoreImmunity['Fighting'] = true;
 			}
@@ -23188,8 +23189,6 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 		target: "normal",
 		type: "Fighting",
 		maxMove: { basePower: 140 },
-		desc: "If the current terrain is Chakra Terrain and the target is grounded, this move hits Ghost type targets.",
-		shortDesc: "Hits Ghost type grounded targets in Chakra Terrain.",
 		isNonstandard: "Custom",
 	},
 	cursedspeech: {
@@ -23212,8 +23211,6 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 		target: "normal",
 		type: "Ghost",
 		contestType: "Clever",
-		shortDesc: "Applies Torment to the target.",
-		desc: "Applies Torment to the target.",
 		isNonstandard: "Custom",
 	},
 	threateningbite: {
@@ -23231,7 +23228,6 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 			this.attrLastMove('[still]');
 			this.add('-anim', source, "Jaw Lock", target);
 		},
-		shortDesc: "Cannot be selected the turn after it's used.",
 		isNonstandard: "Custom",
 	},
 	stonesurge: {
@@ -23265,8 +23261,6 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 		type: "Rock",
 		contestType: "Cool",
 		isNonstandard: "Custom",
-		desc: "If this move is successful, it sets up a hazard on the opposing side of the field, damaging each opposing Pokemon that switches in. Foes lose 1/32, 1/16, 1/8, 1/4, or 1/2 of their maximum HP, rounded down, based on their weakness to the Rock type; 0.25x, 0.5x, neutral, 2x, or 4x, respectively. Can be removed from the opposing side if any Pokemon uses Tidy Up, or if any opposing Pokemon uses Mortal Spin, Rapid Spin, or Defog successfully, or is hit by Defog.",
-		shortDesc: "Sets Stealth Rock on the target's side.",
 	},
 	xrayshock: {
 		num: -78,
@@ -23289,8 +23283,6 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 		target: "normal",
 		type: "Electric",
 		contestType: "Tough",
-		desc: "Raises the user's Speed by 1 stage.",
-		shortDesc: "Raises the user's Spe by 1.",
 		isNonstandard: "Custom",
 	},
 	gigabbouncysplash: {
@@ -23310,7 +23302,6 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 		target: "normal",
 		type: "Flying",
 		contestType: "Tough",
-		shortDesc: "No additional effect.",
 		isNonstandard: "Custom",
 	},
 	sonicspeedstrike: {
@@ -23330,7 +23321,6 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 		target: "normal",
 		type: "Dragon",
 		contestType: "Tough",
-		shortDesc: "No additional effect.",
 		isNonstandard: "Custom",
 	},
 	sweetsugarrush: {
@@ -23346,7 +23336,6 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 		target: "normal",
 		type: "Dragon",
 		contestType: "Cool",
-		shortDesc: "No additional effect.",
 		isNonstandard: "Custom",
 	},
 	colorfulhit: {
@@ -23372,8 +23361,6 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 		target: "normal",
 		type: "Normal",
 		contestType: "Tough",
-		desc: "This move's type depends on the user's primary type. If the user's primary type is typeless, this move's type is the user's secondary type if it has one, otherwise the added type from Forest's Curse or Trick-or-Treat. This move is typeless if the user's type is typeless alone.",
-		shortDesc: "Type varies based on the user's primary type.",
 		isNonstandard: "Custom",
 	},
 	oceanslance: {
@@ -23392,7 +23379,6 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 		target: "normal",
 		type: "Water",
 		contestType: "Cool",
-		shortDesc: "No additional effect.",
 		isNonstandard: "Custom",
 	},
 	goatup: {
@@ -23417,10 +23403,8 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 		},
 		target: "self",
 		type: "Normal",
-		zMove: { boost: { spa: 1 } },
+		zMove: { boost: { atk: 1 } },
 		contestType: "Beautiful",
-		desc: "Raises the user's Attack and Defense by 1 stage. If the terrain is Grassy Terrain, this move raises the user's Attack and Defense by 2 stages.",
-		shortDesc: "Raises user's Attack and Def by 1; 2 in Grassy Terrain.",
 		isNonstandard: "Custom",
 	},
 	poisonwhip: {
@@ -23443,8 +23427,6 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 		},
 		target: "normal",
 		type: "Poison",
-		desc: "Power doubles if the target is poisoned.",
-		shortDesc: "2x power if target poisoned.",
 		isNonstandard: "Custom",
 	},
 	casinoroyal: {
@@ -23468,8 +23450,6 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 		target: "allAdjacentFoes",
 		type: "Normal",
 		contestType: "Beautiful",
-		desc: "Lowers the user's Special Attack by 2 stages.",
-		shortDesc: "Lowers the user's Sp. Atk by 2. Hits foe(s).",
 		isNonstandard: "Custom",
 	},
 	mistystep: {
@@ -23500,8 +23480,6 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 		},
 		target: "all",
 		type: "Fairy",
-		desc: "For 5 turns, the terrain becomes Misty Terrain. The user switches out even if it is trapped and is replaced immediately by a selected party member. The user does not switch out if there are no unfainted party members.",
-		shortDesc: "Starts Misty Terrain. User switches out.",
 		isNonstandard: "Custom",
 	},
 	prevailingwind: {
@@ -23531,7 +23509,6 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 		},
 		target: "normal",
 		type: "Flying",
-		shortDesc: "100% flinch. Fails unless target using a wind move.",
 		isNonstandard: "Custom",
 	},
 	crazedpunch: {
@@ -23552,7 +23529,6 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 		},
 		target: "normal",
 		type: "Poison",
-		shortDesc: "This attack is a critical hit if the target is poisoned.",
 		isNonstandard: "Custom",
 	},
 	dirtyheadshot: {
@@ -23582,8 +23558,6 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 		type: "Psychic",
 		contestType: "Clever",
 		isNonstandard: "Custom",
-		desc: "If the target is poisoned, its Speed will be lowered by 1.",
-		shortDesc: "Lowers target's Speed by 1 if poisoned.",
 	},
 	cruelfeather: {
 		num: -91,
@@ -23595,8 +23569,8 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 		priority: 0,
 		flags: { protect: 1, mirror: 1, metronome: 1 },
 		multihit: 2,
-		onHit(pokemon) {
-			if (target && ['psn', 'tox'].includes(target.status)) return pokemon.cureStatus();
+		onHit(target, source, move) {
+			if (target && ['psn', 'tox'].includes(target.status)) return source.cureStatus();
 		},
 		onPrepareHit(target, source, move) {
 			this.attrLastMove('[still]');
@@ -23607,8 +23581,6 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 		zMove: { basePower: 180 },
 		maxMove: { basePower: 140 },
 		contestType: "Clever",
-		desc: "Hits twice. If the first hit breaks the target's substitute, it will take damage for the second hit. If the target is poisoned, heals the user's status condition.",
-		shortDesc: "Hits 2 times in one turn. Heals user's status if target is poisoned.",
 		isNonstandard: "Custom",
 	},
 	midnightsnack: {
@@ -23629,10 +23601,6 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 		target: "normal",
 		type: "Dark",
 		contestType: "Cool",
-		desc: "The target's stat stages greater than 0 are stolen from it and applied to the user before dealing damage.",
-		shortDesc: "Steals target's boosts before dealing damage.",
-
-		clearBoost: "  [SOURCE] stole the target's boosted stats!",
 		isNonstandard: "Custom",
 	},
 	// Touhou

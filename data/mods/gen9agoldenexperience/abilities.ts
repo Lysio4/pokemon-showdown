@@ -1,6 +1,11 @@
 import { consoleips } from "../../../config/config-example";
 
 export const Abilities: { [abilityid: string]: ModdedAbilityData; } = {
+	// tmp aura guard
+	auraguard: {
+		inherit: true,
+		isNonstandard: null,
+	},
 	// new abilities
 	poisonousradula: {
 		inherit: true,

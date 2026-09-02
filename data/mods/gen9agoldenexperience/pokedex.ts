@@ -459,8 +459,8 @@ export const Pokedex: {[k: string]: ModdedSpeciesData;} = {
 	},
 	octillery: {
 		inherit: true,
-		baseStats: {hp: 75, atk: 105, def: 75, spa: 125, spd: 75, spe: 45},
-		abilities: {0: "Suction Cups", 1: "Sniper", H: "Mega Launcher"},
+		baseStats: { hp: 75, atk: 105, def: 75, spa: 125, spd: 75, spe: 45 },
+		abilities: { 0: "Suction Cups", 1: "Sniper", H: "Mimicry" },
 	},
 	delibird: {
 		inherit: true,
@@ -678,16 +678,16 @@ export const Pokedex: {[k: string]: ModdedSpeciesData;} = {
 	seviper: {
 		inherit: true,
 		types: ["Poison", "Dark"],
-		baseStats: {hp: 73, atk: 115, def: 60, spa: 85, spd: 60, spe: 65},
-		abilities: {0: "Shed Skin", 1: "Merciless", H:"Infiltrator"},
+		baseStats: { hp: 73, atk: 115, def: 60, spa: 85, spd: 60, spe: 65 },
+		abilities: { 0: "Shed Skin", 1: "Merciless", H:"Infiltrator"},
 	},
 	lunatone: {
 		inherit: true,
-		abilities: {0: "Levitate", H:"Cosmic Energy"},
+		abilities: { 0: "Levitate", H:"Cosmic Energy" },
 	},
 	solrock: {
 		inherit: true,
-		abilities: {0: "Levitate", H:"Drought"},
+		abilities: { 0: "Levitate", H:"Drought" },
 	},
 	barboach: {
 		inherit: true,
@@ -705,8 +705,8 @@ export const Pokedex: {[k: string]: ModdedSpeciesData;} = {
 	},
 	claydol: {
 		inherit: true,
-		baseStats: {hp: 70, atk: 70, def: 105, spa: 70, spd: 120, spe: 75},
-		abilities: {0: "Levitate", H: "Graviton"},
+		baseStats: { hp: 70, atk: 70, def: 105, spa: 70, spd: 120, spe: 75 },
+		abilities: { 0: "Levitate", H: "Graviton" },
 	},
 	lileep: {
 		inherit: true,
@@ -732,29 +732,29 @@ export const Pokedex: {[k: string]: ModdedSpeciesData;} = {
 	},
 	castform: {
 		inherit: true,
-		baseStats: {hp: 80, atk: 80, def: 80, spa: 80, spd: 80, spe: 80},
+		baseStats: { hp: 80, atk: 80, def: 80, spa: 80, spd: 80, spe: 80 },
 		otherFormes: ["Castform-Mega", "Castform-Sunny", "Castform-Rainy", "Castform-Snowy"],
 		formeOrder: ["Castform", "Castform-Mega", "Castform-Sunny", "Castform-Rainy", "Castform-Snowy"],
 	},
 	castformsunny: {
 		inherit: true,
-		baseStats: {hp: 80, atk: 80, def: 80, spa: 80, spd: 80, spe: 80},
+		baseStats: { hp: 80, atk: 80, def: 80, spa: 80, spd: 80, spe: 80 },
 	},
 	castformrainy: {
 		inherit: true,
-		baseStats: {hp: 80, atk: 80, def: 80, spa: 80, spd: 80, spe: 80},
+		baseStats: { hp: 80, atk: 80, def: 80, spa: 80, spd: 80, spe: 80 },
 	},
 	castformsnowy: {
 		inherit: true,
-		baseStats: {hp: 80, atk: 80, def: 80, spa: 80, spd: 80, spe: 80},
+		baseStats: { hp: 80, atk: 80, def: 80, spa: 80, spd: 80, spe: 80 },
 	},
 	banette: {
 		inherit: true,
-		baseStats: {hp: 64, atk: 115, def: 65, spa: 103, spd: 63, spe: 65},
+		baseStats: { hp: 64, atk: 115, def: 65, spa: 103, spd: 63, spe: 65 },
 	},
 	banettemega: {
 		inherit: true,
-		baseStats: {hp: 64, atk: 165, def: 75, spa: 123, spd: 83, spe: 65},
+		baseStats: { hp: 64, atk: 165, def: 75, spa: 123, spd: 83, spe: 65 },
 	},
 	tropius: {
 		inherit: true,
@@ -763,10 +763,6 @@ export const Pokedex: {[k: string]: ModdedSpeciesData;} = {
 	chimechomega: {
 		inherit: true,
 		abilities: { 0: "Healing Echo" },
-	},
-	absolmegaz: {
-		inherit: true,
-		abilities: { 0: "Sharpness" },
 	},
 	wynaut: {
 		inherit: true,
@@ -989,14 +985,6 @@ export const Pokedex: {[k: string]: ModdedSpeciesData;} = {
 		inherit: true,
 		baseStats: { hp: 108, atk: 170, def: 105, spa: 120, spd: 95, spe: 102 },
 		abilities: { 0: "Sharpness" },
-	},
-	garchompmegaz: {
-		inherit: true,
-		abilities: { 0: "Levitate" },
-	},
-	lucariomegaz: {
-		inherit: true,
-		abilities: { 0: "Mega Launcher" },
 	},
 	hippowdon: {
 		inherit: true,

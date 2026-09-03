@@ -1943,7 +1943,7 @@ export const FormatsData: { [k: string]: SpeciesFormatsData; } = {
 	},
 	absolmegaz: {
 		tier: "Uber",
-		doublesTier: "DOU",
+		doublesTier: "DUU",
 	},
 	snorunt: {
 		tier: "LC",
@@ -2311,7 +2311,7 @@ export const FormatsData: { [k: string]: SpeciesFormatsData; } = {
 	},
 	lucariomegaz: {
 		tier: "Uber",
-		doublesTier: "DOU",
+		doublesTier: "DUU",
 	},
 	hippopotas: {
 		tier: "LC",

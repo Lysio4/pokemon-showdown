@@ -36,7 +36,7 @@ import { DataMove, DexMoves } from './dex-moves';
 import { Item, DexItems } from './dex-items';
 import { Ability, DexAbilities } from './dex-abilities';
 import { Species, DexSpecies } from './dex-species';
-import { DexText } from './dex-text';
+// import { DexText } from './dex-text'; // tmp fix
 import { Format, DexFormats } from './dex-formats';
 import { Utils } from '../lib/utils';
 import { Tags } from '../data/tags';
@@ -140,7 +140,8 @@ export class ModdedDex {
 	readonly moves: DexMoves;
 	readonly species: DexSpecies;
 	readonly conditions: DexConditions;
-	readonly text: DexText;
+	// readonly text: DexText;
+	readonly text: Data.DexText; // tmp fix
 	readonly natures: Data.DexNatures;
 	readonly types: Data.DexTypes;
 	readonly stats: Data.DexStats;
@@ -162,7 +163,8 @@ export class ModdedDex {
 		this.moves = new DexMoves(this);
 		this.species = new DexSpecies(this);
 		this.conditions = new DexConditions(this);
-		this.text = new DexText(this);
+		// this.text = new DexText(this);
+		this.text = new Data.DexText(this); // tmp fix
 		this.natures = new Data.DexNatures(this);
 		this.types = new Data.DexTypes(this);
 		this.stats = new Data.DexStats(this);

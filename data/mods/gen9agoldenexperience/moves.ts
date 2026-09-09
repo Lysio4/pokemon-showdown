@@ -85,90 +85,130 @@ export const Moves: { [k: string]: ModdedMoveData; } = {
 	frostbite: {
 		inherit: true,
 		isNonstandard: null,
+		desc: "The Pokémon at the user's position steals some of the target's maximum HP at the end of each turn. Damage begins at 1/16, rounded down, and increases each turn like Toxic. If Big Root is held by the recipient, the HP recovered is 1.3x normal, rounded half down. If the target uses Baton Pass, the replacement will continue being leeched. If the target switches out, the effect ends.",
+		shortDesc: "Target's HP is restored to user every turn. Damage increases like Toxic.",
 	},
 	aspiravoid: {
 		inherit: true,
 		isNonstandard: null,
+		desc: "The user recovers 1/2 the HP lost by the target, rounded half up. If Big Root is held by the user, the HP recovered is 1.3x normal, rounded half down.",
+		shortDesc: "User recovers 50% of the damage dealt.",
 	},
 	flamingsphere: {
 		inherit: true,
 		isNonstandard: null,
+		desc: "No additional effect.",
+		shortDesc: "Usually goes first.",
 	},
 	fireball: {
 		inherit: true,
 		isNonstandard: null,
+		desc: "Ends the effects of Electric Terrain, Grassy Terrain, Misty Terrain, Psychic Terrain, and Chakra Terrain.",
+		shortDesc: "Ends the effects of terrain.",
 	},
 	highwater: {
 		inherit: true,
 		isNonstandard: null,
+		desc: "The user restores 1/2 of its maximum HP, rounded half up.",
+		shortDesc: "Heals the user by 50% of its max HP.",
 	},
 	seajaws: {
 		inherit: true,
 		isNonstandard: null,
+		desc: "If this attack does not miss, the effects of Reflect, Light Screen, and Aurora Veil end for the target's side of the field before damage is calculated.",
+		shortDesc: "Destroys screens, unless the target is immune.",
 	},
 	parallelcircuit: {
 		inherit: true,
 		isNonstandard: null,
+		desc: "Hits two to five times. Has a 35% chance to hit two or three times and a 15% chance to hit four or five times. If one of the hits breaks the target's substitute, it will take damage for the remaining hits. If the user has the Skill Link Ability, this move will always hit five times. If the user is holding Loaded Dice, this move will hit 4-5 times.",
+		shortDesc: "Hits 2-5 times in one turn.",
 	},
 	condensate: {
 		inherit: true,
 		isNonstandard: null,
+		desc: "If the current terrain is Misty Terrain and the user is grounded, this move's power is doubled.",
+		shortDesc: "2x power if user is grounded in Misty Terrain.",
 	},
 	chillblain: {
 		inherit: true,
 		isNonstandard: null,
+		desc: "Freezes the target.",
+		shortDesc: "Freezes the target.",
 	},
 	indomitablespirit: {
 		inherit: true,
 		isNonstandard: null,
+		shortDesc: "Power doubles if last move failed or was resisted.",
 	},
 	martialpunch: {
 		inherit: true,
 		isNonstandard: null,
+		desc: "Deals damage to the target based on its Special Defense instead of Defense.",
+		shortDesc: "Damages target based on Sp. Def, not Defense.",
 	},
 	musclecare: {
 		inherit: true,
 		isNonstandard: null,
+		desc: "The user restores 1/2 of its maximum HP, rounded half up.",
+		shortDesc: "Heals the user by 50% of its max HP.",
 	},
 	landslide: {
 		inherit: true,
 		isNonstandard: null,
+		desc: "Lowers the target's Speed by 1 stage. If this move is successful and whether or not the target's evasiveness was affected, the effects of Reflect, Light Screen, Aurora Veil, Safeguard, Mist, Spikes, Toxic Spikes, Stealth Rock, and Sticky Web end for the target's side, and the effects of Spikes, Toxic Spikes, Stealth Rock, and Sticky Web end for the user's side. Ignores a target's substitute, although a substitute will still block the lowering of Speed.",
+		shortDesc: "-1 Speed; ends user and target hazards.",
 	},
 	downdraft: {
 		inherit: true,
 		isNonstandard: null,
+		desc: "If the target isn't grounded, its Speed is lowered by 1 stage.",
+		shortDesc: "Lowers target's Speed by 1 if it isn't grounded.",
 	},
 	golemstrike: {
 		inherit: true,
 		isNonstandard: null,
+		desc: "Has a 10% chance to lower the target's Defense by 1 stage.",
+		shortDesc: "10% chance to lower the target's Defense by 1.",
 	},
 	punishingblow: {
 		inherit: true,
 		isNonstandard: null,
+		shortDesc: "If the target has boosts, this move always results in a critical hit.",
 	},
 	contrariety: {
 		inherit: true,
 		isNonstandard: null,
+		shortDesc: "Every Pokemon on the field gets Contrary as an ability.",
 	},
 	blackflash: {
 		inherit: true,
 		isNonstandard: null,
+		desc: "Lowers the user's Sp. Attack and Sp. Defense by 1 stage.",
+		shortDesc: "Lowers the user's Sp. Atk and Sp. Def by 1.",
 	},
 	sneakyassault: {
 		inherit: true,
 		isNonstandard: null,
+		shortDesc: "Hits three times. Each hit has 10% to lower the target's Def.",
 	},
 	mercuryshot: {
 		inherit: true,
 		isNonstandard: null,
+		desc: "Has a 30% chance to poison the target.",
+		shortDesc: "30% chance to poison the target.",
 	},
 	sweetheart: {
 		inherit: true,
 		isNonstandard: null,
+		desc: "User cures its status condition. Damage is calculated using the user's Sp. Defense stat as its Sp. Attack, including stat stage changes. Other effects that modify the Attack stat are used as normal.",
+		shortDesc: "User cures its status. Uses user's Sp. Def stat as Sp. Atk in damage calculation.",
 	},
 	chakraterrain: {
 		inherit: true,
 		isNonstandard: null,
+		desc: "For 5 turns, the terrain becomes Chakra Terrain. During the effect, Fighting-type attacks made by grounded Pokemon cannot miss and grounded Pokemon cannot be paralyzed; Pokemon already paralyzed are not healed of their status. Camouflage transforms the user into an Fighting type, Nature Power becomes Aura Sphere, and Secret Power has a 30% chance to lower target's Defense by 1 stage. Fails if the current terrain is Chakra Terrain.",
+		shortDesc: "5 turns. Grounded: Fighting moves have full accuracy, can't be paralyzed.",
 	},
 	naturepower: {
 		inherit: true,
@@ -280,46 +320,65 @@ export const Moves: { [k: string]: ModdedMoveData; } = {
 	lightningassault: {
 		inherit: true,
 		isNonstandard: null,
+		desc: "The power of this move depends on (user's current Speed / target's current Speed), rounded down. Power is equal to 150 if the result is 4 or more, 120 if 3, 80 if 2, 60 if 1, 40 if less than 1. If the target's current Speed is 0, this move's power is 40.",
+		shortDesc: "More power the faster the user is than the target.",
 	},
 	conversionz: {
 		inherit: true,
 		isNonstandard: null,
+		shortDesc: "Fails if the user has an item. Raises all stats by 1, and user gets the type of its 3rd move.",
 	},
 	zawalludo: {
 		inherit: true,
 		isNonstandard: null,
+		desc: "Raises the user's Attack by 1 stage. The user sets Trick Room.",
+		shortDesc: "Raises user's Atk by 1. Sets Trick Room.",
 	},
 	awakening: {
 		inherit: true,
 		isNonstandard: null,
+		desc: "The user restores 1/2 of its maximum HP, rounded half up, and reveal one of opponent's move.",
+		shortDesc: "Heals the user by 50% of its max HP; reveals random opponent's move."
 	},
 	fulldevotion: {
 		inherit: true,
 		isNonstandard: null,
+		desc: "Every Pokemon in the user's party is cured of its non-volatile status condition.",
+		shortDesc: "Cures the user's party of all status conditions.",
 	},
 	braveblade: {
 		inherit: true,
 		isNonstandard: null,
+		desc: "Ignores the target's stat stage changes, including evasiveness. This move and its effects ignore the Abilities of other Pokemon.",
+		shortDesc: "Ignores the target's stat stage changes and the Abilities of other Pokemon.",
 	},
 	teramorphosis: {
 		inherit: true,
 		isNonstandard: null,
+		desc: "If the target lost HP, the user takes recoil damage equal to 33% the HP lost by the target, rounded half up, but not less than 1 HP. Has a 100% chance to raise the user's Speed by 1 stage.",
+		shortDesc: "Has 33% recoil. 100% chance to raise the user's Speed by 1.",
 	},
 	happydance: {
 		inherit: true,
 		isNonstandard: null,
+		shortDesc: "Raises the user's Attack and Sp. Attack by 1. Summons Rain Dance.",
 	},
 	windscall: {
 		inherit: true,
 		isNonstandard: null,
+		shortDesc: "Raises the user's Attack and Sp. Attack by 1. Sets Tailwind.",
 	},
 	houndshowl: {
 		inherit: true,
 		isNonstandard: null,
+		desc: "If an opposing Pokemon switches out this turn, this move hits that Pokemon before it leaves the field, even if it was not the original target. If the user moves after an opponent using Flip Turn, Parting Shot, Teleport, U-turn, or Volt Switch, but not Baton Pass, it will hit that opponent before it leaves the field. Power doubles and no accuracy check is done if the user hits an opponent switching out, and the user's turn is over; if an opponent faints from this, the replacement Pokemon does not become active until the end of the turn.",
+		shortDesc: "If a foe is switching out, hits it at 2x power.",
 	},
 	dantesinferno: {
 		inherit: true,
 		isNonstandard: null,
+		desc: "For 5 turns, the weather becomes Sunny Day.",
+		shortDesc: "Starts Sunny Day.",
 	},
 	swarming: {
 		inherit: true,
@@ -836,6 +895,8 @@ export const Moves: { [k: string]: ModdedMoveData; } = {
 		inherit: true,
 		modded: true, // this makes its description display in Data Mod
 		pp: 10,
+		target: "adjacentAllyOrSelf",
+		shortDesc: "Restores 1/2 of the max HP of the user or an ally."
 	},
 	wish: {
 		inherit: true,
@@ -859,29 +920,6 @@ export const Moves: { [k: string]: ModdedMoveData; } = {
 		},
 		desc: "Has a 10% chance to lower the target's Def by 1. If this attack does not miss, the effects of Reflect, Light Screen, and Aurora Veil end for the target's side of the field before damage is calculated. If the user's current form is a Paldean Tauros, this move's type changes to match. Fighting type for Combat Breed, Fire type for Blaze Breed, and Water type for Aqua Breed.",
 		shortDesc: "10% chance to lower target's Def by 1. Destroys screens. Type depends on user's form.",
-	},
-	tidyup: {
-		inherit: true,
-		modded: true, // this makes its description display in Data Mod
-		shortDesc: "User +1 Atk, Spe, Acc. Clears all substitutes/hazards on user's side.",
-		onHit(pokemon) {
-			let success = false;
-			for (const active of this.getAllActive()) {
-				if (active.removeVolatile('substitute')) success = true;
-			}
-			const removeAll = ['spikes', 'toxicspikes', 'stealthrock', 'stickyweb', 'gmaxsteelsurge'];
-			const sides = [pokemon.side, ...pokemon.side.foeSidesWithConditions()];
-			for (const side of sides) {
-				for (const sideCondition of removeAll) {
-					if (side.removeSideCondition(sideCondition)) {
-						this.add('-sideend', side, this.dex.conditions.get(sideCondition).name);
-						success = true;
-					}
-				}
-			}
-			if (success) this.add('-activate', pokemon, 'move: Tidy Up');
-			return !!this.boost({ atk: 1, spe: 1, accuracy: 1 }, pokemon, pokemon, null, false, true) || success;
-		},
 	},
 	hyperdrill: {
 		inherit: true,

@@ -105183,9 +105183,9 @@ export const Learnsets: import('../sim/dex-species').LearnsetDataTable = {
 	},
 	parrotnair: {
 		learnset: {
-			wideguard: ["9L1"],
-			quickguard: ["9L1"],
 			pluck: ["9L1"],
+			quickguard: ["9L1"],
+			wideguard: ["9L1"],
 		},
 	},
 	sautropius: {
@@ -105193,11 +105193,19 @@ export const Learnsets: import('../sim/dex-species').LearnsetDataTable = {
 			acrobatics: ["9L1"],
 		},
 	},
+	whiscatzu: {
+		learnset: {
+			calmmind: ["9L1"],
+			flipturn: ["9L1"],
+			slackoff: ["9L1"],
+			wish: ["9L1"],
+		},
+	},
 	meltic: {
 		learnset: {
 			flipturn: ["9L1"],
-			wavecrash: ["9L1"],
 			mountaingale: ["9L1"],
+			wavecrash: ["9L1"],
 		},
 	},
 	sithbull: {

@@ -2443,7 +2443,7 @@ export const AbilitiesText: { [id: IDEntry]: AbilityText } = {
 	lasttoxin: {
 		name: "Last Toxin",
 		desc: "When this Pokemon brings an opponent to 50% or under using an attacking move, it badly poisons that opponent.",
-		shortDesc: "Badly poison enemies brought under half health..",
+		shortDesc: "Badly poison enemies brought under half health.",
 	},
 	chakrasurge: {
 		name: "Chakra Surge",
@@ -2468,5 +2468,255 @@ export const AbilitiesText: { [id: IDEntry]: AbilityText } = {
 		name: "Ignite",
 		desc: "This Pokemon's Normal-type moves become Fire-type moves and have their power multiplied by 1.2. This effect comes after other effects that change a move's type, but before Ion Deluge and Electrify's effects.",
 		shortDesc: "This Pokemon's Normal-type moves become Fire type and have 1.2x power.",
+	},
+	nightlight: {
+		name: "Night Light",
+		desc: "If a Pokemon uses a Dark- or Ghost-type attack against this Pokemon, that Pokemon's offensive stat is halved when calculating the damage to this Pokemon.",
+		shortDesc: "Dark-/Ghost-type moves against this Pokemon deal damage with a halved offensive stat.",
+	},
+	parasitism: {
+		name: "Parasitism",
+		desc: "If this Pokemon is knocked out with a move, that move's user is affected by Leech Seed and Yawn.",
+		shortDesc: "If this Pokemon is KOed by a move, that move's user is affected by Leech Seed and Yawn.",
+
+		damage: "  {POKEMON} was hurt!",
+	},
+	explosive: { 
+		name: "Explosive",
+		desc: "This Pokémon does not suffer the drawbacks of recoil moves and sacrificial moves. All self-KO moves used by this Pokémon have x0.8 base power.",
+		shortDesc: "Ignores recoil and self-KO effects of its moves. Self-KO moves have x0.8 BP.",
+	},
+	accumulate: {
+		name: "Accumulate",
+		shortDesc: "This Pokemon gets 1 Stockpile at the end of each full turn it has been on the field.",
+	},
+	blowhole: {
+		name: "Blowhole",
+		desc: "Before this Pokemon uses any Water-type move, it sets Rain Dance.",
+		shortDesc: "Sets Rain Dance before using a Water-type move.",
+	},
+	iceneedles: {
+		name: "Ice Needles",
+		desc: "Pokemon making contact with this Pokemon lose an amount of their maximum HP factoring their weakness to Ice-type, rounded down.",
+		shortDesc: "Pokemon making contact with this Pokemon lose an amount of their max HP depending on their Ice weakness.",
+
+		damage: "#iceneedles",
+	},
+	eternalwinter: {
+		name: "Eternal Winter",
+		desc: "On switch-in, the weather becomes Eternal Winter. This weather remains in effect until this Ability is no longer active for any Pokémon, or the weather is changed by Delta Stream, Desolate Land or Primordial Sea. Super effective moves only inflict 3/4 damages on this Pokemon.",
+		shortDesc: "On switch-in, eternal winter begins until this Ability is not active in battle.",
+	},
+	disillusioned: {
+		name: "Disillusioned",
+		desc: "This Pokemon is immune to Fairy-type moves and raises its Sp. Defense by 1 stage when hit by a Fairy-type move.",
+		shortDesc: "This Pokemon's Sp. Def is raised 1 stage if hit by an Fairy move; Fairy immunity.",
+	},
+	leafdress: {
+		name: "Leaf Dress",
+		shortDesc: "If not Grass: gives Grass resists; if Grass: negates Grass weaknesses, status and hazard damage.",
+	},
+	unstableshell: {
+		name: "Unstable Shell",
+		desc: "Pokemon making contact with this Pokemon make it lose 1/4 of its max HP and lose double the amount, rounded down.",
+		shortDesc: "Pokemon making contact with this Pokemon make it lose 1/4 of its max HP and lose double the amount.",
+	},
+	sleightofhand: {
+		name: "Sleight of Hand",
+		desc: "This Pokémon's contact moves become special attacks and do not make contact with the target.",
+		shortDesc: "This Pokémon's contact moves become special and non-contact.",
+	},
+	hyperthermia: {
+		name: "Hyperthermia",
+		desc: "This Pokemon can't have its stats dropped by any means, including its own attacks.",
+		shortDesc: "This Pokemon can't have its stats dropped by any means, including its own attacks.",
+	},
+	unconcerned: {
+		name: "Unconcerned",
+		shortDesc: "This Pokemon ignores its own stat stages when taking or doing damage.",
+	},
+	hydrophilic: {
+		name: "Hydrophilic",
+		desc: "This Pokemon's offensive stat is doubled while using a Water-type attack. If a Pokemon uses a Fire-type attack against this Pokemon, that Pokemon's offensive stat is halved when calculating the damage to this Pokemon. This Pokemon cannot be burned. Gaining this Ability while burned cures it.",
+		shortDesc: "This Pokemon's Water power is 2x; it can't be burned; Fire power against it is halved.",
+	},
+	virality: {
+		name: "Virality",
+		desc: "Pokemon making contact with this Pokemon have their Ability changed to Virality. Does not affect Pokemon with the As One, Battle Bond, Comatose, Disguise, Gulp Missile, Ice Face, Megazord, Multitype, Mummy, Power Construct, RKS System, Schooling, Shields Down, Stance Change, Sundown Switch, Tera Shift, Virality, Zen Mode, or Zero to Hero Abilities.",
+		shortDesc: "Pokemon making contact with this Pokemon have their Ability changed to Virality.",
+	},
+	goodluck: {
+		name: "Good Luck",
+		shortDesc: "If this Pokémon's Speed is higher than its target's Speed, its critical rate ratio is raised by 3.",
+	},
+	dodge: {
+		name: "Dodge",
+		shortDesc: "When taking damages, this Pokemon adds 50% of its Speed to its corresponding defense.",
+	},
+	faithfulcompanion: {
+		name: "Faithful Companion",
+		shortDesc: "If the ally is Piratcy, gives to the ally this Pokemon's item, and steals an item from the opponent.",
+	},
+	cheerleader: {
+		name: "Cheerleader",
+		shortDesc: "If the ally has Cheerleader: if Plusle, Attack, Special Attack and Speed x1.5; if Minun, Defense, Special Defense and Speed x1.5.",
+		desc: "If the ally has Cheerleader: if Plusle, its Atk, Sp. Atk and Speed are x1.5; if Minun, its Def, Sp. Def and Speed are x1.5.",
+	},
+	withering: {
+		name: "Withering",
+		shortDesc: "This Pokemon's contact moves lower the target's Speed by 1 stage.",
+	},
+	cacophony: {
+		name: "Cacophony",
+		desc: "This Pokemon's sound-based moves have their power multiplied by 1.3. This Pokemon takes halved damage from sound-based moves.",
+		shortDesc: "This Pokemon receives 1/2 damage from sound moves. Its own have 1.3x power.",
+	},
+	happygolucky: {
+		name: "Happy-Go-Lucky",
+		desc: "This Pokemon's Attack, Defense, Special Attack, and Special Defense get a boost depending on the happiness of the Pokemon (maximum 20%).",
+		shortDesc: "Boosts Attack, Defense, Special Attack, and Special Defense by 1% per 12.5 happiness (max 20%).",
+	},
+	mightywall: {
+		name: "Mighty Wall",
+		desc: "This Pokemon's Defense and Special Defense are multiplied by 1.5, and by 0.5 when it switches out.",
+		shortDesc: "This Pokemon's Defense and Sp. Defense are multiplied by 1.5, and by 0.5 when it switches out.",
+	},
+	karma: {
+		name: "Karma",
+		shortDesc: "This Pokemon's delayed moves have their power multiplied by 1.5.",
+	},
+	souldevourer: {
+		name: "Soul Devourer",
+		shortDesc: "If any target is trapped, this target loses 1/8 of its max HP, and this Pokemon heals for the same amount.",
+	},
+	soothingfragrance: {
+		name: "Soothing Fragrance",
+		shortDesc: "Opposing Pokemon have their Attack reduced by 25%, and allies have their Defense raised by 25%.",
+	},
+	tempestuous: {
+		name: "Tempestuous",
+		desc: "When replacing a fainted party member, this Pokémon charges power to double the power of its Electric-type move on its next Electric-type move.",
+		shortDesc: "Gains the effect of Charge when replacing a fainted ally.",
+	},
+	ambush: {
+		name: "Ambush",
+		shortDesc: "This Pokémon's attacks are critical hits if the user moves before the target.",
+	},
+	steelbreaker: {
+		name: "Steelbreaker",
+		shortDesc: "This Pokémon's attacks are critical hits if the target is a Steel-type Pokémon.",
+	},
+	bitterhatred: {
+		name: "Bitter Hatred",
+		shortDesc: "This Pokemon's Sp. Atk is raised by 1 when hit.",
+	},
+	pollution: {
+		name: "Pollution",
+		desc: "Poison Point. This Pokemon's offensive stat is doubled while using a Poison-type attack. If a Pokemon uses a Water-type attack against this Pokemon, that Pokemon's offensive stat is halved when calculating the damage to this Pokemon.",
+		shortDesc: "Poison Point. This Pokemon's Poison power is 2x; Water power against it is halved.",
+	},
+	freegullet: {
+		name: "Free Gullet",
+		desc: "Fails if this Pokemon isn't Cramorant-Mega. Surf/Dive, Gulping, Stockpile; Thunderbolt/Wild Charge, Gorging, Charge; Ventilation/Brave Bird, base form, enemy loses 1/8 HP. Surf/Dive have 1.5x power.",
+		shortDesc: "Cramorant-Mega: Surf/Dive, Gulping, Stockpile; Thunderbolt/Wild Charge, Gorging, Charge; Ventilation/Brave Bird, base form, enemy loses 1/8 HP. Surf/Dive have 1.5x power.",
+	},
+	blindeye: {
+		name: "Blind Eye",
+		shortDesc: "This Pokemon's type affinities are reversed.",
+	},
+	counterstrike: {
+		name: "Counter Strike",
+		shortDesc: "This Pokemon reflects 50% of the damage it receives.",
+	},
+	climaticchange: {
+		name: "Climatic Change",
+		desc: "Upon using a Water, Fire, or Ice move, this Pokemon changes to that type and sets the corresponding weather.",
+		shortDesc: "Changes type and weather when using Water/Fire/Ice moves.",
+	},
+	hyperglycemia: {
+		name: "Hyperglycemia",
+		desc: "At the end of each turn, every Pokemon gets 1 Stockpile. Reduces the damage taken by X*10%, with X the amount of Stockpiles this Pokemon has, and boosts this Pokemon's damage by Y*10%, Y being the amount of Stockpiles the target has.",
+		shortDesc: "Every Pokemon Stockpiles at the end of each turn. Reduces damage by X*10%, and boosts damage by Y*10%.",
+	},
+	graviton: {
+		name: "Graviton",
+		shortDesc: "On switch-in, this Pokémon summons Gravity.",
+	},
+	solarenergy: {
+		name: "Solar Energy",
+		desc: "If Sunny Day is active, this Pokémon can skip the charging and recharging turn of its moves. This effect is prevented if this Pokemon is holding a Utility Umbrella.",
+		shortDesc: "If Sunny Day is active, this Pokémon skips the charging and recharging turn of its moves.",
+	},
+	punchprodigee: {
+		name: "Punch Prodigee",
+		shortDesc: "Gives a +1 priority to punch moves.",
+	},
+	heavyweapon: {
+		name: "Heavy Weapon",
+		shortDesc: "Gives an ally Octillery +1 priority on all its moves.",
+	},
+	lightpower: {
+		name: "Light Power",
+		shortDesc: "This Pokemon's Special Attack is doubled.",
+	},
+	thermalswitch: {
+		name: "Thermal Switch",
+		desc: "Immunity to Burn. This Pokemon has two forms, Passive and Active. It starts the fight with Passive form. If Sun is set or it's hit by a Fire-type move, it switches to Active form until it switches out. If Snow is set, it's frozen, or it's hit by an Ice-type move, it switches to Passive form.",
+		shortDesc: "Burn immunity. Sun or Fire-type move: Active form; Snow, frozen or Ice-type move: Passive form.",
+	},
+	ironbody: {
+		name: "Iron Body",
+		shortDesc: "On switch in, adds Steel type to the user. Has no effect if the user is Steel-type.",
+	},
+	psychicprowess: {
+		name: "Psychic Prowess",
+		desc: "This Pokemon's offensive stat is doubled while using a Psychic-type attack. If a Pokemon uses a Psychic-type attack against this Pokemon, that Pokemon's offensive stat is halved when calculating the damage to this Pokemon. This Pokemon cannot be paralyzed. Gaining this Ability while paralyzed cures it. Using Amnesia also boosts this Pokémon's Special Attack by 2 stages.",
+		shortDesc: "This Pokemon's Psychic power is 2x; it can't be paralyzed; Psychic power against it is halved; Amnesia also boosts SpA by 2.",
+	},
+	hugeclamp: {
+		name: "Huge Clamp",
+		shortDesc: "This Pokemon's Atk is boosted by 1.5, but its Speed is halved.",
+	},
+   	healingecho: {
+	    name: "Healing Echo",
+		desc: "This Pokemon is immune to Ground-type attacks and the effects of Spikes, Toxic Spikes, Sticky Web, and the Arena Trap Ability. The effects of Gravity, Ingrain, Smack Down, Thousand Arrows, and Iron Ball nullify the immunity. Thousand Arrows can hit this Pokemon as if it did not have this Ability. When this Pokémon uses a Sound move, it is healed by 12.5% of its HP.",
+		shortDesc: "This Pokemon is immune to Ground; heals 12.5% HP if the Pokémon uses a Sound move.",
+	},
+	mightyhorn: {
+		name: "Mighty Horn",
+		desc: "This Pokemon's drill-based attacks have their power and accuracy multiplied by 1.3.",
+		shortDesc: "This Pokemon's drill-based attacks have 1.3x power and 1.3x accuracy.",
+	},
+	petrify: {
+		name: "Petrify",
+		shortDesc: "On switch-in, the opposing targets' type is changed to Rock.",
+	},
+	muddyland: {
+		name: "Muddy Land",
+		shortDesc: "On switch-in, summons Water Sport and Mud Sport.",
+	},
+	aerodynamism: {
+		name: "Aerodynamism",
+		desc: "This Pokemon's Wind moves do not miss. Wind move and Sandstorm immunity.",
+	},
+	sandsoftime: {
+		name: "Sands of Time",
+		desc: "Under Sandstorm, user skips Charge and Recharge turns. Immunity to Sandstorm damage. (note: this also ignores sand's damage reduction to moves like Solar Beam)",
+		shortDesc: "Under sandstorm, skips charge and recharge. Sand Immunity.",
+	},
+	megazord: {
+		name: "Megazord",
+		shortDesc: "Combination of the Intrepid Sword and Dauntless Shield Abilities.",
+
+		start: "  [POKEMON] has two Abilities!",
+	},
+	masquerade: {
+		name: "Masquerade",
+		desc: "This Pokémon inherits the Ability of the last unfainted Pokemon in its party until it takes direct damage from another Pokémon's attack. Permanent abilities cannot be copied.",
+		shortDesc: "Inherits the Ability of the last party member. Wears off when attacked.",
+	},
+	meiji: {
+		name: "Meiji",
+		shortDesc: "On switch-in, uses Future Sight.",
 	},
 };

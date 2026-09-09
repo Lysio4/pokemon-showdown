@@ -6336,10 +6336,6 @@ export const FormatsData: import('../sim/dex-species').SpeciesFormatsDataTable =
 		isNonstandard: "Custom",
 		tier: "Illegal",
 	},
-	whiscashmega: {
-		isNonstandard: "Custom",
-		tier: "Illegal",
-	},
 	castformmega: {
 		isNonstandard: "Custom",
 		tier: "Illegal",
@@ -6793,6 +6789,10 @@ export const FormatsData: import('../sim/dex-species').SpeciesFormatsDataTable =
 		tier: "Illegal",
 	},
 	sautropius: {
+		isNonstandard: "Custom",
+		tier: "Illegal",
+	},
+	whiscatzu: {
 		isNonstandard: "Custom",
 		tier: "Illegal",
 	},

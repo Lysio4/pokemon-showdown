@@ -1837,12 +1837,7 @@ export const FormatsData: { [k: string]: SpeciesFormatsData; } = {
 		tier: "LC",
 	},
 	whiscash: {
-		tier: "NU",
-		doublesTier: "DUU",
-	},
-	whiscashmega: {
-		tier: "NU",
-		doublesTier: "DUU",
+		tier: "NFE",
 	},
 	corphish: {
 		tier: "LC",
@@ -5532,6 +5527,10 @@ export const FormatsData: { [k: string]: SpeciesFormatsData; } = {
 	},
 	sautropius: {
 		tier: "NU",
+		doublesTier: "DUU",
+	},
+	whiscatzu: {
+		tier: "RU",
 		doublesTier: "DUU",
 	},
 	meltic: {

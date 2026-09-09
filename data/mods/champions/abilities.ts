@@ -1,4 +1,17 @@
 export const Abilities: import('../../../sim/dex-abilities').ModdedAbilityDataTable = {
+	// tmp aura guard
+	auraguard: {
+		inherit: true,
+		isNonstandard: null,
+	},
+	runaway: {
+		inherit: true,
+		onTrapPokemonPriority: -10,
+		onTrapPokemon(pokemon) {
+			pokemon.trapped = pokemon.maybeTrapped = false;
+		},
+		shortDesc: "This Pokemon can't be trapped by any mean.",
+	},
 	angershell: {
 		inherit: true,
 		onDamage(damage, target, source, effect) {

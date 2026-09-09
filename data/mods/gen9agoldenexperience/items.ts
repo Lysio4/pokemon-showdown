@@ -117,10 +117,6 @@ export const Items: {[itemid: string]: ModdedItemData} = {
 		inherit: true,
 		isNonstandard: null,
 	},
-	whiscashite: {
-		inherit: true,
-		isNonstandard: null,
-	},
 	castformite: {
 		inherit: true,
 		isNonstandard: null,

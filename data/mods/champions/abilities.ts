@@ -73,11 +73,23 @@ export const Abilities: import('../../../sim/dex-abilities').ModdedAbilityDataTa
 			}
 		},
 	},
+	runaway: {
+		inherit: true,
+		onTrapPokemonPriority: -10,
+		onTrapPokemon(pokemon) {
+			pokemon.trapped = false;
+		},
+		onMaybeTrapPokemonPriority: -10,
+		onMaybeTrapPokemon(pokemon) {
+			pokemon.maybeTrapped = false;
+		},
+	},
 	spicyspray: {
 		inherit: true,
 		isNonstandard: null,
 	},
 	unseenfist: {
+		inherit: true,
 		onModifyMove: undefined, // no inherit
 		onHitProtect(source, target, move) {
 			if (move.flags['contact']) {
@@ -85,6 +97,5 @@ export const Abilities: import('../../../sim/dex-abilities').ModdedAbilityDataTa
 				return false;
 			}
 		},
-		inherit: true,
 	},
 };

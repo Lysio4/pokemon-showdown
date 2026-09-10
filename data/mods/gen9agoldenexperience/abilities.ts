@@ -1,6 +1,11 @@
 import { consoleips } from "../../../config/config-example";
 
 export const Abilities: { [abilityid: string]: ModdedAbilityData; } = {
+	// tmp description
+	runaway: {
+		inherit: true,
+		shortDesc: "This Pokemon can't be trapped by any mean.",
+	},
 	// new abilities
 	poisonousradula: {
 		inherit: true,

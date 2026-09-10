@@ -804,7 +804,7 @@ export const Abilities: { [abilityid: string]: ModdedAbilityData; } = {
 				this.heal(pokemon.baseMaxhp / 8);
 			}
 		},
-		shortDesc: "At the end of each turn, if this Pokemon has no item, it gets Honey. If it has honey, it heals 1/8 of its HP.",
+		shortDesc: "At the end of each turn, if this Pokemon has no item, it gets Honey. If its held item is Honey, it heals 1/8 of its HP.",
 	},
 	galewings: {
 		inherit: true,

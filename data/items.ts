@@ -8808,7 +8808,7 @@ export const Items: import('../sim/dex-items').ItemDataTable = {
 		},
 		num: -45,
 		gen: 9,
-    	shortDesc: "Pokemon with the ability Honey Gather or Sweet Veil heal 12.5% when holding this item. Heals status.",
+		shortDesc: "Holder cures itself if it has a non-volatile status or is confused. Single use.",
 		onAfterSetStatus(status, pokemon) {
 			pokemon.eatItem();
 		},

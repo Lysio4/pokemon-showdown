@@ -1937,7 +1937,7 @@ export const FormatsData: { [k: string]: SpeciesFormatsData; } = {
 		doublesTier: "DUU",
 	},
 	absolmegaz: {
-		tier: "Uber",
+		tier: "OU",
 		doublesTier: "DUU",
 	},
 	snorunt: {

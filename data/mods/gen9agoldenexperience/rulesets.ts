@@ -46,7 +46,7 @@ export const Rulesets: {[k: string]: ModdedFormatData} = {
 		effectType: 'Rule',
 		name: 'Data Mod',
 		desc: 'Information about modded Pokémon - and custom elements they have access to - is displayed to both players at the start of battle.',
-		
+
 		/* onBegin() {
 			// messages can be displayed here, such as if we ever have a banner
 		}, */
@@ -62,11 +62,11 @@ export const Rulesets: {[k: string]: ModdedFormatData} = {
 					let lowestSpecies = (species.baseSpecies ? this.dex.species.get(species.baseSpecies) : species);
 					if (lowestSpecies.otherFormes) for (const form of lowestSpecies.otherFormes) {
 						formList.push(form); // even if the form isn't modded, we'll want to check later if their Abilities are modded
-						
+
 						let umbremonsForm = this.dex.species.get(form);
 						const vanillaForm = Dex.species.get(form);
 						let listForm = false;
-						
+
 						for (const type in [0, 1]) if (umbremonsForm.types[type] !== vanillaForm.types[type]) listForm = true;
 						for (const ability of [0, 1, 'H', 'S']) {
 							if (umbremonsForm.abilities[ability] !== vanillaForm.abilities[ability]) listForm = true;
@@ -78,15 +78,15 @@ export const Rulesets: {[k: string]: ModdedFormatData} = {
 							if (umbremonsForm.abilities['H']) abilities += ` // ${umbremonsForm.abilities['H']}`;
 							if (umbremonsForm.abilities['S']) abilities += ` // <i>(${umbremonsForm.abilities['S']})</i>`;
 							const baseStats = umbremonsForm.baseStats;
-							
+
 							formDisplay += `<br><div class="message"><ul class="utilichart"><li class="result"><span class="col iconcol"><span class "picon"><img src="https://www.smogon.com/forums/media/minisprites/${(umbremonsForm.spriteid).replace(`mega`,`-mega`).replace(`--mega`,`-mega`)}.png" alt="${umbremonsForm.name}"></span></span><span class="col pokemonnamecol" style="white-space: nowrap">` + umbremonsForm.name + `</span> <span class="col typecol"><img src="http://play.pokemonshowdown.com/sprites/types/${umbremonsForm.types[0]}.png" alt="${umbremonsForm.types[0]}" height="14" width="32">`;
 							if (umbremonsForm.types[1]) formDisplay += `<img src="http://play.pokemonshowdown.com/sprites/types/${umbremonsForm.types[1]}.png" alt="${umbremonsForm.types[1]}" height="14" width="32">`;
 							formDisplay += `</span></li><br><li class="result"><span style="float: left ; min-height: 26px"><span class="col abilitycol">` + abilities + `</span><span class="col abilitycol"></span></span></li><br><li class="result"><span style="float: left ; min-height: 26px"><span class="col statcol"><em>HP</em><br>` + baseStats.hp + `</span> <span class="col statcol"><em>Atk</em><br>` + baseStats.atk + `</span> <span class="col statcol"><em>Def</em><br>` + baseStats.def + `</span> <span class="col statcol"><em>SpA</em><br>` + baseStats.spa + `</span> <span class="col statcol"><em>SpD</em><br>` + baseStats.spd + `</span> <span class="col statcol"><em>Spe</em><br>` + baseStats.spe + `</span> </span></li><li style="clear: both"></li></ul></div>`;
 						}
 					}
-					
+
 					if (species) {
-						
+
 						let abilities = species.abilities[0];
 						if (species.abilities[1]) abilities += ` / ${species.abilities[1]}`;
 						if (species.abilities['H']) abilities += ` // ${species.abilities['H']}`;
@@ -95,7 +95,7 @@ export const Rulesets: {[k: string]: ModdedFormatData} = {
 						hideBox += `<br><div class="message"><ul class="utilichart"><li class="result"><span class="col iconcol"><span class="picon"><img src="https://www.smogon.com/forums/media/minisprites/${species.spriteid}.png" alt="${species.name}"></span></span><span class="col pokemonnamecol" style="white-space: nowrap">` + species.name + `</span> <span class="col typecol"><img src="http://play.pokemonshowdown.com/sprites/types/${species.types[0]}.png" alt="${species.types[0]}" height="14" width="32">`;
 						if (species.types[1]) hideBox += `<img src="http://play.pokemonshowdown.com/sprites/types/${species.types[1]}.png" alt="${species.types[1]}" height="14" width="32">`;
 						hideBox += `</span></li><br><li class="result"><span style="float: left ; min-height: 26px"><span class="col abilitycol">` + abilities + `</span><span class="col abilitycol"></span></span></li><br><li class="result"><span style="float: left ; min-height: 26px"><span class="col statcol"><em>HP</em><br>` + baseStats.hp + `</span> <span class="col statcol"><em>Atk</em><br>` + baseStats.atk + `</span> <span class="col statcol"><em>Def</em><br>` + baseStats.def + `</span> <span class="col statcol"><em>SpA</em><br>` + baseStats.spa + `</span> <span class="col statcol"><em>SpD</em><br>` + baseStats.spd + `</span> <span class="col statcol"><em>Spe</em><br>` + baseStats.spe + `</span> </span></li><li style="clear: both"></li></ul></div>`;
-						
+
 						// Movepool changes
 						// This section is slightly reworded from the Evo 2 version, since the modded Pokémon in Umbremons aren't Fakemon
 						if (species.movepoolAdditions) {
@@ -118,7 +118,7 @@ export const Rulesets: {[k: string]: ModdedFormatData} = {
 						if (species.movepoolDeletions) {
 							if (species.movepoolAdditions) hideBox += `,<br>but it <i>lost</i> the move`;
 							else hideBox += `<br><div class="hint">${species.name} <i>lost</i> the move`;
-							
+
 							if (species.movepoolDeletions.length > 1) hideBox += `s`;
 							let order = 0;
 							for (const moveid of species.movepoolDeletions) {
@@ -135,12 +135,12 @@ export const Rulesets: {[k: string]: ModdedFormatData} = {
 							}
 						}
 						if (species.movepoolAdditions || species.movepoolDeletions) hideBox += `.</div>`;
-						
+
 						if (formDisplay.length) hideBox += `<br><div class="infobox" open><details class ="details"><summary>Forms related to ${species.name}</summary>${formDisplay}<br></details></div>`;
-						
+
 						let customGuide = `<br><div class="infobox" open><details class ="details"><summary>Custom elements related to ${species.name}</summary>`;
 						let displayCustoms = false;
-						
+
 						let abilitiesCovered = [];
 						// custom Abilities
 						for (const num of [0, 1, 'H', 'S']) if (species.abilities[num]) {
@@ -166,9 +166,9 @@ export const Rulesets: {[k: string]: ModdedFormatData} = {
 							}
 							abilitiesCovered.push(ability);
 						}
-						
+
 						// custom moves
-						if (this.dex.data.Learnsets[this.toID(pokemon.species)].learnset) {
+						/*if (this.dex.data.Learnsets[this.toID(pokemon.species)].learnset) {
 							// We have to check the whole learnset because some moves the Pokémon already learned might be modded!
 							for (const moveid in this.dex.data.Learnsets[this.toID(pokemon.species)].learnset) {
 								let move = this.dex.moves.get(moveid);
@@ -183,16 +183,16 @@ export const Rulesets: {[k: string]: ModdedFormatData} = {
 									else if (move.shortDesc) customGuide += `<br><font color="#686868">${move.shortDesc}</font>`;
 								}
 							}
-						}
+							}*/
 
 						// other info
 						if (species.description) customGuide += `<br><div class="hint">${species.description}</div>`;
-						
+
 						customGuide += `<br></details></div>`;
 						if (displayCustoms) hideBox += customGuide;
 					}
 				}
-				
+
 				hideBox += 	`</details></div>`;
 				this.add(`${hideBox}`);
 			}

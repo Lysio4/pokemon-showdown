@@ -1248,4 +1248,61 @@ export const Moves: { [k: string]: ModdedMoveData; } = {
 			if (pokemon.hasAbility('psychicprowess')) move.boosts = {spa: 2, spd: 2};
 		},
 	},
+	// Noble Crest
+	gmaxsteelsurge: {
+		inherit: true,
+		condition: {
+			onSideStart(side) {
+				this.add('-sidestart', side, 'move: G-Max Steelsurge');
+			},
+			onSwitchIn(pokemon) {
+				const nobleMons = ["Arcanine-Hisui", "Electrode-Hisui", "Lilligant-Hisui", "Avalugg-Hisui", "Kleavor"];
+				if (pokemon.hasItem('heavydutyboots') || (nobleMons.includes(pokemon.name) && pokemon.hasItem('noblecrest'))) return;
+				// Ice Face and Disguise correctly get typed damage from Stealth Rock
+				// because Stealth Rock bypasses Substitute.
+				// They don't get typed damage from Steelsurge because Steelsurge doesn't,
+				// so we're going to test the damage of a Steel-type Stealth Rock instead.
+				const steelHazard = this.dex.getActiveMove('Stealth Rock');
+				steelHazard.type = 'Steel';
+				const typeMod = this.clampIntRange(pokemon.runEffectiveness(steelHazard), -6, 6);
+				this.damage(pokemon.maxhp * (2 ** typeMod) / 8);
+			},
+		},
+	},
+	spikes: {
+		inherit: true,
+		condition: {
+			// this is a side condition
+			onSideStart(side) {
+				this.add('-sidestart', side, 'Spikes');
+				this.effectState.layers = 1;
+			},
+			onSideRestart(side) {
+				if (this.effectState.layers >= 3) return false;
+				this.add('-sidestart', side, 'Spikes');
+				this.effectState.layers++;
+			},
+			onSwitchIn(pokemon) {
+				const nobleMons = ["Arcanine-Hisui", "Electrode-Hisui", "Lilligant-Hisui", "Avalugg-Hisui", "Kleavor"];
+				if (!pokemon.isGrounded() || pokemon.hasItem('heavydutyboots') || (nobleMons.includes(pokemon.name) && pokemon.hasItem('noblecrest')) return;
+				const damageAmounts = [0, 3, 4, 6]; // 1/8, 1/6, 1/4
+				this.damage(damageAmounts[this.effectState.layers] * pokemon.maxhp / 24);
+			},
+		},
+	},
+	stealthrock: {
+		inherit: true,
+		condition: {
+			// this is a side condition
+			onSideStart(side) {
+				this.add('-sidestart', side, 'move: Stealth Rock');
+			},
+			onSwitchIn(pokemon) {
+				const nobleMons = ["Arcanine-Hisui", "Electrode-Hisui", "Lilligant-Hisui", "Avalugg-Hisui", "Kleavor"];
+				if (pokemon.hasItem('heavydutyboots') || (nobleMons.includes(pokemon.name) && pokemon.hasItem('noblecrest'))) return;
+				const typeMod = this.clampIntRange(pokemon.runEffectiveness(this.dex.getActiveMove('stealthrock')), -6, 6);
+				this.damage(pokemon.maxhp * (2 ** typeMod) / 8);
+			},
+		},
+	},
 };

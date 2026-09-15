@@ -1257,7 +1257,7 @@ export const Moves: { [k: string]: ModdedMoveData; } = {
 			},
 			onSwitchIn(pokemon) {
 				const nobleMons = ["Arcanine-Hisui", "Electrode-Hisui", "Lilligant-Hisui", "Avalugg-Hisui", "Kleavor"];
-				if (pokemon.hasItem('heavydutyboots') || (nobleMons.includes(pokemon.name) && pokemon.hasItem('noblecrest'))) return;
+				if (pokemon.hasItem('heavydutyboots') || (nobleMons.includes(pokemon.baseSpecies.name) && pokemon.hasItem('noblecrest'))) return;
 				// Ice Face and Disguise correctly get typed damage from Stealth Rock
 				// because Stealth Rock bypasses Substitute.
 				// They don't get typed damage from Steelsurge because Steelsurge doesn't,
@@ -1284,7 +1284,7 @@ export const Moves: { [k: string]: ModdedMoveData; } = {
 			},
 			onSwitchIn(pokemon) {
 				const nobleMons = ["Arcanine-Hisui", "Electrode-Hisui", "Lilligant-Hisui", "Avalugg-Hisui", "Kleavor"];
-				if (!pokemon.isGrounded() || pokemon.hasItem('heavydutyboots') || (nobleMons.includes(pokemon.name) && pokemon.hasItem('noblecrest'))) return;
+				if (!pokemon.isGrounded() || pokemon.hasItem('heavydutyboots') || (nobleMons.includes(pokemon.baseSpecies.name) && pokemon.hasItem('noblecrest'))) return;
 				const damageAmounts = [0, 3, 4, 6]; // 1/8, 1/6, 1/4
 				this.damage(damageAmounts[this.effectState.layers] * pokemon.maxhp / 24);
 			},
@@ -1299,7 +1299,7 @@ export const Moves: { [k: string]: ModdedMoveData; } = {
 			},
 			onSwitchIn(pokemon) {
 				const nobleMons = ["Arcanine-Hisui", "Electrode-Hisui", "Lilligant-Hisui", "Avalugg-Hisui", "Kleavor"];
-				if (pokemon.hasItem('heavydutyboots') || (nobleMons.includes(pokemon.name) && pokemon.hasItem('noblecrest'))) return;
+				if (pokemon.hasItem('heavydutyboots') || (nobleMons.includes(pokemon.baseSpecies.name) && pokemon.hasItem('noblecrest'))) return;
 				const typeMod = this.clampIntRange(pokemon.runEffectiveness(this.dex.getActiveMove('stealthrock')), -6, 6);
 				this.damage(pokemon.maxhp * (2 ** typeMod) / 8);
 			},

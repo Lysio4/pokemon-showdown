@@ -21808,7 +21808,7 @@ export const Pokedex: import('../sim/dex-species').SpeciesDataTable = {
 		baseSpecies: "Mimikyu",
 		forme: "Mega",
 		types: ["Ghost", "Fairy"],
-		baseStats: { hp: 55, atk: 120, def: 110, spa: 50, spd: 135, spe: 106 },
+		baseStats: { hp: 55, atk: 130, def: 80, spa: 70, spd: 125, spe: 116 },
 		abilities: { 0: "Fluffy" },
 		heightm: 1.5,
 		weightkg: 0.7,

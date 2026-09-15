@@ -278,6 +278,10 @@ export const Items: {[itemid: string]: ModdedItemData} = {
 		inherit: true,
 		isNonstandard: null,
 	},
+	noblecrest: {
+		inherit: true,
+		isNonstandard: null,
+	},
 	// modified items
 	deepseascale: {
 		inherit: true,

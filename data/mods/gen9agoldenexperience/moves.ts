@@ -1284,7 +1284,7 @@ export const Moves: { [k: string]: ModdedMoveData; } = {
 			},
 			onSwitchIn(pokemon) {
 				const nobleMons = ["Arcanine-Hisui", "Electrode-Hisui", "Lilligant-Hisui", "Avalugg-Hisui", "Kleavor"];
-				if (!pokemon.isGrounded() || pokemon.hasItem('heavydutyboots') || (nobleMons.includes(pokemon.name) && pokemon.hasItem('noblecrest')) return;
+				if (!pokemon.isGrounded() || pokemon.hasItem('heavydutyboots') || (nobleMons.includes(pokemon.name) && pokemon.hasItem('noblecrest'))) return;
 				const damageAmounts = [0, 3, 4, 6]; // 1/8, 1/6, 1/4
 				this.damage(damageAmounts[this.effectState.layers] * pokemon.maxhp / 24);
 			},

@@ -21820,7 +21820,7 @@ export const Pokedex: import('../sim/dex-species').SpeciesDataTable = {
 		num: 778,
 		name: "Mimikyu-Busted-Mega",
 		baseSpecies: "Mimikyu",
-		forme: "Mega-Busted",
+		forme: "Busted-Mega",
 		types: ["Ghost", "Bug"],
 		baseStats: { hp: 55, atk: 130, def: 100, spa: 50, spd: 115, spe: 126 },
 		abilities: { 0: "Blind Rage" },

@@ -8603,7 +8603,7 @@ export const Items: import('../sim/dex-items').ItemDataTable = {
 		spritenum: 496,
 		megaStone: {
 			"Mimikyu": "Mimikyu-Mega",
-			"Mimikyu-Busted": "Mimikyu-Busted-Mega",
+			"Mimikyu-Busted": "Mimikyu-Busted-Mega"
 		},
 		itemUser: ["Mimikyu"],
 		onTakeItem(item, source) {
@@ -8614,6 +8614,19 @@ export const Items: import('../sim/dex-items').ItemDataTable = {
 		desc: "If held by a Mimikyu, this item allows it to Mega Evolve in battle.",
 		isNonstandard: "Custom",
 	},
+	/*mimikyunitey: {
+		name: "Mimikyunite Y",
+		spritenum: 496,
+		megaStone: { "Mimikyu": "Mimikyu-Mega-Y" },
+		itemUser: ["Mimikyu"],
+		onTakeItem(item, source) {
+			return !item.megaStone?.[source.baseSpecies.baseSpecies];
+		},
+		num: -32,
+		gen: 9,
+		desc: "If held by a Mimikyu, this item allows it to Mega Evolve in battle.",
+		isNonstandard: "Custom",
+	},*/
 	dhelmite: {
 		name: "Dhelmite",
 		spritenum: 578,
@@ -8622,7 +8635,7 @@ export const Items: import('../sim/dex-items').ItemDataTable = {
 		onTakeItem(item, source) {
 			return !item.megaStone?.[source.baseSpecies.baseSpecies];
 		},
-		num: -32,
+		num: -33,
 		gen: 9,
 		desc: "If held by a Dhelmise, this item allows it to Mega Evolve in battle.",
 		isNonstandard: "Custom",
@@ -8635,7 +8648,7 @@ export const Items: import('../sim/dex-items').ItemDataTable = {
 		onTakeItem(item, source) {
 			return !item.megaStone?.[source.baseSpecies.baseSpecies];
 		},
-		num: -33,
+		num: -34,
 		gen: 9,
 		desc: "If held by a Sandaconda, this item allows it to Mega Evolve in battle.",
 		isNonstandard: "Custom",
@@ -8651,7 +8664,7 @@ export const Items: import('../sim/dex-items').ItemDataTable = {
 		onTakeItem(item, source) {
 			return !item.megaStone?.[source.baseSpecies.baseSpecies];
 		},
-		num: -34,
+		num: -35,
 		gen: 9,
 		desc: "If held by a Cramorant, this item allows it to Mega Evolve in battle.",
 		isNonstandard: "Custom",
@@ -8667,7 +8680,7 @@ export const Items: import('../sim/dex-items').ItemDataTable = {
 		onTakeItem(item, source) {
 			return !item.megaStone?.[source.baseSpecies.baseSpecies];
 		},
-		num: -35,
+		num: -36,
 		gen: 9,
 		desc: "If held by a Toxtricity, this item allows it to Mega Evolve in battle.",
 		isNonstandard: "Custom",
@@ -8680,7 +8693,7 @@ export const Items: import('../sim/dex-items').ItemDataTable = {
 		onTakeItem(item, source) {
 			return !item.megaStone?.[source.baseSpecies.baseSpecies];
 		},
-		num: -36,
+		num: -37,
 		gen: 9,
 		desc: "If held by a Centiskorch, this item allows it to Mega Evolve in battle.",
 		isNonstandard: "Custom",
@@ -8693,7 +8706,7 @@ export const Items: import('../sim/dex-items').ItemDataTable = {
 		onTakeItem(item, source) {
 			return !item.megaStone?.[source.baseSpecies.baseSpecies];
 		},
-		num: -37,
+		num: -38,
 		gen: 9,
 		desc: "If held by a Centiskorch, this item allows it to Mega Evolve in battle.",
 		isNonstandard: "Custom",
@@ -8706,7 +8719,7 @@ export const Items: import('../sim/dex-items').ItemDataTable = {
 		onTakeItem(item, source) {
 			return !item.megaStone?.[source.baseSpecies.baseSpecies];
 		},
-		num: -38,
+		num: -39,
 		gen: 9,
 		desc: "If held by a Kleavor, this item allows it to Mega Evolve in battle.",
 		isNonstandard: "Custom",
@@ -8719,7 +8732,7 @@ export const Items: import('../sim/dex-items').ItemDataTable = {
 		onTakeItem(item, source) {
 			return !item.megaStone?.[source.baseSpecies.baseSpecies];
 		},
-		num: -39,
+		num: -40,
 		gen: 9,
 		desc: "If held by a Rabsca, this item allows it to Mega Evolve in battle.",
 		isNonstandard: "Custom",
@@ -8732,7 +8745,7 @@ export const Items: import('../sim/dex-items').ItemDataTable = {
 		onTakeItem(item, source) {
 			return !item.megaStone?.[source.baseSpecies.baseSpecies];
 		},
-		num: -40,
+		num: -41,
 		gen: 9,
 		desc: "If held by a Tinkaton, this item allows it to Mega Evolve in battle.",
 		isNonstandard: "Custom",
@@ -8745,7 +8758,7 @@ export const Items: import('../sim/dex-items').ItemDataTable = {
 		onTakeItem(item, source) {
 			return !item.megaStone?.[source.baseSpecies.baseSpecies];
 		},
-		num: -41,
+		num: -42,
 		gen: 9,
 		desc: "If held by a Baskiron, this item allows it to Mega Evolve in battle.",
 		isNonstandard: "Custom",
@@ -8758,7 +8771,7 @@ export const Items: import('../sim/dex-items').ItemDataTable = {
 		onTakeItem(item, source) {
 			return !item.megaStone?.[source.baseSpecies.baseSpecies];
 		},
-		num: -42,
+		num: -43,
 		gen: 9,
 		desc: "If held by a Terreptile, this item allows it to Mega Evolve in battle.",
 		isNonstandard: "Custom",
@@ -8771,7 +8784,7 @@ export const Items: import('../sim/dex-items').ItemDataTable = {
 		onTakeItem(item, source) {
 			return !item.megaStone?.[source.baseSpecies.baseSpecies];
 		},
-		num: -43,
+		num: -44,
 		gen: 9,
 		desc: "If held by a Infarmatem, this item allows it to Mega Evolve in battle.",
 		isNonstandard: "Custom",
@@ -8797,7 +8810,7 @@ export const Items: import('../sim/dex-items').ItemDataTable = {
 		boosts: {
 			def: 1,
 		},
-		num: -44,
+		num: -45,
 		gen: 9,
 		isNonstandard: "Custom",
 	},
@@ -8806,7 +8819,7 @@ export const Items: import('../sim/dex-items').ItemDataTable = {
 		fling: {
 			basePower: 30,
 		},
-		num: -45,
+		num: -46,
 		gen: 9,
 		shortDesc: "Holder cures itself if it has a non-volatile status or is confused. Single use.",
 		onAfterSetStatus(status, pokemon) {
@@ -8835,7 +8848,7 @@ export const Items: import('../sim/dex-items').ItemDataTable = {
 			return this.chainModify(1.3);
 		},
 		desc: "Holder's move have 1.3x BP, but it can't use the same move twice in a row.",
-		num: -46,
+		num: -47,
 		gen: 9,
 		isNonstandard: "Custom",
 	},
@@ -8843,7 +8856,7 @@ export const Items: import('../sim/dex-items').ItemDataTable = {
 		name: "Identity Card",
 		shortDesc: "Holder's typing cannot be changed by any move.",
 		// Edited in scripts.ts
-		num: -47,
+		num: -48,
 		gen: 9,
 		isNonstandard: "Custom",
 	},
@@ -8864,13 +8877,13 @@ export const Items: import('../sim/dex-items').ItemDataTable = {
 		},
 		desc: "If holder is Tropius or Sautropius, raises holder's Attack by 1 stage, and on switch-in, this Pokemon avoids all hazards. Single use.",
 		itemUser: ["Tropius", "Sautropius"],
-		num: -48,
+		num: -49,
 		gen: 9,
 		isNonstandard: "Custom",
 	},
 	anticamulet: {
 		name: "Antic Amulet",
-		num: -49,
+		num: -50,
 		gen: 9,
 		shortDesc: "Sigilyph: all abilities active at once, cannot have its abilities changed.",
 		onStart(target) {
@@ -8908,7 +8921,7 @@ export const Items: import('../sim/dex-items').ItemDataTable = {
 		zMove: "Giga Bouncy Splash",
 		zMoveFrom: "Bounce",
 		itemUser: ["Gyarados"],
-		num: -50,
+		num: -51,
 		gen: 9,
 		shortDesc: "If held by a Gyarados with Bounce, it can use Giga Bouncy Splash.",
 		isNonstandard: "Custom",
@@ -8920,7 +8933,7 @@ export const Items: import('../sim/dex-items').ItemDataTable = {
 		zMove: "Sonic Speed Strike",
 		zMoveFrom: "Dragon Claw",
 		itemUser: ["Garchomp"],
-		num: -51,
+		num: -52,
 		gen: 9,
 		shortDesc: "If held by a Garchomp with Dragon Claw, it can use Sonic Speed Strike.",
 		isNonstandard: "Custom",
@@ -8932,7 +8945,7 @@ export const Items: import('../sim/dex-items').ItemDataTable = {
 		zMove: "Lovely Sweet Sugar Rush",
 		zMoveFrom: "Fickle Beam",
 		itemUser: ["Hydrapple"],
-		num: -52,
+		num: -53,
 		gen: 9,
 		shortDesc: "If held by a Hydrapple with Fickle Beam, it can use Lovely Sweet Sugar Rush.",
 		isNonstandard: "Custom",
@@ -8945,9 +8958,40 @@ export const Items: import('../sim/dex-items').ItemDataTable = {
 		onTakeItem(item, source) {
 			return !item.megaStone?.[source.baseSpecies.baseSpecies];
 		},
-		num: -53,
+		num: -54,
 		gen: 9,
 		desc: "If held by a Rayquaza, this item allows it to Mega Evolve in battle.",
+		isNonstandard: "Custom",
+	},
+	noblecrest: {
+		name: "Noble Crest",
+		spritenum: 480,
+		fling: {
+			basePower: 100,
+		},
+		onBasePowerPriority: 15,
+		onBasePower(basePower, user, target, move) {
+			if (user.baseSpecies.name.startsWith('Arcanine-Hisui') || user.baseSpecies.name.startsWith('Electrode-Hisui') || user.baseSpecies.name.startsWith('Lilligant-Hisui') || user.baseSpecies.name.startsWith('Avalugg-Hisui') || user.baseSpecies.name.startsWith('Kleavor')) {
+				return this.chainModify([4915, 4096]);
+			}
+		},
+		onDamage(damage, target, source, effect) {
+			if (effect.effectType !== 'Move' && (source.baseSpecies.name.startsWith('Arcanine-Hisui') || source.baseSpecies.name.startsWith('Electrode-Hisui') || source.baseSpecies.name.startsWith('Lilligant-Hisui') || source.baseSpecies.name.startsWith('Avalugg-Hisui') || source.baseSpecies.name.startsWith('Kleavor'))) {
+				if (effect.effectType === 'Item') this.add('-activate', source, 'item: ' + effect.name);
+				return false;
+			}
+		},
+		onSourceAccuracy(accuracy, target, source, move) {
+			if (typeof accuracy !== 'number') return;
+			if (source.baseSpecies.name.startsWith('Arcanine-Hisui') || source.baseSpecies.name.startsWith('Electrode-Hisui') || source.baseSpecies.name.startsWith('Lilligant-Hisui') || source.baseSpecies.name.startsWith('Avalugg-Hisui') || source.baseSpecies.name.startsWith('Kleavor')) {
+				return true;
+			}
+			return accuracy;
+		},
+		itemUser: ["Arcanine-Hisui", "Electrode-Hisui", "Lilligant-Hisui", "Avalugg-Hisui", "Kleavor"],
+		num: -55,
+		gen: 9,
+		desc: "If held by a Noble Pokemon, the holder is immune to all indirect damages, can't miss its moves, and has x1.2 base power on all its moves.",
 		isNonstandard: "Custom",
 	},
 	// Touhou

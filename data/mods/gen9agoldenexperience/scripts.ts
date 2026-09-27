@@ -889,7 +889,8 @@ export const Scripts: ModdedBattleScriptsData = {
     this.modData('Learnsets', 'hitmonlee').learnset.tripleaxel = ['9L1'];
     this.modData('Learnsets', 'koffing').learnset.recover = ['9L1'];
     this.modData('Learnsets', 'weezing').learnset.recover = ['9L1'];
-    this.modData('Learnsets', 'weezinggalar').learnset.recover = ['9L1'];
+	 this.modData('Learnsets', 'weezinggalar').learnset.recover = ['9L1'];
+	 delete this.modData('Learnsets', 'kangaskhan').learnset.seismictoss;
     this.modData('Learnsets', 'pinsir').learnset.megahorn = ['9L1'];
     this.modData('Learnsets', 'taurospaldeacombat').learnset.slackoff = ['9L1'];
     this.modData('Learnsets', 'taurospaldeaaqua').learnset.slackoff = ['9L1'];
@@ -1424,7 +1425,7 @@ export const Scripts: ModdedBattleScriptsData = {
     this.modData('Learnsets', 'tapulele').learnset.alluringvoice = ['9M'];
     this.modData('Learnsets', 'tapubulu').learnset.grassyglide = ['9M'];
     this.modData('Learnsets', 'tapubulu').learnset.junglehealing = ['9L1'];
-    this.modData('Learnsets', 'tapubulu').learnset.playrough = ['9M'];
+    this.modData('Learnsets', 'tapubulu').learnset.spiritbreak = ['9M'];
     this.modData('Learnsets', 'tapubulu').learnset.trailblaze = ['9M'];
     this.modData('Learnsets', 'tapufini').learnset.alluringvoice = ['9M'];
     this.modData('Learnsets', 'tapufini').learnset.mistyexplosion = ['9M'];
@@ -1449,8 +1450,6 @@ export const Scripts: ModdedBattleScriptsData = {
     this.modData('Learnsets', 'zeraora').learnset.skyuppercut = ['9L1'];
 
     // Gen 8:
-    this.modData('Learnsets', 'meltan').learnset.chargebeam = ['9L1']; // ZA addition
-    this.modData('Learnsets', 'melmetal').learnset.chargebeam = ['9L1']; // ZA addition
     this.modData('Learnsets', 'greedent').learnset.recycle = ['9L1'];
     this.modData('Learnsets', 'greedent').learnset.slackoff = ['9L1'];
     this.modData('Learnsets', 'orbeetle').learnset.focusblast = ['9M'];

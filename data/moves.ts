@@ -21702,7 +21702,7 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 		basePower: 0,
 		category: "Status",
 		name: "High Water",
-		pp: 10,
+		pp: 5,
 		priority: 0,
 		flags: { snatch: 1, heal: 1 },
 		heal: [1, 2],
@@ -21872,7 +21872,7 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 		basePower: 0,
 		category: "Status",
 		name: "Muscle Care",
-		pp: 10,
+		pp: 5,
 		priority: 0,
 		flags: { snatch: 1, heal: 1 },
 		heal: [1, 2],
@@ -22151,9 +22151,12 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 					return false;
 				}
 			},
-			onModifyAccuracy(accuracy, target, source, move) {
-				if (typeof accuracy !== 'number') return;
-				if (move.type ==='Fighting') return true;
+			onBasePowerPriority: 6,
+			onBasePower(basePower, attacker, defender, move) {
+				if (move.type === 'Fighting' && attacker.isGrounded() && !attacker.isSemiInvulnerable()) {
+					this.debug('chakra terrain boost');
+					return this.chainModify([5325, 4096]);
+				}
 			},
 			onFieldStart(field, source, effect) {
 				if (effect?.effectType === 'Ability') {

@@ -7882,8 +7882,8 @@ export const MovesText: { [id: IDEntry]: MoveText } = {
 	},
 	chakraterrain: {
 		name: "Chakra Terrain",
-		desc: "For 5 turns, the terrain becomes Chakra Terrain. During the effect, Fighting-type attacks made by grounded Pokemon cannot miss and grounded Pokemon cannot be paralyzed; Pokemon already paralyzed are not healed of their status. Camouflage transforms the user into an Fighting type, Nature Power becomes Aura Sphere, and Secret Power has a 30% chance to lower target's Defense by 1 stage. Fails if the current terrain is Chakra Terrain.",
-		shortDesc: "5 turns. Grounded: Fighting moves have full accuracy, can't be paralyzed.",
+		desc: "For 5 turns, the terrain becomes Chakra Terrain. During the effect, the power of Fighting-type attacks made by grounded Pokemon is multiplied by 1.3 and grounded Pokemon cannot be paralyzed; Pokemon already paralyzed are not healed of their status. Camouflage transforms the user into an Fighting type, Nature Power becomes Aura Sphere, and Secret Power has a 30% chance to lower target's Defense by 1 stage. Fails if the current terrain is Chakra Terrain.",
+		shortDesc: "5 turns. Grounded: +Fighting power, can't be paralyzed.",
 	},
 	lightningassault: {
 		name: "Lightning Assault",

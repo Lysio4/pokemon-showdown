@@ -207,8 +207,8 @@ export const Moves: { [k: string]: ModdedMoveData; } = {
 	chakraterrain: {
 		inherit: true,
 		isNonstandard: null,
-		desc: "For 5 turns, the terrain becomes Chakra Terrain. During the effect, Fighting-type attacks made by grounded Pokemon cannot miss and grounded Pokemon cannot be paralyzed; Pokemon already paralyzed are not healed of their status. Camouflage transforms the user into an Fighting type, Nature Power becomes Aura Sphere, and Secret Power has a 30% chance to lower target's Defense by 1 stage. Fails if the current terrain is Chakra Terrain.",
-		shortDesc: "5 turns. Grounded: Fighting moves have full accuracy, can't be paralyzed.",
+		desc: "For 5 turns, the terrain becomes Chakra Terrain. During the effect, the power of Fighting-type attacks made by grounded Pokemon is multiplied by 1.3 and grounded Pokemon cannot be paralyzed; Pokemon already paralyzed are not healed of their status. Camouflage transforms the user into an Fighting type, Nature Power becomes Aura Sphere, and Secret Power has a 30% chance to lower target's Defense by 1 stage. Fails if the current terrain is Chakra Terrain.",
+		shortDesc: "5 turns. Grounded: +Fighting power, can't be paralyzed.",
 	},
 	naturepower: {
 		inherit: true,
@@ -383,82 +383,117 @@ export const Moves: { [k: string]: ModdedMoveData; } = {
 	swarming: {
 		inherit: true,
 		isNonstandard: null,
+		shortDesc: "Lowers the user's and the target's Sp. Def by 1.",
+		desc: "Lowers the user's and the target's Special Defense by 1 stage.",
 	},
 	hardwareheat: {
 		inherit: true,
 		isNonstandard: null,
+		desc: "Lowers the user's Speed by 1 stage.",
+		shortDesc: "Lowers the user's Speed by 1.",
 	},
 	shattering: {
 		inherit: true,
 		isNonstandard: null,
+		desc: "The held item is lost and it activates for the target if applicable. If there is no target or the target avoids this move by protecting itself, the user's held item is still lost. The user can regain a thrown item with Recycle or the Harvest Ability. Fails if the user has no held item, if the held item cannot be thrown, if the user is under the effect of Embargo or Magic Room, or if the user has the Klutz Ability.",
+		shortDesc: "Flings the user's item at the target.",
 	},
 	roguewave: {
 		inherit: true,
 		isNonstandard: null,
+		desc: "If the target lost HP, the user takes recoil damage equal to 33% the HP lost by the target, rounded half up, but not less than 1 HP.",
+		shortDesc: "Has 33% recoil. Usually goes first.",
 	},
 	natureswrath: {
 		inherit: true,
 		isNonstandard: null,
+		shortDesc: "Either Grass or Ground-type, whichever is more effective.",
 	},
 	magicmissile: {
 		inherit: true,
 		isNonstandard: null,
+		desc: "Hits two to five times. This move does not check accuracy, ignores abilities, can't be redirected, and bypasses Screens.",
+		shortDesc: "Hits 2-5 times in one turn. Does not check accuracy, ignores abilities, can't be redirected, and bypasses Screens.",
 	},
 	fatbombing: {
 		inherit: true,
 		isNonstandard: null,
+		desc: "If Gravity is currently active, this move has its priority increased by 1.",
+		shortDesc: "During Gravity: +1 priority.",
 	},
 	poisonivy: {
 		inherit: true,
 		isNonstandard: null,
+		desc: "Hits twice. If the first hit breaks the target's substitute, it will take damage for the second hit. This move does not check accuracy.",
+		shortDesc: "Hits twice. This move does not check accuracy.",
 	},
 	clusterexplosion: {
 		inherit: true,
 		isNonstandard: null,
+		shortDesc: "Hits adjacent Pokemon. Sets Stealth Rock. User faints.",
 	},
 	befuddlepowder: {
 		inherit: true,
 		isNonstandard: null,
+		shortDesc: "If this move would deal not very effective damage on a target, deals double damage.",
 	},
 	piercingdart: {
 		inherit: true,
 		isNonstandard: null,
+		desc: "This move's type effectiveness against Steel is changed to be neutral no matter what this move's type is.",
+		shortDesc: "Neutral on Steel.",
 	},
 	hindenburg: {
 		inherit: true,
 		isNonstandard: null,
+		desc: "Power doubles if the user has no held item, or if it is burned.",
+		shortDesc: "Power doubles if the user has no held item or is burned.",
 	},
 	ventilation: {
 		inherit: true,
 		isNonstandard: null,
+		shortDesc: "Lowers the target's Speed by 1. If user has 3 stacks of Stockpile, doubles in power.",
 	},
 	emushdance: {
 		inherit: true,
 		isNonstandard: null,
+		desc: "This attack charges on the first turn and executes on the second. If the user is holding a Power Herb or the terrain is Chakra or Grassy, the move completes in one turn.",
+		shortDesc: "Charges turn 1, hits turn 2. Chakra Terrain or Grassy Terrain: no charge.",
 	},
 	rainofarrows: {
 		inherit: true,
 		isNonstandard: null,
+		shortDesc: "Hits once in this turn, then hits again in the next turn. Ignores protection.",
 	},
 	bigbang: {
 		inherit: true,
 		isNonstandard: null,
+		desc: "This move and its effects ignore the Abilities of other Pokemon, as well as resistances and immunities.",
+		shortDesc: "Ignores the Abilities of other Pokemon, resistances and immunities.",
 	},
 	mantisslash: {
 		inherit: true,
 		isNonstandard: null,
+		desc: "Lowers the user's Speed by 2 stages.",
+		shortDesc: "Lowers the user's Speed by 2.",
 	},
 	intrepidcrash: {
 		inherit: true,
 		isNonstandard: null,
+		desc: "If the target lost HP, the user takes recoil damage equal to 33% the HP lost by the target, rounded half up, but not less than 1 HP.",
+		shortDesc: "Has 33% recoil. Usually goes first.",
 	},
 	timeparadox: {
 		inherit: true,
 		isNonstandard: null,
+		desc: "Prevents the target from switching for four or five turns (seven turns if the user is holding Grip Claw). Causes damage to the target equal to 1/8 of its maximum HP (1/6 if the user is holding Binding Band), rounded down, at the end of each turn during effect. The target can still switch out if it is holding Shed Shell or uses Baton Pass, Flip Turn, Parting Shot, Shed Tail, Teleport, U-turn, or Volt Switch. The effect ends if either the user or the target leaves the field, or if the target uses Mortal Spin, Rapid Spin, or Substitute successfully. This effect is not stackable or reset by using this or another binding move.",
+		shortDesc: "Traps and damages the target for 4-5 turns.",
 	},
 	jumpscare: {
 		inherit: true,
 		isNonstandard: null,
+		desc: "Has a 100% chance to make the target flinch. Fails unless it is the user's first turn on the field.",
+		shortDesc: "Hits first. First turn out only. 100% flinch chance.",
 	},
 	futuredoom: {
 		inherit: true,
@@ -862,46 +897,13 @@ export const Moves: { [k: string]: ModdedMoveData; } = {
 	},
 	milkdrink: {
 		inherit: true,
-		modded: true, // this makes its description display in Data Mod
-		pp: 10,
 		shortDesc: "Restores 1/2 of the max HP of the user or an ally."
-	},
-	recover: {
-		inherit: true,
-		modded: true, // this makes its description display in Data Mod
-		pp: 10,
-	},
-	roost: {
-		inherit: true,
-		modded: true, // this makes its description display in Data Mod
-		pp: 10,
-	},
-	shoreup: {
-		inherit: true,
-		modded: true, // this makes its description display in Data Mod
-		pp: 10,
-	},
-	slackoff: {
-		inherit: true,
-		modded: true, // this makes its description display in Data Mod
-		pp: 10,
-	},
-	strengthsap: {
-		inherit: true,
-		modded: true, // this makes its description display in Data Mod
-		pp: 10,
 	},
 	softboiled: {
 		inherit: true,
 		modded: true, // this makes its description display in Data Mod
-		pp: 10,
 		target: "adjacentAllyOrSelf",
 		shortDesc: "Restores 1/2 of the max HP of the user or an ally."
-	},
-	wish: {
-		inherit: true,
-		modded: true, // this makes its description display in Data Mod
-		pp: 10,
 	},
 	axekick: {
 		inherit: true,

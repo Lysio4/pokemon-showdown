@@ -3288,7 +3288,7 @@ export const FormatsData: { [k: string]: SpeciesFormatsData; } = {
 		doublesTier: "DUU",
 	},
 	delphoxmega: {
-		tier: "Uber",
+		tier: "OU",
 		doublesTier: "DOU",
 	},
 	froakie: {
@@ -3908,7 +3908,7 @@ export const FormatsData: { [k: string]: SpeciesFormatsData; } = {
 	},
 	golisopodmega: {
 		tier: "OU",
-		doublesTier: "DUU",
+		doublesTier: "DOU",
 	},
 	sandygast: {
 		tier: "LC",

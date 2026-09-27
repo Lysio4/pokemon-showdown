@@ -104317,6 +104317,7 @@ export const Learnsets: import('../sim/dex-species').LearnsetDataTable = {
 			psybeam: ["9M"],
 			psychic: ["9M"],
 			psyshock: ["9M"],
+			recover: ["9L5"],
 			reflect: ["9M"],
 			rest: ["9M"],
 			return: ["9M"],

@@ -166,24 +166,6 @@ export const Pokedex: {[k: string]: ModdedSpeciesData;} = {
 		baseStats: { hp: 85, atk: 93, def: 70, spa: 93, spd: 115, spe: 42 },
 		abilities: { 0: "Insomnia", 1: "Endless Dream", H: "Inner Focus" },
 	},
-	voltorb: {
-		inherit: true,
-		baseStats: { hp: 40, atk: 55, def: 50, spa: 30, spd: 55, spe: 100 },
-		abilities: { 0: "Soundproof", 1: "Explosive", H: "Aftermath" },
-	},
-	voltorbhisui: {
-		inherit: true,
-		abilities: { 0: "Soundproof", 1: "Explosive", H: "Aftermath" },
-	},
-	electrode: {
-		inherit: true,
-		baseStats: { hp: 60, atk: 80, def: 70, spa: 50, spd: 80, spe: 150 },
-		abilities: { 0: "Soundproof", 1: "Explosive", H: "Aftermath" },
-	},
-	electrodehisui: {
-		inherit: true,
-		abilities: { 0: "Soundproof", 1: "Explosive", H: "Aftermath" },
-	},
 	exeggutor: {
 		inherit: true,
 		baseStats: { hp: 95, atk: 85, def: 85, spa: 125, spd: 75, spe: 65 },

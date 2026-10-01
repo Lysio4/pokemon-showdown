@@ -4162,7 +4162,7 @@ export const FormatsData: { [k: string]: SpeciesFormatsData; } = {
 	},
 	marshadow: {
 		tier: "Uber",
-		doublesTier: "DOU",
+		doublesTier: "DUber",
 	},
 	poipole: {
 		tier: "NFE",

@@ -606,30 +606,43 @@ export const Moves: { [k: string]: ModdedMoveData; } = {
 	casinoroyal: {
 		inherit: true,
 		isNonstandard: null,
+		desc: "Lowers the user's Special Attack by 2 stages.",
+		shortDesc: "Lowers the user's Sp. Atk by 2. Hits foe(s).",
 	},
 	mistystep: {
 		inherit: true,
 		isNonstandard: null,
+		desc: "For 5 turns, the terrain becomes Misty Terrain. The user switches out even if it is trapped and is replaced immediately by a selected party member. The user does not switch out if there are no unfainted party members.",
+		shortDesc: "Starts Misty Terrain. User switches out.",
 	},
 	prevailingwind: {
 		inherit: true,
 		isNonstandard: null,
+		desc: "Has a 100% chance to make the target flinch. Fails if the target did not select a Wind-based physical or special attack for use this turn, or if the target moves before the user.",
+		shortDesc: "100% flinch. Fails unless target using Wind-based attack.",
 	},
 	crazedpunch: {
 		inherit: true,
 		isNonstandard: null,
+		shortDesc: "This attack is a critical hit if the target is poisoned.",
 	},
 	dirtyheadshot: {
 		inherit: true,
 		isNonstandard: null,
+		desc: "If the target is poisoned, its Speed will be lowered by 1.",
+		shortDesc: "Lowers target's Speed by 1 if poisoned.",
 	},
 	cruelfeather: {
 		inherit: true,
 		isNonstandard: null,
+		desc: "Hits twice. If the first hit breaks the target's substitute, it will take damage for the second hit. If the target is poisoned, heals the user's status condition.",
+		shortDesc: "Hits 2 times in one turn. Heals user's status if target is poisoned.",
 	},
 	midnightsnack: {
 		inherit: true,
 		isNonstandard: null,
+		desc: "The target's stat stages greater than 0 are stolen from it and applied to the user before dealing damage.",
+		shortDesc: "Steals target's boosts before dealing damage.",
 	},
 	// modified moves
 	toxicthread: {

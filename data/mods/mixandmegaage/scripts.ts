@@ -4,6 +4,8 @@ export const Scripts: ModdedBattleScriptsData = {
 	init() {
 		this.modData('Abilities', 'dragonize').isNonstandard = null;
 		this.modData('Abilities', 'megasol').isNonstandard = null;
+		this.modData('Abilities', 'piercingdrill').isNonstandard = null;
+		this.modData('Abilities', 'spicyspray').isNonstandard = null;
 		for (const i in this.data.Items) {
 			const item = this.data.Items[i];
 			if (!item.megaStone && !item.onDrive && !(item.onPlate && !item.zMove) && !item.onMemory) continue;
@@ -397,22 +399,27 @@ export const Scripts: ModdedBattleScriptsData = {
 		runMegaEvo(pokemon) {
 			if (pokemon.species.isMega) return false;
 
-			const species: Species = (this as any).getMixedSpecies(pokemon.m.originalSpecies, pokemon.canMegaEvo, pokemon);
+			const isUltraBurst = !pokemon.canMegaEvo;
 
-			/* Do we have a proper sprite for it? Code for when megas actually exist
-			if (this.dex.species.get(pokemon.canMegaEvo!).baseSpecies === pokemon.m.originalSpecies) {
+			const species: Species = (this as any).getMixedSpecies(pokemon.m.originalSpecies,
+				pokemon.canMegaEvo || pokemon.canUltraBurst, pokemon);
+
+			/// Do we have a proper sprite for it? Code for when megas actually exist
+			if (this.battle.ruleTable.has('natdexmod') &&
+				(isUltraBurst || this.dex.species.get(pokemon.canMegaEvo as any).baseSpecies === pokemon.m.originalSpecies)) {
 				pokemon.formeChange(species, pokemon.getItem(), true);
-			} else { */
-			const oSpecies = this.dex.species.get(pokemon.m.originalSpecies);
-			const oMegaSpecies = this.dex.species.get((species as any).originalSpecies);
-			pokemon.formeChange(species, pokemon.getItem(), true);
-			this.battle.add('-start', pokemon, oMegaSpecies.requiredItem, '[silent]');
-			if (oSpecies.types.join('/') !== pokemon.species.types.join('/')) {
-				this.battle.add('-start', pokemon, 'typechange', pokemon.species.types.join('/'), '[silent]');
+			} else {
+				const oSpecies = this.dex.species.get(pokemon.m.originalSpecies);
+				const oMegaSpecies = this.dex.species.get((species as any).originalSpecies);
+				pokemon.formeChange(species, pokemon.getItem(), true);
+				this.battle.add('-start', pokemon, oMegaSpecies.requiredItem, '[silent]');
+				if (oSpecies.types.join('/') !== pokemon.species.types.join('/')) {
+					this.battle.add('-start', pokemon, 'typechange', pokemon.species.types.join('/'), '[silent]', '[from] format: Mix and Mega');
+				}
 			}
-			// }
 
 			pokemon.canMegaEvo = false;
+			if (this.battle.ruleTable.has('natdexmod') && isUltraBurst) pokemon.canUltraBurst = null;
 			return true;
 		},
 		terastallize(pokemon) {
@@ -459,9 +466,11 @@ export const Scripts: ModdedBattleScriptsData = {
 		getMixedSpecies(originalForme, formeChange, pokemon) {
 			const originalSpecies = this.dex.species.get(originalForme);
 			const formeChangeSpecies = this.dex.species.get(formeChange);
-			if (originalSpecies.baseSpecies === formeChangeSpecies.baseSpecies &&
-				!formeChangeSpecies.isMega && !formeChangeSpecies.isPrimal) {
-				return formeChangeSpecies;
+			if (originalSpecies.baseSpecies === formeChangeSpecies.baseSpecies) {
+				if (this.battle.ruleTable.has('natdexmod') ||
+					(!formeChangeSpecies.isMega && !formeChangeSpecies.isPrimal)) {
+					return formeChangeSpecies;
+				}
 			}
 			const deltas = (this as any).getFormeChangeDeltas(formeChangeSpecies, pokemon);
 			const species = (this as any).mutateOriginalSpecies(originalSpecies, deltas);

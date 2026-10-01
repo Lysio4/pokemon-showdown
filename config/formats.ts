@@ -519,7 +519,7 @@ export const Formats: import('../sim/dex-formats').FormatList = [
 		name: "[Gen 9] A Golden Experience Godly Gift",
 		desc: `Each Pok&eacute;mon receives one base stat from a God (Restricted Pok&eacute;mon) depending on its position in the team. If there is no restricted Pok&eacute;mon, it uses the Pok&eacute;mon in the first slot.`,
 		mod: 'gen9agoldenexperience',
-		ruleset: ['Standard', 'Terastal Clause', '!Sleep Clause Mod', 'Sleep Moves Clause', 'Godly Gift Mod', 'Mega Rayquaza Clause', 'Non-Signature Z-Move Clause', 'NatDex Mod', 'Data Mod'],
+		ruleset: ['Standard', 'Terastal Clause', 'Sleep Moves Clause', 'Godly Gift Mod', 'Mega Rayquaza Clause', 'Non-Signature Z-Move Clause', 'NatDex Mod', 'Data Mod'],
 		banlist: [
 			'Blissey', 'Calyrex-Shadow', 'Chansey', 'Deoxys-Attack', 'Groudon-Primal', 'Koraidon', 'Miraidon', 'Shuckle', 'Xerneas',
 			'Arena Trap', 'Huge Power', 'Light Power', 'Moody', 'Pure Power', 'Swift Swim', 'King\'s Rock', 'Quick Claw', 'Assist',

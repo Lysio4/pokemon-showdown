@@ -276,7 +276,7 @@ export const Formats: import('../sim/dex-formats').FormatList = [
 		name: "[Gen 9] A Golden Experience OU",
 		desc: `A fun metagame where we try to make everything viable, or at least usable. We also have new Fakemons!`,
 		mod: 'gen9agoldenexperience',
-		ruleset: ['Standard', 'Terastal Clause', 'Non-Signature Z-Move Clause', 'Inaccurate Sleep Moves Clause', 'NatDex Mod', 'Data Mod'],
+		ruleset: ['Standard', '!Sleep Moves Clause', 'Terastal Clause', 'Non-Signature Z-Move Clause', 'Inaccurate Sleep Moves Clause', 'NatDex Mod', 'Data Mod'],
 		banlist: [
 			'Uber', 'AG', 'Moody', 'Power Construct', 'King\'s Rock',
 			'Baton Pass', 'Last Respects', 'Quick Claw', 'Razor Fang', 'Shadow Tag', 'Shed Tail',
@@ -287,7 +287,7 @@ export const Formats: import('../sim/dex-formats').FormatList = [
 		name: "[Gen 9] A Golden Experience Uber",
 		desc: `A fun metagame where we try to make everything viable, or at least usable. We also have new Fakemons!`,
 		mod: 'gen9agoldenexperience',
-		ruleset: ['Standard', 'Terastal Clause', 'Non-Signature Z-Move Clause', 'Inaccurate Sleep Moves Clause', 'NatDex Mod', 'Data Mod'],
+		ruleset: ['Standard', '!Sleep Moves Clause', 'Terastal Clause', 'Non-Signature Z-Move Clause', 'Inaccurate Sleep Moves Clause', 'NatDex Mod', 'Data Mod'],
 		banlist: [
 			'AG', 'King\'s Rock',
 			'Baton Pass', 'Light Clay', 'Quick Claw', 'Razor Fang',
@@ -298,7 +298,7 @@ export const Formats: import('../sim/dex-formats').FormatList = [
 		name: "[Gen 9] A Golden Experience UU",
 		desc: `A fun metagame where we try to make everything viable, or at least usable. We also have new Fakemons!`,
 		mod: 'gen9agoldenexperience',
-		ruleset: ['Standard', 'Terastal Clause', 'Non-Signature Z-Move Clause', 'Inaccurate Sleep Moves Clause', 'NatDex Mod', 'Data Mod'],
+		ruleset: ['Standard', '!Sleep Moves Clause', 'Terastal Clause', 'Non-Signature Z-Move Clause', 'Inaccurate Sleep Moves Clause', 'NatDex Mod', 'Data Mod'],
 		banlist: [
 			'Uber', 'AG', 'OU', 'UUBL', 'Moody', 'Power Construct', 'King\'s Rock',
 			'Baton Pass', 'Last Respects', 'Quick Claw', 'Razor Fang', 'Shadow Tag', 'Shed Tail',
@@ -310,7 +310,7 @@ export const Formats: import('../sim/dex-formats').FormatList = [
 		name: "[Gen 9] A Golden Experience RU",
 		desc: `A fun metagame where we try to make everything viable, or at least usable. We also have new Fakemons!`,
 		mod: 'gen9agoldenexperience',
-		ruleset: ['Standard', 'Terastal Clause', 'Non-Signature Z-Move Clause', 'Inaccurate Sleep Moves Clause', 'NatDex Mod', 'Data Mod'],
+		ruleset: ['Standard', '!Sleep Moves Clause', 'Terastal Clause', 'Non-Signature Z-Move Clause', 'Inaccurate Sleep Moves Clause', 'NatDex Mod', 'Data Mod'],
 		banlist: [
 			'Uber', 'AG', 'OU', 'UUBL', 'UU', 'RUBL', 'Moody', 'Power Construct', 'King\'s Rock',
 			'Baton Pass', 'Last Respects', 'Quick Claw', 'Razor Fang', 'Shadow Tag', 'Shed Tail',
@@ -322,7 +322,7 @@ export const Formats: import('../sim/dex-formats').FormatList = [
 		name: "[Gen 9] A Golden Experience NU",
 		desc: `A fun metagame where we try to make everything viable, or at least usable. We also have new Fakemons!`,
 		mod: 'gen9agoldenexperience',
-		ruleset: ['Standard', 'Terastal Clause', 'Non-Signature Z-Move Clause', 'Inaccurate Sleep Moves Clause', 'NatDex Mod', 'Data Mod'],
+		ruleset: ['Standard', '!Sleep Moves Clause', 'Terastal Clause', 'Non-Signature Z-Move Clause', 'Inaccurate Sleep Moves Clause', 'NatDex Mod', 'Data Mod'],
 		banlist: [
 			'Uber', 'AG', 'OU', 'UUBL', 'UU', 'RUBL', 'RU', 'NUBL', 'Moody', 'Power Construct', 'King\'s Rock',
 			'Baton Pass', 'Last Respects', 'Quick Claw', 'Razor Fang', 'Shadow Tag', 'Shed Tail',
@@ -372,7 +372,7 @@ export const Formats: import('../sim/dex-formats').FormatList = [
 		desc: `Pok&eacute;mon have access to almost any ability.`,
 		mod: 'gen9agoldenexperience',
 		// searchShow: false,
-		ruleset: ['Standard', '!Obtainable Abilities', 'Ability Clause = 2', 'Sleep Moves Clause', 'Terastal Clause', 'Non-Signature Z-Move Clause', 'NatDex Mod', 'Data Mod'],
+		ruleset: ['Standard', '!Obtainable Abilities', 'Ability Clause = 2', 'Terastal Clause', 'Non-Signature Z-Move Clause', 'NatDex Mod', 'Data Mod'],
 		banlist: [
 			'Annihilape', 'Arceus', 'Archeops', 'Baxcalibur', 'Blacephalon', 'Blastoise-Mega', 'Blaziken-Mega', 'Bisharp', 'Calyrex-Ice', 'Calyrex-Shadow', 'Ceruledge', 'Darkrai', 'Deoxys-Attack',
 			'Deoxys-Normal', 'Dialga', 'Dialga-Origin', 'Dracovish', 'Dragapult', 'Enamorus-Incarnate', 'Eternatus', 'Flutter Mane', 'Gengar-Mega', 'Giratina', 'Giratina-Origin', 'Gouging Fire', 'Groudon', 'Ho-Oh',
@@ -393,7 +393,7 @@ export const Formats: import('../sim/dex-formats').FormatList = [
 		// searchShow: false,
 		ruleset: [
 			'Standard AG', 'NatDex Mod', '!Obtainable',
-			'Forme Clause', 'Sleep Moves Clause', 'Ability Clause = 2', 'OHKO Clause', 'Evasion Moves Clause', 'Dynamax Clause', 'CFZ Clause', 'Terastal Clause', 'Non-Signature Z-Move Clause', 'Data Mod'
+			'Forme Clause', 'Ability Clause = 2', 'OHKO Clause', 'Evasion Moves Clause', 'Dynamax Clause', 'CFZ Clause', 'Terastal Clause', 'Non-Signature Z-Move Clause', 'Data Mod'
 		],
 		banlist: [
 			'Cramorant-Gorging', 'Calyrex-Shadow', 'Eternatus-Eternamax', 'Greninja-Ash', 'Rayquaza-Mega', 'Shedinja', 'Terapagos-Stellar',
@@ -496,7 +496,7 @@ export const Formats: import('../sim/dex-formats').FormatList = [
 		name: "[Gen 9] A Golden Experience STABmons",
 		desc: `Pok&eacute;mon can use any move of their typing, in addition to the moves they can normally learn.`,
 		mod: 'gen9agoldenexperience',
-		ruleset: ['Standard', 'STABmons Move Legality', 'Sleep Moves Clause', 'Terastal Clause', 'Non-Signature Z-Move Clause', 'NatDex Mod', 'Data Mod'],
+		ruleset: ['Standard', 'STABmons Move Legality', 'Terastal Clause', 'Non-Signature Z-Move Clause', 'NatDex Mod', 'Data Mod'],
 		banlist: [
 			'Araquanid', 'Arceus', 'Azumarill', 'Baxcalibur', 'Blaziken-Mega', 'Basculegion', 'Basculegion-F', 'Calyrex-Ice', 'Calyrex-Shadow', 'Chi-Yu', 'Chien-Pao',
 			'Cloyster', 'Darkrai', 'Darmanitan-Galar', 'Deoxys-Attack', 'Deoxys-Normal', 'Dialga', 'Dialga-Origin', 'Dracovish', 'Dragapult', 'Dragonite', 'Enamorus-Incarnate',
@@ -519,7 +519,7 @@ export const Formats: import('../sim/dex-formats').FormatList = [
 		name: "[Gen 9] A Golden Experience Godly Gift",
 		desc: `Each Pok&eacute;mon receives one base stat from a God (Restricted Pok&eacute;mon) depending on its position in the team. If there is no restricted Pok&eacute;mon, it uses the Pok&eacute;mon in the first slot.`,
 		mod: 'gen9agoldenexperience',
-		ruleset: ['Standard', 'Terastal Clause', 'Sleep Moves Clause', 'Godly Gift Mod', 'Mega Rayquaza Clause', 'Non-Signature Z-Move Clause', 'NatDex Mod', 'Data Mod'],
+		ruleset: ['Standard', 'Terastal Clause', 'Godly Gift Mod', 'Mega Rayquaza Clause', 'Non-Signature Z-Move Clause', 'NatDex Mod', 'Data Mod'],
 		banlist: [
 			'Blissey', 'Calyrex-Shadow', 'Chansey', 'Deoxys-Attack', 'Groudon-Primal', 'Koraidon', 'Miraidon', 'Shuckle', 'Xerneas',
 			'Arena Trap', 'Huge Power', 'Light Power', 'Moody', 'Pure Power', 'Swift Swim', 'King\'s Rock', 'Quick Claw', 'Assist',

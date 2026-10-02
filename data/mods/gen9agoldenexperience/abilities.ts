@@ -1,6 +1,15 @@
 import { consoleips } from "../../../config/config-example";
 
 export const Abilities: { [abilityid: string]: ModdedAbilityData; } = {
+	// champions abilities text
+	runaway: {
+		inherit: true,
+		shortDesc: "This Pokemon cannot be prevented from choosing to switch out by any effect.",
+	},
+	unseenfist: {
+		inherit: true,
+		shortDesc: "This Pokemon's contact moves ignore a target's protection and deal 1/4 the usual damage.",
+	},
 	// new abilities
 	poisonousradula: {
 		inherit: true,

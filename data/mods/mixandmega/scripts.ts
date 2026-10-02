@@ -1,7 +1,10 @@
 export const Scripts: ModdedBattleScriptsData = {
 	gen: 9,
 	init() {
+		this.modData('Abilities', 'auraguard').isNonstandard = null;
 		this.modData('Abilities', 'dragonize').isNonstandard = null;
+		this.modData('Abilities', 'eelevate').isNonstandard = null;
+		this.modData('Abilities', 'firemane').isNonstandard = null;
 		this.modData('Abilities', 'megasol').isNonstandard = null;
 		this.modData('Abilities', 'piercingdrill').isNonstandard = null;
 		this.modData('Abilities', 'spicyspray').isNonstandard = null;

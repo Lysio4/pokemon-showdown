@@ -1542,6 +1542,9 @@ export const AbilitiesText: { [id: IDEntry]: AbilityText } = {
 	runaway: {
 		name: "Run Away",
 		shortDesc: "No competitive use.",
+		champions: {
+			shortDesc: "This Pokemon cannot be prevented from choosing to switch out by any effect.",
+		},
 	},
 	sandforce: {
 		name: "Sand Force",
@@ -2481,7 +2484,7 @@ export const AbilitiesText: { [id: IDEntry]: AbilityText } = {
 
 		damage: "  {POKEMON} was hurt!",
 	},
-	explosive: { 
+	explosive: {
 		name: "Explosive",
 		desc: "This Pokémon does not suffer the drawbacks of recoil moves and sacrificial moves. All self-KO moves used by this Pokémon have x0.8 base power.",
 		shortDesc: "Ignores recoil and self-KO effects of its moves. Self-KO moves have x0.8 BP.",

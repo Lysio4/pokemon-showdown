@@ -1,15 +1,13 @@
 export const Abilities: import('../../../sim/dex-abilities').ModdedAbilityDataTable = {
-	// tmp aura guard
-	auraguard: {
-		inherit: true,
-		isNonstandard: null,
-	},
-
 	angershell: {
 		inherit: true,
 		onDamage(damage, target, source, effect) {
 			this.effectState.checkedAngerShell = !(effect.effectType === "Move" && !effect.multihit);
 		},
+	},
+	auraguard: {
+		inherit: true,
+		isNonstandard: null,
 	},
 	berserk: {
 		inherit: true,

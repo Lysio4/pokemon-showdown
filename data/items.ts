@@ -8980,8 +8980,8 @@ export const Items: import('../sim/dex-items').ItemDataTable = {
 			}
 		},
 		onDamage(damage, target, source, effect) {
-			if (effect.effectType !== 'Move' && (source?.baseSpecies.name.startsWith('Arcanine-Hisui') || source?.baseSpecies.name.startsWith('Electrode-Hisui') || source?.baseSpecies.name.startsWith('Lilligant-Hisui') || source?.baseSpecies.name.startsWith('Avalugg-Hisui') || source?.baseSpecies.name.startsWith('Kleavor'))) {
-				if (effect.effectType === 'Item') this.add('-activate', source, 'item: ' + effect.name);
+			if (effect.effectType !== 'Move' && (target?.baseSpecies.name.startsWith('Arcanine-Hisui') || target?.baseSpecies.name.startsWith('Electrode-Hisui') || target?.baseSpecies.name.startsWith('Lilligant-Hisui') || target?.baseSpecies.name.startsWith('Avalugg-Hisui') || target?.baseSpecies.name.startsWith('Kleavor'))) {
+				if (effect.effectType === 'Ability') this.add('-activate', source, 'ability: ' + effect.name);
 				return false;
 			}
 		},

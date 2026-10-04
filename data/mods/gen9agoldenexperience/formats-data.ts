@@ -1937,7 +1937,7 @@ export const FormatsData: { [k: string]: SpeciesFormatsData; } = {
 		doublesTier: "DUU",
 	},
 	absolmegaz: {
-		tier: "OU",
+		tier: "UUBL",
 		doublesTier: "DUU",
 	},
 	snorunt: {
@@ -5538,7 +5538,7 @@ export const FormatsData: { [k: string]: SpeciesFormatsData; } = {
 		doublesTier: "DUU",
 	},
 	sithbull: {
-		tier: "NU",
+		tier: "UU",
 		doublesTier: "DUU",
 	},
 	mafdyena: {

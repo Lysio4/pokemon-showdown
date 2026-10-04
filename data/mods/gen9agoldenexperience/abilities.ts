@@ -1106,8 +1106,8 @@ export const Abilities: { [abilityid: string]: ModdedAbilityData; } = {
 		modded: true, // this makes its description display in Data Mod
 		onStart(pokemon) {
 			this.add('-start', pokemon, 'ability: Slow Start');
-			this.effectState.counter = 1;
+			this.effectState.counter = 3;
 		},
-		shortDesc: "On switch-in, this Pokemon's Attack and Speed are halved for 1 turn.",
+		shortDesc: "On switch-in, this Pokemon's Attack and Speed are halved for 3 turns.",
 	},
 };

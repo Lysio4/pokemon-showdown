@@ -1088,10 +1088,6 @@ export const Pokedex: {[k: string]: ModdedSpeciesData;} = {
 	regigigas: {
 		inherit: true,
 	},
-	cresselia: {
-		inherit: true,
-		baseStats: { hp: 120, atk: 70, def: 120, spa: 75, spd: 130, spe: 85 },
-	},
 	darkraimega: {
 		inherit: true,
 		abilities: { 0: "Dark Aura" },

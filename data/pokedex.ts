@@ -22992,7 +22992,7 @@ export const Pokedex: import('../sim/dex-species').SpeciesDataTable = {
 		name: "Florhoper",
 		types: ["Ground", "Fairy"],
 		gender: "N",
-		baseStats: { hp: 100, atk: 90, def: 82, spa: 112, spd: 114, spe: 102 },
+		baseStats: { hp: 100, atk: 90, def: 82, spa: 112, spd: 114, spe: 82 },
 		abilities: { 0: "Cloud Nine" },
 		heightm: 1.70,
 		weightkg: 70,

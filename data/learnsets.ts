@@ -102909,7 +102909,6 @@ export const Learnsets: import('../sim/dex-species').LearnsetDataTable = {
 			contrariety: ["9M"],
 			counter: ["9E"],
 			crunch: ["9M", "9L56"],
-			dantesinferno: ["9L62"],
 			darkpulse: ["9M"],
 			destinybond: ["9E"],
 			doubleedge: ["9M"],

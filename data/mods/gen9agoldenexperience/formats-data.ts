@@ -276,7 +276,7 @@ export const FormatsData: { [k: string]: SpeciesFormatsData; } = {
 		doublesTier: "DUU",
 	},
 	clefablemega: {
-		tier: "OU",
+		tier: "UU",
 		doublesTier: "DUU",
 	},
 	vulpix: {
@@ -1363,7 +1363,7 @@ export const FormatsData: { [k: string]: SpeciesFormatsData; } = {
 		doublesTier: "DUU",
 	},
 	houndoommega: {
-		tier: "OU",
+		tier: "RU",
 		doublesTier: "DUU",
 	},
 	phanpy: {
@@ -2415,7 +2415,7 @@ export const FormatsData: { [k: string]: SpeciesFormatsData; } = {
 		doublesTier: "DOU",
 	},
 	regigigas: {
-		tier: "OU",
+		tier: "UU",
 		doublesTier: "DUU",
 	},
 	giratina: {

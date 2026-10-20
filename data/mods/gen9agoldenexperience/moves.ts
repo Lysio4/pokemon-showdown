@@ -374,12 +374,6 @@ export const Moves: { [k: string]: ModdedMoveData; } = {
 		desc: "If an opposing Pokemon switches out this turn, this move hits that Pokemon before it leaves the field, even if it was not the original target. If the user moves after an opponent using Flip Turn, Parting Shot, Teleport, U-turn, or Volt Switch, but not Baton Pass, it will hit that opponent before it leaves the field. Power doubles and no accuracy check is done if the user hits an opponent switching out, and the user's turn is over; if an opponent faints from this, the replacement Pokemon does not become active until the end of the turn.",
 		shortDesc: "If a foe is switching out, hits it at 2x power.",
 	},
-	dantesinferno: {
-		inherit: true,
-		isNonstandard: null,
-		desc: "For 5 turns, the weather becomes Sunny Day.",
-		shortDesc: "Starts Sunny Day.",
-	},
 	swarming: {
 		inherit: true,
 		isNonstandard: null,
@@ -643,6 +637,11 @@ export const Moves: { [k: string]: ModdedMoveData; } = {
 		isNonstandard: null,
 		desc: "The target's stat stages greater than 0 are stolen from it and applied to the user before dealing damage.",
 		shortDesc: "Steals target's boosts before dealing damage.",
+	},
+	headrush: {
+		isNonstandard: null,
+		desc: "If the target lost HP, the user takes recoil damage equal to 33% the HP lost by the target, rounded half up, but not less than 1 HP.",
+		shortDesc: "Has 33% recoil. Usually goes first.",
 	},
 	// modified moves
 	toxicthread: {

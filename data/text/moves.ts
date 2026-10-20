@@ -7934,11 +7934,6 @@ export const MovesText: { [id: IDEntry]: MoveText } = {
 
 		activate: "  ([TARGET] is being withdrawn...)",
 	},
-	dantesinferno: {
-		name: "Dante's Inferno",
-		desc: "For 5 turns, the weather becomes Sunny Day.",
-		shortDesc: "Starts Sunny Day.",
-	},
 	swarming: {
 		name: "Swarming",
 		shortDesc: "Lowers the user's and the target's Sp. Def by 1.",
@@ -8160,5 +8155,10 @@ export const MovesText: { [id: IDEntry]: MoveText } = {
 		shortDesc: "Steals target's boosts before dealing damage.",
 
 		clearBoost: "  [SOURCE] stole the target's boosted stats!",
+	},
+	headrush: {
+		name: "Head Rush",
+		desc: "If the target lost HP, the user takes recoil damage equal to 33% the HP lost by the target, rounded half up, but not less than 1 HP.",
+		shortDesc: "Has 33% recoil. Usually goes first.",
 	},
 };

@@ -934,11 +934,11 @@ export const Pokedex: {[k: string]: ModdedSpeciesData;} = {
 	},
 	mismagius: {
 		inherit: true,
-		baseStats: { hp: 65, atk: 65, def: 65, spa: 110, spd: 110, spe: 110 },
+		baseStats: { hp: 60, atk: 60, def: 60, spa: 110, spd: 110, spe: 110 },
 	},
 	honchkrow: {
 		inherit: true,
-		baseStats: { hp: 100, atk: 125, def: 52, spa: 105, spd: 52, spe: 91 },
+		baseStats: { hp: 100, atk: 125, def: 52, spa: 105, spd: 52, spe: 86 },
 		abilities: { 0: "Hustle", 1: "Super Luck", H: "Moxie" },
 	},
 	purugly: {
@@ -1306,11 +1306,11 @@ export const Pokedex: {[k: string]: ModdedSpeciesData;} = {
 		baseStats: {hp: 80, atk: 60, def: 82, spa: 95, spd: 82, spe: 75 },
 		abilities: { 0: "Stench", 1: "Weak Armor", H: "Huge Power" },
 	},
-    zoroark: {
-        inherit: true,
-        otherFormes: ["Zoroark-Hisui", "Zoroark-Mega", "Zoroark-Hisui-Mega"],
-        formeOrder: ["Zoroark", "Zoroark-Hisui", "Zoroark-Mega", "Zoroark-Hisui-Mega"],
-    },
+   zoroark: {
+      inherit: true,
+      otherFormes: ["Zoroark-Hisui", "Zoroark-Mega", "Zoroark-Hisui-Mega"],
+      formeOrder: ["Zoroark", "Zoroark-Hisui", "Zoroark-Mega", "Zoroark-Hisui-Mega"],
+   },
 	cinccino: {
 		inherit: true,
 		baseStats: {hp: 75, atk: 110, def: 60, spa: 65, spd: 60, spe: 115},

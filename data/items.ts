@@ -9004,9 +9004,9 @@ export const Items: import('../sim/dex-items').ItemDataTable = {
 			}
 		},
 		onDamage(damage, target, source, effect) {
-			if (effect.effectType !== 'Move' && (target?.baseSpecies.name.startsWith('Arcanine-Hisui') || target?.baseSpecies.name.startsWith('Electrode-Hisui') || target?.baseSpecies.name.startsWith('Lilligant-Hisui') || target?.baseSpecies.name.startsWith('Avalugg-Hisui') || target?.baseSpecies.name.startsWith('Kleavor'))) {
-				if (effect.effectType === 'Ability') this.add('-activate', source, 'ability: ' + effect.name);
-				return false;
+			if (effect.id === 'recoil' && (target?.baseSpecies.name.startsWith('Arcanine-Hisui') || target?.baseSpecies.name.startsWith('Electrode-Hisui') || target?.baseSpecies.name.startsWith('Lilligant-Hisui') || target?.baseSpecies.name.startsWith('Avalugg-Hisui') || target?.baseSpecies.name.startsWith('Kleavor'))) {
+				if (!this.activeMove) throw new Error("Battle.activeMove is null");
+				if (this.activeMove.id !== 'struggle') return null;
 			}
 		},
 		onSourceAccuracy(accuracy, target, source, move) {
@@ -9019,7 +9019,7 @@ export const Items: import('../sim/dex-items').ItemDataTable = {
 		itemUser: ["Arcanine-Hisui", "Electrode-Hisui", "Lilligant-Hisui", "Avalugg-Hisui", "Kleavor"],
 		num: -55,
 		gen: 9,
-		desc: "If held by a Noble Pokemon, the holder is immune to all indirect damages, can't miss its moves, and has x1.2 base power on all its moves.",
+		desc: "If held by a Noble Pokemon, the holder is immune to recoil damages, can't miss its moves, and has x1.2 base power on all its moves.",
 		isNonstandard: "Custom",
 	},
 	// Touhou

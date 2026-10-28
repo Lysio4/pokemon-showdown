@@ -2290,7 +2290,7 @@ export const FormatsData: { [k: string]: SpeciesFormatsData; } = {
 		doublesTier: "(DOU)",
 	},
 	garchompmegaz: {
-		tier: "(OU)",
+		tier: "OU",
 		doublesTier: "(DOU)",
 	},
 	riolu: {
@@ -3554,7 +3554,7 @@ export const FormatsData: { [k: string]: SpeciesFormatsData; } = {
 		doublesTier: "DUU",
 	},
 	klefkimega: {
-		tier: "OU",
+		tier: "UU",
 		doublesTier: "DUU",
 	},
 	phantump: {
@@ -5538,7 +5538,7 @@ export const FormatsData: { [k: string]: SpeciesFormatsData; } = {
 		doublesTier: "DUU",
 	},
 	sithbull: {
-		tier: "UU",
+		tier: "OU",
 		doublesTier: "DUU",
 	},
 	mafdyena: {
@@ -5571,7 +5571,7 @@ export const FormatsData: { [k: string]: SpeciesFormatsData; } = {
 		doublesTier: "DUU",
 	},
 	irondrill: {
-		tier: "OU",
+		tier: "UU",
 		doublesTier: "DUU",
 	},
 	timelord: {

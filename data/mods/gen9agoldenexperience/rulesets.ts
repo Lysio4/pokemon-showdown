@@ -11,6 +11,15 @@ export const Rulesets: {[k: string]: ModdedFormatData} = {
 			'Obtainable', 'Team Preview', 'HP Percentage Mod', 'Cancel Mod', 'Endless Battle Clause',
 		],
 	},
+	ohkoclause: {
+		effectType: 'ValidatorRule',
+		name: 'OHKO Clause',
+		desc: "Bans all OHKO moves",
+		banlist: ['Sheer Cold'],
+		onBegin() {
+			this.add('rule', 'OHKO Clause: OHKO moves are banned');
+		},
+	},
 	nonsignaturezmoveclause: {
 		effectType: 'ValidatorRule',
 		name: 'Non-Signature Z-Move Clause',

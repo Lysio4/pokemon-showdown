@@ -21313,8 +21313,8 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 		priority: 0,
 		flags: { contact: 1, protect: 1, mirror: 1 },
 		volatileStatus: 'partiallytrapped',
-		onModifyMove(move) {
-			if (move && target.getMoveHitData(move).typeMod > 0) {
+		onModifyMove(move, source, target) {
+			if (move.secondaries && target && target?.getMoveHitData(move).typeMod > 0) {
 				move.secondaries.push({
 					chance: 100,
 					boosts: {

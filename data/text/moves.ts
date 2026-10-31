@@ -8089,18 +8089,6 @@ export const MovesText: { [id: IDEntry]: MoveText } = {
 		desc: "Has a 100% chance to raise the user's Speed by 1 stage.",
 		shortDesc: "100% chance to raise the user's Speed by 1.",
 	},
-	gigabbouncysplash: {
-		name: "Giga Bouncy Splash",
-		shortDesc: "No additional effect.",
-	},
-	sonicspeedstrike: {
-		name: "Sonic Speed Strike",
-		shortDesc: "No additional effect.",
-	},
-	sweetsugarrush: {
-		name: "Sweet Sugar Rush",
-		shortDesc: "No additional effect.",
-	},
 	colorfulhit: {
 		name: "Colorful Hit",
 		desc: "This move's type depends on the user's primary type. If the user's primary type is typeless, this move's type is the user's secondary type if it has one, otherwise the added type from Forest's Curse or Trick-or-Treat. This move is typeless if the user's type is typeless alone.",
@@ -8160,5 +8148,32 @@ export const MovesText: { [id: IDEntry]: MoveText } = {
 		name: "Head Rush",
 		desc: "If the target lost HP, the user takes recoil damage equal to 33% the HP lost by the target, rounded half up, but not less than 1 HP.",
 		shortDesc: "Has 33% recoil. Usually goes first.",
+	},
+	yarryarrstrike: {
+		name: "Sonic Speed Strike",
+		shortDesc: "Usually goes first.",
+	},
+	gigabbouncysplash: {
+		name: "Giga Bouncy Splash",
+		shortDesc: "No additional effect.",
+	},
+	ultrahunterfang: {
+		name: "Sweet Sugar Rush",
+		desc: "Deals damage to the target equal to half of its current HP, rounded down, but not less than 1 HP. Target can't use status moves its next 3 turns.",
+		shortDesc: "Does damage equal to 1/2 target's current HP. Target can't use status moves its next 3 turns.",
+	},
+	veryhighvoltagebeam: {
+		name: "Very High Voltage Beam",
+		desc: "Raises the user's accuracy by 1 stage.",
+		shortDesc: "Raises the user's accuracy by 1.",
+	},
+	bigfishblast: {
+		name: "Big Fish Blast",
+		shortDesc: "No additional effect.",
+	},
+	voltelectroslam: {
+		name: "Volt Electro Slam",
+		desc: "Raises the user's Attack, Defense, and Speed by 1 stage.",
+		shortDesc: "Raises the user's Attack, Defense, Speed by 1.",
 	},
 };

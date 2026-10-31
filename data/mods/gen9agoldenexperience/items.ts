@@ -4,31 +4,11 @@ export const Items: {[itemid: string]: ModdedItemData} = {
 		inherit: true,
 		isNonstandard: null,
 	},
-	absolitez: {
-		inherit: true,
-		isNonstandard: null,
-	},
-	baxcalibrite: {
-		inherit: true,
-		isNonstandard: null,
-	},
 	darkranite: {
 		inherit: true,
 		isNonstandard: null,
 	},
-	garchompitez: {
-		inherit: true,
-		isNonstandard: null,
-	},
-	golisopite: {
-		inherit: true,
-		isNonstandard: null,
-	},
 	heatranite: {
-		inherit: true,
-		isNonstandard: null,
-	},
-	lucarionitez: {
 		inherit: true,
 		isNonstandard: null,
 	},
@@ -262,15 +242,27 @@ export const Items: {[itemid: string]: ModdedItemData} = {
 		inherit: true,
 		isNonstandard: null,
 	},
+	alopiratiumz: {
+		inherit: true,
+		isNonstandard: null,
+	},
 	gyaradosiumz: {
 		inherit: true,
 		isNonstandard: null,
 	},
-	garchompiumz: {
+	gumshiumz: {
 		inherit: true,
 		isNonstandard: null,
 	},
-	hydrappliumz: {
+	vikavoltiumz: {
+		inherit: true,
+		isNonstandard: null,
+	},
+	wishiwashiumz: {
+		inherit: true,
+		isNonstandard: null,
+	},
+	togedemariumz: {
 		inherit: true,
 		isNonstandard: null,
 	},

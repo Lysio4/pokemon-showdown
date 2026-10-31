@@ -23278,61 +23278,8 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 		contestType: "Tough",
 		isNonstandard: "Custom",
 	},
-	gigabbouncysplash: {
-		num: -78,
-		accuracy: true,
-		basePower: 180,
-		category: "Physical",
-		name: "Giga Bouncy Splash",
-		pp: 1,
-		priority: 0,
-		flags: {},
-		isZ: "gyaradosiumz",
-		onPrepareHit(target, source) {
-			this.attrLastMove('[still]');
-			this.add('-anim', source, "Bounce", target);
-		},
-		target: "normal",
-		type: "Flying",
-		contestType: "Tough",
-		isNonstandard: "Custom",
-	},
-	sonicspeedstrike: {
-		num: -79,
-		accuracy: true,
-		basePower: 185,
-		category: "Physical",
-		name: "Sonic Speed Strike",
-		pp: 1,
-		priority: 0,
-		flags: {},
-		isZ: "garchompiumz",
-		onPrepareHit(target, source) {
-			this.attrLastMove('[still]');
-			this.add('-anim', source, "Dragon Claw", target);
-		},
-		target: "normal",
-		type: "Dragon",
-		contestType: "Tough",
-		isNonstandard: "Custom",
-	},
-	sweetsugarrush: {
-		num: -80,
-		accuracy: true,
-		basePower: 170,
-		category: "Special",
-		name: "Sweet Sugar Rush",
-		pp: 1,
-		priority: 0,
-		flags: {},
-		isZ: "hydrappliumz",
-		target: "normal",
-		type: "Dragon",
-		contestType: "Cool",
-		isNonstandard: "Custom",
-	},
 	colorfulhit: {
-		num: -81,
+		num: -78,
 		accuracy: 100,
 		basePower: 90,
 		category: "Physical",
@@ -23357,7 +23304,7 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 		isNonstandard: "Custom",
 	},
 	oceanslance: {
-		num: -82,
+		num: -79,
 		accuracy: 85,
 		basePower: 120,
 		category: "Physical",
@@ -23375,7 +23322,7 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 		isNonstandard: "Custom",
 	},
 	goatup: {
-		num: -83,
+		num: -80,
 		accuracy: true,
 		basePower: 0,
 		category: "Status",
@@ -23401,7 +23348,7 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 		isNonstandard: "Custom",
 	},
 	poisonwhip: {
-		num: -84,
+		num: -81,
 		accuracy: 100,
 		basePower: 70,
 		category: "Physical",
@@ -23423,7 +23370,7 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 		isNonstandard: "Custom",
 	},
 	casinoroyal: {
-		num: -85,
+		num: -82,
 		accuracy: 95,
 		basePower: 120,
 		category: "Special",
@@ -23446,7 +23393,7 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 		isNonstandard: "Custom",
 	},
 	mistystep: {
-		num: -86,
+		num: -83,
 		accuracy: true,
 		basePower: 0,
 		category: "Status",
@@ -23476,7 +23423,7 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 		isNonstandard: "Custom",
 	},
 	prevailingwind: {
-		num: -87,
+		num: -84,
 		accuracy: 100,
 		basePower: 65,
 		category: "Special",
@@ -23505,7 +23452,7 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 		isNonstandard: "Custom",
 	},
 	crazedpunch: {
-		num: -88,
+		num: -85,
 		accuracy: 100,
 		basePower: 75,
 		category: "Physical",
@@ -23525,7 +23472,7 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 		isNonstandard: "Custom",
 	},
 	dirtyheadshot: {
-		num: -89,
+		num: -86,
 		accuracy: 100,
 		basePower: 80,
 		onModifyMove(move) {
@@ -23553,7 +23500,7 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 		isNonstandard: "Custom",
 	},
 	cruelfeather: {
-		num: -90,
+		num: -87,
 		accuracy: 100,
 		basePower: 45,
 		category: "Physical",
@@ -23577,7 +23524,7 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 		isNonstandard: "Custom",
 	},
 	midnightsnack: {
-		num: -91,
+		num: -88,
 		accuracy: 100,
 		basePower: 90,
 		category: "Physical",
@@ -23597,7 +23544,7 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 		isNonstandard: "Custom",
 	},
 	headrush: {
-		num: -92,
+		num: -89,
 		accuracy: 100,
 		basePower: 60,
 		category: "Physical",
@@ -23613,6 +23560,146 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 		target: "normal",
 		type: "Rock",
 		contestType: "Cool",
+		isNonstandard: "Custom",
+	},
+	yarryarrstrike: {
+		num: -90,
+		accuracy: true,
+		basePower: 130,
+		category: "Physical",
+		name: "Yarr Yarr Strike",
+		pp: 1,
+		priority: 1,
+		flags: {},
+		isZ: "alopiratiumz",
+		onPrepareHit(target, source) {
+			this.attrLastMove('[still]');
+			this.add('-anim', source, "Sucker Punch", target);
+		},
+		target: "normal",
+		type: "Dark",
+		contestType: "Tough",
+		isNonstandard: "Custom",
+	},
+	gigabbouncysplash: {
+		num: -91,
+		accuracy: true,
+		basePower: 180,
+		category: "Physical",
+		name: "Giga Bouncy Splash",
+		pp: 1,
+		priority: 0,
+		flags: {},
+		isZ: "gyaradosiumz",
+		onPrepareHit(target, source) {
+			this.attrLastMove('[still]');
+			this.add('-anim', source, "Bounce", target);
+		},
+		target: "normal",
+		type: "Flying",
+		contestType: "Tough",
+		isNonstandard: "Custom",
+	},
+	ultrahunterfang: {
+		num: -92,
+		accuracy: true,
+		basePower: 0,
+		category: "Physical",
+		name: "Ultra Hunter Fang",
+		pp: 1,
+		priority: 0,
+		flags: {},
+		isZ: "gumshiumz",
+		damageCallback(pokemon, target) {
+			return this.clampIntRange(target.getUndynamaxedHP() / 2, 1);
+		},
+		onPrepareHit(target, source) {
+			this.attrLastMove('[still]');
+			this.add('-anim', source, "Super Fang", target);
+		},
+		secondary: {
+			chance: 100,
+			volatileStatus: 'taunt',
+		},
+		target: "normal",
+		type: "Normal",
+		contestType: "Tough",
+		isNonstandard: "Custom",
+	},
+	veryhighvoltagebeam: {
+		num: -93,
+		accuracy: true,
+		basePower: 180,
+		category: "Special",
+		name: "Very High Voltage Beam",
+		pp: 1,
+		priority: 0,
+		flags: {},
+		isZ: "vikavoltiumz",
+		secondary: {
+			chance: 100,
+			self: {
+				boosts: {
+					accuracy: 1,
+				},
+			},
+		},
+		onPrepareHit(target, source) {
+			this.attrLastMove('[still]');
+			this.add('-anim', source, "Charge", source);
+			this.add('-anim', source, "Zap Cannon", target);
+		},
+		target: "normal",
+		type: "Electric",
+		contestType: "Cool",
+		isNonstandard: "Custom",
+	},
+	bigfishblast: {
+		num: -94,
+		accuracy: true,
+		basePower: 180,
+		category: "Special",
+		name: "Big Fish Blast",
+		pp: 1,
+		priority: 0,
+		flags: {},
+		isZ: "wishiwashiumz",
+		onPrepareHit(target, source) {
+			this.attrLastMove('[still]');
+			this.add('-anim', source, "Hydro Pump", target);
+		},
+		target: "normal",
+		type: "Water",
+		contestType: "Tough",
+		isNonstandard: "Custom",
+	},
+	voltelectroslam: {
+		num: -95,
+		accuracy: true,
+		basePower: 150,
+		category: "Physical",
+		name: "Volt Electro Slam",
+		pp: 1,
+		priority: 0,
+		flags: {},
+		isZ: "togedemariumz",
+		secondary: {
+			chance: 100,
+			self: {
+				boosts: {
+					atk: 1,
+					def: 1,
+					spe: 1,
+				},
+			},
+		},
+		onPrepareHit(target, source) {
+			this.attrLastMove('[still]');
+			this.add('-anim', source, "Zing Zap", target);
+		},
+		target: "normal",
+		type: "Electric",
+		contestType: "Tough",
 		isNonstandard: "Custom",
 	},
 	// Touhou

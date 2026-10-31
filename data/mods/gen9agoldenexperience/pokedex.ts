@@ -114,13 +114,13 @@ export const Pokedex: {[k: string]: ModdedSpeciesData;} = {
 	},
 	rapidash: {
 		inherit: true,
-		baseStats: { hp: 65, atk: 110, def: 70, spa: 70, spd: 80, spe: 105 },
-		abilities: { 0: "Reckless", 1: "Flash Fire", H: "Flame Body" },
+		baseStats: { hp: 65, atk: 110, def: 70, spa: 90, spd: 80, spe: 105 },
+		abilities: { 0: "Fire Mane", 1: "Flash Fire", H: "Flame Body" },
 	},
 	rapidashgalar: {
 		inherit: true,
-		baseStats: { hp: 65, atk: 110, def: 70, spa: 70, spd: 80, spe: 105 },
-		abilities: { 0: "Run Away", 1: "Pastel Veil", H: "Pixilate" },
+		baseStats: { hp: 65, atk: 110, def: 70, spa: 90, spd: 80, spe: 105 },
+		abilities: { 0: "Psychic Surge", 1: "Pastel Veil", H: "Pixilate" },
 	},
 	slowbro: {
 		inherit: true,
@@ -215,16 +215,16 @@ export const Pokedex: {[k: string]: ModdedSpeciesData;} = {
 	},
 	taurospaldeablaze: {
 		inherit: true,
-		baseStats: {hp: 75, atk: 120, def: 115, spa: 30, spd: 70, spe: 100},
+		baseStats: { hp: 75, atk: 120, def: 115, spa: 30, spd: 70, spe: 100 },
 	},
 	taurospaldeaaqua: {
 		inherit: true,
-		baseStats: {hp: 75, atk: 120, def: 115, spa: 30, spd: 70, spe: 100},
+		baseStats: { hp: 75, atk: 120, def: 115, spa: 30, spd: 70, spe: 100 },
 	},
 	lapras: {
 		inherit: true,
-		baseStats: {hp: 130, atk: 95, def: 80, spa: 65, spd: 95, spe: 70},
-		abilities: {0: "Water Absorb", 1: "Shell Armor", H: "Refrigerate"},
+		baseStats: { hp: 130, atk: 95, def: 80, spa: 65, spd: 95, spe: 70 },
+		abilities: { 0: "Water Absorb", 1: "Shell Armor", H: "Refrigerate" },
 	},
 	vaporeon: {
 		inherit: true,
@@ -506,7 +506,7 @@ export const Pokedex: {[k: string]: ModdedSpeciesData;} = {
 	},
 	beautifly: {
 		inherit: true,
-		baseStats: {hp: 60, atk: 70, def: 50, spa: 110, spd: 50, spe: 85},
+		baseStats: { hp: 60, atk: 70, def: 50, spa: 110, spd: 50, spe: 85 },
 		abilities: { 0: "Dazzling", H: "Rivalry" },
 	},
 	dustox: {
@@ -540,10 +540,6 @@ export const Pokedex: {[k: string]: ModdedSpeciesData;} = {
 	swellow: {
 		inherit: true,
 		baseStats: { hp: 60, atk: 75, def: 60, spa: 90, spd: 50, spe: 125 },
-	},
-	gardevoirmega: {
-		inherit: true,
-		baseStats: { hp: 68, atk: 75, def: 65, spa: 165, spd: 135, spe: 110 },
 	},
 	surskit: {
 		inherit: true,

@@ -559,21 +559,6 @@ export const Moves: { [k: string]: ModdedMoveData; } = {
 		desc: "Has a 100% chance to raise the user's Speed by 1 stage.",
 		shortDesc: "100% chance to raise the user's Speed by 1.",
 	},
-	gigabbouncysplash: {
-		inherit: true,
-		isNonstandard: null,
-		shortDesc: "No additional effect.",
-	},
-	sonicspeedstrike: {
-		inherit: true,
-		isNonstandard: null,
-		shortDesc: "No additional effect.",
-	},
-	sweetsugarrush: {
-		inherit: true,
-		isNonstandard: null,
-		shortDesc: "No additional effect.",
-	},
 	colorfulhit: {
 		inherit: true,
 		isNonstandard: null,
@@ -643,6 +628,39 @@ export const Moves: { [k: string]: ModdedMoveData; } = {
 		isNonstandard: null,
 		desc: "If the target lost HP, the user takes recoil damage equal to 33% the HP lost by the target, rounded half up, but not less than 1 HP.",
 		shortDesc: "Has 33% recoil. Usually goes first.",
+	},
+	yarryarrstrike: {
+		inherit: true,
+		isNonstandard: null,
+		shortDesc: "Usually goes first.",
+	},
+	gigabbouncysplash: {
+		inherit: true,
+		isNonstandard: null,
+		shortDesc: "No additional effect.",
+	},
+	ultrahunterfang: {
+		inherit: true,
+		isNonstandard: null,
+		desc: "Deals damage to the target equal to half of its current HP, rounded down, but not less than 1 HP. Target can't use status moves its next 3 turns.",
+		shortDesc: "Does damage equal to 1/2 target's current HP. Target can't use status moves its next 3 turns.",
+	},
+	veryhighvoltagebeam: {
+		inherit: true,
+		isNonstandard: null,
+		desc: "Raises the user's accuracy by 1 stage.",
+		shortDesc: "Raises the user's accuracy by 1.",
+	},
+	bigfishblast: {
+		inherit: true,
+		isNonstandard: null,
+		shortDesc: "No additional effect.",
+	},
+	voltelectroslam: {
+		inherit: true,
+		isNonstandard: null,
+		desc: "Raises the user's Attack, Defense, and Speed by 1 stage.",
+		shortDesc: "Raises the user's Attack, Defense, Speed by 1.",
 	},
 	// modified moves
 	toxicthread: {

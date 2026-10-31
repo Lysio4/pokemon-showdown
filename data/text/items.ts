@@ -2641,4 +2641,22 @@ export const ItemsText: { [id: IDEntry]: ItemText } = {
 		name: "Vile Vial",
 		shortDesc: "If held by a Venomicon, its Poison- and Flying-type attacks have 1.2× power.",
 	},
+	// AGE
+    paraorb: {
+		name: "Para Orb",
+		shortDesc: "At the end of every turn, this item attempts to paralyze the holder.",
+	},
+	frozenorb: {
+		name: "Frozen Orb",
+		shortDesc: "At the end of every turn, this item attempts to freeze the holder.",
+	},
+	nullifyorb: {
+		name: "Nullify Orb",
+		shortDesc: "Nullify the holder's ability.",
+	},
+	// WIP
+	noblecrest: {
+		name: "Noble Crest",
+		shortDesc: "If held by a Noble Pokemon, the holder is immune to recoil damages, can't miss its moves, and has x1.2 base power on all its moves.",
+	},
 };

@@ -1133,6 +1133,7 @@ export const Scripts: ModdedBattleScriptsData = {
     this.modData('Learnsets', 'carnivine').learnset.snaptrap = ['9L1'];
     this.modData('Learnsets', 'carnivine').learnset.trailblaze = ['9L1'];
     this.modData('Learnsets', 'lumineon').learnset.airslash = ['9L1'];
+    this.modData('Learnsets', 'lumineon').learnset.quiverdance = ['9L1'];
     this.modData('Learnsets', 'lumineon').learnset.roost = ['9L1'];
     this.modData('Learnsets', 'snover').learnset.iciclecrash = ['9L1'];
     this.modData('Learnsets', 'abomasnow').learnset.iciclecrash = ['9L1'];

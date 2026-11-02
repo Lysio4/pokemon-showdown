@@ -272,11 +272,11 @@ export const FormatsData: { [k: string]: SpeciesFormatsData; } = {
 		doublesTier: "DOU",
 	},
 	clefable: {
-		tier: "UU",
+		tier: "OU",
 		doublesTier: "DUU",
 	},
 	clefablemega: {
-		tier: "UU",
+		tier: "OU",
 		doublesTier: "DUU",
 	},
 	vulpix: {
@@ -1407,7 +1407,7 @@ export const FormatsData: { [k: string]: SpeciesFormatsData; } = {
 		doublesTier: "DOU",
 	},
 	tyranitarmega: {
-		tier: "UUBL",
+		tier: "OU",
 		doublesTier: "DOU",
 	},
 	lugia: {
@@ -2286,7 +2286,7 @@ export const FormatsData: { [k: string]: SpeciesFormatsData; } = {
 		doublesTier: "DOU",
 	},
 	garchompmega: {
-		tier: "(OU)",
+		tier: "OU",
 		doublesTier: "(DOU)",
 	},
 	garchompmegaz: {
@@ -3808,7 +3808,7 @@ export const FormatsData: { [k: string]: SpeciesFormatsData; } = {
 		doublesTier: "DUU",
 	},
 	wishiwashi: {
-		tier: "NU",
+		tier: "OU",
 		doublesTier: "DUU",
 	},
 	wishiwashischool: {},
@@ -4603,7 +4603,7 @@ export const FormatsData: { [k: string]: SpeciesFormatsData; } = {
 		doublesTier: "DOU",
 	},
 	urshifurapidstrike: {
-		tier: "OU",
+		tier: "UU",
 		doublesTier: "DOU",
 	},
 	urshifugmax: {
@@ -5040,7 +5040,7 @@ export const FormatsData: { [k: string]: SpeciesFormatsData; } = {
 		doublesTier: "DOU",
 	},
 	ironvaliant: {
-		tier: "OU",
+		tier: "UU",
 		doublesTier: "DUU",
 	},
 	tinglu: {

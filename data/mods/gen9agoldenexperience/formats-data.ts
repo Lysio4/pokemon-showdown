@@ -59,7 +59,7 @@ export const FormatsData: { [k: string]: SpeciesFormatsData; } = {
 	},
 	blastoisemegax: {
 		tier: "RU",
-		doublesTier: "DUU",
+		doublesTier: "(DOU)",
 	},
 	blastoisegmax: {
 		isNonstandard: "Past",

@@ -6,25 +6,24 @@
   "types": "dist/sim/index.d.ts",
   "dependencies": {
     "esbuild": "^0.25.0",
-    "jquery": "^4.1.0",
     "mysql2": "^3.14.2",
     "preact": "^10.5.15",
     "preact-render-to-string": "^6.5.13",
-    "sockjs": "^0.3.16",
+    "sockjs": "^0.3.21",
     "ts-chacha20": "^1.2.0"
   },
   "optionalDependencies": {
     "better-sqlite3": "^11.10.0",
     "cloud-env": "^0.2.3",
     "githubhook": "^1.9.3",
-    "nodemailer": "^10.6.1",
+    "nodemailer": "^7.0.5",
     "permessage-deflate": "^0.1.7",
     "pg": "^8.16.3",
     "probe-image-size": "^7.2.3",
     "source-map-support": "^0.5.21",
     "sql-template-strings": "^2.2.2",
     "sqlite": "^5.1.1",
-    "sqlite3": "^6.0.1"
+    "sqlite3": "^5.1.7"
   },
   "secretDependencies": {
     "node-oom-heapdump": "^1.2.0"
@@ -76,7 +75,7 @@
     "@types/sodium-native": "^2.3.9",
     "eslint": "^9.31.0",
     "globals": "^16.0.0",
-    "mocha": "^12.0.3",
+    "mocha": "^11.7.1",
     "oxlint": "^1.88.0",
     "oxlint-tsgolint": "^7.0.2004",
     "smogon": "^3.0.0",

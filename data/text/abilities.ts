@@ -660,6 +660,10 @@ export const AbilitiesText: { [id: IDEntry]: AbilityText } = {
 		name: "Healer",
 		desc: "30% chance this Pokemon's ally has its non-volatile status condition cured at the end of each turn.",
 		shortDesc: "30% chance this Pokemon's ally has its status cured at the end of each turn.",
+		agoldenexperience: {
+			desc: "50% chance this Pokemon's ally has its non-volatile status condition cured at the end of each turn.",
+			shortDesc: "50% chance this Pokemon's ally has its status cured at the end of each turn.",
+		},
 		champions: {
 			desc: "50% chance this Pokemon's ally has its non-volatile status condition cured at the end of each turn.",
 			shortDesc: "50% chance this Pokemon's ally has its status cured at the end of each turn.",

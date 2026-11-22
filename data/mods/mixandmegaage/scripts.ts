@@ -1,6 +1,6 @@
 export const Scripts: ModdedBattleScriptsData = {
 	gen: 9,
-	inherit: 'gen9agoldenexperience',
+	inherit: 'agoldenexperience',
 	init() {
 		this.modData('Abilities', 'dragonize').isNonstandard = null;
 		this.modData('Abilities', 'megasol').isNonstandard = null;

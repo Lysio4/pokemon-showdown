@@ -275,7 +275,7 @@ export const Formats: import('../sim/dex-formats').FormatList = [
 	{
 		name: "[Gen 9] A Golden Experience OU",
 		desc: `A fun metagame where we try to make everything viable, or at least usable. We also have new Fakemons!`,
-		mod: 'gen9agoldenexperience',
+		mod: 'agoldenexperience',
 		ruleset: ['Standard', '!Sleep Moves Clause', 'Terastal Clause', 'Non-Signature Z-Move Clause', 'Inaccurate Sleep Moves Clause', 'NatDex Mod', 'Data Mod'],
 		banlist: [
 			'Uber', 'AG', 'Moody', 'Power Construct', 'King\'s Rock',
@@ -286,7 +286,7 @@ export const Formats: import('../sim/dex-formats').FormatList = [
 	{
 		name: "[Gen 9] A Golden Experience Uber",
 		desc: `A fun metagame where we try to make everything viable, or at least usable. We also have new Fakemons!`,
-		mod: 'gen9agoldenexperience',
+		mod: 'agoldenexperience',
 		ruleset: ['Standard', '!Sleep Moves Clause', 'Terastal Clause', 'Non-Signature Z-Move Clause', 'Inaccurate Sleep Moves Clause', 'NatDex Mod', 'Data Mod'],
 		banlist: [
 			'AG', 'King\'s Rock',
@@ -297,7 +297,7 @@ export const Formats: import('../sim/dex-formats').FormatList = [
 	{
 		name: "[Gen 9] A Golden Experience UU",
 		desc: `A fun metagame where we try to make everything viable, or at least usable. We also have new Fakemons!`,
-		mod: 'gen9agoldenexperience',
+		mod: 'agoldenexperience',
 		ruleset: ['Standard', '!Sleep Moves Clause', 'Terastal Clause', 'Non-Signature Z-Move Clause', 'Inaccurate Sleep Moves Clause', 'NatDex Mod', 'Data Mod'],
 		banlist: [
 			'Uber', 'AG', 'OU', 'UUBL', 'Moody', 'Power Construct', 'King\'s Rock',
@@ -309,7 +309,7 @@ export const Formats: import('../sim/dex-formats').FormatList = [
 	{
 		name: "[Gen 9] A Golden Experience RU",
 		desc: `A fun metagame where we try to make everything viable, or at least usable. We also have new Fakemons!`,
-		mod: 'gen9agoldenexperience',
+		mod: 'agoldenexperience',
 		ruleset: ['Standard', '!Sleep Moves Clause', 'Terastal Clause', 'Non-Signature Z-Move Clause', 'Inaccurate Sleep Moves Clause', 'NatDex Mod', 'Data Mod'],
 		banlist: [
 			'Uber', 'AG', 'OU', 'UUBL', 'UU', 'RUBL', 'Moody', 'Power Construct', 'King\'s Rock',
@@ -321,7 +321,7 @@ export const Formats: import('../sim/dex-formats').FormatList = [
 	{
 		name: "[Gen 9] A Golden Experience NU",
 		desc: `A fun metagame where we try to make everything viable, or at least usable. We also have new Fakemons!`,
-		mod: 'gen9agoldenexperience',
+		mod: 'agoldenexperience',
 		ruleset: ['Standard', '!Sleep Moves Clause', 'Terastal Clause', 'Non-Signature Z-Move Clause', 'Inaccurate Sleep Moves Clause', 'NatDex Mod', 'Data Mod'],
 		banlist: [
 			'Uber', 'AG', 'OU', 'UUBL', 'UU', 'RUBL', 'RU', 'NUBL', 'Moody', 'Power Construct', 'King\'s Rock',
@@ -333,7 +333,7 @@ export const Formats: import('../sim/dex-formats').FormatList = [
 	{
 		name: "[Gen 9] A Golden Experience Doubles",
 		desc: `A fun metagame where we try to make everything viable, or at least usable. We also have new Fakemons!`,
-		mod: 'gen9agoldenexperience',
+		mod: 'agoldenexperience',
 		gameType: 'doubles',
 		ruleset: ['Standard Doubles', 'NatDex Mod', 'Evasion Abilities Clause', 'Terastal Clause', 'Non-Signature Z-Move Clause', 'Data Mod'],
 		banlist: [
@@ -344,7 +344,7 @@ export const Formats: import('../sim/dex-formats').FormatList = [
 	{
 		name: "[Gen 9] A Golden Experience Doubles Uber",
 		desc: `A fun metagame where we try to make everything viable, or at least usable. We also have new Fakemons!`,
-		mod: 'gen9agoldenexperience',
+		mod: 'agoldenexperience',
 		gameType: 'doubles',
 		ruleset: ['Standard Doubles', 'NatDex Mod', 'Evasion Abilities Clause', 'Terastal Clause', 'Non-Signature Z-Move Clause', 'Data Mod'],
 		banlist: [],
@@ -352,7 +352,7 @@ export const Formats: import('../sim/dex-formats').FormatList = [
 	},
 	{
 		name: "[Gen 9] A Golden Experience VGC",
-		mod: 'gen9agoldenexperience',
+		mod: 'agoldenexperience',
 		gameType: 'doubles',
 		searchShow: false,
 		bestOfDefault: true,
@@ -370,7 +370,7 @@ export const Formats: import('../sim/dex-formats').FormatList = [
 	{
 		name: "[Gen 9] A Golden Experience AAA",
 		desc: `Pok&eacute;mon have access to almost any ability.`,
-		mod: 'gen9agoldenexperience',
+		mod: 'agoldenexperience',
 		// searchShow: false,
 		ruleset: ['Standard', '!Obtainable Abilities', 'Ability Clause = 2', 'Terastal Clause', 'Non-Signature Z-Move Clause', 'NatDex Mod', 'Data Mod'],
 		banlist: [
@@ -389,7 +389,7 @@ export const Formats: import('../sim/dex-formats').FormatList = [
 	{
 		name: "[Gen 9] A Golden Experience BH",
 		desc: `Anything directly hackable onto a set (EVs, IVs, forme, ability, item, and move) and is usable in local battles is allowed.`,
-		mod: 'gen9agoldenexperience',
+		mod: 'agoldenexperience',
 		// searchShow: false,
 		ruleset: [
 			'Standard AG', 'NatDex Mod', '!Obtainable',
@@ -495,7 +495,7 @@ export const Formats: import('../sim/dex-formats').FormatList = [
 	{
 		name: "[Gen 9] A Golden Experience STABmons",
 		desc: `Pok&eacute;mon can use any move of their typing, in addition to the moves they can normally learn.`,
-		mod: 'gen9agoldenexperience',
+		mod: 'agoldenexperience',
 		ruleset: ['Standard', 'STABmons Move Legality', 'Terastal Clause', 'Non-Signature Z-Move Clause', 'NatDex Mod', 'Data Mod'],
 		banlist: [
 			'Araquanid', 'Arceus', 'Azumarill', 'Baxcalibur', 'Blaziken-Mega', 'Basculegion', 'Basculegion-F', 'Calyrex-Ice', 'Calyrex-Shadow', 'Chi-Yu', 'Chien-Pao',
@@ -518,7 +518,7 @@ export const Formats: import('../sim/dex-formats').FormatList = [
 	{
 		name: "[Gen 9] A Golden Experience Godly Gift",
 		desc: `Each Pok&eacute;mon receives one base stat from a God (Restricted Pok&eacute;mon) depending on its position in the team. If there is no restricted Pok&eacute;mon, it uses the Pok&eacute;mon in the first slot.`,
-		mod: 'gen9agoldenexperience',
+		mod: 'agoldenexperience',
 		ruleset: ['Standard', 'Terastal Clause', 'Godly Gift Mod', 'Mega Rayquaza Clause', 'Non-Signature Z-Move Clause', 'NatDex Mod', 'Data Mod'],
 		banlist: [
 			'Blissey', 'Calyrex-Shadow', 'Chansey', 'Deoxys-Attack', 'Groudon-Primal', 'Koraidon', 'Miraidon', 'Shuckle', 'Xerneas',

@@ -496,7 +496,7 @@ export const Formats: import('../sim/dex-formats').FormatList = [
 		name: "[Gen 9] A Golden Experience STABmons",
 		desc: `Pok&eacute;mon can use any move of their typing, in addition to the moves they can normally learn.`,
 		mod: 'gen9agoldenexperience',
-		ruleset: ['Standard', 'STABmons Move Legality', 'Terastal Clause', 'Non-Signature Z-Move Clause', 'NatDex Mod', 'Data Mod'],
+		ruleset: ['Standard', 'STABmons Move Legality', 'Terastal Clause', 'Non-Signature Z-Move Clause', 'NatDex Mod', 'Data Mod', '!Sketch Post-Gen 7 Moves'],
 		banlist: [
 			'Araquanid', 'Arceus', 'Azumarill', 'Baxcalibur', 'Blaziken-Mega', 'Basculegion', 'Basculegion-F', 'Calyrex-Ice', 'Calyrex-Shadow', 'Chi-Yu', 'Chien-Pao',
 			'Cloyster', 'Darkrai', 'Darmanitan-Galar', 'Deoxys-Attack', 'Deoxys-Normal', 'Dialga', 'Dialga-Origin', 'Dracovish', 'Dragapult', 'Dragonite', 'Enamorus-Incarnate',

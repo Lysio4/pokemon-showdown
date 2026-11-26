@@ -827,7 +827,6 @@ export const Abilities: { [abilityid: string]: ModdedAbilityData; } = {
 			if (pokemon.species.id === 'wishiwashi') {
 				pokemon.formeChange('Wishiwashi-School');
 			}
-			this.field.setWeather('raindance');
 		},
 		onResidualOrder: 27,
 		onResidual(pokemon) {
@@ -850,8 +849,8 @@ export const Abilities: { [abilityid: string]: ModdedAbilityData; } = {
 				this.add('-heal', pokemon, pokemon.getHealth, '[from] ability: Schooling', '[silent]');
 			}
 		},
-		desc: "On switch-in, if this Pokemon is a Wishiwashi that is level 20 or above, it changes to School Form, and raises its Accuracy by 1.3. If it is in School Form and its HP drops to 1/4 of its maximum HP or less, it changes to Solo Form at the end of the turn. If it is in Solo Form and its HP is greater than 1/4 its maximum HP at the end of the turn, it changes to School Form. On switch-in, this Pokemon summons Rain. This Pokemon restores 1/3 of its maximum HP, rounded down, when it switches out.",
-		shortDesc: "If user is Wishiwashi, changes to School Form, else Solo Form. Accuracy x1.3, summons Rain on switch-in, heals 33% HP on switch-out.",
+		desc: "On switch-in, if this Pokemon is a Wishiwashi that is level 20 or above, it changes to School Form, and raises its Accuracy by 1.3. If it is in School Form and its HP drops to 1/4 of its maximum HP or less, it changes to Solo Form at the end of the turn. If it is in Solo Form and its HP is greater than 1/4 its maximum HP at the end of the turn, it changes to School Form. This Pokemon restores 1/3 of its maximum HP, rounded down, when it switches out.",
+		shortDesc: "If user is Wishiwashi, changes to School Form, else Solo Form. Accuracy x1.3, heals 33% HP on switch-out.",
 	},
 	grasspelt: {
 		inherit: true,

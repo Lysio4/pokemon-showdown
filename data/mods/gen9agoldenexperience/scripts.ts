@@ -1392,11 +1392,9 @@ export const Scripts: ModdedBattleScriptsData = {
     this.modData('Learnsets', 'gumshoos').learnset.closecombat = ['9L1'];
     this.modData('Learnsets', 'gumshoos').learnset.swordsdance = ['9L1'];
     this.modData('Learnsets', 'crabominable').learnset.hammerarm = ['9L1'];
-    this.modData('Learnsets', 'wishiwashi').learnset.aquajet = ['9L1'];
     this.modData('Learnsets', 'wishiwashi').learnset.blizzard = ['9L1'];
     this.modData('Learnsets', 'wishiwashi').learnset.focusblast = ['9L1'];
     this.modData('Learnsets', 'wishiwashi').learnset.thunder = ['9L1'];
-    this.modData('Learnsets', 'wishiwashi').learnset.weatherball = ['9L1'];
     this.modData('Learnsets', 'mudsdale').learnset.slackoff = ['9L1'];
     this.modData('Learnsets', 'lurantis').learnset.mantisslash = ['9L1'];
     this.modData('Learnsets', 'bewear').learnset.knockoff = ['9L1'];
@@ -1600,7 +1598,7 @@ export const Scripts: ModdedBattleScriptsData = {
     // Return and Frustration
     const noLearn = ['beldum', 'burmy', 'cascoon', 'caterpie', 'combee', 'cosmoem', 'cosmog', 'ditto', 'kakuna', 'kricketot', 'magikarp', 'metapod', 'necrozmaultra', 'pyukumuku', 'scatterbug',
       'silcoon', 'spewpa', 'tynamo', 'unown', 'weedle', 'wobbuffet', 'wurmple', 'wynaut'];
-    for (const id in this.dataCache.Pokedex) {
+    for (const id in this.dataCache?.Pokedex) {
 			if (this.dataCache.Learnsets[id] && this.dataCache.Learnsets[id].learnset && !noLearn.includes(id)) {
 				this.modData('Learnsets', this.toID(id)).learnset.return = ["9M"];
 				this.modData('Learnsets', this.toID(id)).learnset.frustration = ["9M"];
@@ -1608,7 +1606,7 @@ export const Scripts: ModdedBattleScriptsData = {
 		}
 
     // Hidden Power
-    for (const id in this.dataCache.Pokedex) {
+    for (const id in this.dataCache?.Pokedex) {
       if (this.dataCache.Learnsets[id] && this.dataCache.Learnsets[id].learnset && id !== 'unown') {
         delete this.modData('Learnsets', this.toID(id)).learnset.hiddenpower;
       }
@@ -1617,7 +1615,7 @@ export const Scripts: ModdedBattleScriptsData = {
     delete this.modData('Learnsets', 'lycanrocdusk').learnset.hiddenpower;
 
     // Tera Blast
-    for (const id in this.dataCache.Pokedex) {
+    for (const id in this.dataCache?.Pokedex) {
       if (this.dataCache.Learnsets[id] && this.dataCache.Learnsets[id].learnset) {
         delete this.modData('Learnsets', this.toID(id)).learnset.terablast;
       }
